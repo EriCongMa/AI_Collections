@@ -1,8 +1,8 @@
-# Share And Love! AI collections
+# Share And Love! AI Collections
 
-This repository is constructed to collect interesting resource in artificial intelligence area.
+This repository is constructed to collect interesting resource in Artificial Intelligence area. Due to the limitation of authors' time, there might be unseasonal update. We welcome anyone who wants to build this collections together and open it to everyone.
 
-> Acknowledgement: This repository is just a collection and we have to express our appreciation to many nice open-resource provider and SFFAI-AIKT. We tried our best to add the details of the original links, if there is any missing links, please feel free to email me. Thanks for your kind suggestion! 
+> Acknowledgement: This repository is just a collection and we have to express our appreciation to many nice open-resource providers and SFFAI-AIKT. We tried our best to add the details of original links. If there is any missing links, please feel free to email me. Thanks for your kind suggestion! 
 
 [Contact Eric](mailto:cong.ma@nlpr.ia.ac.cn)
 
