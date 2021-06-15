@@ -1,6 +1,10 @@
-# AIKT-Natural_Language_Processing
+# Share And Love! AI collections
 
 This repository is constructed to collect interesting resource in artificial intelligence area.
+
+> Acknowledgement: This repository is just a collection and we have to express our appreciation to many nice open-resource provider and SFFAI-AIKT. We tried our best to add the details of the original links, if there is any missing links, please feel free to email me. Thanks for your kind suggestion! 
+
+[Contact Eric](mailto:cong.ma@nlpr.ia.ac.cn)
 
 
 
