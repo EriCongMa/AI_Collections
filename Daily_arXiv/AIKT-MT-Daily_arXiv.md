@@ -3,8 +3,15 @@
 # Index
 
 
-- [2021-06-15](#2021-06-15)
+- [2021-06-16](#2021-06-16)
 
+  - [1. Scaling Deep Contrastive Learning Batch Size under Memory Limited Setup](#2021-06-16-1)
+  - [2. Targeted Data Acquisition for Evolving Negotiation Agents](#2021-06-16-2)
+  - [3. Language Tags Matter for Zero-Shot Neural Machine Translation](#2021-06-16-3)
+  - [4. Semantic Representation and Inference for NLP](#2021-06-16-4)
+  - [5. Sequence-Level Training for Non-Autoregressive Neural Machine Translation](#2021-06-16-5)
+  - [6. Consistency Regularization for Cross-Lingual Fine-Tuning](#2021-06-16-6)
+- [2021-06-15](#2021-06-15)
   - [1. Thinking Like Transformers](#2021-06-15-1)
   - [2. Pre-Trained Models: Past, Present and Future](#2021-06-15-2)
   - [3. Model Explainability in Deep Learning Based Natural Language Processing](#2021-06-15-3)
@@ -156,6 +163,126 @@
   - [24. Adapting High-resource NMT Models to Translate Low-resource Related Languages without Parallel Data](#2021-06-01-24)
   - [25. Beyond Noise: Mitigating the Impact of Fine-grained Semantic Divergences on Neural Machine Translation](#2021-06-01-25)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-06-16
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-06-16-1">1. Scaling Deep Contrastive Learning Batch Size under Memory Limited Setup
+</h2>
+
+Title: [Scaling Deep Contrastive Learning Batch Size under Memory Limited Setup](https://arxiv.org/abs/2101.06983)
+
+Authors: [Luyu Gao](https://arxiv.org/search/cs?searchtype=author&query=Gao%2C+L), [Yunyi Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Y), [Jiawei Han](https://arxiv.org/search/cs?searchtype=author&query=Han%2C+J), [Jamie Callan](https://arxiv.org/search/cs?searchtype=author&query=Callan%2C+J)
+
+> Contrastive learning has been applied successfully to learn vector representations of text. Previous research demonstrated that learning high-quality representations benefits from batch-wise contrastive loss with a large number of negatives. In practice, the technique of in-batch negative is used, where for each example in a batch, other batch examples' positives will be taken as its negatives, avoiding encoding extra negatives. This, however, still conditions each example's loss on all batch examples and requires fitting the entire large batch into GPU memory. This paper introduces a gradient caching technique that decouples backpropagation between contrastive loss and the encoder, removing encoder backward pass data dependency along the batch dimension. As a result, gradients can be computed for one subset of the batch at a time, leading to almost constant memory usage.
+
+| Comments: | RepL4NLP 2021                                                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL); Information Retrieval (cs.IR) |
+| Cite as:  | **[arXiv:2101.06983](https://arxiv.org/abs/2101.06983) [cs.LG]** |
+|           | (or **[arXiv:2101.06983v2](https://arxiv.org/abs/2101.06983v2) [cs.LG]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-16-2">2. Targeted Data Acquisition for Evolving Negotiation Agents
+</h2>
+
+Title: [Targeted Data Acquisition for Evolving Negotiation Agents](https://arxiv.org/abs/2106.07728)
+
+Authors: [Minae Kwon](https://arxiv.org/search/cs?searchtype=author&query=Kwon%2C+M), [Siddharth Karamcheti](https://arxiv.org/search/cs?searchtype=author&query=Karamcheti%2C+S), [Mariano-Florentino Cuellar](https://arxiv.org/search/cs?searchtype=author&query=Cuellar%2C+M), [Dorsa Sadigh](https://arxiv.org/search/cs?searchtype=author&query=Sadigh%2C+D)
+
+> Successful negotiators must learn how to balance optimizing for self-interest and cooperation. Yet current artificial negotiation agents often heavily depend on the quality of the static datasets they were trained on, limiting their capacity to fashion an adaptive response balancing self-interest and cooperation. For this reason, we find that these agents can achieve either high utility or cooperation, but not both. To address this, we introduce a targeted data acquisition framework where we guide the exploration of a reinforcement learning agent using annotations from an expert oracle. The guided exploration incentivizes the learning agent to go beyond its static dataset and develop new negotiation strategies. We show that this enables our agents to obtain higher-reward and more Pareto-optimal solutions when negotiating with both simulated and human partners compared to standard supervised learning and reinforcement learning methods. This trend additionally holds when comparing agents using our targeted data acquisition framework to variants of agents trained with a mix of supervised learning and reinforcement learning, or to agents using tailored reward functions that explicitly optimize for utility and Pareto-optimality.
+
+| Comments: | The Thirty-eighth International Conference on Machine Learning |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Artificial Intelligence (cs.AI)**; Computation and Language (cs.CL); Multiagent Systems (cs.MA) |
+| Cite as:  | **[arXiv:2106.07728](https://arxiv.org/abs/2106.07728) [cs.AI]** |
+|           | (or **[arXiv:2106.07728v1](https://arxiv.org/abs/2106.07728v1) [cs.AI]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-16-3">3. Language Tags Matter for Zero-Shot Neural Machine Translation
+</h2>
+
+Title: [Language Tags Matter for Zero-Shot Neural Machine Translation](https://arxiv.org/abs/2106.07930)
+
+Authors: [Liwei Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+L), [Shanbo Cheng](https://arxiv.org/search/cs?searchtype=author&query=Cheng%2C+S), [Mingxuan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+M), [Lei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L)
+
+> Multilingual Neural Machine Translation (MNMT) has aroused widespread interest due to its efficiency. An exciting advantage of MNMT models is that they could also translate between unsupervised (zero-shot) language directions. Language tag (LT) strategies are often adopted to indicate the translation directions in MNMT. In this paper, we demonstrate that the LTs are not only indicators for translation directions but also crucial to zero-shot translation qualities. Unfortunately, previous work tends to ignore the importance of LT strategies. We demonstrate that a proper LT strategy could enhance the consistency of semantic representations and alleviate the off-target issue in zero-shot directions. Experimental results show that by ignoring the source language tag (SLT) and adding the target language tag (TLT) to the encoder, the zero-shot translations could achieve a +8 BLEU score difference over other LT strategies in IWSLT17, Europarl, TED talks translation tasks.
+
+| Comments: | 7 pages, 3 figures, Accepted by the Findings of ACL2021      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2106.07930](https://arxiv.org/abs/2106.07930) [cs.CL]** |
+|           | (or **[arXiv:2106.07930v1](https://arxiv.org/abs/2106.07930v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-16-4">4. Semantic Representation and Inference for NLP
+</h2>
+
+Title: [Semantic Representation and Inference for NLP](https://arxiv.org/abs/2106.08117)
+
+Authors: [Dongsheng Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+D)
+
+> Semantic representation and inference is essential for Natural Language Processing (NLP). The state of the art for semantic representation and inference is deep learning, and particularly Recurrent Neural Networks (RNNs), Convolutional Neural Networks (CNNs), and transformer Self-Attention models. This thesis investigates the use of deep learning for novel semantic representation and inference, and makes contributions in the following three areas: creating training data, improving semantic representations and extending inference learning. In terms of creating training data, we contribute the largest publicly available dataset of real-life factual claims for the purpose of automatic claim verification (MultiFC), and we present a novel inference model composed of multi-scale CNNs with different kernel sizes that learn from external sources to infer fact checking labels. In terms of improving semantic representations, we contribute a novel model that captures non-compositional semantic indicators. By definition, the meaning of a non-compositional phrase cannot be inferred from the individual meanings of its composing words (e.g., hot dog). Motivated by this, we operationalize the compositionality of a phrase contextually by enriching the phrase representation with external word embeddings and knowledge graphs. Finally, in terms of inference learning, we propose a series of novel deep learning architectures that improve inference by using syntactic dependencies, by ensembling role guided attention heads, incorporating gating layers, and concatenating multiple heads in novel and effective ways. This thesis consists of seven publications (five published and two under review).
+
+| Comments: | PhD thesis, the University of Copenhagen                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2106.08117](https://arxiv.org/abs/2106.08117) [cs.CL]** |
+|           | (or **[arXiv:2106.08117v1](https://arxiv.org/abs/2106.08117v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-16-5">5. Sequence-Level Training for Non-Autoregressive Neural Machine Translation
+</h2>
+
+Title: [Sequence-Level Training for Non-Autoregressive Neural Machine Translation](https://arxiv.org/abs/2106.08122)
+
+Authors: [Chenze Shao](https://arxiv.org/search/cs?searchtype=author&query=Shao%2C+C), [Yang Feng](https://arxiv.org/search/cs?searchtype=author&query=Feng%2C+Y), [Jinchao Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+J), [Fandong Meng](https://arxiv.org/search/cs?searchtype=author&query=Meng%2C+F), [Jie Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+J)
+
+> In recent years, Neural Machine Translation (NMT) has achieved notable results in various translation tasks. However, the word-by-word generation manner determined by the autoregressive mechanism leads to high translation latency of the NMT and restricts its low-latency applications. Non-Autoregressive Neural Machine Translation (NAT) removes the autoregressive mechanism and achieves significant decoding speedup through generating target words independently and simultaneously. Nevertheless, NAT still takes the word-level cross-entropy loss as the training objective, which is not optimal because the output of NAT cannot be properly evaluated due to the multimodality problem. In this paper, we propose using sequence-level training objectives to train NAT models, which evaluate the NAT outputs as a whole and correlates well with the real translation quality. Firstly, we propose training NAT models to optimize sequence-level evaluation metrics (e.g., BLEU) based on several novel reinforcement algorithms customized for NAT, which outperforms the conventional method by reducing the variance of gradient estimation. Secondly, we introduce a novel training objective for NAT models, which aims to minimize the Bag-of-Ngrams (BoN) difference between the model output and the reference sentence. The BoN training objective is differentiable and can be calculated efficiently without doing any approximations. Finally, we apply a three-stage training strategy to combine these two methods to train the NAT model. We validate our approach on four translation tasks (WMT14 En↔De, WMT16 En↔Ro), which shows that our approach largely outperforms NAT baselines and achieves remarkable performance on all translation tasks.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2106.08122](https://arxiv.org/abs/2106.08122) [cs.CL]** |
+|           | (or **[arXiv:2106.08122v1](https://arxiv.org/abs/2106.08122v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-16-6">6. Consistency Regularization for Cross-Lingual Fine-Tuning
+</h2>
+
+Title: [Consistency Regularization for Cross-Lingual Fine-Tuning](https://arxiv.org/abs/2106.08226)
+
+Authors: [Bo Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng%2C+B), [Li Dong](https://arxiv.org/search/cs?searchtype=author&query=Dong%2C+L), [Shaohan Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+S), [Wenhui Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+W), [Zewen Chi](https://arxiv.org/search/cs?searchtype=author&query=Chi%2C+Z), [Saksham Singhal](https://arxiv.org/search/cs?searchtype=author&query=Singhal%2C+S), [Wanxiang Che](https://arxiv.org/search/cs?searchtype=author&query=Che%2C+W), [Ting Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+T), [Xia Song](https://arxiv.org/search/cs?searchtype=author&query=Song%2C+X), [Furu Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+F)
+
+> Fine-tuning pre-trained cross-lingual language models can transfer task-specific supervision from one language to the others. In this work, we propose to improve cross-lingual fine-tuning with consistency regularization. Specifically, we use example consistency regularization to penalize the prediction sensitivity to four types of data augmentations, i.e., subword sampling, Gaussian noise, code-switch substitution, and machine translation. In addition, we employ model consistency to regularize the models trained with two augmented versions of the same training set. Experimental results on the XTREME benchmark show that our method significantly improves cross-lingual fine-tuning across various tasks, including text classification, question answering, and sequence labeling.
+
+| Comments: | ACL-2021                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2106.08226](https://arxiv.org/abs/2106.08226) [cs.CL]** |
+|           | (or **[arXiv:2106.08226v1](https://arxiv.org/abs/2106.08226v1) [cs.CL]** for this version) |
+
+
+
 
 
 
