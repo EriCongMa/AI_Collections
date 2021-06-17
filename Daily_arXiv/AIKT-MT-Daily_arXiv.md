@@ -3,8 +3,18 @@
 # Index
 
 
-- [2021-06-16](#2021-06-16)
+- [2021-06-17](#2021-06-17)
 
+  - [1. Code to Comment Translation: A Comparative Study on Model Effectiveness & Errors](#2021-06-17-1)
+  - [2. What Context Features Can Transformer Language Models Use?](#2021-06-17-2)
+  - [3. Alternated Training with Synthetic and Authentic Data for Neural Machine Translation](#2021-06-17-3)
+  - [4. Semantic sentence similarity: size does not always matter](#2021-06-17-4)
+  - [5. Evaluating Gender Bias in Hindi-English Machine Translation](#2021-06-17-5)
+  - [6. Do Acoustic Word Embeddings Capture Phonological Similarity? An Empirical Study](#2021-06-17-6)
+  - [7. RefBERT: Compressing BERT by Referencing to Pre-computed Representations](#2021-06-17-7)
+  - [8. Revisiting the Weaknesses of Reinforcement Learning for Neural Machine Translation](#2021-06-17-8)
+  - [9. Collaborative Training of Acoustic Encoders for Speech Recognition](#2021-06-17-9)
+- [2021-06-16](#2021-06-16)
   - [1. Scaling Deep Contrastive Learning Batch Size under Memory Limited Setup](#2021-06-16-1)
   - [2. Targeted Data Acquisition for Evolving Negotiation Agents](#2021-06-16-2)
   - [3. Language Tags Matter for Zero-Shot Neural Machine Translation](#2021-06-16-3)
@@ -163,6 +173,186 @@
   - [24. Adapting High-resource NMT Models to Translate Low-resource Related Languages without Parallel Data](#2021-06-01-24)
   - [25. Beyond Noise: Mitigating the Impact of Fine-grained Semantic Divergences on Neural Machine Translation](#2021-06-01-25)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-06-17
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-06-17-1">1. Code to Comment Translation: A Comparative Study on Model Effectiveness & Errors
+</h2>
+
+Title: [Code to Comment Translation: A Comparative Study on Model Effectiveness & Errors](https://arxiv.org/abs/2106.08415)
+
+Authors: [Junayed Mahmud](https://arxiv.org/search/cs?searchtype=author&query=Mahmud%2C+J), [Fahim Faisal](https://arxiv.org/search/cs?searchtype=author&query=Faisal%2C+F), [Raihan Islam Arnob](https://arxiv.org/search/cs?searchtype=author&query=Arnob%2C+R+I), [Antonios Anastasopoulos](https://arxiv.org/search/cs?searchtype=author&query=Anastasopoulos%2C+A), [Kevin Moran](https://arxiv.org/search/cs?searchtype=author&query=Moran%2C+K)
+
+> Automated source code summarization is a popular software engineering research topic wherein machine translation models are employed to "translate" code snippets into relevant natural language descriptions. Most evaluations of such models are conducted using automatic reference-based metrics. However, given the relatively large semantic gap between programming languages and natural language, we argue that this line of research would benefit from a qualitative investigation into the various error modes of current state-of-the-art models. Therefore, in this work, we perform both a quantitative and qualitative comparison of three recently proposed source code summarization models. In our quantitative evaluation, we compare the models based on the smoothed BLEU-4, METEOR, and ROUGE-L machine translation metrics, and in our qualitative evaluation, we perform a manual open-coding of the most common errors committed by the models when compared to ground truth captions. Our investigation reveals new insights into the relationship between metric-based performance and model prediction errors grounded in an empirically derived error taxonomy that can be used to drive future research efforts
+
+| Comments: | Accepted to the 2021 NLP4Prog Workshop co-located with The Joint Conference of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (ACL-IJCNLP 2021) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Software Engineering (cs.SE)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2106.08415](https://arxiv.org/abs/2106.08415) [cs.SE]** |
+|           | (or **[arXiv:2106.08415v1](https://arxiv.org/abs/2106.08415v1) [cs.SE]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-17-2">2. What Context Features Can Transformer Language Models Use?
+</h2>
+
+Title: [What Context Features Can Transformer Language Models Use?](https://arxiv.org/abs/2106.08367)
+
+Authors: [Joe O'Connor](https://arxiv.org/search/cs?searchtype=author&query=O'Connor%2C+J), [Jacob Andreas](https://arxiv.org/search/cs?searchtype=author&query=Andreas%2C+J)
+
+> Transformer-based language models benefit from conditioning on contexts of hundreds to thousands of previous tokens. What aspects of these contexts contribute to accurate model prediction? We describe a series of experiments that measure usable information by selectively ablating lexical and structural information in transformer language models trained on English Wikipedia. In both mid- and long-range contexts, we find that several extremely destructive context manipulations -- including shuffling word order within sentences and deleting all words other than nouns -- remove less than 15% of the usable information. Our results suggest that long contexts, but not their detailed syntactic and propositional content, are important for the low perplexity of current transformer language models.
+
+| Comments: | 14 pages, 7 figures, to be published at ACL 2021             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2106.08367](https://arxiv.org/abs/2106.08367) [cs.CL]** |
+|           | (or **[arXiv:2106.08367v1](https://arxiv.org/abs/2106.08367v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-17-3">3. Alternated Training with Synthetic and Authentic Data for Neural Machine Translation
+</h2>
+
+Title: [Alternated Training with Synthetic and Authentic Data for Neural Machine Translation](https://arxiv.org/abs/2106.08582)
+
+Authors: [Rui Jiao](https://arxiv.org/search/cs?searchtype=author&query=Jiao%2C+R), [Zonghan Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+Z), [Maosong Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+M), [Yang Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Y)
+
+> While synthetic bilingual corpora have demonstrated their effectiveness in low-resource neural machine translation (NMT), adding more synthetic data often deteriorates translation performance. In this work, we propose alternated training with synthetic and authentic data for NMT. The basic idea is to alternate synthetic and authentic corpora iteratively during training. Compared with previous work, we introduce authentic data as guidance to prevent the training of NMT models from being disturbed by noisy synthetic data. Experiments on Chinese-English and German-English translation tasks show that our approach improves the performance over several strong baselines. We visualize the BLEU landscape to further investigate the role of authentic and synthetic data during alternated training. From the visualization, we find that authentic data helps to direct the NMT model parameters towards points with higher BLEU scores and leads to consistent translation performance improvement.
+
+| Comments: | ACL 2021, Short Findings                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2106.08582](https://arxiv.org/abs/2106.08582) [cs.CL]** |
+|           | (or **[arXiv:2106.08582v1](https://arxiv.org/abs/2106.08582v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-17-4">4. Semantic sentence similarity: size does not always matter
+</h2>
+
+Title: [Semantic sentence similarity: size does not always matter](https://arxiv.org/abs/2106.08648)
+
+Authors: [Danny Merkx](https://arxiv.org/search/cs?searchtype=author&query=Merkx%2C+D), [Stefan L. Frank](https://arxiv.org/search/cs?searchtype=author&query=Frank%2C+S+L), [Mirjam Ernestus](https://arxiv.org/search/cs?searchtype=author&query=Ernestus%2C+M)
+
+> This study addresses the question whether visually grounded speech recognition (VGS) models learn to capture sentence semantics without access to any prior linguistic knowledge. We produce synthetic and natural spoken versions of a well known semantic textual similarity database and show that our VGS model produces embeddings that correlate well with human semantic similarity judgements. Our results show that a model trained on a small image-caption database outperforms two models trained on much larger databases, indicating that database size is not all that matters. We also investigate the importance of having multiple captions per image and find that this is indeed helpful even if the total number of images is lower, suggesting that paraphrasing is a valuable learning signal. While the general trend in the field is to create ever larger datasets to train models on, our findings indicate other characteristics of the database can just as important important.
+
+| Comments: | This paper has been accepted at Interspeech 2021 where it will be presented and appear in the conference proceedings in September 2021 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2106.08648](https://arxiv.org/abs/2106.08648) [cs.CL]** |
+|           | (or **[arXiv:2106.08648v1](https://arxiv.org/abs/2106.08648v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-06-17-5">5. Evaluating Gender Bias in Hindi-English Machine Translation
+</h2>
+
+Title: [Evaluating Gender Bias in Hindi-English Machine Translation](https://arxiv.org/abs/2106.08680)
+
+Authors: [Gauri Gupta](https://arxiv.org/search/cs?searchtype=author&query=Gupta%2C+G), [Krithika Ramesh](https://arxiv.org/search/cs?searchtype=author&query=Ramesh%2C+K), [Sanjay Singh](https://arxiv.org/search/cs?searchtype=author&query=Singh%2C+S)
+
+> With language models being deployed increasingly in the real world, it is essential to address the issue of the fairness of their outputs. The word embedding representations of these language models often implicitly draw unwanted associations that form a social bias within the model. The nature of gendered languages like Hindi, poses an additional problem to the quantification and mitigation of bias, owing to the change in the form of the words in the sentence, based on the gender of the subject. Additionally, there is sparse work done in the realm of measuring and debiasing systems for Indic languages. In our work, we attempt to evaluate and quantify the gender bias within a Hindi-English machine translation system. We implement a modified version of the existing TGBI metric based on the grammatical considerations for Hindi. We also compare and contrast the resulting bias measurements across multiple metrics for pre-trained embeddings and the ones learned by our machine translation model.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2106.08680](https://arxiv.org/abs/2106.08680) [cs.CL]** |
+|           | (or **[arXiv:2106.08680v1](https://arxiv.org/abs/2106.08680v1) [cs.CL]** for this version) |
+
+
+
+<h2 id="2021-06-17-6">6. Do Acoustic Word Embeddings Capture Phonological Similarity? An Empirical Study
+</h2>
+
+Title: [Do Acoustic Word Embeddings Capture Phonological Similarity? An Empirical Study](https://arxiv.org/abs/2106.08686)
+
+Authors: [Badr M. Abdullah](https://arxiv.org/search/cs?searchtype=author&query=Abdullah%2C+B+M), [Marius Mosbach](https://arxiv.org/search/cs?searchtype=author&query=Mosbach%2C+M), [Iuliia Zaitova](https://arxiv.org/search/cs?searchtype=author&query=Zaitova%2C+I), [Bernd Möbius](https://arxiv.org/search/cs?searchtype=author&query=Möbius%2C+B), [Dietrich Klakow](https://arxiv.org/search/cs?searchtype=author&query=Klakow%2C+D)
+
+> Several variants of deep neural networks have been successfully employed for building parametric models that project variable-duration spoken word segments onto fixed-size vector representations, or acoustic word embeddings (AWEs). However, it remains unclear to what degree we can rely on the distance in the emerging AWE space as an estimate of word-form similarity. In this paper, we ask: does the distance in the acoustic embedding space correlate with phonological dissimilarity? To answer this question, we empirically investigate the performance of supervised approaches for AWEs with different neural architectures and learning objectives. We train AWE models in controlled settings for two languages (German and Czech) and evaluate the embeddings on two tasks: word discrimination and phonological similarity. Our experiments show that (1) the distance in the embedding space in the best cases only moderately correlates with phonological distance, and (2) improving the performance on the word discrimination task does not necessarily yield models that better reflect word phonological similarity. Our findings highlight the necessity to rethink the current intrinsic evaluations for AWEs.
+
+| Comments: | Accepted in Interspeech 2021                                 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2106.08686](https://arxiv.org/abs/2106.08686) [cs.CL]** |
+|           | (or **[arXiv:2106.08686v1](https://arxiv.org/abs/2106.08686v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-06-17-7">7. RefBERT: Compressing BERT by Referencing to Pre-computed Representations
+</h2>
+
+Title: [RefBERT: Compressing BERT by Referencing to Pre-computed Representations](https://arxiv.org/abs/2106.08898)
+
+Authors: [Xinyi Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+X), [Haiqin Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+H), [Liang Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+L), [Yang Mo](https://arxiv.org/search/cs?searchtype=author&query=Mo%2C+Y), [Jianping Shen](https://arxiv.org/search/cs?searchtype=author&query=Shen%2C+J)
+
+> Recently developed large pre-trained language models, e.g., BERT, have achieved remarkable performance in many downstream natural language processing applications. These pre-trained language models often contain hundreds of millions of parameters and suffer from high computation and latency in real-world applications. It is desirable to reduce the computation overhead of the models for fast training and inference while keeping the model performance in downstream applications. Several lines of work utilize knowledge distillation to compress the teacher model to a smaller student model. However, they usually discard the teacher's knowledge when in inference. Differently, in this paper, we propose RefBERT to leverage the knowledge learned from the teacher, i.e., facilitating the pre-computed BERT representation on the reference sample and compressing BERT into a smaller student model. To guarantee our proposal, we provide theoretical justification on the loss function and the usage of reference samples. Significantly, the theoretical result shows that including the pre-computed teacher's representations on the reference samples indeed increases the mutual information in learning the student model. Finally, we conduct the empirical evaluation and show that our RefBERT can beat the vanilla TinyBERT over 8.1\% and achieves more than 94\% of the performance of $\BERTBASE$ on the GLUE benchmark. Meanwhile, RefBERT is 7.4x smaller and 9.5x faster on inference than BERTBASE.
+
+| Comments: | 8 pages, 1 figure, 3 tables, in IJCNN'21                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2106.08898](https://arxiv.org/abs/2106.08898) [cs.CL]** |
+|           | (or **[arXiv:2106.08898v1](https://arxiv.org/abs/2106.08898v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-17-8">8. Revisiting the Weaknesses of Reinforcement Learning for Neural Machine Translation
+</h2>
+
+Title: [Revisiting the Weaknesses of Reinforcement Learning for Neural Machine Translation](https://arxiv.org/abs/2106.08942)
+
+Authors: [Samuel Kiegeland](https://arxiv.org/search/cs?searchtype=author&query=Kiegeland%2C+S), [Julia Kreutzer](https://arxiv.org/search/cs?searchtype=author&query=Kreutzer%2C+J)
+
+> Policy gradient algorithms have found wide adoption in NLP, but have recently become subject to criticism, doubting their suitability for NMT. Choshen et al. (2020) identify multiple weaknesses and suspect that their success is determined by the shape of output distributions rather than the reward. In this paper, we revisit these claims and study them under a wider range of configurations. Our experiments on in-domain and cross-domain adaptation reveal the importance of exploration and reward scaling, and provide empirical counter-evidence to these claims.
+
+| Subjects:          | **Computation and Language (cs.CL)**                         |
+| ------------------ | ------------------------------------------------------------ |
+| Journal reference: | North American Chapter of the Association for Computational Linguistics, 2021, 1673-1681 |
+| DOI:               | [10.18653/v1/2021.naacl-main.133](https://arxiv.org/ct?url=https%3A%2F%2Fdx.doi.org%2F10.18653%2Fv1%2F2021.naacl-main.133&v=5c72b5f8) |
+| Cite as:           | **[arXiv:2106.08942](https://arxiv.org/abs/2106.08942) [cs.CL]** |
+|                    | (or **[arXiv:2106.08942v1](https://arxiv.org/abs/2106.08942v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-17-9">9. Collaborative Training of Acoustic Encoders for Speech Recognition
+</h2>
+
+Title: [Collaborative Training of Acoustic Encoders for Speech Recognition](https://arxiv.org/abs/2106.08960)
+
+Authors: [Varun Nagaraja](https://arxiv.org/search/cs?searchtype=author&query=Nagaraja%2C+V), [Yangyang Shi](https://arxiv.org/search/cs?searchtype=author&query=Shi%2C+Y), [Ganesh Venkatesh](https://arxiv.org/search/cs?searchtype=author&query=Venkatesh%2C+G), [Ozlem Kalinli](https://arxiv.org/search/cs?searchtype=author&query=Kalinli%2C+O), [Michael L. Seltzer](https://arxiv.org/search/cs?searchtype=author&query=Seltzer%2C+M+L), [Vikas Chandra](https://arxiv.org/search/cs?searchtype=author&query=Chandra%2C+V)
+
+> On-device speech recognition requires training models of different sizes for deploying on devices with various computational budgets. When building such different models, we can benefit from training them jointly to take advantage of the knowledge shared between them. Joint training is also efficient since it reduces the redundancy in the training procedure's data handling operations. We propose a method for collaboratively training acoustic encoders of different sizes for speech recognition. We use a sequence transducer setup where different acoustic encoders share a common predictor and joiner modules. The acoustic encoders are also trained using co-distillation through an auxiliary task for frame level chenone prediction, along with the transducer loss. We perform experiments using the LibriSpeech corpus and demonstrate that the collaboratively trained acoustic encoders can provide up to a 11% relative improvement in the word error rate on both the test partitions.
+
+| Comments: | INTERSPEECH 2021                                             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2106.08960](https://arxiv.org/abs/2106.08960) [cs.CL]** |
+|           | (or **[arXiv:2106.08960v1](https://arxiv.org/abs/2106.08960v1) [cs.CL]** for this version) |
+
+
+
 
 
 
