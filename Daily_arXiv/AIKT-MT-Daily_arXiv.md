@@ -3,8 +3,15 @@
 # Index
 
 
-- [2021-06-17](#2021-06-17)
+- [2021-06-18](#2021-06-18)
 
+  - [1. Specializing Multilingual Language Models: An Empirical Study](#2021-06-18-1)
+  - [2. Probing Image-Language Transformers for Verb Understanding](#2021-06-18-2)
+  - [3. An Empirical Study on Hyperparameter Optimization for Fine-Tuning Pre-trained Language Models](#2021-06-18-3)
+  - [4. Lost in Interpreting: Speech Translation from Source or Interpreter?](#2021-06-18-4)
+  - [5. Modeling Worlds in Text](#2021-06-18-5)
+  - [6. Multi-head or Single-head? An Empirical Comparison for Transformer Training](#2021-06-18-6)
+- [2021-06-17](#2021-06-17)
   - [1. Code to Comment Translation: A Comparative Study on Model Effectiveness & Errors](#2021-06-17-1)
   - [2. What Context Features Can Transformer Language Models Use?](#2021-06-17-2)
   - [3. Alternated Training with Synthetic and Authentic Data for Neural Machine Translation](#2021-06-17-3)
@@ -173,6 +180,126 @@
   - [24. Adapting High-resource NMT Models to Translate Low-resource Related Languages without Parallel Data](#2021-06-01-24)
   - [25. Beyond Noise: Mitigating the Impact of Fine-grained Semantic Divergences on Neural Machine Translation](#2021-06-01-25)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-06-18
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-06-18-1">1. Specializing Multilingual Language Models: An Empirical Study
+</h2>
+
+Title: [Specializing Multilingual Language Models: An Empirical Study](https://arxiv.org/abs/2106.09063)
+
+Authors: [Ethan C. Chau](https://arxiv.org/search/cs?searchtype=author&query=Chau%2C+E+C), [Noah A. Smith](https://arxiv.org/search/cs?searchtype=author&query=Smith%2C+N+A)
+
+> Contextualized word representations from pretrained multilingual language models have become the de facto standard for addressing natural language tasks in many different languages, but the success of this approach is far from universal. For languages rarely or never seen by these models, directly using such models often results in suboptimal representation or use of data, motivating additional model adaptations to achieve reasonably strong performance. In this work, we study the performance, extensibility, and interaction of two such adaptations for this low-resource setting: vocabulary augmentation and script transliteration. Our evaluations on a set of three tasks in nine diverse low-resource languages yield a mixed result, upholding the viability of these approaches while raising new questions around how to optimally adapt multilingual models to low-resource settings.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2106.09063](https://arxiv.org/abs/2106.09063) [cs.CL]** |
+|           | (or **[arXiv:2106.09063v1](https://arxiv.org/abs/2106.09063v1) [cs.CL]** for this version) |
+
+
+
+<h2 id="2021-06-18-2">2. Probing Image-Language Transformers for Verb Understanding
+</h2>
+
+Title: [Probing Image-Language Transformers for Verb Understanding](https://arxiv.org/abs/2106.09141)
+
+Authors: [Lisa Anne Hendricks](https://arxiv.org/search/cs?searchtype=author&query=Hendricks%2C+L+A), [Aida Nematzadeh](https://arxiv.org/search/cs?searchtype=author&query=Nematzadeh%2C+A)
+
+> Multimodal image-language transformers have achieved impressive results on a variety of tasks that rely on fine-tuning (e.g., visual question answering and image retrieval). We are interested in shedding light on the quality of their pretrained representations -- in particular, if these models can distinguish different types of verbs or if they rely solely on nouns in a given sentence. To do so, we collect a dataset of image-sentence pairs (in English) consisting of 421 verbs that are either visual or commonly found in the pretraining data (i.e., the Conceptual Captions dataset). We use this dataset to evaluate pretrained image-language transformers and find that they fail more in situations that require verb understanding compared to other parts of speech. We also investigate what category of verbs are particularly challenging.
+
+| Subjects: | **Computation and Language (cs.CL)**; Computer Vision and Pattern Recognition (cs.CV) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2106.09141](https://arxiv.org/abs/2106.09141) [cs.CL]** |
+|           | (or **[arXiv:2106.09141v1](https://arxiv.org/abs/2106.09141v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-18-3">3. An Empirical Study on Hyperparameter Optimization for Fine-Tuning Pre-trained Language Models
+</h2>
+
+Title: [An Empirical Study on Hyperparameter Optimization for Fine-Tuning Pre-trained Language Models](https://arxiv.org/abs/2106.09204)
+
+Authors: [Xueqing Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+X), [Chi Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+C)
+
+> The performance of fine-tuning pre-trained language models largely depends on the hyperparameter configuration. In this paper, we investigate the performance of modern hyperparameter optimization methods (HPO) on fine-tuning pre-trained language models. First, we study and report three HPO algorithms' performances on fine-tuning two state-of-the-art language models on the GLUE dataset. We find that using the same time budget, HPO often fails to outperform grid search due to two reasons: insufficient time budget and overfitting. We propose two general strategies and an experimental procedure to systematically troubleshoot HPO's failure cases. By applying the procedure, we observe that HPO can succeed with more appropriate settings in the search space and time budget; however, in certain cases overfitting remains. Finally, we make suggestions for future work. Our implementation can be found in [this https URL](https://github.com/microsoft/FLAML/tree/main/flaml/nlp/).
+
+| Comments: | To appear in ACL-IJCNLP 2021                                 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2106.09204](https://arxiv.org/abs/2106.09204) [cs.CL]** |
+|           | (or **[arXiv:2106.09204v1](https://arxiv.org/abs/2106.09204v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-18-4">4. Lost in Interpreting: Speech Translation from Source or Interpreter?
+</h2>
+
+Title: [Lost in Interpreting: Speech Translation from Source or Interpreter?](https://arxiv.org/abs/2106.09343)
+
+Authors: [Dominik Macháček](https://arxiv.org/search/cs?searchtype=author&query=Macháček%2C+D), [Matúš Žilinec](https://arxiv.org/search/cs?searchtype=author&query=Žilinec%2C+M), [Ondřej Bojar](https://arxiv.org/search/cs?searchtype=author&query=Bojar%2C+O)
+
+> Interpreters facilitate multi-lingual meetings but the affordable set of languages is often smaller than what is needed. Automatic simultaneous speech translation can extend the set of provided languages. We investigate if such an automatic system should rather follow the original speaker, or an interpreter to achieve better translation quality at the cost of increased delay.
+> To answer the question, we release Europarl Simultaneous Interpreting Corpus (ESIC), 10 hours of recordings and transcripts of European Parliament speeches in English, with simultaneous interpreting into Czech and German. We evaluate quality and latency of speaker-based and interpreter-based spoken translation systems from English to Czech. We study the differences in implicit simplification and summarization of the human interpreter compared to a machine translation system trained to shorten the output to some extent. Finally, we perform human evaluation to measure information loss of each of these approaches.
+
+| Comments: | to be published at INTERSPEECH 2021                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2106.09343](https://arxiv.org/abs/2106.09343) [cs.CL]** |
+|           | (or **[arXiv:2106.09343v1](https://arxiv.org/abs/2106.09343v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-18-5">5. Modeling Worlds in Text
+</h2>
+
+Title: [Modeling Worlds in Text](https://arxiv.org/abs/2106.09578)
+
+Authors: [Prithviraj Ammanabrolu](https://arxiv.org/search/cs?searchtype=author&query=Ammanabrolu%2C+P), [Mark O. Riedl](https://arxiv.org/search/cs?searchtype=author&query=Riedl%2C+M+O)
+
+> We provide a dataset that enables the creation of learning agents that can build knowledge graph-based world models of interactive narratives. Interactive narratives -- or text-adventure games -- are partially observable environments structured as long puzzles or quests in which an agent perceives and interacts with the world purely through textual natural language. Each individual game typically contains hundreds of locations, characters, and objects -- each with their own unique descriptions -- providing an opportunity to study the problem of giving language-based agents the structured memory necessary to operate in such worlds. Our dataset provides 24198 mappings between rich natural language observations and: (1) knowledge graphs that reflect the world state in the form of a map; (2) natural language actions that are guaranteed to cause a change in that particular world state. The training data is collected across 27 games in multiple genres and contains a further 7836 heldout instances over 9 additional games in the test set. We further provide baseline models using rules-based, question-answering, and sequence learning approaches in addition to an analysis of the data and corresponding learning tasks.
+
+| Comments: | Preprint. Under review. Benchmark can be found at [this https URL](https://github.com/JerichoWorld/JerichoWorld) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2106.09578](https://arxiv.org/abs/2106.09578) [cs.CL]** |
+|           | (or **[arXiv:2106.09578v1](https://arxiv.org/abs/2106.09578v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-18-6">6. Multi-head or Single-head? An Empirical Comparison for Transformer Training
+</h2>
+
+Title: [Multi-head or Single-head? An Empirical Comparison for Transformer Training](https://arxiv.org/abs/2106.09650)
+
+Authors: [Liyuan Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+L), [Jialu Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+J), [Jiawei Han](https://arxiv.org/search/cs?searchtype=author&query=Han%2C+J)
+
+> Multi-head attention plays a crucial role in the recent success of Transformer models, which leads to consistent performance improvements over conventional attention in various applications. The popular belief is that this effectiveness stems from the ability of jointly attending multiple positions. In this paper, we first demonstrate that jointly attending multiple positions is not a unique feature of multi-head attention, as multi-layer single-head attention also attends multiple positions and is more effective. Then, we suggest the main advantage of the multi-head attention is the training stability, since it has less number of layers than the single-head attention, when attending the same number of positions. For example, 24-layer 16-head Transformer (BERT-large) and 384-layer single-head Transformer has the same total attention head number and roughly the same model size, while the multi-head one is significantly shallower. Meanwhile, we show that, with recent advances in deep learning, we can successfully stabilize the training of the 384-layer Transformer. As the training difficulty is no longer a bottleneck, substantially deeper single-head Transformer achieves consistent performance improvements without tuning hyper-parameters.
+
+| Comments: | Work in progress                                             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2106.09650](https://arxiv.org/abs/2106.09650) [cs.CL]** |
+|           | (or **[arXiv:2106.09650v1](https://arxiv.org/abs/2106.09650v1) [cs.CL]** for this version) |
+
+
+
+
+
 
 
 
