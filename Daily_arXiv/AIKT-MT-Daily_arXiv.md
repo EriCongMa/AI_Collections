@@ -1,10 +1,18 @@
-# Daily arXiv: Machine Translation - May, 2021
+# Daily arXiv: Machine Translation - June, 2021
 
 # Index
 
 
-- [2021-06-18](#2021-06-18)
+- [2021-06-21](#2021-06-21)
 
+  - [1. Multi-mode Transformer Transducer with Stochastic Future Context](#2021-06-21-1)
+  - [2. Investigating the Role of Negatives in Contrastive Representation Learning](#2021-06-21-2)
+  - [3. BitFit: Simple Parameter-efficient Fine-tuning for Transformer-based Masked Language-models](#2021-06-21-3)
+  - [4. GEM: A General Evaluation Benchmark for Multimodal Tasks](#2021-06-21-4)
+  - [5. Bad Characters: Imperceptible NLP Attacks](#2021-06-21-5)
+  - [6. Recurrent Stacking of Layers in Neural Networks: An Application to Neural Machine Translation](#2021-06-21-6)
+  - [7. Challenges and Limitations with the Metrics Measuring the Complexity of Code-Mixed Text](#2021-06-21-7)
+- [2021-06-18](#2021-06-18)
   - [1. Specializing Multilingual Language Models: An Empirical Study](#2021-06-18-1)
   - [2. Probing Image-Language Transformers for Verb Understanding](#2021-06-18-2)
   - [3. An Empirical Study on Hyperparameter Optimization for Fine-Tuning Pre-trained Language Models](#2021-06-18-3)
@@ -180,6 +188,146 @@
   - [24. Adapting High-resource NMT Models to Translate Low-resource Related Languages without Parallel Data](#2021-06-01-24)
   - [25. Beyond Noise: Mitigating the Impact of Fine-grained Semantic Divergences on Neural Machine Translation](#2021-06-01-25)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-06-21
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-06-21-1">1. Multi-mode Transformer Transducer with Stochastic Future Context
+</h2>
+
+Title: [Multi-mode Transformer Transducer with Stochastic Future Context](https://arxiv.org/abs/2106.09760)
+
+Authors: [Kwangyoun Kim](https://arxiv.org/search/eess?searchtype=author&query=Kim%2C+K), [Felix Wu](https://arxiv.org/search/eess?searchtype=author&query=Wu%2C+F), [Prashant Sridhar](https://arxiv.org/search/eess?searchtype=author&query=Sridhar%2C+P), [Kyu J. Han](https://arxiv.org/search/eess?searchtype=author&query=Han%2C+K+J), [Shinji Watanabe](https://arxiv.org/search/eess?searchtype=author&query=Watanabe%2C+S)
+
+> Automatic speech recognition (ASR) models make fewer errors when more surrounding speech information is presented as context. Unfortunately, acquiring a larger future context leads to higher latency. There exists an inevitable trade-off between speed and accuracy. Naively, to fit different latency requirements, people have to store multiple models and pick the best one under the constraints. Instead, a more desirable approach is to have a single model that can dynamically adjust its latency based on different constraints, which we refer to as Multi-mode ASR. A Multi-mode ASR model can fulfill various latency requirements during inference -- when a larger latency becomes acceptable, the model can process longer future context to achieve higher accuracy and when a latency budget is not flexible, the model can be less dependent on future context but still achieve reliable accuracy. In pursuit of Multi-mode ASR, we propose Stochastic Future Context, a simple training procedure that samples one streaming configuration in each iteration. Through extensive experiments on AISHELL-1 and LibriSpeech datasets, we show that a Multi-mode ASR model rivals, if not surpasses, a set of competitive streaming baselines trained with different latency budgets.
+
+| Comments: | Accepted to Interspeech 2021                                 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Audio and Speech Processing (eess.AS)**; Computation and Language (cs.CL); Sound (cs.SD) |
+| Cite as:  | **[arXiv:2106.09760](https://arxiv.org/abs/2106.09760) [eess.AS]** |
+|           | (or **[arXiv:2106.09760v1](https://arxiv.org/abs/2106.09760v1) [eess.AS]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-21-2">2. Investigating the Role of Negatives in Contrastive Representation Learning
+</h2>
+
+Title: [Investigating the Role of Negatives in Contrastive Representation Learning](https://arxiv.org/abs/2106.09943)
+
+Authors: [Jordan T. Ash](https://arxiv.org/search/cs?searchtype=author&query=Ash%2C+J+T), [Surbhi Goel](https://arxiv.org/search/cs?searchtype=author&query=Goel%2C+S), [Akshay Krishnamurthy](https://arxiv.org/search/cs?searchtype=author&query=Krishnamurthy%2C+A), [Dipendra Misra](https://arxiv.org/search/cs?searchtype=author&query=Misra%2C+D)
+
+> Noise contrastive learning is a popular technique for unsupervised representation learning. In this approach, a representation is obtained via reduction to supervised learning, where given a notion of semantic similarity, the learner tries to distinguish a similar (positive) example from a collection of random (negative) examples. The success of modern contrastive learning pipelines relies on many parameters such as the choice of data augmentation, the number of negative examples, and the batch size; however, there is limited understanding as to how these parameters interact and affect downstream performance. We focus on disambiguating the role of one of these parameters: the number of negative examples. Theoretically, we show the existence of a collision-coverage trade-off suggesting that the optimal number of negative examples should scale with the number of underlying concepts in the data. Empirically, we scrutinize the role of the number of negatives in both NLP and vision tasks. In the NLP task, we find that the results broadly agree with our theory, while our vision experiments are murkier with performance sometimes even being insensitive to the number of negatives. We discuss plausible explanations for this behavior and suggest future directions to better align theory and practice.
+
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL); Machine Learning (stat.ML) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2106.09943](https://arxiv.org/abs/2106.09943) [cs.LG]** |
+|           | (or **[arXiv:2106.09943v1](https://arxiv.org/abs/2106.09943v1) [cs.LG]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-21-3">3. BitFit: Simple Parameter-efficient Fine-tuning for Transformer-based Masked Language-models
+</h2>
+
+Title: [BitFit: Simple Parameter-efficient Fine-tuning for Transformer-based Masked Language-models](https://arxiv.org/abs/2106.10199)
+
+Authors: [Elad Ben Zaken](https://arxiv.org/search/cs?searchtype=author&query=Zaken%2C+E+B), [Shauli Ravfogel](https://arxiv.org/search/cs?searchtype=author&query=Ravfogel%2C+S), [Yoav Goldberg](https://arxiv.org/search/cs?searchtype=author&query=Goldberg%2C+Y)
+
+> We show that with small-to-medium training data, fine-tuning only the bias terms (or a subset of the bias terms) of pre-trained BERT models is competitive with (and sometimes better than) fine-tuning the entire model. For larger data, bias-only fine-tuning is competitive with other sparse fine-tuning methods. Besides their practical utility, these findings are relevant for the question of understanding the commonly-used process of finetuning: they support the hypothesis that finetuning is mainly about exposing knowledge induced by language-modeling training, rather than learning new task-specific linguistic knowledge.
+
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2106.10199](https://arxiv.org/abs/2106.10199) [cs.LG]** |
+|           | (or **[arXiv:2106.10199v1](https://arxiv.org/abs/2106.10199v1) [cs.LG]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-21-4">4. GEM: A General Evaluation Benchmark for Multimodal Tasks
+</h2>
+
+Title: [GEM: A General Evaluation Benchmark for Multimodal Tasks](https://arxiv.org/abs/2106.09889)
+
+Authors: [Lin Su](https://arxiv.org/search/cs?searchtype=author&query=Su%2C+L), [Nan Duan](https://arxiv.org/search/cs?searchtype=author&query=Duan%2C+N), [Edward Cui](https://arxiv.org/search/cs?searchtype=author&query=Cui%2C+E), [Lei Ji](https://arxiv.org/search/cs?searchtype=author&query=Ji%2C+L), [Chenfei Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+C), [Huaishao Luo](https://arxiv.org/search/cs?searchtype=author&query=Luo%2C+H), [Yongfei Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Y), [Ming Zhong](https://arxiv.org/search/cs?searchtype=author&query=Zhong%2C+M), [Taroon Bharti](https://arxiv.org/search/cs?searchtype=author&query=Bharti%2C+T), [Arun Sacheti](https://arxiv.org/search/cs?searchtype=author&query=Sacheti%2C+A)
+
+> In this paper, we present GEM as a General Evaluation benchmark for Multimodal tasks. Different from existing datasets such as GLUE, SuperGLUE, XGLUE and XTREME that mainly focus on natural language tasks, GEM is a large-scale vision-language benchmark, which consists of GEM-I for image-language tasks and GEM-V for video-language tasks. Comparing with existing multimodal datasets such as MSCOCO and Flicker30K for image-language tasks, YouCook2 and MSR-VTT for video-language tasks, GEM is not only the largest vision-language dataset covering image-language tasks and video-language tasks at the same time, but also labeled in multiple languages. We also provide two baseline models for this benchmark. We will release the dataset, code and baseline models, aiming to advance the development of multilingual multimodal research.
+
+| Comments: | Accepted by Findings of ACL 2021                             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Computer Vision and Pattern Recognition (cs.CV); Multimedia (cs.MM) |
+| Cite as:  | **[arXiv:2106.09889](https://arxiv.org/abs/2106.09889) [cs.CL]** |
+|           | (or **[arXiv:2106.09889v1](https://arxiv.org/abs/2106.09889v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-21-5">5. Bad Characters: Imperceptible NLP Attacks
+</h2>
+
+Title: [Bad Characters: Imperceptible NLP Attacks](https://arxiv.org/abs/2106.09898)
+
+Authors: [Nicholas Boucher](https://arxiv.org/search/cs?searchtype=author&query=Boucher%2C+N), [Ilia Shumailov](https://arxiv.org/search/cs?searchtype=author&query=Shumailov%2C+I), [Ross Anderson](https://arxiv.org/search/cs?searchtype=author&query=Anderson%2C+R), [Nicolas Papernot](https://arxiv.org/search/cs?searchtype=author&query=Papernot%2C+N)
+
+> Several years of research have shown that machine-learning systems are vulnerable to adversarial examples, both in theory and in practice. Until now, such attacks have primarily targeted visual models, exploiting the gap between human and machine perception. Although text-based models have also been attacked with adversarial examples, such attacks struggled to preserve semantic meaning and indistinguishability. In this paper, we explore a large class of adversarial examples that can be used to attack text-based models in a black-box setting without making any human-perceptible visual modification to inputs. We use encoding-specific perturbations that are imperceptible to the human eye to manipulate the outputs of a wide range of Natural Language Processing (NLP) systems from neural machine-translation pipelines to web search engines. We find that with a single imperceptible encoding injection -- representing one invisible character, homoglyph, reordering, or deletion -- an attacker can significantly reduce the performance of vulnerable models, and with three injections most models can be functionally broken. Our attacks work against currently-deployed commercial systems, including those produced by Microsoft and Google, in addition to open source models published by Facebook and IBM. This novel series of attacks presents a significant threat to many language processing systems: an attacker can affect systems in a targeted manner without any assumptions about the underlying model. We conclude that text-based NLP systems require careful input sanitization, just like conventional applications, and that given such systems are now being deployed rapidly at scale, the urgent attention of architects and operators is required.
+
+| Subjects: | **Computation and Language (cs.CL)**; Cryptography and Security (cs.CR); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2106.09898](https://arxiv.org/abs/2106.09898) [cs.CL]** |
+|           | (or **[arXiv:2106.09898v1](https://arxiv.org/abs/2106.09898v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-06-21-6">6. Recurrent Stacking of Layers in Neural Networks: An Application to Neural Machine Translation
+</h2>
+
+Title: [Recurrent Stacking of Layers in Neural Networks: An Application to Neural Machine Translation](https://arxiv.org/abs/2106.10002)
+
+Authors: [Raj Dabre](https://arxiv.org/search/cs?searchtype=author&query=Dabre%2C+R), [Atsushi Fujita](https://arxiv.org/search/cs?searchtype=author&query=Fujita%2C+A)
+
+> In deep neural network modeling, the most common practice is to stack a number of recurrent, convolutional, or feed-forward layers in order to obtain high-quality continuous space representations which in turn improves the quality of the network's prediction. Conventionally, each layer in the stack has its own parameters which leads to a significant increase in the number of model parameters. In this paper, we propose to share parameters across all layers thereby leading to a recurrently stacked neural network model. We report on an extensive case study on neural machine translation (NMT), where we apply our proposed method to an encoder-decoder based neural network model, i.e., the Transformer model, and experiment with three Japanese--English translation datasets. We empirically demonstrate that the translation quality of a model that recurrently stacks a single layer 6 times, despite having significantly fewer parameters, approaches that of a model that stacks 6 layers where each layer has different parameters. We also explore the limits of recurrent stacking where we train extremely deep NMT models. This paper also examines the utility of our recurrently stacked model as a student model through transfer learning via leveraging pre-trained parameters and knowledge distillation, and shows that it compensates for the performance drops in translation quality that the direct training of recurrently stacked model brings. We also show how transfer learning helps in faster decoding on top of the already reduced number of parameters due to recurrent stacking. Finally, we analyze the effects of recurrently stacked layers by visualizing the attentions of models that use recurrently stacked layers and models that do not.
+
+| Comments: | 22 pages. Under review. Work in progress. Extended version of [this https URL](https://ojs.aaai.org//index.php/AAAI/article/view/4590) which is an extension of [arXiv:1807.05353](https://arxiv.org/abs/1807.05353) . The focus is on analyzing the limitations of recurrently stacked layers and methods to overcome said limitations |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2106.10002](https://arxiv.org/abs/2106.10002) [cs.CL]** |
+|           | (or **[arXiv:2106.10002v1](https://arxiv.org/abs/2106.10002v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-21-7">7. Challenges and Limitations with the Metrics Measuring the Complexity of Code-Mixed Text
+</h2>
+
+Title: [Challenges and Limitations with the Metrics Measuring the Complexity of Code-Mixed Text](https://arxiv.org/abs/2106.10123)
+
+Authors: [Vivek Srivastava](https://arxiv.org/search/cs?searchtype=author&query=Srivastava%2C+V), [Mayank Singh](https://arxiv.org/search/cs?searchtype=author&query=Singh%2C+M)
+
+> Code-mixing is a frequent communication style among multilingual speakers where they mix words and phrases from two different languages in the same utterance of text or speech. Identifying and filtering code-mixed text is a challenging task due to its co-existence with monolingual and noisy text. Over the years, several code-mixing metrics have been extensively used to identify and validate code-mixed text quality. This paper demonstrates several inherent limitations of code-mixing metrics with examples from the already existing datasets that are popularly used across various experiments.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2106.10123](https://arxiv.org/abs/2106.10123) [cs.CL]** |
+|           | (or **[arXiv:2106.10123v1](https://arxiv.org/abs/2106.10123v1) [cs.CL]** for this version) |
+
+
+
+
+
 
 
 
