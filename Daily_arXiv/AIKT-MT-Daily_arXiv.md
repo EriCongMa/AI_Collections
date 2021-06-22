@@ -3,6 +3,13 @@
 # Index
 
 
+- [2021-06-22](#2021-06-22)
+
+  - [1. TCIC: Theme Concepts Learning Cross Language and Vision for Image Captioning](#2021-06-22-1)
+  - [2. Interventional Video Grounding with Dual Contrastive Learning](#2021-06-22-2)
+  - [3. CPM-2: Large-scale Cost-effective Pre-trained Language Models](#2021-06-22-3)
+  - [4. Challenges in Translation of Emotions in Multilingual User-Generated Content: Twitter as a Case Study](#2021-06-22-4)
+  - [5. Pay Better Attention to Attention: Head Selection in Multilingual and Multi-Domain Sequence Modeling](#2021-06-22-5)
 - [2021-06-21](#2021-06-21)
 
   - [1. Multi-mode Transformer Transducer with Stochastic Future Context](#2021-06-21-1)
@@ -188,6 +195,104 @@
   - [24. Adapting High-resource NMT Models to Translate Low-resource Related Languages without Parallel Data](#2021-06-01-24)
   - [25. Beyond Noise: Mitigating the Impact of Fine-grained Semantic Divergences on Neural Machine Translation](#2021-06-01-25)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-06-22
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-06-22-1">1. TCIC: Theme Concepts Learning Cross Language and Vision for Image Captioning
+</h2>
+
+Title: [TCIC: Theme Concepts Learning Cross Language and Vision for Image Captioning](https://arxiv.org/abs/2106.10936)
+
+Authors: [Zhihao Fan](https://arxiv.org/search/cs?searchtype=author&query=Fan%2C+Z), [Zhongyu Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+Z), [Siyuan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+S), [Ruize Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+R), [Zejun Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Z), [Haijun Shan](https://arxiv.org/search/cs?searchtype=author&query=Shan%2C+H), [Xuanjing Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+X)
+
+> Existing research for image captioning usually represents an image using a scene graph with low-level facts (objects and relations) and fails to capture the high-level semantics. In this paper, we propose a Theme Concepts extended Image Captioning (TCIC) framework that incorporates theme concepts to represent high-level cross-modality semantics. In practice, we model theme concepts as memory vectors and propose Transformer with Theme Nodes (TTN) to incorporate those vectors for image captioning. Considering that theme concepts can be learned from both images and captions, we propose two settings for their representations learning based on TTN. On the vision side, TTN is configured to take both scene graph based features and theme concepts as input for visual representation learning. On the language side, TTN is configured to take both captions and theme concepts as input for text representation re-construction. Both settings aim to generate target captions with the same transformer-based decoder. During the training, we further align representations of theme concepts learned from images and corresponding captions to enforce the cross-modality learning. Experimental results on MS COCO show the effectiveness of our approach compared to some state-of-the-art models.
+
+| Comments: | IJCAI2021                                                    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2106.10936](https://arxiv.org/abs/2106.10936) [cs.CV]** |
+|           | (or **[arXiv:2106.10936v1](https://arxiv.org/abs/2106.10936v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-22-2">2. Interventional Video Grounding with Dual Contrastive Learning
+</h2>
+
+Title: [Interventional Video Grounding with Dual Contrastive Learning](https://arxiv.org/abs/2106.11013)
+
+Authors: [Guoshun Nan](https://arxiv.org/search/cs?searchtype=author&query=Nan%2C+G), [Rui Qiao](https://arxiv.org/search/cs?searchtype=author&query=Qiao%2C+R), [Yao Xiao](https://arxiv.org/search/cs?searchtype=author&query=Xiao%2C+Y), [Jun Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+J), [Sicong Leng](https://arxiv.org/search/cs?searchtype=author&query=Leng%2C+S), [Hao Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+H), [Wei Lu](https://arxiv.org/search/cs?searchtype=author&query=Lu%2C+W)
+
+> Video grounding aims to localize a moment from an untrimmed video for a given textual query. Existing approaches focus more on the alignment of visual and language stimuli with various likelihood-based matching or regression strategies, i.e., P(Y|X). Consequently, these models may suffer from spurious correlations between the language and video features due to the selection bias of the dataset. 1) To uncover the causality behind the model and data, we first propose a novel paradigm from the perspective of the causal inference, i.e., interventional video grounding (IVG) that leverages backdoor adjustment to deconfound the selection bias based on structured causal model (SCM) and do-calculus P(Y|do(X)). Then, we present a simple yet effective method to approximate the unobserved confounder as it cannot be directly sampled from the dataset. 2) Meanwhile, we introduce a dual contrastive learning approach (DCL) to better align the text and video by maximizing the mutual information (MI) between query and video clips, and the MI between start/end frames of a target moment and the others within a video to learn more informative visual representations. Experiments on three standard benchmarks show the effectiveness of our approaches.
+
+| Comments: | Accepted in CVPR 2021                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2106.11013](https://arxiv.org/abs/2106.11013) [cs.CV]** |
+|           | (or **[arXiv:2106.11013v1](https://arxiv.org/abs/2106.11013v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-22-3">3. CPM-2: Large-scale Cost-effective Pre-trained Language Models
+</h2>
+
+Title: [CPM-2: Large-scale Cost-effective Pre-trained Language Models](https://arxiv.org/abs/2106.10715)
+
+Authors: [Zhengyan Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Z), [Yuxian Gu](https://arxiv.org/search/cs?searchtype=author&query=Gu%2C+Y), [Xu Han](https://arxiv.org/search/cs?searchtype=author&query=Han%2C+X), [Shengqi Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+S), [Chaojun Xiao](https://arxiv.org/search/cs?searchtype=author&query=Xiao%2C+C), [Zhenbo Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+Z), [Yuan Yao](https://arxiv.org/search/cs?searchtype=author&query=Yao%2C+Y), [Fanchao Qi](https://arxiv.org/search/cs?searchtype=author&query=Qi%2C+F), [Jian Guan](https://arxiv.org/search/cs?searchtype=author&query=Guan%2C+J), [Pei Ke](https://arxiv.org/search/cs?searchtype=author&query=Ke%2C+P), [Yanzheng Cai](https://arxiv.org/search/cs?searchtype=author&query=Cai%2C+Y), [Guoyang Zeng](https://arxiv.org/search/cs?searchtype=author&query=Zeng%2C+G), [Zhixing Tan](https://arxiv.org/search/cs?searchtype=author&query=Tan%2C+Z), [Zhiyuan Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Z), [Minlie Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+M), [Wentao Han](https://arxiv.org/search/cs?searchtype=author&query=Han%2C+W), [Yang Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Y), [Xiaoyan Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+X), [Maosong Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+M)
+
+> In recent years, the size of pre-trained language models (PLMs) has grown by leaps and bounds. However, efficiency issues of these large-scale PLMs limit their utilization in real-world scenarios. We present a suite of cost-effective techniques for the use of PLMs to deal with the efficiency issues of pre-training, fine-tuning, and inference. (1) We introduce knowledge inheritance to accelerate the pre-training process by exploiting existing PLMs instead of training models from scratch. (2) We explore the best practice of prompt tuning with large-scale PLMs. Compared with conventional fine-tuning, prompt tuning significantly reduces the number of task-specific parameters. (3) We implement a new inference toolkit, namely InfMoE, for using large-scale PLMs with limited computational resources. Based on our cost-effective pipeline, we pre-train two models: an encoder-decoder bilingual model with 11 billion parameters (CPM-2) and its corresponding MoE version with 198 billion parameters. In our experiments, we compare CPM-2 with mT5 on downstream tasks. Experimental results show that CPM-2 has excellent general language intelligence. Moreover, we validate the efficiency of InfMoE when conducting inference of large-scale models having tens of billions of parameters on a single GPU. All source code and model parameters are available at [this https URL](https://github.com/TsinghuaAI/CPM).
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2106.10715](https://arxiv.org/abs/2106.10715) [cs.CL]** |
+|           | (or **[arXiv:2106.10715v1](https://arxiv.org/abs/2106.10715v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-22-4">4. Challenges in Translation of Emotions in Multilingual User-Generated Content: Twitter as a Case Study
+</h2>
+
+Title: [Challenges in Translation of Emotions in Multilingual User-Generated Content: Twitter as a Case Study](https://arxiv.org/abs/2106.10719)
+
+Authors: [Hadeel Saadany](https://arxiv.org/search/cs?searchtype=author&query=Saadany%2C+H), [Constantin Orasan](https://arxiv.org/search/cs?searchtype=author&query=Orasan%2C+C), [Rocio Caro Quintana](https://arxiv.org/search/cs?searchtype=author&query=Quintana%2C+R+C), [Felix do Carmo](https://arxiv.org/search/cs?searchtype=author&query=Carmo%2C+F+d), [Leonardo Zilio](https://arxiv.org/search/cs?searchtype=author&query=Zilio%2C+L)
+
+> Although emotions are universal concepts, transferring the different shades of emotion from one language to another may not always be straightforward for human translators, let alone for machine translation systems. Moreover, the cognitive states are established by verbal explanations of experience which is shaped by both the verbal and cultural contexts. There are a number of verbal contexts where expression of emotions constitutes the pivotal component of the message. This is particularly true for User-Generated Content (UGC) which can be in the form of a review of a product or a service, a tweet, or a social media post. Recently, it has become common practice for multilingual websites such as Twitter to provide an automatic translation of UGC to reach out to their linguistically diverse users. In such scenarios, the process of translating the user's emotion is entirely automatic with no human intervention, neither for post-editing nor for accuracy checking. In this research, we assess whether automatic translation tools can be a successful real-life utility in transferring emotion in user-generated multilingual data such as tweets. We show that there are linguistic phenomena specific of Twitter data that pose a challenge in translation of emotions in different languages. We summarise these challenges in a list of linguistic features and show how frequent these features are in different language pairs. We also assess the capacity of commonly used methods for evaluating the performance of an MT system with respect to the preservation of emotion in the source text.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2106.10719](https://arxiv.org/abs/2106.10719) [cs.CL]** |
+|           | (or **[arXiv:2106.10719v1](https://arxiv.org/abs/2106.10719v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-22-5">5. Pay Better Attention to Attention: Head Selection in Multilingual and Multi-Domain Sequence Modeling
+</h2>
+
+Title: [Pay Better Attention to Attention: Head Selection in Multilingual and Multi-Domain Sequence Modeling](https://arxiv.org/abs/2106.10840)
+
+Authors: [Hongyu Gong](https://arxiv.org/search/cs?searchtype=author&query=Gong%2C+H), [Yun Tang](https://arxiv.org/search/cs?searchtype=author&query=Tang%2C+Y), [Juan Pino](https://arxiv.org/search/cs?searchtype=author&query=Pino%2C+J), [Xian Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+X)
+
+> Multi-head attention has each of the attention heads collect salient information from different parts of an input sequence, making it a powerful mechanism for sequence modeling. Multilingual and multi-domain learning are common scenarios for sequence modeling, where the key challenge is to maximize positive transfer and mitigate negative transfer across languages and domains. In this paper, we find that non-selective attention sharing is sub-optimal for achieving good generalization across all languages and domains. We further propose attention sharing strategies to facilitate parameter sharing and specialization in multilingual and multi-domain sequence modeling. Our approach automatically learns shared and specialized attention heads for different languages and domains to mitigate their interference. Evaluated in various tasks including speech recognition, text-to-text and speech-to-text translation, the proposed attention sharing strategies consistently bring gains to sequence models built upon multi-head attention. For speech-to-text translation, our approach yields an average of +2.0 BLEU over 13 language directions in multilingual setting and +2.0 BLEU over 3 domains in multi-domain setting.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2106.10840](https://arxiv.org/abs/2106.10840) [cs.CL]** |
+|           | (or **[arXiv:2106.10840v1](https://arxiv.org/abs/2106.10840v1) [cs.CL]** for this version) |
+
+
 
 
 
