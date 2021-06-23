@@ -3,8 +3,16 @@
 # Index
 
 
-- [2021-06-22](#2021-06-22)
+- [2021-06-23](#2021-06-23)
 
+  - [1. On the Evaluation of Machine Translation for Terminology Consistency](#2021-06-23-1)
+  - [2. Dive into Deep Learning](#2021-06-23-2)
+  - [3. Incremental Deep Neural Network Learning using Classification Confidence Thresholding](#2021-06-23-3)
+  - [4. Phrase-level Active Learning for Neural Machine Translation](#2021-06-23-4)
+  - [5. BARTScore: Evaluating Generated Text as Text Generation](#2021-06-23-5)
+  - [6. Do Language Models Perform Generalizable Commonsense Inference?](#2021-06-23-6)
+  - [7. LV-BERT: Exploiting Layer Variety for BERT](#2021-06-23-7)
+- [2021-06-22](#2021-06-22)
   - [1. TCIC: Theme Concepts Learning Cross Language and Vision for Image Captioning](#2021-06-22-1)
   - [2. Interventional Video Grounding with Dual Contrastive Learning](#2021-06-22-2)
   - [3. CPM-2: Large-scale Cost-effective Pre-trained Language Models](#2021-06-22-3)
@@ -195,6 +203,146 @@
   - [24. Adapting High-resource NMT Models to Translate Low-resource Related Languages without Parallel Data](#2021-06-01-24)
   - [25. Beyond Noise: Mitigating the Impact of Fine-grained Semantic Divergences on Neural Machine Translation](#2021-06-01-25)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-06-23
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-06-23-1">1. On the Evaluation of Machine Translation for Terminology Consistency
+</h2>
+
+Title: [On the Evaluation of Machine Translation for Terminology Consistency](https://arxiv.org/abs/2106.11891)
+
+Authors: [Md Mahfuz ibn Alam](https://arxiv.org/search/cs?searchtype=author&query=Alam%2C+M+M+i), [Antonios Anastasopoulos](https://arxiv.org/search/cs?searchtype=author&query=Anastasopoulos%2C+A), [Laurent Besacier](https://arxiv.org/search/cs?searchtype=author&query=Besacier%2C+L), [James Cross](https://arxiv.org/search/cs?searchtype=author&query=Cross%2C+J), [Matthias Gallé](https://arxiv.org/search/cs?searchtype=author&query=Gallé%2C+M), [Philipp Koehn](https://arxiv.org/search/cs?searchtype=author&query=Koehn%2C+P), [Vassilina Nikoulina](https://arxiv.org/search/cs?searchtype=author&query=Nikoulina%2C+V)
+
+> As neural machine translation (NMT) systems become an important part of professional translator pipelines, a growing body of work focuses on combining NMT with terminologies. In many scenarios and particularly in cases of domain adaptation, one expects the MT output to adhere to the constraints provided by a terminology. In this work, we propose metrics to measure the consistency of MT output with regards to a domain terminology. We perform studies on the COVID-19 domain over 5 languages, also performing terminology-targeted human evaluation. We open-source the code for computing all proposed metrics: [this https URL](https://github.com/mahfuzibnalam/terminology_evaluation)
+
+| Comments: | preprint                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2106.11891](https://arxiv.org/abs/2106.11891) [cs.CL]** |
+|           | (or **[arXiv:2106.11891v1](https://arxiv.org/abs/2106.11891v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-23-2">2. Dive into Deep Learning
+</h2>
+
+Title: [Dive into Deep Learning](https://arxiv.org/abs/2106.11342)
+
+Authors: [Aston Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+A), [Zachary C. Lipton](https://arxiv.org/search/cs?searchtype=author&query=Lipton%2C+Z+C), [Mu Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+M), [Alexander J. Smola](https://arxiv.org/search/cs?searchtype=author&query=Smola%2C+A+J)
+
+> This open-source book represents our attempt to make deep learning approachable, teaching readers the concepts, the context, and the code. The entire book is drafted in Jupyter notebooks, seamlessly integrating exposition figures, math, and interactive examples with self-contained code. Our goal is to offer a resource that could (i) be freely available for everyone; (ii) offer sufficient technical depth to provide a starting point on the path to actually becoming an applied machine learning scientist; (iii) include runnable code, showing readers how to solve problems in practice; (iv) allow for rapid updates, both by us and also by the community at large; (v) be complemented by a forum for interactive discussion of technical details and to answer questions.
+
+| Comments: | (HTML) [this https URL](https://d2l.ai/) (GitHub) [this https URL](https://github.com/d2l-ai/d2l-en/) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Machine Learning (cs.LG)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL); Computer Vision and Pattern Recognition (cs.CV) |
+| Cite as:  | **[arXiv:2106.11342](https://arxiv.org/abs/2106.11342) [cs.LG]** |
+|           | (or **[arXiv:2106.11342v1](https://arxiv.org/abs/2106.11342v1) [cs.LG]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-23-3">3. Incremental Deep Neural Network Learning using Classification Confidence Thresholding
+</h2>
+
+Title: [Incremental Deep Neural Network Learning using Classification Confidence Thresholding](https://arxiv.org/abs/2106.11437)
+
+Authors: [Justin Leo](https://arxiv.org/search/cs?searchtype=author&query=Leo%2C+J), [Jugal Kalita](https://arxiv.org/search/cs?searchtype=author&query=Kalita%2C+J)
+
+> Most modern neural networks for classification fail to take into account the concept of the unknown. Trained neural networks are usually tested in an unrealistic scenario with only examples from a closed set of known classes. In an attempt to develop a more realistic model, the concept of working in an open set environment has been introduced. This in turn leads to the concept of incremental learning where a model with its own architecture and initial trained set of data can identify unknown classes during the testing phase and autonomously update itself if evidence of a new class is detected. Some problems that arise in incremental learning are inefficient use of resources to retrain the classifier repeatedly and the decrease of classification accuracy as multiple classes are added over time. This process of instantiating new classes is repeated as many times as necessary, accruing errors. To address these problems, this paper proposes the Classification Confidence Threshold approach to prime neural networks for incremental learning to keep accuracies high by limiting forgetting. A lean method is also used to reduce resources used in the retraining of the neural network. The proposed method is based on the idea that a network is able to incrementally learn a new class even when exposed to a limited number samples associated with the new class. This method can be applied to most existing neural networks with minimal changes to network architecture.
+
+| Comments: | Accepted to IEEE TNNLS                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL); Computer Vision and Pattern Recognition (cs.CV) |
+| DOI:      | [10.1109/TNNLS.2021.3087104](https://arxiv.org/ct?url=https%3A%2F%2Fdx.doi.org%2F10.1109%2FTNNLS.2021.3087104&v=b5b24540) |
+| Cite as:  | **[arXiv:2106.11437](https://arxiv.org/abs/2106.11437) [cs.LG]** |
+|           | (or **[arXiv:2106.11437v1](https://arxiv.org/abs/2106.11437v1) [cs.LG]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-23-4">4. Phrase-level Active Learning for Neural Machine Translation
+</h2>
+
+Title: [Phrase-level Active Learning for Neural Machine Translation](https://arxiv.org/abs/2106.11375)
+
+Authors: [Junjie Hu](https://arxiv.org/search/cs?searchtype=author&query=Hu%2C+J), [Graham Neubig](https://arxiv.org/search/cs?searchtype=author&query=Neubig%2C+G)
+
+> Neural machine translation (NMT) is sensitive to domain shift. In this paper, we address this problem in an active learning setting where we can spend a given budget on translating in-domain data, and gradually fine-tune a pre-trained out-of-domain NMT model on the newly translated data. Existing active learning methods for NMT usually select sentences based on uncertainty scores, but these methods require costly translation of full sentences even when only one or two key phrases within the sentence are informative. To address this limitation, we re-examine previous work from the phrase-based machine translation (PBMT) era that selected not full sentences, but rather individual phrases. However, while incorporating these phrases into PBMT systems was relatively simple, it is less trivial for NMT systems, which need to be trained on full sequences to capture larger structural properties of sentences unique to the new domain. To overcome these hurdles, we propose to select both full sentences and individual phrases from unlabelled data in the new domain for routing to human translators. In a German-English translation task, our active learning approach achieves consistent improvements over uncertainty-based sentence selection methods, improving up to 1.2 BLEU score over strong active learning baselines.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2106.11375](https://arxiv.org/abs/2106.11375) [cs.CL]** |
+|           | (or **[arXiv:2106.11375v1](https://arxiv.org/abs/2106.11375v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-23-5">5. BARTScore: Evaluating Generated Text as Text Generation
+</h2>
+
+Title: [BARTScore: Evaluating Generated Text as Text Generation](https://arxiv.org/abs/2106.11520)
+
+Authors: [Weizhe Yuan](https://arxiv.org/search/cs?searchtype=author&query=Yuan%2C+W), [Graham Neubig](https://arxiv.org/search/cs?searchtype=author&query=Neubig%2C+G), [Pengfei Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+P)
+
+> A wide variety of NLP applications, such as machine translation, summarization, and dialog, involve text generation. One major challenge for these applications is how to evaluate whether such generated texts are actually fluent, accurate, or effective. In this work, we conceptualize the evaluation of generated text as a text generation problem, modeled using pre-trained sequence-to-sequence models. The general idea is that models trained to convert the generated text to/from a reference output or the source text will achieve higher scores when the generated text is better. We operationalize this idea using BART, an encoder-decoder based pre-trained model, and propose a metric BARTScore with a number of variants that can be flexibly applied in an unsupervised fashion to evaluation of text from different perspectives (e.g. informativeness, fluency, or factuality). BARTScore is conceptually simple and empirically effective. It can outperform existing top-scoring metrics in 16 of 22 test settings, covering evaluation of 16 datasets (e.g., machine translation, text summarization) and 7 different perspectives (e.g., informativeness, factuality). Code to calculate BARTScore is available at [this https URL](https://github.com/neulab/BARTScore), and we have released an interactive leaderboard for meta-evaluation at [this http URL](http://explainaboard.nlpedia.ai/leaderboard/task-meval/) on the ExplainaBoard platform, which allows us to interactively understand the strengths, weaknesses, and complementarity of each metric.
+
+| Comments: | Demo at [this http URL](http://explainaboard.nlpedia.ai/leaderboard/task-meval/) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2106.11520](https://arxiv.org/abs/2106.11520) [cs.CL]** |
+|           | (or **[arXiv:2106.11520v1](https://arxiv.org/abs/2106.11520v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-23-6">6. Do Language Models Perform Generalizable Commonsense Inference?
+</h2>
+
+Title: [Do Language Models Perform Generalizable Commonsense Inference?](https://arxiv.org/abs/2106.11533)
+
+Authors: [Peifeng Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+P), [Filip Ilievski](https://arxiv.org/search/cs?searchtype=author&query=Ilievski%2C+F), [Muhao Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+M), [Xiang Ren](https://arxiv.org/search/cs?searchtype=author&query=Ren%2C+X)
+
+> Inspired by evidence that pretrained language models (LMs) encode commonsense knowledge, recent work has applied LMs to automatically populate commonsense knowledge graphs (CKGs). However, there is a lack of understanding on their generalization to multiple CKGs, unseen relations, and novel entities. This paper analyzes the ability of LMs to perform generalizable commonsense inference, in terms of knowledge capacity, transferability, and induction. Our experiments with these three aspects show that: (1) LMs can adapt to different schemas defined by multiple CKGs but fail to reuse the knowledge to generalize to new relations. (2) Adapted LMs generalize well to unseen subjects, but less so on novel objects. Future work should investigate how to improve the transferability and induction of commonsense mining from LMs.
+
+| Comments: | 8 pages, 4 figures. Accepted to ACL'21 Findings              |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2106.11533](https://arxiv.org/abs/2106.11533) [cs.CL]** |
+|           | (or **[arXiv:2106.11533v1](https://arxiv.org/abs/2106.11533v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-23-7">7. LV-BERT: Exploiting Layer Variety for BERT
+</h2>
+
+Title: [LV-BERT: Exploiting Layer Variety for BERT](https://arxiv.org/abs/2106.11740)
+
+Authors: [Weihao Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+W), [Zihang Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+Z), [Fei Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+F), [Qibin Hou](https://arxiv.org/search/cs?searchtype=author&query=Hou%2C+Q), [Jiashi Feng](https://arxiv.org/search/cs?searchtype=author&query=Feng%2C+J)
+
+> Modern pre-trained language models are mostly built upon backbones stacking self-attention and feed-forward layers in an interleaved order. In this paper, beyond this stereotyped layer pattern, we aim to improve pre-trained models by exploiting layer variety from two aspects: the layer type set and the layer order. Specifically, besides the original self-attention and feed-forward layers, we introduce convolution into the layer type set, which is experimentally found beneficial to pre-trained models. Furthermore, beyond the original interleaved order, we explore more layer orders to discover more powerful architectures. However, the introduced layer variety leads to a large architecture space of more than billions of candidates, while training a single candidate model from scratch already requires huge computation cost, making it not affordable to search such a space by directly training large amounts of candidate models. To solve this problem, we first pre-train a supernet from which the weights of all candidate models can be inherited, and then adopt an evolutionary algorithm guided by pre-training accuracy to find the optimal architecture. Extensive experiments show that LV-BERT model obtained by our method outperforms BERT and its variants on various downstream tasks. For example, LV-BERT-small achieves 78.8 on the GLUE testing set, 1.8 higher than the strong baseline ELECTRA-small.
+
+| Comments: | Accepted to Findings of ACL 2021. The code and pre-trained models are available at [this https URL](https://github.com/yuweihao/LV-BERT) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2106.11740](https://arxiv.org/abs/2106.11740) [cs.CL]** |
+|           | (or **[arXiv:2106.11740v1](https://arxiv.org/abs/2106.11740v1) [cs.CL]** for this version) |
+
+
+
 
 
 
