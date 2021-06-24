@@ -3,6 +3,11 @@
 # Index
 
 
+- [2021-06-24](#2021-06-24)
+
+  - [1. A Simple and Practical Approach to Improve Misspellings in OCR Text](#2021-06-24-1)
+  - [2. End-to-End Lexically Constrained Machine Translation for Morphologically Rich Languages](#2021-06-24-2)
+  - [3. Classifying Textual Data with Pre-trained Vision Models through Transfer Learning and Data Transformations](#2021-06-24-3)
 - [2021-06-23](#2021-06-23)
 
   - [1. On the Evaluation of Machine Translation for Terminology Consistency](#2021-06-23-1)
@@ -203,6 +208,69 @@
   - [24. Adapting High-resource NMT Models to Translate Low-resource Related Languages without Parallel Data](#2021-06-01-24)
   - [25. Beyond Noise: Mitigating the Impact of Fine-grained Semantic Divergences on Neural Machine Translation](#2021-06-01-25)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-06-24
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-06-24-1">1. A Simple and Practical Approach to Improve Misspellings in OCR Text
+</h2>
+
+Title: [A Simple and Practical Approach to Improve Misspellings in OCR Text](https://arxiv.org/abs/2106.12030)
+
+Authors: [Junxia Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+J) (1), [Johannes Ledolter](https://arxiv.org/search/cs?searchtype=author&query=Ledolter%2C+J) (2) ((1) Georgetown University Medical Center, Georgetown University, (2) Tippie College of Business, University of Iowa)
+
+> The focus of our paper is the identification and correction of non-word errors in OCR text. Such errors may be the result of incorrect insertion, deletion, or substitution of a character, or the transposition of two adjacent characters within a single word. Or, it can be the result of word boundary problems that lead to run-on errors and incorrect-split errors. The traditional N-gram correction methods can handle single-word errors effectively. However, they show limitations when dealing with split and merge errors. In this paper, we develop an unsupervised method that can handle both errors. The method we develop leads to a sizable improvement in the correction rates. This tutorial paper addresses very difficult word correction problems - namely incorrect run-on and split errors - and illustrates what needs to be considered when addressing such problems. We outline a possible approach and assess its success on a limited study.
+
+| Comments: | 11 pages, 1 figures                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2106.12030](https://arxiv.org/abs/2106.12030) [cs.CL]** |
+|           | (or **[arXiv:2106.12030v1](https://arxiv.org/abs/2106.12030v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-24-2">2. End-to-End Lexically Constrained Machine Translation for Morphologically Rich Languages
+</h2>
+
+Title: [End-to-End Lexically Constrained Machine Translation for Morphologically Rich Languages](https://arxiv.org/abs/2106.12398)
+
+Authors: [Josef Jon](https://arxiv.org/search/cs?searchtype=author&query=Jon%2C+J), [João Paulo Aires](https://arxiv.org/search/cs?searchtype=author&query=Aires%2C+J+P), [Dušan Variš](https://arxiv.org/search/cs?searchtype=author&query=Variš%2C+D), [Ondřej Bojar](https://arxiv.org/search/cs?searchtype=author&query=Bojar%2C+O)
+
+> Lexically constrained machine translation allows the user to manipulate the output sentence by enforcing the presence or absence of certain words and phrases. Although current approaches can enforce terms to appear in the translation, they often struggle to make the constraint word form agree with the rest of the generated output. Our manual analysis shows that 46% of the errors in the output of a baseline constrained model for English to Czech translation are related to agreement. We investigate mechanisms to allow neural machine translation to infer the correct word inflection given lemmatized constraints. In particular, we focus on methods based on training the model with constraints provided as part of the input sequence. Our experiments on the English-Czech language pair show that this approach improves the translation of constrained terms in both automatic and manual evaluation by reducing errors in agreement. Our approach thus eliminates inflection errors, without introducing new errors or decreasing the overall quality of the translation.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2106.12398](https://arxiv.org/abs/2106.12398) [cs.CL]** |
+|           | (or **[arXiv:2106.12398v1](https://arxiv.org/abs/2106.12398v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-24-3">3. Classifying Textual Data with Pre-trained Vision Models through Transfer Learning and Data Transformations
+</h2>
+
+Title: [Classifying Textual Data with Pre-trained Vision Models through Transfer Learning and Data Transformations](https://arxiv.org/abs/2106.12479)
+
+Authors: [Charaf Eddine Benarab](https://arxiv.org/search/cs?searchtype=author&query=Benarab%2C+C+E)
+
+> Knowledge is acquired by humans through experience, and no boundary is set between the kinds of knowledge or skill levels we can achieve on different tasks at the same time. When it comes to Neural Networks, that is not the case, the major breakthroughs in the field are extremely task and domain specific. Vision and language are dealt with in separate manners, using separate methods and different datasets. In this work, we propose to use knowledge acquired by benchmark Vision Models which are trained on ImageNet to help a much smaller architecture learn to classify text. After transforming the textual data contained in the IMDB dataset to gray scale images. An analysis of different domains and the Transfer Learning method is carried out. Despite the challenge posed by the very different datasets, promising results are achieved. The main contribution of this work is a novel approach which links large pretrained models on both language and vision to achieve state-of-the-art results in different sub-fields from the original task. Without needing high compute capacity resources. Specifically, Sentiment Analysis is achieved after transferring knowledge between vision and language models. BERT embeddings are transformed into grayscale images, these images are then used as training examples for pretrained vision models such as VGG16 and ResNet
+> Index Terms: Natural language, Vision, BERT, Transfer Learning, CNN, Domain Adaptation.
+
+| Comments: | Paper contains: 5 pages, 6 figures, 1 table                  |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2106.12479](https://arxiv.org/abs/2106.12479) [cs.CL]** |
+|           | (or **[arXiv:2106.12479v1](https://arxiv.org/abs/2106.12479v1) [cs.CL]** for this version) |
+
+
 
 
 
