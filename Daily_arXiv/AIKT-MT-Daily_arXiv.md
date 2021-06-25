@@ -3,8 +3,13 @@
 # Index
 
 
-- [2021-06-24](#2021-06-24)
+- [2021-06-25](#2021-06-25)
 
+  - [1. A Transformer-based Cross-modal Fusion Model with Adversarial Training for VQA Challenge 2021](#2021-06-25-1)
+  - [2. Charformer: Fast Character Transformers via Gradient-based Subword Tokenization](#2021-06-25-2)
+  - [3. On the Influence of Machine Translation on Language Origin Obfuscation](#2021-06-25-3)
+  - [4. AIT-QA: Question Answering Dataset over Complex Tables in the Airline Industry](#2021-06-25-4)
+- [2021-06-24](#2021-06-24)
   - [1. A Simple and Practical Approach to Improve Misspellings in OCR Text](#2021-06-24-1)
   - [2. End-to-End Lexically Constrained Machine Translation for Morphologically Rich Languages](#2021-06-24-2)
   - [3. Classifying Textual Data with Pre-trained Vision Models through Transfer Learning and Data Transformations](#2021-06-24-3)
@@ -208,6 +213,88 @@
   - [24. Adapting High-resource NMT Models to Translate Low-resource Related Languages without Parallel Data](#2021-06-01-24)
   - [25. Beyond Noise: Mitigating the Impact of Fine-grained Semantic Divergences on Neural Machine Translation](#2021-06-01-25)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-06-25
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-06-25-1">1. A Transformer-based Cross-modal Fusion Model with Adversarial Training for VQA Challenge 2021
+</h2>
+
+Title: [A Transformer-based Cross-modal Fusion Model with Adversarial Training for VQA Challenge 2021](https://arxiv.org/abs/2106.13033)
+
+Authors: [Ke-Han Lu](https://arxiv.org/search/cs?searchtype=author&query=Lu%2C+K), [Bo-Han Fang](https://arxiv.org/search/cs?searchtype=author&query=Fang%2C+B), [Kuan-Yu Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+K)
+
+> In this paper, inspired by the successes of visionlanguage pre-trained models and the benefits from training with adversarial attacks, we present a novel transformerbased cross-modal fusion modeling by incorporating the both notions for VQA challenge 2021. Specifically, the proposed model is on top of the architecture of VinVL model [19], and the adversarial training strategy [4] is applied to make the model robust and generalized. Moreover, two implementation tricks are also used in our system to obtain better results. The experiments demonstrate that the novel framework can achieve 76.72% on VQAv2 test-std set.
+
+| Comments: | CVPR 2021 Workshop: Visual Question Answering (VQA) Challenge |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2106.13033](https://arxiv.org/abs/2106.13033) [cs.CV]** |
+|           | (or **[arXiv:2106.13033v1](https://arxiv.org/abs/2106.13033v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-25-2">2. Charformer: Fast Character Transformers via Gradient-based Subword Tokenization
+</h2>
+
+Title: [Charformer: Fast Character Transformers via Gradient-based Subword Tokenization](https://arxiv.org/abs/2106.12672)
+
+Authors: [Yi Tay](https://arxiv.org/search/cs?searchtype=author&query=Tay%2C+Y), [Vinh Q. Tran](https://arxiv.org/search/cs?searchtype=author&query=Tran%2C+V+Q), [Sebastian Ruder](https://arxiv.org/search/cs?searchtype=author&query=Ruder%2C+S), [Jai Gupta](https://arxiv.org/search/cs?searchtype=author&query=Gupta%2C+J), [Hyung Won Chung](https://arxiv.org/search/cs?searchtype=author&query=Chung%2C+H+W), [Dara Bahri](https://arxiv.org/search/cs?searchtype=author&query=Bahri%2C+D), [Zhen Qin](https://arxiv.org/search/cs?searchtype=author&query=Qin%2C+Z), [Simon Baumgartner](https://arxiv.org/search/cs?searchtype=author&query=Baumgartner%2C+S), [Cong Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+C), [Donald Metzler](https://arxiv.org/search/cs?searchtype=author&query=Metzler%2C+D)
+
+> State-of-the-art models in natural language processing rely on separate rigid subword tokenization algorithms, which limit their generalization ability and adaptation to new settings. In this paper, we propose a new model inductive bias that learns a subword tokenization end-to-end as part of the model. To this end, we introduce a soft gradient-based subword tokenization module (GBST) that automatically learns latent subword representations from characters in a data-driven fashion. Concretely, GBST enumerates candidate subword blocks and learns to score them in a position-wise fashion using a block scoring network. We additionally introduce Charformer, a deep Transformer model that integrates GBST and operates on the byte level. Via extensive experiments on English GLUE, multilingual, and noisy text datasets, we show that Charformer outperforms a series of competitive byte-level baselines while generally performing on par and sometimes outperforming subword-based models. Additionally, Charformer is fast, improving the speed of both vanilla byte-level and subword-level Transformers by 28%-100% while maintaining competitive quality. We believe this work paves the way for highly performant token-free models that are trained completely end-to-end.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2106.12672](https://arxiv.org/abs/2106.12672) [cs.CL]** |
+|           | (or **[arXiv:2106.12672v1](https://arxiv.org/abs/2106.12672v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-25-3">3. On the Influence of Machine Translation on Language Origin Obfuscation
+</h2>
+
+Title: [On the Influence of Machine Translation on Language Origin Obfuscation](https://arxiv.org/abs/2106.12830)
+
+Authors: [Benjamin Murauer](https://arxiv.org/search/cs?searchtype=author&query=Murauer%2C+B), [Michael Tschuggnall](https://arxiv.org/search/cs?searchtype=author&query=Tschuggnall%2C+M), [Günther Specht](https://arxiv.org/search/cs?searchtype=author&query=Specht%2C+G)
+
+> In the last decade, machine translation has become a popular means to deal with multilingual digital content. By providing higher quality translations, obfuscating the source language of a text becomes more attractive. In this paper, we analyze the ability to detect the source language from the translated output of two widely used commercial machine translation systems by utilizing machine-learning algorithms with basic textual features like n-grams. Evaluations show that the source language can be reconstructed with high accuracy for documents that contain a sufficient amount of translated text. In addition, we analyze how the document size influences the performance of the prediction, as well as how limiting the set of possible source languages improves the classification accuracy.
+
+| Comments: | This was peer-reviewed, accepted and presented at [this https URL](https://www.cicling.org/2018/), but the organizer somehow failed to publish the proceedings |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2106.12830](https://arxiv.org/abs/2106.12830) [cs.CL]** |
+|           | (or **[arXiv:2106.12830v1](https://arxiv.org/abs/2106.12830v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-25-4">4. AIT-QA: Question Answering Dataset over Complex Tables in the Airline Industry
+</h2>
+
+Title: [AIT-QA: Question Answering Dataset over Complex Tables in the Airline Industry](https://arxiv.org/abs/2106.12944)
+
+Authors: [Yannis Katsis](https://arxiv.org/search/cs?searchtype=author&query=Katsis%2C+Y), [Saneem Chemmengath](https://arxiv.org/search/cs?searchtype=author&query=Chemmengath%2C+S), [Vishwajeet Kumar](https://arxiv.org/search/cs?searchtype=author&query=Kumar%2C+V), [Samarth Bharadwaj](https://arxiv.org/search/cs?searchtype=author&query=Bharadwaj%2C+S), [Mustafa Canim](https://arxiv.org/search/cs?searchtype=author&query=Canim%2C+M), [Michael Glass](https://arxiv.org/search/cs?searchtype=author&query=Glass%2C+M), [Alfio Gliozzo](https://arxiv.org/search/cs?searchtype=author&query=Gliozzo%2C+A), [Feifei Pan](https://arxiv.org/search/cs?searchtype=author&query=Pan%2C+F), [Jaydeep Sen](https://arxiv.org/search/cs?searchtype=author&query=Sen%2C+J), [Karthik Sankaranarayanan](https://arxiv.org/search/cs?searchtype=author&query=Sankaranarayanan%2C+K), [Soumen Chakrabarti](https://arxiv.org/search/cs?searchtype=author&query=Chakrabarti%2C+S)
+
+> Recent advances in transformers have enabled Table Question Answering (Table QA) systems to achieve high accuracy and SOTA results on open domain datasets like WikiTableQuestions and WikiSQL. Such transformers are frequently pre-trained on open-domain content such as Wikipedia, where they effectively encode questions and corresponding tables from Wikipedia as seen in Table QA dataset. However, web tables in Wikipedia are notably flat in their layout, with the first row as the sole column header. The layout lends to a relational view of tables where each row is a tuple. Whereas, tables in domain-specific business or scientific documents often have a much more complex layout, including hierarchical row and column headers, in addition to having specialized vocabulary terms from that domain.
+> To address this problem, we introduce the domain-specific Table QA dataset AIT-QA (Airline Industry Table QA). The dataset consists of 515 questions authored by human annotators on 116 tables extracted from public U.S. SEC filings (publicly available at: [this https URL](https://www.sec.gov/edgar.shtml)) of major airline companies for the fiscal years 2017-2019. We also provide annotations pertaining to the nature of questions, marking those that require hierarchical headers, domain-specific terminology, and paraphrased forms. Our zero-shot baseline evaluation of three transformer-based SOTA Table QA methods - TaPAS (end-to-end), TaBERT (semantic parsing-based), and RCI (row-column encoding-based) - clearly exposes the limitation of these methods in this practical setting, with the best accuracy at just 51.8\% (RCI). We also present pragmatic table preprocessing steps used to pivot and project these complex tables into a layout suitable for the SOTA Table QA models.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2106.12944](https://arxiv.org/abs/2106.12944) [cs.CL]** |
+|           | (or **[arXiv:2106.12944v1](https://arxiv.org/abs/2106.12944v1) [cs.CL]** for this version) |
+
+
+
 
 
 
