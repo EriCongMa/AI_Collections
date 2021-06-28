@@ -3,8 +3,14 @@
 # Index
 
 
-- [2021-06-25](#2021-06-25)
+- [2021-06-28](#2021-06-28)
 
+  - [1. ParaLaw Nets -- Cross-lingual Sentence-level Pretraining for Legal Text Processing](#2021-06-28-1)
+  - [2. Manually Annotated Spelling Error Corpus for Amharic](#2021-06-28-2)
+  - [3. Language Models are Good Translators](#2021-06-28-3)
+  - [4. Learning to Sample Replacements for ELECTRA Pre-Training](#2021-06-28-4)
+  - [5. DeltaLM: Encoder-Decoder Pre-training for Language Generation and Translation by Augmenting Pretrained Multilingual Encoders](#2021-06-28-5)
+- [2021-06-25](#2021-06-25)
   - [1. A Transformer-based Cross-modal Fusion Model with Adversarial Training for VQA Challenge 2021](#2021-06-25-1)
   - [2. Charformer: Fast Character Transformers via Gradient-based Subword Tokenization](#2021-06-25-2)
   - [3. On the Influence of Machine Translation on Language Origin Obfuscation](#2021-06-25-3)
@@ -213,6 +219,107 @@
   - [24. Adapting High-resource NMT Models to Translate Low-resource Related Languages without Parallel Data](#2021-06-01-24)
   - [25. Beyond Noise: Mitigating the Impact of Fine-grained Semantic Divergences on Neural Machine Translation](#2021-06-01-25)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-06-28
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-06-28-1">1. ParaLaw Nets -- Cross-lingual Sentence-level Pretraining for Legal Text Processing
+</h2>
+
+Title: [ParaLaw Nets -- Cross-lingual Sentence-level Pretraining for Legal Text Processing](https://arxiv.org/abs/2106.13403)
+
+Authors: [Ha-Thanh Nguyen](https://arxiv.org/search/cs?searchtype=author&query=Nguyen%2C+H), [Vu Tran](https://arxiv.org/search/cs?searchtype=author&query=Tran%2C+V), [Phuong Minh Nguyen](https://arxiv.org/search/cs?searchtype=author&query=Nguyen%2C+P+M), [Thi-Hai-Yen Vuong](https://arxiv.org/search/cs?searchtype=author&query=Vuong%2C+T), [Quan Minh Bui](https://arxiv.org/search/cs?searchtype=author&query=Bui%2C+Q+M), [Chau Minh Nguyen](https://arxiv.org/search/cs?searchtype=author&query=Nguyen%2C+C+M), [Binh Tran Dang](https://arxiv.org/search/cs?searchtype=author&query=Dang%2C+B+T), [Minh Le Nguyen](https://arxiv.org/search/cs?searchtype=author&query=Nguyen%2C+M+L), [Ken Satoh](https://arxiv.org/search/cs?searchtype=author&query=Satoh%2C+K)
+
+> Ambiguity is a characteristic of natural language, which makes expression ideas flexible. However, in a domain that requires accurate statements, it becomes a barrier. Specifically, a single word can have many meanings and multiple words can have the same meaning. When translating a text into a foreign language, the translator needs to determine the exact meaning of each element in the original sentence to produce the correct translation sentence. From that observation, in this paper, we propose ParaLaw Nets, a pretrained model family using sentence-level cross-lingual information to reduce ambiguity and increase the performance in legal text processing. This approach achieved the best result in the Question Answering task of COLIEE-2021.
+
+| Comments: | Also published in COLIEE 2021's Proceeding                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2106.13403](https://arxiv.org/abs/2106.13403) [cs.CL]** |
+|           | (or **[arXiv:2106.13403v1](https://arxiv.org/abs/2106.13403v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-28-2">2. Manually Annotated Spelling Error Corpus for Amharic
+</h2>
+
+Title: [Manually Annotated Spelling Error Corpus for Amharic](https://arxiv.org/abs/2106.13521)
+
+Authors: [Andargachew Mekonnen Gezmu](https://arxiv.org/search/cs?searchtype=author&query=Gezmu%2C+A+M), [Tirufat Tesifaye Lema](https://arxiv.org/search/cs?searchtype=author&query=Lema%2C+T+T), [Binyam Ephrem Seyoum](https://arxiv.org/search/cs?searchtype=author&query=Seyoum%2C+B+E), [Andreas Nürnberger](https://arxiv.org/search/cs?searchtype=author&query=Nürnberger%2C+A)
+
+> This paper presents a manually annotated spelling error corpus for Amharic, lingua franca in Ethiopia. The corpus is designed to be used for the evaluation of spelling error detection and correction. The misspellings are tagged as non-word and real-word errors. In addition, the contextual information available in the corpus makes it useful in dealing with both types of spelling errors.
+
+| Comments: | Accepted to 2nd AfricaNLP Workshop at EACL 2021              |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2106.13521](https://arxiv.org/abs/2106.13521) [cs.CL]** |
+|           | (or **[arXiv:2106.13521v1](https://arxiv.org/abs/2106.13521v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-28-3">3. Language Models are Good Translators
+</h2>
+
+Title: [Language Models are Good Translators](https://arxiv.org/abs/2106.13627)
+
+Authors: [Shuo Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+S), [Zhaopeng Tu](https://arxiv.org/search/cs?searchtype=author&query=Tu%2C+Z), [Zhixing Tan](https://arxiv.org/search/cs?searchtype=author&query=Tan%2C+Z), [Wenxuan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+W), [Maosong Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+M), [Yang Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Y)
+
+> Recent years have witnessed the rapid advance in neural machine translation (NMT), the core of which lies in the encoder-decoder architecture. Inspired by the recent progress of large-scale pre-trained language models on machine translation in a limited scenario, we firstly demonstrate that a single language model (LM4MT) can achieve comparable performance with strong encoder-decoder NMT models on standard machine translation benchmarks, using the same training data and similar amount of model parameters. LM4MT can also easily utilize source-side texts as additional supervision. Though modeling the source- and target-language texts with the same mechanism, LM4MT can provide unified representations for both source and target sentences, which can better transfer knowledge across languages. Extensive experiments on pivot-based and zero-shot translation tasks show that LM4MT can outperform the encoder-decoder NMT model by a large margin.
+
+| Comments: | 12 pages. Work in progress. An earlier verison of this manuscript is under review |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2106.13627](https://arxiv.org/abs/2106.13627) [cs.CL]** |
+|           | (or **[arXiv:2106.13627v1](https://arxiv.org/abs/2106.13627v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-28-4">4. Learning to Sample Replacements for ELECTRA Pre-Training
+</h2>
+
+Title: [Learning to Sample Replacements for ELECTRA Pre-Training](https://arxiv.org/abs/2106.13715)
+
+Authors: [Yaru Hao](https://arxiv.org/search/cs?searchtype=author&query=Hao%2C+Y), [Li Dong](https://arxiv.org/search/cs?searchtype=author&query=Dong%2C+L), [Hangbo Bao](https://arxiv.org/search/cs?searchtype=author&query=Bao%2C+H), [Ke Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+K), [Furu Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+F)
+
+> ELECTRA pretrains a discriminator to detect replaced tokens, where the replacements are sampled from a generator trained with masked language modeling. Despite the compelling performance, ELECTRA suffers from the following two issues. First, there is no direct feedback loop from discriminator to generator, which renders replacement sampling inefficient. Second, the generator's prediction tends to be over-confident along with training, making replacements biased to correct tokens. In this paper, we propose two methods to improve replacement sampling for ELECTRA pre-training. Specifically, we augment sampling with a hardness prediction mechanism, so that the generator can encourage the discriminator to learn what it has not acquired. We also prove that efficient sampling reduces the training variance of the discriminator. Moreover, we propose to use a focal loss for the generator in order to relieve oversampling of correct tokens as replacements. Experimental results show that our method improves ELECTRA pre-training on various downstream tasks.
+
+| Comments: | Accepted by Findings of ACL 2021                             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2106.13715](https://arxiv.org/abs/2106.13715) [cs.CL]** |
+|           | (or **[arXiv:2106.13715v1](https://arxiv.org/abs/2106.13715v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-28-5">5. DeltaLM: Encoder-Decoder Pre-training for Language Generation and Translation by Augmenting Pretrained Multilingual Encoders
+</h2>
+
+Title: [DeltaLM: Encoder-Decoder Pre-training for Language Generation and Translation by Augmenting Pretrained Multilingual Encoders](https://arxiv.org/abs/2106.13736)
+
+Authors: [Shuming Ma](https://arxiv.org/search/cs?searchtype=author&query=Ma%2C+S), [Li Dong](https://arxiv.org/search/cs?searchtype=author&query=Dong%2C+L), [Shaohan Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+S), [Dongdong Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+D), [Alexandre Muzio](https://arxiv.org/search/cs?searchtype=author&query=Muzio%2C+A), [Saksham Singhal](https://arxiv.org/search/cs?searchtype=author&query=Singhal%2C+S), [Hany Hassan Awadalla](https://arxiv.org/search/cs?searchtype=author&query=Awadalla%2C+H+H), [Xia Song](https://arxiv.org/search/cs?searchtype=author&query=Song%2C+X), [Furu Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+F)
+
+> While pretrained encoders have achieved success in various natural language understanding (NLU) tasks, there is a gap between these pretrained encoders and natural language generation (NLG). NLG tasks are often based on the encoder-decoder framework, where the pretrained encoders can only benefit part of it. To reduce this gap, we introduce DeltaLM, a pretrained multilingual encoder-decoder model that regards the decoder as the task layer of off-the-shelf pretrained encoders. Specifically, we augment the pretrained multilingual encoder with a decoder and pre-train it in a self-supervised way. To take advantage of both the large-scale monolingual data and bilingual data, we adopt the span corruption and translation span corruption as the pre-training tasks. Experiments show that DeltaLM outperforms various strong baselines on both natural language generation and translation tasks, including machine translation, abstractive text summarization, data-to-text, and question generation.
+
+| Comments: | Work in progress                                             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2106.13736](https://arxiv.org/abs/2106.13736) [cs.CL]** |
+|           | (or **[arXiv:2106.13736v1](https://arxiv.org/abs/2106.13736v1) [cs.CL]** for this version) |
+
+
 
 
 
