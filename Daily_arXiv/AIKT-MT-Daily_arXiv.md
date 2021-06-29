@@ -3,6 +3,16 @@
 # Index
 
 
+- [2021-06-29](#2021-06-29)
+
+  - [1. Multimodal Few-Shot Learning with Frozen Language Models](#2021-06-29-1)
+  - [2. Core Challenges in Embodied Vision-Language Planning](#2021-06-29-2)
+  - [3. UMIC: An Unreferenced Metric for Image Captioning via Contrastive Learning](#2021-06-29-3)
+  - [4. Visual Conceptual Blending with Large-scale Language and Vision Models](#2021-06-29-4)
+  - [5. A Closer Look at How Fine-tuning Changes BERT](#2021-06-29-5)
+  - [6. Word2Box: Learning Word Representation Using Box Embeddings](#2021-06-29-6)
+  - [7. A Theory of Language Learning](#2021-06-29-7)
+  - [8. Key Information Extraction From Documents: Evaluation And Generator](#2021-06-29-8)
 - [2021-06-28](#2021-06-28)
 
   - [1. ParaLaw Nets -- Cross-lingual Sentence-level Pretraining for Legal Text Processing](#2021-06-28-1)
@@ -219,6 +229,161 @@
   - [24. Adapting High-resource NMT Models to Translate Low-resource Related Languages without Parallel Data](#2021-06-01-24)
   - [25. Beyond Noise: Mitigating the Impact of Fine-grained Semantic Divergences on Neural Machine Translation](#2021-06-01-25)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-06-29
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-06-29-1">1. Multimodal Few-Shot Learning with Frozen Language Models
+</h2>
+
+Title: [Multimodal Few-Shot Learning with Frozen Language Models](https://arxiv.org/abs/2106.13884)
+
+Authors: [Maria Tsimpoukelli](https://arxiv.org/search/cs?searchtype=author&query=Tsimpoukelli%2C+M), [Jacob Menick](https://arxiv.org/search/cs?searchtype=author&query=Menick%2C+J), [Serkan Cabi](https://arxiv.org/search/cs?searchtype=author&query=Cabi%2C+S), [S.M. Ali Eslami](https://arxiv.org/search/cs?searchtype=author&query=Eslami%2C+S+A), [Oriol Vinyals](https://arxiv.org/search/cs?searchtype=author&query=Vinyals%2C+O), [Felix Hill](https://arxiv.org/search/cs?searchtype=author&query=Hill%2C+F)
+
+> When trained at sufficient scale, auto-regressive language models exhibit the notable ability to learn a new language task after being prompted with just a few examples. Here, we present a simple, yet effective, approach for transferring this few-shot learning ability to a multimodal setting (vision and language). Using aligned image and caption data, we train a vision encoder to represent each image as a sequence of continuous embeddings, such that a pre-trained, frozen language model prompted with this prefix generates the appropriate caption. The resulting system is a multimodal few-shot learner, with the surprising ability to learn a variety of new tasks when conditioned on examples, represented as a sequence of multiple interleaved image and text embeddings. We demonstrate that it can rapidly learn words for new objects and novel visual categories, do visual question-answering with only a handful of examples, and make use of outside knowledge, by measuring a single model on a variety of established and new benchmarks.
+
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2106.13884](https://arxiv.org/abs/2106.13884) [cs.CV]** |
+|           | (or **[arXiv:2106.13884v1](https://arxiv.org/abs/2106.13884v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-29-2">2. Core Challenges in Embodied Vision-Language Planning
+</h2>
+
+Title: [Core Challenges in Embodied Vision-Language Planning](https://arxiv.org/abs/2106.13948)
+
+Authors: [Jonathan Francis](https://arxiv.org/search/cs?searchtype=author&query=Francis%2C+J), [Nariaki Kitamura](https://arxiv.org/search/cs?searchtype=author&query=Kitamura%2C+N), [Felix Labelle](https://arxiv.org/search/cs?searchtype=author&query=Labelle%2C+F), [Xiaopeng Lu](https://arxiv.org/search/cs?searchtype=author&query=Lu%2C+X), [Ingrid Navarro](https://arxiv.org/search/cs?searchtype=author&query=Navarro%2C+I), [Jean Oh](https://arxiv.org/search/cs?searchtype=author&query=Oh%2C+J)
+
+> Recent advances in the areas of multimodal machine learning and artificial intelligence (AI) have led to the development of challenging tasks at the intersection of Computer Vision, Natural Language Processing, and Embodied AI. Whereas many approaches and previous survey pursuits have characterised one or two of these dimensions, there has not been a holistic analysis at the center of all three. Moreover, even when combinations of these topics are considered, more focus is placed on describing, e.g., current architectural methods, as opposed to also illustrating high-level challenges and opportunities for the field. In this survey paper, we discuss Embodied Vision-Language Planning (EVLP) tasks, a family of prominent embodied navigation and manipulation problems that jointly use computer vision and natural language. We propose a taxonomy to unify these tasks and provide an in-depth analysis and comparison of the new and current algorithmic approaches, metrics, simulated environments, as well as the datasets used for EVLP tasks. Finally, we present the core challenges that we believe new EVLP works should seek to address, and we advocate for task construction that enables model generalizability and furthers real-world deployment.
+
+| Comments: | 35 pages                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL); Computer Vision and Pattern Recognition (cs.CV) |
+| Cite as:  | **[arXiv:2106.13948](https://arxiv.org/abs/2106.13948) [cs.LG]** |
+|           | (or **[arXiv:2106.13948v1](https://arxiv.org/abs/2106.13948v1) [cs.LG]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-29-3">3. UMIC: An Unreferenced Metric for Image Captioning via Contrastive Learning
+</h2>
+
+Title: [UMIC: An Unreferenced Metric for Image Captioning via Contrastive Learning](https://arxiv.org/abs/2106.14019)
+
+Authors: [Hwanhee Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+H), [Seunghyun Yoon](https://arxiv.org/search/cs?searchtype=author&query=Yoon%2C+S), [Franck Dernoncourt](https://arxiv.org/search/cs?searchtype=author&query=Dernoncourt%2C+F), [Trung Bui](https://arxiv.org/search/cs?searchtype=author&query=Bui%2C+T), [Kyomin Jung](https://arxiv.org/search/cs?searchtype=author&query=Jung%2C+K)
+
+> Despite the success of various text generation metrics such as BERTScore, it is still difficult to evaluate the image captions without enough reference captions due to the diversity of the descriptions. In this paper, we introduce a new metric UMIC, an Unreferenced Metric for Image Captioning which does not require reference captions to evaluate image captions. Based on Vision-and-Language BERT, we train UMIC to discriminate negative captions via contrastive learning. Also, we observe critical problems of the previous benchmark dataset (i.e., human annotations) on image captioning metric, and introduce a new collection of human annotations on the generated captions. We validate UMIC on four datasets, including our new dataset, and show that UMIC has a higher correlation than all previous metrics that require multiple references. We release the benchmark dataset and pre-trained models to compute the UMIC.
+
+| Comments: | ACL 2021                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Computer Vision and Pattern Recognition (cs.CV) |
+| Cite as:  | **[arXiv:2106.14019](https://arxiv.org/abs/2106.14019) [cs.CL]** |
+|           | (or **[arXiv:2106.14019v1](https://arxiv.org/abs/2106.14019v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-06-29-4">4. Visual Conceptual Blending with Large-scale Language and Vision Models
+</h2>
+
+Title: [Visual Conceptual Blending with Large-scale Language and Vision Models](https://arxiv.org/abs/2106.14127)
+
+Authors: [Songwei Ge](https://arxiv.org/search/cs?searchtype=author&query=Ge%2C+S), [Devi Parikh](https://arxiv.org/search/cs?searchtype=author&query=Parikh%2C+D)
+
+> We ask the question: to what extent can recent large-scale language and image generation models blend visual concepts? Given an arbitrary object, we identify a relevant object and generate a single-sentence description of the blend of the two using a language model. We then generate a visual depiction of the blend using a text-based image generation model. Quantitative and qualitative evaluations demonstrate the superiority of language models over classical methods for conceptual blending, and of recent large-scale image generation models over prior models for the visual depiction.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Computer Vision and Pattern Recognition (cs.CV) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2106.14127](https://arxiv.org/abs/2106.14127) [cs.CL]** |
+|           | (or **[arXiv:2106.14127v1](https://arxiv.org/abs/2106.14127v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-29-5">5. A Closer Look at How Fine-tuning Changes BERT
+</h2>
+
+Title: [A Closer Look at How Fine-tuning Changes BERT](https://arxiv.org/abs/2106.14282)
+
+Authors: [Yichu Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+Y), [Vivek Srikumar](https://arxiv.org/search/cs?searchtype=author&query=Srikumar%2C+V)
+
+> Given the prevalence of pre-trained contextualized representations in today's NLP, there have been several efforts to understand what information such representations contain. A common strategy to use such representations is to fine-tune them for an end task. However, how fine-tuning for a task changes the underlying space is less studied. In this work, we study the English BERT family and use two probing techniques to analyze how fine-tuning changes the space. Our experiments reveal that fine-tuning improves performance because it pushes points associated with a label away from other labels. By comparing the representations before and after fine-tuning, we also discover that fine-tuning does not change the representations arbitrarily; instead, it adjusts the representations to downstream tasks while preserving the original structure. Finally, using carefully constructed experiments, we show that fine-tuning can encode training sets in a representation, suggesting an overfitting problem of a new kind.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2106.14282](https://arxiv.org/abs/2106.14282) [cs.CL]** |
+|           | (or **[arXiv:2106.14282v1](https://arxiv.org/abs/2106.14282v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-29-6">6. Word2Box: Learning Word Representation Using Box Embeddings
+</h2>
+
+Title: [Word2Box: Learning Word Representation Using Box Embeddings](https://arxiv.org/abs/2106.14361)
+
+Authors: [Shib Sankar Dasgupta](https://arxiv.org/search/cs?searchtype=author&query=Dasgupta%2C+S+S), [Michael Boratko](https://arxiv.org/search/cs?searchtype=author&query=Boratko%2C+M), [Shriya Atmakuri](https://arxiv.org/search/cs?searchtype=author&query=Atmakuri%2C+S), [Xiang Lorraine Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+X+L), [Dhruvesh Patel](https://arxiv.org/search/cs?searchtype=author&query=Patel%2C+D), [Andrew McCallum](https://arxiv.org/search/cs?searchtype=author&query=McCallum%2C+A)
+
+> Learning vector representations for words is one of the most fundamental topics in NLP, capable of capturing syntactic and semantic relationships useful in a variety of downstream NLP tasks. Vector representations can be limiting, however, in that typical scoring such as dot product similarity intertwines position and magnitude of the vector in space. Exciting innovations in the space of representation learning have proposed alternative fundamental representations, such as distributions, hyperbolic vectors, or regions. Our model, Word2Box, takes a region-based approach to the problem of word representation, representing words as n-dimensional rectangles. These representations encode position and breadth independently and provide additional geometric operations such as intersection and containment which allow them to model co-occurrence patterns vectors struggle with. We demonstrate improved performance on various word similarity tasks, particularly on less common words, and perform a qualitative analysis exploring the additional unique expressivity provided by Word2Box.
+
+| Comments: | Work in progress                                             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2106.14361](https://arxiv.org/abs/2106.14361) [cs.CL]** |
+|           | (or **[arXiv:2106.14361v1](https://arxiv.org/abs/2106.14361v1) [cs.CL]** for this version) |
+
+
+
+<h2 id="2021-06-29-7">7. A Theory of Language Learning
+</h2>
+
+Title: [A Theory of Language Learning](https://arxiv.org/abs/2106.14612)
+
+Authors: [Robert Worden](https://arxiv.org/search/cs?searchtype=author&query=Worden%2C+R)
+
+> A theory of language learning is described, which uses Bayesian induction of feature structures (scripts) and script functions. Each word sense in a language is mentally represented by an m-script, a script function which embodies all the syntax and semantics of the word. M-scripts form a fully-lexicalised unification grammar, which can support adult language. Each word m-script can be learnt robustly from about six learning examples. The theory has been implemented as a computer model, which can bootstrap-learn a language from zero vocabulary. The Bayesian learning mechanism is (1) Capable: to learn arbitrarily complex meanings and syntactic structures; (2) Fast: learning these structures from a few examples each; (3) Robust: learning in the presence of much irrelevant noise, and (4) Self-repairing: able to acquire implicit negative evidence, using it to learn exceptions. Children learning language are clearly all of (1) - (4), whereas connectionist theories fail on (1) and (2), and symbolic theories fail on (3) and (4). The theory is in good agreement with many key facts of language acquisition, including facts which are problematic for other theories. It is compared with over 100 key cross-linguistic findings about acquisition of the lexicon, phrase structure, morphology, complementation and control, auxiliaries, verb argument structures, gaps and movement - in nearly all cases giving unforced agreement without extra assumptions.
+
+| Subjects:    | **Computation and Language (cs.CL)**; Neurons and Cognition (q-bio.NC) |
+| ------------ | ------------------------------------------------------------ |
+| ACM classes: | J.3                                                          |
+| Cite as:     | **[arXiv:2106.14612](https://arxiv.org/abs/2106.14612) [cs.CL]** |
+|              | (or **[arXiv:2106.14612v1](https://arxiv.org/abs/2106.14612v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-29-8">8. Key Information Extraction From Documents: Evaluation And Generator
+</h2>
+
+Title: [Key Information Extraction From Documents: Evaluation And Generator](https://arxiv.org/abs/2106.14624)
+
+Authors: [Oliver Bensch](https://arxiv.org/search/cs?searchtype=author&query=Bensch%2C+O), [Mirela Popa](https://arxiv.org/search/cs?searchtype=author&query=Popa%2C+M), [Constantin Spille](https://arxiv.org/search/cs?searchtype=author&query=Spille%2C+C)
+
+> Extracting information from documents usually relies on natural language processing methods working on one-dimensional sequences of text. In some cases, for example, for the extraction of key information from semi-structured documents, such as invoice-documents, spatial and formatting information of text are crucial to understand the contextual meaning. Convolutional neural networks are already common in computer vision models to process and extract relationships in multidimensional data. Therefore, natural language processing models have already been combined with computer vision models in the past, to benefit from e.g. positional information and to improve performance of these key information extraction models. Existing models were either trained on unpublished data sets or on an annotated collection of receipts, which did not focus on PDF-like documents. Hence, in this research project a template-based document generator was created to compare state-of-the-art models for information extraction. An existing information extraction model "Chargrid" (Katti et al., 2019) was reconstructed and the impact of a bounding box regression decoder, as well as the impact of an NLP pre-processing step was evaluated for information extraction from documents. The results have shown that NLP based pre-processing is beneficial for model performance. However, the use of a bounding box regression decoder increases the model performance only for fields that do not follow a rectangular shape.
+
+| Comments: | 7 pages, 1 figure, accepted at the 2nd International Deep Learning meets Ontologies and Natural Language Processing workshop at ESWC 2021, Hersonissos, Greece |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2106.14624](https://arxiv.org/abs/2106.14624) [cs.CL]** |
+|           | (or **[arXiv:2106.14624v1](https://arxiv.org/abs/2106.14624v1) [cs.CL]** for this version) |
+
+
 
 
 
