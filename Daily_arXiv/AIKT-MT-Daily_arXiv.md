@@ -3,8 +3,15 @@
 # Index
 
 
-- [2021-06-29](#2021-06-29)
+- [2021-06-30](#2021-06-30)
 
+  - [1. Don't Take It Literally: An Edit-Invariant Sequence Loss for Text Generation](#2021-06-30-1)
+  - [2. A Simple and Efficient Probabilistic Language model for Code-Mixed Text](#2021-06-30-2)
+  - [3. Language Lexicons for Hindi-English Multilingual Text Processing](#2021-06-30-3)
+  - [4. Neural Machine Translation for Low-Resource Languages: A Survey](#2021-06-30-4)
+  - [5. Scientific Credibility of Machine Translation Research: A Meta-Evaluation of 769 Papers](#2021-06-30-5)
+  - [6. Rethinking the Evaluation of Neural Machine Translation](#2021-06-30-6)
+- [2021-06-29](#2021-06-29)
   - [1. Multimodal Few-Shot Learning with Frozen Language Models](#2021-06-29-1)
   - [2. Core Challenges in Embodied Vision-Language Planning](#2021-06-29-2)
   - [3. UMIC: An Unreferenced Metric for Image Captioning via Contrastive Learning](#2021-06-29-3)
@@ -229,6 +236,126 @@
   - [24. Adapting High-resource NMT Models to Translate Low-resource Related Languages without Parallel Data](#2021-06-01-24)
   - [25. Beyond Noise: Mitigating the Impact of Fine-grained Semantic Divergences on Neural Machine Translation](#2021-06-01-25)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-06-30
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-06-30-1">1. Don't Take It Literally: An Edit-Invariant Sequence Loss for Text Generation
+</h2>
+
+Title: [Don't Take It Literally: An Edit-Invariant Sequence Loss for Text Generation](https://arxiv.org/abs/2106.15078)
+
+Authors: [Guangyi Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+G), [Zichao Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+Z), [Tianhua Tao](https://arxiv.org/search/cs?searchtype=author&query=Tao%2C+T), [Xiaodan Liang](https://arxiv.org/search/cs?searchtype=author&query=Liang%2C+X), [Zhen Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Z), [Bowen Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+B), [Shuguang Cui](https://arxiv.org/search/cs?searchtype=author&query=Cui%2C+S), [Zhiting Hu](https://arxiv.org/search/cs?searchtype=author&query=Hu%2C+Z)
+
+> Neural text generation models are typically trained by maximizing log-likelihood with the sequence cross entropy loss, which encourages an exact token-by-token match between a target sequence with a generated sequence. Such training objective is sub-optimal when the target sequence not perfect, e.g., when the target sequence is corrupted with noises, or when only weak sequence supervision is available. To address this challenge, we propose a novel Edit-Invariant Sequence Loss (EISL), which computes the matching loss of a target n-gram with all n-grams in the generated sequence. EISL draws inspirations from convolutional networks (ConvNets) which are shift-invariant to images, hence is robust to the shift of n-grams to tolerate edits in the target sequences. Moreover, the computation of EISL is essentially a convolution operation with target n-grams as kernels, which is easy to implement with existing libraries. To demonstrate the effectiveness of EISL, we conduct experiments on three tasks: machine translation with noisy target sequences, unsupervised text style transfer, and non-autoregressive machine translation. Experimental results show our method significantly outperforms cross entropy loss on these three tasks.
+
+| Comments: | 10 pages, 5 figures                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2106.15078](https://arxiv.org/abs/2106.15078) [cs.CL]** |
+|           | (or **[arXiv:2106.15078v1](https://arxiv.org/abs/2106.15078v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-30-2">2. A Simple and Efficient Probabilistic Language model for Code-Mixed Text
+</h2>
+
+Title: [A Simple and Efficient Probabilistic Language model for Code-Mixed Text](https://arxiv.org/abs/2106.15102)
+
+Authors: [M Zeeshan Ansari](https://arxiv.org/search/cs?searchtype=author&query=Ansari%2C+M+Z), [Tanvir Ahmad](https://arxiv.org/search/cs?searchtype=author&query=Ahmad%2C+T), [M M Sufyan Beg](https://arxiv.org/search/cs?searchtype=author&query=Beg%2C+M+M+S), [Asma Ikram](https://arxiv.org/search/cs?searchtype=author&query=Ikram%2C+A)
+
+> The conventional natural language processing approaches are not accustomed to the social media text due to colloquial discourse and non-homogeneous characteristics. Significantly, the language identification in a multilingual document is ascertained to be a preceding subtask in several information extraction applications such as information retrieval, named entity recognition, relation extraction, etc. The problem is often more challenging in code-mixed documents wherein foreign languages words are drawn into base language while framing the text. The word embeddings are powerful language modeling tools for representation of text documents useful in obtaining similarity between words or documents. We present a simple probabilistic approach for building efficient word embedding for code-mixed text and exemplifying it over language identification of Hindi-English short test messages scrapped from Twitter. We examine its efficacy for the classification task using bidirectional LSTMs and SVMs and observe its improved scores over various existing code-mixed embeddings
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2106.15102](https://arxiv.org/abs/2106.15102) [cs.CL]** |
+|           | (or **[arXiv:2106.15102v1](https://arxiv.org/abs/2106.15102v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-30-3">3. Language Lexicons for Hindi-English Multilingual Text Processing
+</h2>
+
+Title: [Language Lexicons for Hindi-English Multilingual Text Processing](https://arxiv.org/abs/2106.15105)
+
+Authors: [Mohd Zeeshan Ansari](https://arxiv.org/search/cs?searchtype=author&query=Ansari%2C+M+Z), [Tanvir Ahmad](https://arxiv.org/search/cs?searchtype=author&query=Ahmad%2C+T), [Noaima Bari](https://arxiv.org/search/cs?searchtype=author&query=Bari%2C+N)
+
+> Language Identification in textual documents is the process of automatically detecting the language contained in a document based on its content. The present Language Identification techniques presume that a document contains text in one of the fixed set of languages, however, this presumption is incorrect when dealing with multilingual document which includes content in more than one possible language. Due to the unavailability of large standard corpora for Hindi-English mixed lingual language processing tasks we propose the language lexicons, a novel kind of lexical database that supports several multilingual language processing tasks. These lexicons are built by learning classifiers over transliterated Hindi and English vocabulary. The designed lexicons possess richer quantitative characteristic than its primary source of collection which is revealed using the visualization techniques.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2106.15105](https://arxiv.org/abs/2106.15105) [cs.CL]** |
+|           | (or **[arXiv:2106.15105v1](https://arxiv.org/abs/2106.15105v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-30-4">4. Neural Machine Translation for Low-Resource Languages: A Survey
+</h2>
+
+Title: [Neural Machine Translation for Low-Resource Languages: A Survey](https://arxiv.org/abs/2106.15115)
+
+Authors: [Surangika Ranathunga](https://arxiv.org/search/cs?searchtype=author&query=Ranathunga%2C+S), [En-Shiun Annie Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+E+A), [Marjana Prifti Skenduli](https://arxiv.org/search/cs?searchtype=author&query=Skenduli%2C+M+P), [Ravi Shekhar](https://arxiv.org/search/cs?searchtype=author&query=Shekhar%2C+R), [Mehreen Alam](https://arxiv.org/search/cs?searchtype=author&query=Alam%2C+M), [Rishemjit Kaur](https://arxiv.org/search/cs?searchtype=author&query=Kaur%2C+R)
+
+> Neural Machine Translation (NMT) has seen a tremendous spurt of growth in less than ten years, and has already entered a mature phase. While considered as the most widely used solution for Machine Translation, its performance on low-resource language pairs still remains sub-optimal compared to the high-resource counterparts, due to the unavailability of large parallel corpora. Therefore, the implementation of NMT techniques for low-resource language pairs has been receiving the spotlight in the recent NMT research arena, thus leading to a substantial amount of research reported on this topic. This paper presents a detailed survey of research advancements in low-resource language NMT (LRL-NMT), along with a quantitative analysis aimed at identifying the most popular solutions. Based on our findings from reviewing previous work, this survey paper provides a set of guidelines to select the possible NMT technique for a given LRL data setting. It also presents a holistic view of the LRL-NMT research landscape and provides a list of recommendations to further enhance the research efforts on LRL-NMT.
+
+| Comments:    | 35 pages, 8 figures                                          |
+| ------------ | ------------------------------------------------------------ |
+| Subjects:    | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| ACM classes: | I.2.7                                                        |
+| Cite as:     | **[arXiv:2106.15115](https://arxiv.org/abs/2106.15115) [cs.CL]** |
+|              | (or **[arXiv:2106.15115v1](https://arxiv.org/abs/2106.15115v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-30-5">5. Scientific Credibility of Machine Translation Research: A Meta-Evaluation of 769 Papers
+</h2>
+
+Title: [Scientific Credibility of Machine Translation Research: A Meta-Evaluation of 769 Papers](https://arxiv.org/abs/2106.15195)
+
+Authors: [Benjamin Marie](https://arxiv.org/search/cs?searchtype=author&query=Marie%2C+B), [Atsushi Fujita](https://arxiv.org/search/cs?searchtype=author&query=Fujita%2C+A), [Raphael Rubino](https://arxiv.org/search/cs?searchtype=author&query=Rubino%2C+R)
+
+> This paper presents the first large-scale meta-evaluation of machine translation (MT). We annotated MT evaluations conducted in 769 research papers published from 2010 to 2020. Our study shows that practices for automatic MT evaluation have dramatically changed during the past decade and follow concerning trends. An increasing number of MT evaluations exclusively rely on differences between BLEU scores to draw conclusions, without performing any kind of statistical significance testing nor human evaluation, while at least 108 metrics claiming to be better than BLEU have been proposed. MT evaluations in recent papers tend to copy and compare automatic metric scores from previous work to claim the superiority of a method or an algorithm without confirming neither exactly the same training, validating, and testing data have been used nor the metric scores are comparable. Furthermore, tools for reporting standardized metric scores are still far from being widely adopted by the MT community. After showing how the accumulation of these pitfalls leads to dubious evaluation, we propose a guideline to encourage better automatic MT evaluation along with a simple meta-evaluation scoring method to assess its credibility.
+
+| Comments: | Camera-ready for ACL2021                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2106.15195](https://arxiv.org/abs/2106.15195) [cs.CL]** |
+|           | (or **[arXiv:2106.15195v1](https://arxiv.org/abs/2106.15195v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-06-30-6">6. Rethinking the Evaluation of Neural Machine Translation
+</h2>
+
+Title: [Rethinking the Evaluation of Neural Machine Translation](https://arxiv.org/abs/2106.15217)
+
+Authors: [Jianhao Yan](https://arxiv.org/search/cs?searchtype=author&query=Yan%2C+J), [Chenming Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+C), [Fandong Meng](https://arxiv.org/search/cs?searchtype=author&query=Meng%2C+F), [Jie Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+J)
+
+> The evaluation of neural machine translation systems is usually built upon generated translation of a certain decoding method (e.g., beam search) with evaluation metrics over the generated translation (e.g., BLEU). However, this evaluation framework suffers from high search errors brought by heuristic search algorithms and is limited by its nature of evaluation over one best candidate. In this paper, we propose a novel evaluation protocol, which not only avoids the effect of search errors but provides a system-level evaluation in the perspective of model ranking. In particular, our method is based on our newly proposed exact top-k decoding instead of beam search. Our approach evaluates model errors by the distance between the candidate spaces scored by the references and the model respectively. Extensive experiments on WMT'14 English-German demonstrate that bad ranking ability is connected to the well-known beam search curse, and state-of-the-art Transformer models are facing serious ranking errors. By evaluating various model architectures and techniques, we provide several interesting findings. Finally, to effectively approximate the exact search algorithm with same time cost as original beam search, we present a minimum heap augmented beam search algorithm.
+
+| Comments: | Submitted to NeurIPS 2021                                    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2106.15217](https://arxiv.org/abs/2106.15217) [cs.CL]** |
+|           | (or **[arXiv:2106.15217v1](https://arxiv.org/abs/2106.15217v1) [cs.CL]** for this version) |
+
+
+
 
 
 
