@@ -3,6 +3,7 @@
 # Index
 
 - [Return to Latest Month](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv.md)
+- [2021-06](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arxiv-2021-06.md)
 - [2021-05](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arxiv-2021-05.md)
 - [2021-04](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arxiv-2021-04.md)
 - [2021-03](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arxiv-2021-03.md)
