@@ -3,8 +3,16 @@
 # Index
 
 
-- [2021-07-01](#2021-07-01)
+- [2021-07-02](#2021-07-02)
 
+  - [1. GlyphCRM: Bidirectional Encoder Representation for Chinese Character with its Glyph](#2021-07-02-1)
+  - [2. ESPnet-ST IWSLT 2021 Offline Speech Translation System](#2021-07-02-2)
+  - [3. Word-Free Spoken Language Understanding for Mandarin-Chinese](#2021-07-02-3)
+  - [4. The USTC-NELSLIP Systems for Simultaneous Speech Translation Task at IWSLT 2021](#2021-07-02-4)
+  - [5. Zero-pronoun Data Augmentation for Japanese-to-English Translation](#2021-07-02-5)
+  - [6. Modeling Target-side Inflection in Placeholder Translation](#2021-07-02-6)
+  - [7. CLINE: Contrastive Learning with Semantic Negative Examples for Natural Language Understanding](#2021-07-02-7 )
+- [2021-07-01](#2021-07-01)
   - [1. What Can Unsupervised Machine Translation Contribute to High-Resource Language Pairs?](#2021-07-01-1)
   - [2. Mixed Cross Entropy Loss for Neural Machine Translation](#2021-07-01-2)
   - [3. Cross-lingual alignments of ELMo contextual embeddings](#2021-07-01-3)
@@ -13,6 +21,147 @@
   - [6. XLM-E: Cross-lingual Language Model Pre-training via ELECTRA](#2021-07-01-6)
   - [7. On the Power of Saturated Transformers: A View from Circuit Complexity](#2021-07-01-7)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-07-02
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-07-02-1">1. GlyphCRM: Bidirectional Encoder Representation for Chinese Character with its Glyph
+</h2>
+
+Title: [GlyphCRM: Bidirectional Encoder Representation for Chinese Character with its Glyph](https://arxiv.org/abs/2107.00395)
+
+Authors: [Yunxin Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Y), [Yu Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+Y), [Baotian Hu](https://arxiv.org/search/cs?searchtype=author&query=Hu%2C+B), [Qingcai Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+Q), [Yang Xiang](https://arxiv.org/search/cs?searchtype=author&query=Xiang%2C+Y), [Xiaolong Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+X), [Yuxin Ding](https://arxiv.org/search/cs?searchtype=author&query=Ding%2C+Y), [Lin Ma](https://arxiv.org/search/cs?searchtype=author&query=Ma%2C+L)
+
+> Previous works indicate that the glyph of Chinese characters contains rich semantic information and has the potential to enhance the representation of Chinese characters. The typical method to utilize the glyph features is by incorporating them into the character embedding space. Inspired by previous methods, we innovatively propose a Chinese pre-trained representation model named as GlyphCRM, which abandons the ID-based character embedding method yet solely based on sequential character images. We render each character into a binary grayscale image and design two-channel position feature maps for it. Formally, we first design a two-layer residual convolutional neural network, namely HanGlyph to generate the initial glyph representation of Chinese characters, and subsequently adopt multiple bidirectional encoder Transformer blocks as the superstructure to capture the context-sensitive information. Meanwhile, we feed the glyph features extracted from each layer of the HanGlyph module into the underlying Transformer blocks by skip-connection method to fully exploit the glyph features of Chinese characters. As the HanGlyph module can obtain a sufficient glyph representation of any Chinese character, the long-standing out-of-vocabulary problem could be effectively solved. Extensive experimental results indicate that GlyphCRM substantially outperforms the previous BERT-based state-of-the-art model on 9 fine-tuning tasks, and it has strong transferability and generalization on specialized fields and low-resource tasks. We hope this work could spark further research beyond the realms of well-established representation of Chinese texts.
+
+| Comments: | 11 pages, 7 figures                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Artificial Intelligence (cs.AI)**; Computation and Language (cs.CL); Computer Vision and Pattern Recognition (cs.CV) |
+| Cite as:  | **[arXiv:2107.00395](https://arxiv.org/abs/2107.00395) [cs.AI]** |
+|           | (or **[arXiv:2107.00395v1](https://arxiv.org/abs/2107.00395v1) [cs.AI]** for this version) |
+
+
+
+
+
+<h2 id="2021-07-02-2">2. ESPnet-ST IWSLT 2021 Offline Speech Translation System
+</h2>
+
+Title: [ESPnet-ST IWSLT 2021 Offline Speech Translation System](https://arxiv.org/abs/2107.00636)
+
+Authors: [Hirofumi Inaguma](https://arxiv.org/search/eess?searchtype=author&query=Inaguma%2C+H), [Brian Yan](https://arxiv.org/search/eess?searchtype=author&query=Yan%2C+B), [Siddharth Dalmia](https://arxiv.org/search/eess?searchtype=author&query=Dalmia%2C+S), [Pengcheng Gu](https://arxiv.org/search/eess?searchtype=author&query=Gu%2C+P), [Jiatong Shi](https://arxiv.org/search/eess?searchtype=author&query=Shi%2C+J), [Kevin Duh](https://arxiv.org/search/eess?searchtype=author&query=Duh%2C+K), [Shinji Watanabe](https://arxiv.org/search/eess?searchtype=author&query=Watanabe%2C+S)
+
+> This paper describes the ESPnet-ST group's IWSLT 2021 submission in the offline speech translation track. This year we made various efforts on training data, architecture, and audio segmentation. On the data side, we investigated sequence-level knowledge distillation (SeqKD) for end-to-end (E2E) speech translation. Specifically, we used multi-referenced SeqKD from multiple teachers trained on different amounts of bitext. On the architecture side, we adopted the Conformer encoder and the Multi-Decoder architecture, which equips dedicated decoders for speech recognition and translation tasks in a unified encoder-decoder model and enables search in both source and target language spaces during inference. We also significantly improved audio segmentation by using the pyannote.audio toolkit and merging multiple short segments for long context modeling. Experimental evaluations showed that each of them contributed to large improvements in translation performance. Our best E2E system combined all the above techniques with model ensembling and achieved 31.4 BLEU on the 2-ref of tst2021 and 21.2 BLEU and 19.3 BLEU on the two single references of tst2021.
+
+| Comments: | IWSLT 2021                                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Audio and Speech Processing (eess.AS)**; Computation and Language (cs.CL); Sound (cs.SD) |
+| Cite as:  | **[arXiv:2107.00636](https://arxiv.org/abs/2107.00636) [eess.AS]** |
+|           | (or **[arXiv:2107.00636v1](https://arxiv.org/abs/2107.00636v1) [eess.AS]** for this version) |
+
+
+
+
+
+<h2 id="2021-07-02-3">3. Word-Free Spoken Language Understanding for Mandarin-Chinese
+</h2>
+
+Title: [Word-Free Spoken Language Understanding for Mandarin-Chinese](https://arxiv.org/abs/2107.00186)
+
+Authors: [Zhiyuan Guo](https://arxiv.org/search/cs?searchtype=author&query=Guo%2C+Z), [Yuexin Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Y), [Guo Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+G), [Xingyu Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+X), [Akshat Gupta](https://arxiv.org/search/cs?searchtype=author&query=Gupta%2C+A)
+
+> Spoken dialogue systems such as Siri and Alexa provide great convenience to people's everyday life. However, current spoken language understanding (SLU) pipelines largely depend on automatic speech recognition (ASR) modules, which require a large amount of language-specific training data. In this paper, we propose a Transformer-based SLU system that works directly on phones. This acoustic-based SLU system consists of only two blocks and does not require the presence of ASR module. The first block is a universal phone recognition system, and the second block is a Transformer-based language model for phones. We verify the effectiveness of the system on an intent classification dataset in Mandarin Chinese.
+
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2107.00186](https://arxiv.org/abs/2107.00186) [cs.CL]** |
+|           | (or **[arXiv:2107.00186v1](https://arxiv.org/abs/2107.00186v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-07-02-4">4. The USTC-NELSLIP Systems for Simultaneous Speech Translation Task at IWSLT 2021 </h2>
+
+
+
+Title: [The USTC-NELSLIP Systems for Simultaneous Speech Translation Task at IWSLT 2021]()
+
+Authors: [Dan Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+D), [Mengge Du](https://arxiv.org/search/cs?searchtype=author&query=Du%2C+M), [Xiaoxi Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+X), [Yuchen Hu](https://arxiv.org/search/cs?searchtype=author&query=Hu%2C+Y), [Lirong Dai](https://arxiv.org/search/cs?searchtype=author&query=Dai%2C+L)
+
+> This paper describes USTC-NELSLIP's submissions to the IWSLT2021 Simultaneous Speech Translation task. We proposed a novel simultaneous translation model, Cross Attention Augmented Transducer (CAAT), which extends conventional RNN-T to sequence-to-sequence tasks without monotonic constraints, e.g., simultaneous translation. Experiments on speech-to-text (S2T) and text-to-text (T2T) simultaneous translation tasks shows CAAT achieves better quality-latency trade-offs compared to \textit{wait-k}, one of the previous state-of-the-art approaches. Based on CAAT architecture and data augmentation, we build S2T and T2T simultaneous translation systems in this evaluation campaign. Compared to last year's optimal systems, our S2T simultaneous translation system improves by an average of 11.3 BLEU for all latency regimes, and our T2T simultaneous translation system improves by an average of 4.6 BLEU.
+
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2107.00279](https://arxiv.org/abs/2107.00279) [cs.CL]** |
+|           | (or **[arXiv:2107.00279v1](https://arxiv.org/abs/2107.00279v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-07-02-5">5. Zero-pronoun Data Augmentation for Japanese-to-English Translation
+</h2>
+
+Title: [Zero-pronoun Data Augmentation for Japanese-to-English Translation](https://arxiv.org/abs/2107.00318)
+
+Authors: [Ryokan Ri](https://arxiv.org/search/cs?searchtype=author&query=Ri%2C+R), [Toshiaki Nakazawa](https://arxiv.org/search/cs?searchtype=author&query=Nakazawa%2C+T), [Yoshimasa Tsuruoka](https://arxiv.org/search/cs?searchtype=author&query=Tsuruoka%2C+Y)
+
+> For Japanese-to-English translation, zero pronouns in Japanese pose a challenge, since the model needs to infer and produce the corresponding pronoun in the target side of the English sentence. However, although fully resolving zero pronouns often needs discourse context, in some cases, the local context within a sentence gives clues to the inference of the zero pronoun. In this study, we propose a data augmentation method that provides additional training signals for the translation model to learn correlations between local context and zero pronouns. We show that the proposed method significantly improves the accuracy of zero pronoun translation with machine translation experiments in the conversational domain.
+
+| Comments: | WAT2021                                                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2107.00318](https://arxiv.org/abs/2107.00318) [cs.CL]** |
+|           | (or **[arXiv:2107.00318v1](https://arxiv.org/abs/2107.00318v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-07-02-6">6. Modeling Target-side Inflection in Placeholder Translation
+</h2>
+
+Title: [Modeling Target-side Inflection in Placeholder Translation](https://arxiv.org/abs/2107.00334)
+
+Authors: [Ryokan Ri](https://arxiv.org/search/cs?searchtype=author&query=Ri%2C+R), [Toshiaki Nakazawa](https://arxiv.org/search/cs?searchtype=author&query=Nakazawa%2C+T), [Yoshimasa Tsuruoka](https://arxiv.org/search/cs?searchtype=author&query=Tsuruoka%2C+Y)
+
+> Placeholder translation systems enable the users to specify how a specific phrase is translated in the output sentence. The system is trained to output special placeholder tokens, and the user-specified term is injected into the output through the context-free replacement of the placeholder token. However, this approach could result in ungrammatical sentences because it is often the case that the specified term needs to be inflected according to the context of the output, which is unknown before the translation. To address this problem, we propose a novel method of placeholder translation that can inflect specified terms according to the grammatical construction of the output sentence. We extend the sequence-to-sequence architecture with a character-level decoder that takes the lemma of a user-specified term and the words generated from the word-level decoder to output the correct inflected form of the lemma. We evaluate our approach with a Japanese-to-English translation task in the scientific writing domain, and show that our model can incorporate specified terms in the correct form more successfully than other comparable models.
+
+| Comments: | MT Summit 2021                                               |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2107.00334](https://arxiv.org/abs/2107.00334) [cs.CL]** |
+|           | (or **[arXiv:2107.00334v1](https://arxiv.org/abs/2107.00334v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-07-02-7">7. CLINE: Contrastive Learning with Semantic Negative Examples for Natural Language Understanding
+</h2>
+
+Title: [CLINE: Contrastive Learning with Semantic Negative Examples for Natural Language Understanding](https://arxiv.org/abs/2107.00440)
+
+Authors: [Dong Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+D), [Ning Ding](https://arxiv.org/search/cs?searchtype=author&query=Ding%2C+N), [Piji Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+P), [Hai-Tao Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng%2C+H)
+
+> Despite pre-trained language models have proven useful for learning high-quality semantic representations, these models are still vulnerable to simple perturbations. Recent works aimed to improve the robustness of pre-trained models mainly focus on adversarial training from perturbed examples with similar semantics, neglecting the utilization of different or even opposite semantics. Different from the image processing field, the text is discrete and few word substitutions can cause significant semantic changes. To study the impact of semantics caused by small perturbations, we conduct a series of pilot experiments and surprisingly find that adversarial training is useless or even harmful for the model to detect these semantic changes. To address this problem, we propose Contrastive Learning with semantIc Negative Examples (CLINE), which constructs semantic negative examples unsupervised to improve the robustness under semantically adversarial attacking. By comparing with similar and opposite semantic examples, the model can effectively perceive the semantic changes caused by small perturbations. Empirical results show that our approach yields substantial improvements on a range of sentiment analysis, reasoning, and reading comprehension tasks. And CLINE also ensures the compactness within the same semantics and separability across different semantics in sentence-level.
+
+| Comments: | ACL 2021, Main Conference, Long Paper                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2107.00440](https://arxiv.org/abs/2107.00440) [cs.CL]** |
+|           | (or **[arXiv:2107.00440v1](https://arxiv.org/abs/2107.00440v1) [cs.CL]** for this version) |
+
+
+
+
+
 
 
 
@@ -148,7 +297,6 @@ Authors: [William Merrill](https://arxiv.org/search/cs?searchtype=author&query=M
 | Subjects: | **Computation and Language (cs.CL)**; Computational Complexity (cs.CC); Machine Learning (cs.LG) |
 | Cite as:  | **[arXiv:2106.16213](https://arxiv.org/abs/2106.16213) [cs.CL]** |
 |           | (or **[arXiv:2106.16213v1](https://arxiv.org/abs/2106.16213v1) [cs.CL]** for this version) |
-
 
 
 
