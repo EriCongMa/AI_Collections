@@ -3,6 +3,12 @@
 # Index
 
 
+- [2021-07-05](#2021-07-05)
+
+  - [1. Transformer-F: A Transformer network with effective methods for learning universal sentence representation](#2021-07-05-1)
+  - [2. A Primer on Pretrained Multilingual Language Models](#2021-07-05-2)
+  - [3. Interactive decoding of words from visual speech recognition models](#2021-07-05-3)
+  - [4. Data Centric Domain Adaptation for Historical Text with OCR Errors](#2021-07-05-4)
 - [2021-07-02](#2021-07-02)
 
   - [1. GlyphCRM: Bidirectional Encoder Representation for Chinese Character with its Glyph](#2021-07-02-1)
@@ -21,6 +27,92 @@
   - [6. XLM-E: Cross-lingual Language Model Pre-training via ELECTRA](#2021-07-01-6)
   - [7. On the Power of Saturated Transformers: A View from Circuit Complexity](#2021-07-01-7)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-07-05
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-07-05-1">1. Transformer-F: A Transformer network with effective methods for learning universal sentence representation
+</h2>
+
+Title: [Transformer-F: A Transformer network with effective methods for learning universal sentence representation](https://arxiv.org/abs/2107.00653)
+
+Authors: [Yu Shi](https://arxiv.org/search/cs?searchtype=author&query=Shi%2C+Y)
+
+> The Transformer model is widely used in natural language processing for sentence representation. However, the previous Transformer-based models focus on function words that have limited meaning in most cases and could merely extract high-level semantic abstraction features. In this paper, two approaches are introduced to improve the performance of Transformers. We calculated the attention score by multiplying the part-of-speech weight vector with the correlation coefficient, which helps extract the words with more practical meaning. The weight vector is obtained by the input text sequence based on the importance of the part-of-speech. Furthermore, we fuse the features of each layer to make the sentence representation results more comprehensive and accurate. In experiments, we demonstrate the effectiveness of our model Transformer-F on three standard text classification datasets. Experimental results show that our proposed model significantly boosts the performance of text classification as compared to the baseline model. Specifically, we obtain a 5.28% relative improvement over the vanilla Transformer on the simple tasks.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2107.00653](https://arxiv.org/abs/2107.00653) [cs.CL]** |
+|           | (or **[arXiv:2107.00653v1](https://arxiv.org/abs/2107.00653v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-07-05-2">2. A Primer on Pretrained Multilingual Language Models
+</h2>
+
+Title: [A Primer on Pretrained Multilingual Language Models](https://arxiv.org/abs/2107.00676)
+
+Authors: [Sumanth Doddapaneni](https://arxiv.org/search/cs?searchtype=author&query=Doddapaneni%2C+S), [Gowtham Ramesh](https://arxiv.org/search/cs?searchtype=author&query=Ramesh%2C+G), [Anoop Kunchukuttan](https://arxiv.org/search/cs?searchtype=author&query=Kunchukuttan%2C+A), [Pratyush Kumar](https://arxiv.org/search/cs?searchtype=author&query=Kumar%2C+P), [Mitesh M. Khapra](https://arxiv.org/search/cs?searchtype=author&query=Khapra%2C+M+M)
+
+> Multilingual Language Models (MLLMs) such as mBERT, XLM, XLM-R, \textit{etc.} have emerged as a viable option for bringing the power of pretraining to a large number of languages. Given their success in zero shot transfer learning, there has emerged a large body of work in (i) building bigger MLLMs covering a large number of languages (ii) creating exhaustive benchmarks covering a wider variety of tasks and languages for evaluating MLLMs (iii) analysing the performance of MLLMs on monolingual, zero shot crosslingual and bilingual tasks (iv) understanding the universal language patterns (if any) learnt by MLLMs and (v) augmenting the (often) limited capacity of MLLMs to improve their performance on seen or even unseen languages. In this survey, we review the existing literature covering the above broad areas of research pertaining to MLLMs. Based on our survey, we recommend some promising directions of future research.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2107.00676](https://arxiv.org/abs/2107.00676) [cs.CL]** |
+|           | (or **[arXiv:2107.00676v1](https://arxiv.org/abs/2107.00676v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-07-05-3">3. Interactive decoding of words from visual speech recognition models
+</h2>
+
+Title: [Interactive decoding of words from visual speech recognition models](https://arxiv.org/abs/2107.00692)
+
+Authors: [Brendan Shillingford](https://arxiv.org/search/cs?searchtype=author&query=Shillingford%2C+B), [Yannis Assael](https://arxiv.org/search/cs?searchtype=author&query=Assael%2C+Y), [Misha Denil](https://arxiv.org/search/cs?searchtype=author&query=Denil%2C+M)
+
+> This work describes an interactive decoding method to improve the performance of visual speech recognition systems using user input to compensate for the inherent ambiguity of the task. Unlike most phoneme-to-word decoding pipelines, which produce phonemes and feed these through a finite state transducer, our method instead expands words in lockstep, facilitating the insertion of interaction points at each word position. Interaction points enable us to solicit input during decoding, allowing users to interactively direct the decoding process. We simulate the behavior of user input using an oracle to give an automated evaluation, and show promise for the use of this method for text input.
+
+| Comments: | 8 pages                                                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2107.00692](https://arxiv.org/abs/2107.00692) [cs.CL]** |
+|           | (or **[arXiv:2107.00692v1](https://arxiv.org/abs/2107.00692v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-07-05-4">4. Data Centric Domain Adaptation for Historical Text with OCR Errors
+</h2>
+
+Title: [Data Centric Domain Adaptation for Historical Text with OCR Errors](https://arxiv.org/abs/2107.00927)
+
+Authors: [Luisa März](https://arxiv.org/search/cs?searchtype=author&query=März%2C+L), [Stefan Schweter](https://arxiv.org/search/cs?searchtype=author&query=Schweter%2C+S), [Nina Poerner](https://arxiv.org/search/cs?searchtype=author&query=Poerner%2C+N), [Benjamin Roth](https://arxiv.org/search/cs?searchtype=author&query=Roth%2C+B), [Hinrich Schütze](https://arxiv.org/search/cs?searchtype=author&query=Schütze%2C+H)
+
+> We propose new methods for in-domain and cross-domain Named Entity Recognition (NER) on historical data for Dutch and French. For the cross-domain case, we address domain shift by integrating unsupervised in-domain data via contextualized string embeddings; and OCR errors by injecting synthetic OCR errors into the source domain and address data centric domain adaptation. We propose a general approach to imitate OCR errors in arbitrary input data. Our cross-domain as well as our in-domain results outperform several strong baselines and establish state-of-the-art results. We publish preprocessed versions of the French and Dutch Europeana NER corpora.
+
+| Comments: | 14 pages, 2 figures, 6 tables                                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2107.00927](https://arxiv.org/abs/2107.00927) [cs.CL]** |
+|           | (or **[arXiv:2107.00927v1](https://arxiv.org/abs/2107.00927v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
