@@ -3,8 +3,16 @@
 # Index
 
 
-- [2021-07-05](#2021-07-05)
+- [2021-07-06](#2021-07-06)
 
+  - [1. Cross-Modal Transformer-Based Neural Correction Models for Automatic Speech Recognition](#2021-07-06-1)
+  - [2. IITP at WAT 2021: System description for English-Hindi Multimodal Translation Task](#2021-07-06-2)
+  - [3. Packing: Towards 2x NLP BERT Acceleration](#2021-07-06-3)
+  - [4. Power Law Graph Transformer for Machine Translation and Representation Learning](#2021-07-06-4)
+  - [5. ERNIE 3.0: Large-scale Knowledge Enhanced Pre-training for Language Understanding and Generation](#2021-07-06-5)
+
+
+- [2021-07-05](#2021-07-05)
   - [1. Transformer-F: A Transformer network with effective methods for learning universal sentence representation](#2021-07-05-1)
   - [2. A Primer on Pretrained Multilingual Language Models](#2021-07-05-2)
   - [3. Interactive decoding of words from visual speech recognition models](#2021-07-05-3)
@@ -27,6 +35,109 @@
   - [6. XLM-E: Cross-lingual Language Model Pre-training via ELECTRA](#2021-07-01-6)
   - [7. On the Power of Saturated Transformers: A View from Circuit Complexity](#2021-07-01-7)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-07-06
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-07-06-1">1. Cross-Modal Transformer-Based Neural Correction Models for Automatic Speech Recognition
+</h2>
+
+Title: [Cross-Modal Transformer-Based Neural Correction Models for Automatic Speech Recognition](https://arxiv.org/abs/2107.01569)
+
+Authors: [Tomohiro Tanaka](https://arxiv.org/search/cs?searchtype=author&query=Tanaka%2C+T), [Ryo Masumura](https://arxiv.org/search/cs?searchtype=author&query=Masumura%2C+R), [Mana Ihori](https://arxiv.org/search/cs?searchtype=author&query=Ihori%2C+M), [Akihiko Takashima](https://arxiv.org/search/cs?searchtype=author&query=Takashima%2C+A), [Takafumi Moriya](https://arxiv.org/search/cs?searchtype=author&query=Moriya%2C+T), [Takanori Ashihara](https://arxiv.org/search/cs?searchtype=author&query=Ashihara%2C+T), [Shota Orihashi](https://arxiv.org/search/cs?searchtype=author&query=Orihashi%2C+S), [Naoki Makishima](https://arxiv.org/search/cs?searchtype=author&query=Makishima%2C+N)
+
+> We propose a cross-modal transformer-based neural correction models that refines the output of an automatic speech recognition (ASR) system so as to exclude ASR errors. Generally, neural correction models are composed of encoder-decoder networks, which can directly model sequence-to-sequence mapping problems. The most successful method is to use both input speech and its ASR output text as the input contexts for the encoder-decoder networks. However, the conventional method cannot take into account the relationships between these two different modal inputs because the input contexts are separately encoded for each modal. To effectively leverage the correlated information between the two different modal inputs, our proposed models encode two different contexts jointly on the basis of cross-modal self-attention using a transformer. We expect that cross-modal self-attention can effectively capture the relationships between two different modals for refining ASR hypotheses. We also introduce a shallow fusion technique to efficiently integrate the first-pass ASR model and our proposed neural correction model. Experiments on Japanese natural language ASR tasks demonstrated that our proposed models achieve better ASR performance than conventional neural correction models.
+
+| Comments: | Accepted to Interspeech 2021                                 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2107.01569](https://arxiv.org/abs/2107.01569) [cs.CL]** |
+|           | (or **[arXiv:2107.01569v1](https://arxiv.org/abs/2107.01569v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-07-06-2">2. IITP at WAT 2021: System description for English-Hindi Multimodal Translation Task
+</h2>
+
+Title: [IITP at WAT 2021: System description for English-Hindi Multimodal Translation Task](https://arxiv.org/abs/2107.01656)
+
+Authors: [Baban Gain](https://arxiv.org/search/cs?searchtype=author&query=Gain%2C+B), [Dibyanayan Bandyopadhyay](https://arxiv.org/search/cs?searchtype=author&query=Bandyopadhyay%2C+D), [Asif Ekbal](https://arxiv.org/search/cs?searchtype=author&query=Ekbal%2C+A)
+
+> Neural Machine Translation (NMT) is a predominant machine translation technology nowadays because of its end-to-end trainable flexibility. However, NMT still struggles to translate properly in low-resource settings specifically on distant language pairs. One way to overcome this is to use the information from other modalities if available. The idea is that despite differences in languages, both the source and target language speakers see the same thing and the visual representation of both the source and target is the same, which can positively assist the system. Multimodal information can help the NMT system to improve the translation by removing ambiguity on some phrases or words. We participate in the 8th Workshop on Asian Translation (WAT - 2021) for English-Hindi multimodal translation task and achieve 42.47 and 37.50 BLEU points for Evaluation and Challenge subset, respectively.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2107.01656](https://arxiv.org/abs/2107.01656) [cs.CL]** |
+|           | (or **[arXiv:2107.01656v1](https://arxiv.org/abs/2107.01656v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-07-06-3">3. Packing: Towards 2x NLP BERT Acceleration
+</h2>
+
+Title: [Packing: Towards 2x NLP BERT Acceleration](https://arxiv.org/abs/2107.02027)
+
+Authors: [Matej Kosec](https://arxiv.org/search/cs?searchtype=author&query=Kosec%2C+M), [Sheng Fu](https://arxiv.org/search/cs?searchtype=author&query=Fu%2C+S), [Mario Michael Krell](https://arxiv.org/search/cs?searchtype=author&query=Krell%2C+M+M)
+
+> We find that at sequence length 512 padding tokens represent in excess of 50% of the Wikipedia dataset used for pretraining BERT (Bidirectional Encoder Representations from Transformers). Therefore by removing all padding we achieve a 2x speed-up in terms of sequences/sec. To exploit this characteristic of the dataset, we develop and contrast two deterministic packing algorithms. Both algorithms rely on the assumption that sequences are interchangeable and therefore packing can be performed on the histogram of sequence lengths, rather than per sample. This transformation of the problem leads to algorithms which are fast and have linear complexity in dataset size. The shortest-pack-first histogram-packing (SPFHP) algorithm determines the packing order for the Wikipedia dataset of over 16M sequences in 0.02 seconds. The non-negative least-squares histogram-packing (NNLSHP) algorithm converges in 28.4 seconds but produces solutions which are more depth efficient, managing to get near optimal packing by combining a maximum of 3 sequences in one sample. Using the dataset with multiple sequences per sample requires additional masking in the attention layer and a modification of the MLM loss function. We demonstrate that both of these changes are straightforward to implement and have relatively little impact on the achievable performance gain on modern hardware. Finally, we pretrain BERT-Large using the packed dataset, demonstrating no loss of convergence and the desired 2x speed-up.
+
+| Subjects:    | **Computation and Language (cs.CL)**; Computational Complexity (cs.CC); Information Theory (cs.IT); Machine Learning (cs.LG) |
+| ------------ | ------------------------------------------------------------ |
+| MSC classes: | 05-08                                                        |
+| ACM classes: | I.2.7; G.2.1                                                 |
+| Cite as:     | **[arXiv:2107.02027](https://arxiv.org/abs/2107.02027) [cs.CL]** |
+|              | (or **[arXiv:2107.02027v1](https://arxiv.org/abs/2107.02027v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-07-06-4">4. Power Law Graph Transformer for Machine Translation and Representation Learning
+</h2>
+
+Title: [Power Law Graph Transformer for Machine Translation and Representation Learning](https://arxiv.org/abs/2107.02039)
+
+Authors: [Burc Gokden](https://arxiv.org/search/cs?searchtype=author&query=Gokden%2C+B)
+
+> We present the Power Law Graph Transformer, a transformer model with well defined deductive and inductive tasks for prediction and representation learning. The deductive task learns the dataset level (global) and instance level (local) graph structures in terms of learnable power law distribution parameters. The inductive task outputs the prediction probabilities using the deductive task output, similar to a transductive model. We trained our model with Turkish-English and Portuguese-English datasets from TED talk transcripts for machine translation and compared the model performance and characteristics to a transformer model with scaled dot product attention trained on the same experimental setup. We report BLEU scores of 17.79 and 28.33 on the Turkish-English and Portuguese-English translation tasks with our model, respectively. We also show how a duality between a quantization set and N-dimensional manifold representation can be leveraged to transform between local and global deductive-inductive outputs using successive application of linear and non-linear transformations end-to-end.
+
+| Comments: | 55 pages, 39 figures                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2107.02039](https://arxiv.org/abs/2107.02039) [cs.CL]** |
+|           | (or **[arXiv:2107.02039v1](https://arxiv.org/abs/2107.02039v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-07-06-5">5. ERNIE 3.0: Large-scale Knowledge Enhanced Pre-training for Language Understanding and Generation
+</h2>
+
+Title: [ERNIE 3.0: Large-scale Knowledge Enhanced Pre-training for Language Understanding and Generation](https://arxiv.org/abs/2107.02137)
+
+Authors: [Yu Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+Y), [Shuohuan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+S), [Shikun Feng](https://arxiv.org/search/cs?searchtype=author&query=Feng%2C+S), [Siyu Ding](https://arxiv.org/search/cs?searchtype=author&query=Ding%2C+S), [Chao Pang](https://arxiv.org/search/cs?searchtype=author&query=Pang%2C+C), [Junyuan Shang](https://arxiv.org/search/cs?searchtype=author&query=Shang%2C+J), [Jiaxiang Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+J), [Xuyi Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+X), [Yanbin Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+Y), [Yuxiang Lu](https://arxiv.org/search/cs?searchtype=author&query=Lu%2C+Y), [Weixin Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+W), [Zhihua Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+Z), [Weibao Gong](https://arxiv.org/search/cs?searchtype=author&query=Gong%2C+W), [Jianzhong Liang](https://arxiv.org/search/cs?searchtype=author&query=Liang%2C+J), [Zhizhou Shang](https://arxiv.org/search/cs?searchtype=author&query=Shang%2C+Z), [Peng Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+P), [Wei Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+W), [Xuan Ouyang](https://arxiv.org/search/cs?searchtype=author&query=Ouyang%2C+X), [Dianhai Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+D), [Hao Tian](https://arxiv.org/search/cs?searchtype=author&query=Tian%2C+H), [Hua Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+H), [Haifeng Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+H)
+
+> Pre-trained models have achieved state-of-the-art results in various Natural Language Processing (NLP) tasks. Recent works such as T5 and GPT-3 have shown that scaling up pre-trained language models can improve their generalization abilities. Particularly, the GPT-3 model with 175 billion parameters shows its strong task-agnostic zero-shot/few-shot learning capabilities. Despite their success, these large-scale models are trained on plain texts without introducing knowledge such as linguistic knowledge and world knowledge. In addition, most large-scale models are trained in an auto-regressive way. As a result, this kind of traditional fine-tuning approach demonstrates relatively weak performance when solving downstream language understanding tasks. In order to solve the above problems, we propose a unified framework named ERNIE 3.0 for pre-training large-scale knowledge enhanced models. It fuses auto-regressive network and auto-encoding network, so that the trained model can be easily tailored for both natural language understanding and generation tasks with zero-shot learning, few-shot learning or fine-tuning. We trained the model with 10 billion parameters on a 4TB corpus consisting of plain texts and a large-scale knowledge graph. Empirical results show that the model outperforms the state-of-the-art models on 54 Chinese NLP tasks, and its English version achieves the first place on the SuperGLUE benchmark (July 3, 2021), surpassing the human performance by +0.8% (90.6% vs. 89.8%).
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2107.02137](https://arxiv.org/abs/2107.02137) [cs.CL]** |
+|           | (or **[arXiv:2107.02137v1](https://arxiv.org/abs/2107.02137v1) [cs.CL]** for this version) |
+
+
+
+
+
 
 
 
