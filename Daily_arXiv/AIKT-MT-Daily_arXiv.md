@@ -3,8 +3,14 @@
 # Index
 
 
-- [2021-07-06](#2021-07-06)
+- [2021-07-07](#2021-07-07)
 
+  - [1. Long-Short Transformer: Efficient Transformers for Language and Vision](#2021-07-07-1)
+  - [2. Mind Your Outliers! Investigating the Negative Impact of Outliers on Active Learning for Visual Question Answering](#2021-07-07-2)
+  - [3. An NLG pipeline for a legal expert system: a work in progress](#2021-07-07-3)
+  - [4. The NiuTrans End-to-End Speech Translation System \\for IWSLT 2021 Offline Task](#2021-07-07-4)
+  - [5. VidLanKD: Improving Language Understanding via Video-Distilled Knowledge Transfer](#2021-07-07-5)
+- [2021-07-06](#2021-07-06)
   - [1. Cross-Modal Transformer-Based Neural Correction Models for Automatic Speech Recognition](#2021-07-06-1)
   - [2. IITP at WAT 2021: System description for English-Hindi Multimodal Translation Task](#2021-07-06-2)
   - [3. Packing: Towards 2x NLP BERT Acceleration](#2021-07-06-3)
@@ -35,6 +41,110 @@
   - [6. XLM-E: Cross-lingual Language Model Pre-training via ELECTRA](#2021-07-01-6)
   - [7. On the Power of Saturated Transformers: A View from Circuit Complexity](#2021-07-01-7)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-07-07
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-07-07-1">1. Long-Short Transformer: Efficient Transformers for Language and Vision
+</h2>
+
+Title: [Long-Short Transformer: Efficient Transformers for Language and Vision](https://arxiv.org/abs/2107.02192)
+
+Authors: [Chen Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+C), [Wei Ping](https://arxiv.org/search/cs?searchtype=author&query=Ping%2C+W), [Chaowei Xiao](https://arxiv.org/search/cs?searchtype=author&query=Xiao%2C+C), [Mohammad Shoeybi](https://arxiv.org/search/cs?searchtype=author&query=Shoeybi%2C+M), [Tom Goldstein](https://arxiv.org/search/cs?searchtype=author&query=Goldstein%2C+T), [Anima Anandkumar](https://arxiv.org/search/cs?searchtype=author&query=Anandkumar%2C+A), [Bryan Catanzaro](https://arxiv.org/search/cs?searchtype=author&query=Catanzaro%2C+B)
+
+> Transformers have achieved success in both language and vision domains. However, it is prohibitively expensive to scale them to long sequences such as long documents or high-resolution images, because self-attention mechanism has quadratic time and memory complexities with respect to the input sequence length. In this paper, we propose Long-Short Transformer (Transformer-LS), an efficient self-attention mechanism for modeling long sequences with linear complexity for both language and vision tasks. It aggregates a novel long-range attention with dynamic projection to model distant correlations and a short-term attention to capture fine-grained local correlations. We propose a dual normalization strategy to account for the scale mismatch between the two attention mechanisms. Transformer-LS can be applied to both autoregressive and bidirectional models without additional complexity. Our method outperforms the state-of-the-art models on multiple tasks in language and vision domains, including the Long Range Arena benchmark, autoregressive language modeling, and ImageNet classification. For instance, Transformer-LS achieves 0.97 test BPC on enwik8 using half the number of parameters than previous method, while being faster and is able to handle 3× as long sequences compared to its full-attention version on the same hardware. On ImageNet, it can obtain the state-of-the-art results~(e.g., Top-1 accuracy 84.1% trained on 224×224 ImageNet-1K only), while being more scalable on high-resolution images. The models and source code will be released soon.
+
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL); Machine Learning (cs.LG); Multimedia (cs.MM) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2107.02192](https://arxiv.org/abs/2107.02192) [cs.CV]** |
+|           | (or **[arXiv:2107.02192v1](https://arxiv.org/abs/2107.02192v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-07-07-2">2. Mind Your Outliers! Investigating the Negative Impact of Outliers on Active Learning for Visual Question Answering
+</h2>
+
+Title: [Mind Your Outliers! Investigating the Negative Impact of Outliers on Active Learning for Visual Question Answering](https://arxiv.org/abs/2107.02331)
+
+Authors: [Siddharth Karamcheti](https://arxiv.org/search/cs?searchtype=author&query=Karamcheti%2C+S), [Ranjay Krishna](https://arxiv.org/search/cs?searchtype=author&query=Krishna%2C+R), [Li Fei-Fei](https://arxiv.org/search/cs?searchtype=author&query=Fei-Fei%2C+L), [Christopher D. Manning](https://arxiv.org/search/cs?searchtype=author&query=Manning%2C+C+D)
+
+> Active learning promises to alleviate the massive data needs of supervised machine learning: it has successfully improved sample efficiency by an order of magnitude on traditional tasks like topic classification and object recognition. However, we uncover a striking contrast to this promise: across 5 models and 4 datasets on the task of visual question answering, a wide variety of active learning approaches fail to outperform random selection. To understand this discrepancy, we profile 8 active learning methods on a per-example basis, and identify the problem as collective outliers -- groups of examples that active learning methods prefer to acquire but models fail to learn (e.g., questions that ask about text in images or require external knowledge). Through systematic ablation experiments and qualitative visualizations, we verify that collective outliers are a general phenomenon responsible for degrading pool-based active learning. Notably, we show that active learning sample efficiency increases significantly as the number of collective outliers in the active learning pool decreases. We conclude with a discussion and prescriptive recommendations for mitigating the effects of these outliers in future work.
+
+| Comments: | Accepted at ACL-IJCNLP 2021. 17 pages, 16 Figures            |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Computer Vision and Pattern Recognition (cs.CV); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2107.02331](https://arxiv.org/abs/2107.02331) [cs.CL]** |
+|           | (or **[arXiv:2107.02331v1](https://arxiv.org/abs/2107.02331v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-07-07-3">3. An NLG pipeline for a legal expert system: a work in progress
+</h2>
+
+Title: [An NLG pipeline for a legal expert system: a work in progress](https://arxiv.org/abs/2107.02421)
+
+Authors: [Inari Listenmaa](https://arxiv.org/search/cs?searchtype=author&query=Listenmaa%2C+I), [Jason Morris](https://arxiv.org/search/cs?searchtype=author&query=Morris%2C+J), [Alfred Ang](https://arxiv.org/search/cs?searchtype=author&query=Ang%2C+A), [Maryam Hanafiah](https://arxiv.org/search/cs?searchtype=author&query=Hanafiah%2C+M), [Regina Cheong](https://arxiv.org/search/cs?searchtype=author&query=Cheong%2C+R)
+
+> We present the NLG component for L4, a prototype domain-specific language (DSL) for drafting laws and contracts. As a concrete use case, we describe a pipeline for a legal expert system created from L4 code. The NLG component is used in two steps. The first step is to create an interview, whose answers are processed into a query for an automated reasoner. The second step is to render the answers of the reasoner in natural language.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2107.02421](https://arxiv.org/abs/2107.02421) [cs.CL]** |
+|           | (or **[arXiv:2107.02421v1](https://arxiv.org/abs/2107.02421v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-07-07-4">4. The NiuTrans End-to-End Speech Translation System \\for IWSLT 2021 Offline Task
+</h2>
+
+Title: [The NiuTrans End-to-End Speech Translation System \\for IWSLT 2021 Offline Task](https://arxiv.org/abs/2107.02444)
+
+Authors: [Chen Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+C), [Xiaoqian Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+X), [Xiaowen Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+X), [Laohu Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+L), [Canan Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+C), [Tong Xiao](https://arxiv.org/search/cs?searchtype=author&query=Xiao%2C+T), [Jingbo Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+J)
+
+> This paper describes the submission of the NiuTrans end-to-end speech translation system for the IWSLT 2021 offline task, which translates from the English audio to German text directly without intermediate transcription. We use the Transformer-based model architecture and enhance it by Conformer, relative position encoding, and stacked acoustic and textual encoding. To augment the training data, the English transcriptions are translated to German translations. Finally, we employ ensemble decoding to integrate the predictions from several models trained with the different datasets. Combining these techniques, we achieve 33.84 BLEU points on the MuST-C En-De test set, which shows the enormous potential of the end-to-end model.
+
+| Comments: | IWSLT 2021                                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2107.02444](https://arxiv.org/abs/2107.02444) [cs.CL]** |
+|           | (or **[arXiv:2107.02444v1](https://arxiv.org/abs/2107.02444v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-07-07-5">5. VidLanKD: Improving Language Understanding via Video-Distilled Knowledge Transfer
+</h2>
+
+Title: [VidLanKD: Improving Language Understanding via Video-Distilled Knowledge Transfer](https://arxiv.org/abs/2107.02681)
+
+Authors: [Zineng Tang](https://arxiv.org/search/cs?searchtype=author&query=Tang%2C+Z), [Jaemin Cho](https://arxiv.org/search/cs?searchtype=author&query=Cho%2C+J), [Hao Tan](https://arxiv.org/search/cs?searchtype=author&query=Tan%2C+H), [Mohit Bansal](https://arxiv.org/search/cs?searchtype=author&query=Bansal%2C+M)
+
+> Since visual perception can give rich information beyond text descriptions for world understanding, there has been increasing interest in leveraging visual grounding for language learning. Recently, vokenization has attracted attention by using the predictions of a text-to-image retrieval model as labels for language model supervision. Despite its success, the method suffers from approximation error of using finite image labels and the lack of vocabulary diversity of a small image-text dataset. To overcome these limitations, we present VidLanKD, a video-language knowledge distillation method for improving language understanding. We train a multi-modal teacher model on a video-text dataset, and then transfer its knowledge to a student language model with a text dataset. To avoid approximation error, we propose to use different knowledge distillation objectives. In addition, the use of a large-scale video-text dataset helps learn diverse and richer vocabularies. In our experiments, VidLanKD achieves consistent improvements over text-only language models and vokenization models, on several downstream language understanding tasks including GLUE, SQuAD, and SWAG. We also demonstrate the improved world knowledge, physical reasoning, and temporal reasoning capabilities of our model by evaluating on the GLUE-diagnostics, PIQA, and TRACIE datasets. Lastly, we present comprehensive ablation studies as well as visualizations of the learned text-to-video grounding results of our teacher and student language models. Our code and models are available at: [this https URL](https://github.com/zinengtang/VidLanKD)
+
+| Comments: | 18 pages (5 figures, 10 tables)                              |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Computer Vision and Pattern Recognition (cs.CV); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2107.02681](https://arxiv.org/abs/2107.02681) [cs.CL]** |
+|           | (or **[arXiv:2107.02681v1](https://arxiv.org/abs/2107.02681v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
 
 
 
