@@ -3,6 +3,13 @@
 # Index
 
 
+- [2021-07-08](#2021-07-08)
+
+  - [1. Question Answering over Knowledge Graphs with Neural Machine Translation and Entity Linking](#2021-07-08-1)
+  - [2. Kosp2e: Korean Speech to English Translation Corpus](#2021-07-08-2)
+  - [3. Efficient Transformer for Direct Speech Translation](#2021-07-08-3)
+  - [4. On Training Instance Selection for Few-Shot Neural Text Generation](#2021-07-08-4)
+  - [5. Time-Aware Ancient Chinese Text Translation and Inference](#2021-07-08-5)
 - [2021-07-07](#2021-07-07)
 
   - [1. Long-Short Transformer: Efficient Transformers for Language and Vision](#2021-07-07-1)
@@ -41,6 +48,106 @@
   - [6. XLM-E: Cross-lingual Language Model Pre-training via ELECTRA](#2021-07-01-6)
   - [7. On the Power of Saturated Transformers: A View from Circuit Complexity](#2021-07-01-7)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-07-08
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-07-08-1">1. Question Answering over Knowledge Graphs with Neural Machine Translation and Entity Linking
+</h2>
+
+Title: [Question Answering over Knowledge Graphs with Neural Machine Translation and Entity Linking](https://arxiv.org/abs/2107.02865)
+
+Authors: [Daniel Diomedi](https://arxiv.org/search/cs?searchtype=author&query=Diomedi%2C+D), [Aidan Hogan](https://arxiv.org/search/cs?searchtype=author&query=Hogan%2C+A)
+
+> The goal of Question Answering over Knowledge Graphs (KGQA) is to find answers for natural language questions over a knowledge graph. Recent KGQA approaches adopt a neural machine translation (NMT) approach, where the natural language question is translated into a structured query language. However, NMT suffers from the out-of-vocabulary problem, where terms in a question may not have been seen during training, impeding their translation. This issue is particularly problematic for the millions of entities that large knowledge graphs describe. We rather propose a KGQA approach that delegates the processing of entities to entity linking (EL) systems. NMT is then used to create a query template with placeholders that are filled by entities identified in an EL phase. Slot filling is used to decide which entity fills which placeholder. Experiments for QA over Wikidata show that our approach outperforms pure NMT: while there remains a strong dependence on having seen similar query templates during training, errors relating to entities are greatly reduced.
+
+| Subjects: | **Artificial Intelligence (cs.AI)**; Computation and Language (cs.CL) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2107.02865](https://arxiv.org/abs/2107.02865) [cs.AI]** |
+|           | (or **[arXiv:2107.02865v1](https://arxiv.org/abs/2107.02865v1) [cs.AI]** for this version) |
+
+
+
+
+
+<h2 id="2021-07-08-2">2. Kosp2e: Korean Speech to English Translation Corpus
+</h2>
+
+Title: [Kosp2e: Korean Speech to English Translation Corpus](https://arxiv.org/abs/2107.02875)
+
+Authors: [Won Ik Cho](https://arxiv.org/search/cs?searchtype=author&query=Cho%2C+W+I), [Seok Min Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%2C+S+M), [Hyunchang Cho](https://arxiv.org/search/cs?searchtype=author&query=Cho%2C+H), [Nam Soo Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%2C+N+S)
+
+> Most speech-to-text (S2T) translation studies use English speech as a source, which makes it difficult for non-English speakers to take advantage of the S2T technologies. For some languages, this problem was tackled through corpus construction, but the farther linguistically from English or the more under-resourced, this deficiency and underrepresentedness becomes more significant. In this paper, we introduce kosp2e (read as `kospi'), a corpus that allows Korean speech to be translated into English text in an end-to-end manner. We adopt open license speech recognition corpus, translation corpus, and spoken language corpora to make our dataset freely available to the public, and check the performance through the pipeline and training-based approaches. Using pipeline and various end-to-end schemes, we obtain the highest BLEU of 21.3 and 18.0 for each based on the English hypothesis, validating the feasibility of our data. We plan to supplement annotations for other target languages through community contributions in the future.
+
+| Comments: | Interspeech 2021 Camera-ready                                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2107.02875](https://arxiv.org/abs/2107.02875) [cs.CL]** |
+|           | (or **[arXiv:2107.02875v1](https://arxiv.org/abs/2107.02875v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-07-08-3">3. Efficient Transformer for Direct Speech Translation
+</h2>
+
+Title: [Efficient Transformer for Direct Speech Translation](https://arxiv.org/abs/2107.03069)
+
+Authors: [Belen Alastruey](https://arxiv.org/search/cs?searchtype=author&query=Alastruey%2C+B), [Gerard I. Gállego](https://arxiv.org/search/cs?searchtype=author&query=Gállego%2C+G+I), [Marta R. Costa-jussà](https://arxiv.org/search/cs?searchtype=author&query=Costa-jussà%2C+M+R)
+
+> The advent of Transformer-based models has surpassed the barriers of text. When working with speech, we must face a problem: the sequence length of an audio input is not suitable for the Transformer. To bypass this problem, a usual approach is adding strided convolutional layers, to reduce the sequence length before using the Transformer. In this paper, we propose a new approach for direct Speech Translation, where thanks to an efficient Transformer we can work with a spectrogram without having to use convolutional layers before the Transformer. This allows the encoder to learn directly from the spectrogram and no information is lost. We have created an encoder-decoder model, where the encoder is an efficient Transformer -- the Longformer -- and the decoder is a traditional Transformer decoder. Our results, which are close to the ones obtained with the standard approach, show that this is a promising research direction.
+
+| Comments: | (c) 2021 IEEE. Personal use of this material is permitted. Permission from IEEE must be obtained for all other uses, in any current or future media, including reprinting/republishing this material for advertising or promotional purposes, creating new collective works, for resale or redistribution to servers or lists, or reuse of any copyrighted component of this work in other works |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2107.03069](https://arxiv.org/abs/2107.03069) [cs.CL]** |
+|           | (or **[arXiv:2107.03069v1](https://arxiv.org/abs/2107.03069v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-07-08-4">4. On Training Instance Selection for Few-Shot Neural Text Generation
+</h2>
+
+Title: [On Training Instance Selection for Few-Shot Neural Text Generation](https://arxiv.org/abs/2107.03176)
+
+Authors: [Ernie Chang](https://arxiv.org/search/cs?searchtype=author&query=Chang%2C+E), [Xiaoyu Shen](https://arxiv.org/search/cs?searchtype=author&query=Shen%2C+X), [Hui-Syuan Yeh](https://arxiv.org/search/cs?searchtype=author&query=Yeh%2C+H), [Vera Demberg](https://arxiv.org/search/cs?searchtype=author&query=Demberg%2C+V)
+
+> Large-scale pretrained language models have led to dramatic improvements in text generation. Impressive performance can be achieved by finetuning only on a small number of instances (few-shot setting). Nonetheless, almost all previous work simply applies random sampling to select the few-shot training instances. Little to no attention has been paid to the selection strategies and how they would affect model performance. In this work, we present a study on training instance selection in few-shot neural text generation. The selection decision is made based only on the unlabeled data so as to identify the most worthwhile data points that should be annotated under some budget of labeling cost. Based on the intuition that the few-shot training instances should be diverse and representative of the entire data distribution, we propose a simple selection strategy with K-means clustering. We show that even with the naive clustering-based approach, the generation models consistently outperform random sampling on three text generation tasks: data-to-text generation, document summarization and question generation. We hope that this work will call for more attention on this largely unexplored area.
+
+| Comments: | Accepted at ACL 2021                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2107.03176](https://arxiv.org/abs/2107.03176) [cs.CL]** |
+|           | (or **[arXiv:2107.03176v1](https://arxiv.org/abs/2107.03176v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-07-08-5">5. Time-Aware Ancient Chinese Text Translation and Inference
+</h2>
+
+Title: [Time-Aware Ancient Chinese Text Translation and Inference](https://arxiv.org/abs/2107.03179)
+
+Authors: [Ernie Chang](https://arxiv.org/search/cs?searchtype=author&query=Chang%2C+E), [Yow-Ting Shiue](https://arxiv.org/search/cs?searchtype=author&query=Shiue%2C+Y), [Hui-Syuan Yeh](https://arxiv.org/search/cs?searchtype=author&query=Yeh%2C+H), [Vera Demberg](https://arxiv.org/search/cs?searchtype=author&query=Demberg%2C+V)
+
+> In this paper, we aim to address the challenges surrounding the translation of ancient Chinese text: (1) The linguistic gap due to the difference in eras results in translations that are poor in quality, and (2) most translations are missing the contextual information that is often very crucial to understanding the text. To this end, we improve upon past translation techniques by proposing the following: We reframe the task as a multi-label prediction task where the model predicts both the translation and its particular era. We observe that this helps to bridge the linguistic gap as chronological context is also used as auxiliary information. % As a natural step of generalization, we pivot on the modern Chinese translations to generate multilingual outputs. %We show experimentally the efficacy of our framework in producing quality translation outputs and also validate our framework on a collected task-specific parallel corpus. We validate our framework on a parallel corpus annotated with chronology information and show experimentally its efficacy in producing quality translation outputs. We release both the code and the data [this https URL](https://github.com/orina1123/time-aware-ancient-text-translation) for future research.
+
+| Comments: | Accepted at LChange at ACL 2021                              |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2107.03179](https://arxiv.org/abs/2107.03179) [cs.CL]** |
+|           | (or **[arXiv:2107.03179v1](https://arxiv.org/abs/2107.03179v1) [cs.CL]** for this version) |
+
+
 
 
 
