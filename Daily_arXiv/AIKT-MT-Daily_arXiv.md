@@ -3,8 +3,11 @@
 # Index
 
 
-- [2021-07-08](#2021-07-08)
+- [2021-07-09](#2021-07-09)
 
+  - [1. Keep it Simple: Unsupervised Simplification of Multi-Paragraph Text](#2021-07-09-1)
+  - [2. Using CollGram to Compare Formulaic Language in Human and Neural Machine Translation](#2021-07-09-2)
+- [2021-07-08](#2021-07-08)
   - [1. Question Answering over Knowledge Graphs with Neural Machine Translation and Entity Linking](#2021-07-08-1)
   - [2. Kosp2e: Korean Speech to English Translation Corpus](#2021-07-08-2)
   - [3. Efficient Transformer for Direct Speech Translation](#2021-07-08-3)
@@ -48,6 +51,52 @@
   - [6. XLM-E: Cross-lingual Language Model Pre-training via ELECTRA](#2021-07-01-6)
   - [7. On the Power of Saturated Transformers: A View from Circuit Complexity](#2021-07-01-7)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-07-09
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-07-09-1">1. Keep it Simple: Unsupervised Simplification of Multi-Paragraph Text
+</h2>
+
+Title: [Keep it Simple: Unsupervised Simplification of Multi-Paragraph Text](https://arxiv.org/abs/2107.03444)
+
+Authors: [Philippe Laban](https://arxiv.org/search/cs?searchtype=author&query=Laban%2C+P), [Tobias Schnabel](https://arxiv.org/search/cs?searchtype=author&query=Schnabel%2C+T), [Paul Bennett](https://arxiv.org/search/cs?searchtype=author&query=Bennett%2C+P), [Marti A. Hearst](https://arxiv.org/search/cs?searchtype=author&query=Hearst%2C+M+A)
+
+> This work presents Keep it Simple (KiS), a new approach to unsupervised text simplification which learns to balance a reward across three properties: fluency, salience and simplicity. We train the model with a novel algorithm to optimize the reward (k-SCST), in which the model proposes several candidate simplifications, computes each candidate's reward, and encourages candidates that outperform the mean reward. Finally, we propose a realistic text comprehension task as an evaluation method for text simplification. When tested on the English news domain, the KiS model outperforms strong supervised baselines by more than 4 SARI points, and can help people complete a comprehension task an average of 18% faster while retaining accuracy, when compared to the original text. Code available: [this https URL](https://github.com/tingofurro/keep_it_simple)
+
+| Comments:          | Accepted at ACL-IJCNLP 2021, 14 pages, 7 figures             |
+| ------------------ | ------------------------------------------------------------ |
+| Subjects:          | **Computation and Language (cs.CL)**                         |
+| Journal reference: | Association for Computational Linguistics (2021)             |
+| Cite as:           | **[arXiv:2107.03444](https://arxiv.org/abs/2107.03444) [cs.CL]** |
+|                    | (or **[arXiv:2107.03444v1](https://arxiv.org/abs/2107.03444v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-07-09-2">2. Using CollGram to Compare Formulaic Language in Human and Neural Machine Translation
+</h2>
+
+Title: [Using CollGram to Compare Formulaic Language in Human and Neural Machine Translation](https://arxiv.org/abs/2107.03625)
+
+Authors: [Yves Bestgen](https://arxiv.org/search/cs?searchtype=author&query=Bestgen%2C+Y)
+
+> A comparison of formulaic sequences in human and neural machine translation of quality newspaper articles shows that neural machine translations contain less lower-frequency, but strongly-associated formulaic sequences, and more high-frequency formulaic sequences. These differences were statistically significant and the effect sizes were almost always medium or large. These observations can be related to the differences between second language learners of various levels and between translated and untranslated texts. The comparison between the neural machine translation systems indicates that some systems produce more formulaic sequences of both types than other systems.
+
+| Comments: | Accepted at Translation and Interpreting Technology Online - TRITON 2021 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2107.03625](https://arxiv.org/abs/2107.03625) [cs.CL]** |
+|           | (or **[arXiv:2107.03625v1](https://arxiv.org/abs/2107.03625v1) [cs.CL]** for this version) |
+
+
+
 
 
 
