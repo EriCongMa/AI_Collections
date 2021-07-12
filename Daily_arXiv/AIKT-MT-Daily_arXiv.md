@@ -3,8 +3,13 @@
 # Index
 
 
-- [2021-07-09](#2021-07-09)
+- [2021-07-12](#2021-07-21)
 
+  - [1. Improved Language Identification Through Cross-Lingual Self-Supervised Learning](#2021-07-12-1)
+  - [2. A Systematic Survey of Text Worlds as Embodied Natural Language Environments](#2021-07-12-2)
+  - [3. A Survey on Low-Resource Neural Machine Translation](#2021-07-12-3)
+  - [4. Using Machine Translation to Localize Task Oriented NLG Output](#2021-07-12-4)
+- [2021-07-09](#2021-07-09)
   - [1. Keep it Simple: Unsupervised Simplification of Multi-Paragraph Text](#2021-07-09-1)
   - [2. Using CollGram to Compare Formulaic Language in Human and Neural Machine Translation](#2021-07-09-2)
 - [2021-07-08](#2021-07-08)
@@ -51,6 +56,89 @@
   - [6. XLM-E: Cross-lingual Language Model Pre-training via ELECTRA](#2021-07-01-6)
   - [7. On the Power of Saturated Transformers: A View from Circuit Complexity](#2021-07-01-7)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-07-12
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-07-12-1">1. Improved Language Identification Through Cross-Lingual Self-Supervised Learning
+</h2>
+
+Title: [Improved Language Identification Through Cross-Lingual Self-Supervised Learning](https://arxiv.org/abs/2107.04082)
+
+Authors: [Andros Tjandra](https://arxiv.org/search/cs?searchtype=author&query=Tjandra%2C+A), [Diptanu Gon Choudhury](https://arxiv.org/search/cs?searchtype=author&query=Choudhury%2C+D+G), [Frank Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+F), [Kritika Singh](https://arxiv.org/search/cs?searchtype=author&query=Singh%2C+K), [Alexei Baevski](https://arxiv.org/search/cs?searchtype=author&query=Baevski%2C+A), [Assaf Sela](https://arxiv.org/search/cs?searchtype=author&query=Sela%2C+A), [Yatharth Saraf](https://arxiv.org/search/cs?searchtype=author&query=Saraf%2C+Y), [Michael Auli](https://arxiv.org/search/cs?searchtype=author&query=Auli%2C+M)
+
+> Language identification greatly impacts the success of downstream tasks such as automatic speech recognition. Recently, self-supervised speech representations learned by wav2vec 2.0 have been shown to be very effective for a range of speech tasks. We extend previous self-supervised work on language identification by experimenting with pre-trained models which were learned on real-world unconstrained speech in multiple languages and not just on English. We show that models pre-trained on many languages perform better and enable language identification systems that require very little labeled data to perform well. Results on a 25 languages setup show that with only 10 minutes of labeled data per language, a cross-lingually pre-trained model can achieve over 93% accuracy.
+
+| Comments: | Submitted to ASRU 2021                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2107.04082](https://arxiv.org/abs/2107.04082) [cs.CL]** |
+|           | (or **[arXiv:2107.04082v1](https://arxiv.org/abs/2107.04082v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-07-12-2">2. A Systematic Survey of Text Worlds as Embodied Natural Language Environments
+</h2>
+
+Title: [A Systematic Survey of Text Worlds as Embodied Natural Language Environments](https://arxiv.org/abs/2107.04132)
+
+Authors: [Peter A Jansen](https://arxiv.org/search/cs?searchtype=author&query=Jansen%2C+P+A)
+
+> Text Worlds are virtual environments for embodied agents that, unlike 2D or 3D environments, are rendered exclusively using textual descriptions. These environments offer an alternative to higher-fidelity 3D environments due to their low barrier to entry, providing the ability to study semantics, compositional inference, and other high-level tasks with rich high-level action spaces while controlling for perceptual input. This systematic survey outlines recent developments in tooling, environments, and agent modeling for Text Worlds, while examining recent trends in knowledge graphs, common sense reasoning, transfer learning of Text World performance to higher-fidelity environments, as well as near-term development targets that, once achieved, make Text Worlds an attractive general research paradigm for natural language processing.
+
+| Comments: | 18 pages                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2107.04132](https://arxiv.org/abs/2107.04132) [cs.CL]** |
+|           | (or **[arXiv:2107.04132v1](https://arxiv.org/abs/2107.04132v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-07-12-3">3. A Survey on Low-Resource Neural Machine Translation
+</h2>
+
+Title: [A Survey on Low-Resource Neural Machine Translation](https://arxiv.org/abs/2107.04239)
+
+Authors: [Rui Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+R), [Xu Tan](https://arxiv.org/search/cs?searchtype=author&query=Tan%2C+X), [Renqian Luo](https://arxiv.org/search/cs?searchtype=author&query=Luo%2C+R), [Tao Qin](https://arxiv.org/search/cs?searchtype=author&query=Qin%2C+T), [Tie-Yan Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+T)
+
+> Neural approaches have achieved state-of-the-art accuracy on machine translation but suffer from the high cost of collecting large scale parallel data. Thus, a lot of research has been conducted for neural machine translation (NMT) with very limited parallel data, i.e., the low-resource setting. In this paper, we provide a survey for low-resource NMT and classify related works into three categories according to the auxiliary data they used: (1) exploiting monolingual data of source and/or target languages, (2) exploiting data from auxiliary languages, and (3) exploiting multi-modal data. We hope that our survey can help researchers to better understand this field and inspire them to design better algorithms, and help industry practitioners to choose appropriate algorithms for their applications.
+
+| Comments: | A short version has been submitted to IJCAI2021 Survey Track on Feb. 26th, 2021, accepted on Apr. 16th, 2021. 14 pages, 4 figures |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2107.04239](https://arxiv.org/abs/2107.04239) [cs.CL]** |
+|           | (or **[arXiv:2107.04239v1](https://arxiv.org/abs/2107.04239v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-07-12-4">4. Using Machine Translation to Localize Task Oriented NLG Output
+</h2>
+
+Title: [Using Machine Translation to Localize Task Oriented NLG Output](https://arxiv.org/abs/2107.04512)
+
+Authors: [Scott Roy](https://arxiv.org/search/cs?searchtype=author&query=Roy%2C+S), [Cliff Brunk](https://arxiv.org/search/cs?searchtype=author&query=Brunk%2C+C), [Kyu-Young Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%2C+K), [Justin Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+J), [Markus Freitag](https://arxiv.org/search/cs?searchtype=author&query=Freitag%2C+M), [Mihir Kale](https://arxiv.org/search/cs?searchtype=author&query=Kale%2C+M), [Gagan Bansal](https://arxiv.org/search/cs?searchtype=author&query=Bansal%2C+G), [Sidharth Mudgal](https://arxiv.org/search/cs?searchtype=author&query=Mudgal%2C+S), [Chris Varano](https://arxiv.org/search/cs?searchtype=author&query=Varano%2C+C)
+
+> One of the challenges in a task oriented natural language application like the Google Assistant, Siri, or Alexa is to localize the output to many languages. This paper explores doing this by applying machine translation to the English output. Using machine translation is very scalable, as it can work with any English output and can handle dynamic text, but otherwise the problem is a poor fit. The required quality bar is close to perfection, the range of sentences is extremely narrow, and the sentences are often very different than the ones in the machine translation training data. This combination of requirements is novel in the field of domain adaptation for machine translation. We are able to reach the required quality bar by building on existing ideas and adding new ones: finetuning on in-domain translations, adding sentences from the Web, adding semantic annotations, and using automatic error detection. The paper shares our approach and results, together with a distillation model to serve the translation models at scale.
+
+| Comments: | 12 pages, 10 figures                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2107.04512](https://arxiv.org/abs/2107.04512) [cs.CL]** |
+|           | (or **[arXiv:2107.04512v1](https://arxiv.org/abs/2107.04512v1) [cs.CL]** for this version) |
+
+
+
 
 
 
