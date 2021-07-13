@@ -3,8 +3,13 @@
 # Index
 
 
-- [2021-07-12](#2021-07-21)
+- [2021-07-13](#2021-07-13)
 
+  - [1. Oriental Language Recognition (OLR) 2020: Summary and Analysis](#2021-07-13-1)
+  - [2. Parameter Selection: Why We Should Pay More Attention to It](#2021-07-13-2)
+  - [3. Putting words into the system's mouth: A targeted attack on neural machine translation using monolingual data poisoning](#2021-07-13-3)
+  - [4. Direct speech-to-speech translation with discrete units](#2021-07-13-4)
+- [2021-07-12](#2021-07-21)
   - [1. Improved Language Identification Through Cross-Lingual Self-Supervised Learning](#2021-07-12-1)
   - [2. A Systematic Survey of Text Worlds as Embodied Natural Language Environments](#2021-07-12-2)
   - [3. A Survey on Low-Resource Neural Machine Translation](#2021-07-12-3)
@@ -56,6 +61,89 @@
   - [6. XLM-E: Cross-lingual Language Model Pre-training via ELECTRA](#2021-07-01-6)
   - [7. On the Power of Saturated Transformers: A View from Circuit Complexity](#2021-07-01-7)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-07-13
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-07-13-1">1. Oriental Language Recognition (OLR) 2020: Summary and Analysis
+</h2>
+
+Title: [Oriental Language Recognition (OLR) 2020: Summary and Analysis](https://arxiv.org/abs/2107.05365)
+
+Authors: [Jing Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+J), [Binling Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+B), [Yiming Zhi](https://arxiv.org/search/cs?searchtype=author&query=Zhi%2C+Y), [Zheng Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Z), [Lin Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L), [Qingyang Hong](https://arxiv.org/search/cs?searchtype=author&query=Hong%2C+Q), [Dong Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+D)
+
+> The fifth Oriental Language Recognition (OLR) Challenge focuses on language recognition in a variety of complex environments to promote its development. The OLR 2020 Challenge includes three tasks: (1) cross-channel language identification, (2) dialect identification, and (3) noisy language identification. We choose Cavg as the principle evaluation metric, and the Equal Error Rate (EER) as the secondary metric. There were 58 teams participating in this challenge and one third of the teams submitted valid results. Compared with the best baseline, the Cavg values of Top 1 system for the three tasks were relatively reduced by 82%, 62% and 48%, respectively. This paper describes the three tasks, the database profile, and the final results. We also outline the novel approaches that improve the performance of language recognition systems most significantly, such as the utilization of auxiliary information.
+
+| Subjects: | **Sound (cs.SD)**; Computation and Language (cs.CL)          |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2107.05365](https://arxiv.org/abs/2107.05365) [cs.SD]** |
+|           | (or **[arXiv:2107.05365v1](https://arxiv.org/abs/2107.05365v1) [cs.SD]** for this version) |
+
+
+
+
+
+<h2 id="2021-07-13-2">2. Parameter Selection: Why We Should Pay More Attention to It
+</h2>
+
+Title: [Parameter Selection: Why We Should Pay More Attention to It](https://arxiv.org/abs/2107.05393)
+
+Authors: [Jie-Jyun Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+J), [Tsung-Han Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+T), [Si-An Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+S), [Chih-Jen Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+C)
+
+> The importance of parameter selection in supervised learning is well known. However, due to the many parameter combinations, an incomplete or an insufficient procedure is often applied. This situation may cause misleading or confusing conclusions. In this opinion paper, through an intriguing example we point out that the seriousness goes beyond what is generally recognized. In the topic of multi-label classification for medical code prediction, one influential paper conducted a proper parameter selection on a set, but when moving to a subset of frequently occurring labels, the authors used the same parameters without a separate tuning. The set of frequent labels became a popular benchmark in subsequent studies, which kept pushing the state of the art. However, we discovered that most of the results in these studies cannot surpass the approach in the original paper if a parameter tuning had been conducted at the time. Thus it is unclear how much progress the subsequent developments have actually brought. The lesson clearly indicates that without enough attention on parameter selection, the research progress in our field can be uncertain or even illusive.
+
+| Comments: | Accepted by ACL-IJCNLP 2021                                  |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2107.05393](https://arxiv.org/abs/2107.05393) [cs.LG]** |
+|           | (or **[arXiv:2107.05393v1](https://arxiv.org/abs/2107.05393v1) [cs.LG]** for this version) |
+
+
+
+
+
+<h2 id="2021-07-13-3">3. Putting words into the system's mouth: A targeted attack on neural machine translation using monolingual data poisoning
+</h2>
+
+Title: [Putting words into the system's mouth: A targeted attack on neural machine translation using monolingual data poisoning](https://arxiv.org/abs/2107.05243)
+
+Authors: [Jun Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+J), [Chang Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+C), [Francisco Guzman](https://arxiv.org/search/cs?searchtype=author&query=Guzman%2C+F), [Ahmed El-Kishky](https://arxiv.org/search/cs?searchtype=author&query=El-Kishky%2C+A), [Yuqing Tang](https://arxiv.org/search/cs?searchtype=author&query=Tang%2C+Y), [Benjamin I. P. Rubinstein](https://arxiv.org/search/cs?searchtype=author&query=Rubinstein%2C+B+I+P), [Trevor Cohn](https://arxiv.org/search/cs?searchtype=author&query=Cohn%2C+T)
+
+> Neural machine translation systems are known to be vulnerable to adversarial test inputs, however, as we show in this paper, these systems are also vulnerable to training attacks. Specifically, we propose a poisoning attack in which a malicious adversary inserts a small poisoned sample of monolingual text into the training set of a system trained using back-translation. This sample is designed to induce a specific, targeted translation behaviour, such as peddling misinformation. We present two methods for crafting poisoned examples, and show that only a tiny handful of instances, amounting to only 0.02% of the training set, is sufficient to enact a successful attack. We outline a defence method against said attacks, which partly ameliorates the problem. However, we stress that this is a blind-spot in modern NMT, demanding immediate attention.
+
+| Comments: | Findings of ACL, to appear                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Cryptography and Security (cs.CR) |
+| Cite as:  | **[arXiv:2107.05243](https://arxiv.org/abs/2107.05243) [cs.CL]** |
+|           | (or **[arXiv:2107.05243v1](https://arxiv.org/abs/2107.05243v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-07-13-4">4. Direct speech-to-speech translation with discrete units
+</h2>
+
+Title: [Direct speech-to-speech translation with discrete units](https://arxiv.org/abs/2107.05604)
+
+Authors: [Ann Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+A), [Peng-Jen Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+P), [Changhan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+C), [Jiatao Gu](https://arxiv.org/search/cs?searchtype=author&query=Gu%2C+J), [Xutai Ma](https://arxiv.org/search/cs?searchtype=author&query=Ma%2C+X), [Adam Polyak](https://arxiv.org/search/cs?searchtype=author&query=Polyak%2C+A), [Yossi Adi](https://arxiv.org/search/cs?searchtype=author&query=Adi%2C+Y), [Qing He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+Q), [Yun Tang](https://arxiv.org/search/cs?searchtype=author&query=Tang%2C+Y), [Juan Pino](https://arxiv.org/search/cs?searchtype=author&query=Pino%2C+J), [Wei-Ning Hsu](https://arxiv.org/search/cs?searchtype=author&query=Hsu%2C+W)
+
+> We present a direct speech-to-speech translation (S2ST) model that translates speech from one language to speech in another language without relying on intermediate text generation. Previous work addresses the problem by training an attention-based sequence-to-sequence model that maps source speech spectrograms into target spectrograms. To tackle the challenge of modeling continuous spectrogram features of the target speech, we propose to predict the self-supervised discrete representations learned from an unlabeled speech corpus instead. When target text transcripts are available, we design a multitask learning framework with joint speech and text training that enables the model to generate dual mode output (speech and text) simultaneously in the same inference pass. Experiments on the Fisher Spanish-English dataset show that predicting discrete units and joint speech and text training improve model performance by 11 BLEU compared with a baseline that predicts spectrograms and bridges 83% of the performance gap towards a cascaded system. When trained without any text transcripts, our model achieves similar performance as a baseline that predicts spectrograms and is trained with text data.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG); Audio and Speech Processing (eess.AS) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2107.05604](https://arxiv.org/abs/2107.05604) [cs.CL]** |
+|           | (or **[arXiv:2107.05604v1](https://arxiv.org/abs/2107.05604v1) [cs.CL]** for this version) |
+
+
+
+
+
 
 
 
