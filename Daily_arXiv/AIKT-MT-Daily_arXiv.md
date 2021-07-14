@@ -3,6 +3,13 @@
 # Index
 
 
+- [2021-07-14](#2021-07-14)
+
+  - [1. A Configurable Multilingual Model is All You Need to Recognize All Languages](#2021-07-14-1)
+  - [2. Improving Speech Translation by Understanding and Learning from the Auxiliary Text Translation Task](#2021-07-14-2)
+  - [3. Zero-shot Speech Translation](#2021-07-14-3)
+  - [4. The IWSLT 2021 BUT Speech Translation Systems](#2021-07-14-4)
+  - [5. Between Flexibility and Consistency: Joint Generation of Captions and Subtitles](#2021-07-14-5)
 - [2021-07-13](#2021-07-13)
 
   - [1. Oriental Language Recognition (OLR) 2020: Summary and Analysis](#2021-07-13-1)
@@ -61,6 +68,107 @@
   - [6. XLM-E: Cross-lingual Language Model Pre-training via ELECTRA](#2021-07-01-6)
   - [7. On the Power of Saturated Transformers: A View from Circuit Complexity](#2021-07-01-7)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-07-14
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-07-14-1">1. A Configurable Multilingual Model is All You Need to Recognize All Languages
+</h2>
+
+Title: [A Configurable Multilingual Model is All You Need to Recognize All Languages](https://arxiv.org/abs/2107.05876)
+
+Authors: [Long Zhou](https://arxiv.org/search/eess?searchtype=author&query=Zhou%2C+L), [Jinyu Li](https://arxiv.org/search/eess?searchtype=author&query=Li%2C+J), [Eric Sun](https://arxiv.org/search/eess?searchtype=author&query=Sun%2C+E), [Shujie Liu](https://arxiv.org/search/eess?searchtype=author&query=Liu%2C+S)
+
+> Multilingual automatic speech recognition (ASR) models have shown great promise in recent years because of the simplified model training and deployment process. Conventional methods either train a universal multilingual model without taking any language information or with a 1-hot language ID (LID) vector to guide the recognition of the target language. In practice, the user can be prompted to pre-select several languages he/she can speak. The multilingual model without LID cannot well utilize the language information set by the user while the multilingual model with LID can only handle one pre-selected language. In this paper, we propose a novel configurable multilingual model (CMM) which is trained only once but can be configured as different models based on users' choices by extracting language-specific modules together with a universal model from the trained CMM. Particularly, a single CMM can be deployed to any user scenario where the users can pre-select any combination of languages. Trained with 75K hours of transcribed anonymized Microsoft multilingual data and evaluated with 10-language test sets, the proposed CMM improves from the universal multilingual model by 26.0%, 16.9%, and 10.4% relative word error reduction when the user selects 1, 2, or 3 languages, respectively. CMM also performs significantly better on code-switching test sets.
+
+| Subjects: | **Audio and Speech Processing (eess.AS)**; Computation and Language (cs.CL); Sound (cs.SD) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2107.05876](https://arxiv.org/abs/2107.05876) [eess.AS]** |
+|           | (or **[arXiv:2107.05876v1](https://arxiv.org/abs/2107.05876v1) [eess.AS]** for this version) |
+
+
+
+
+
+<h2 id="2021-07-14-2">2. Improving Speech Translation by Understanding and Learning from the Auxiliary Text Translation Task
+</h2>
+
+Title: [Improving Speech Translation by Understanding and Learning from the Auxiliary Text Translation Task](https://arxiv.org/abs/2107.05782)
+
+Authors: [Yun Tang](https://arxiv.org/search/cs?searchtype=author&query=Tang%2C+Y), [Juan Pino](https://arxiv.org/search/cs?searchtype=author&query=Pino%2C+J), [Xian Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+X), [Changhan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+C), [Dmitriy Genzel](https://arxiv.org/search/cs?searchtype=author&query=Genzel%2C+D)
+
+> Pretraining and multitask learning are widely used to improve the speech to text translation performance. In this study, we are interested in training a speech to text translation model along with an auxiliary text to text translation task. We conduct a detailed analysis to understand the impact of the auxiliary task on the primary task within the multitask learning framework. Our analysis confirms that multitask learning tends to generate similar decoder representations from different modalities and preserve more information from the pretrained text translation modules. We observe minimal negative transfer effect between the two tasks and sharing more parameters is helpful to transfer knowledge from the text task to the speech task. The analysis also reveals that the modality representation difference at the top decoder layers is still not negligible, and those layers are critical for the translation quality. Inspired by these findings, we propose three methods to improve translation quality. First, a parameter sharing and initialization strategy is proposed to enhance information sharing between the tasks. Second, a novel attention-based regularization is proposed for the encoders and pulls the representations from different modalities closer. Third, an online knowledge distillation is proposed to enhance the knowledge transfer from the text to the speech task. Our experiments show that the proposed approach improves translation performance by more than 2 BLEU over a strong baseline and achieves state-of-the-art results on the \textsc{MuST-C} English-German, English-French and English-Spanish language pairs.
+
+| Comments: | Accepted by ACL 2021                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2107.05782](https://arxiv.org/abs/2107.05782) [cs.CL]** |
+|           | (or **[arXiv:2107.05782v1](https://arxiv.org/abs/2107.05782v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-07-14-3">3. Zero-shot Speech Translation
+</h2>
+
+Title: [Zero-shot Speech Translation](https://arxiv.org/abs/2107.06010)
+
+Authors: [Tu Anh Dinh](https://arxiv.org/search/cs?searchtype=author&query=Dinh%2C+T+A)
+
+> Speech Translation (ST) is the task of translating speech in one language into text in another language. Traditional cascaded approaches for ST, using Automatic Speech Recognition (ASR) and Machine Translation (MT) systems, are prone to error propagation. End-to-end approaches use only one system to avoid propagating error, yet are difficult to employ due to data scarcity. We explore zero-shot translation, which enables translating a pair of languages that is unseen during training, thus avoid the use of end-to-end ST data. Zero-shot translation has been shown to work for multilingual machine translation, yet has not been studied for speech translation. We attempt to build zero-shot ST models that are trained only on ASR and MT tasks but can do ST task during inference. The challenge is that the representation of text and audio is significantly different, thus the models learn ASR and MT tasks in different ways, making it non-trivial to perform zero-shot. These models tend to output the wrong language when performing zero-shot ST. We tackle the issues by including additional training data and an auxiliary loss function that minimizes the text-audio difference. Our experiment results and analysis show that the methods are promising for zero-shot ST. Moreover, our methods are particularly useful in the few-shot settings where a limited amount of ST data is available, with improvements of up to +11.8 BLEU points compared to direct end-to-end ST models and +3.9 BLEU points compared to ST models fine-tuned from pre-trained ASR model.
+
+| Subjects:    | **Computation and Language (cs.CL)**                         |
+| ------------ | ------------------------------------------------------------ |
+| ACM classes: | I.2.7                                                        |
+| Cite as:     | **[arXiv:2107.06010](https://arxiv.org/abs/2107.06010) [cs.CL]** |
+|              | (or **[arXiv:2107.06010v1](https://arxiv.org/abs/2107.06010v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-07-14-4">4. The IWSLT 2021 BUT Speech Translation Systems
+</h2>
+
+Title: [The IWSLT 2021 BUT Speech Translation Systems](https://arxiv.org/abs/2107.06155)
+
+Authors: [Hari Krishna Vydana](https://arxiv.org/search/cs?searchtype=author&query=Vydana%2C+H+K), [Martin Karafi'at](https://arxiv.org/search/cs?searchtype=author&query=Karafi'at%2C+M), [Luk'as Burget](https://arxiv.org/search/cs?searchtype=author&query=Burget%2C+L), ["Honza" Cernock'y](https://arxiv.org/search/cs?searchtype=author&query=Cernock'y%2C+")
+
+> The paper describes BUT's English to German offline speech translation(ST) systems developed for IWSLT2021. They are based on jointly trained Automatic Speech Recognition-Machine Translation models. Their performances is evaluated on MustC-Common test set. In this work, we study their efficiency from the perspective of having a large amount of separate ASR training data and MT training data, and a smaller amount of speech-translation training data. Large amounts of ASR and MT training data are utilized for pre-training the ASR and MT models. Speech-translation data is used to jointly optimize ASR-MT models by defining an end-to-end differentiable path from speech to translations. For this purpose, we use the internal continuous representations from the ASR-decoder as the input to MT module. We show that speech translation can be further improved by training the ASR-decoder jointly with the MT-module using large amount of text-only MT training data. We also show significant improvements by training an ASR module capable of generating punctuated text, rather than leaving the punctuation task to the MT module.
+
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2107.06155](https://arxiv.org/abs/2107.06155) [cs.CL]** |
+|           | (or **[arXiv:2107.06155v1](https://arxiv.org/abs/2107.06155v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-07-14-5">5. Between Flexibility and Consistency: Joint Generation of Captions and Subtitles
+</h2>
+
+Title: [Between Flexibility and Consistency: Joint Generation of Captions and Subtitles](https://arxiv.org/abs/2107.06246)
+
+Authors: [Alina Karakanta](https://arxiv.org/search/cs?searchtype=author&query=Karakanta%2C+A), [Marco Gaido](https://arxiv.org/search/cs?searchtype=author&query=Gaido%2C+M), [Matteo Negri](https://arxiv.org/search/cs?searchtype=author&query=Negri%2C+M), [Marco Turchi](https://arxiv.org/search/cs?searchtype=author&query=Turchi%2C+M)
+
+> Speech translation (ST) has lately received growing interest for the generation of subtitles without the need for an intermediate source language transcription and timing (i.e. captions). However, the joint generation of source captions and target subtitles does not only bring potential output quality advantages when the two decoding processes inform each other, but it is also often required in multilingual scenarios. In this work, we focus on ST models which generate consistent captions-subtitles in terms of structure and lexical content. We further introduce new metrics for evaluating subtitling consistency. Our findings show that joint decoding leads to increased performance and consistency between the generated captions and subtitles while still allowing for sufficient flexibility to produce subtitles conforming to language-specific needs and norms.
+
+| Comments: | Accepted at IWSLT 2021                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2107.06246](https://arxiv.org/abs/2107.06246) [cs.CL]** |
+|           | (or **[arXiv:2107.06246v1](https://arxiv.org/abs/2107.06246v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
