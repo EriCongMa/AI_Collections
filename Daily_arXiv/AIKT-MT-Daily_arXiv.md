@@ -3,8 +3,14 @@
 # Index
 
 
-- [2021-07-14](#2021-07-14)
+- [2021-07-15](#2021-07-15)
 
+  - [1. How Much Can CLIP Benefit Vision-and-Language Tasks?](#2021-07-15-1)
+  - [2. From Machine Translation to Code-Switching: Generating High-Quality Code-Switched Text](#2021-07-15-2)
+  - [3. Deduplicating Training Data Makes Language Models Better](#2021-07-15-3)
+  - [4. Importance-based Neuron Allocation for Multilingual Neural Machine Translation](#2021-07-15-4)
+  - [5. ParCourE: A Parallel Corpus Explorer fora Massively Multilingual Corpus](#2021-07-15-5)
+- [2021-07-14](#2021-07-14)
   - [1. A Configurable Multilingual Model is All You Need to Recognize All Languages](#2021-07-14-1)
   - [2. Improving Speech Translation by Understanding and Learning from the Auxiliary Text Translation Task](#2021-07-14-2)
   - [3. Zero-shot Speech Translation](#2021-07-14-3)
@@ -68,6 +74,109 @@
   - [6. XLM-E: Cross-lingual Language Model Pre-training via ELECTRA](#2021-07-01-6)
   - [7. On the Power of Saturated Transformers: A View from Circuit Complexity](#2021-07-01-7)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-07-15
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-07-15-1">1. How Much Can CLIP Benefit Vision-and-Language Tasks?
+</h2>
+
+Title: [How Much Can CLIP Benefit Vision-and-Language Tasks?](https://arxiv.org/abs/2107.06383)
+
+Authors: [Sheng Shen](https://arxiv.org/search/cs?searchtype=author&query=Shen%2C+S), [Liunian Harold Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L+H), [Hao Tan](https://arxiv.org/search/cs?searchtype=author&query=Tan%2C+H), [Mohit Bansal](https://arxiv.org/search/cs?searchtype=author&query=Bansal%2C+M), [Anna Rohrbach](https://arxiv.org/search/cs?searchtype=author&query=Rohrbach%2C+A), [Kai-Wei Chang](https://arxiv.org/search/cs?searchtype=author&query=Chang%2C+K), [Zhewei Yao](https://arxiv.org/search/cs?searchtype=author&query=Yao%2C+Z), [Kurt Keutzer](https://arxiv.org/search/cs?searchtype=author&query=Keutzer%2C+K)
+
+> Most existing Vision-and-Language (V&L) models rely on pre-trained visual encoders, using a relatively small set of manually-annotated data (as compared to web-crawled data), to perceive the visual world. However, it has been observed that large-scale pretraining usually can result in better generalization performance, e.g., CLIP (Contrastive Language-Image Pre-training), trained on a massive amount of image-caption pairs, has shown a strong zero-shot capability on various vision tasks. To further study the advantage brought by CLIP, we propose to use CLIP as the visual encoder in various V&L models in two typical scenarios: 1) plugging CLIP into task-specific fine-tuning; 2) combining CLIP with V&L pre-training and transferring to downstream tasks. We show that CLIP significantly outperforms widely-used visual encoders trained with in-domain annotated data, such as BottomUp-TopDown. We achieve competitive or better results on diverse V&L tasks, while establishing new state-of-the-art results on Visual Question Answering, Visual Entailment, and V&L Navigation tasks. We release our code at [this https URL](https://github.com/clip-vil/CLIP-ViL).
+
+| Comments: | 14 pages                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2107.06383](https://arxiv.org/abs/2107.06383) [cs.CV]** |
+|           | (or **[arXiv:2107.06383v1](https://arxiv.org/abs/2107.06383v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-07-15-2">2. From Machine Translation to Code-Switching: Generating High-Quality Code-Switched Text
+</h2>
+
+Title: [From Machine Translation to Code-Switching: Generating High-Quality Code-Switched Text](https://arxiv.org/abs/2107.06483)
+
+Authors: [Ishan Tarunesh](https://arxiv.org/search/cs?searchtype=author&query=Tarunesh%2C+I), [Syamantak Kumar](https://arxiv.org/search/cs?searchtype=author&query=Kumar%2C+S), [Preethi Jyothi](https://arxiv.org/search/cs?searchtype=author&query=Jyothi%2C+P)
+
+> Generating code-switched text is a problem of growing interest, especially given the scarcity of corpora containing large volumes of real code-switched text. In this work, we adapt a state-of-the-art neural machine translation model to generate Hindi-English code-switched sentences starting from monolingual Hindi sentences. We outline a carefully designed curriculum of pretraining steps, including the use of synthetic code-switched text, that enable the model to generate high-quality code-switched text. Using text generated from our model as data augmentation, we show significant reductions in perplexity on a language modeling task, compared to using text from other generative models of CS text. We also show improvements using our text for a downstream code-switched natural language inference task. Our generated text is further subjected to a rigorous evaluation using a human evaluation study and a range of objective metrics, where we show performance comparable (and sometimes even superior) to code-switched text obtained via crowd workers who are native Hindi speakers.
+
+| Comments: | In Proceedings of The Joint Conference of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (ACL-IJCNLP 2021) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2107.06483](https://arxiv.org/abs/2107.06483) [cs.CL]** |
+|           | (or **[arXiv:2107.06483v1](https://arxiv.org/abs/2107.06483v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-07-15-3">3. Deduplicating Training Data Makes Language Models Better
+</h2>
+
+Title: [Deduplicating Training Data Makes Language Models Better](https://arxiv.org/abs/2107.06499)
+
+Authors: [Katherine Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+K), [Daphne Ippolito](https://arxiv.org/search/cs?searchtype=author&query=Ippolito%2C+D), [Andrew Nystrom](https://arxiv.org/search/cs?searchtype=author&query=Nystrom%2C+A), [Chiyuan Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+C), [Douglas Eck](https://arxiv.org/search/cs?searchtype=author&query=Eck%2C+D), [Chris Callison-Burch](https://arxiv.org/search/cs?searchtype=author&query=Callison-Burch%2C+C), [Nicholas Carlini](https://arxiv.org/search/cs?searchtype=author&query=Carlini%2C+N)
+
+> We find that existing language modeling datasets contain many near-duplicate examples and long repetitive substrings. As a result, over 1% of the unprompted output of language models trained on these datasets is copied verbatim from the training data. We develop two tools that allow us to deduplicate training datasets -- for example removing from C4 a single 61 word English sentence that is repeated over 60,000 times. Deduplication allows us to train models that emit memorized text ten times less frequently and require fewer train steps to achieve the same or better accuracy. We can also reduce train-test overlap, which affects over 4% of the validation set of standard datasets, thus allowing for more accurate evaluation. We release code for reproducing our work and performing dataset deduplication at [this https URL](https://github.com/google-research/deduplicate-text-datasets).
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2107.06499](https://arxiv.org/abs/2107.06499) [cs.CL]** |
+|           | (or **[arXiv:2107.06499v1](https://arxiv.org/abs/2107.06499v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-07-15-4">4. Importance-based Neuron Allocation for Multilingual Neural Machine Translation
+</h2>
+
+Title: [Importance-based Neuron Allocation for Multilingual Neural Machine Translation](https://arxiv.org/abs/2107.06569)
+
+Authors: [Wanying Xie](https://arxiv.org/search/cs?searchtype=author&query=Xie%2C+W), [Yang Feng](https://arxiv.org/search/cs?searchtype=author&query=Feng%2C+Y), [Shuhao Gu](https://arxiv.org/search/cs?searchtype=author&query=Gu%2C+S), [Dong Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+D)
+
+> Multilingual neural machine translation with a single model has drawn much attention due to its capability to deal with multiple languages. However, the current multilingual translation paradigm often makes the model tend to preserve the general knowledge, but ignore the language-specific knowledge. Some previous works try to solve this problem by adding various kinds of language-specific modules to the model, but they suffer from the parameter explosion problem and require specialized manual design. To solve these problems, we propose to divide the model neurons into general and language-specific parts based on their importance across languages. The general part is responsible for preserving the general knowledge and participating in the translation of all the languages, while the language-specific part is responsible for preserving the language-specific knowledge and participating in the translation of some specific languages. Experimental results on several language pairs, covering IWSLT and Europarl corpus datasets, demonstrate the effectiveness and universality of the proposed method.
+
+| Comments: | ACL 2021                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2107.06569](https://arxiv.org/abs/2107.06569) [cs.CL]** |
+|           | (or **[arXiv:2107.06569v1](https://arxiv.org/abs/2107.06569v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-07-15-5">5. ParCourE: A Parallel Corpus Explorer fora Massively Multilingual Corpus
+</h2>
+
+Title: [ParCourE: A Parallel Corpus Explorer fora Massively Multilingual Corpus](https://arxiv.org/abs/2107.06632)
+
+Authors: [Ayyoob Imani](https://arxiv.org/search/cs?searchtype=author&query=Imani%2C+A), [Masoud Jalili Sabet](https://arxiv.org/search/cs?searchtype=author&query=Sabet%2C+M+J), [Philipp Dufter](https://arxiv.org/search/cs?searchtype=author&query=Dufter%2C+P), [Michael Cysouw](https://arxiv.org/search/cs?searchtype=author&query=Cysouw%2C+M), [Hinrich Schütze](https://arxiv.org/search/cs?searchtype=author&query=Schütze%2C+H)
+
+> With more than 7000 languages worldwide, multilingual natural language processing (NLP) is essential both from an academic and commercial perspective. Researching typological properties of languages is fundamental for progress in multilingual NLP. Examples include assessing language similarity for effective transfer learning, injecting inductive biases into machine learning models or creating resources such as dictionaries and inflection tables. We provide ParCourE, an online tool that allows to browse a word-aligned parallel corpus, covering 1334 languages. We give evidence that this is useful for typological research. ParCourE can be set up for any parallel corpus and can thus be used for typological research on other corpora as well as for exploring their quality and properties.
+
+| Comments: | The Joint Conference of the 59th Annual Meeting of the Association for Computational Linguistics and the 10th International Joint Conference on Natural Language Processing |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2107.06632](https://arxiv.org/abs/2107.06632) [cs.CL]** |
+|           | (or **[arXiv:2107.06632v1](https://arxiv.org/abs/2107.06632v1) [cs.CL]** for this version) |
+
+
+
+
+
 
 
 
