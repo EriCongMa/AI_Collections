@@ -3,8 +3,15 @@
 # Index
 
 
-- [2021-07-15](#2021-07-15)
+- [2021-07-19](#2021-07-19)
 
+  - [1. Self-Supervised Contrastive Learning with Adversarial Perturbations for Robust Pretrained Language Models](#2021-07-19-1)
+- [2021-07-16](#2021-07-16)
+
+  - [1. From Show to Tell: A Survey on Image Captioning](#2021-07-16-1)
+  - [2. MultiBench: Multiscale Benchmarks for Multimodal Representation Learning](#2021-07-16-2)
+  - [3. FST: the FAIR Speech Translation System for the IWSLT21 Multilingual Shared Task](#2021-07-16-3)
+- [2021-07-15](#2021-07-15)
   - [1. How Much Can CLIP Benefit Vision-and-Language Tasks?](#2021-07-15-1)
   - [2. From Machine Translation to Code-Switching: Generating High-Quality Code-Switched Text](#2021-07-15-2)
   - [3. Deduplicating Training Data Makes Language Models Better](#2021-07-15-3)
@@ -74,6 +81,99 @@
   - [6. XLM-E: Cross-lingual Language Model Pre-training via ELECTRA](#2021-07-01-6)
   - [7. On the Power of Saturated Transformers: A View from Circuit Complexity](#2021-07-01-7)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-07-19
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-07-19-1">1. Self-Supervised Contrastive Learning with Adversarial Perturbations for Robust Pretrained Language Models
+</h2>
+
+Title: [Self-Supervised Contrastive Learning with Adversarial Perturbations for Robust Pretrained Language Models](https://arxiv.org/abs/2107.07610)
+
+Authors: [Zhao Meng](https://arxiv.org/search/cs?searchtype=author&query=Meng%2C+Z), [Yihan Dong](https://arxiv.org/search/cs?searchtype=author&query=Dong%2C+Y), [Mrinmaya Sachan](https://arxiv.org/search/cs?searchtype=author&query=Sachan%2C+M), [Roger Wattenhofer](https://arxiv.org/search/cs?searchtype=author&query=Wattenhofer%2C+R)
+
+> This paper improves the robustness of the pretrained language model BERT against word substitution-based adversarial attacks by leveraging self-supervised contrastive learning with adversarial perturbations. One advantage of our method compared to previous works is that it is capable of improving model robustness without using any labels. Additionally, we also create an adversarial attack for word-level adversarial training on BERT. The attack is efficient, allowing adversarial training for BERT on adversarial examples generated on the fly during training. Experimental results on four datasets show that our method improves the robustness of BERT against four different word substitution-based adversarial attacks. Furthermore, to understand why our method can improve the model robustness against adversarial attacks, we study vector representations of clean examples and their corresponding adversarial examples before and after applying our method. As our method improves model robustness with unlabeled raw data, it opens up the possibility of using large text datasets to train robust language models.
+
+| Comments: | Work in progress                                             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2107.07610](https://arxiv.org/abs/2107.07610) [cs.CL]** |
+|           | (or **[arXiv:2107.07610v1](https://arxiv.org/abs/2107.07610v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+
+
+# 2021-07-16
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-07-16-1">1. How Much Can CLIP Benefit Vision-and-Language Tasks?
+</h2>
+
+Title: [From Show to Tell: A Survey on Image Captioning](https://arxiv.org/abs/2107.06912)
+
+Authors: [Matteo Stefanini](https://arxiv.org/search/cs?searchtype=author&query=Stefanini%2C+M), [Marcella Cornia](https://arxiv.org/search/cs?searchtype=author&query=Cornia%2C+M), [Lorenzo Baraldi](https://arxiv.org/search/cs?searchtype=author&query=Baraldi%2C+L), [Silvia Cascianelli](https://arxiv.org/search/cs?searchtype=author&query=Cascianelli%2C+S), [Giuseppe Fiameni](https://arxiv.org/search/cs?searchtype=author&query=Fiameni%2C+G), [Rita Cucchiara](https://arxiv.org/search/cs?searchtype=author&query=Cucchiara%2C+R)
+
+> Connecting Vision and Language plays an essential role in Generative Intelligence. For this reason, in the last few years, a large research effort has been devoted to image captioning, i.e. the task of describing images with syntactically and semantically meaningful sentences. Starting from 2015 the task has generally been addressed with pipelines composed of a visual encoding step and a language model for text generation. During these years, both components have evolved considerably through the exploitation of object regions, attributes, and relationships and the introduction of multi-modal connections, fully-attentive approaches, and BERT-like early-fusion strategies. However, regardless of the impressive results obtained, research in image captioning has not reached a conclusive answer yet. This work aims at providing a comprehensive overview and categorization of image captioning approaches, from visual encoding and text generation to training strategies, used datasets, and evaluation metrics. In this respect, we quantitatively compare many relevant state-of-the-art approaches to identify the most impactful technical innovations in image captioning architectures and training strategies. Moreover, many variants of the problem and its open challenges are analyzed and discussed. The final goal of this work is to serve as a tool for understanding the existing state-of-the-art and highlighting the future directions for an area of research where Computer Vision and Natural Language Processing can find an optimal synergy.
+
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2107.06912](https://arxiv.org/abs/2107.06912) [cs.CV]** |
+|           | (or **[arXiv:2107.06912v1](https://arxiv.org/abs/2107.06912v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-07-16-2">2. MultiBench: Multiscale Benchmarks for Multimodal Representation Learning
+</h2>
+
+Title: [MultiBench: Multiscale Benchmarks for Multimodal Representation Learning](https://arxiv.org/abs/2107.07502)
+
+Authors: [Paul Pu Liang](https://arxiv.org/search/cs?searchtype=author&query=Liang%2C+P+P), [Yiwei Lyu](https://arxiv.org/search/cs?searchtype=author&query=Lyu%2C+Y), [Xiang Fan](https://arxiv.org/search/cs?searchtype=author&query=Fan%2C+X), [Zetian Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+Z), [Yun Cheng](https://arxiv.org/search/cs?searchtype=author&query=Cheng%2C+Y), [Jason Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+J), [Leslie Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+L), [Peter Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+P), [Michelle A. Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+M+A), [Yuke Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+Y), [Ruslan Salakhutdinov](https://arxiv.org/search/cs?searchtype=author&query=Salakhutdinov%2C+R), [Louis-Philippe Morency](https://arxiv.org/search/cs?searchtype=author&query=Morency%2C+L)
+
+> Learning multimodal representations involves integrating information from multiple heterogeneous sources of data. It is a challenging yet crucial area with numerous real-world applications in multimedia, affective computing, robotics, finance, human-computer interaction, and healthcare. Unfortunately, multimodal research has seen limited resources to study (1) generalization across domains and modalities, (2) complexity during training and inference, and (3) robustness to noisy and missing modalities. In order to accelerate progress towards understudied modalities and tasks while ensuring real-world robustness, we release MultiBench, a systematic and unified large-scale benchmark spanning 15 datasets, 10 modalities, 20 prediction tasks, and 6 research areas. MultiBench provides an automated end-to-end machine learning pipeline that simplifies and standardizes data loading, experimental setup, and model evaluation. To enable holistic evaluation, MultiBench offers a comprehensive methodology to assess (1) generalization, (2) time and space complexity, and (3) modality robustness. MultiBench introduces impactful challenges for future research, including scalability to large-scale multimodal datasets and robustness to realistic imperfections. To accompany this benchmark, we also provide a standardized implementation of 20 core approaches in multimodal learning. Simply applying methods proposed in different research areas can improve the state-of-the-art performance on 9/15 datasets. Therefore, MultiBench presents a milestone in unifying disjoint efforts in multimodal research and paves the way towards a better understanding of the capabilities and limitations of multimodal models, all the while ensuring ease of use, accessibility, and reproducibility. MultiBench, our standardized code, and leaderboards are publicly available, will be regularly updated, and welcomes inputs from the community.
+
+| Comments: | Code: [this https URL](https://github.com/pliang279/MultiBench) and Website: [this https URL](https://cmu-multicomp-lab.github.io/multibench/) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Machine Learning (cs.LG)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL); Computer Vision and Pattern Recognition (cs.CV); Multimedia (cs.MM) |
+| Cite as:  | **[arXiv:2107.07502](https://arxiv.org/abs/2107.07502) [cs.LG]** |
+|           | (or **[arXiv:2107.07502v1](https://arxiv.org/abs/2107.07502v1) [cs.LG]** for this version) |
+
+
+
+
+
+<h2 id="2021-07-16-3">3. FST: the FAIR Speech Translation System for the IWSLT21 Multilingual Shared Task
+</h2>
+
+Title: [FST: the FAIR Speech Translation System for the IWSLT21 Multilingual Shared Task](https://arxiv.org/abs/2107.06959)
+
+Authors: [Yun Tang](https://arxiv.org/search/cs?searchtype=author&query=Tang%2C+Y), [Hongyu Gong](https://arxiv.org/search/cs?searchtype=author&query=Gong%2C+H), [Xian Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+X), [Changhan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+C), [Juan Pino](https://arxiv.org/search/cs?searchtype=author&query=Pino%2C+J), [Holger Schwenk](https://arxiv.org/search/cs?searchtype=author&query=Schwenk%2C+H), [Naman Goyal](https://arxiv.org/search/cs?searchtype=author&query=Goyal%2C+N)
+
+> In this paper, we describe our end-to-end multilingual speech translation system submitted to the IWSLT 2021 evaluation campaign on the Multilingual Speech Translation shared task. Our system is built by leveraging transfer learning across modalities, tasks and languages. First, we leverage general-purpose multilingual modules pretrained with large amounts of unlabelled and labelled data. We further enable knowledge transfer from the text task to the speech task by training two tasks jointly. Finally, our multilingual model is finetuned on speech translation task-specific data to achieve the best translation results. Experimental results show our system outperforms the reported systems, including both end-to-end and cascaded based approaches, by a large margin.
+> In some translation directions, our speech translation results evaluated on the public Multilingual TEDx test set are even comparable with the ones from a strong text-to-text translation system, which uses the oracle speech transcripts as input.
+
+| Comments: | Accepted by IWSLT 2021 as a system paper                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2107.06959](https://arxiv.org/abs/2107.06959) [cs.CL]** |
+|           | (or **[arXiv:2107.06959v1](https://arxiv.org/abs/2107.06959v1) [cs.CL]** for this version) |
+
+
+
 
 
 
