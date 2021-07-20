@@ -1,5 +1,9 @@
 # AIKT-NLP_Surveys
 
+ML-Surveys: [Link](https://github.com/eugeneyan/ml-surveys)
+
+AI-Surverys: [Link](https://github.com/KaiyuanGao/AI-Surveys)
+
 Machine Translation
 
   - [A Survey of Deep Learning Techniques for Neural Machine Translation](https://arxiv.org/abs/2002.07526)
