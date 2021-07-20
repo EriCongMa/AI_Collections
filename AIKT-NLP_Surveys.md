@@ -1,5 +1,7 @@
 # AIKT-NLP_Surveys
 
+ACM Computing Surveys: [Link](https://dl.acm.org/journal/csur)
+
 ML-Surveys: [Link](https://github.com/eugeneyan/ml-surveys)
 
 AI-Surverys: [Link](https://github.com/KaiyuanGao/AI-Surveys)
