@@ -3,6 +3,18 @@
 # Index
 
 
+- [2021-07-20](#2021-07-20)
+
+  - [1. The Law of Large Documents: Understanding the Structure of Legal Contracts Using Visual Cues](#2021-07-20-1)
+  - [2. Darmok and Jalad at Tanagra: A Dataset and Model for English-to-Tamarian Translation](#2021-07-20-2)
+  - [3. Dynamic Transformer for Efficient Machine Translation on Embedded Devices](#2021-07-20-3)
+  - [4. On the Copying Behaviors of Pre-Training for Neural Machine Translation](#2021-07-20-4)
+  - [5. As Easy as 1, 2, 3: Behavioural Testing of NMT Systems for Numerical Translation](#2021-07-20-5)
+  - [6. Pre-trained Language Models as Prior Knowledge for Playing Text-based Games](#2021-07-20-6)
+  - [7. Translatotron 2: Robust direct speech-to-speech translation](#2021-07-20-7)
+  - [8. Constructing Multi-Modal Dialogue Dataset by Replacing Text with Semantically Relevant Images](#2021-07-20-8)
+  - [9. Integrating Unsupervised Data Generation into Self-Supervised Neural Machine Translation for Low-Resource Languages](#2021-07-20-9)
+  - [10. Simultaneous Speech Translation for Live Subtitling: from Delay to Display](#2021-07-20-10)
 - [2021-07-19](#2021-07-19)
 
   - [1. Self-Supervised Contrastive Learning with Adversarial Perturbations for Robust Pretrained Language Models](#2021-07-19-1)
@@ -81,6 +93,198 @@
   - [6. XLM-E: Cross-lingual Language Model Pre-training via ELECTRA](#2021-07-01-6)
   - [7. On the Power of Saturated Transformers: A View from Circuit Complexity](#2021-07-01-7)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-07-20
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-07-20-1">1. The Law of Large Documents: Understanding the Structure of Legal Contracts Using Visual Cues
+</h2>
+
+Title: [The Law of Large Documents: Understanding the Structure of Legal Contracts Using Visual Cues](https://arxiv.org/abs/2107.08128)
+
+Authors: [Allison Hegel](https://arxiv.org/search/cs?searchtype=author&query=Hegel%2C+A), [Marina Shah](https://arxiv.org/search/cs?searchtype=author&query=Shah%2C+M), [Genevieve Peaslee](https://arxiv.org/search/cs?searchtype=author&query=Peaslee%2C+G), [Brendan Roof](https://arxiv.org/search/cs?searchtype=author&query=Roof%2C+B), [Emad Elwany](https://arxiv.org/search/cs?searchtype=author&query=Elwany%2C+E)
+
+> Large, pre-trained transformer models like BERT have achieved state-of-the-art results on document understanding tasks, but most implementations can only consider 512 tokens at a time. For many real-world applications, documents can be much longer, and the segmentation strategies typically used on longer documents miss out on document structure and contextual information, hurting their results on downstream tasks. In our work on legal agreements, we find that visual cues such as layout, style, and placement of text in a document are strong features that are crucial to achieving an acceptable level of accuracy on long documents. We measure the impact of incorporating such visual cues, obtained via computer vision methods, on the accuracy of document understanding tasks including document segmentation, entity extraction, and attribute classification. Our method of segmenting documents based on structural metadata out-performs existing methods on four long-document understanding tasks as measured on the Contract Understanding Atticus Dataset.
+
+| Subjects:          | **Computation and Language (cs.CL)**                         |
+| ------------------ | ------------------------------------------------------------ |
+| Journal reference: | Document Intelligence Workshop at KDD, 2021                  |
+| Cite as:           | **[arXiv:2107.08128](https://arxiv.org/abs/2107.08128) [cs.CL]** |
+|                    | (or **[arXiv:2107.08128v1](https://arxiv.org/abs/2107.08128v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-07-20-2">2. Darmok and Jalad at Tanagra: A Dataset and Model for English-to-Tamarian Translation
+</h2>
+
+Title: [Darmok and Jalad at Tanagra: A Dataset and Model for English-to-Tamarian Translation](https://arxiv.org/abs/2107.08146)
+
+Authors: [Peter Jansen](https://arxiv.org/search/cs?searchtype=author&query=Jansen%2C+P)
+
+> Tamarian, a fictional language introduced in the Star Trek episode Darmok, communicates meaning through utterances of metaphorical references, such as "Darmok and Jalad at Tanagra" instead of "We should work together." This work assembles a Tamarian-English dictionary of utterances from the original episode and several follow-on novels, and uses this to construct a parallel corpus of 456 English-Tamarian utterances. A machine translation system based on a large language model (T5) is trained using this parallel corpus, and is shown to produce an accuracy of 76% when translating from English to Tamarian on known utterances.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2107.08146](https://arxiv.org/abs/2107.08146) [cs.CL]** |
+|           | (or **[arXiv:2107.08146v1](https://arxiv.org/abs/2107.08146v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-07-20-3">3. Dynamic Transformer for Efficient Machine Translation on Embedded Devices
+</h2>
+
+Title: [Dynamic Transformer for Efficient Machine Translation on Embedded Devices](https://arxiv.org/abs/2107.08199)
+
+Authors: [Hishan Parry](https://arxiv.org/search/cs?searchtype=author&query=Parry%2C+H), [Lei Xun](https://arxiv.org/search/cs?searchtype=author&query=Xun%2C+L), [Amin Sabet](https://arxiv.org/search/cs?searchtype=author&query=Sabet%2C+A), [Jia Bi](https://arxiv.org/search/cs?searchtype=author&query=Bi%2C+J), [Jonathon Hare](https://arxiv.org/search/cs?searchtype=author&query=Hare%2C+J), [Geoff V. Merrett](https://arxiv.org/search/cs?searchtype=author&query=Merrett%2C+G+V)
+
+> The Transformer architecture is widely used for machine translation tasks. However, its resource-intensive nature makes it challenging to implement on constrained embedded devices, particularly where available hardware resources can vary at run-time. We propose a dynamic machine translation model that scales the Transformer architecture based on the available resources at any particular time. The proposed approach, 'Dynamic-HAT', uses a HAT SuperTransformer as the backbone to search for SubTransformers with different accuracy-latency trade-offs at design time. The optimal SubTransformers are sampled from the SuperTransformer at run-time, depending on latency constraints. The Dynamic-HAT is tested on the Jetson Nano and the approach uses inherited SubTransformers sampled directly from the SuperTransformer with a switching time of <1s. Using inherited SubTransformers results in a BLEU score loss of <1.5% because the SubTransformer configuration is not retrained from scratch after sampling. However, to recover this loss in performance, the dimensions of the design space can be reduced to tailor it to a family of target hardware. The new reduced design space results in a BLEU score increase of approximately 1% for sub-optimal models from the original design space, with a wide range for performance scaling between 0.356s - 1.526s for the GPU and 2.9s - 7.31s for the CPU.
+
+| Comments: | Accepted at MLCAD 2021                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2107.08199](https://arxiv.org/abs/2107.08199) [cs.CL]** |
+|           | (or **[arXiv:2107.08199v1](https://arxiv.org/abs/2107.08199v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-07-20-4">4. On the Copying Behaviors of Pre-Training for Neural Machine Translation
+</h2>
+
+Title: [On the Copying Behaviors of Pre-Training for Neural Machine Translation](https://arxiv.org/abs/2107.08212)
+
+Authors: [Xuebo Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+X), [Longyue Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+L), [Derek F. Wong](https://arxiv.org/search/cs?searchtype=author&query=Wong%2C+D+F), [Liang Ding](https://arxiv.org/search/cs?searchtype=author&query=Ding%2C+L), [Lidia S. Chao](https://arxiv.org/search/cs?searchtype=author&query=Chao%2C+L+S), [Shuming Shi](https://arxiv.org/search/cs?searchtype=author&query=Shi%2C+S), [Zhaopeng Tu](https://arxiv.org/search/cs?searchtype=author&query=Tu%2C+Z)
+
+> Previous studies have shown that initializing neural machine translation (NMT) models with the pre-trained language models (LM) can speed up the model training and boost the model performance. In this work, we identify a critical side-effect of pre-training for NMT, which is due to the discrepancy between the training objectives of LM-based pre-training and NMT. Since the LM objective learns to reconstruct a few source tokens and copy most of them, the pre-training initialization would affect the copying behaviors of NMT models. We provide a quantitative analysis of copying behaviors by introducing a metric called copying ratio, which empirically shows that pre-training based NMT models have a larger copying ratio than the standard one. In response to this problem, we propose a simple and effective method named copying penalty to control the copying behaviors in decoding. Extensive experiments on both in-domain and out-of-domain benchmarks show that the copying penalty method consistently improves translation performance by controlling copying behaviors for pre-training based NMT models. Source code is freely available at [this https URL](https://github.com/SunbowLiu/CopyingPenalty).
+
+| Comments: | Accepted to Findings of ACL 2021                             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2107.08212](https://arxiv.org/abs/2107.08212) [cs.CL]** |
+|           | (or **[arXiv:2107.08212v1](https://arxiv.org/abs/2107.08212v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-07-20-5">5. As Easy as 1, 2, 3: Behavioural Testing of NMT Systems for Numerical Translation
+</h2>
+
+Title: [As Easy as 1, 2, 3: Behavioural Testing of NMT Systems for Numerical Translation](https://arxiv.org/abs/2107.08357)
+
+Authors: [Jun Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+J), [Chang Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+C), [Francisco Guzman](https://arxiv.org/search/cs?searchtype=author&query=Guzman%2C+F), [Ahmed El-Kishky](https://arxiv.org/search/cs?searchtype=author&query=El-Kishky%2C+A), [Benjamin I. P. Rubinstein](https://arxiv.org/search/cs?searchtype=author&query=Rubinstein%2C+B+I+P), [Trevor Cohn](https://arxiv.org/search/cs?searchtype=author&query=Cohn%2C+T)
+
+> Mistranslated numbers have the potential to cause serious effects, such as financial loss or medical misinformation. In this work we develop comprehensive assessments of the robustness of neural machine translation systems to numerical text via behavioural testing. We explore a variety of numerical translation capabilities a system is expected to exhibit and design effective test examples to expose system underperformance. We find that numerical mistranslation is a general issue: major commercial systems and state-of-the-art research models fail on many of our test examples, for high- and low-resource languages. Our tests reveal novel errors that have not previously been reported in NMT systems, to the best of our knowledge. Lastly, we discuss strategies to mitigate numerical mistranslation.
+
+| Comments: | Findings of ACL, to appear                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Cryptography and Security (cs.CR) |
+| Cite as:  | **[arXiv:2107.08357](https://arxiv.org/abs/2107.08357) [cs.CL]** |
+|           | (or **[arXiv:2107.08357v1](https://arxiv.org/abs/2107.08357v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-07-20-6">6. Pre-trained Language Models as Prior Knowledge for Playing Text-based Games
+</h2>
+
+Title: [Pre-trained Language Models as Prior Knowledge for Playing Text-based Games](https://arxiv.org/abs/2107.08408)
+
+Authors: [Ishika Singh](https://arxiv.org/search/cs?searchtype=author&query=Singh%2C+I), [Gargi Singh](https://arxiv.org/search/cs?searchtype=author&query=Singh%2C+G), [Ashutosh Modi](https://arxiv.org/search/cs?searchtype=author&query=Modi%2C+A)
+
+> Recently, text world games have been proposed to enable artificial agents to understand and reason about real-world scenarios. These text-based games are challenging for artificial agents, as it requires understanding and interaction using natural language in a partially observable environment. In this paper, we improve the semantic understanding of the agent by proposing a simple RL with LM framework where we use transformer-based language models with Deep RL models. We perform a detailed study of our framework to demonstrate how our model outperforms all existing agents on the popular game, Zork1, to achieve a score of 44.7, which is 1.6 higher than the state-of-the-art model. Our proposed approach also performs comparably to the state-of-the-art models on the other set of text games.
+
+| Comments: | 55 Pages (8 Pages main content + 2 Pages references + 45 Pages Appendix) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Multiagent Systems (cs.MA); Robotics (cs.RO) |
+| Cite as:  | **[arXiv:2107.08408](https://arxiv.org/abs/2107.08408) [cs.CL]** |
+|           | (or **[arXiv:2107.08408v1](https://arxiv.org/abs/2107.08408v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-07-20-7">7. Translatotron 2: Robust direct speech-to-speech translation
+</h2>
+
+Title: [Translatotron 2: Robust direct speech-to-speech translation](https://arxiv.org/abs/2107.08661)
+
+Authors: [Ye Jia](https://arxiv.org/search/cs?searchtype=author&query=Jia%2C+Y), [Michelle Tadmor Ramanovich](https://arxiv.org/search/cs?searchtype=author&query=Ramanovich%2C+M+T), [Tal Remez](https://arxiv.org/search/cs?searchtype=author&query=Remez%2C+T), [Roi Pomerantz](https://arxiv.org/search/cs?searchtype=author&query=Pomerantz%2C+R)
+
+> We present Translatotron 2, a neural direct speech-to-speech translation model that can be trained end-to-end. Translatotron 2 consists of a speech encoder, a phoneme decoder, a mel-spectrogram synthesizer, and an attention module that connects all the previous three components. Experimental results suggest that Translatotron 2 outperforms the original Translatotron by a large margin in terms of translation quality and predicted speech naturalness, and drastically improves the robustness of the predicted speech by mitigating over-generation, such as babbling or long pause. We also propose a new method for retaining the source speaker's voice in the translated speech. The trained model is restricted to retain the source speaker's voice, and unlike the original Translatotron, it is not able to generate speech in a different speaker's voice, making the model more robust for production deployment, by mitigating potential misuse for creating spoofing audio artifacts. When the new method is used together with a simple concatenation-based data augmentation, the trained Translatotron 2 model is able to retain each speaker's voice for input with speaker turns.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG); Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2107.08661](https://arxiv.org/abs/2107.08661) [cs.CL]** |
+|           | (or **[arXiv:2107.08661v1](https://arxiv.org/abs/2107.08661v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-07-20-8">8. Constructing Multi-Modal Dialogue Dataset by Replacing Text with Semantically Relevant Images
+</h2>
+
+Title: [Constructing Multi-Modal Dialogue Dataset by Replacing Text with Semantically Relevant Images](https://arxiv.org/abs/2107.08685)
+
+Authors: [Nyoungwoo Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+N), [Suwon Shin](https://arxiv.org/search/cs?searchtype=author&query=Shin%2C+S), [Jaegul Choo](https://arxiv.org/search/cs?searchtype=author&query=Choo%2C+J), [Ho-Jin Choi](https://arxiv.org/search/cs?searchtype=author&query=Choi%2C+H), [Sung-Hyun Myaeng](https://arxiv.org/search/cs?searchtype=author&query=Myaeng%2C+S)
+
+> In multi-modal dialogue systems, it is important to allow the use of images as part of a multi-turn conversation. Training such dialogue systems generally requires a large-scale dataset consisting of multi-turn dialogues that involve images, but such datasets rarely exist. In response, this paper proposes a 45k multi-modal dialogue dataset created with minimal human intervention. Our method to create such a dataset consists of (1) preparing and pre-processing text dialogue datasets, (2) creating image-mixed dialogues by using a text-to-image replacement technique, and (3) employing a contextual-similarity-based filtering step to ensure the contextual coherence of the dataset. To evaluate the validity of our dataset, we devise a simple retrieval model for dialogue sentence prediction tasks. Automatic metrics and human evaluation results on such tasks show that our dataset can be effectively used as training data for multi-modal dialogue systems which require an understanding of images and text in a context-aware manner. Our dataset and generation code is available at [this https URL](https://github.com/shh1574/multi-modal-dialogue-dataset).
+
+| Comments: | Accepted by ACL 2021                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2107.08685](https://arxiv.org/abs/2107.08685) [cs.CL]** |
+|           | (or **[arXiv:2107.08685v1](https://arxiv.org/abs/2107.08685v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-07-20-9">9. Integrating Unsupervised Data Generation into Self-Supervised Neural Machine Translation for Low-Resource Languages
+</h2>
+
+Title: [Integrating Unsupervised Data Generation into Self-Supervised Neural Machine Translation for Low-Resource Languages](https://arxiv.org/abs/2107.08772)
+
+Authors: [Dana Ruiter](https://arxiv.org/search/cs?searchtype=author&query=Ruiter%2C+D), [Dietrich Klakow](https://arxiv.org/search/cs?searchtype=author&query=Klakow%2C+D), [Josef van Genabith](https://arxiv.org/search/cs?searchtype=author&query=van+Genabith%2C+J), [Cristina España-Bonet](https://arxiv.org/search/cs?searchtype=author&query=España-Bonet%2C+C)
+
+> For most language combinations, parallel data is either scarce or simply unavailable. To address this, unsupervised machine translation (UMT) exploits large amounts of monolingual data by using synthetic data generation techniques such as back-translation and noising, while self-supervised NMT (SSNMT) identifies parallel sentences in smaller comparable data and trains on them. To date, the inclusion of UMT data generation techniques in SSNMT has not been investigated. We show that including UMT techniques into SSNMT significantly outperforms SSNMT and UMT on all tested language pairs, with improvements of up to +4.3 BLEU, +50.8 BLEU, +51.5 over SSNMT, statistical UMT and hybrid UMT, respectively, on Afrikaans to English. We further show that the combination of multilingual denoising autoencoding, SSNMT with backtranslation and bilingual finetuning enables us to learn machine translation even for distant language pairs for which only small amounts of monolingual data are available, e.g. yielding BLEU scores of 11.6 (English to Swahili).
+
+| Comments: | 11 pages, 8 figures, accepted at MT-Summit 2021 (Research Track) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2107.08772](https://arxiv.org/abs/2107.08772) [cs.CL]** |
+|           | (or **[arXiv:2107.08772v1](https://arxiv.org/abs/2107.08772v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-07-20-10">10. Simultaneous Speech Translation for Live Subtitling: from Delay to Display
+</h2>
+
+Title: [Simultaneous Speech Translation for Live Subtitling: from Delay to Display](https://arxiv.org/abs/2107.08807)
+
+Authors: [Alina Karakanta](https://arxiv.org/search/cs?searchtype=author&query=Karakanta%2C+A), [Sara Papi](https://arxiv.org/search/cs?searchtype=author&query=Papi%2C+S), [Matteo Negri](https://arxiv.org/search/cs?searchtype=author&query=Negri%2C+M), [Marco Turchi](https://arxiv.org/search/cs?searchtype=author&query=Turchi%2C+M)
+
+> With the increased audiovisualisation of communication, the need for live subtitles in multilingual events is more relevant than ever. In an attempt to automatise the process, we aim at exploring the feasibility of simultaneous speech translation (SimulST) for live subtitling. However, the word-for-word rate of generation of SimulST systems is not optimal for displaying the subtitles in a comprehensible and readable way. In this work, we adapt SimulST systems to predict subtitle breaks along with the translation. We then propose a display mode that exploits the predicted break structure by presenting the subtitles in scrolling lines. We compare our proposed mode with a display 1) word-for-word and 2) in blocks, in terms of reading speed and delay. Experiments on three language pairs (en→it, de, fr) show that scrolling lines is the only mode achieving an acceptable reading speed while keeping delay close to a 4-second threshold. We argue that simultaneous translation for readable live subtitles still faces challenges, the main one being poor translation quality, and propose directions for steering future research.
+
+| Subjects:          | **Computation and Language (cs.CL)**                         |
+| ------------------ | ------------------------------------------------------------ |
+| Journal reference: | Proceedings of MT Summit 2021 at Automatic Spoken Language Translation in Real-World Settings |
+| Cite as:           | **[arXiv:2107.08807](https://arxiv.org/abs/2107.08807) [cs.CL]** |
+|                    | (or **[arXiv:2107.08807v1](https://arxiv.org/abs/2107.08807v1) [cs.CL]** for this version) |
 
 
 
