@@ -3,6 +3,12 @@
 # Index
 
 
+- [2021-07-21](#2021-07-21)
+
+  - [1. Generative Video Transformer: Can Objects be the Words?](#2021-07-21-1)
+  - [2. Token-Level Supervised Contrastive Learning for Punctuation Restoration](#2021-07-21-2)
+  - [3. Seed Words Based Data Selection for Language Model Adaptation](#2021-07-21-3)
+  - [4. More Parameters? No Thanks!](#2021-07-21-4)
 - [2021-07-20](#2021-07-20)
 
   - [1. The Law of Large Documents: Understanding the Structure of Legal Contracts Using Visual Cues](#2021-07-20-1)
@@ -93,6 +99,89 @@
   - [6. XLM-E: Cross-lingual Language Model Pre-training via ELECTRA](#2021-07-01-6)
   - [7. On the Power of Saturated Transformers: A View from Circuit Complexity](#2021-07-01-7)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-07-21
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-07-21-1">1. Generative Video Transformer: Can Objects be the Words?
+</h2>
+
+Title: [Generative Video Transformer: Can Objects be the Words?](https://arxiv.org/abs/2107.09240)
+
+Authors: [Yi-Fu Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+Y), [Jaesik Yoon](https://arxiv.org/search/cs?searchtype=author&query=Yoon%2C+J), [Sungjin Ahn](https://arxiv.org/search/cs?searchtype=author&query=Ahn%2C+S)
+
+> Transformers have been successful for many natural language processing tasks. However, applying transformers to the video domain for tasks such as long-term video generation and scene understanding has remained elusive due to the high computational complexity and the lack of natural tokenization. In this paper, we propose the Object-Centric Video Transformer (OCVT) which utilizes an object-centric approach for decomposing scenes into tokens suitable for use in a generative video transformer. By factoring the video into objects, our fully unsupervised model is able to learn complex spatio-temporal dynamics of multiple interacting objects in a scene and generate future frames of the video. Our model is also significantly more memory-efficient than pixel-based models and thus able to train on videos of length up to 70 frames with a single 48GB GPU. We compare our model with previous RNN-based approaches as well as other possible video transformer baselines. We demonstrate OCVT performs well when compared to baselines in generating future frames. OCVT also develops useful representations for video reasoning, achieving start-of-the-art performance on the CATER task.
+
+| Comments: | Published in ICML 2021                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL); Computer Vision and Pattern Recognition (cs.CV) |
+| Cite as:  | **[arXiv:2107.09240](https://arxiv.org/abs/2107.09240) [cs.LG]** |
+|           | (or **[arXiv:2107.09240v1](https://arxiv.org/abs/2107.09240v1) [cs.LG]** for this version) |
+
+
+
+
+
+<h2 id="2021-07-21-2">2. Token-Level Supervised Contrastive Learning for Punctuation Restoration
+</h2>
+
+Title: [Token-Level Supervised Contrastive Learning for Punctuation Restoration](https://arxiv.org/abs/2107.09099)
+
+Authors: [Qiushi Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+Q), [Tom Ko](https://arxiv.org/search/cs?searchtype=author&query=Ko%2C+T), [H Lilian Tang](https://arxiv.org/search/cs?searchtype=author&query=Tang%2C+H+L), [Xubo Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+X), [Bo Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+B)
+
+> Punctuation is critical in understanding natural language text. Currently, most automatic speech recognition (ASR) systems do not generate punctuation, which affects the performance of downstream tasks, such as intent detection and slot filling. This gives rise to the need for punctuation restoration. Recent work in punctuation restoration heavily utilizes pre-trained language models without considering data imbalance when predicting punctuation classes. In this work, we address this problem by proposing a token-level supervised contrastive learning method that aims at maximizing the distance of representation of different punctuation marks in the embedding space. The result shows that training with token-level supervised contrastive learning obtains up to 3.2% absolute F1 improvement on the test set.
+
+| Comments: | 5 pages, 3 figures                                           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2107.09099](https://arxiv.org/abs/2107.09099) [cs.CL]** |
+|           | (or **[arXiv:2107.09099v1](https://arxiv.org/abs/2107.09099v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-07-21-3">3. Seed Words Based Data Selection for Language Model Adaptation
+</h2>
+
+Title: [Seed Words Based Data Selection for Language Model Adaptation](https://arxiv.org/abs/2107.09433)
+
+Authors: [Roberto Gretter](https://arxiv.org/search/cs?searchtype=author&query=Gretter%2C+R), [Marco Matassoni](https://arxiv.org/search/cs?searchtype=author&query=Matassoni%2C+M), [Daniele Falavigna](https://arxiv.org/search/cs?searchtype=author&query=Falavigna%2C+D)
+
+> We address the problem of language model customization in applications where the ASR component needs to manage domain-specific terminology; although current state-of-the-art speech recognition technology provides excellent results for generic domains, the adaptation to specialized dictionaries or glossaries is still an open issue. In this work we present an approach for automatically selecting sentences, from a text corpus, that match, both semantically and morphologically, a glossary of terms (words or composite words) furnished by the user. The final goal is to rapidly adapt the language model of an hybrid ASR system with a limited amount of in-domain text data in order to successfully cope with the linguistic domain at hand; the vocabulary of the baseline model is expanded and tailored, reducing the resulting OOV rate. Data selection strategies based on shallow morphological seeds and semantic similarity viaword2vec are introduced and discussed; the experimental setting consists in a simultaneous interpreting scenario, where ASRs in three languages are designed to recognize the domain-specific terms (i.e. dentistry). Results using different metrics (OOV rate, WER, precision and recall) show the effectiveness of the proposed techniques.
+
+| Comments: | 11 pages                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2107.09433](https://arxiv.org/abs/2107.09433) [cs.CL]** |
+|           | (or **[arXiv:2107.09433v1](https://arxiv.org/abs/2107.09433v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-07-21-4">4. More Parameters? No Thanks!
+</h2>
+
+Title: [More Parameters? No Thanks!](https://arxiv.org/abs/2107.09622)
+
+Authors: [Zeeshan Khan](https://arxiv.org/search/cs?searchtype=author&query=Khan%2C+Z), [Kartheek Akella](https://arxiv.org/search/cs?searchtype=author&query=Akella%2C+K), [Vinay P. Namboodiri](https://arxiv.org/search/cs?searchtype=author&query=Namboodiri%2C+V+P), [C V Jawahar](https://arxiv.org/search/cs?searchtype=author&query=Jawahar%2C+C+V)
+
+> This work studies the long-standing problems of model capacity and negative interference in multilingual neural machine translation MNMT. We use network pruning techniques and observe that pruning 50-70% of the parameters from a trained MNMT model results only in a 0.29-1.98 drop in the BLEU score. Suggesting that there exist large redundancies even in MNMT models. These observations motivate us to use the redundant parameters and counter the interference problem efficiently. We propose a novel adaptation strategy, where we iteratively prune and retrain the redundant parameters of an MNMT to improve bilingual representations while retaining the multilinguality. Negative interference severely affects high resource languages, and our method alleviates it without any additional adapter modules. Hence, we call it parameter-free adaptation strategy, paving way for the efficient adaptation of MNMT. We demonstrate the effectiveness of our method on a 9 language MNMT trained on TED talks, and report an average improvement of +1.36 BLEU on high resource pairs. Code will be released here.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2107.09622](https://arxiv.org/abs/2107.09622) [cs.CL]** |
+|           | (or **[arXiv:2107.09622v1](https://arxiv.org/abs/2107.09622v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
