@@ -13,6 +13,8 @@ Machine Translation
 
 Pre-trianed Models
 
+- [PLM Papers](https://github.com/RUCAIBox/PLMPapers)
+
 - [Pre-trained Models for Natural Language Processing: A Survey](https://arxiv.org/abs/2003.08271)
 - [A Survey on Contextual Embeddings](https://arxiv.org/abs/2003.07278)
 
