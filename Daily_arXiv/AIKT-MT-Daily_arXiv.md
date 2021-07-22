@@ -3,8 +3,14 @@
 # Index
 
 
-- [2021-07-21](#2021-07-21)
+- [2021-07-22](#2021-07-22)
 
+  - [1. TLA: Twitter Linguistic Analysis](#2021-07-22-1)
+  - [2. What Do You Get When You Cross Beam Search with Nucleus Sampling?](#2021-07-22-2)
+  - [3. Soft Layer Selection with Meta-Learning for Zero-Shot Cross-Lingual Transfer](#2021-07-22-3)
+  - [4. CausalBERT: Injecting Causal Knowledge Into Pre-trained Models with Minimal Supervision](#2021-07-22-4)
+  - [5. Improved Text Classification via Contrastive Adversarial Training](#2021-07-22-5)
+- [2021-07-21](#2021-07-21)
   - [1. Generative Video Transformer: Can Objects be the Words?](#2021-07-21-1)
   - [2. Token-Level Supervised Contrastive Learning for Punctuation Restoration](#2021-07-21-2)
   - [3. Seed Words Based Data Selection for Language Model Adaptation](#2021-07-21-3)
@@ -99,6 +105,102 @@
   - [6. XLM-E: Cross-lingual Language Model Pre-training via ELECTRA](#2021-07-01-6)
   - [7. On the Power of Saturated Transformers: A View from Circuit Complexity](#2021-07-01-7)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-07-22
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-07-22-1">1. TLA: Twitter Linguistic Analysis
+</h2>
+
+Title: [TLA: Twitter Linguistic Analysis](https://arxiv.org/abs/2107.09710)
+
+Authors: [Tushar Sarkar](https://arxiv.org/search/cs?searchtype=author&query=Sarkar%2C+T), [Nishant Rajadhyaksha](https://arxiv.org/search/cs?searchtype=author&query=Rajadhyaksha%2C+N)
+
+> Linguistics has been instrumental in developing a deeper understanding of human nature. Words are indispensable to bequeath the thoughts, emotions, and purpose of any human interaction, and critically analyzing these words can elucidate the social and psychological behavior and characteristics of these social animals. Social media has become a platform for human interaction on a large scale and thus gives us scope for collecting and using that data for our study. However, this entire process of collecting, labeling, and analyzing this data iteratively makes the entire procedure cumbersome. To make this entire process easier and structured, we would like to introduce TLA(Twitter Linguistic Analysis). In this paper, we describe TLA and provide a basic understanding of the framework and discuss the process of collecting, labeling, and analyzing data from Twitter for a corpus of languages while providing detailed labeled datasets for all the languages and the models are trained on these datasets. The analysis provided by TLA will also go a long way in understanding the sentiments of different linguistic communities and come up with new and innovative solutions for their problems based on the analysis.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2107.09710](https://arxiv.org/abs/2107.09710) [cs.CL]** |
+|           | (or **[arXiv:2107.09710v1](https://arxiv.org/abs/2107.09710v1) [cs.CL]** for this version) |
+
+
+
+<h2 id="2021-07-22-2">2. What Do You Get When You Cross Beam Search with Nucleus Sampling?
+</h2>
+
+Title: [What Do You Get When You Cross Beam Search with Nucleus Sampling?](https://arxiv.org/abs/2107.09729)
+
+Authors: [Uri Shaham](https://arxiv.org/search/cs?searchtype=author&query=Shaham%2C+U), [Omer Levy](https://arxiv.org/search/cs?searchtype=author&query=Levy%2C+O)
+
+> We combine beam search with the probabilistic pruning technique of nucleus sampling to create two deterministic nucleus search algorithms for natural language generation. The first algorithm, p-exact search, locally prunes the next-token distribution and performs an exact search over the remaining space. The second algorithm, dynamic beam search, shrinks and expands the beam size according to the entropy of the candidate's probability distribution. Despite the probabilistic intuition behind nucleus search, experiments on machine translation and summarization benchmarks show that both algorithms reach the same performance levels as standard beam search.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2107.09729](https://arxiv.org/abs/2107.09729) [cs.CL]** |
+|           | (or **[arXiv:2107.09729v1](https://arxiv.org/abs/2107.09729v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-07-22-3">3. Soft Layer Selection with Meta-Learning for Zero-Shot Cross-Lingual Transfer
+</h2>
+
+Title: [Soft Layer Selection with Meta-Learning for Zero-Shot Cross-Lingual Transfer](https://arxiv.org/abs/2107.09840)
+
+Authors: [Weijia Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+W), [Batool Haider](https://arxiv.org/search/cs?searchtype=author&query=Haider%2C+B), [Jason Krone](https://arxiv.org/search/cs?searchtype=author&query=Krone%2C+J), [Saab Mansour](https://arxiv.org/search/cs?searchtype=author&query=Mansour%2C+S)
+
+> Multilingual pre-trained contextual embedding models (Devlin et al., 2019) have achieved impressive performance on zero-shot cross-lingual transfer tasks. Finding the most effective fine-tuning strategy to fine-tune these models on high-resource languages so that it transfers well to the zero-shot languages is a non-trivial task. In this paper, we propose a novel meta-optimizer to soft-select which layers of the pre-trained model to freeze during fine-tuning. We train the meta-optimizer by simulating the zero-shot transfer scenario. Results on cross-lingual natural language inference show that our approach improves over the simple fine-tuning baseline and X-MAML (Nooralahzadeh et al., 2020).
+
+| Comments: | MetaNLP at ACL 2021                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2107.09840](https://arxiv.org/abs/2107.09840) [cs.CL]** |
+|           | (or **[arXiv:2107.09840v1](https://arxiv.org/abs/2107.09840v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-07-22-4">4. CausalBERT: Injecting Causal Knowledge Into Pre-trained Models with Minimal Supervision
+</h2>
+
+Title: [CausalBERT: Injecting Causal Knowledge Into Pre-trained Models with Minimal Supervision](https://arxiv.org/abs/2107.09852)
+
+Authors: [Zhongyang Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Z), [Xiao Ding](https://arxiv.org/search/cs?searchtype=author&query=Ding%2C+X), [Kuo Liao](https://arxiv.org/search/cs?searchtype=author&query=Liao%2C+K), [Ting Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+T), [Bing Qin](https://arxiv.org/search/cs?searchtype=author&query=Qin%2C+B)
+
+> Recent work has shown success in incorporating pre-trained models like BERT to improve NLP systems. However, existing pre-trained models lack of causal knowledge which prevents today's NLP systems from thinking like humans. In this paper, we investigate the problem of injecting causal knowledge into pre-trained models. There are two fundamental problems: 1) how to collect a large-scale causal resource from unstructured texts; 2) how to effectively inject causal knowledge into pre-trained models. To address these issues, we propose CausalBERT, which collects the largest scale of causal resource using precise causal patterns and causal embedding techniques. In addition, we adopt a regularization-based method to preserve the already learned knowledge with an extra regularization term while injecting causal knowledge. Extensive experiments on 7 datasets, including four causal pair classification tasks, two causal QA tasks and a causal inference task, demonstrate that CausalBERT captures rich causal knowledge and outperforms all pre-trained models-based state-of-the-art methods, achieving a new causal inference benchmark.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2107.09852](https://arxiv.org/abs/2107.09852) [cs.CL]** |
+|           | (or **[arXiv:2107.09852v1](https://arxiv.org/abs/2107.09852v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-07-22-5">5. Improved Text Classification via Contrastive Adversarial Training
+</h2>
+
+Title: [Improved Text Classification via Contrastive Adversarial Training](https://arxiv.org/abs/2107.10137)
+
+Authors: [Lin Pan](https://arxiv.org/search/cs?searchtype=author&query=Pan%2C+L), [Chung-Wei Hang](https://arxiv.org/search/cs?searchtype=author&query=Hang%2C+C), [Avirup Sil](https://arxiv.org/search/cs?searchtype=author&query=Sil%2C+A), [Saloni Potdar](https://arxiv.org/search/cs?searchtype=author&query=Potdar%2C+S), [Mo Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+M)
+
+> We propose a simple and general method to regularize the fine-tuning of Transformer-based encoders for text classification tasks. Specifically, during fine-tuning we generate adversarial examples by perturbing the word embeddings of the model and perform contrastive learning on clean and adversarial examples in order to teach the model to learn noise-invariant representations. By training on both clean and adversarial examples along with the additional contrastive objective, we observe consistent improvement over standard fine-tuning on clean examples. On several GLUE benchmark tasks, our fine-tuned BERT Large model outperforms BERT Large baseline by 1.7% on average, and our fine-tuned RoBERTa Large improves over RoBERTa Large baseline by 1.3%. We additionally validate our method in different domains using three intent classification datasets, where our fine-tuned RoBERTa Large outperforms RoBERTa Large baseline by 1-2% on average.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2107.10137](https://arxiv.org/abs/2107.10137) [cs.CL]** |
+|           | (or **[arXiv:2107.10137v1](https://arxiv.org/abs/2107.10137v1) [cs.CL]** for this version) |
+
+
+
 
 
 
