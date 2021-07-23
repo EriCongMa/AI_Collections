@@ -3,8 +3,12 @@
 # Index
 
 
-- [2021-07-22](#2021-07-22)
+- [2021-07-23](#2021-07-23)
 
+  - [1. Multi-Stream Transformers](#2021-07-23-1)
+  - [2. Confidence-Aware Scheduled Sampling for Neural Machine Translation](#2021-07-23-2)
+  - [3. To Ship or Not to Ship: An Extensive Evaluation of Automatic Metrics for Machine Translation](#2021-07-23-3)
+- [2021-07-22](#2021-07-22)
   - [1. TLA: Twitter Linguistic Analysis](#2021-07-22-1)
   - [2. What Do You Get When You Cross Beam Search with Nucleus Sampling?](#2021-07-22-2)
   - [3. Soft Layer Selection with Meta-Learning for Zero-Shot Cross-Lingual Transfer](#2021-07-22-3)
@@ -105,6 +109,68 @@
   - [6. XLM-E: Cross-lingual Language Model Pre-training via ELECTRA](#2021-07-01-6)
   - [7. On the Power of Saturated Transformers: A View from Circuit Complexity](#2021-07-01-7)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-07-23
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-07-23-1">1. Multi-Stream Transformers
+</h2>
+
+Title: [Multi-Stream Transformers](https://arxiv.org/abs/2107.10342)
+
+Authors: [Mikhail Burtsev](https://arxiv.org/search/cs?searchtype=author&query=Burtsev%2C+M), [Anna Rumshisky](https://arxiv.org/search/cs?searchtype=author&query=Rumshisky%2C+A)
+
+> Transformer-based encoder-decoder models produce a fused token-wise representation after every encoder layer. We investigate the effects of allowing the encoder to preserve and explore alternative hypotheses, combined at the end of the encoding process. To that end, we design and examine a Multi-stream Transformer architecture and find that splitting the Transformer encoder into multiple encoder streams and allowing the model to merge multiple representational hypotheses improves performance, with further improvement obtained by adding a skip connection between the first and the final encoder layer.
+
+| Subjects: | **Computation and Language (cs.CL)**; Neural and Evolutionary Computing (cs.NE) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2107.10342](https://arxiv.org/abs/2107.10342) [cs.CL]** |
+|           | (or **[arXiv:2107.10342v1](https://arxiv.org/abs/2107.10342v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-07-23-2">2. Confidence-Aware Scheduled Sampling for Neural Machine Translation
+</h2>
+
+Title: [Confidence-Aware Scheduled Sampling for Neural Machine Translation](https://arxiv.org/abs/2107.10427)
+
+Authors: [Yijin Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Y), [Fandong Meng](https://arxiv.org/search/cs?searchtype=author&query=Meng%2C+F), [Yufeng Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+Y), [Jinan Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+J), [Jie Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+J)
+
+> Scheduled sampling is an effective method to alleviate the exposure bias problem of neural machine translation. It simulates the inference scene by randomly replacing ground-truth target input tokens with predicted ones during training. Despite its success, its critical schedule strategies are merely based on training steps, ignoring the real-time model competence, which limits its potential performance and convergence speed. To address this issue, we propose confidence-aware scheduled sampling. Specifically, we quantify real-time model competence by the confidence of model predictions, based on which we design fine-grained schedule strategies. In this way, the model is exactly exposed to predicted tokens for high-confidence positions and still ground-truth tokens for low-confidence positions. Moreover, we observe vanilla scheduled sampling suffers from degenerating into the original teacher forcing mode since most predicted tokens are the same as ground-truth tokens. Therefore, under the above confidence-aware strategy, we further expose more noisy tokens (e.g., wordy and incorrect word order) instead of predicted ones for high-confidence token positions. We evaluate our approach on the Transformer and conduct experiments on large-scale WMT 2014 English-German, WMT 2014 English-French, and WMT 2019 Chinese-English. Results show that our approach significantly outperforms the Transformer and vanilla scheduled sampling on both translation quality and convergence speed.
+
+| Comments: | Findings of ACL-2021, code at [this https URL](https://github.com/Adaxry/conf_aware_ss4nmt) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2107.10427](https://arxiv.org/abs/2107.10427) [cs.CL]** |
+|           | (or **[arXiv:2107.10427v1](https://arxiv.org/abs/2107.10427v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-07-23-3">3. To Ship or Not to Ship: An Extensive Evaluation of Automatic Metrics for Machine Translation
+</h2>
+
+Title: [To Ship or Not to Ship: An Extensive Evaluation of Automatic Metrics for Machine Translation](https://arxiv.org/abs/2107.10821)
+
+Authors: [Tom Kocmi](https://arxiv.org/search/cs?searchtype=author&query=Kocmi%2C+T), [Christian Federmann](https://arxiv.org/search/cs?searchtype=author&query=Federmann%2C+C), [Roman Grundkiewicz](https://arxiv.org/search/cs?searchtype=author&query=Grundkiewicz%2C+R), [Marcin Junczys-Dowmunt](https://arxiv.org/search/cs?searchtype=author&query=Junczys-Dowmunt%2C+M), [Hitokazu Matsushita](https://arxiv.org/search/cs?searchtype=author&query=Matsushita%2C+H), [Arul Menezes](https://arxiv.org/search/cs?searchtype=author&query=Menezes%2C+A)
+
+> Automatic metrics are commonly used as the exclusive tool for declaring the superiority of one machine translation system's quality over another. The community choice of automatic metric guides research directions and industrial developments by deciding which models are deemed better. Evaluating metrics correlations has been limited to a small collection of human judgements. In this paper, we corroborate how reliable metrics are in contrast to human judgements on - to the best of our knowledge - the largest collection of human judgements. We investigate which metrics have the highest accuracy to make system-level quality rankings for pairs of systems, taking human judgement as a gold standard, which is the closest scenario to the real metric usage. Furthermore, we evaluate the performance of various metrics across different language pairs and domains. Lastly, we show that the sole use of BLEU negatively affected the past development of improved models. We release the collection of human judgements of 4380 systems, and 2.3 M annotated sentences for further analysis and replication of our work.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2107.10821](https://arxiv.org/abs/2107.10821) [cs.CL]** |
+|           | (or **[arXiv:2107.10821v1](https://arxiv.org/abs/2107.10821v1) [cs.CL]** for this version) |
+
+
+
 
 
 
