@@ -3,8 +3,12 @@
 # Index
 
 
-- [2021-07-23](#2021-07-23)
+- [2021-07-26](#2021-07-26)
 
+  - [1. Adversarial Reinforced Instruction Attacker for Robust Vision-Language Navigation](#2021-07-26-1)
+  - [2. OLR 2021 Challenge: Datasets, Rules and Baselines](#2021-07-26-2)
+  - [3. Modeling Bilingual Conversational Characteristics for Neural Chat Translation](#2021-07-26-3)
+- [2021-07-23](#2021-07-23)
   - [1. Multi-Stream Transformers](#2021-07-23-1)
   - [2. Confidence-Aware Scheduled Sampling for Neural Machine Translation](#2021-07-23-2)
   - [3. To Ship or Not to Ship: An Extensive Evaluation of Automatic Metrics for Machine Translation](#2021-07-23-3)
@@ -109,6 +113,72 @@
   - [6. XLM-E: Cross-lingual Language Model Pre-training via ELECTRA](#2021-07-01-6)
   - [7. On the Power of Saturated Transformers: A View from Circuit Complexity](#2021-07-01-7)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-07-26
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-07-26-1">1. Adversarial Reinforced Instruction Attacker for Robust Vision-Language Navigation
+</h2>
+
+Title: [Adversarial Reinforced Instruction Attacker for Robust Vision-Language Navigation](https://arxiv.org/abs/2107.11252)
+
+Authors: [Bingqian Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+B), [Yi Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+Y), [Yanxin Long](https://arxiv.org/search/cs?searchtype=author&query=Long%2C+Y), [Xiaodan Liang](https://arxiv.org/search/cs?searchtype=author&query=Liang%2C+X), [Qixiang Ye](https://arxiv.org/search/cs?searchtype=author&query=Ye%2C+Q), [Liang Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+L)
+
+> Language instruction plays an essential role in the natural language grounded navigation tasks. However, navigators trained with limited human-annotated instructions may have difficulties in accurately capturing key information from the complicated instruction at different timesteps, leading to poor navigation performance. In this paper, we exploit to train a more robust navigator which is capable of dynamically extracting crucial factors from the long instruction, by using an adversarial attacking paradigm. Specifically, we propose a Dynamic Reinforced Instruction Attacker (DR-Attacker), which learns to mislead the navigator to move to the wrong target by destroying the most instructive information in instructions at different timesteps. By formulating the perturbation generation as a Markov Decision Process, DR-Attacker is optimized by the reinforcement learning algorithm to generate perturbed instructions sequentially during the navigation, according to a learnable attack score. Then, the perturbed instructions, which serve as hard samples, are used for improving the robustness of the navigator with an effective adversarial training strategy and an auxiliary self-supervised reasoning task. Experimental results on both Vision-and-Language Navigation (VLN) and Navigation from Dialog History (NDH) tasks show the superiority of our proposed method over state-of-the-art methods. Moreover, the visualization analysis shows the effectiveness of the proposed DR-Attacker, which can successfully attack crucial information in the instructions at different timesteps. Code is available at [this https URL](https://github.com/expectorlin/DR-Attacker).
+
+| Comments:          | Accepted by TPAMI 2021                                       |
+| ------------------ | ------------------------------------------------------------ |
+| Subjects:          | **Computer Vision and Pattern Recognition (cs.CV)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL) |
+| Journal reference: | IEEE Transactions on Pattern Analysis and Machine Intelligence, 2021 |
+| DOI:               | [10.1109/TPAMI.2021.3097435](https://arxiv.org/ct?url=https%3A%2F%2Fdx.doi.org%2F10.1109%2FTPAMI.2021.3097435&v=14d29106) |
+| Cite as:           | **[arXiv:2107.11252](https://arxiv.org/abs/2107.11252) [cs.CV]** |
+|                    | (or **[arXiv:2107.11252v1](https://arxiv.org/abs/2107.11252v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-07-26-2">2. OLR 2021 Challenge: Datasets, Rules and Baselines
+</h2>
+
+Title: [OLR 2021 Challenge: Datasets, Rules and Baselines](https://arxiv.org/abs/2107.11113)
+
+Authors: [Binling Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+B), [Wenxuan Hu](https://arxiv.org/search/cs?searchtype=author&query=Hu%2C+W), [Jing Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+J), [Yiming Zhi](https://arxiv.org/search/cs?searchtype=author&query=Zhi%2C+Y), [Zheng Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Z), [Qingyang Hong](https://arxiv.org/search/cs?searchtype=author&query=Hong%2C+Q), [Lin Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L), [Dong Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+D), [Liming Song](https://arxiv.org/search/cs?searchtype=author&query=Song%2C+L), [Cheng Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+C)
+
+> This paper introduces the sixth Oriental Language Recognition (OLR) 2021 Challenge, which intends to improve the performance of language recognition systems and speech recognition systems within multilingual scenarios. The data profile, four tasks, two baselines, and the evaluation principles are introduced in this paper. In addition to the Language Identification (LID) tasks, multilingual Automatic Speech Recognition (ASR) tasks are introduced to OLR 2021 Challenge for the first time. The challenge this year focuses on more practical and challenging problems, with four tasks: (1) constrained LID, (2) unconstrained LID, (3) constrained multilingual ASR, (4) unconstrained multilingual ASR. Baselines for LID tasks and multilingual ASR tasks are provided, respectively. The LID baseline system is an extended TDNN x-vector model constructed with Pytorch. A transformer-based end-to-end model is provided as the multilingual ASR baseline system. These recipes will be online published, and available for participants to construct their own LID or ASR systems. The baseline results demonstrate that those tasks are rather challenging and deserve more effort to achieve better performance.
+
+| Comments: | arXiv admin note: text overlap with [arXiv:2006.03473](https://arxiv.org/abs/2006.03473), [arXiv:1907.07626](https://arxiv.org/abs/1907.07626), [arXiv:1806.00616](https://arxiv.org/abs/1806.00616), [arXiv:1706.09742](https://arxiv.org/abs/1706.09742) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG); Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2107.11113](https://arxiv.org/abs/2107.11113) [cs.CL]** |
+|           | (or **[arXiv:2107.11113v1](https://arxiv.org/abs/2107.11113v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-07-26-3">3. Modeling Bilingual Conversational Characteristics for Neural Chat Translation
+</h2>
+
+Title: [Modeling Bilingual Conversational Characteristics for Neural Chat Translation](https://arxiv.org/abs/2107.11164)
+
+Authors: [Yunlong Liang](https://arxiv.org/search/cs?searchtype=author&query=Liang%2C+Y), [Fandong Meng](https://arxiv.org/search/cs?searchtype=author&query=Meng%2C+F), [Yufeng Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+Y), [Jinan Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+J), [Jie Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+J)
+
+> Neural chat translation aims to translate bilingual conversational text, which has a broad application in international exchanges and cooperation. Despite the impressive performance of sentence-level and context-aware Neural Machine Translation (NMT), there still remain challenges to translate bilingual conversational text due to its inherent characteristics such as role preference, dialogue coherence, and translation consistency. In this paper, we aim to promote the translation quality of conversational text by modeling the above properties. Specifically, we design three latent variational modules to learn the distributions of bilingual conversational characteristics. Through sampling from these learned distributions, the latent variables, tailored for role preference, dialogue coherence, and translation consistency, are incorporated into the NMT model for better translation. We evaluate our approach on the benchmark dataset BConTrasT (English-German) and a self-collected bilingual dialogue corpus, named BMELD (English-Chinese). Extensive experiments show that our approach notably boosts the performance over strong baselines by a large margin and significantly surpasses some state-of-the-art context-aware NMT models in terms of BLEU and TER. Additionally, we make the BMELD dataset publicly available for the research community.
+
+| Comments: | Accepted as a long paper at ACL 2021. Code and data are available at [this https URL](https://github.com/XL2248/CPCC) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2107.11164](https://arxiv.org/abs/2107.11164) [cs.CL]** |
+|           | (or **[arXiv:2107.11164v1](https://arxiv.org/abs/2107.11164v1) [cs.CL]** for this version) |
+
+
+
 
 
 
