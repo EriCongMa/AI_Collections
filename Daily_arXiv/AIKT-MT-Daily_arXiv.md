@@ -3,6 +3,10 @@
 # Index
 
 
+- [2021-07-28](#2021-07-28)
+
+  - [1. Greedy Gradient Ensemble for Robust Visual Question Answering](#2021-07-28-1)
+  - [2. Federated Learning Meets Natural Language Processing: A Survey](#2021-07-28-2)
 - [2021-07-27](#2021-07-27)
 
   - [1. The USYD-JD Speech Translation System for IWSLT 2021](#2021-07-27-1)
@@ -117,6 +121,52 @@
   - [6. XLM-E: Cross-lingual Language Model Pre-training via ELECTRA](#2021-07-01-6)
   - [7. On the Power of Saturated Transformers: A View from Circuit Complexity](#2021-07-01-7)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-07-28
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-07-28-1">1. Greedy Gradient Ensemble for Robust Visual Question Answering
+</h2>
+
+Title: [Greedy Gradient Ensemble for Robust Visual Question Answering](https://arxiv.org/abs/2107.12651)
+
+Authors: [Xinzhe Han](https://arxiv.org/search/cs?searchtype=author&query=Han%2C+X), [Shuhui Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+S), [Chi Su](https://arxiv.org/search/cs?searchtype=author&query=Su%2C+C), [Qingming Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+Q), [Qi Tian](https://arxiv.org/search/cs?searchtype=author&query=Tian%2C+Q)
+
+> Language bias is a critical issue in Visual Question Answering (VQA), where models often exploit dataset biases for the final decision without considering the image information. As a result, they suffer from performance drop on out-of-distribution data and inadequate visual explanation. Based on experimental analysis for existing robust VQA methods, we stress the language bias in VQA that comes from two aspects, i.e., distribution bias and shortcut bias. We further propose a new de-bias framework, Greedy Gradient Ensemble (GGE), which combines multiple biased models for unbiased base model learning. With the greedy strategy, GGE forces the biased models to over-fit the biased data distribution in priority, thus makes the base model pay more attention to examples that are hard to solve by biased models. The experiments demonstrate that our method makes better use of visual information and achieves state-of-the-art performance on diagnosing dataset VQA-CP without using extra annotations.
+
+| Comments: | Accepted by ICCV 2021. Code: [this https URL](https://github.com/GeraldHan/GGE) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2107.12651](https://arxiv.org/abs/2107.12651) [cs.CV]** |
+|           | (or **[arXiv:2107.12651v1](https://arxiv.org/abs/2107.12651v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-07-28-2">2. Federated Learning Meets Natural Language Processing: A Survey
+</h2>
+
+Title: [Federated Learning Meets Natural Language Processing: A Survey](https://arxiv.org/abs/2107.12603)
+
+Authors: [Ming Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+M), [Stella Ho](https://arxiv.org/search/cs?searchtype=author&query=Ho%2C+S), [Mengqi Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+M), [Longxiang Gao](https://arxiv.org/search/cs?searchtype=author&query=Gao%2C+L), [Yuan Jin](https://arxiv.org/search/cs?searchtype=author&query=Jin%2C+Y), [He Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+H)
+
+> Federated Learning aims to learn machine learning models from multiple decentralized edge devices (e.g. mobiles) or servers without sacrificing local data privacy. Recent Natural Language Processing techniques rely on deep learning and large pre-trained language models. However, both big deep neural and language models are trained with huge amounts of data which often lies on the server side. Since text data is widely originated from end users, in this work, we look into recent NLP models and techniques which use federated learning as the learning framework. Our survey discusses major challenges in federated natural language processing, including the algorithm challenges, system challenges as well as the privacy issues. We also provide a critical review of the existing Federated NLP evaluation methods and tools. Finally, we highlight the current research gaps and future directions.
+
+| Comments: | 19 pages                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Distributed, Parallel, and Cluster Computing (cs.DC) |
+| Cite as:  | **[arXiv:2107.12603](https://arxiv.org/abs/2107.12603) [cs.CL]** |
+|           | (or **[arXiv:2107.12603v1](https://arxiv.org/abs/2107.12603v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
