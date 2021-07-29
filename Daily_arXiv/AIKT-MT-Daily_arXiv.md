@@ -3,8 +3,11 @@
 # Index
 
 
-- [2021-07-28](#2021-07-28)
+- [2021-07-29](#2021-07-29)
 
+  - [1. Towards Robustness Against Natural Language Word Substitutions](#2021-07-29-1)
+  - [2. Exceeding the Limits of Visual-Linguistic Multi-Task Learning](#2021-07-29-2)
+- [2021-07-28](#2021-07-28)
   - [1. Greedy Gradient Ensemble for Robust Visual Question Answering](#2021-07-28-1)
   - [2. Federated Learning Meets Natural Language Processing: A Survey](#2021-07-28-2)
 - [2021-07-27](#2021-07-27)
@@ -121,6 +124,55 @@
   - [6. XLM-E: Cross-lingual Language Model Pre-training via ELECTRA](#2021-07-01-6)
   - [7. On the Power of Saturated Transformers: A View from Circuit Complexity](#2021-07-01-7)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-07-29
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-07-29-1">1. Towards Robustness Against Natural Language Word Substitutions
+</h2>
+
+Title: [Towards Robustness Against Natural Language Word Substitutions](https://arxiv.org/abs/2107.13541)
+
+Authors: [Xinshuai Dong](https://arxiv.org/search/cs?searchtype=author&query=Dong%2C+X), [Anh Tuan Luu](https://arxiv.org/search/cs?searchtype=author&query=Luu%2C+A+T), [Rongrong Ji](https://arxiv.org/search/cs?searchtype=author&query=Ji%2C+R), [Hong Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+H)
+
+> Robustness against word substitutions has a well-defined and widely acceptable form, i.e., using semantically similar words as substitutions, and thus it is considered as a fundamental stepping-stone towards broader robustness in natural language processing. Previous defense methods capture word substitutions in vector space by using either l2-ball or hyper-rectangle, which results in perturbation sets that are not inclusive enough or unnecessarily large, and thus impedes mimicry of worst cases for robust training. In this paper, we introduce a novel \textit{Adversarial Sparse Convex Combination} (ASCC) method. We model the word substitution attack space as a convex hull and leverages a regularization term to enforce perturbation towards an actual substitution, thus aligning our modeling better with the discrete textual space. Based on the ASCC method, we further propose ASCC-defense, which leverages ASCC to generate worst-case perturbations and incorporates adversarial training towards robustness. Experiments show that ASCC-defense outperforms the current state-of-the-arts in terms of robustness on two prevailing NLP tasks, \emph{i.e.}, sentiment analysis and natural language inference, concerning several attacks across multiple model architectures. Besides, we also envision a new class of defense towards robustness in NLP, where our robustly trained word vectors can be plugged into a normally trained model and enforce its robustness without applying any other defense techniques.
+
+| Comments: | Conference paper ICLR 2021                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2107.13541](https://arxiv.org/abs/2107.13541) [cs.CL]** |
+|           | (or **[arXiv:2107.13541v1](https://arxiv.org/abs/2107.13541v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-07-29-2">2. Exceeding the Limits of Visual-Linguistic Multi-Task Learning
+</h2>
+
+Title: [Exceeding the Limits of Visual-Linguistic Multi-Task Learning](https://arxiv.org/abs/2107.13054)
+
+Authors: [Cameron R. Wolfe](https://arxiv.org/search/cs?searchtype=author&query=Wolfe%2C+C+R), [Keld T. Lundgaard](https://arxiv.org/search/cs?searchtype=author&query=Lundgaard%2C+K+T)
+
+> By leveraging large amounts of product data collected across hundreds of live e-commerce websites, we construct 1000 unique classification tasks that share similarly-structured input data, comprised of both text and images. These classification tasks focus on learning the product hierarchy of different e-commerce websites, causing many of them to be correlated. Adopting a multi-modal transformer model, we solve these tasks in unison using multi-task learning (MTL). Extensive experiments are presented over an initial 100-task dataset to reveal best practices for "large-scale MTL" (i.e., MTL with more than 100 tasks). From these experiments, a final, unified methodology is derived, which is composed of both best practices and new proposals such as DyPa, a simple heuristic for automatically allocating task-specific parameters to tasks that could benefit from extra capacity. Using our large-scale MTL methodology, we successfully train a single model across all 1000 tasks in our dataset while using minimal task specific parameters, thereby showing that it is possible to extend several orders of magnitude beyond current efforts in MTL.
+
+| Comments:    | 10 pages, 7 figures                                          |
+| ------------ | ------------------------------------------------------------ |
+| Subjects:    | **Artificial Intelligence (cs.AI)**; Computation and Language (cs.CL); Computer Vision and Pattern Recognition (cs.CV); Machine Learning (cs.LG) |
+| MSC classes: | 68T07                                                        |
+| ACM classes: | I.2.6; I.2.7; I.2.10                                         |
+| Cite as:     | **[arXiv:2107.13054](https://arxiv.org/abs/2107.13054) [cs.AI]** |
+|              | (or **[arXiv:2107.13054v1](https://arxiv.org/abs/2107.13054v1) [cs.AI]** for this version) |
+
+
+
+
+
 
 
 
