@@ -3,8 +3,11 @@
 # Index
 
 
-- [2021-07-29](#2021-07-29)
+- [2021-07-30](#2021-07-30)
 
+  - [1. AutoTinyBERT: Automatic Hyper-parameter Optimization for Efficient Pre-trained Language Models](#2021-07-30-1)
+  - [2. Using Perturbed Length-aware Positional Encoding for Non-autoregressive Neural Machine Translation](#2021-07-30-2)
+- [2021-07-29](#2021-07-29)
   - [1. Towards Robustness Against Natural Language Word Substitutions](#2021-07-29-1)
   - [2. Exceeding the Limits of Visual-Linguistic Multi-Task Learning](#2021-07-29-2)
 - [2021-07-28](#2021-07-28)
@@ -124,6 +127,51 @@
   - [6. XLM-E: Cross-lingual Language Model Pre-training via ELECTRA](#2021-07-01-6)
   - [7. On the Power of Saturated Transformers: A View from Circuit Complexity](#2021-07-01-7)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-07-30
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-07-30-1">1. AutoTinyBERT: Automatic Hyper-parameter Optimization for Efficient Pre-trained Language Models
+</h2>
+
+Title: [AutoTinyBERT: Automatic Hyper-parameter Optimization for Efficient Pre-trained Language Models](https://arxiv.org/abs/2107.13686)
+
+Authors: [Yichun Yin](https://arxiv.org/search/cs?searchtype=author&query=Yin%2C+Y), [Cheng Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+C), [Lifeng Shang](https://arxiv.org/search/cs?searchtype=author&query=Shang%2C+L), [Xin Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+X), [Xiao Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+X), [Qun Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Q)
+
+> Pre-trained language models (PLMs) have achieved great success in natural language processing. Most of PLMs follow the default setting of architecture hyper-parameters (e.g., the hidden dimension is a quarter of the intermediate dimension in feed-forward sub-networks) in BERT (Devlin et al., 2019). Few studies have been conducted to explore the design of architecture hyper-parameters in BERT, especially for the more efficient PLMs with tiny sizes, which are essential for practical deployment on resource-constrained devices. In this paper, we adopt the one-shot Neural Architecture Search (NAS) to automatically search architecture hyper-parameters. Specifically, we carefully design the techniques of one-shot learning and the search space to provide an adaptive and efficient development way of tiny PLMs for various latency constraints. We name our method AutoTinyBERT and evaluate its effectiveness on the GLUE and SQuAD benchmarks. The extensive experiments show that our method outperforms both the SOTA search-based baseline (NAS-BERT) and the SOTA distillation-based methods (such as DistilBERT, TinyBERT, MiniLM and MobileBERT). In addition, based on the obtained architectures, we propose a more efficient development method that is even faster than the development of a single PLM.
+
+| Comments: | ACL 2021. The code and models are released at [this https URL](https://github.com/huawei-noah/Pretrained-Language-Model/tree/master/AutoTinyBERT) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2107.13686](https://arxiv.org/abs/2107.13686) [cs.CL]** |
+|           | (or **[arXiv:2107.13686v1](https://arxiv.org/abs/2107.13686v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-07-30-2">2. Using Perturbed Length-aware Positional Encoding for Non-autoregressive Neural Machine Translation
+</h2>
+
+Title: [Using Perturbed Length-aware Positional Encoding for Non-autoregressive Neural Machine Translation](https://arxiv.org/abs/2107.13689)
+
+Authors: [Yui Oka](https://arxiv.org/search/cs?searchtype=author&query=Oka%2C+Y), [Katsuhito Sudoh](https://arxiv.org/search/cs?searchtype=author&query=Sudoh%2C+K), [Satoshi Nakamura](https://arxiv.org/search/cs?searchtype=author&query=Nakamura%2C+S)
+
+> Non-autoregressive neural machine translation (NAT) usually employs sequence-level knowledge distillation using autoregressive neural machine translation (AT) as its teacher model. However, a NAT model often outputs shorter sentences than an AT model. In this work, we propose sequence-level knowledge distillation (SKD) using perturbed length-aware positional encoding and apply it to a student model, the Levenshtein Transformer. Our method outperformed a standard Levenshtein Transformer by 2.5 points in bilingual evaluation understudy (BLEU) at maximum in a WMT14 German to English translation. The NAT model output longer sentences than the baseline NAT models.
+
+| Comments: | 5 pages, 1 figures. Will be presented at ACL SRW 2021        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2107.13689](https://arxiv.org/abs/2107.13689) [cs.CL]** |
+|           | (or **[arXiv:2107.13689v1](https://arxiv.org/abs/2107.13689v1) [cs.CL]** for this version) |
+
+
+
 
 
 
