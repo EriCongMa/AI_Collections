@@ -3,6 +3,17 @@
 # Index
 
 
+- [2021-08-04](#2021-08-04)
+
+  - [1. Knowledge-intensive Language Understanding for Explainable AI](#2021-08-04-1)
+  - [2. Underreporting of errors in NLG output, and what to do about it](#2021-08-04-2)
+  - [3. A Dynamic Head Importance Computation Mechanism for Neural Machine Translation](#2021-08-04-3)
+- [2021-08-03](#2021-08-03)
+
+  - [1. Word2Pix: Word to Pixel Cross Attention Transformer in Visual Grounding](#2021-08-03-1)
+  - [2. StyleGAN-NADA: CLIP-Guided Domain Adaptation of Image Generators](#2021-08-03-2)
+  - [3. Structural Guidance for Transformer Language Models](#2021-08-03-3)
+  - [4. LICHEE: Improving Language Model Pre-training with Multi-grained Tokenization](#2021-08-03-4)
 - [2021-08-02](#2021-08-02)
 
   - [1. Difficulty-Aware Machine Translation Evaluation](#2021-08-02-1)
@@ -13,6 +24,150 @@
   - [6. Towards Universality in Multilingual Text Rewriting](#2021-08-02-6)
   - [7. ChrEnTranslate: Cherokee-English Machine Translation Demo with Quality Estimation and Corrective Feedback](#2021-08-02-7)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-08-04
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-08-04-1">1. Knowledge-intensive Language Understanding for Explainable AI
+</h2>
+
+Title: [Knowledge-intensive Language Understanding for Explainable AI](https://arxiv.org/abs/2108.01174)
+
+Authors: [Amit Sheth](https://arxiv.org/search/cs?searchtype=author&query=Sheth%2C+A), [Manas Gaur](https://arxiv.org/search/cs?searchtype=author&query=Gaur%2C+M), [Kaushik Roy](https://arxiv.org/search/cs?searchtype=author&query=Roy%2C+K), [Keyur Faldu](https://arxiv.org/search/cs?searchtype=author&query=Faldu%2C+K)
+
+> AI systems have seen significant adoption in various domains. At the same time, further adoption in some domains is hindered by inability to fully trust an AI system that it will not harm a human. Besides the concerns for fairness, privacy, transparency, and explainability are key to developing trusts in AI systems. As stated in describing trustworthy AI "Trust comes through understanding. How AI-led decisions are made and what determining factors were included are crucial to understand." The subarea of explaining AI systems has come to be known as XAI. Multiple aspects of an AI system can be explained; these include biases that the data might have, lack of data points in a particular region of the example space, fairness of gathering the data, feature importances, etc. However, besides these, it is critical to have human-centered explanations that are directly related to decision-making similar to how a domain expert makes decisions based on "domain knowledge," that also include well-established, peer-validated explicit guidelines. To understand and validate an AI system's outcomes (such as classification, recommendations, predictions), that lead to developing trust in the AI system, it is necessary to involve explicit domain knowledge that humans understand and use.
+
+| Comments: | To appear in IEEE Internet Computing, September/October 2021 Issue |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Artificial Intelligence (cs.AI)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2108.01174](https://arxiv.org/abs/2108.01174) [cs.AI]** |
+|           | (or **[arXiv:2108.01174v1](https://arxiv.org/abs/2108.01174v1) [cs.AI]** for this version) |
+
+
+
+
+
+<h2 id="2021-08-04-2">2. Underreporting of errors in NLG output, and what to do about it
+</h2>
+
+Title: [Underreporting of errors in NLG output, and what to do about it](https://arxiv.org/abs/2108.01182)
+
+Authors: [Emiel van Miltenburg](https://arxiv.org/search/cs?searchtype=author&query=van+Miltenburg%2C+E), [Miruna-Adriana Clinciu](https://arxiv.org/search/cs?searchtype=author&query=Clinciu%2C+M), [Ondřej Dušek](https://arxiv.org/search/cs?searchtype=author&query=Dušek%2C+O), [Dimitra Gkatzia](https://arxiv.org/search/cs?searchtype=author&query=Gkatzia%2C+D), [Stephanie Inglis](https://arxiv.org/search/cs?searchtype=author&query=Inglis%2C+S), [Leo Leppänen](https://arxiv.org/search/cs?searchtype=author&query=Leppänen%2C+L), [Saad Mahamood](https://arxiv.org/search/cs?searchtype=author&query=Mahamood%2C+S), [Emma Manning](https://arxiv.org/search/cs?searchtype=author&query=Manning%2C+E), [Stephanie Schoch](https://arxiv.org/search/cs?searchtype=author&query=Schoch%2C+S), [Craig Thomson](https://arxiv.org/search/cs?searchtype=author&query=Thomson%2C+C), [Luou Wen](https://arxiv.org/search/cs?searchtype=author&query=Wen%2C+L)
+
+> We observe a severe under-reporting of the different kinds of errors that Natural Language Generation systems make. This is a problem, because mistakes are an important indicator of where systems should still be improved. If authors only report overall performance metrics, the research community is left in the dark about the specific weaknesses that are exhibited by `state-of-the-art' research. Next to quantifying the extent of error under-reporting, this position paper provides recommendations for error identification, analysis and reporting.
+
+| Comments: | Prefinal version, accepted for publication in the Proceedings of the 14th International Conference on Natural Language Generation (INLG 2021, Aberdeen). Comments welcome |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2108.01182](https://arxiv.org/abs/2108.01182) [cs.CL]** |
+|           | (or **[arXiv:2108.01182v1](https://arxiv.org/abs/2108.01182v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-08-04-3">3. A Dynamic Head Importance Computation Mechanism for Neural Machine Translation
+</h2>
+
+Title: [A Dynamic Head Importance Computation Mechanism for Neural Machine Translation](https://arxiv.org/abs/2108.01377)
+
+Authors: [Akshay Goindani](https://arxiv.org/search/cs?searchtype=author&query=Goindani%2C+A), [Manish Shrivastava](https://arxiv.org/search/cs?searchtype=author&query=Shrivastava%2C+M)
+
+> Multiple parallel attention mechanisms that use multiple attention heads facilitate greater performance of the Transformer model for various applications e.g., Neural Machine Translation (NMT), text classification. In multi-head attention mechanism, different heads attend to different parts of the input. However, the limitation is that multiple heads might attend to the same part of the input, resulting in multiple heads being redundant. Thus, the model resources are under-utilized. One approach to avoid this is to prune least important heads based on certain importance score. In this work, we focus on designing a Dynamic Head Importance Computation Mechanism (DHICM) to dynamically calculate the importance of a head with respect to the input. Our insight is to design an additional attention layer together with multi-head attention, and utilize the outputs of the multi-head attention along with the input, to compute the importance for each head. Additionally, we add an extra loss function to prevent the model from assigning same score to all heads, to identify more important heads and improvise performance. We analyzed performance of DHICM for NMT with different languages. Experiments on different datasets show that DHICM outperforms traditional Transformer-based approach by large margin, especially, when less training data is available.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2108.01377](https://arxiv.org/abs/2108.01377) [cs.CL]** |
+|           | (or **[arXiv:2108.01377v1](https://arxiv.org/abs/2108.01377v1) [cs.CL]** for this version) |
+
+
+
+
+
+# 2021-08-03
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-08-03-1">1. Word2Pix: Word to Pixel Cross Attention Transformer in Visual Grounding
+</h2>
+
+Title: [Word2Pix: Word to Pixel Cross Attention Transformer in Visual Grounding](https://arxiv.org/abs/2108.00205)
+
+Authors: [Heng Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+H), [Joey Tianyi Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+J+T), [Yew-Soon Ong](https://arxiv.org/search/cs?searchtype=author&query=Ong%2C+Y)
+
+> Current one-stage methods for visual grounding encode the language query as one holistic sentence embedding before fusion with visual feature. Such a formulation does not treat each word of a query sentence on par when modeling language to visual attention, therefore prone to neglect words which are less important for sentence embedding but critical for visual grounding. In this paper we propose Word2Pix: a one-stage visual grounding network based on encoder-decoder transformer architecture that enables learning for textual to visual feature correspondence via word to pixel attention. The embedding of each word from the query sentence is treated alike by attending to visual pixels individually instead of single holistic sentence embedding. In this way, each word is given equivalent opportunity to adjust the language to vision attention towards the referent target through multiple stacks of transformer decoder layers. We conduct the experiments on RefCOCO, RefCOCO+ and RefCOCOg datasets and the proposed Word2Pix outperforms existing one-stage methods by a notable margin. The results obtained also show that Word2Pix surpasses two-stage visual grounding models, while at the same time keeping the merits of one-stage paradigm namely end-to-end training and real-time inference speed intact.
+
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2108.00205](https://arxiv.org/abs/2108.00205) [cs.CV]** |
+|           | (or **[arXiv:2108.00205v1](https://arxiv.org/abs/2108.00205v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-08-03-2">2. StyleGAN-NADA: CLIP-Guided Domain Adaptation of Image Generators
+</h2>
+
+Title: [StyleGAN-NADA: CLIP-Guided Domain Adaptation of Image Generators](https://arxiv.org/abs/2108.00946)
+
+Authors: [Rinon Gal](https://arxiv.org/search/cs?searchtype=author&query=Gal%2C+R), [Or Patashnik](https://arxiv.org/search/cs?searchtype=author&query=Patashnik%2C+O), [Haggai Maron](https://arxiv.org/search/cs?searchtype=author&query=Maron%2C+H), [Gal Chechik](https://arxiv.org/search/cs?searchtype=author&query=Chechik%2C+G), [Daniel Cohen-Or](https://arxiv.org/search/cs?searchtype=author&query=Cohen-Or%2C+D)
+
+> Can a generative model be trained to produce images from a specific domain, guided by a text prompt only, without seeing any image? In other words: can an image generator be trained blindly? Leveraging the semantic power of large scale Contrastive-Language-Image-Pre-training (CLIP) models, we present a text-driven method that allows shifting a generative model to new domains, without having to collect even a single image from those domains. We show that through natural language prompts and a few minutes of training, our method can adapt a generator across a multitude of domains characterized by diverse styles and shapes. Notably, many of these modifications would be difficult or outright impossible to reach with existing methods. We conduct an extensive set of experiments and comparisons across a wide range of domains. These demonstrate the effectiveness of our approach and show that our shifted models maintain the latent-space properties that make generative models appealing for downstream tasks.
+
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL); Graphics (cs.GR); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2108.00946](https://arxiv.org/abs/2108.00946) [cs.CV]** |
+|           | (or **[arXiv:2108.00946v1](https://arxiv.org/abs/2108.00946v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-08-03-3">3. Structural Guidance for Transformer Language Models
+</h2>
+
+Title: [Structural Guidance for Transformer Language Models](https://arxiv.org/abs/2108.00104)
+
+Authors: [Peng Qian](https://arxiv.org/search/cs?searchtype=author&query=Qian%2C+P), [Tahira Naseem](https://arxiv.org/search/cs?searchtype=author&query=Naseem%2C+T), [Roger Levy](https://arxiv.org/search/cs?searchtype=author&query=Levy%2C+R), [Ramón Fernandez Astudillo](https://arxiv.org/search/cs?searchtype=author&query=Astudillo%2C+R+F)
+
+> Transformer-based language models pre-trained on large amounts of text data have proven remarkably successful in learning generic transferable linguistic representations. Here we study whether structural guidance leads to more human-like systematic linguistic generalization in Transformer language models without resorting to pre-training on very large amounts of data. We explore two general ideas. The "Generative Parsing" idea jointly models the incremental parse and word sequence as part of the same sequence modeling task. The "Structural Scaffold" idea guides the language model's representation via additional structure loss that separately predicts the incremental constituency parse. We train the proposed models along with a vanilla Transformer language model baseline on a 14 million-token and a 46 million-token subset of the BLLIP dataset, and evaluate models' syntactic generalization performances on SG Test Suites and sized BLiMP. Experiment results across two benchmarks suggest converging evidence that generative structural supervisions can induce more robust and humanlike linguistic generalization in Transformer language models without the need for data intensive pre-training.
+
+| Comments: | To be issued as paper revision for ACL 2021                  |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2108.00104](https://arxiv.org/abs/2108.00104) [cs.CL]** |
+|           | (or **[arXiv:2108.00104v1](https://arxiv.org/abs/2108.00104v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-08-03-4">4. LICHEE: Improving Language Model Pre-training with Multi-grained Tokenization
+</h2>
+
+Title: [LICHEE: Improving Language Model Pre-training with Multi-grained Tokenization](https://arxiv.org/abs/2108.00801)
+
+Authors: [Weidong Guo](https://arxiv.org/search/cs?searchtype=author&query=Guo%2C+W), [Mingjun Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+M), [Lusheng Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+L), [Di Niu](https://arxiv.org/search/cs?searchtype=author&query=Niu%2C+D), [Jinwen Luo](https://arxiv.org/search/cs?searchtype=author&query=Luo%2C+J), [Zhenhua Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Z), [Zhenyang Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Z), [Jianbo Tang](https://arxiv.org/search/cs?searchtype=author&query=Tang%2C+J)
+
+> Language model pre-training based on large corpora has achieved tremendous success in terms of constructing enriched contextual representations and has led to significant performance gains on a diverse range of Natural Language Understanding (NLU) tasks. Despite the success, most current pre-trained language models, such as BERT, are trained based on single-grained tokenization, usually with fine-grained characters or sub-words, making it hard for them to learn the precise meaning of coarse-grained words and phrases. In this paper, we propose a simple yet effective pre-training method named LICHEE to efficiently incorporate multi-grained information of input text. Our method can be applied to various pre-trained language models and improve their representation capability. Extensive experiments conducted on CLUE and SuperGLUE demonstrate that our method achieves comprehensive improvements on a wide variety of NLU tasks in both Chinese and English with little extra inference cost incurred, and that our best ensemble model achieves the state-of-the-art performance on CLUE benchmark competition.
+
+| Comments: | Accepted by ACL Findings 2021                                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2108.00801](https://arxiv.org/abs/2108.00801) [cs.CL]** |
+|           | (or **[arXiv:2108.00801v1](https://arxiv.org/abs/2108.00801v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
