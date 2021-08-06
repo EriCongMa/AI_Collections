@@ -3,6 +3,19 @@
 # Index
 
 
+- [2021-08-06](#2021-08-06)
+
+  - [1. Sentence-level Online Handwritten Chinese Character Recognition](#2021-08-06-1)
+  - [2. Evaluation of Audio-Visual Alignments in Visually Grounded Speech Models](#2021-08-06-2)
+  - [3. WeChat Neural Machine Translation Systems for WMT21](#2021-08-06-3)
+  - [4. Finetuning Pretrained Transformers into Variational Autoencoders](#2021-08-06-4)
+  - [5. VisualTextRank: Unsupervised Graph-based Content Extraction for Automating Ad Text to Image Search](#2021-08-06-5)
+- [2021-08-05](#2021-08-05)
+
+  - [1. Improving Distinction between ASR Errors and Speech Disfluencies with Feature Space Interpolation](#2021-08-05-1)
+  - [2. PARADISE: Exploiting Parallel Data for Multilingual Sequence-to-Sequence Pretraining](#2021-08-05-2)
+  - [3. How to Query Language Models?](#2021-08-05-3)
+  - [4. Curriculum learning for language modeling](#2021-08-05-4)
 - [2021-08-04](#2021-08-04)
 
   - [1. Knowledge-intensive Language Understanding for Explainable AI](#2021-08-04-1)
@@ -24,6 +37,186 @@
   - [6. Towards Universality in Multilingual Text Rewriting](#2021-08-02-6)
   - [7. ChrEnTranslate: Cherokee-English Machine Translation Demo with Quality Estimation and Corrective Feedback](#2021-08-02-7)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-08-06
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-08-06-1">1. Sentence-level Online Handwritten Chinese Character Recognition
+</h2>
+
+Title: [Sentence-level Online Handwritten Chinese Character Recognition](https://arxiv.org/abs/2108.02561)
+
+Authors: [Yunxin Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Y), [Qian Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+Q), [Qingcai Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+Q), [Lin Ma](https://arxiv.org/search/cs?searchtype=author&query=Ma%2C+L), [Baotian Hu](https://arxiv.org/search/cs?searchtype=author&query=Hu%2C+B), [Xiaolong Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+X), [Yuxin Ding](https://arxiv.org/search/cs?searchtype=author&query=Ding%2C+Y)
+
+> Single online handwritten Chinese character recognition~(single OLHCCR) has achieved prominent performance. However, in real application scenarios, users always write multiple Chinese characters to form one complete sentence and the contextual information within these characters holds the significant potential to improve the accuracy, robustness and efficiency of sentence-level OLHCCR. In this work, we first propose a simple and straightforward end-to-end network, namely vanilla compositional network~(VCN) to tackle the sentence-level OLHCCR. It couples convolutional neural network with sequence modeling architecture to exploit the handwritten character's previous contextual information. Although VCN performs much better than the state-of-the-art single OLHCCR model, it exposes high fragility when confronting with not well written characters such as sloppy writing, missing or broken strokes. To improve the robustness of sentence-level OLHCCR, we further propose a novel deep spatial-temporal fusion network~(DSTFN). It utilizes a pre-trained autoregresssive framework as the backbone component, which projects each Chinese character into word embeddings, and integrates the spatial glyph features of handwritten characters and their contextual information multiple times at multi-layer fusion module. We also construct a large-scale sentence-level handwriting dataset, named as CSOHD to evaluate models. Extensive experiment results demonstrate that DSTFN achieves the state-of-the-art performance, which presents strong robustness compared with VCN and exiting single OLHCCR models. The in-depth empirical analysis and case studies indicate that DSTFN can significantly improve the efficiency of handwriting input, with the handwritten Chinese character with incomplete strokes being recognized precisely.
+
+| Comments: | 10 pages, 10 figures                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2108.02561](https://arxiv.org/abs/2108.02561) [cs.CV]** |
+|           | (or **[arXiv:2108.02561v1](https://arxiv.org/abs/2108.02561v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-08-06-2">2. Evaluation of Audio-Visual Alignments in Visually Grounded Speech Models
+</h2>
+
+Title: [Evaluation of Audio-Visual Alignments in Visually Grounded Speech Models](https://arxiv.org/abs/2108.02562)
+
+Authors: [Khazar Khorrami](https://arxiv.org/search/cs?searchtype=author&query=Khorrami%2C+K), [Okko Räsänen](https://arxiv.org/search/cs?searchtype=author&query=Räsänen%2C+O)
+
+> Systems that can find correspondences between multiple modalities, such as between speech and images, have great potential to solve different recognition and data analysis tasks in an unsupervised manner. This work studies multimodal learning in the context of visually grounded speech (VGS) models, and focuses on their recently demonstrated capability to extract spatiotemporal alignments between spoken words and the corresponding visual objects without ever been explicitly trained for object localization or word recognition. As the main contributions, we formalize the alignment problem in terms of an audiovisual alignment tensor that is based on earlier VGS work, introduce systematic metrics for evaluating model performance in aligning visual objects and spoken words, and propose a new VGS model variant for the alignment task utilizing cross-modal attention layer. We test our model and a previously proposed model in the alignment task using SPEECH-COCO captions coupled with MSCOCO images. We compare the alignment performance using our proposed evaluation metrics to the semantic retrieval task commonly used to evaluate VGS models. We show that cross-modal attention layer not only helps the model to achieve higher semantic cross-modal retrieval performance, but also leads to substantial improvements in the alignment performance between image object and spoken words.
+
+| Comments: | To be published in Proc. Interspeech-2021, Brno, Czech Republic |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2108.02562](https://arxiv.org/abs/2108.02562) [cs.CV]** |
+|           | (or **[arXiv:2108.02562v1](https://arxiv.org/abs/2108.02562v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-08-06-3">3. WeChat Neural Machine Translation Systems for WMT21
+</h2>
+
+Title: [WeChat Neural Machine Translation Systems for WMT21](https://arxiv.org/abs/2108.02401)
+
+Authors: [Xianfeng Zeng](https://arxiv.org/search/cs?searchtype=author&query=Zeng%2C+X), [Yijin Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Y), [Ernan Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+E), [Qiu Ran](https://arxiv.org/search/cs?searchtype=author&query=Ran%2C+Q), [Fandong Meng](https://arxiv.org/search/cs?searchtype=author&query=Meng%2C+F), [Peng Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+P), [Jinan Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+J), [Jie Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+J)
+
+> This paper introduces WeChat AI's participation in WMT 2021 shared news translation task on English->Chinese, English->Japanese, Japanese->English and English->German. Our systems are based on the Transformer (Vaswani et al., 2017) with several novel and effective variants. In our experiments, we employ data filtering, large-scale synthetic data generation (i.e., back-translation, knowledge distillation, forward-translation, iterative in-domain knowledge transfer), advanced finetuning approaches, and boosted Self-BLEU based model ensemble. Our constrained systems achieve 36.9, 46.9, 27.8 and 31.3 case-sensitive BLEU scores on English->Chinese, English->Japanese, Japanese->English and English->German, respectively. The BLEU scores of English->Chinese, English->Japanese and Japanese->English are the highest among all submissions, and that of English->German is the highest among all constrained submissions.
+
+| Comments: | Submitted to WMT 2021 as a system paper                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2108.02401](https://arxiv.org/abs/2108.02401) [cs.CL]** |
+|           | (or **[arXiv:2108.02401v1](https://arxiv.org/abs/2108.02401v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-08-06-4">4. Finetuning Pretrained Transformers into Variational Autoencoders
+</h2>
+
+Title: [Finetuning Pretrained Transformers into Variational Autoencoders](https://arxiv.org/abs/2108.02446)
+
+Authors: [Seongmin Park](https://arxiv.org/search/cs?searchtype=author&query=Park%2C+S), [Jihwa Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+J)
+
+> Text variational autoencoders (VAEs) are notorious for posterior collapse, a phenomenon where the model's decoder learns to ignore signals from the encoder. Because posterior collapse is known to be exacerbated by expressive decoders, Transformers have seen limited adoption as components of text VAEs. Existing studies that incorporate Transformers into text VAEs (Li et al., 2020; Fang et al., 2021) mitigate posterior collapse using massive pretraining, a technique unavailable to most of the research community without extensive computing resources. We present a simple two-phase training scheme to convert a sequence-to-sequence Transformer into a VAE with just finetuning. The resulting language model is competitive with massively pretrained Transformer-based VAEs in some internal metrics while falling short on others. To facilitate training we comprehensively explore the impact of common posterior collapse alleviation techniques in the literature. We release our code for reproducability.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2108.02446](https://arxiv.org/abs/2108.02446) [cs.CL]** |
+|           | (or **[arXiv:2108.02446v1](https://arxiv.org/abs/2108.02446v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-08-06-5">5. VisualTextRank: Unsupervised Graph-based Content Extraction for Automating Ad Text to Image Search
+</h2>
+
+Title: [VisualTextRank: Unsupervised Graph-based Content Extraction for Automating Ad Text to Image Search](https://arxiv.org/abs/2108.02725)
+
+Authors: [Shaunak Mishra](https://arxiv.org/search/cs?searchtype=author&query=Mishra%2C+S), [Mikhail Kuznetsov](https://arxiv.org/search/cs?searchtype=author&query=Kuznetsov%2C+M), [Gaurav Srivastava](https://arxiv.org/search/cs?searchtype=author&query=Srivastava%2C+G), [Maxim Sviridenko](https://arxiv.org/search/cs?searchtype=author&query=Sviridenko%2C+M)
+
+> Numerous online stock image libraries offer high quality yet copyright free images for use in marketing campaigns. To assist advertisers in navigating such third party libraries, we study the problem of automatically fetching relevant ad images given the ad text (via a short textual query for images). Motivated by our observations in logged data on ad image search queries (given ad text), we formulate a keyword extraction problem, where a keyword extracted from the ad text (or its augmented version) serves as the ad image query. In this context, we propose VisualTextRank: an unsupervised method to (i) augment input ad text using semantically similar ads, and (ii) extract the image query from the augmented ad text. VisualTextRank builds on prior work on graph based context extraction (biased TextRank in particular) by leveraging both the text and image of similar ads for better keyword extraction, and using advertiser category specific biasing with sentence-BERT embeddings. Using data collected from the Verizon Media Native (Yahoo Gemini) ad platform's stock image search feature for onboarding advertisers, we demonstrate the superiority of VisualTextRank compared to competitive keyword extraction baselines (including an 11% accuracy lift over biased TextRank). For the case when the stock image library is restricted to English queries, we show the effectiveness of VisualTextRank on multilingual ads (translated to English) while leveraging semantically similar English ads. Online tests with a simplified version of VisualTextRank led to a 28.7% increase in the usage of stock image search, and a 41.6% increase in the advertiser onboarding rate in the Verizon Media Native ad platform.
+
+| Comments: | Accepted for publication at KDD 2021                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Computer Vision and Pattern Recognition (cs.CV) |
+| DOI:      | [10.1145/1122445.1122456](https://arxiv.org/ct?url=https%3A%2F%2Fdx.doi.org%2F10.1145%2F1122445.1122456&v=a56ae4b4) |
+| Cite as:  | **[arXiv:2108.02725](https://arxiv.org/abs/2108.02725) [cs.CL]** |
+|           | (or **[arXiv:2108.02725v1](https://arxiv.org/abs/2108.02725v1) [cs.CL]** for this version) |
+
+
+
+
+
+# 2021-08-05
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-08-05-1">1. Improving Distinction between ASR Errors and Speech Disfluencies with Feature Space Interpolation
+</h2>
+
+Title: [Improving Distinction between ASR Errors and Speech Disfluencies with Feature Space Interpolation](https://arxiv.org/abs/2108.01812)
+
+Authors: [Seongmin Park](https://arxiv.org/search/cs?searchtype=author&query=Park%2C+S), [Dongchan Shin](https://arxiv.org/search/cs?searchtype=author&query=Shin%2C+D), [Sangyoun Paik](https://arxiv.org/search/cs?searchtype=author&query=Paik%2C+S), [Subong Choi](https://arxiv.org/search/cs?searchtype=author&query=Choi%2C+S), [Alena Kazakova](https://arxiv.org/search/cs?searchtype=author&query=Kazakova%2C+A), [Jihwa Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+J)
+
+> Fine-tuning pretrained language models (LMs) is a popular approach to automatic speech recognition (ASR) error detection during post-processing. While error detection systems often take advantage of statistical language archetypes captured by LMs, at times the pretrained knowledge can hinder error detection performance. For instance, presence of speech disfluencies might confuse the post-processing system into tagging disfluent but accurate transcriptions as ASR errors. Such confusion occurs because both error detection and disfluency detection tasks attempt to identify tokens at statistically unlikely positions. This paper proposes a scheme to improve existing LM-based ASR error detection systems, both in terms of detection scores and resilience to such distracting auxiliary tasks. Our approach adopts the popular mixup method in text feature space and can be utilized with any black-box ASR output. To demonstrate the effectiveness of our method, we conduct post-processing experiments with both traditional and end-to-end ASR systems (both for English and Korean languages) with 5 different speech corpora. We find that our method improves both ASR error detection F 1 scores and reduces the number of correctly transcribed disfluencies wrongly detected as ASR errors. Finally, we suggest methods to utilize resulting LMs directly in semi-supervised ASR training.
+
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2108.01812](https://arxiv.org/abs/2108.01812) [cs.CL]** |
+|           | (or **[arXiv:2108.01812v1](https://arxiv.org/abs/2108.01812v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-08-05-2">2. PARADISE: Exploiting Parallel Data for Multilingual Sequence-to-Sequence Pretraining
+</h2>
+
+Title: [PARADISE: Exploiting Parallel Data for Multilingual Sequence-to-Sequence Pretraining](https://arxiv.org/abs/2108.01887)
+
+Authors: [Machel Reid](https://arxiv.org/search/cs?searchtype=author&query=Reid%2C+M), [Mikel Artetxe](https://arxiv.org/search/cs?searchtype=author&query=Artetxe%2C+M)
+
+> Despite the success of multilingual sequence-to-sequence pretraining, most existing approaches rely on monolingual corpora, and do not make use of the strong cross-lingual signal contained in parallel data. In this paper, we present PARADISE (PARAllel & Denoising Integration in SEquence-to-sequence models), which extends the conventional denoising objective used to train these models by (i) replacing words in the noised sequence according to a multilingual dictionary, and (ii) predicting the reference translation according to a parallel corpus instead of recovering the original sequence. Our experiments on machine translation and cross-lingual natural language inference show an average improvement of 2.0 BLEU points and 6.7 accuracy points from integrating parallel data into pretraining, respectively, obtaining results that are competitive with several popular models at a fraction of their computational cost.
+
+| Comments: | Preprint                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2108.01887](https://arxiv.org/abs/2108.01887) [cs.CL]** |
+|           | (or **[arXiv:2108.01887v1](https://arxiv.org/abs/2108.01887v1) [cs.CL]** for this version) |
+
+
+
+<h2 id="2021-08-05-3">3. How to Query Language Models?
+</h2>
+
+Title: [How to Query Language Models?](https://arxiv.org/abs/2108.01928)
+
+Authors: [Leonard Adolphs](https://arxiv.org/search/cs?searchtype=author&query=Adolphs%2C+L), [Shehzaad Dhuliawala](https://arxiv.org/search/cs?searchtype=author&query=Dhuliawala%2C+S), [Thomas Hofmann](https://arxiv.org/search/cs?searchtype=author&query=Hofmann%2C+T)
+
+> Large pre-trained language models (LMs) are capable of not only recovering linguistic but also factual and commonsense knowledge. To access the knowledge stored in mask-based LMs, we can use cloze-style questions and let the model fill in the blank. The flexibility advantage over structured knowledge bases comes with the drawback of finding the right query for a certain information need. Inspired by human behavior to disambiguate a question, we propose to query LMs by example. To clarify the ambivalent question "Who does Neuer play for?", a successful strategy is to demonstrate the relation using another subject, e.g., "Ronaldo plays for Portugal. Who does Neuer play for?". We apply this approach of querying by example to the LAMA probe and obtain substantial improvements of up to 37.8% for BERT-large on the T-REx data when providing only 10 demonstrations--even outperforming a baseline that queries the model with up to 40 paraphrases of the question. The examples are provided through the model's context and thus require neither fine-tuning nor an additional forward pass. This suggests that LMs contain more factual and commonsense knowledge than previously assumed--if we query the model in the right way.
+
+| Subjects: | **Computation and Language (cs.CL)**; Information Retrieval (cs.IR); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2108.01928](https://arxiv.org/abs/2108.01928) [cs.CL]** |
+|           | (or **[arXiv:2108.01928v1](https://arxiv.org/abs/2108.01928v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-08-05-4">4. Curriculum learning for language modeling
+</h2>
+
+Title: [Curriculum learning for language modeling](https://arxiv.org/abs/2108.02170)
+
+Authors: [Daniel Campos](https://arxiv.org/search/cs?searchtype=author&query=Campos%2C+D)
+
+> Language Models like ELMo and BERT have provided robust representations of natural language, which serve as the language understanding component for a diverse range of downstream tasks.Curriculum learning is a method that employs a structured training regime instead, which has been leveraged in computer vision and machine translation to improve model training speed and model performance. While language models have proven transformational for the natural language processing community, these models have proven expensive, energy-intensive, and challenging to train. In this work, we explore the effect of curriculum learning on language model pretraining using various linguistically motivated curricula and evaluate transfer performance on the GLUE Benchmark. Despite a broad variety of training methodologies and experiments we do not find compelling evidence that curriculum learning methods improve language model training.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2108.02170](https://arxiv.org/abs/2108.02170) [cs.CL]** |
+|           | (or **[arXiv:2108.02170v1](https://arxiv.org/abs/2108.02170v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
