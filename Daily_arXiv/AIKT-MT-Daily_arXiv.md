@@ -3,8 +3,12 @@
 # Index
 
 
-- [2021-08-06](#2021-08-06)
+- [2021-08-09](#2021-08-09)
 
+  - [1. Sentence Semantic Regression for Text Generation](#2021-08-09-1)
+  - [2. Lights, Camera, Action! A Framework to Improve NLP Accuracy over OCR documents](#2021-08-09-2)
+  - [3. StrucTexT: Structured Text Understanding with Multi-Modal Transformers](#2021-08-09-3)
+- [2021-08-06](#2021-08-06)
   - [1. Sentence-level Online Handwritten Chinese Character Recognition](#2021-08-06-1)
   - [2. Evaluation of Audio-Visual Alignments in Visually Grounded Speech Models](#2021-08-06-2)
   - [3. WeChat Neural Machine Translation Systems for WMT21](#2021-08-06-3)
@@ -37,6 +41,71 @@
   - [6. Towards Universality in Multilingual Text Rewriting](#2021-08-02-6)
   - [7. ChrEnTranslate: Cherokee-English Machine Translation Demo with Quality Estimation and Corrective Feedback](#2021-08-02-7)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-08-09
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-08-09-1">1. Sentence Semantic Regression for Text Generation
+</h2>
+
+Title: [Sentence Semantic Regression for Text Generation](https://arxiv.org/abs/2108.02984)
+
+Authors: [Wei Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+W), [Piji Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+P), [Hai-Tao Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng%2C+H)
+
+> Recall the classical text generation works, the generation framework can be briefly divided into two phases: \textbf{idea reasoning} and \textbf{surface realization}. The target of idea reasoning is to figure out the main idea which will be presented in the following talking/writing periods. Surface realization aims to arrange the most appropriate sentence to depict and convey the information distilled from the main idea. However, the current popular token-by-token text generation methods ignore this crucial process and suffer from many serious issues, such as idea/topic drift. To tackle the problems and realize this two-phase paradigm, we propose a new framework named Sentence Semantic Regression (\textbf{SSR}) based on sentence-level language modeling. For idea reasoning, two architectures \textbf{SSR-AR} and \textbf{SSR-NonAR} are designed to conduct sentence semantic regression autoregressively (like GPT2/3) and bidirectionally (like BERT). In the phase of surface realization, a mixed-granularity sentence decoder is designed to generate text with better consistency by jointly incorporating the predicted sentence-level main idea as well as the preceding contextual token-level information. We conduct experiments on four tasks of story ending prediction, story ending generation, dialogue generation, and sentence infilling. The results show that SSR can obtain better performance in terms of automatic metrics and human evaluation.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2108.02984](https://arxiv.org/abs/2108.02984) [cs.CL]** |
+|           | (or **[arXiv:2108.02984v1](https://arxiv.org/abs/2108.02984v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-08-09-2">2. Lights, Camera, Action! A Framework to Improve NLP Accuracy over OCR documents
+</h2>
+
+Title: [Lights, Camera, Action! A Framework to Improve NLP Accuracy over OCR documents](https://arxiv.org/abs/2108.02899)
+
+Authors: [Amit Gupte](https://arxiv.org/search/cs?searchtype=author&query=Gupte%2C+A), [Alexey Romanov](https://arxiv.org/search/cs?searchtype=author&query=Romanov%2C+A), [Sahitya Mantravadi](https://arxiv.org/search/cs?searchtype=author&query=Mantravadi%2C+S), [Dalitso Banda](https://arxiv.org/search/cs?searchtype=author&query=Banda%2C+D), [Jianjie Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+J), [Raza Khan](https://arxiv.org/search/cs?searchtype=author&query=Khan%2C+R), [Lakshmanan Ramu Meenal](https://arxiv.org/search/cs?searchtype=author&query=Meenal%2C+L+R), [Benjamin Han](https://arxiv.org/search/cs?searchtype=author&query=Han%2C+B), [Soundar Srinivasan](https://arxiv.org/search/cs?searchtype=author&query=Srinivasan%2C+S)
+
+> Document digitization is essential for the digital transformation of our societies, yet a crucial step in the process, Optical Character Recognition (OCR), is still not perfect. Even commercial OCR systems can produce questionable output depending on the fidelity of the scanned documents. In this paper, we demonstrate an effective framework for mitigating OCR errors for any downstream NLP task, using Named Entity Recognition (NER) as an example. We first address the data scarcity problem for model training by constructing a document synthesis pipeline, generating realistic but degraded data with NER labels. We measure the NER accuracy drop at various degradation levels and show that a text restoration model, trained on the degraded data, significantly closes the NER accuracy gaps caused by OCR errors, including on an out-of-domain dataset. For the benefit of the community, we have made the document synthesis pipeline available as an open-source project.
+
+| Comments: | Accepted to the Document Intelligence Workshop at KDD 2021. The source code of Genalog is available at [this https URL](https://github.com/microsoft/genalog) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2108.02899](https://arxiv.org/abs/2108.02899) [cs.CL]** |
+|           | (or **[arXiv:2108.02899v1](https://arxiv.org/abs/2108.02899v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-08-09-3">3. StrucTexT: Structured Text Understanding with Multi-Modal Transformers
+</h2>
+
+Title: [StrucTexT: Structured Text Understanding with Multi-Modal Transformers](https://arxiv.org/abs/2108.02923)
+
+Authors: [Yulin Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Y), [Yuxi Qian](https://arxiv.org/search/cs?searchtype=author&query=Qian%2C+Y), [Yuchen Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+Y), [Xiameng Qin](https://arxiv.org/search/cs?searchtype=author&query=Qin%2C+X), [Chengquan Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+C), [Yan Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Y), [Kun Yao](https://arxiv.org/search/cs?searchtype=author&query=Yao%2C+K), [Junyu Han](https://arxiv.org/search/cs?searchtype=author&query=Han%2C+J), [Jingtuo Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+J), [Errui Ding](https://arxiv.org/search/cs?searchtype=author&query=Ding%2C+E)
+
+> Structured text understanding on Visually Rich Documents (VRDs) is a crucial part of Document Intelligence. Due to the complexity of content and layout in VRDs, structured text understanding has been a challenging task. Most existing studies decoupled this problem into two sub-tasks: entity labeling and entity linking, which require an entire understanding of the context of documents at both token and segment levels. However, little work has been concerned with the solutions that efficiently extract the structured data from different levels. This paper proposes a unified framework named StrucTexT, which is flexible and effective for handling both sub-tasks. Specifically, based on the transformer, we introduce a segment-token aligned encoder to deal with the entity labeling and entity linking tasks at different levels of granularity. Moreover, we design a novel pre-training strategy with three self-supervised tasks to learn a richer representation. StrucTexT uses the existing Masked Visual Language Modeling task and the new Sentence Length Prediction and Paired Boxes Direction tasks to incorporate the multi-modal information across text, image, and layout. We evaluate our method for structured text understanding at segment-level and token-level and show it outperforms the state-of-the-art counterparts with significantly superior performance on the FUNSD, SROIE, and EPHOIE datasets.
+
+| Comments: | 9 pages                                                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2108.02923](https://arxiv.org/abs/2108.02923) [cs.CV]** |
+|           | (or **[arXiv:2108.02923v1](https://arxiv.org/abs/2108.02923v1) [cs.CV]** for this version) |
+
+
+
+
+
 
 
 
@@ -496,7 +565,6 @@ Authors: [Shiyue Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhan
 | Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
 | Cite as:  | **[arXiv:2107.14800](https://arxiv.org/abs/2107.14800) [cs.CL]** |
 |           | (or **[arXiv:2107.14800v1](https://arxiv.org/abs/2107.14800v1) [cs.CL]** for this version) |
-
 
 
 
