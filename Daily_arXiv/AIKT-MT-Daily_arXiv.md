@@ -3,6 +3,17 @@
 # Index
 
 
+- [2021-08-10](#2021-08-10)
+
+  - [1. Improving Similar Language Translation With Transfer Learning](#2021-08-10-1)
+  - [2. Image Retrieval on Real-life Images with Pre-trained Vision-and-Language Models](#2021-08-10-2)
+  - [3. Facebook AI WMT21 News Translation Task Submission](#2021-08-10-3)
+  - [4. Towards Zero-shot Language Modeling](#2021-08-10-4)
+  - [5. Generating Personalized Dialogue via Multi-Task Meta-Learning](#2021-08-10-5)
+  - [6. Language Model Evaluation in Open-ended Text Generation](#2021-08-10-6)
+  - [7. Machine Translation of Low-Resource Indo-European Languages](#2021-08-10-7)
+  - [8. The HW-TSC's Offline Speech Translation Systems for IWSLT 2021 Evaluation](#2021-08-10-8)
+  - [9. Multi-modal Retrieval of Tables and Texts Using Tri-encoder Models](#2021-08-10-9)
 - [2021-08-09](#2021-08-09)
 
   - [1. Sentence Semantic Regression for Text Generation](#2021-08-09-1)
@@ -41,6 +52,177 @@
   - [6. Towards Universality in Multilingual Text Rewriting](#2021-08-02-6)
   - [7. ChrEnTranslate: Cherokee-English Machine Translation Demo with Quality Estimation and Corrective Feedback](#2021-08-02-7)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-08-10
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-08-10-1">1. Improving Similar Language Translation With Transfer Learning
+</h2>
+
+Title: [Improving Similar Language Translation With Transfer Learning](https://arxiv.org/abs/2108.03533)
+
+Authors: [Ife Adebara](https://arxiv.org/search/cs?searchtype=author&query=Adebara%2C+I), [Muhammad Abdul-Mageed](https://arxiv.org/search/cs?searchtype=author&query=Abdul-Mageed%2C+M)
+
+> We investigate transfer learning based on pre-trained neural machine translation models to translate between (low-resource) similar languages. This work is part of our contribution to the WMT 2021 Similar Languages Translation Shared Task where we submitted models for different language pairs, including French-Bambara, Spanish-Catalan, and Spanish-Portuguese in both directions. Our models for Catalan-Spanish (82.79 BLEU) and Portuguese-Spanish (87.11 BLEU) rank top 1 in the official shared task evaluation, and we are the only team to submit models for the French-Bambara pairs.
+
+| Comments: | Submitted to WMT 2021 Similar Language Task                  |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Artificial Intelligence (cs.AI)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2108.03533](https://arxiv.org/abs/2108.03533) [cs.AI]** |
+|           | (or **[arXiv:2108.03533v1](https://arxiv.org/abs/2108.03533v1) [cs.AI]** for this version) |
+
+
+
+
+
+<h2 id="2021-08-10-2">2. Image Retrieval on Real-life Images with Pre-trained Vision-and-Language Models
+</h2>
+
+Title: [Image Retrieval on Real-life Images with Pre-trained Vision-and-Language Models](https://arxiv.org/abs/2108.04024)
+
+Authors: [Zheyuan Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Z), [Cristian Rodriguez-Opazo](https://arxiv.org/search/cs?searchtype=author&query=Rodriguez-Opazo%2C+C), [Damien Teney](https://arxiv.org/search/cs?searchtype=author&query=Teney%2C+D), [Stephen Gould](https://arxiv.org/search/cs?searchtype=author&query=Gould%2C+S)
+
+> We extend the task of composed image retrieval, where an input query consists of an image and short textual description of how to modify the image. Existing methods have only been applied to non-complex images within narrow domains, such as fashion products, thereby limiting the scope of study on in-depth visual reasoning in rich image and language contexts. To address this issue, we collect the Compose Image Retrieval on Real-life images (CIRR) dataset, which consists of over 36,000 pairs of crowd-sourced, open-domain images with human-generated modifying text. To extend current methods to the open-domain, we propose CIRPLANT, a transformer based model that leverages rich pre-trained vision-and-language (V&L) knowledge for modifying visual features conditioned on natural language. Retrieval is then done by nearest neighbor lookup on the modified features. We demonstrate that with a relatively simple architecture, CIRPLANT outperforms existing methods on open-domain images, while matching state-of-the-art accuracy on the existing narrow datasets, such as fashion. Together with the release of CIRR, we believe this work will inspire further research on composed image retrieval.
+
+| Comments: | ICCV 2021. Dataset, code, and pre-trained models are released at [this https URL](https://cuberick-orion.github.io/CIRR/) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL); Information Retrieval (cs.IR) |
+| Cite as:  | **[arXiv:2108.04024](https://arxiv.org/abs/2108.04024) [cs.CV]** |
+|           | (or **[arXiv:2108.04024v1](https://arxiv.org/abs/2108.04024v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-08-10-3">3. Facebook AI WMT21 News Translation Task Submission
+</h2>
+
+Title: [Facebook AI WMT21 News Translation Task Submission](https://arxiv.org/abs/2108.03265)
+
+Authors: [Chau Tran](https://arxiv.org/search/cs?searchtype=author&query=Tran%2C+C), [Shruti Bhosale](https://arxiv.org/search/cs?searchtype=author&query=Bhosale%2C+S), [James Cross](https://arxiv.org/search/cs?searchtype=author&query=Cross%2C+J), [Philipp Koehn](https://arxiv.org/search/cs?searchtype=author&query=Koehn%2C+P), [Sergey Edunov](https://arxiv.org/search/cs?searchtype=author&query=Edunov%2C+S), [Angela Fan](https://arxiv.org/search/cs?searchtype=author&query=Fan%2C+A)
+
+> We describe Facebook's multilingual model submission to the WMT2021 shared task on news translation. We participate in 14 language directions: English to and from Czech, German, Hausa, Icelandic, Japanese, Russian, and Chinese. To develop systems covering all these directions, we focus on multilingual models. We utilize data from all available sources --- WMT, large-scale data mining, and in-domain backtranslation --- to create high quality bilingual and multilingual baselines. Subsequently, we investigate strategies for scaling multilingual model size, such that one system has sufficient capacity for high quality representations of all eight languages. Our final submission is an ensemble of dense and sparse Mixture-of-Expert multilingual translation models, followed by finetuning on in-domain news data and noisy channel reranking. Compared to previous year's winning submissions, our multilingual system improved the translation quality on all language directions, with an average improvement of 2.0 BLEU. In the WMT2021 task, our system ranks first in 10 directions based on automatic evaluation.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2108.03265](https://arxiv.org/abs/2108.03265) [cs.CL]** |
+|           | (or **[arXiv:2108.03265v1](https://arxiv.org/abs/2108.03265v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-08-10-4">4. Towards Zero-shot Language Modeling
+</h2>
+
+Title: [Towards Zero-shot Language Modeling](https://arxiv.org/abs/2108.03334)
+
+Authors: [Edoardo Maria Ponti](https://arxiv.org/search/cs?searchtype=author&query=Ponti%2C+E+M), [Ivan Vulić](https://arxiv.org/search/cs?searchtype=author&query=Vulić%2C+I), [Ryan Cotterell](https://arxiv.org/search/cs?searchtype=author&query=Cotterell%2C+R), [Roi Reichart](https://arxiv.org/search/cs?searchtype=author&query=Reichart%2C+R), [Anna Korhonen](https://arxiv.org/search/cs?searchtype=author&query=Korhonen%2C+A)
+
+> Can we construct a neural model that is inductively biased towards learning human languages? Motivated by this question, we aim at constructing an informative prior over neural weights, in order to adapt quickly to held-out languages in the task of character-level language modeling. We infer this distribution from a sample of typologically diverse training languages via Laplace approximation. The use of such a prior outperforms baseline models with an uninformative prior (so-called "fine-tuning") in both zero-shot and few-shot settings. This shows that the prior is imbued with universal phonological knowledge. Moreover, we harness additional language-specific side information as distant supervision for held-out languages. Specifically, we condition language models on features from typological databases, by concatenating them to hidden states or generating weights with hyper-networks. These features appear beneficial in the few-shot setting, but not in the zero-shot setting. Since the paucity of digital texts affects the majority of the world's languages, we hope that these findings will help broaden the scope of applications for language technology.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2108.03334](https://arxiv.org/abs/2108.03334) [cs.CL]** |
+|           | (or **[arXiv:2108.03334v1](https://arxiv.org/abs/2108.03334v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-08-10-5">5. Generating Personalized Dialogue via Multi-Task Meta-Learning
+</h2>
+
+Title: [Generating Personalized Dialogue via Multi-Task Meta-Learning](https://arxiv.org/abs/2108.03377)
+
+Authors: [Jing Yang Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+J+Y), [Kong Aik Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+K+A), [Woon Seng Gan](https://arxiv.org/search/cs?searchtype=author&query=Gan%2C+W+S)
+
+> Conventional approaches to personalized dialogue generation typically require a large corpus, as well as predefined persona information. However, in a real-world setting, neither a large corpus of training data nor persona information are readily available. To address these practical limitations, we propose a novel multi-task meta-learning approach which involves training a model to adapt to new personas without relying on a large corpus, or on any predefined persona information. Instead, the model is tasked with generating personalized responses based on only the dialogue context. Unlike prior work, our approach leverages on the provided persona information only during training via the introduction of an auxiliary persona reconstruction task. In this paper, we introduce 2 frameworks that adopt the proposed multi-task meta-learning approach: the Multi-Task Meta-Learning (MTML) framework, and the Alternating Multi-Task Meta-Learning (AMTML) framework. Experimental results show that utilizing MTML and AMTML results in dialogue responses with greater persona consistency.
+
+| Comments: | Accepted at SemDial 2021 (PotsDial 2021)                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2108.03377](https://arxiv.org/abs/2108.03377) [cs.CL]** |
+|           | (or **[arXiv:2108.03377v1](https://arxiv.org/abs/2108.03377v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-08-10-6">6. Language Model Evaluation in Open-ended Text Generation
+</h2>
+
+Title: [Language Model Evaluation in Open-ended Text Generation](https://arxiv.org/abs/2108.03578)
+
+Authors: [An Nguyen](https://arxiv.org/search/cs?searchtype=author&query=Nguyen%2C+A)
+
+> Although current state-of-the-art language models have achieved impressive results in numerous natural language processing tasks, still they could not solve the problem of producing repetitive, dull and sometimes inconsistent text in open-ended text generation. Studies often attribute this problem to the maximum likelihood training objective, and propose alternative approaches by using stochastic decoding methods or altering the training objective. However, there is still a lack of consistent evaluation metrics to directly compare the efficacy of these solutions. In this work, we study different evaluation metrics that have been proposed to evaluate quality, diversity and consistency of machine-generated text. From there, we propose a practical pipeline to evaluate language models in open-ended generation task, and research on how to improve the model's performance in all dimensions by leveraging different auxiliary training objectives.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2108.03578](https://arxiv.org/abs/2108.03578) [cs.CL]** |
+|           | (or **[arXiv:2108.03578v1](https://arxiv.org/abs/2108.03578v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-08-10-7">7. Machine Translation of Low-Resource Indo-European Languages
+</h2>
+
+Title: [Machine Translation of Low-Resource Indo-European Languages](https://arxiv.org/abs/2108.03739)
+
+Authors: [Wei-Rui Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+W), [Muhammad Abdul-Mageed](https://arxiv.org/search/cs?searchtype=author&query=Abdul-Mageed%2C+M)
+
+> Transfer learning has been an important technique for low-resource neural machine translation. In this work, we build two systems to study how relatedness can benefit the translation performance. The primary system adopts machine translation model pre-trained on related language pair and the contrastive system adopts that pre-trained on unrelated language pair. We show that relatedness is not required for transfer learning to work but does benefit the performance.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2108.03739](https://arxiv.org/abs/2108.03739) [cs.CL]** |
+|           | (or **[arXiv:2108.03739v1](https://arxiv.org/abs/2108.03739v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-08-10-8">8. The HW-TSC's Offline Speech Translation Systems for IWSLT 2021 Evaluation
+</h2>
+
+Title: [The HW-TSC's Offline Speech Translation Systems for IWSLT 2021 Evaluation](https://arxiv.org/abs/2108.03845)
+
+Authors: [Minghan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+M), [Yuxia Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Y), [Chang Su](https://arxiv.org/search/cs?searchtype=author&query=Su%2C+C), [Jiaxin Guo](https://arxiv.org/search/cs?searchtype=author&query=Guo%2C+J), [Yingtao Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Y), [Yujia Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Y), [Min Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+M), [Shimin Tao](https://arxiv.org/search/cs?searchtype=author&query=Tao%2C+S), [Xingshan Zeng](https://arxiv.org/search/cs?searchtype=author&query=Zeng%2C+X), [Liangyou Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L), [Hao Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+H), [Ying Qin](https://arxiv.org/search/cs?searchtype=author&query=Qin%2C+Y)
+
+> This paper describes our work in participation of the IWSLT-2021 offline speech translation task. Our system was built in a cascade form, including a speaker diarization module, an Automatic Speech Recognition (ASR) module and a Machine Translation (MT) module. We directly use the LIUM SpkDiarization tool as the diarization module. The ASR module is trained with three ASR datasets from different sources, by multi-source training, using a modified Transformer encoder. The MT module is pretrained on the large-scale WMT news translation dataset and fine-tuned on the TED corpus. Our method achieves 24.6 BLEU score on the 2021 test set.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2108.03845](https://arxiv.org/abs/2108.03845) [cs.CL]** |
+|           | (or **[arXiv:2108.03845v1](https://arxiv.org/abs/2108.03845v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-08-10-9">9. Multi-modal Retrieval of Tables and Texts Using Tri-encoder Models
+</h2>
+
+Title: [Multi-modal Retrieval of Tables and Texts Using Tri-encoder Models](https://arxiv.org/abs/2108.04049)
+
+Authors: [Bogdan Kostić](https://arxiv.org/search/cs?searchtype=author&query=Kostić%2C+B), [Julian Risch](https://arxiv.org/search/cs?searchtype=author&query=Risch%2C+J), [Timo Möller](https://arxiv.org/search/cs?searchtype=author&query=Möller%2C+T)
+
+> Open-domain extractive question answering works well on textual data by first retrieving candidate texts and then extracting the answer from those candidates. However, some questions cannot be answered by text alone but require information stored in tables. In this paper, we present an approach for retrieving both texts and tables relevant to a question by jointly encoding texts, tables and questions into a single vector space. To this end, we create a new multi-modal dataset based on text and table datasets from related work and compare the retrieval performance of different encoding schemata. We find that dense vector embeddings of transformer models outperform sparse embeddings on four out of six evaluation datasets. Comparing different dense embedding models, tri-encoders, with one encoder for each question, text and table, increase retrieval performance compared to bi-encoders with one encoder for the question and one for both text and tables. We release the newly created multi-modal dataset to the community so that it can be used for training and evaluation.
+
+| Subjects: | **Computation and Language (cs.CL)**; Information Retrieval (cs.IR) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2108.04049](https://arxiv.org/abs/2108.04049) [cs.CL]** |
+|           | (or **[arXiv:2108.04049v1](https://arxiv.org/abs/2108.04049v1) [cs.CL]** for this version) |
+
+
 
 
 
