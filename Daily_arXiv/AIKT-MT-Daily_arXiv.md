@@ -3,6 +3,14 @@
 # Index
 
 
+- [2021-08-11](#2021-08-11)
+
+  - [1. FairyTailor: A Multimodal Generative Framework for Storytelling](#2021-08-11-1)
+  - [2. BROS: A Layout-Aware Pre-trained Language Model for Understanding Documents](#2021-08-11-2)
+  - [3. CLSEBERT: Contrastive Learning for Syntax Enhanced Code Pre-Trained Model](#2021-08-11-3)
+  - [4. Differentiable Subset Pruning of Transformer Heads](#2021-08-11-4)
+  - [5. How Commonsense Knowledge Helps with Natural Language Tasks: A Survey of Recent Resources and Methodologies](#2021-08-11-5)
+  - [6. Sampling-Based Minimum Bayes Risk Decoding for Neural Machine Translation](#2021-08-11-6)
 - [2021-08-10](#2021-08-10)
 
   - [1. Improving Similar Language Translation With Transfer Learning](#2021-08-10-1)
@@ -52,6 +60,127 @@
   - [6. Towards Universality in Multilingual Text Rewriting](#2021-08-02-6)
   - [7. ChrEnTranslate: Cherokee-English Machine Translation Demo with Quality Estimation and Corrective Feedback](#2021-08-02-7)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-08-11
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-08-11-1">1. FairyTailor: A Multimodal Generative Framework for Storytelling
+</h2>
+
+Title: [FairyTailor: A Multimodal Generative Framework for Storytelling](https://arxiv.org/abs/2108.04324)
+
+Authors: [Eden Bensaid](https://arxiv.org/search/cs?searchtype=author&query=Bensaid%2C+E), [Mauro Martino](https://arxiv.org/search/cs?searchtype=author&query=Martino%2C+M), [Benjamin Hoover](https://arxiv.org/search/cs?searchtype=author&query=Hoover%2C+B), [Jacob Andreas](https://arxiv.org/search/cs?searchtype=author&query=Andreas%2C+J), [Hendrik Strobelt](https://arxiv.org/search/cs?searchtype=author&query=Strobelt%2C+H)
+
+> Storytelling is an open-ended task that entails creative thinking and requires a constant flow of ideas. Natural language generation (NLG) for storytelling is especially challenging because it requires the generated text to follow an overall theme while remaining creative and diverse to engage the reader. In this work, we introduce a system and a web-based demo, FairyTailor, for human-in-the-loop visual story co-creation. Users can create a cohesive children's fairytale by weaving generated texts and retrieved images with their input. FairyTailor adds another modality and modifies the text generation process to produce a coherent and creative sequence of text and images. To our knowledge, this is the first dynamic tool for multimodal story generation that allows interactive co-formation of both texts and images. It allows users to give feedback on co-created stories and share their results.
+
+| Comments: | visit [this https URL](https://fairytailor.org/) and [this https URL](https://github.com/EdenBD/MultiModalStory-demo) for web demo and source code |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Computer Vision and Pattern Recognition (cs.CV) |
+| Cite as:  | **[arXiv:2108.04324](https://arxiv.org/abs/2108.04324) [cs.CL]** |
+|           | (or **[arXiv:2108.04324v1](https://arxiv.org/abs/2108.04324v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-08-11-2">2. BROS: A Layout-Aware Pre-trained Language Model for Understanding Documents
+</h2>
+
+Title: [BROS: A Layout-Aware Pre-trained Language Model for Understanding Documents](https://arxiv.org/abs/2108.04539)
+
+Authors: [Teakgyu Hong](https://arxiv.org/search/cs?searchtype=author&query=Hong%2C+T), [Donghyun Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%2C+D), [Mingi Ji](https://arxiv.org/search/cs?searchtype=author&query=Ji%2C+M), [Wonseok Hwang](https://arxiv.org/search/cs?searchtype=author&query=Hwang%2C+W), [Daehyun Nam](https://arxiv.org/search/cs?searchtype=author&query=Nam%2C+D), [Sungrae Park](https://arxiv.org/search/cs?searchtype=author&query=Park%2C+S)
+
+> Understanding documents from their visual snapshots is an emerging problem that requires both advanced computer vision and NLP methods. The recent advance in OCR enables the accurate recognition of text blocks, yet it is still challenging to extract key information from documents due to the diversity of their layouts. Although recent studies on pre-trained language models show the importance of incorporating layout information on this task, the conjugation of texts and their layouts still follows the style of BERT optimized for understanding the 1D text. This implies there is room for further improvement considering the 2D nature of text layouts. This paper introduces a pre-trained language model, BERT Relying On Spatiality (BROS), which effectively utilizes the information included in individual text blocks and their layouts. Specifically, BROS encodes spatial information by utilizing relative positions and learns spatial dependencies between OCR blocks with a novel area-masking strategy. These two novel approaches lead to an efficient encoding of spatial layout information highlighted by the robust performance of BROS under low-resource environments. We also introduce a general-purpose parser that can be combined with BROS to extract key information even when there is no order information between text blocks. BROS shows its superiority on four public benchmarks---FUNSD, SROIE*, CORD, and SciTSR---and its robustness in practical cases where order information of text blocks is not available. Further experiments with a varying number of training examples demonstrate the high training efficiency of our approach. Our code will be open to the public.
+
+| Comments: | 11 pages, 6 figures                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2108.04539](https://arxiv.org/abs/2108.04539) [cs.CL]** |
+|           | (or **[arXiv:2108.04539v1](https://arxiv.org/abs/2108.04539v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-08-11-3">3. CLSEBERT: Contrastive Learning for Syntax Enhanced Code Pre-Trained Model
+</h2>
+
+Title: [CLSEBERT: Contrastive Learning for Syntax Enhanced Code Pre-Trained Model](https://arxiv.org/abs/2108.04556)
+
+Authors: [Xin Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+X), [Yasheng Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Y), [Pingyi Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+P), [Meng Xiao](https://arxiv.org/search/cs?searchtype=author&query=Xiao%2C+M), [Yadao Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Y), [Li Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L), [Xiao Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+X), [Hao Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+H), [Jin Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+J), [Xin Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+X)
+
+> Pre-trained models for programming languages have proven their significant values in various code-related tasks, such as code search, code clone detection, and code translation. Currently, most pre-trained models treat a code snippet as a sequence of tokens or only focus on the data flow between code identifiers. However, rich code syntax and hierarchy are ignored which can provide important structure information and semantic rules of codes to help enhance code representations. In addition, although the BERT-based code pre-trained models achieve high performance on many downstream tasks, the native derived sequence representations of BERT are proven to be of low-quality, it performs poorly on code matching and similarity tasks. To address these problems, we propose CLSEBERT, a Constrastive Learning Framework for Syntax Enhanced Code Pre-Trained Model, to deal with various code intelligence tasks. In the pre-training stage, we consider the code syntax and hierarchy contained in the Abstract Syntax Tree (AST) and leverage the constrastive learning to learn noise-invariant code representations. Besides the masked language modeling (MLM), we also introduce two novel pre-training objectives. One is to predict the edges between nodes in the abstract syntax tree, and the other is to predict the types of code tokens. Through extensive experiments on four code intelligence tasks, we successfully show the effectiveness of our proposed model.
+
+| Comments: | 10 pages, 3 figures                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Programming Languages (cs.PL) |
+| Cite as:  | **[arXiv:2108.04556](https://arxiv.org/abs/2108.04556) [cs.CL]** |
+|           | (or **[arXiv:2108.04556v1](https://arxiv.org/abs/2108.04556v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-08-11-4">4. Differentiable Subset Pruning of Transformer Heads
+</h2>
+
+Title: [Differentiable Subset Pruning of Transformer Heads](https://arxiv.org/abs/2108.04657)
+
+Authors: [Jiaoda Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+J), [Ryan Cotterell](https://arxiv.org/search/cs?searchtype=author&query=Cotterell%2C+R), [Mrinmaya Sachan](https://arxiv.org/search/cs?searchtype=author&query=Sachan%2C+M)
+
+> Multi-head attention, a collection of several attention mechanisms that independently attend to different parts of the input, is the key ingredient in the Transformer (Vaswaniet al., 2017). Recent work has shown, however, that a large proportion of the heads in a Transformer's multi-head attention mechanism can be safely pruned away without significantly harming the performance of the model; such pruning leads to models that are noticeably smaller and faster in practice. Our work introduces a new head pruning technique that we term differentiable subset pruning. Intuitively, our method learns per-head importance variables and then enforces a user-specified hard constraint on the number of unpruned heads. The importance variables are learned via stochastic gradient descent. We conduct experiments on natural language inference and machine translation; we show that differentiable subset pruning performs comparably or better than Voita et al. (2019) while offering the same exact control over the number of heads as Michel et al. (2019).
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2108.04657](https://arxiv.org/abs/2108.04657) [cs.CL]** |
+|           | (or **[arXiv:2108.04657v1](https://arxiv.org/abs/2108.04657v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-08-11-5">5. How Commonsense Knowledge Helps with Natural Language Tasks: A Survey of Recent Resources and Methodologies
+</h2>
+
+Title: [How Commonsense Knowledge Helps with Natural Language Tasks: A Survey of Recent Resources and Methodologies](https://arxiv.org/abs/2108.04674)
+
+Authors: [Yubo Xie](https://arxiv.org/search/cs?searchtype=author&query=Xie%2C+Y), [Pearl Pu](https://arxiv.org/search/cs?searchtype=author&query=Pu%2C+P)
+
+> In this paper, we give an overview of commonsense reasoning in natural language processing, which requires a deeper understanding of the contexts and usually involves inference over implicit external knowledge. We first review some popular commonsense knowledge bases and commonsense reasoning benchmarks, but give more emphasis on the methodologies, including recent approaches that aim at solving some general natural language problems that take advantage of external knowledge bases. Finally, we discuss some future directions in pushing the boundary of commonsense reasoning in natural language processing.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2108.04674](https://arxiv.org/abs/2108.04674) [cs.CL]** |
+|           | (or **[arXiv:2108.04674v1](https://arxiv.org/abs/2108.04674v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-08-11-6">6. Sampling-Based Minimum Bayes Risk Decoding for Neural Machine Translation
+</h2>
+
+Title: [Sampling-Based Minimum Bayes Risk Decoding for Neural Machine Translation](https://arxiv.org/abs/2108.04718)
+
+Authors: [Bryan Eikema](https://arxiv.org/search/cs?searchtype=author&query=Eikema%2C+B), [Wilker Aziz](https://arxiv.org/search/cs?searchtype=author&query=Aziz%2C+W)
+
+> In neural machine translation (NMT), we search for the mode of the model distribution to form predictions. The mode as well as other high probability translations found by beam search have been shown to often be inadequate in a number of ways. This prevents practitioners from improving translation quality through better search, as these idiosyncratic translations end up being selected by the decoding algorithm, a problem known as the beam search curse. Recently, a sampling-based approximation to minimum Bayes risk (MBR) decoding has been proposed as an alternative decision rule for NMT that would likely not suffer from the same problems. We analyse this approximation and establish that it has no equivalent to the beam search curse, i.e. better search always leads to better translations. We also design different approximations aimed at decoupling the cost of exploration from the cost of robust estimation of expected utility. This allows for exploration of much larger hypothesis spaces, which we show to be beneficial. We also show that it can be beneficial to make use of strategies like beam search and nucleus sampling to construct hypothesis spaces efficiently. We show on three language pairs (English into and from German, Romanian, and Nepali) that MBR can improve upon beam search with moderate computation.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2108.04718](https://arxiv.org/abs/2108.04718) [cs.CL]** |
+|           | (or **[arXiv:2108.04718v1](https://arxiv.org/abs/2108.04718v1) [cs.CL]** for this version) |
+
+
+
+
+
+
 
 
 
