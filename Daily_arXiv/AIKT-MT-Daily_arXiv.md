@@ -3,6 +3,11 @@
 # Index
 
 
+- [2021-08-12](#2021-08-12)
+
+  - [1. Embodied BERT: A Transformer Model for Embodied, Language-guided Visual Task Completion](#2021-08-12-1)
+  - [2. Post-hoc Interpretability for Neural NLP: A Survey](#2021-08-12-2)
+  - [3. A Transformer-based Math Language Model for Handwritten Math Expression Recognition](#2021-08-12-3)
 - [2021-08-11](#2021-08-11)
 
   - [1. FairyTailor: A Multimodal Generative Framework for Storytelling](#2021-08-11-1)
@@ -60,6 +65,68 @@
   - [6. Towards Universality in Multilingual Text Rewriting](#2021-08-02-6)
   - [7. ChrEnTranslate: Cherokee-English Machine Translation Demo with Quality Estimation and Corrective Feedback](#2021-08-02-7)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-08-12
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-08-12-1">1. Embodied BERT: A Transformer Model for Embodied, Language-guided Visual Task Completion
+</h2>
+
+Title: [Embodied BERT: A Transformer Model for Embodied, Language-guided Visual Task Completion](https://arxiv.org/abs/2108.04927)
+
+Authors: [Alessandro Suglia](https://arxiv.org/search/cs?searchtype=author&query=Suglia%2C+A), [Qiaozi Gao](https://arxiv.org/search/cs?searchtype=author&query=Gao%2C+Q), [Jesse Thomason](https://arxiv.org/search/cs?searchtype=author&query=Thomason%2C+J), [Govind Thattai](https://arxiv.org/search/cs?searchtype=author&query=Thattai%2C+G), [Gaurav Sukhatme](https://arxiv.org/search/cs?searchtype=author&query=Sukhatme%2C+G)
+
+> Language-guided robots performing home and office tasks must navigate in and interact with the world. Grounding language instructions against visual observations and actions to take in an environment is an open challenge. We present Embodied BERT (EmBERT), a transformer-based model which can attend to high-dimensional, multi-modal inputs across long temporal horizons for language-conditioned task completion. Additionally, we bridge the gap between successful object-centric navigation models used for non-interactive agents and the language-guided visual task completion benchmark, ALFRED, by introducing object navigation targets for EmBERT training. We achieve competitive performance on the ALFRED benchmark, and EmBERT marks the first transformer-based model to successfully handle the long-horizon, dense, multi-modal histories of ALFRED, and the first ALFRED model to utilize object-centric navigation targets.
+
+| Comments: | [this https URL](https://github.com/amazon-research/embert)  |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2108.04927](https://arxiv.org/abs/2108.04927) [cs.CV]** |
+|           | (or **[arXiv:2108.04927v1](https://arxiv.org/abs/2108.04927v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-08-12-2">2. Post-hoc Interpretability for Neural NLP: A Survey
+</h2>
+
+Title: [Post-hoc Interpretability for Neural NLP: A Survey](https://arxiv.org/abs/2108.04840)
+
+Authors: [Andreas Madsen](https://arxiv.org/search/cs?searchtype=author&query=Madsen%2C+A), [Siva Reddy](https://arxiv.org/search/cs?searchtype=author&query=Reddy%2C+S), [Sarath Chandar](https://arxiv.org/search/cs?searchtype=author&query=Chandar%2C+S)
+
+> Natural Language Processing (NLP) models have become increasingly more complex and widespread. With recent developments in neural networks, a growing concern is whether it is responsible to use these models. Concerns such as safety and ethics can be partially addressed by providing explanations. Furthermore, when models do fail, providing explanations is paramount for accountability purposes. To this end, interpretability serves to provide these explanations in terms that are understandable to humans. Central to what is understandable is how explanations are communicated. Therefore, this survey provides a categorization of how recent interpretability methods communicate explanations and discusses the methods in depth. Furthermore, the survey focuses on post-hoc methods, which provide explanations after a model is learned and generally model-agnostic. A common concern for this class of methods is whether they accurately reflect the model. Hence, how these post-hoc methods are evaluated is discussed throughout the paper.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG); Neural and Evolutionary Computing (cs.NE) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2108.04840](https://arxiv.org/abs/2108.04840) [cs.CL]** |
+|           | (or **[arXiv:2108.04840v1](https://arxiv.org/abs/2108.04840v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-08-12-3">3. A Transformer-based Math Language Model for Handwritten Math Expression Recognition
+</h2>
+
+Title: [A Transformer-based Math Language Model for Handwritten Math Expression Recognition](https://arxiv.org/abs/2108.05002)
+
+Authors: [Huy Quang Ung](https://arxiv.org/search/cs?searchtype=author&query=Ung%2C+H+Q), [Cuong Tuan Nguyen](https://arxiv.org/search/cs?searchtype=author&query=Nguyen%2C+C+T), [Hung Tuan Nguyen](https://arxiv.org/search/cs?searchtype=author&query=Nguyen%2C+H+T), [Thanh-Nghia Truong](https://arxiv.org/search/cs?searchtype=author&query=Truong%2C+T), [Masaki Nakagawa](https://arxiv.org/search/cs?searchtype=author&query=Nakagawa%2C+M)
+
+> Handwritten mathematical expressions (HMEs) contain ambiguities in their interpretations, even for humans sometimes. Several math symbols are very similar in the writing style, such as dot and comma or 0, O, and o, which is a challenge for HME recognition systems to handle without using contextual information. To address this problem, this paper presents a Transformer-based Math Language Model (TMLM). Based on the self-attention mechanism, the high-level representation of an input token in a sequence of tokens is computed by how it is related to the previous tokens. Thus, TMLM can capture long dependencies and correlations among symbols and relations in a mathematical expression (ME). We trained the proposed language model using a corpus of approximately 70,000 LaTeX sequences provided in CROHME 2016. TMLM achieved the perplexity of 4.42, which outperformed the previous math language models, i.e., the N-gram and recurrent neural network-based language models. In addition, we combine TMLM into a stochastic context-free grammar-based HME recognition system using a weighting parameter to re-rank the top-10 best candidates. The expression rates on the testing sets of CROHME 2016 and CROHME 2019 were improved by 2.97 and 0.83 percentage points, respectively.
+
+| Comments: | 14 pages, accepted in ICDAR-DIL 2021                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Computer Vision and Pattern Recognition (cs.CV) |
+| Cite as:  | **[arXiv:2108.05002](https://arxiv.org/abs/2108.05002) [cs.CL]** |
+|           | (or **[arXiv:2108.05002v1](https://arxiv.org/abs/2108.05002v1) [cs.CL]** for this version) |
+
+
 
 
 
