@@ -3,8 +3,11 @@
 # Index
 
 
-- [2021-08-12](#2021-08-12)
+- [2021-08-13](#2021-08-13)
 
+  - [1. AMMUS : A Survey of Transformer-based Pretrained Models in Natural Language Processing](#2021-08-13-1)
+  - [2. The paradox of the compositionality of natural language: a neural machine translation case study](#2021-08-13-2)
+- [2021-08-12](#2021-08-12)
   - [1. Embodied BERT: A Transformer Model for Embodied, Language-guided Visual Task Completion](#2021-08-12-1)
   - [2. Post-hoc Interpretability for Neural NLP: A Survey](#2021-08-12-2)
   - [3. A Transformer-based Math Language Model for Handwritten Math Expression Recognition](#2021-08-12-3)
@@ -65,6 +68,45 @@
   - [6. Towards Universality in Multilingual Text Rewriting](#2021-08-02-6)
   - [7. ChrEnTranslate: Cherokee-English Machine Translation Demo with Quality Estimation and Corrective Feedback](#2021-08-02-7)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-08-13
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-08-13-1">1. AMMUS : A Survey of Transformer-based Pretrained Models in Natural Language Processing
+</h2>
+
+Title: [AMMUS : A Survey of Transformer-based Pretrained Models in Natural Language Processing](https://arxiv.org/abs/2108.05542)
+
+Authors: Transformer-based pretrained language models (T-PTLMs) have achieved great success in almost every NLP task. The evolution of these models started with GPT and BERT. These models are built on the top of transformers, self-supervised learning and transfer learning. Transformed-based PTLMs learn universal language representations from large volumes of text data using self-supervised learning and transfer this knowledge to downstream tasks. These models provide good background knowledge to downstream tasks which avoids training of downstream models from scratch. In this comprehensive survey paper, we initially give a brief overview of self-supervised learning. Next, we explain various core concepts like pretraining, pretraining methods, pretraining tasks, embeddings and downstream adaptation methods. Next, we present a new taxonomy of T-PTLMs and then give brief overview of various benchmarks including both intrinsic and extrinsic. We present a summary of various useful libraries to work with T-PTLMs. Finally, we highlight some of the future research directions which will further improve these models. We strongly believe that this comprehensive survey paper will serve as a good reference to learn the core concepts as well as to stay updated with the recent happenings in T-PTLMs.
+
+| Comments: | Preprint under review                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2108.05542](https://arxiv.org/abs/2108.05542) [cs.CL]** |
+|           | (or **[arXiv:2108.05542v1](https://arxiv.org/abs/2108.05542v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-08-13-2">2. The paradox of the compositionality of natural language: a neural machine translation case study
+</h2>
+
+Title: [The paradox of the compositionality of natural language: a neural machine translation case study](https://arxiv.org/abs/2108.05885)
+
+Authors: Moving towards human-like linguistic performance is often argued to require compositional generalisation. Whether neural networks exhibit this ability is typically studied using artificial languages, for which the compositionality of input fragments can be guaranteed and their meanings algebraically composed. However, compositionality in natural language is vastly more complex than this rigid, arithmetics-like version of compositionality, and as such artificial compositionality tests do not allow us to draw conclusions about how neural models deal with compositionality in more realistic scenarios. In this work, we re-instantiate three compositionality tests from the literature and reformulate them for neural machine translation (NMT). The results highlight two main issues: the inconsistent behaviour of NMT models and their inability to (correctly) modulate between local and global processing. Aside from an empirical study, our work is a call to action: we should rethink the evaluation of compositionality in neural networks of natural language, where composing meaning is not as straightforward as doing the math.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2108.05885](https://arxiv.org/abs/2108.05885) [cs.CL]** |
+|           | (or **[arXiv:2108.05885v1](https://arxiv.org/abs/2108.05885v1) [cs.CL]** for this version) |
+
+
 
 
 
