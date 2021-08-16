@@ -3,8 +3,10 @@
 # Index
 
 
-- [2021-08-13](#2021-08-13)
+- [2021-08-16](#2021-08-16)
 
+  - [1. FlipDA: Effective and Robust Data Augmentation for Few-Shot Learning](#2021-08-16-1)
+- [2021-08-13](#2021-08-13)
   - [1. AMMUS : A Survey of Transformer-based Pretrained Models in Natural Language Processing](#2021-08-13-1)
   - [2. The paradox of the compositionality of natural language: a neural machine translation case study](#2021-08-13-2)
 - [2021-08-12](#2021-08-12)
@@ -68,6 +70,35 @@
   - [6. Towards Universality in Multilingual Text Rewriting](#2021-08-02-6)
   - [7. ChrEnTranslate: Cherokee-English Machine Translation Demo with Quality Estimation and Corrective Feedback](#2021-08-02-7)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-08-16
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-08-16-1">1. AMMUS : A Survey of Transformer-based Pretrained Models in Natural Language Processing
+</h2>
+
+Title: [FlipDA: Effective and Robust Data Augmentation for Few-Shot Learning](https://arxiv.org/abs/2108.06332)
+
+Authors: [Jing Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+J), [Yanan Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng%2C+Y), [Jie Tang](https://arxiv.org/search/cs?searchtype=author&query=Tang%2C+J), [Jian Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+J), [Zhilin Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+Z)
+
+> Most previous methods for text data augmentation are limited to simple tasks and weak baselines. We explore data augmentation on hard tasks (i.e., few-shot natural language understanding) and strong baselines (i.e., pretrained models with over one billion parameters). Under this setting, we reproduced a large number of previous augmentation methods and found that these methods bring marginal gains at best and sometimes degrade the performance much. To address this challenge, we propose a novel data augmentation method FlipDA that jointly uses a generative model and a classifier to generate label-flipped data. Central to the idea of FlipDA is the discovery that generating label-flipped data is more crucial to the performance than generating label-preserved data. Experiments show that FlipDA achieves a good tradeoff between effectiveness and robustness---it substantially improves many tasks while not negatively affecting the others.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2108.06332](https://arxiv.org/abs/2108.06332) [cs.CL]** |
+|           | (or **[arXiv:2108.06332v1](https://arxiv.org/abs/2108.06332v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
 
 
 
