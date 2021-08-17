@@ -3,9 +3,17 @@
 # Index
 
 
-- [2021-08-16](#2021-08-16)
+- [2021-08-17](#2021-08-17)
 
-  - [1. FlipDA: Effective and Robust Data Augmentation for Few-Shot Learning](#2021-08-16-1)
+  - [1. ROSITA: Enhancing Vision-and-Language Semantic Alignments via Cross- and Intra-modal Knowledge Integration](#2021-08-17-1)
+  - [2. Who's Waldo? Linking People Across Text and Images](#2021-08-17-2)
+  - [3. Findings of the LoResMT 2021 Shared Task on COVID and Sign Language for Low-resource Languages](#2021-08-17-3)
+  - [4. Maps Search Misspelling Detection Leveraging Domain-Augmented Contextual Representations](#2021-08-17-4)
+  - [5. A Single Example Can Improve Zero-Shot Data Generation](#2021-08-17-5)
+  - [6. Active Learning for Massively Parallel Translation of Constrained Text into Low Resource Languages](#2021-08-17-6)
+  - [7. MTG: A Benchmarking Suite for Multilingual Text Generation](#2021-08-17-7)
+- [2021-08-16](#2021-08-16)
+- [1. FlipDA: Effective and Robust Data Augmentation for Few-Shot Learning](#2021-08-16-1)
 - [2021-08-13](#2021-08-13)
   - [1. AMMUS : A Survey of Transformer-based Pretrained Models in Natural Language Processing](#2021-08-13-1)
   - [2. The paradox of the compositionality of natural language: a neural machine translation case study](#2021-08-13-2)
@@ -70,6 +78,147 @@
   - [6. Towards Universality in Multilingual Text Rewriting](#2021-08-02-6)
   - [7. ChrEnTranslate: Cherokee-English Machine Translation Demo with Quality Estimation and Corrective Feedback](#2021-08-02-7)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+
+
+# 2021-08-17
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-08-17-1">1. ROSITA: Enhancing Vision-and-Language Semantic Alignments via Cross- and Intra-modal Knowledge Integration
+</h2>
+
+Title: [ROSITA: Enhancing Vision-and-Language Semantic Alignments via Cross- and Intra-modal Knowledge Integration](https://arxiv.org/abs/2108.07073)
+
+Authors: [Yuhao Cui](https://arxiv.org/search/cs?searchtype=author&query=Cui%2C+Y), [Zhou Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+Z), [Chunqi Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+C), [Zhongzhou Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+Z), [Ji Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+J), [Meng Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+M), [Jun Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+J)
+
+> Vision-and-language pretraining (VLP) aims to learn generic multimodal representations from massive image-text pairs. While various successful attempts have been proposed, learning fine-grained semantic alignments between image-text pairs plays a key role in their approaches. Nevertheless, most existing VLP approaches have not fully utilized the intrinsic knowledge within the image-text pairs, which limits the effectiveness of the learned alignments and further restricts the performance of their models. To this end, we introduce a new VLP method called ROSITA, which integrates the cross- and intra-modal knowledge in a unified scene graph to enhance the semantic alignments. Specifically, we introduce a novel structural knowledge masking (SKM) strategy to use the scene graph structure as a priori to perform masked language (region) modeling, which enhances the semantic alignments by eliminating the interference information within and across modalities. Extensive ablation studies and comprehensive analysis verifies the effectiveness of ROSITA in semantic alignments. Pretrained with both in-domain and out-of-domain datasets, ROSITA significantly outperforms existing state-of-the-art VLP methods on three typical vision-and-language tasks over six benchmark datasets.
+
+| Comments: | Accepted at ACM Multimedia 2021. Code available at [this https URL](https://github.com/MILVLG/rosita) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2108.07073](https://arxiv.org/abs/2108.07073) [cs.CV]** |
+|           | (or **[arXiv:2108.07073v1](https://arxiv.org/abs/2108.07073v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-08-17-2">2. Who's Waldo? Linking People Across Text and Images
+</h2>
+
+Title: [Who's Waldo? Linking People Across Text and Images](https://arxiv.org/abs/2108.07253)
+
+Authors: [Claire Yuqing Cui](https://arxiv.org/search/cs?searchtype=author&query=Cui%2C+C+Y), [Apoorv Khandelwal](https://arxiv.org/search/cs?searchtype=author&query=Khandelwal%2C+A), [Yoav Artzi](https://arxiv.org/search/cs?searchtype=author&query=Artzi%2C+Y), [Noah Snavely](https://arxiv.org/search/cs?searchtype=author&query=Snavely%2C+N), [Hadar Averbuch-Elor](https://arxiv.org/search/cs?searchtype=author&query=Averbuch-Elor%2C+H)
+
+> We present a task and benchmark dataset for person-centric visual grounding, the problem of linking between people named in a caption and people pictured in an image. In contrast to prior work in visual grounding, which is predominantly object-based, our new task masks out the names of people in captions in order to encourage methods trained on such image-caption pairs to focus on contextual cues (such as rich interactions between multiple people), rather than learning associations between names and appearances. To facilitate this task, we introduce a new dataset, Who's Waldo, mined automatically from image-caption data on Wikimedia Commons. We propose a Transformer-based method that outperforms several strong baselines on this task, and are releasing our data to the research community to spur work on contextual models that consider both vision and language.
+
+| Comments: | Published in ICCV 2021 (Oral). Project webpage: [this https URL](https://whoswaldo.github.io/) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2108.07253](https://arxiv.org/abs/2108.07253) [cs.CV]** |
+|           | (or **[arXiv:2108.07253v1](https://arxiv.org/abs/2108.07253v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-08-17-3">3. Findings of the LoResMT 2021 Shared Task on COVID and Sign Language for Low-resource Languages
+</h2>
+
+Title: [Findings of the LoResMT 2021 Shared Task on COVID and Sign Language for Low-resource Languages](https://arxiv.org/abs/2108.06598)
+
+Authors: [Atul Kr. Ojha](https://arxiv.org/search/cs?searchtype=author&query=Ojha%2C+A+K), [Chao-Hong Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+C), [Katharina Kann](https://arxiv.org/search/cs?searchtype=author&query=Kann%2C+K), [John Ortega](https://arxiv.org/search/cs?searchtype=author&query=Ortega%2C+J), [Sheetal Shatam](https://arxiv.org/search/cs?searchtype=author&query=Shatam%2C+S), [Theodorus Fransen](https://arxiv.org/search/cs?searchtype=author&query=Fransen%2C+T)
+
+> We present the findings of the LoResMT 2021 shared task which focuses on machine translation (MT) of COVID-19 data for both low-resource spoken and sign languages. The organization of this task was conducted as part of the fourth workshop on technologies for machine translation of low resource languages (LoResMT). Parallel corpora is presented and publicly available which includes the following directions: English↔Irish, English↔Marathi, and Taiwanese Sign language↔Traditional Chinese. Training data consists of 8112, 20933 and 128608 segments, respectively. There are additional monolingual data sets for Marathi and English that consist of 21901 segments. The results presented here are based on entries from a total of eight teams. Three teams submitted systems for English↔Irish while five teams submitted systems for English↔Marathi. Unfortunately, there were no systems submissions for the Taiwanese Sign language↔Traditional Chinese task. Maximum system performance was computed using BLEU and follow as 36.0 for English--Irish, 34.6 for Irish--English, 24.2 for English--Marathi, and 31.3 for Marathi--English.
+
+| Comments: | 10 pages                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2108.06598](https://arxiv.org/abs/2108.06598) [cs.CL]** |
+|           | (or **[arXiv:2108.06598v1](https://arxiv.org/abs/2108.06598v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-08-17-4">4. Maps Search Misspelling Detection Leveraging Domain-Augmented Contextual Representations
+</h2>
+
+Title: [Maps Search Misspelling Detection Leveraging Domain-Augmented Contextual Representations](https://arxiv.org/abs/2108.06842)
+
+Authors: [Yutong Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Y)
+
+> Building an independent misspelling detector and serve it before correction can bring multiple benefits to speller and other search components, which is particularly true for the most commonly deployed noisy-channel based speller systems. With rapid development of deep learning and substantial advancement in contextual representation learning such as BERTology, building a decent misspelling detector without having to rely on hand-crafted features associated with noisy-channel architecture becomes more-than-ever accessible. However BERTolgy models are trained with natural language corpus but Maps Search is highly domain specific, would BERTology continue its success. In this paper we design 4 stages of models for misspeling detection ranging from the most basic LSTM to single-domain augmented fine-tuned BERT. We found for Maps Search in our case, other advanced BERTology family model such as RoBERTa does not necessarily outperform BERT, and a classic cross-domain fine-tuned full BERT even underperforms a smaller single-domain fine-tuned BERT. We share more findings through comprehensive modeling experiments and analysis, we also briefly cover the data generation algorithm breakthrough.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2108.06842](https://arxiv.org/abs/2108.06842) [cs.CL]** |
+|           | (or **[arXiv:2108.06842v1](https://arxiv.org/abs/2108.06842v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-08-17-5">5. A Single Example Can Improve Zero-Shot Data Generation
+</h2>
+
+Title: [A Single Example Can Improve Zero-Shot Data Generation](https://arxiv.org/abs/2108.06991)
+
+Authors: [Pavel Burnyshev](https://arxiv.org/search/cs?searchtype=author&query=Burnyshev%2C+P), [Valentin Malykh](https://arxiv.org/search/cs?searchtype=author&query=Malykh%2C+V), [Andrey Bout](https://arxiv.org/search/cs?searchtype=author&query=Bout%2C+A), [Ekaterina Artemova](https://arxiv.org/search/cs?searchtype=author&query=Artemova%2C+E), [Irina Piontkovskaya](https://arxiv.org/search/cs?searchtype=author&query=Piontkovskaya%2C+I)
+
+> Sub-tasks of intent classification, such as robustness to distribution shift, adaptation to specific user groups and personalization, out-of-domain detection, require extensive and flexible datasets for experiments and evaluation. As collecting such datasets is time- and labor-consuming, we propose to use text generation methods to gather datasets. The generator should be trained to generate utterances that belong to the given intent. We explore two approaches to generating task-oriented utterances. In the zero-shot approach, the model is trained to generate utterances from seen intents and is further used to generate utterances for intents unseen during training. In the one-shot approach, the model is presented with a single utterance from a test intent. We perform a thorough automatic, and human evaluation of the dataset generated utilizing two proposed approaches. Our results reveal that the attributes of the generated data are close to original test sets, collected via crowd-sourcing.
+
+| Comments: | To appear in INLG2021 proceedings                            |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2108.06991](https://arxiv.org/abs/2108.06991) [cs.CL]** |
+|           | (or **[arXiv:2108.06991v1](https://arxiv.org/abs/2108.06991v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-08-17-6">6. Active Learning for Massively Parallel Translation of Constrained Text into Low Resource Languages
+</h2>
+
+Title: [Active Learning for Massively Parallel Translation of Constrained Text into Low Resource Languages](https://arxiv.org/abs/2108.07127)
+
+Authors: [Zhong Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+Z), [Alex Waibel](https://arxiv.org/search/cs?searchtype=author&query=Waibel%2C+A)
+
+> We translate a closed text that is known in advance and available in many languages into a new and severely low resource language. Most human translation efforts adopt a portion-based approach to translate consecutive pages/chapters in order, which may not suit machine translation. We compare the portion-based approach that optimizes coherence of the text locally with the random sampling approach that increases coverage of the text globally. Our results show that the random sampling approach performs better. When training on a seed corpus of ~1,000 lines from the Bible and testing on the rest of the Bible (~30,000 lines), random sampling gives a performance gain of +11.0 BLEU using English as a simulated low resource language, and +4.9 BLEU using Eastern Pokomchi, a Mayan language. Furthermore, we compare three ways of updating machine translation models with increasing amount of human post-edited data through iterations. We find that adding newly post-edited data to training after vocabulary update without self-supervision performs the best. We propose an algorithm for human and machine to work together seamlessly to translate a closed text into a severely low resource language.
+
+| Subjects:          | **Computation and Language (cs.CL)**                         |
+| ------------------ | ------------------------------------------------------------ |
+| Journal reference: | In Proceedings of the LoResMT Workshop of the 18th Biennial Machine Translation Summit in 2021 |
+| Cite as:           | **[arXiv:2108.07127](https://arxiv.org/abs/2108.07127) [cs.CL]** |
+|                    | (or **[arXiv:2108.07127v1](https://arxiv.org/abs/2108.07127v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-08-17-7">7. MTG: A Benchmarking Suite for Multilingual Text Generation
+</h2>
+
+Title: [MTG: A Benchmarking Suite for Multilingual Text Generation](https://arxiv.org/abs/2108.07140)
+
+Authors: [Yiran Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+Y), [Zhenqiao Song](https://arxiv.org/search/cs?searchtype=author&query=Song%2C+Z), [Xianze Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+X), [Danqing Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+D), [Jingjing Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+J), [Jiaze Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+J), [Hao Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+H), [Lei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L)
+
+> We introduce MTG, a new benchmark suite for training and evaluating multilingual text generation. It is the first and largest text generation benchmark with 120k human-annotated multi-way parallel data for three tasks (story generation, question generation, and title generation) across four languages (English, German, French, and Spanish). Based on it, we set various evaluation scenarios and make a deep analysis of several popular multilingual generation models from different aspects. Our benchmark suite will encourage the multilingualism for text generation community with more human-annotated parallel data and more diverse generation scenarios.
+
+| Comments: | 9 pages                                                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2108.07140](https://arxiv.org/abs/2108.07140) [cs.CL]** |
+|           | (or **[arXiv:2108.07140v1](https://arxiv.org/abs/2108.07140v1) [cs.CL]** for this version) |
+
+
+
 
 
 
