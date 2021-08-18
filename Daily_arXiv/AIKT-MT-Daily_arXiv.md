@@ -3,6 +3,12 @@
 # Index
 
 
+- [2021-08-18](#2021-08-18)
+
+  - [1. Modeling Protein Using Large-scale Pretrain Language Model](#2021-08-18-1)
+  - [2. A Light-weight contextual spelling correction model for customizing transducer-based speech recognition systems](#2021-08-18-2)
+  - [3. A Game Interface to Study Semantic Grounding in Text-Based Models](#2021-08-18-3)
+  - [4. Adapting GPT, GPT-2 and BERT Language Models for Speech Recognition](#2021-08-18-4)
 - [2021-08-17](#2021-08-17)
 
   - [1. ROSITA: Enhancing Vision-and-Language Semantic Alignments via Cross- and Intra-modal Knowledge Integration](#2021-08-17-1)
@@ -78,6 +84,86 @@
   - [6. Towards Universality in Multilingual Text Rewriting](#2021-08-02-6)
   - [7. ChrEnTranslate: Cherokee-English Machine Translation Demo with Quality Estimation and Corrective Feedback](#2021-08-02-7)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-08-18
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-08-18-1">1. Modeling Protein Using Large-scale Pretrain Language Model
+</h2>
+
+Title: [Modeling Protein Using Large-scale Pretrain Language Model](https://arxiv.org/abs/2108.07435)
+
+Authors: [Yijia Xiao](https://arxiv.org/search/cs?searchtype=author&query=Xiao%2C+Y), [Jiezhong Qiu](https://arxiv.org/search/cs?searchtype=author&query=Qiu%2C+J), [Ziang Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Z), [Chang-Yu Hsieh](https://arxiv.org/search/cs?searchtype=author&query=Hsieh%2C+C), [Jie Tang](https://arxiv.org/search/cs?searchtype=author&query=Tang%2C+J)
+
+> Protein is linked to almost every life process. Therefore, analyzing the biological structure and property of protein sequences is critical to the exploration of life, as well as disease detection and drug discovery. Traditional protein analysis methods tend to be labor-intensive and time-consuming. The emergence of deep learning models makes modeling data patterns in large quantities of data possible. Interdisciplinary researchers have begun to leverage deep learning methods to model large biological datasets, e.g. using long short-term memory and convolutional neural network for protein sequence classification. After millions of years of evolution, evolutionary information is encoded in protein sequences. Inspired by the similarity between natural language and protein sequences, we use large-scale language models to model evolutionary-scale protein sequences, encoding protein biology information in representation. Significant improvements are observed in both token-level and sequence-level tasks, demonstrating that our large-scale model can accurately capture evolution information from pretraining on evolutionary-scale individual sequences. Our code and model are available at [this https URL](https://github.com/THUDM/ProteinLM).
+
+| Comments: | Accepted paper in Pretrain@KDD 2021 (The International Workshop on Pretraining: Algorithms, Architectures, and Applications) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL); Biomolecules (q-bio.BM) |
+| Cite as:  | **[arXiv:2108.07435](https://arxiv.org/abs/2108.07435) [cs.LG]** |
+|           | (or **[arXiv:2108.07435v1](https://arxiv.org/abs/2108.07435v1) [cs.LG]** for this version) |
+
+
+
+
+
+<h2 id="2021-08-18-2">2. A Light-weight contextual spelling correction model for customizing transducer-based speech recognition systems
+</h2>
+
+Title: [A Light-weight contextual spelling correction model for customizing transducer-based speech recognition systems](https://arxiv.org/abs/2108.07493)
+
+Authors: [Xiaoqiang Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+X), [Yanqing Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Y), [Sheng Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+S), [Jinyu Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+J)
+
+> It's challenging to customize transducer-based automatic speech recognition (ASR) system with context information which is dynamic and unavailable during model training. In this work, we introduce a light-weight contextual spelling correction model to correct context-related recognition errors in transducer-based ASR systems. We incorporate the context information into the spelling correction model with a shared context encoder and use a filtering algorithm to handle large-size context lists. Experiments show that the model improves baseline ASR model performance with about 50% relative word error rate reduction, which also significantly outperforms the baseline method such as contextual LM biasing. The model also shows excellent performance for out-of-vocabulary terms not seen during training.
+
+| Comments: | This paper has been accepted by Interspeech 2021             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2108.07493](https://arxiv.org/abs/2108.07493) [cs.CL]** |
+|           | (or **[arXiv:2108.07493v1](https://arxiv.org/abs/2108.07493v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-08-18-3">3. A Game Interface to Study Semantic Grounding in Text-Based Models
+</h2>
+
+Title: [A Game Interface to Study Semantic Grounding in Text-Based Models](https://arxiv.org/abs/2108.07708)
+
+Authors: [Timothee Mickus](https://arxiv.org/search/cs?searchtype=author&query=Mickus%2C+T), [Mathieu Constant](https://arxiv.org/search/cs?searchtype=author&query=Constant%2C+M), [Denis Paperno](https://arxiv.org/search/cs?searchtype=author&query=Paperno%2C+D)
+
+> Can language models learn grounded representations from text distribution alone? This question is both central and recurrent in natural language processing; authors generally agree that grounding requires more than textual distribution. We propose to experimentally test this claim: if any two words have different meanings and yet cannot be distinguished from distribution alone, then grounding is out of the reach of text-based models. To that end, we present early work on an online game for the collection of human judgments on the distributional similarity of word pairs in five languages. We further report early results of our data collection campaign.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2108.07708](https://arxiv.org/abs/2108.07708) [cs.CL]** |
+|           | (or **[arXiv:2108.07708v1](https://arxiv.org/abs/2108.07708v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-08-18-4">4. Adapting GPT, GPT-2 and BERT Language Models for Speech Recognition
+</h2>
+
+Title: [Adapting GPT, GPT-2 and BERT Language Models for Speech Recognition](https://arxiv.org/abs/2108.07789)
+
+Authors: [Xianrui Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng%2C+X), [Chao Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+C), [Philip C. Woodland](https://arxiv.org/search/cs?searchtype=author&query=Woodland%2C+P+C)
+
+> Language models (LMs) pre-trained on massive amounts of text, in particular bidirectional encoder representations from Transformers (BERT), generative pre-training (GPT), and GPT-2, have become a key technology for many natural language processing tasks. In this paper, we present results using fine-tuned GPT, GPT-2, and their combination for automatic speech recognition (ASR). Unlike unidirectional LM GPT and GPT-2, BERT is bidirectional whose direct product of the output probabilities is no longer a valid language prior probability. A conversion method is proposed to compute the correct language prior probability based on bidirectional LM outputs in a mathematically exact way. Experimental results on the widely used AMI and Switchboard ASR tasks showed that the combination of the fine-tuned GPT and GPT-2 outperformed the combination of three neural LMs with different architectures trained from scratch on the in-domain text by up to a 12% relative word error rate reduction (WERR). Furthermore, the proposed conversion for language prior probabilities enables BERT to receive an extra 3% relative WERR, and the combination of BERT, GPT and GPT-2 results in further improvements.
+
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2108.07789](https://arxiv.org/abs/2108.07789) [cs.CL]** |
+|           | (or **[arXiv:2108.07789v1](https://arxiv.org/abs/2108.07789v1) [cs.CL]** for this version) |
+
+
 
 
 
