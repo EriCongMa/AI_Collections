@@ -2,6 +2,8 @@
 
 ACM Computing Surveys: [Link](https://dl.acm.org/journal/csur)
 
+Multi-Modal ML: [Link](https://github.com/pliang279/awesome-multimodal-ml)
+
 ML-Surveys: [Link](https://github.com/eugeneyan/ml-surveys)
 
 AI-Surverys: [Link](https://github.com/KaiyuanGao/AI-Surveys)

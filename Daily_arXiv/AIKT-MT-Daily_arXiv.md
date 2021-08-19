@@ -3,6 +3,12 @@
 # Index
 
 
+- [2021-08-19](#2021-08-19)
+
+  - [1. X-modaler: A Versatile and High-performance Codebase for Cross-modal Analytics](#2021-08-19-1)
+  - [2. GGP: A Graph-based Grouping Planner for Explicit Control of Long Text Generation](#2021-08-19-2)
+  - [3. Table Caption Generation in Scholarly Documents Leveraging Pre-trained Language Models](#2021-08-19-3)
+  - [4. Deep Natural Language Processing for LinkedIn Search Systems](#2021-08-19-4)
 - [2021-08-18](#2021-08-18)
 
   - [1. Modeling Protein Using Large-scale Pretrain Language Model](#2021-08-18-1)
@@ -84,6 +90,86 @@
   - [6. Towards Universality in Multilingual Text Rewriting](#2021-08-02-6)
   - [7. ChrEnTranslate: Cherokee-English Machine Translation Demo with Quality Estimation and Corrective Feedback](#2021-08-02-7)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-08-19
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-08-19-1">1. X-modaler: A Versatile and High-performance Codebase for Cross-modal Analytics
+</h2>
+
+Title: [X-modaler: A Versatile and High-performance Codebase for Cross-modal Analytics](https://arxiv.org/abs/2108.08217)
+
+Authors: [Yehao Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Y), [Yingwei Pan](https://arxiv.org/search/cs?searchtype=author&query=Pan%2C+Y), [Jingwen Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+J), [Ting Yao](https://arxiv.org/search/cs?searchtype=author&query=Yao%2C+T), [Tao Mei](https://arxiv.org/search/cs?searchtype=author&query=Mei%2C+T)
+
+> With the rise and development of deep learning over the past decade, there has been a steady momentum of innovation and breakthroughs that convincingly push the state-of-the-art of cross-modal analytics between vision and language in multimedia field. Nevertheless, there has not been an open-source codebase in support of training and deploying numerous neural network models for cross-modal analytics in a unified and modular fashion. In this work, we propose X-modaler -- a versatile and high-performance codebase that encapsulates the state-of-the-art cross-modal analytics into several general-purpose stages (e.g., pre-processing, encoder, cross-modal interaction, decoder, and decode strategy). Each stage is empowered with the functionality that covers a series of modules widely adopted in state-of-the-arts and allows seamless switching in between. This way naturally enables a flexible implementation of state-of-the-art algorithms for image captioning, video captioning, and vision-language pre-training, aiming to facilitate the rapid development of research community. Meanwhile, since the effective modular designs in several stages (e.g., cross-modal interaction) are shared across different vision-language tasks, X-modaler can be simply extended to power startup prototypes for other tasks in cross-modal analytics, including visual question answering, visual commonsense reasoning, and cross-modal retrieval. X-modaler is an Apache-licensed codebase, and its source codes, sample projects and pre-trained models are available on-line: [this https URL](https://github.com/YehLi/xmodaler).
+
+| Comments: | Accepted by 2021 ACMMM Open Source Software Competition. Source code: [this https URL](https://github.com/YehLi/xmodaler) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL); Machine Learning (cs.LG); Multimedia (cs.MM) |
+| Cite as:  | **[arXiv:2108.08217](https://arxiv.org/abs/2108.08217) [cs.CV]** |
+|           | (or **[arXiv:2108.08217v1](https://arxiv.org/abs/2108.08217v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-08-19-2">2. GGP: A Graph-based Grouping Planner for Explicit Control of Long Text Generation
+</h2>
+
+Title: [GGP: A Graph-based Grouping Planner for Explicit Control of Long Text Generation](https://arxiv.org/abs/2108.07998)
+
+Authors: [Xuming Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+X), [Shaobo Cui](https://arxiv.org/search/cs?searchtype=author&query=Cui%2C+S), [Zhongzhou Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+Z), [Wei Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+W), [Ji Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+J), [Haiqing Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+H)
+
+> Existing data-driven methods can well handle short text generation. However, when applied to the long-text generation scenarios such as story generation or advertising text generation in the commercial scenario, these methods may generate illogical and uncontrollable texts. To address these aforementioned issues, we propose a graph-based grouping planner(GGP) following the idea of first-plan-then-generate. Specifically, given a collection of key phrases, GGP firstly encodes these phrases into an instance-level sequential representation and a corpus-level graph-based representation separately. With these two synergic representations, we then regroup these phrases into a fine-grained plan, based on which we generate the final long text. We conduct our experiments on three long text generation datasets and the experimental results reveal that GGP significantly outperforms baselines, which proves that GGP can control the long text generation by knowing how to say and in what order.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2108.07998](https://arxiv.org/abs/2108.07998) [cs.CL]** |
+|           | (or **[arXiv:2108.07998v1](https://arxiv.org/abs/2108.07998v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-08-19-3">3. Table Caption Generation in Scholarly Documents Leveraging Pre-trained Language Models
+</h2>
+
+Title: [Table Caption Generation in Scholarly Documents Leveraging Pre-trained Language Models](https://arxiv.org/abs/2108.08111)
+
+Authors: [Junjie H. Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+J+H), [Kohei Shinden](https://arxiv.org/search/cs?searchtype=author&query=Shinden%2C+K), [Makoto P. Kato](https://arxiv.org/search/cs?searchtype=author&query=Kato%2C+M+P)
+
+> This paper addresses the problem of generating table captions for scholarly documents, which often require additional information outside the table. To this end, we propose a method of retrieving relevant sentences from the paper body, and feeding the table content as well as the retrieved sentences into pre-trained language models (e.g. T5 and GPT-2) for generating table captions. The contributions of this paper are: (1) discussion on the challenges in table captioning for scholarly documents; (2) development of a dataset DocBank-TB, which is publicly available; and (3) comparison of caption generation methods for scholarly documents with different strategies to retrieve relevant sentences from the paper body. Our experimental results showed that T5 is the better generation model for this task, as it outperformed GPT-2 in BLEU and METEOR implying that the generated text are clearer and more precise. Moreover, inputting relevant sentences matching the row header or whole table is effective.
+
+| Subjects:          | **Computation and Language (cs.CL)**                         |
+| ------------------ | ------------------------------------------------------------ |
+| Journal reference: | 2021 IEEE 10th Global Conference on Consumer Electronics (GCCE 2021) |
+| Cite as:           | **[arXiv:2108.08111](https://arxiv.org/abs/2108.08111) [cs.CL]** |
+|                    | (or **[arXiv:2108.08111v1](https://arxiv.org/abs/2108.08111v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-08-19-4">4. Deep Natural Language Processing for LinkedIn Search Systems
+</h2>
+
+Title: [Deep Natural Language Processing for LinkedIn Search Systems](https://arxiv.org/abs/2108.08252)
+
+Authors: [Weiwei Guo](https://arxiv.org/search/cs?searchtype=author&query=Guo%2C+W), [Xiaowei Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+X), [Sida Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+S), [Michaeel Kazi](https://arxiv.org/search/cs?searchtype=author&query=Kazi%2C+M), [Zhoutong Fu](https://arxiv.org/search/cs?searchtype=author&query=Fu%2C+Z), [Huiji Gao](https://arxiv.org/search/cs?searchtype=author&query=Gao%2C+H), [Jun Jia](https://arxiv.org/search/cs?searchtype=author&query=Jia%2C+J), [Liang Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+L), [Bo Long](https://arxiv.org/search/cs?searchtype=author&query=Long%2C+B)
+
+> Many search systems work with large amounts of natural language data, e.g., search queries, user profiles and documents, where deep learning based natural language processing techniques (deep NLP) can be of great help. In this paper, we introduce a comprehensive study of applying deep NLP techniques to five representative tasks in search engines. Through the model design and experiments of the five tasks, readers can find answers to three important questions: (1) When is deep NLP helpful/not helpful in search systems? (2) How to address latency challenges? (3) How to ensure model robustness? This work builds on existing efforts of LinkedIn search, and is tested at scale on a commercial search engine. We believe our experiences can provide useful insights for the industry and research communities.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2108.08252](https://arxiv.org/abs/2108.08252) [cs.CL]** |
+|           | (or **[arXiv:2108.08252v1](https://arxiv.org/abs/2108.08252v1) [cs.CL]** for this version) |
+
+
 
 
 
