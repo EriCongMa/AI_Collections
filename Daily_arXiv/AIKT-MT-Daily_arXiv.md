@@ -3,6 +3,12 @@
 # Index
 
 
+- [2021-08-20](#2021-08-20)
+
+  - [1. Contributions of Transformer Attention Heads in Multi- and Cross-lingual Tasks](#2021-08-20-1)
+  - [2. MvSR-NAT: Multi-view Subset Regularization for Non-Autoregressive Machine Translation](#2021-08-20-2)
+  - [3. Attentive fine-tuning of Transformers for Translation of low-resourced languages @LoResMT 2021](#2021-08-20-3)
+  - [4. Contrastive Language-Image Pre-training for the Italian Language](#2021-08-20-4)
 - [2021-08-19](#2021-08-19)
 
   - [1. X-modaler: A Versatile and High-performance Codebase for Cross-modal Analytics](#2021-08-19-1)
@@ -90,6 +96,87 @@
   - [6. Towards Universality in Multilingual Text Rewriting](#2021-08-02-6)
   - [7. ChrEnTranslate: Cherokee-English Machine Translation Demo with Quality Estimation and Corrective Feedback](#2021-08-02-7)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-08-20
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-08-20-1">1. Contributions of Transformer Attention Heads in Multi- and Cross-lingual Tasks
+</h2>
+
+Title: [Contributions of Transformer Attention Heads in Multi- and Cross-lingual Tasks](https://arxiv.org/abs/2108.08375)
+
+Authors: [Weicheng Ma](https://arxiv.org/search/cs?searchtype=author&query=Ma%2C+W), [Kai Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+K), [Renze Lou](https://arxiv.org/search/cs?searchtype=author&query=Lou%2C+R), [Lili Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+L), [Soroush Vosoughi](https://arxiv.org/search/cs?searchtype=author&query=Vosoughi%2C+S)
+
+> This paper studies the relative importance of attention heads in Transformer-based models to aid their interpretability in cross-lingual and multi-lingual tasks. Prior research has found that only a few attention heads are important in each mono-lingual Natural Language Processing (NLP) task and pruning the remaining heads leads to comparable or improved performance of the model. However, the impact of pruning attention heads is not yet clear in cross-lingual and multi-lingual tasks. Through extensive experiments, we show that (1) pruning a number of attention heads in a multi-lingual Transformer-based model has, in general, positive effects on its performance in cross-lingual and multi-lingual tasks and (2) the attention heads to be pruned can be ranked using gradients and identified with a few trial experiments. Our experiments focus on sequence labeling tasks, with potential applicability on other cross-lingual and multi-lingual tasks. For comprehensiveness, we examine two pre-trained multi-lingual models, namely multi-lingual BERT (mBERT) and XLM-R, on three tasks across 9 languages each. We also discuss the validity of our findings and their extensibility to truly resource-scarce languages and other task settings.
+
+| Comments: | In ACL 2021                                                  |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| DOI:      | [10.18653/v1/2021.acl-long.152](https://arxiv.org/ct?url=https%3A%2F%2Fdx.doi.org%2F10.18653%2Fv1%2F2021.acl-long.152&v=ee32058a) |
+| Cite as:  | **[arXiv:2108.08375](https://arxiv.org/abs/2108.08375) [cs.CL]** |
+|           | (or **[arXiv:2108.08375v1](https://arxiv.org/abs/2108.08375v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-08-20-2">2. MvSR-NAT: Multi-view Subset Regularization for Non-Autoregressive Machine Translation
+</h2>
+
+Title: [MvSR-NAT: Multi-view Subset Regularization for Non-Autoregressive Machine Translation](https://arxiv.org/abs/2108.08447)
+
+Authors: [Pan Xie](https://arxiv.org/search/cs?searchtype=author&query=Xie%2C+P), [Zexian Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Z), [Xiaohui Hu](https://arxiv.org/search/cs?searchtype=author&query=Hu%2C+X)
+
+> Conditional masked language models (CMLM) have shown impressive progress in non-autoregressive machine translation (NAT). They learn the conditional translation model by predicting the random masked subset in the target sentence. Based on the CMLM framework, we introduce Multi-view Subset Regularization (MvSR), a novel regularization method to improve the performance of the NAT model. Specifically, MvSR consists of two parts: (1) \textit{shared mask consistency}: we forward the same target with different mask strategies, and encourage the predictions of shared mask positions to be consistent with each other. (2) \textit{model consistency}, we maintain an exponential moving average of the model weights, and enforce the predictions to be consistent between the average model and the online model. Without changing the CMLM-based architecture, our approach achieves remarkable performance on three public benchmarks with 0.36-1.14 BLEU gains over previous NAT models. Moreover, compared with the stronger Transformer baseline, we reduce the gap to 0.01-0.44 BLEU scores on small datasets (WMT16 RO↔EN and IWSLT DE→EN).
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2108.08447](https://arxiv.org/abs/2108.08447) [cs.CL]** |
+|           | (or **[arXiv:2108.08447v1](https://arxiv.org/abs/2108.08447v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-08-20-3">3. Attentive fine-tuning of Transformers for Translation of low-resourced languages @LoResMT 2021
+</h2>
+
+Title: [Attentive fine-tuning of Transformers for Translation of low-resourced languages @LoResMT 2021](https://arxiv.org/abs/2108.08556)
+
+Authors: [Karthik Puranik](https://arxiv.org/search/cs?searchtype=author&query=Puranik%2C+K), [Adeep Hande](https://arxiv.org/search/cs?searchtype=author&query=Hande%2C+A), [Ruba Priyadharshini](https://arxiv.org/search/cs?searchtype=author&query=Priyadharshini%2C+R), [Thenmozi Durairaj](https://arxiv.org/search/cs?searchtype=author&query=Durairaj%2C+T), [Anbukkarasi Sampath](https://arxiv.org/search/cs?searchtype=author&query=Sampath%2C+A), [Kingston Pal Thamburaj](https://arxiv.org/search/cs?searchtype=author&query=Thamburaj%2C+K+P), [Bharathi Raja Chakravarthi](https://arxiv.org/search/cs?searchtype=author&query=Chakravarthi%2C+B+R)
+
+> This paper reports the Machine Translation (MT) systems submitted by the IIITT team for the English->Marathi and English->Irish language pairs LoResMT 2021 shared task. The task focuses on getting exceptional translations for rather low-resourced languages like Irish and Marathi. We fine-tune IndicTrans, a pretrained multilingual NMT model for English->Marathi, using external parallel corpus as input for additional training. We have used a pretrained Helsinki-NLP Opus MT English->Irish model for the latter language pair. Our approaches yield relatively promising results on the BLEU metrics. Under the team name IIITT, our systems ranked 1, 1, and 2 in English->Marathi, Irish->English, and English->Irish, respectively.
+
+| Comments: | 10 pages                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2108.08556](https://arxiv.org/abs/2108.08556) [cs.CL]** |
+|           | (or **[arXiv:2108.08556v1](https://arxiv.org/abs/2108.08556v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-08-20-4">4. Contrastive Language-Image Pre-training for the Italian Language
+</h2>
+
+Title: [Contrastive Language-Image Pre-training for the Italian Language](https://arxiv.org/abs/2108.08688)
+
+Authors: [Federico Bianchi](https://arxiv.org/search/cs?searchtype=author&query=Bianchi%2C+F), [Giuseppe Attanasio](https://arxiv.org/search/cs?searchtype=author&query=Attanasio%2C+G), [Raphael Pisoni](https://arxiv.org/search/cs?searchtype=author&query=Pisoni%2C+R), [Silvia Terragni](https://arxiv.org/search/cs?searchtype=author&query=Terragni%2C+S), [Gabriele Sarti](https://arxiv.org/search/cs?searchtype=author&query=Sarti%2C+G), [Sri Lakshmi](https://arxiv.org/search/cs?searchtype=author&query=Lakshmi%2C+S)
+
+> CLIP (Contrastive Language-Image Pre-training) is a very recent multi-modal model that jointly learns representations of images and texts. The model is trained on a massive amount of English data and shows impressive performance on zero-shot classification tasks. Training the same model on a different language is not trivial, since data in other languages might be not enough and the model needs high-quality translations of the texts to guarantee a good performance. In this paper, we present the first CLIP model for the Italian Language (CLIP-Italian), trained on more than 1.4 million image-text pairs. Results show that CLIP-Italian outperforms the multilingual CLIP model on the tasks of image retrieval and zero-shot classification.
+
+| Subjects: | **Computation and Language (cs.CL)**; Computer Vision and Pattern Recognition (cs.CV) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2108.08688](https://arxiv.org/abs/2108.08688) [cs.CL]** |
+|           | (or **[arXiv:2108.08688v1](https://arxiv.org/abs/2108.08688v1) [cs.CL]** for this version) |
+
+
 
 
 
