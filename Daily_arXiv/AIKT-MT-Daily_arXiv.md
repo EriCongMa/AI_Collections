@@ -3,8 +3,16 @@
 # Index
 
 
-- [2021-08-20](#2021-08-20)
+- [2021-08-23](#2021-08-23)
 
+  - [1. CIGLI: Conditional Image Generation from Language & Image](#2021-08-23-1)
+  - [2. Localize, Group, and Select: Boosting Text-VQA by Scene Text Modeling](#2021-08-23-2)
+  - [3. Airbert: In-domain Pretraining for Vision-and-Language Navigation](#2021-08-23-3)
+  - [4. Group-based Distinctive Image Captioning with Memory Attention](#2021-08-23-4)
+  - [5. Sentence-T5: Scalable Sentence Encoders from Pre-trained Text-to-Text Models](#2021-08-23-5)
+  - [6. Fastformer: Additive Attention is All You Need](#2021-08-23-6)
+  - [7. Smart Bird: Learnable Sparse Attention for Efficient and Effective Transformer](#2021-08-23-7)
+- [2021-08-20](#2021-08-20)
   - [1. Contributions of Transformer Attention Heads in Multi- and Cross-lingual Tasks](#2021-08-20-1)
   - [2. MvSR-NAT: Multi-view Subset Regularization for Non-Autoregressive Machine Translation](#2021-08-20-2)
   - [3. Attentive fine-tuning of Transformers for Translation of low-resourced languages @LoResMT 2021](#2021-08-20-3)
@@ -96,6 +104,143 @@
   - [6. Towards Universality in Multilingual Text Rewriting](#2021-08-02-6)
   - [7. ChrEnTranslate: Cherokee-English Machine Translation Demo with Quality Estimation and Corrective Feedback](#2021-08-02-7)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-08-23
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-08-23-1">1. CIGLI: Conditional Image Generation from Language & Image
+</h2>
+
+Title: [CIGLI: Conditional Image Generation from Language & Image](https://arxiv.org/abs/2108.08955)
+
+Authors: [Xiaopeng Lu](https://arxiv.org/search/cs?searchtype=author&query=Lu%2C+X), [Lynnette Ng](https://arxiv.org/search/cs?searchtype=author&query=Ng%2C+L), [Jared Fernandez](https://arxiv.org/search/cs?searchtype=author&query=Fernandez%2C+J), [Hao Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+H)
+
+> Multi-modal generation has been widely explored in recent years. Current research directions involve generating text based on an image or vice versa. In this paper, we propose a new task called CIGLI: Conditional Image Generation from Language and Image. Instead of generating an image based on text as in text-image generation, this task requires the generation of an image from a textual description and an image prompt. We designed a new dataset to ensure that the text description describes information from both images, and that solely analyzing the description is insufficient to generate an image. We then propose a novel language-image fusion model which improves the performance over two established baseline methods, as evaluated by quantitative (automatic) and qualitative (human) evaluations. The code and dataset is available at [this https URL](https://github.com/vincentlux/CIGLI).
+
+| Comments: | 5 pages                                                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2108.08955](https://arxiv.org/abs/2108.08955) [cs.CV]** |
+|           | (or **[arXiv:2108.08955v1](https://arxiv.org/abs/2108.08955v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-08-23-2">2. Localize, Group, and Select: Boosting Text-VQA by Scene Text Modeling
+</h2>
+
+Title: [Localize, Group, and Select: Boosting Text-VQA by Scene Text Modeling](https://arxiv.org/abs/2108.08965)
+
+Authors: [Xiaopeng Lu](https://arxiv.org/search/cs?searchtype=author&query=Lu%2C+X), [Zhen Fan](https://arxiv.org/search/cs?searchtype=author&query=Fan%2C+Z), [Yansen Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Y), [Jean Oh](https://arxiv.org/search/cs?searchtype=author&query=Oh%2C+J), [Carolyn P. Rose](https://arxiv.org/search/cs?searchtype=author&query=Rose%2C+C+P)
+
+> As an important task in multimodal context understanding, Text-VQA (Visual Question Answering) aims at question answering through reading text information in images. It differentiates from the original VQA task as Text-VQA requires large amounts of scene-text relationship understanding, in addition to the cross-modal grounding capability. In this paper, we propose Localize, Group, and Select (LOGOS), a novel model which attempts to tackle this problem from multiple aspects. LOGOS leverages two grounding tasks to better localize the key information of the image, utilizes scene text clustering to group individual OCR tokens, and learns to select the best answer from different sources of OCR (Optical Character Recognition) texts. Experiments show that LOGOS outperforms previous state-of-the-art methods on two Text-VQA benchmarks without using additional OCR annotation data. Ablation studies and analysis demonstrate the capability of LOGOS to bridge different modalities and better understand scene text.
+
+| Comments: | 9 pages                                                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2108.08965](https://arxiv.org/abs/2108.08965) [cs.CV]** |
+|           | (or **[arXiv:2108.08965v1](https://arxiv.org/abs/2108.08965v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-08-23-3">3. Airbert: In-domain Pretraining for Vision-and-Language Navigation
+</h2>
+
+Title: [Airbert: In-domain Pretraining for Vision-and-Language Navigation](https://arxiv.org/abs/2108.09105)
+
+Authors: [Pierre-Louis Guhur](https://arxiv.org/search/cs?searchtype=author&query=Guhur%2C+P), [Makarand Tapaswi](https://arxiv.org/search/cs?searchtype=author&query=Tapaswi%2C+M), [Shizhe Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+S), [Ivan Laptev](https://arxiv.org/search/cs?searchtype=author&query=Laptev%2C+I), [Cordelia Schmid](https://arxiv.org/search/cs?searchtype=author&query=Schmid%2C+C)
+
+> Vision-and-language navigation (VLN) aims to enable embodied agents to navigate in realistic environments using natural language instructions. Given the scarcity of domain-specific training data and the high diversity of image and language inputs, the generalization of VLN agents to unseen environments remains challenging. Recent methods explore pretraining to improve generalization, however, the use of generic image-caption datasets or existing small-scale VLN environments is suboptimal and results in limited improvements. In this work, we introduce BnB, a large-scale and diverse in-domain VLN dataset. We first collect image-caption (IC) pairs from hundreds of thousands of listings from online rental marketplaces. Using IC pairs we next propose automatic strategies to generate millions of VLN path-instruction (PI) pairs. We further propose a shuffling loss that improves the learning of temporal order inside PI pairs. We use BnB pretrain our Airbert model that can be adapted to discriminative and generative settings and show that it outperforms state of the art for Room-to-Room (R2R) navigation and Remote Referring Expression (REVERIE) benchmarks. Moreover, our in-domain pretraining significantly increases performance on a challenging few-shot VLN evaluation, where we train the model only on VLN instructions from a few houses.
+
+| Comments: | To be published on ICCV 2021. Webpage is at [this https URL](https://airbert-vln.github.io/) linking to our dataset, codes and models |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL); Human-Computer Interaction (cs.HC); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2108.09105](https://arxiv.org/abs/2108.09105) [cs.CV]** |
+|           | (or **[arXiv:2108.09105v1](https://arxiv.org/abs/2108.09105v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-08-23-4">4. Group-based Distinctive Image Captioning with Memory Attention
+</h2>
+
+Title: [Group-based Distinctive Image Captioning with Memory Attention](https://arxiv.org/abs/2108.09151)
+
+Authors: [Jiuniu Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+J), [Wenjia Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+W), [Qingzhong Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Q), [Antoni B. Chan](https://arxiv.org/search/cs?searchtype=author&query=Chan%2C+A+B)
+
+> Describing images using natural language is widely known as image captioning, which has made consistent progress due to the development of computer vision and natural language generation techniques. Though conventional captioning models achieve high accuracy based on popular metrics, i.e., BLEU, CIDEr, and SPICE, the ability of captions to distinguish the target image from other similar images is under-explored. To generate distinctive captions, a few pioneers employ contrastive learning or re-weighted the ground-truth captions, which focuses on one single input image. However, the relationships between objects in a similar image group (e.g., items or properties within the same album or fine-grained events) are neglected. In this paper, we improve the distinctiveness of image captions using a Group-based Distinctive Captioning Model (GdisCap), which compares each image with other images in one similar group and highlights the uniqueness of each image. In particular, we propose a group-based memory attention (GMA) module, which stores object features that are unique among the image group (i.e., with low similarity to objects in other images). These unique object features are highlighted when generating captions, resulting in more distinctive captions. Furthermore, the distinctive words in the ground-truth captions are selected to supervise the language decoder and GMA. Finally, we propose a new evaluation metric, distinctive word rate (DisWordRate) to measure the distinctiveness of captions. Quantitative results indicate that the proposed method significantly improves the distinctiveness of several baseline models, and achieves the state-of-the-art performance on both accuracy and distinctiveness. Results of a user study agree with the quantitative evaluation and demonstrate the rationality of the new metric DisWordRate.
+
+| Comments: | Accepted at ACM MM 2021 (oral)                               |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2108.09151](https://arxiv.org/abs/2108.09151) [cs.CV]** |
+|           | (or **[arXiv:2108.09151v1](https://arxiv.org/abs/2108.09151v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-08-23-5">5. Sentence-T5: Scalable Sentence Encoders from Pre-trained Text-to-Text Models
+</h2>
+
+Title: [Sentence-T5: Scalable Sentence Encoders from Pre-trained Text-to-Text Models](https://arxiv.org/abs/2108.08877)
+
+Authors: [Jianmo Ni](https://arxiv.org/search/cs?searchtype=author&query=Ni%2C+J), [Gustavo Hernández {Á}brego](https://arxiv.org/search/cs?searchtype=author&query={Á}brego%2C+G+H), [Noah Constant](https://arxiv.org/search/cs?searchtype=author&query=Constant%2C+N), [Ji Ma](https://arxiv.org/search/cs?searchtype=author&query=Ma%2C+J), [Keith B. Hall](https://arxiv.org/search/cs?searchtype=author&query=Hall%2C+K+B), [Daniel Cer](https://arxiv.org/search/cs?searchtype=author&query=Cer%2C+D), [Yinfei Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+Y)
+
+> We provide the first exploration of text-to-text transformers (T5) sentence embeddings. Sentence embeddings are broadly useful for language processing tasks. While T5 achieves impressive performance on language tasks cast as sequence-to-sequence mapping problems, it is unclear how to produce sentence embeddings from encoder-decoder models. We investigate three methods for extracting T5 sentence embeddings: two utilize only the T5 encoder and one uses the full T5 encoder-decoder model. Our encoder-only models outperforms BERT-based sentence embeddings on both transfer tasks and semantic textual similarity (STS). Our encoder-decoder method achieves further improvement on STS. Scaling up T5 from millions to billions of parameters is found to produce consistent improvements on downstream tasks. Finally, we introduce a two-stage contrastive learning approach that achieves a new state-of-art on STS using sentence embeddings, outperforming both Sentence BERT and SimCSE.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2108.08877](https://arxiv.org/abs/2108.08877) [cs.CL]** |
+|           | (or **[arXiv:2108.08877v1](https://arxiv.org/abs/2108.08877v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-08-23-6">6. Fastformer: Additive Attention is All You Need
+</h2>
+
+Title: [Fastformer: Additive Attention is All You Need](https://arxiv.org/abs/2108.09084)
+
+Authors: [Chuhan Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+C), [Fangzhao Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+F), [Tao Qi](https://arxiv.org/search/cs?searchtype=author&query=Qi%2C+T), [Yongfeng Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+Y)
+
+> Transformer is a powerful model for text understanding. However, it is inefficient due to its quadratic complexity to input sequence length. Although there are many methods on Transformer acceleration, they are still either inefficient on long sequences or not effective enough. In this paper, we propose Fastformer, which is an efficient Transformer model based on additive attention. In Fastformer, instead of modeling the pair-wise interactions between tokens, we first use additive attention mechanism to model global contexts, and then further transform each token representation based on its interaction with global context representations. In this way, Fastformer can achieve effective context modeling with linear complexity. Extensive experiments on five datasets show that Fastformer is much more efficient than many existing Transformer models and can meanwhile achieve comparable or even better long text modeling performance.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2108.09084](https://arxiv.org/abs/2108.09084) [cs.CL]** |
+|           | (or **[arXiv:2108.09084v1](https://arxiv.org/abs/2108.09084v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-08-23-7">7. Smart Bird: Learnable Sparse Attention for Efficient and Effective Transformer
+</h2>
+
+Title: [Smart Bird: Learnable Sparse Attention for Efficient and Effective Transformer](https://arxiv.org/abs/2108.09193)
+
+Authors: [Chuhan Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+C), [Fangzhao Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+F), [Tao Qi](https://arxiv.org/search/cs?searchtype=author&query=Qi%2C+T), [Yongfeng Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+Y)
+
+> Transformer has achieved great success in NLP. However, the quadratic complexity of the self-attention mechanism in Transformer makes it inefficient in handling long sequences. Many existing works explore to accelerate Transformers by computing sparse self-attention instead of a dense one, which usually attends to tokens at certain positions or randomly selected tokens. However, manually selected or random tokens may be uninformative for context modeling. In this paper, we propose Smart Bird, which is an efficient and effective Transformer with learnable sparse attention. In Smart Bird, we first compute a sketched attention matrix with a single-head low-dimensional Transformer, which aims to find potential important interactions between tokens. We then sample token pairs based on their probability scores derived from the sketched attention matrix to generate different sparse attention index matrices for different attention heads. Finally, we select token embeddings according to the index matrices to form the input of sparse attention networks. Extensive experiments on six benchmark datasets for different tasks validate the efficiency and effectiveness of Smart Bird in text modeling.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2108.09193](https://arxiv.org/abs/2108.09193) [cs.CL]** |
+|           | (or **[arXiv:2108.09193v1](https://arxiv.org/abs/2108.09193v1) [cs.CL]** for this version) |
+
+
+
 
 
 
