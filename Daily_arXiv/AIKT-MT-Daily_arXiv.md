@@ -3,6 +3,12 @@
 # Index
 
 
+- [2021-08-24](#2021-08-24)
+
+  - [1. Grid-VLP: Revisiting Grid Features for Vision-Language Pre-training](#2021-08-24-1)
+  - [2. Metric Learning in Multilingual Sentence Similarity Measurement for Document Alignment](#2021-08-24-2)
+  - [3. A Unified Transformer-based Framework for Duplex Text Normalization](#2021-08-24-3)
+  - [4. Semantic-Preserving Adversarial Text Attacks](#2021-08-24-4)
 - [2021-08-23](#2021-08-23)
 
   - [1. CIGLI: Conditional Image Generation from Language & Image](#2021-08-23-1)
@@ -104,6 +110,92 @@
   - [6. Towards Universality in Multilingual Text Rewriting](#2021-08-02-6)
   - [7. ChrEnTranslate: Cherokee-English Machine Translation Demo with Quality Estimation and Corrective Feedback](#2021-08-02-7)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-08-24
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-08-24-1">1. Grid-VLP: Revisiting Grid Features for Vision-Language Pre-training
+</h2>
+
+Title: [Grid-VLP: Revisiting Grid Features for Vision-Language Pre-training](https://arxiv.org/abs/2108.09479)
+
+Authors: [Ming Yan](https://arxiv.org/search/cs?searchtype=author&query=Yan%2C+M), [Haiyang Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+H), [Chenliang Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+C), [Bin Bi](https://arxiv.org/search/cs?searchtype=author&query=Bi%2C+B), [Junfeng Tian](https://arxiv.org/search/cs?searchtype=author&query=Tian%2C+J), [Min Gui](https://arxiv.org/search/cs?searchtype=author&query=Gui%2C+M), [Wei Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+W)
+
+> Existing approaches to vision-language pre-training (VLP) heavily rely on an object detector based on bounding boxes (regions), where salient objects are first detected from images and then a Transformer-based model is used for cross-modal fusion. Despite their superior performance, these approaches are bounded by the capability of the object detector in terms of both effectiveness and efficiency. Besides, the presence of object detection imposes unnecessary constraints on model designs and makes it difficult to support end-to-end training. In this paper, we revisit grid-based convolutional features for vision-language pre-training, skipping the expensive region-related steps. We propose a simple yet effective grid-based VLP method that works surprisingly well with the grid features. By pre-training only with in-domain datasets, the proposed Grid-VLP method can outperform most competitive region-based VLP methods on three examined vision-language understanding tasks. We hope that our findings help to further advance the state of the art of vision-language pre-training, and provide a new direction towards effective and efficient VLP.
+
+| Subjects: | **Multimedia (cs.MM)**; Computation and Language (cs.CL); Computer Vision and Pattern Recognition (cs.CV) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2108.09479](https://arxiv.org/abs/2108.09479) [cs.MM]** |
+|           | (or **[arXiv:2108.09479v1](https://arxiv.org/abs/2108.09479v1) [cs.MM]** for this version) |
+
+
+
+
+
+<h2 id="2021-08-24-2">2. Metric Learning in Multilingual Sentence Similarity Measurement for Document Alignment
+</h2>
+
+Title: [Metric Learning in Multilingual Sentence Similarity Measurement for Document Alignment](https://arxiv.org/abs/2108.09495)
+
+Authors: [Charith Rajitha](https://arxiv.org/search/cs?searchtype=author&query=Rajitha%2C+C), [Lakmali Piyarathne](https://arxiv.org/search/cs?searchtype=author&query=Piyarathne%2C+L), [Dilan Sachintha](https://arxiv.org/search/cs?searchtype=author&query=Sachintha%2C+D), [Surangika Ranathunga](https://arxiv.org/search/cs?searchtype=author&query=Ranathunga%2C+S)
+
+> Document alignment techniques based on multilingual sentence representations have recently shown state of the art results. However, these techniques rely on unsupervised distance measurement techniques, which cannot be fined-tuned to the task at hand. In this paper, instead of these unsupervised distance measurement techniques, we employ Metric Learning to derive task-specific distance measurements. These measurements are supervised, meaning that the distance measurement metric is trained using a parallel dataset. Using a dataset belonging to English, Sinhala, and Tamil, which belong to three different language families, we show that these task-specific supervised distance learning metrics outperform their unsupervised counterparts, for document alignment.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2108.09495](https://arxiv.org/abs/2108.09495) [cs.CL]** |
+|           | (or **[arXiv:2108.09495v1](https://arxiv.org/abs/2108.09495v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-08-24-3">3. A Unified Transformer-based Framework for Duplex Text Normalization
+</h2>
+
+Title: [A Unified Transformer-based Framework for Duplex Text Normalization](https://arxiv.org/abs/2108.09889)
+
+Authors: [Tuan Manh Lai](https://arxiv.org/search/cs?searchtype=author&query=Lai%2C+T+M), [Yang Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Y), [Evelina Bakhturina](https://arxiv.org/search/cs?searchtype=author&query=Bakhturina%2C+E), [Boris Ginsburg](https://arxiv.org/search/cs?searchtype=author&query=Ginsburg%2C+B), [Heng Ji](https://arxiv.org/search/cs?searchtype=author&query=Ji%2C+H)
+
+> Text normalization (TN) and inverse text normalization (ITN) are essential preprocessing and postprocessing steps for text-to-speech synthesis and automatic speech recognition, respectively. Many methods have been proposed for either TN or ITN, ranging from weighted finite-state transducers to neural networks. Despite their impressive performance, these methods aim to tackle only one of the two tasks but not both. As a result, in a complete spoken dialog system, two separate models for TN and ITN need to be built. This heterogeneity increases the technical complexity of the system, which in turn increases the cost of maintenance in a production setting. Motivated by this observation, we propose a unified framework for building a single neural duplex system that can simultaneously handle TN and ITN. Combined with a simple but effective data augmentation method, our systems achieve state-of-the-art results on the Google TN dataset for English and Russian. They can also reach over 95% sentence-level accuracy on an internal English TN dataset without any additional fine-tuning. In addition, we also create a cleaned dataset from the Spoken Wikipedia Corpora for German and report the performance of our systems on the dataset. Overall, experimental results demonstrate the proposed duplex text normalization framework is highly effective and applicable to a range of domains and languages
+
+| Comments: | Under Review                                                 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2108.09889](https://arxiv.org/abs/2108.09889) [cs.CL]** |
+|           | (or **[arXiv:2108.09889v1](https://arxiv.org/abs/2108.09889v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-08-24-4">4. Semantic-Preserving Adversarial Text Attacks
+</h2>
+
+Title: [Semantic-Preserving Adversarial Text Attacks](https://arxiv.org/abs/2108.10015)
+
+Authors: [Xinghao Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+X), [Weifeng Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+W), [James Bailey](https://arxiv.org/search/cs?searchtype=author&query=Bailey%2C+J), [Tianqing Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+T), [Dacheng Tao](https://arxiv.org/search/cs?searchtype=author&query=Tao%2C+D), [Wei Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+W)
+
+> Deep neural networks (DNNs) are known to be vulnerable to adversarial images, while their robustness in text classification is rarely studied. Several lines of text attack methods have been proposed in the literature, including character-level, word-level, and sentence-level attacks. However, it is still a challenge to minimize the number of word changes necessary to induce misclassification, while simultaneously ensuring lexical correctness, syntactic soundness, and semantic similarity. In this paper, we propose a Bigram and Unigram based adaptive Semantic Preservation Optimization (BU-SPO) method to examine the vulnerability of deep models. Our method has four major merits. Firstly, we propose to attack text documents not only at the unigram word level but also at the bigram level which better keeps semantics and avoids producing meaningless outputs. Secondly, we propose a hybrid method to replace the input words with options among both their synonyms candidates and sememe candidates, which greatly enriches the potential substitutions compared to only using synonyms. Thirdly, we design an optimization algorithm, i.e., Semantic Preservation Optimization (SPO), to determine the priority of word replacements, aiming to reduce the modification cost. Finally, we further improve the SPO with a semantic Filter (named SPOF) to find the adversarial example with the highest semantic similarity. We evaluate the effectiveness of our BU-SPO and BU-SPOF on IMDB, AG's News, and Yahoo! Answers text datasets by attacking four popular DNNs models. Results show that our methods achieve the highest attack success rates and semantics rates by changing the smallest number of words compared with existing methods.
+
+| Comments: | 12 pages, 3 figures, 10 tables                               |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (stat.ML) |
+| Cite as:  | **[arXiv:2108.10015](https://arxiv.org/abs/2108.10015) [cs.CL]** |
+|           | (or **[arXiv:2108.10015v1](https://arxiv.org/abs/2108.10015v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
