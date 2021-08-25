@@ -3,8 +3,13 @@
 # Index
 
 
-- [2021-08-24](#2021-08-24)
+- [2021-08-25](#2021-08-25)
 
+  - [1. Examining Covert Gender Bias: A Case Study in Turkish and English Machine Translation Models](#2021-08-25-1)
+  - [2. Recurrent multiple shared layers in Depth for Neural Machine Translation](#2021-08-25-2)
+  - [3. More Than Words: Collocation Tokenization for Latent Dirichlet Allocation Models](#2021-08-25-3)
+  - [4. Regularizing Transformers With Deep Probabilistic Layers](#2021-08-25-4)
+- [2021-08-24](#2021-08-24)
   - [1. Grid-VLP: Revisiting Grid Features for Vision-Language Pre-training](#2021-08-24-1)
   - [2. Metric Learning in Multilingual Sentence Similarity Measurement for Document Alignment](#2021-08-24-2)
   - [3. A Unified Transformer-based Framework for Duplex Text Normalization](#2021-08-24-3)
@@ -110,6 +115,86 @@
   - [6. Towards Universality in Multilingual Text Rewriting](#2021-08-02-6)
   - [7. ChrEnTranslate: Cherokee-English Machine Translation Demo with Quality Estimation and Corrective Feedback](#2021-08-02-7)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-08-25
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-08-25-1">1. Examining Covert Gender Bias: A Case Study in Turkish and English Machine Translation Models
+</h2>
+
+Title: [Examining Covert Gender Bias: A Case Study in Turkish and English Machine Translation Models](https://arxiv.org/abs/2108.10379)
+
+Authors: [Chloe Ciora](https://arxiv.org/search/cs?searchtype=author&query=Ciora%2C+C), [Nur Iren](https://arxiv.org/search/cs?searchtype=author&query=Iren%2C+N), [Malihe Alikhani](https://arxiv.org/search/cs?searchtype=author&query=Alikhani%2C+M)
+
+> As Machine Translation (MT) has become increasingly more powerful, accessible, and widespread, the potential for the perpetuation of bias has grown alongside its advances. While overt indicators of bias have been studied in machine translation, we argue that covert biases expose a problem that is further entrenched. Through the use of the gender-neutral language Turkish and the gendered language English, we examine cases of both overt and covert gender bias in MT models. Specifically, we introduce a method to investigate asymmetrical gender markings. We also assess bias in the attribution of personhood and examine occupational and personality stereotypes through overt bias indicators in MT models. Our work explores a deeper layer of bias in MT models and demonstrates the continued need for language-specific, interdisciplinary methodology in MT model development.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2108.10379](https://arxiv.org/abs/2108.10379) [cs.CL]** |
+|           | (or **[arXiv:2108.10379v1](https://arxiv.org/abs/2108.10379v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-08-25-2">2. Recurrent multiple shared layers in Depth for Neural Machine Translation
+</h2>
+
+Title: [Recurrent multiple shared layers in Depth for Neural Machine Translation](https://arxiv.org/abs/2108.10417)
+
+Authors: [GuoLiang Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+G), [Yiyang Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Y)
+
+> Learning deeper models is usually a simple and effective approach to improve model performance, but deeper models have larger model parameters and are more difficult to train. To get a deeper model, simply stacking more layers of the model seems to work well, but previous works have claimed that it cannot benefit the model. We propose to train a deeper model with recurrent mechanism, which loops the encoder and decoder blocks of Transformer in the depth direction. To address the increasing of model parameters, we choose to share parameters in different recursive moments. We conduct our experiments on WMT16 English-to-German and WMT14 English-to-France translation tasks, our model outperforms the shallow Transformer-Base/Big baseline by 0.35, 1.45 BLEU points, which is 27.23% of Transformer-Big model parameters. Compared to the deep Transformer(20-layer encoder, 6-layer decoder), our model has similar model performance and infer speed, but our model parameters are 54.72% of the former.
+
+| Comments: | 8 pages, 2 figures. arXiv admin note: substantial text overlap with [arXiv:2107.14590](https://arxiv.org/abs/2107.14590) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2108.10417](https://arxiv.org/abs/2108.10417) [cs.CL]** |
+|           | (or **[arXiv:2108.10417v1](https://arxiv.org/abs/2108.10417v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-08-25-3">3. More Than Words: Collocation Tokenization for Latent Dirichlet Allocation Models
+</h2>
+
+Title: [More Than Words: Collocation Tokenization for Latent Dirichlet Allocation Models](https://arxiv.org/abs/2108.10755)
+
+Authors: [Jin Cheevaprawatdomrong](https://arxiv.org/search/cs?searchtype=author&query=Cheevaprawatdomrong%2C+J), [Alexandra Schofield](https://arxiv.org/search/cs?searchtype=author&query=Schofield%2C+A), [Attapol T. Rutherford](https://arxiv.org/search/cs?searchtype=author&query=Rutherford%2C+A+T)
+
+> Traditionally, Latent Dirichlet Allocation (LDA) ingests words in a collection of documents to discover their latent topics using word-document co-occurrences. However, it is unclear how to achieve the best results for languages without marked word boundaries such as Chinese and Thai. Here, we explore the use of Pearson's chi-squared test, t-statistics, and Word Pair Encoding (WPE) to produce tokens as input to the LDA model. The Chi-squared, t, and WPE tokenizers are trained on Wikipedia text to look for words that should be grouped together, such as compound nouns, proper nouns, and complex event verbs. We propose a new metric for measuring the clustering quality in settings where the vocabularies of the models differ. Based on this metric and other established metrics, we show that topics trained with merged tokens result in topic keys that are clearer, more coherent, and more effective at distinguishing topics than those unmerged models.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2108.10755](https://arxiv.org/abs/2108.10755) [cs.CL]** |
+|           | (or **[arXiv:2108.10755v1](https://arxiv.org/abs/2108.10755v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-08-25-4">4. Regularizing Transformers With Deep Probabilistic Layers
+</h2>
+
+Title: [Regularizing Transformers With Deep Probabilistic Layers](https://arxiv.org/abs/2108.10764)
+
+Authors: [Aurora Cobo Aguilera](https://arxiv.org/search/cs?searchtype=author&query=Aguilera%2C+A+C), [Pablo Martínez Olmos](https://arxiv.org/search/cs?searchtype=author&query=Olmos%2C+P+M), [Antonio Artés-Rodríguez](https://arxiv.org/search/cs?searchtype=author&query=Artés-Rodríguez%2C+A), [Fernando Pérez-Cruz](https://arxiv.org/search/cs?searchtype=author&query=Pérez-Cruz%2C+F)
+
+> Language models (LM) have grown with non-stop in the last decade, from sequence-to-sequence architectures to the state-of-the-art and utter attention-based Transformers. In this work, we demonstrate how the inclusion of deep generative models within BERT can bring more versatile models, able to impute missing/noisy words with richer text or even improve BLEU score. More precisely, we use a Gaussian Mixture Variational Autoencoder (GMVAE) as a regularizer layer and prove its effectiveness not only in Transformers but also in the most relevant encoder-decoder based LM, seq2seq with and without attention.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2108.10764](https://arxiv.org/abs/2108.10764) [cs.CL]** |
+|           | (or **[arXiv:2108.10764v1](https://arxiv.org/abs/2108.10764v1) [cs.CL]** for this version) |
+
+
+
 
 
 
