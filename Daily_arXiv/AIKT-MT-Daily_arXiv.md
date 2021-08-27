@@ -3,8 +3,17 @@
 # Index
 
 
-- [2021-08-25](#2021-08-25)
+- [2021-08-27](#2021-08-27)
 
+  - [1. Similar Scenes arouse Similar Emotions: Parallel Data Augmentation for Stylized Image Captioning](#2021-08-27-1)
+  - [2. LocTex: Learning Data-Efficient Visual Representations from Localized Textual Supervision](#2021-08-27-2)
+  - [3. LayoutReader: Pre-training of Text and Layout for Reading Order Detection](#2021-08-27-3)
+- [2021-08-26](#2021-08-26)
+
+  - [1. SimVLM: Simple Visual Language Model Pretraining with Weak Supervision](#2021-08-26-1)
+  - [2. The State of SLIVAR: What's next for robots, human-robot interaction, and (spoken) dialogue systems?](#2021-08-26-2)
+  - [3. YANMTT: Yet Another Neural Machine Translation Toolkit](#2021-08-26-3)
+- [2021-08-25](#2021-08-25)
   - [1. Examining Covert Gender Bias: A Case Study in Turkish and English Machine Translation Models](#2021-08-25-1)
   - [2. Recurrent multiple shared layers in Depth for Neural Machine Translation](#2021-08-25-2)
   - [3. More Than Words: Collocation Tokenization for Latent Dirichlet Allocation Models](#2021-08-25-3)
@@ -115,6 +124,135 @@
   - [6. Towards Universality in Multilingual Text Rewriting](#2021-08-02-6)
   - [7. ChrEnTranslate: Cherokee-English Machine Translation Demo with Quality Estimation and Corrective Feedback](#2021-08-02-7)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-08-27
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-08-27-1">1. Similar Scenes arouse Similar Emotions: Parallel Data Augmentation for Stylized Image Captioning
+</h2>
+
+Title: [Similar Scenes arouse Similar Emotions: Parallel Data Augmentation for Stylized Image Captioning](https://arxiv.org/abs/2108.11912)
+
+Authors: [Guodun Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+G), [Yuchen Zhai](https://arxiv.org/search/cs?searchtype=author&query=Zhai%2C+Y), [Zehao Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+Z), [Yin Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Y)
+
+> Stylized image captioning systems aim to generate a caption not only semantically related to a given image but also consistent with a given style description. One of the biggest challenges with this task is the lack of sufficient paired stylized data. Many studies focus on unsupervised approaches, without considering from the perspective of data augmentation. We begin with the observation that people may recall similar emotions when they are in similar scenes, and often express similar emotions with similar style phrases, which underpins our data augmentation idea. In this paper, we propose a novel Extract-Retrieve-Generate data augmentation framework to extract style phrases from small-scale stylized sentences and graft them to large-scale factual captions. First, we design the emotional signal extractor to extract style phrases from small-scale stylized sentences. Second, we construct the plugable multi-modal scene retriever to retrieve scenes represented with pairs of an image and its stylized caption, which are similar to the query image or caption in the large-scale factual data. In the end, based on the style phrases of similar scenes and the factual description of the current scene, we build the emotion-aware caption generator to generate fluent and diversified stylized captions for the current scene. Extensive experimental results show that our framework can alleviate the data scarcity problem effectively. It also significantly boosts the performance of several existing image captioning models in both supervised and unsupervised settings, which outperforms the state-of-the-art stylized image captioning methods in terms of both sentence relevance and stylishness by a substantial margin.
+
+| Comments: | Accepted at ACM Multimedia (ACMMM) 2021                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL); Multimedia (cs.MM) |
+| DOI:      | [10.1145/3474085.3475662](https://arxiv.org/ct?url=https%3A%2F%2Fdx.doi.org%2F10.1145%2F3474085.3475662&v=2bc30c11) |
+| Cite as:  | **[arXiv:2108.11912](https://arxiv.org/abs/2108.11912) [cs.CV]** |
+|           | (or **[arXiv:2108.11912v1](https://arxiv.org/abs/2108.11912v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-08-27-2">2. LocTex: Learning Data-Efficient Visual Representations from Localized Textual Supervision
+</h2>
+
+Title: [LocTex: Learning Data-Efficient Visual Representations from Localized Textual Supervision](https://arxiv.org/abs/2108.11950)
+
+Authors: [Zhijian Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Z), [Simon Stent](https://arxiv.org/search/cs?searchtype=author&query=Stent%2C+S), [Jie Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+J), [John Gideon](https://arxiv.org/search/cs?searchtype=author&query=Gideon%2C+J), [Song Han](https://arxiv.org/search/cs?searchtype=author&query=Han%2C+S)
+
+> Computer vision tasks such as object detection and semantic/instance segmentation rely on the painstaking annotation of large training datasets. In this paper, we propose LocTex that takes advantage of the low-cost localized textual annotations (i.e., captions and synchronized mouse-over gestures) to reduce the annotation effort. We introduce a contrastive pre-training framework between images and captions and propose to supervise the cross-modal attention map with rendered mouse traces to provide coarse localization signals. Our learned visual features capture rich semantics (from free-form captions) and accurate localization (from mouse traces), which are very effective when transferred to various downstream vision tasks. Compared with ImageNet supervised pre-training, LocTex can reduce the size of the pre-training dataset by 10x or the target dataset by 2x while achieving comparable or even improved performance on COCO instance segmentation. When provided with the same amount of annotations, LocTex achieves around 4% higher accuracy than the previous state-of-the-art "vision+language" pre-training approach on the task of PASCAL VOC image classification.
+
+| Comments: | ICCV 2021. Project page: [this https URL](https://loctex.mit.edu/) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2108.11950](https://arxiv.org/abs/2108.11950) [cs.CV]** |
+|           | (or **[arXiv:2108.11950v1](https://arxiv.org/abs/2108.11950v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-08-27-3">3. LayoutReader: Pre-training of Text and Layout for Reading Order Detection
+</h2>
+
+Title: [LayoutReader: Pre-training of Text and Layout for Reading Order Detection](https://arxiv.org/abs/2108.11591)
+
+Authors: [Zilong Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Z), [Yiheng Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+Y), [Lei Cui](https://arxiv.org/search/cs?searchtype=author&query=Cui%2C+L), [Jingbo Shang](https://arxiv.org/search/cs?searchtype=author&query=Shang%2C+J), [Furu Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+F)
+
+> Reading order detection is the cornerstone to understanding visually-rich documents (e.g., receipts and forms). Unfortunately, no existing work took advantage of advanced deep learning models because it is too laborious to annotate a large enough dataset. We observe that the reading order of WORD documents is embedded in their XML metadata; meanwhile, it is easy to convert WORD documents to PDFs or images. Therefore, in an automated manner, we construct ReadingBank, a benchmark dataset that contains reading order, text, and layout information for 500,000 document images covering a wide spectrum of document types. This first-ever large-scale dataset unleashes the power of deep neural networks for reading order detection. Specifically, our proposed LayoutReader captures the text and layout information for reading order prediction using the seq2seq model. It performs almost perfectly in reading order detection and significantly improves both open-source and commercial OCR engines in ordering text lines in their results in our experiments. We will release the dataset and model at \url{[this https URL](https://aka.ms/readingbank)}.
+
+| Comments: | EMNLP 2021                                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2108.11591](https://arxiv.org/abs/2108.11591) [cs.CL]** |
+|           | (or **[arXiv:2108.11591v1](https://arxiv.org/abs/2108.11591v1) [cs.CL]** for this version) |
+
+
+
+
+
+# 2021-08-26
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-08-26-1">1. SimVLM: Simple Visual Language Model Pretraining with Weak Supervision
+</h2>
+
+Title: [SimVLM: Simple Visual Language Model Pretraining with Weak Supervision](https://arxiv.org/abs/2108.10904)
+
+Authors: [Zirui Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Z), [Jiahui Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+J), [Adams Wei Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+A+W), [Zihang Dai](https://arxiv.org/search/cs?searchtype=author&query=Dai%2C+Z), [Yulia Tsvetkov](https://arxiv.org/search/cs?searchtype=author&query=Tsvetkov%2C+Y), [Yuan Cao](https://arxiv.org/search/cs?searchtype=author&query=Cao%2C+Y)
+
+> With recent progress in joint modeling of visual and textual representations, Vision-Language Pretraining (VLP) has achieved impressive performance on many multimodal downstream tasks. However, the requirement for expensive annotations including clean image captions and regional labels limits the scalability of existing approaches, and complicates the pretraining procedure with the introduction of multiple dataset-specific objectives. In this work, we relax these constraints and present a minimalist pretraining framework, named Simple Visual Language Model (SimVLM). Unlike prior work, SimVLM reduces the training complexity by exploiting large-scale weak supervision, and is trained end-to-end with a single prefix language modeling objective. Without utilizing extra data or task-specific customization, the resulting model significantly outperforms previous pretraining methods and achieves new state-of-the-art results on a wide range of discriminative and generative vision-language benchmarks, including VQA (+3.74% vqa-score), NLVR2 (+1.17% accuracy), SNLI-VE (+1.37% accuracy) and image captioning tasks (+10.1% average CIDEr score). Furthermore, we demonstrate that SimVLM acquires strong generalization and transfer ability, enabling zero-shot behavior including open-ended visual question answering and cross-modality transfer.
+
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2108.10904](https://arxiv.org/abs/2108.10904) [cs.CV]** |
+|           | (or **[arXiv:2108.10904v1](https://arxiv.org/abs/2108.10904v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-08-26-2">2. The State of SLIVAR: What's next for robots, human-robot interaction, and (spoken) dialogue systems?
+</h2>
+
+Title: [The State of SLIVAR: What's next for robots, human-robot interaction, and (spoken) dialogue systems?](https://arxiv.org/abs/2108.10931)
+
+Authors: [Casey Kennington](https://arxiv.org/search/cs?searchtype=author&query=Kennington%2C+C)
+
+> We synthesize the reported results and recommendations of recent workshops and seminars that convened to discuss open questions within the important intersection of robotics, human-robot interaction, and spoken dialogue systems research. The goal of this growing area of research interest is to enable people to more effectively and naturally communicate with robots. To carry forward opportunities networking and discussion towards concrete, potentially fundable projects, we encourage interested parties to consider participating in future virtual and in-person discussions and workshops.
+
+| Comments: | 6 pages                                                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2108.10931](https://arxiv.org/abs/2108.10931) [cs.CL]** |
+|           | (or **[arXiv:2108.10931v1](https://arxiv.org/abs/2108.10931v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-08-26-3">3. YANMTT: Yet Another Neural Machine Translation Toolkit
+</h2>
+
+Title: [YANMTT: Yet Another Neural Machine Translation Toolkit](https://arxiv.org/abs/2108.11126)
+
+Authors: [Raj Dabre](https://arxiv.org/search/cs?searchtype=author&query=Dabre%2C+R), [Eiichiro Sumita](https://arxiv.org/search/cs?searchtype=author&query=Sumita%2C+E)
+
+> In this paper we present our open-source neural machine translation (NMT) toolkit called "Yet Another Neural Machine Translation Toolkit" abbreviated as YANMTT which is built on top of the Transformers library. Despite the growing importance of sequence to sequence pre-training there surprisingly few, if not none, well established toolkits that allow users to easily do pre-training. Toolkits such as Fairseq which do allow pre-training, have very large codebases and thus they are not beginner friendly. With regards to transfer learning via fine-tuning most toolkits do not explicitly allow the user to have control over what parts of the pre-trained models can be transferred. YANMTT aims to address these issues via the minimum amount of code to pre-train large scale NMT models, selectively transfer pre-trained parameters and fine-tune them, perform translation as well as extract representations and attentions for visualization and analyses. Apart from these core features our toolkit also provides other advanced functionalities such as but not limited to document/multi-source NMT, simultaneous NMT and model compression via distillation which we believe are relevant to the purpose behind our toolkit.
+
+| Comments: | Submitted to EMNLP 2021 Demo Track                           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2108.11126](https://arxiv.org/abs/2108.11126) [cs.CL]** |
+|           | (or **[arXiv:2108.11126v1](https://arxiv.org/abs/2108.11126v1) [cs.CL]** for this version) |
+
+
+
+
+
 
 
 
