@@ -3,8 +3,17 @@
 # Index
 
 
-- [2021-08-27](#2021-08-27)
+- [2021-08-30](#2021-08-30)
 
+  - [1. A New Sentence Ordering Method Using BERT Pretrained Model](#2021-08-30-1)
+  - [2. Secoco: Self-Correcting Encoding for Neural Machine Translation](#2021-08-30-2)
+  - [3. Translation Error Detection as Rationale Extraction](#2021-08-30-3)
+  - [4. Exploring the Capacity of a Large-scale Masked Language Model to Recognize Grammatical Errors](#2021-08-30-4)
+  - [5. Injecting Text in Self-Supervised Speech Pretraining](#2021-08-30-5)
+  - [6. Evaluating the Robustness of Neural Language Models to Input Perturbations](#2021-08-30-6)
+  - [7. CAPE: Context-Aware Private Embeddings for Private Language Learning](#2021-08-30-7)
+  - [8. Train Short, Test Long: Attention with Linear Biases Enables Input Length Extrapolation](#2021-08-30-8)
+- [2021-08-27](#2021-08-27)
   - [1. Similar Scenes arouse Similar Emotions: Parallel Data Augmentation for Stylized Image Captioning](#2021-08-27-1)
   - [2. LocTex: Learning Data-Efficient Visual Representations from Localized Textual Supervision](#2021-08-27-2)
   - [3. LayoutReader: Pre-training of Text and Layout for Reading Order Detection](#2021-08-27-3)
@@ -124,6 +133,166 @@
   - [6. Towards Universality in Multilingual Text Rewriting](#2021-08-02-6)
   - [7. ChrEnTranslate: Cherokee-English Machine Translation Demo with Quality Estimation and Corrective Feedback](#2021-08-02-7)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-08-30
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-08-30-1">1. A New Sentence Ordering Method Using BERT Pretrained Model
+</h2>
+
+Title: [A New Sentence Ordering Method Using BERT Pretrained Model](https://arxiv.org/abs/2108.11994)
+
+Authors: [Melika Golestani](https://arxiv.org/search/cs?searchtype=author&query=Golestani%2C+M), [Seyedeh Zahra Razavi](https://arxiv.org/search/cs?searchtype=author&query=Razavi%2C+S+Z), [Heshaam Faili](https://arxiv.org/search/cs?searchtype=author&query=Faili%2C+H)
+
+> Building systems with capability of natural language understanding (NLU) has been one of the oldest areas of AI. An essential component of NLU is to detect logical succession of events contained in a text. The task of sentence ordering is proposed to learn succession of events with applications in AI tasks. The performance of previous works employing statistical methods is poor, while the neural networks-based approaches are in serious need of large corpora for model learning. In this paper, we propose a method for sentence ordering which does not need a training phase and consequently a large corpus for learning. To this end, we generate sentence embedding using BERT pre-trained model and measure sentence similarity using cosine similarity score. We suggest this score as an indicator of sequential events' level of coherence. We finally sort the sentences through brute-force search to maximize overall similarities of the sequenced sentences. Our proposed method outperformed other baselines on ROCStories, a corpus of 5-sentence human-made stories. The method is specifically more efficient than neural network-based methods when no huge corpus is available. Among other advantages of this method are its interpretability and needlessness to linguistic knowledge.
+
+| Comments: | 7 pages, 4 figures, 2020 11th International Conference on Information and Knowledge Technology (IKT) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2108.11994](https://arxiv.org/abs/2108.11994) [cs.CL]** |
+|           | (or **[arXiv:2108.11994v1](https://arxiv.org/abs/2108.11994v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-08-30-2">2. Secoco: Self-Correcting Encoding for Neural Machine Translation
+</h2>
+
+Title: [Secoco: Self-Correcting Encoding for Neural Machine Translation](https://arxiv.org/abs/2108.12137)
+
+Authors: [Tao Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+T), [Chengqi Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+C), [Mingxuan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+M), [Lei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L), [Hang Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+H), [Deyi Xiong](https://arxiv.org/search/cs?searchtype=author&query=Xiong%2C+D)
+
+> This paper presents Self-correcting Encoding (Secoco), a framework that effectively deals with input noise for robust neural machine translation by introducing self-correcting predictors. Different from previous robust approaches, Secoco enables NMT to explicitly correct noisy inputs and delete specific errors simultaneously with the translation decoding process. Secoco is able to achieve significant improvements over strong baselines on two real-world test sets and a benchmark WMT dataset with good interpretability. We will make our code and dataset publicly available soon.
+
+| Comments:    | 6 pages, 2 figures, 3 tables                                 |
+| ------------ | ------------------------------------------------------------ |
+| Subjects:    | **Computation and Language (cs.CL)**                         |
+| MSC classes: | 68T50                                                        |
+| ACM classes: | I.2.7                                                        |
+| Cite as:     | **[arXiv:2108.12137](https://arxiv.org/abs/2108.12137) [cs.CL]** |
+|              | (or **[arXiv:2108.12137v1](https://arxiv.org/abs/2108.12137v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-08-30-3">3. Translation Error Detection as Rationale Extraction
+</h2>
+
+Title: [Translation Error Detection as Rationale Extraction](https://arxiv.org/abs/2108.12197)
+
+Authors: [Marina Fomicheva](https://arxiv.org/search/cs?searchtype=author&query=Fomicheva%2C+M), [Lucia Specia](https://arxiv.org/search/cs?searchtype=author&query=Specia%2C+L), [Nikolaos Aletras](https://arxiv.org/search/cs?searchtype=author&query=Aletras%2C+N)
+
+> Recent Quality Estimation (QE) models based on multilingual pre-trained representations have achieved very competitive results when predicting the overall quality of translated sentences. Predicting translation errors, i.e. detecting specifically which words are incorrect, is a more challenging task, especially with limited amounts of training data. We hypothesize that, not unlike humans, successful QE models rely on translation errors to predict overall sentence quality. By exploring a set of feature attribution methods that assign relevance scores to the inputs to explain model predictions, we study the behaviour of state-of-the-art sentence-level QE models and show that explanations (i.e. rationales) extracted from these models can indeed be used to detect translation errors. We therefore (i) introduce a novel semi-supervised method for word-level QE and (ii) propose to use the QE task as a new benchmark for evaluating the plausibility of feature attribution, i.e. how interpretable model explanations are to humans.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2108.12197](https://arxiv.org/abs/2108.12197) [cs.CL]** |
+|           | (or **[arXiv:2108.12197v1](https://arxiv.org/abs/2108.12197v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-08-30-4">4. Exploring the Capacity of a Large-scale Masked Language Model to Recognize Grammatical Errors
+</h2>
+
+Title: [Exploring the Capacity of a Large-scale Masked Language Model to Recognize Grammatical Errors](https://arxiv.org/abs/2108.12216)
+
+Authors: [Ryo Nagata](https://arxiv.org/search/cs?searchtype=author&query=Nagata%2C+R), [Manabu Kimura](https://arxiv.org/search/cs?searchtype=author&query=Kimura%2C+M), [Kazuaki Hanawa](https://arxiv.org/search/cs?searchtype=author&query=Hanawa%2C+K)
+
+> In this paper, we explore the capacity of a language model-based method for grammatical error detection in detail. We first show that 5 to 10% of training data are enough for a BERT-based error detection method to achieve performance equivalent to a non-language model-based method can achieve with the full training data; recall improves much faster with respect to training data size in the BERT-based method than in the non-language model method while precision behaves similarly. These suggest that (i) the BERT-based method should have a good knowledge of grammar required to recognize certain types of error and that (ii) it can transform the knowledge into error detection rules by fine-tuning with a few training samples, which explains its high generalization ability in grammatical error detection. We further show with pseudo error data that it actually exhibits such nice properties in learning rules for recognizing various types of error. Finally, based on these findings, we explore a cost-effective method for detecting grammatical errors with feedback comments explaining relevant grammatical rules to learners.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2108.12216](https://arxiv.org/abs/2108.12216) [cs.CL]** |
+|           | (or **[arXiv:2108.12216v1](https://arxiv.org/abs/2108.12216v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-08-30-5">5. Injecting Text in Self-Supervised Speech Pretraining
+</h2>
+
+Title: [Injecting Text in Self-Supervised Speech Pretraining](https://arxiv.org/abs/2108.12226)
+
+Authors: [Zhehuai Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+Z), [Yu Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Y), [Andrew Rosenberg](https://arxiv.org/search/cs?searchtype=author&query=Rosenberg%2C+A), [Bhuvana Ramabhadran](https://arxiv.org/search/cs?searchtype=author&query=Ramabhadran%2C+B), [Gary Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+G), [Pedro Moreno](https://arxiv.org/search/cs?searchtype=author&query=Moreno%2C+P)
+
+> Self-supervised pretraining for Automated Speech Recognition (ASR) has shown varied degrees of success. In this paper, we propose to jointly learn representations during pretraining from two different modalities: speech and text. The proposed method, tts4pretrain complements the power of contrastive learning in self-supervision with linguistic/lexical representations derived from synthesized speech, effectively learning from untranscribed speech and unspoken text. Lexical learning in the speech encoder is enforced through an additional sequence loss term that is coupled with contrastive loss during pretraining. We demonstrate that this novel pretraining method yields Word Error Rate (WER) reductions of 10% relative on the well-benchmarked, Librispeech task over a state-of-the-art baseline pretrained with wav2vec2.0 only. The proposed method also serves as an effective strategy to compensate for the lack of transcribed speech, effectively matching the performance of 5000 hours of transcribed speech with just 100 hours of transcribed speech on the AMI meeting transcription task. Finally, we demonstrate WER reductions of up to 15% on an in-house Voice Search task over traditional pretraining. Incorporating text into encoder pretraining is complimentary to rescoring with a larger or in-domain language model, resulting in additional 6% relative reduction in WER.
+
+| Comments:    | submit to ASRU 2021                                          |
+| ------------ | ------------------------------------------------------------ |
+| Subjects:    | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| MSC classes: | 68T10                                                        |
+| ACM classes: | I.2.7                                                        |
+| Cite as:     | **[arXiv:2108.12226](https://arxiv.org/abs/2108.12226) [cs.CL]** |
+|              | (or **[arXiv:2108.12226v1](https://arxiv.org/abs/2108.12226v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-08-30-6">6. Evaluating the Robustness of Neural Language Models to Input Perturbations
+</h2>
+
+Title: [Evaluating the Robustness of Neural Language Models to Input Perturbations](https://arxiv.org/abs/2108.12237)
+
+Authors: [Milad Moradi](https://arxiv.org/search/cs?searchtype=author&query=Moradi%2C+M), [Matthias Samwald](https://arxiv.org/search/cs?searchtype=author&query=Samwald%2C+M)
+
+> High-performance neural language models have obtained state-of-the-art results on a wide range of Natural Language Processing (NLP) tasks. However, results for common benchmark datasets often do not reflect model reliability and robustness when applied to noisy, real-world data. In this study, we design and implement various types of character-level and word-level perturbation methods to simulate realistic scenarios in which input texts may be slightly noisy or different from the data distribution on which NLP systems were trained. Conducting comprehensive experiments on different NLP tasks, we investigate the ability of high-performance language models such as BERT, XLNet, RoBERTa, and ELMo in handling different types of input perturbations. The results suggest that language models are sensitive to input perturbations and their performance can decrease even when small changes are introduced. We highlight that models need to be further improved and that current benchmarks are not reflecting model robustness well. We argue that evaluations on perturbed inputs should routinely complement widely-used benchmarks in order to yield a more realistic understanding of NLP systems robustness.
+
+| Comments: | Accepted by EMNLP 2021                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2108.12237](https://arxiv.org/abs/2108.12237) [cs.CL]** |
+|           | (or **[arXiv:2108.12237v1](https://arxiv.org/abs/2108.12237v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-08-30-7">7. CAPE: Context-Aware Private Embeddings for Private Language Learning
+</h2>
+
+Title: [CAPE: Context-Aware Private Embeddings for Private Language Learning](https://arxiv.org/abs/2108.12318)
+
+Authors: [Richard Plant](https://arxiv.org/search/cs?searchtype=author&query=Plant%2C+R), [Dimitra Gkatzia](https://arxiv.org/search/cs?searchtype=author&query=Gkatzia%2C+D), [Valerio Giuffrida](https://arxiv.org/search/cs?searchtype=author&query=Giuffrida%2C+V)
+
+> Deep learning-based language models have achieved state-of-the-art results in a number of applications including sentiment analysis, topic labelling, intent classification and others. Obtaining text representations or embeddings using these models presents the possibility of encoding personally identifiable information learned from language and context cues that may present a risk to reputation or privacy. To ameliorate these issues, we propose Context-Aware Private Embeddings (CAPE), a novel approach which preserves privacy during training of embeddings. To maintain the privacy of text representations, CAPE applies calibrated noise through differential privacy, preserving the encoded semantic links while obscuring sensitive information. In addition, CAPE employs an adversarial training regime that obscures identified private variables. Experimental results demonstrate that the proposed approach reduces private information leakage better than either single intervention.
+
+| Comments: | Accepted into EMNLP21 main conference                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2108.12318](https://arxiv.org/abs/2108.12318) [cs.CL]** |
+|           | (or **[arXiv:2108.12318v1](https://arxiv.org/abs/2108.12318v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-08-30-8">8. Train Short, Test Long: Attention with Linear Biases Enables Input Length Extrapolation
+</h2>
+
+Title: [Train Short, Test Long: Attention with Linear Biases Enables Input Length Extrapolation](https://arxiv.org/abs/2108.12409)
+
+Authors: [Ofir Press](https://arxiv.org/search/cs?searchtype=author&query=Press%2C+O), [Noah A. Smith](https://arxiv.org/search/cs?searchtype=author&query=Smith%2C+N+A), [Mike Lewis](https://arxiv.org/search/cs?searchtype=author&query=Lewis%2C+M)
+
+> Since the introduction of the transformer model by Vaswani et al. (2017), a fundamental question remains open: how to achieve extrapolation at inference time to longer sequences than seen during training? We first show that extrapolation can be improved by changing the position representation method, though we find that existing proposals do not allow efficient extrapolation. We introduce a simple and efficient method, Attention with Linear Biases (ALiBi), that allows for extrapolation. ALiBi does not add positional embeddings to the word embeddings; instead, it biases the query-key attention scores with a term that is proportional to their distance. We show that this method allows training a 1.3 billion parameter model on input sequences of length 1024 that extrapolates to input sequences of length 2048, achieving the same perplexity as a sinusoidal position embedding model trained on inputs of length 2048, 11% faster and using 11% less memory. ALiBi's inductive bias towards recency allows it to outperform multiple strong position methods on the WikiText-103 benchmark. Finally, we provide analysis of ALiBi to understand why it leads to better performance.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2108.12409](https://arxiv.org/abs/2108.12409) [cs.CL]** |
+|           | (or **[arXiv:2108.12409v1](https://arxiv.org/abs/2108.12409v1) [cs.CL]** for this version) |
+
+
+
 
 
 
