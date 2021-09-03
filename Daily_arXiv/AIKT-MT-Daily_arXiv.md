@@ -3,6 +3,16 @@
 # Index
 
 
+- [2021-09-03](#2021-09-03)
+
+  - [1. Skim-Attention: Learning to Focus via Document Layout](#2021-09-03-1)
+  - [2. How Suitable Are Subword Segmentation Strategies for Translating Non-Concatenative Morphology?](#2021-09-03-2)
+  - [3. Sequence-to-Sequence Learning with Latent Neural Grammars](#2021-09-03-3)
+  - [4. Knowledge Perceived Multi-modal Pretraining in E-commerce](#2021-09-03-4)
+  - [5. Improving Multimodal fusion via Mutual Dependency Maximisation](#2021-09-03-5)
+  - [6. Towards Improving Adversarial Training of NLP Models](#2021-09-03-6)
+  - [7. Point-of-Interest Type Prediction using Text and Images](#2021-09-03-7)
+  - [8. Towards Making the Most of Dialogue Characteristics for Neural Chat Translation](#2021-09-03-8)
 - [2021-09-02](#2021-09-02)
 
   - [1. Sentence Bottleneck Autoencoders from Transformer Language Models](#2021-09-02-1)
@@ -20,6 +30,166 @@
   - [4. Enjoy the Salience: Towards Better Transformer-based Faithful Explanations with Word Salience](#2021-09-01-4)
   - [5. Thermostat: A Large Collection of NLP Model Explanations and Analysis Tools](#2021-09-01-5)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-09-03
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-09-03-1">1. Skim-Attention: Learning to Focus via Document Layout
+</h2>
+
+Title: [Skim-Attention: Learning to Focus via Document Layout](https://arxiv.org/abs/2109.01078)
+
+Authors: [Laura Nguyen](https://arxiv.org/search/cs?searchtype=author&query=Nguyen%2C+L), [Thomas Scialom](https://arxiv.org/search/cs?searchtype=author&query=Scialom%2C+T), [Jacopo Staiano](https://arxiv.org/search/cs?searchtype=author&query=Staiano%2C+J), [Benjamin Piwowarski](https://arxiv.org/search/cs?searchtype=author&query=Piwowarski%2C+B)
+
+> Transformer-based pre-training techniques of text and layout have proven effective in a number of document understanding tasks. Despite this success, multimodal pre-training models suffer from very high computational and memory costs. Motivated by human reading strategies, this paper presents Skim-Attention, a new attention mechanism that takes advantage of the structure of the document and its layout. Skim-Attention only attends to the 2-dimensional position of the words in a document. Our experiments show that Skim-Attention obtains a lower perplexity than prior works, while being more computationally efficient. Skim-Attention can be further combined with long-range Transformers to efficiently process long documents. We also show how Skim-Attention can be used off-the-shelf as a mask for any Pre-trained Language Model, allowing to improve their performance while restricting attention. Finally, we show the emergence of a document structure representation in Skim-Attention.
+
+| Comments: | 15 pages, 6 figures, to be published in EMNLP 2021 Findings  |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2109.01078](https://arxiv.org/abs/2109.01078) [cs.CL]** |
+|           | (or **[arXiv:2109.01078v1](https://arxiv.org/abs/2109.01078v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-03-2">2. How Suitable Are Subword Segmentation Strategies for Translating Non-Concatenative Morphology?
+</h2>
+
+Title: [How Suitable Are Subword Segmentation Strategies for Translating Non-Concatenative Morphology?](https://arxiv.org/abs/2109.01100)
+
+Authors: [Chantal Amrhein](https://arxiv.org/search/cs?searchtype=author&query=Amrhein%2C+C), [Rico Sennrich](https://arxiv.org/search/cs?searchtype=author&query=Sennrich%2C+R)
+
+> Data-driven subword segmentation has become the default strategy for open-vocabulary machine translation and other NLP tasks, but may not be sufficiently generic for optimal learning of non-concatenative morphology. We design a test suite to evaluate segmentation strategies on different types of morphological phenomena in a controlled, semi-synthetic setting. In our experiments, we compare how well machine translation models trained on subword- and character-level can translate these morphological phenomena. We find that learning to analyse and generate morphologically complex surface representations is still challenging, especially for non-concatenative morphological phenomena like reduplication or vowel harmony and for rare word stems. Based on our results, we recommend that novel text representation strategies be tested on a range of typologically diverse languages to minimise the risk of adopting a strategy that inadvertently disadvantages certain languages.
+
+| Comments:    | Findings of EMNLP 2021                                       |
+| ------------ | ------------------------------------------------------------ |
+| Subjects:    | **Computation and Language (cs.CL)**                         |
+| ACM classes: | I.2.7                                                        |
+| Cite as:     | **[arXiv:2109.01100](https://arxiv.org/abs/2109.01100) [cs.CL]** |
+|              | (or **[arXiv:2109.01100v1](https://arxiv.org/abs/2109.01100v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-03-3">3. Sequence-to-Sequence Learning with Latent Neural Grammars
+</h2>
+
+Title: [Sequence-to-Sequence Learning with Latent Neural Grammars](https://arxiv.org/abs/2109.01135)
+
+Authors: [Yoon Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%2C+Y)
+
+> Sequence-to-sequence learning with neural networks has become the de facto standard for sequence prediction tasks. This approach typically models the local distribution over the next word with a powerful neural network that can condition on arbitrary context. While flexible and performant, these models often require large datasets for training and can fail spectacularly on benchmarks designed to test for compositional generalization. This work explores an alternative, hierarchical approach to sequence-to-sequence learning with quasi-synchronous grammars, where each node in the target tree is transduced by a node in the source tree. Both the source and target trees are treated as latent and induced during training. We develop a neural parameterization of the grammar which enables parameter sharing over the combinatorial space of derivation rules without the need for manual feature engineering. We apply this latent neural grammar to various domains -- a diagnostic language navigation task designed to test for compositional generalization (SCAN), style transfer, and small-scale machine translation -- and find that it performs respectably compared to standard baselines.
+
+| Comments: | Preprint                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2109.01135](https://arxiv.org/abs/2109.01135) [cs.CL]** |
+|           | (or **[arXiv:2109.01135v1](https://arxiv.org/abs/2109.01135v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-03-4">4. Knowledge Perceived Multi-modal Pretraining in E-commerce
+</h2>
+
+Title: [Knowledge Perceived Multi-modal Pretraining in E-commerce](https://arxiv.org/abs/2109.00895)
+
+Authors: [Yushan Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+Y), [Huaixiao Tou](https://arxiv.org/search/cs?searchtype=author&query=Tou%2C+H), [Wen Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+W), [Ganqiang Ye](https://arxiv.org/search/cs?searchtype=author&query=Ye%2C+G), [Hui Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+H), [Ningyu Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+N), [Huajun Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+H)
+
+> In this paper, we address multi-modal pretraining of product data in the field of E-commerce. Current multi-modal pretraining methods proposed for image and text modalities lack robustness in the face of modality-missing and modality-noise, which are two pervasive problems of multi-modal product data in real E-commerce scenarios. To this end, we propose a novel method, K3M, which introduces knowledge modality in multi-modal pretraining to correct the noise and supplement the missing of image and text modalities. The modal-encoding layer extracts the features of each modality. The modal-interaction layer is capable of effectively modeling the interaction of multiple modalities, where an initial-interactive feature fusion model is designed to maintain the independence of image modality and text modality, and a structure aggregation module is designed to fuse the information of image, text, and knowledge modalities. We pretrain K3M with three pretraining tasks, including masked object modeling (MOM), masked language modeling (MLM), and link prediction modeling (LPM). Experimental results on a real-world E-commerce dataset and a series of product-based downstream tasks demonstrate that K3M achieves significant improvements in performances than the baseline and state-of-the-art methods when modality-noise or modality-missing exists.
+
+| Comments: | Accepted to ACM MM 2021                                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL) |
+| DOI:      | [10.1145/3474085.3475648](https://arxiv.org/ct?url=https%3A%2F%2Fdx.doi.org%2F10.1145%2F3474085.3475648&v=072100ff) |
+| Cite as:  | **[arXiv:2109.00895](https://arxiv.org/abs/2109.00895) [cs.CV]** |
+|           | (or **[arXiv:2109.00895v1](https://arxiv.org/abs/2109.00895v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-03-5">5. Improving Multimodal fusion via Mutual Dependency Maximisation
+</h2>
+
+Title: [Improving Multimodal fusion via Mutual Dependency Maximisation](https://arxiv.org/abs/2109.00922)
+
+Authors: [Pierre Colombo](https://arxiv.org/search/cs?searchtype=author&query=Colombo%2C+P), [Emile Chapuis](https://arxiv.org/search/cs?searchtype=author&query=Chapuis%2C+E), [Matthieu Labeau](https://arxiv.org/search/cs?searchtype=author&query=Labeau%2C+M), [Chloe Clavel](https://arxiv.org/search/cs?searchtype=author&query=Clavel%2C+C)
+
+> Multimodal sentiment analysis is a trending area of research, and the multimodal fusion is one of its most active topic. Acknowledging humans communicate through a variety of channels (i.e visual, acoustic, linguistic), multimodal systems aim at integrating different unimodal representations into a synthetic one. So far, a consequent effort has been made on developing complex architectures allowing the fusion of these modalities. However, such systems are mainly trained by minimising simple losses such as L1 or cross-entropy. In this work, we investigate unexplored penalties and propose a set of new objectives that measure the dependency between modalities. We demonstrate that our new penalties lead to a consistent improvement (up to 4.3 on accuracy) across a large variety of state-of-the-art models on two well-known sentiment analysis datasets: \texttt{CMU-MOSI} and \texttt{CMU-MOSEI}. Our method not only achieves a new SOTA on both datasets but also produces representations that are more robust to modality drops. Finally, a by-product of our methods includes a statistical network which can be used to interpret the high dimensional representations learnt by the model.
+
+| Subjects:          | **Machine Learning (cs.LG)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL) |
+| ------------------ | ------------------------------------------------------------ |
+| Journal reference: | EMNLP 2021                                                   |
+| Cite as:           | **[arXiv:2109.00922](https://arxiv.org/abs/2109.00922) [cs.LG]** |
+|                    | (or **[arXiv:2109.00922v1](https://arxiv.org/abs/2109.00922v1) [cs.LG]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-03-6">6. Towards Improving Adversarial Training of NLP Models
+</h2>
+
+Title: [Towards Improving Adversarial Training of NLP Models](https://arxiv.org/abs/2109.00544)
+
+Authors: [Jin Yong Yoo](https://arxiv.org/search/cs?searchtype=author&query=Yoo%2C+J+Y), [Yanjun Qi](https://arxiv.org/search/cs?searchtype=author&query=Qi%2C+Y)
+
+> Adversarial training, a method for learning robust deep neural networks, constructs adversarial examples during training. However, recent methods for generating NLP adversarial examples involve combinatorial search and expensive sentence encoders for constraining the generated instances. As a result, it remains challenging to use vanilla adversarial training to improve NLP models' performance, and the benefits are mainly uninvestigated. This paper proposes a simple and improved vanilla adversarial training process for NLP, which we name Attacking to Training (𝙰𝟸𝚃). The core part of 𝙰𝟸𝚃 is a new and cheaper word substitution attack optimized for vanilla adversarial training. We use 𝙰𝟸𝚃 to train BERT and RoBERTa models on IMDB, Rotten Tomatoes, Yelp, and SNLI datasets. Our results show that it is possible to train empirically robust NLP models using a much cheaper adversary. We demonstrate that vanilla adversarial training with 𝙰𝟸𝚃 can improve an NLP model's robustness to the attack it was originally trained with and also defend the model against other types of attacks. Furthermore, we show that 𝙰𝟸𝚃 can improve NLP models' standard accuracy, cross-domain generalization, and interpretability. Code is available at [this http URL](http://github.com/jinyongyoo/A2T) .
+
+| Comments: | EMNLP Findings 2021                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2109.00544](https://arxiv.org/abs/2109.00544) [cs.CL]** |
+|           | (or **[arXiv:2109.00544v1](https://arxiv.org/abs/2109.00544v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-03-7">7. Point-of-Interest Type Prediction using Text and Images
+</h2>
+
+Title: [Point-of-Interest Type Prediction using Text and Images](https://arxiv.org/abs/2109.00602)
+
+Authors: [Danae Sánchez Villegas](https://arxiv.org/search/cs?searchtype=author&query=Villegas%2C+D+S), [Nikolaos Aletras](https://arxiv.org/search/cs?searchtype=author&query=Aletras%2C+N)
+
+> Point-of-interest (POI) type prediction is the task of inferring the type of a place from where a social media post was shared. Inferring a POI's type is useful for studies in computational social science including sociolinguistics, geosemiotics, and cultural geography, and has applications in geosocial networking technologies such as recommendation and visualization systems. Prior efforts in POI type prediction focus solely on text, without taking visual information into account. However in reality, the variety of modalities, as well as their semiotic relationships with one another, shape communication and interactions in social media. This paper presents a study on POI type prediction using multimodal information from text and images available at posting time. For that purpose, we enrich a currently available data set for POI type prediction with the images that accompany the text messages. Our proposed method extracts relevant information from each modality to effectively capture interactions between text and image achieving a macro F1 of 47.21 across eight categories significantly outperforming the state-of-the-art method for POI type prediction based on text-only methods. Finally, we provide a detailed analysis to shed light on cross-modal interactions and the limitations of our best performing model.
+
+| Comments: | Accepted at EMNLP 2021                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2109.00602](https://arxiv.org/abs/2109.00602) [cs.CL]** |
+|           | (or **[arXiv:2109.00602v1](https://arxiv.org/abs/2109.00602v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-03-8">8. Towards Making the Most of Dialogue Characteristics for Neural Chat Translation
+</h2>
+
+Title: [Towards Making the Most of Dialogue Characteristics for Neural Chat Translation](https://arxiv.org/abs/2109.00668)
+
+Authors: [Yunlong Liang](https://arxiv.org/search/cs?searchtype=author&query=Liang%2C+Y), [Chulun Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+C), [Fandong Meng](https://arxiv.org/search/cs?searchtype=author&query=Meng%2C+F), [Jinan Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+J), [Yufeng Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+Y), [Jinsong Su](https://arxiv.org/search/cs?searchtype=author&query=Su%2C+J), [Jie Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+J)
+
+> Neural Chat Translation (NCT) aims to translate conversational text between speakers of different languages. Despite the promising performance of sentence-level and context-aware neural machine translation models, there still remain limitations in current NCT models because the inherent dialogue characteristics of chat, such as dialogue coherence and speaker personality, are neglected. In this paper, we propose to promote the chat translation by introducing the modeling of dialogue characteristics into the NCT model. To this end, we design four auxiliary tasks including monolingual response generation, cross-lingual response generation, next utterance discrimination, and speaker identification. Together with the main chat translation task, we optimize the NCT model through the training objectives of all these tasks. By this means, the NCT model can be enhanced by capturing the inherent dialogue characteristics, thus generating more coherent and speaker-relevant translations. Comprehensive experiments on four language directions (English-German and English-Chinese) verify the effectiveness and superiority of the proposed approach.
+
+| Comments: | Accepted as a long paper at EMNLP 2021 main conference. The first two authors contributed equally. Code: [this https URL](https://github.com/XL2248/CSA-NCT) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2109.00668](https://arxiv.org/abs/2109.00668) [cs.CL]** |
+|           | (or **[arXiv:2109.00668v1](https://arxiv.org/abs/2109.00668v1) [cs.CL]** for this version) |
+
+
 
 
 
