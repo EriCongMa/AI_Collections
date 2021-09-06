@@ -3,8 +3,16 @@
 # Index
 
 
-- [2021-09-03](#2021-09-03)
+- [2021-09-06](#2021-09-06)
 
+  - [1. Ranking Scientific Papers Using Preference Learning](#2021-09-06-1)
+  - [2. Establishing Interlingua in Multilingual Language Models](#2021-09-06-2)
+  - [3. Quantifying Reproducibility in NLP and ML](#2021-09-06-3)
+  - [4. Multimodal Conditionality for Natural Language Generation](#2021-09-06-4)
+  - [5. Do Prompt-Based Models Really Understand the Meaning of their Prompts?](#2021-09-06-5)
+  - [6. Language Modeling, Lexical Translation, Reordering: The Training Process of NMT through the Lens of Classical SMT](#2021-09-06-6)
+  - [7. Finetuned Language Models Are Zero-Shot Learners](#2021-09-06-7)
+- [2021-09-03](#2021-09-03)
   - [1. Skim-Attention: Learning to Focus via Document Layout](#2021-09-03-1)
   - [2. How Suitable Are Subword Segmentation Strategies for Translating Non-Concatenative Morphology?](#2021-09-03-2)
   - [3. Sequence-to-Sequence Learning with Latent Neural Grammars](#2021-09-03-3)
@@ -30,6 +38,146 @@
   - [4. Enjoy the Salience: Towards Better Transformer-based Faithful Explanations with Word Salience](#2021-09-01-4)
   - [5. Thermostat: A Large Collection of NLP Model Explanations and Analysis Tools](#2021-09-01-5)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-09-06
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-09-06-1">1. Ranking Scientific Papers Using Preference Learning
+</h2>
+
+Title: [Ranking Scientific Papers Using Preference Learning](https://arxiv.org/abs/2109.01190)
+
+Authors: [Nils Dycke](https://arxiv.org/search/cs?searchtype=author&query=Dycke%2C+N), [Edwin Simpson](https://arxiv.org/search/cs?searchtype=author&query=Simpson%2C+E), [Ilia Kuznetsov](https://arxiv.org/search/cs?searchtype=author&query=Kuznetsov%2C+I), [Iryna Gurevych](https://arxiv.org/search/cs?searchtype=author&query=Gurevych%2C+I)
+
+> Peer review is the main quality control mechanism in academia. Quality of scientific work has many dimensions; coupled with the subjective nature of the reviewing task, this makes final decision making based on the reviews and scores therein very difficult and time-consuming. To assist with this important task, we cast it as a paper ranking problem based on peer review texts and reviewer scores. We introduce a novel, multi-faceted generic evaluation framework for making final decisions based on peer reviews that takes into account effectiveness, efficiency and fairness of the evaluated system. We propose a novel approach to paper ranking based on Gaussian Process Preference Learning (GPPL) and evaluate it on peer review data from the ACL-2018 conference. Our experiments demonstrate the superiority of our GPPL-based approach over prior work, while highlighting the importance of using both texts and review scores for paper ranking during peer review aggregation.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2109.01190](https://arxiv.org/abs/2109.01190) [cs.CL]** |
+|           | (or **[arXiv:2109.01190v1](https://arxiv.org/abs/2109.01190v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-06-2">2. Establishing Interlingua in Multilingual Language Models
+</h2>
+
+Title: [Establishing Interlingua in Multilingual Language Models](https://arxiv.org/abs/2109.01207)
+
+Authors: [Maksym Del](https://arxiv.org/search/cs?searchtype=author&query=Del%2C+M), [Mark Fishel](https://arxiv.org/search/cs?searchtype=author&query=Fishel%2C+M)
+
+> Large multilingual language models show remarkable zero-shot cross-lingual transfer performance on a range of tasks. Follow-up works hypothesized that these models internally project representations of different languages into a shared interlingual space. However, they produced contradictory results. In this paper, we correct %one of the previous works the famous prior work claiming that "BERT is not an Interlingua" and show that with the proper choice of sentence representation different languages actually do converge to a shared space in such language models. Furthermore, we demonstrate that this convergence pattern is robust across four measures of correlation similarity and six mBERT-like models. We then extend our analysis to 28 diverse languages and find that the interlingual space exhibits a particular structure similar to the linguistic relatedness of languages. We also highlight a few outlier languages that seem to fail to converge to the shared space. The code for replicating our results is available at the following URL: [this https URL](https://github.com/maksym-del/interlingua).
+
+| Comments:    | 8 pages, 10 figures                                          |
+| ------------ | ------------------------------------------------------------ |
+| Subjects:    | **Computation and Language (cs.CL)**                         |
+| ACM classes: | I.2.7; I.2.6                                                 |
+| Cite as:     | **[arXiv:2109.01207](https://arxiv.org/abs/2109.01207) [cs.CL]** |
+|              | (or **[arXiv:2109.01207v1](https://arxiv.org/abs/2109.01207v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-06-3">3. Quantifying Reproducibility in NLP and ML
+</h2>
+
+Title: [Quantifying Reproducibility in NLP and ML](https://arxiv.org/abs/2109.01211)
+
+Authors: [Anya Belz](https://arxiv.org/search/cs?searchtype=author&query=Belz%2C+A)
+
+> Reproducibility has become an intensely debated topic in NLP and ML over recent years, but no commonly accepted way of assessing reproducibility, let alone quantifying it, has so far emerged. The assumption has been that wider scientific reproducibility terminology and definitions are not applicable to NLP/ML, with the result that many different terms and definitions have been proposed, some diametrically opposed. In this paper, we test this assumption, by taking the standard terminology and definitions from metrology and applying them directly to NLP/ML. We find that we are able to straightforwardly derive a practical framework for assessing reproducibility which has the desirable property of yielding a quantified degree of reproducibility that is comparable across different reproduction studies.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2109.01211](https://arxiv.org/abs/2109.01211) [cs.CL]** |
+|           | (or **[arXiv:2109.01211v1](https://arxiv.org/abs/2109.01211v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-06-4">4. Multimodal Conditionality for Natural Language Generation
+</h2>
+
+Title: [Multimodal Conditionality for Natural Language Generation](https://arxiv.org/abs/2109.01229)
+
+Authors: [Michael Sollami](https://arxiv.org/search/cs?searchtype=author&query=Sollami%2C+M), [Aashish Jain](https://arxiv.org/search/cs?searchtype=author&query=Jain%2C+A)
+
+> Large scale pretrained language models have demonstrated state-of-the-art performance in language understanding tasks. Their application has recently expanded into multimodality learning, leading to improved representations combining vision and language. However, progress in adapting language models towards conditional Natural Language Generation (NLG) has been limited to a single modality, generally text. We propose MAnTiS, Multimodal Adaptation for Text Synthesis, a general approach for multimodal conditionality in transformer-based NLG models. In this method, we pass inputs from each modality through modality-specific encoders, project to textual token space, and finally join to form a conditionality prefix. We fine-tune the pretrained language model and encoders with the conditionality prefix guiding the generation. We apply MAnTiS to the task of product description generation, conditioning a network on both product images and titles to generate descriptive text. We demonstrate that MAnTiS outperforms strong baseline approaches on standard NLG scoring metrics. Furthermore, qualitative assessments demonstrate that MAnTiS can generate human quality descriptions consistent with given multimodal inputs.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2109.01229](https://arxiv.org/abs/2109.01229) [cs.CL]** |
+|           | (or **[arXiv:2109.01229v1](https://arxiv.org/abs/2109.01229v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-06-5">5. Do Prompt-Based Models Really Understand the Meaning of their Prompts?
+</h2>
+
+Title: [Do Prompt-Based Models Really Understand the Meaning of their Prompts?](https://arxiv.org/abs/2109.01247)
+
+Authors: [Albert Webson](https://arxiv.org/search/cs?searchtype=author&query=Webson%2C+A), [Ellie Pavlick](https://arxiv.org/search/cs?searchtype=author&query=Pavlick%2C+E)
+
+> Recently, a boom of papers have shown extraordinary progress in few-shot learning with various prompt-based models. Such success can give the impression that prompts help models to learn faster in the same way that humans learn faster when provided with task instructions expressed in natural language. In this study, we experiment with over 30 prompts manually written for natural language inference (NLI). We find that models learn just as fast with many prompts that are intentionally irrelevant or even pathologically misleading as they do with instructively "good" prompts. Additionally, we find that model performance is more dependent on the choice of the LM target words (a.k.a. the "verbalizer" that converts LM vocabulary prediction to class labels) than on the text of the prompt itself. In sum, we find little evidence that suggests existing prompt-based models truly understand the meaning of their given prompts.
+
+| Comments: | Code available at [this https URL](https://github.com/awebson/prompt_semantics) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2109.01247](https://arxiv.org/abs/2109.01247) [cs.CL]** |
+|           | (or **[arXiv:2109.01247v1](https://arxiv.org/abs/2109.01247v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-06-6">6. Language Modeling, Lexical Translation, Reordering: The Training Process of NMT through the Lens of Classical SMT
+</h2>
+
+Title: [Language Modeling, Lexical Translation, Reordering: The Training Process of NMT through the Lens of Classical SMT](https://arxiv.org/abs/2109.01396)
+
+Authors: [Elena Voita](https://arxiv.org/search/cs?searchtype=author&query=Voita%2C+E), [Rico Sennrich](https://arxiv.org/search/cs?searchtype=author&query=Sennrich%2C+R), [Ivan Titov](https://arxiv.org/search/cs?searchtype=author&query=Titov%2C+I)
+
+> Differently from the traditional statistical MT that decomposes the translation task into distinct separately learned components, neural machine translation uses a single neural network to model the entire translation process. Despite neural machine translation being de-facto standard, it is still not clear how NMT models acquire different competences over the course of training, and how this mirrors the different models in traditional SMT. In this work, we look at the competences related to three core SMT components and find that during training, NMT first focuses on learning target-side language modeling, then improves translation quality approaching word-by-word translation, and finally learns more complicated reordering patterns. We show that this behavior holds for several models and language pairs. Additionally, we explain how such an understanding of the training process can be useful in practice and, as an example, show how it can be used to improve vanilla non-autoregressive neural machine translation by guiding teacher model selection.
+
+| Comments: | EMNLP 2021                                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2109.01396](https://arxiv.org/abs/2109.01396) [cs.CL]** |
+|           | (or **[arXiv:2109.01396v1](https://arxiv.org/abs/2109.01396v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-06-7">7. Finetuned Language Models Are Zero-Shot Learners
+</h2>
+
+Title: [Finetuned Language Models Are Zero-Shot Learners](https://arxiv.org/abs/2109.01652)
+
+Authors: [Jason Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+J), [Maarten Bosma](https://arxiv.org/search/cs?searchtype=author&query=Bosma%2C+M), [Vincent Y. Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+V+Y), [Kelvin Guu](https://arxiv.org/search/cs?searchtype=author&query=Guu%2C+K), [Adams Wei Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+A+W), [Brian Lester](https://arxiv.org/search/cs?searchtype=author&query=Lester%2C+B), [Nan Du](https://arxiv.org/search/cs?searchtype=author&query=Du%2C+N), [Andrew M. Dai](https://arxiv.org/search/cs?searchtype=author&query=Dai%2C+A+M), [Quoc V. Le](https://arxiv.org/search/cs?searchtype=author&query=Le%2C+Q+V)
+
+> This paper explores a simple method for improving the zero-shot learning abilities of language models. We show that instruction tuning -- finetuning language models on a collection of tasks described via instructions -- substantially boosts zero-shot performance on unseen tasks.
+> We take a 137B parameter pretrained language model and instruction-tune it on over 60 NLP tasks verbalized via natural language instruction templates. We evaluate this instruction-tuned model, which we call FLAN, on unseen task types. FLAN substantially improves the performance of its unmodified counterpart and surpasses zero-shot 175B GPT-3 on 19 of 25 tasks that we evaluate. FLAN even outperforms few-shot GPT-3 by a large margin on ANLI, RTE, BoolQ, AI2-ARC, OpenbookQA, and StoryCloze. Ablation studies reveal that number of tasks and model scale are key components to the success of instruction tuning.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2109.01652](https://arxiv.org/abs/2109.01652) [cs.CL]** |
+|           | (or **[arXiv:2109.01652v1](https://arxiv.org/abs/2109.01652v1) [cs.CL]** for this version) |
+
+
+
+
+
 
 
 
