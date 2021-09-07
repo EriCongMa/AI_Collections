@@ -3,8 +3,16 @@
 # Index
 
 
-- [2021-09-06](#2021-09-06)
+- [2021-09-07](#2021-09-07)
 
+  - [1. Error Detection in Large-Scale Natural Language Understanding Systems Using Transformer Models](#2021-09-07-1)
+  - [2. On the ability of monolingual models to learn language-agnostic representations](#2021-09-07-2)
+  - [3. Counterfactual Evaluation for Explainable AI](#2021-09-07-3)
+  - [4. Data Efficient Masked Language Modeling for Vision and Language](#2021-09-07-4)
+  - [5. Teaching Autoregressive Language Models Complex Tasks By Demonstration](#2021-09-07-5)
+  - [6. Efficient Combinatorial Optimization for Word-level Adversarial Textual Attack](#2021-09-07-6)
+  - [7. Uncertainty-Aware Balancing for Multilingual and Multi-Domain Neural Machine Translation Training](#2021-09-07-7)
+- [2021-09-06](#2021-09-06)
   - [1. Ranking Scientific Papers Using Preference Learning](#2021-09-06-1)
   - [2. Establishing Interlingua in Multilingual Language Models](#2021-09-06-2)
   - [3. Quantifying Reproducibility in NLP and ML](#2021-09-06-3)
@@ -38,6 +46,146 @@
   - [4. Enjoy the Salience: Towards Better Transformer-based Faithful Explanations with Word Salience](#2021-09-01-4)
   - [5. Thermostat: A Large Collection of NLP Model Explanations and Analysis Tools](#2021-09-01-5)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-09-07
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-09-07-1">1. Error Detection in Large-Scale Natural Language Understanding Systems Using Transformer Models
+</h2>
+
+Title: [Error Detection in Large-Scale Natural Language Understanding Systems Using Transformer Models](https://arxiv.org/abs/2109.01754)
+
+Authors: [Rakesh Chada](https://arxiv.org/search/cs?searchtype=author&query=Chada%2C+R), [Pradeep Natarajan](https://arxiv.org/search/cs?searchtype=author&query=Natarajan%2C+P), [Darshan Fofadiya](https://arxiv.org/search/cs?searchtype=author&query=Fofadiya%2C+D), [Prathap Ramachandra](https://arxiv.org/search/cs?searchtype=author&query=Ramachandra%2C+P)
+
+> Large-scale conversational assistants like Alexa, Siri, Cortana and Google Assistant process every utterance using multiple models for domain, intent and named entity recognition. Given the decoupled nature of model development and large traffic volumes, it is extremely difficult to identify utterances processed erroneously by such systems. We address this challenge to detect domain classification errors using offline Transformer models. We combine utterance encodings from a RoBERTa model with the Nbest hypothesis produced by the production system. We then fine-tune end-to-end in a multitask setting using a small dataset of humanannotated utterances with domain classification errors. We tested our approach for detecting misclassifications from one domain that accounts for <0.5% of the traffic in a large-scale conversational AI system. Our approach achieves an F1 score of 30% outperforming a bi- LSTM baseline by 16.9% and a standalone RoBERTa model by 4.8%. We improve this further by 2.2% to 32.2% by ensembling multiple models.
+
+| Comments: | Accepted to ACL Findings 2021                                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2109.01754](https://arxiv.org/abs/2109.01754) [cs.CL]** |
+|           | (or **[arXiv:2109.01754v1](https://arxiv.org/abs/2109.01754v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-07-2">2. On the ability of monolingual models to learn language-agnostic representations
+</h2>
+
+Title: [On the ability of monolingual models to learn language-agnostic representations](https://arxiv.org/abs/2109.01942)
+
+Authors: [Leandro Rodrigues de Souza](https://arxiv.org/search/cs?searchtype=author&query=de+Souza%2C+L+R), [Rodrigo Nogueira](https://arxiv.org/search/cs?searchtype=author&query=Nogueira%2C+R), [Roberto Lotufo](https://arxiv.org/search/cs?searchtype=author&query=Lotufo%2C+R)
+
+> Pretrained multilingual models have become a de facto default approach for zero-shot cross-lingual transfer. Previous work has shown that these models are able to achieve cross-lingual representations when pretrained on two or more languages with shared parameters. In this work, we provide evidence that a model can achieve language-agnostic representations even when pretrained on a single language. That is, we find that monolingual models pretrained and finetuned on different languages achieve competitive performance compared to the ones that use the same target language. Surprisingly, the models show a similar performance on a same task regardless of the pretraining language. For example, models pretrained on distant languages such as German and Portuguese perform similarly on English tasks.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2109.01942](https://arxiv.org/abs/2109.01942) [cs.CL]** |
+|           | (or **[arXiv:2109.01942v1](https://arxiv.org/abs/2109.01942v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-07-3">3. Counterfactual Evaluation for Explainable AI
+</h2>
+
+Title: [Counterfactual Evaluation for Explainable AI](https://arxiv.org/abs/2109.01962)
+
+Authors: [Yingqiang Ge](https://arxiv.org/search/cs?searchtype=author&query=Ge%2C+Y), [Shuchang Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+S), [Zelong Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Z), [Shuyuan Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+S), [Shijie Geng](https://arxiv.org/search/cs?searchtype=author&query=Geng%2C+S), [Yunqi Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Y), [Juntao Tan](https://arxiv.org/search/cs?searchtype=author&query=Tan%2C+J), [Fei Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+F), [Yongfeng Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Y)
+
+> While recent years have witnessed the emergence of various explainable methods in machine learning, to what degree the explanations really represent the reasoning process behind the model prediction -- namely, the faithfulness of explanation -- is still an open problem. One commonly used way to measure faithfulness is \textit{erasure-based} criteria. Though conceptually simple, erasure-based criterion could inevitably introduce biases and artifacts. We propose a new methodology to evaluate the faithfulness of explanations from the \textit{counterfactual reasoning} perspective: the model should produce substantially different outputs for the original input and its corresponding counterfactual edited on a faithful feature. Specially, we introduce two algorithms to find the proper counterfactuals in both discrete and continuous scenarios and then use the acquired counterfactuals to measure faithfulness. Empirical results on several datasets show that compared with existing metrics, our proposed counterfactual evaluation method can achieve top correlation with the ground truth under diffe
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2109.01962](https://arxiv.org/abs/2109.01962) [cs.CL]** |
+|           | (or **[arXiv:2109.01962v1](https://arxiv.org/abs/2109.01962v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-07-4">4. Data Efficient Masked Language Modeling for Vision and Language
+</h2>
+
+Title: [Data Efficient Masked Language Modeling for Vision and Language](https://arxiv.org/abs/2109.02040)
+
+Authors: [Yonatan Bitton](https://arxiv.org/search/cs?searchtype=author&query=Bitton%2C+Y), [Gabriel Stanovsky](https://arxiv.org/search/cs?searchtype=author&query=Stanovsky%2C+G), [Michael Elhadad](https://arxiv.org/search/cs?searchtype=author&query=Elhadad%2C+M), [Roy Schwartz](https://arxiv.org/search/cs?searchtype=author&query=Schwartz%2C+R)
+
+> Masked language modeling (MLM) is one of the key sub-tasks in vision-language pretraining. In the cross-modal setting, tokens in the sentence are masked at random, and the model predicts the masked tokens given the image and the text. In this paper, we observe several key disadvantages of MLM in this setting. First, as captions tend to be short, in a third of the sentences no token is sampled. Second, the majority of masked tokens are stop-words and punctuation, leading to under-utilization of the image. We investigate a range of alternative masking strategies specific to the cross-modal setting that address these shortcomings, aiming for better fusion of text and image in the learned representation. When pre-training the LXMERT model, our alternative masking strategies consistently improve over the original masking strategy on three downstream tasks, especially in low resource settings. Further, our pre-training approach substantially outperforms the baseline model on a prompt-based probing task designed to elicit image objects. These results and our analysis indicate that our method allows for better utilization of the training data.
+
+| Comments: | Accepted to Findings of EMNLP 2021                           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Computer Vision and Pattern Recognition (cs.CV); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2109.02040](https://arxiv.org/abs/2109.02040) [cs.CL]** |
+|           | (or **[arXiv:2109.02040v1](https://arxiv.org/abs/2109.02040v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-07-5">5. Teaching Autoregressive Language Models Complex Tasks By Demonstration
+</h2>
+
+Title: [Teaching Autoregressive Language Models Complex Tasks By Demonstration](https://arxiv.org/abs/2109.02102)
+
+Authors: [Gabriel Recchia](https://arxiv.org/search/cs?searchtype=author&query=Recchia%2C+G)
+
+> This paper demonstrates that by fine-tuning an autoregressive language model (GPT-Neo) on appropriately structured step-by-step demonstrations, it is possible to teach it to execute a mathematical task that has previously proved difficult for Transformers - longhand modulo operations - with a relatively small number of examples. Specifically, we fine-tune GPT-Neo to solve the numbers__div_remainder task from the DeepMind Mathematics Dataset; Saxton et al. ([arXiv:1904.01557](https://arxiv.org/abs/1904.01557)) reported below 40% accuracy on this task with 2 million training examples. We show that after fine-tuning on 200 appropriately structured demonstrations of solving long division problems and reporting the remainders, the smallest available GPT-Neo model achieves over 80% accuracy. This is achieved by constructing an appropriate dataset for fine-tuning, with no changes to the learning algorithm. These results suggest that fine-tuning autoregressive language models on small sets of well-crafted demonstrations may be a useful paradigm for enabling individuals without training in machine learning to coax such models to perform some kinds of complex multi-step tasks.
+
+| Comments:    | 15 pages, 2 tables, 4 figures. Associated code and data available at [this https URL](https://github.com/mesotron/teaching_transformers) |
+| ------------ | ------------------------------------------------------------ |
+| Subjects:    | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| ACM classes: | I.2.0; I.2.6                                                 |
+| Cite as:     | **[arXiv:2109.02102](https://arxiv.org/abs/2109.02102) [cs.CL]** |
+|              | (or **[arXiv:2109.02102v1](https://arxiv.org/abs/2109.02102v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-07-6">6. Efficient Combinatorial Optimization for Word-level Adversarial Textual Attack
+</h2>
+
+Title: [Efficient Combinatorial Optimization for Word-level Adversarial Textual Attack](https://arxiv.org/abs/2109.02229)
+
+Authors: [Shengcai Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+S), [Ning Lu](https://arxiv.org/search/cs?searchtype=author&query=Lu%2C+N), [Cheng Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+C), [Ke Tang](https://arxiv.org/search/cs?searchtype=author&query=Tang%2C+K)
+
+> Over the past few years, various word-level textual attack approaches have been proposed to reveal the vulnerability of deep neural networks used in natural language processing. Typically, these approaches involve an important optimization step to determine which substitute to be used for each word in the original input. However, current research on this step is still rather limited, from the perspectives of both problem-understanding and problem-solving. In this paper, we address these issues by uncovering the theoretical properties of the problem and proposing an efficient local search algorithm (LS) to solve it. We establish the first provable approximation guarantee on solving the problem in general cases. Notably, for adversarial textual attack, it is even better than the previous bound which only holds in special case. Extensive experiments involving five NLP tasks, six datasets and eleven NLP models show that LS can largely reduce the number of queries usually by an order of magnitude to achieve high attack success rates. Further experiments show that the adversarial examples crafted by LS usually have higher quality, exhibit better transferability, and can bring more robustness improvement to victim models by adversarial training.
+
+| Subjects: | **Computation and Language (cs.CL)**; Neural and Evolutionary Computing (cs.NE) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2109.02229](https://arxiv.org/abs/2109.02229) [cs.CL]** |
+|           | (or **[arXiv:2109.02229v1](https://arxiv.org/abs/2109.02229v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-07-7">7. Uncertainty-Aware Balancing for Multilingual and Multi-Domain Neural Machine Translation Training
+</h2>
+
+Title: [Uncertainty-Aware Balancing for Multilingual and Multi-Domain Neural Machine Translation Training](https://arxiv.org/abs/2109.02284)
+
+Authors: [Minghao Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+M), [Yitong Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Y), [Meng Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+M), [Liangyou Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L), [Gholamreza Haffari](https://arxiv.org/search/cs?searchtype=author&query=Haffari%2C+G), [Qun Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Q)
+
+> Learning multilingual and multi-domain translation model is challenging as the heterogeneous and imbalanced data make the model converge inconsistently over different corpora in real world. One common practice is to adjust the share of each corpus in the training, so that the learning process is balanced and low-resource cases can benefit from the high resource ones. However, automatic balancing methods usually depend on the intra- and inter-dataset characteristics, which is usually agnostic or requires human priors. In this work, we propose an approach, MultiUAT, that dynamically adjusts the training data usage based on the model's uncertainty on a small set of trusted clean data for multi-corpus machine translation. We experiments with two classes of uncertainty measures on multilingual (16 languages with 4 settings) and multi-domain settings (4 for in-domain and 2 for out-of-domain on English-German translation) and demonstrate our approach MultiUAT substantially outperforms its baselines, including both static and dynamic strategies. We analyze the cross-domain transfer and show the deficiency of static and similarity based methods.
+
+| Comments: | 15 pages, 4 figures, to appear at EMNLP 2021 main conference |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2109.02284](https://arxiv.org/abs/2109.02284) [cs.CL]** |
+|           | (or **[arXiv:2109.02284v1](https://arxiv.org/abs/2109.02284v1) [cs.CL]** for this version) |
+
+
+
+
+
 
 
 
