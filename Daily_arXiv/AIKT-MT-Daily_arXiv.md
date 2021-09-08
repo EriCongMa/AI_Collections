@@ -3,6 +3,13 @@
 # Index
 
 
+- [2021-09-08](#2021-09-08)
+
+  - [1. Paraphrase Generation as Unsupervised Machine Translation](#2021-09-08-1)
+  - [2. Don't Go Far Off: An Empirical Study on Neural Poetry Translation](#2021-09-08-2)
+  - [3. Revisiting Context Choices for Context-aware Machine Translation](#2021-09-08-3)
+  - [4. Generate & Rank: A Multi-task Framework for Math Word Problems](#2021-09-08-4)
+  - [5. NumGPT: Improving Numeracy Ability of Generative Pre-trained Models](#2021-09-08-5)
 - [2021-09-07](#2021-09-07)
 
   - [1. Error Detection in Large-Scale Natural Language Understanding Systems Using Transformer Models](#2021-09-07-1)
@@ -46,6 +53,105 @@
   - [4. Enjoy the Salience: Towards Better Transformer-based Faithful Explanations with Word Salience](#2021-09-01-4)
   - [5. Thermostat: A Large Collection of NLP Model Explanations and Analysis Tools](#2021-09-01-5)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-09-08
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-09-08-1">1. Paraphrase Generation as Unsupervised Machine Translation
+</h2>
+
+Title: [Paraphrase Generation as Unsupervised Machine Translation](https://arxiv.org/abs/2109.02950)
+
+Authors: [Chun Fan](https://arxiv.org/search/cs?searchtype=author&query=Fan%2C+C), [Yufei Tian](https://arxiv.org/search/cs?searchtype=author&query=Tian%2C+Y), [Yuxian Meng](https://arxiv.org/search/cs?searchtype=author&query=Meng%2C+Y), [Nanyun Peng](https://arxiv.org/search/cs?searchtype=author&query=Peng%2C+N), [Xiaofei Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+X), [Fei Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+F), [Jiwei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+J)
+
+> In this paper, we propose a new paradigm for paraphrase generation by treating the task as unsupervised machine translation (UMT) based on the assumption that there must be pairs of sentences expressing the same meaning in a large-scale unlabeled monolingual corpus. The proposed paradigm first splits a large unlabeled corpus into multiple clusters, and trains multiple UMT models using pairs of these clusters. Then based on the paraphrase pairs produced by these UMT models, a unified surrogate model can be trained to serve as the final Seq2Seq model to generate paraphrases, which can be directly used for test in the unsupervised setup, or be finetuned on labeled datasets in the supervised setup. The proposed method offers merits over machine-translation-based paraphrase generation methods, as it avoids reliance on bilingual sentence pairs. It also allows human intervene with the model so that more diverse paraphrases can be generated using different filtering criteria. Extensive experiments on existing paraphrase dataset for both the supervised and unsupervised setups demonstrate the effectiveness the proposed paradigm.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2109.02950](https://arxiv.org/abs/2109.02950) [cs.CL]** |
+|           | (or **[arXiv:2109.02950v1](https://arxiv.org/abs/2109.02950v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-08-2">2. Don't Go Far Off: An Empirical Study on Neural Poetry Translation
+</h2>
+
+Title: [Don't Go Far Off: An Empirical Study on Neural Poetry Translation](https://arxiv.org/abs/2109.02972)
+
+Authors: [Tuhin Chakrabarty](https://arxiv.org/search/cs?searchtype=author&query=Chakrabarty%2C+T), [Arkadiy Saakyan](https://arxiv.org/search/cs?searchtype=author&query=Saakyan%2C+A), [Smaranda Muresan](https://arxiv.org/search/cs?searchtype=author&query=Muresan%2C+S)
+
+> Despite constant improvements in machine translation quality, automatic poetry translation remains a challenging problem due to the lack of open-sourced parallel poetic corpora, and to the intrinsic complexities involved in preserving the semantics, style, and figurative nature of poetry. We present an empirical investigation for poetry translation along several dimensions: 1) size and style of training data (poetic vs. non-poetic), including a zero-shot setup; 2) bilingual vs. multilingual learning; and 3) language-family-specific models vs. mixed-multilingual models. To accomplish this, we contribute a parallel dataset of poetry translations for several language pairs. Our results show that multilingual fine-tuning on poetic text significantly outperforms multilingual fine-tuning on non-poetic text that is 35X larger in size, both in terms of automatic metrics (BLEU, BERTScore) and human evaluation metrics such as faithfulness (meaning and poetic style). Moreover, multilingual fine-tuning on poetic data outperforms \emph{bilingual} fine-tuning on poetic data.
+
+| Comments: | EMNLP 2021 Camera ready                                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2109.02972](https://arxiv.org/abs/2109.02972) [cs.CL]** |
+|           | (or **[arXiv:2109.02972v1](https://arxiv.org/abs/2109.02972v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-08-3">3. Revisiting Context Choices for Context-aware Machine Translation
+</h2>
+
+Title: [Revisiting Context Choices for Context-aware Machine Translation](https://arxiv.org/abs/2109.02995)
+
+Authors: [Matīss Rikters](https://arxiv.org/search/cs?searchtype=author&query=Rikters%2C+M), [Toshiaki Nakazawa](https://arxiv.org/search/cs?searchtype=author&query=Nakazawa%2C+T)
+
+> One of the most popular methods for context-aware machine translation (MT) is to use separate encoders for the source sentence and context as multiple sources for one target sentence. Recent work has cast doubt on whether these models actually learn useful signals from the context or are improvements in automatic evaluation metrics just a side-effect. We show that multi-source transformer models improve MT over standard transformer-base models even with empty lines provided as context, but the translation quality improves significantly (1.51 - 2.65 BLEU) when a sufficient amount of correct context is provided. We also show that even though randomly shuffling in-domain context can also improve over baselines, the correct context further improves translation quality and random out-of-domain context further degrades it.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2109.02995](https://arxiv.org/abs/2109.02995) [cs.CL]** |
+|           | (or **[arXiv:2109.02995v1](https://arxiv.org/abs/2109.02995v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-08-4">4. Generate & Rank: A Multi-task Framework for Math Word Problems
+</h2>
+
+Title: [Generate & Rank: A Multi-task Framework for Math Word Problems](https://arxiv.org/abs/2109.03034)
+
+Authors: [Jianhao Shen](https://arxiv.org/search/cs?searchtype=author&query=Shen%2C+J), [Yichun Yin](https://arxiv.org/search/cs?searchtype=author&query=Yin%2C+Y), [Lin Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L), [Lifeng Shang](https://arxiv.org/search/cs?searchtype=author&query=Shang%2C+L), [Xin Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+X), [Ming Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+M), [Qun Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Q)
+
+> Math word problem (MWP) is a challenging and critical task in natural language processing. Many recent studies formalize MWP as a generation task and have adopted sequence-to-sequence models to transform problem descriptions to mathematical expressions. However, mathematical expressions are prone to minor mistakes while the generation objective does not explicitly handle such mistakes. To address this limitation, we devise a new ranking task for MWP and propose Generate & Rank, a multi-task framework based on a generative pre-trained language model. By joint training with generation and ranking, the model learns from its own mistakes and is able to distinguish between correct and incorrect expressions. Meanwhile, we perform tree-based disturbance specially designed for MWP and an online update to boost the ranker. We demonstrate the effectiveness of our proposed method on the benchmark and the results show that our method consistently outperforms baselines in all datasets. Particularly, in the classical Math23k, our method is 7% (78.4% → 85.4%) higher than the state-of-the-art.
+
+| Comments: | Findings of EMNLP2021                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2109.03034](https://arxiv.org/abs/2109.03034) [cs.CL]** |
+|           | (or **[arXiv:2109.03034v1](https://arxiv.org/abs/2109.03034v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-08-5">5. NumGPT: Improving Numeracy Ability of Generative Pre-trained Models
+</h2>
+
+Title: [NumGPT: Improving Numeracy Ability of Generative Pre-trained Models](https://arxiv.org/abs/2109.03137)
+
+Authors: [Zhihua Jin](https://arxiv.org/search/cs?searchtype=author&query=Jin%2C+Z), [Xin Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+X), [Xingbo Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+X), [Qun Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Q), [Yong Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Y), [Xiaozhe Ren](https://arxiv.org/search/cs?searchtype=author&query=Ren%2C+X), [Huamin Qu](https://arxiv.org/search/cs?searchtype=author&query=Qu%2C+H)
+
+> Existing generative pre-trained language models (e.g., GPT) focus on modeling the language structure and semantics of general texts. However, those models do not consider the numerical properties of numbers and cannot perform robustly on numerical reasoning tasks (e.g., math word problems and measurement estimation). In this paper, we propose NumGPT, a generative pre-trained model that explicitly models the numerical properties of numbers in texts. Specifically, it leverages a prototype-based numeral embedding to encode the mantissa of the number and an individual embedding to encode the exponent of the number. A numeral-aware loss function is designed to integrate numerals into the pre-training objective of NumGPT. We conduct extensive experiments on four different datasets to evaluate the numeracy ability of NumGPT. The experiment results show that NumGPT outperforms baseline models (e.g., GPT and GPT with DICE) on a range of numerical reasoning tasks such as measurement estimation, number comparison, math word problems, and magnitude classification. Ablation studies are also conducted to evaluate the impact of pre-training and model hyperparameters on the performance.
+
+| Comments: | 8 pages, 3 figures                                           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2109.03137](https://arxiv.org/abs/2109.03137) [cs.CL]** |
+|           | (or **[arXiv:2109.03137v1](https://arxiv.org/abs/2109.03137v1) [cs.CL]** for this version) |
+
+
 
 
 
