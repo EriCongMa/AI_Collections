@@ -3,6 +3,31 @@
 # Index
 
 
+- [2021-09-10](#2021-09-10)
+
+  - [1. Non-autoregressive End-to-end Speech Translation with Parallel Autoregressive Rescoring](#2021-09-10-1)
+  - [2. TxT: Crossmodal End-to-End Learning with Transformers](#2021-09-10-2)
+  - [3. Collecting a Large-Scale Gender Bias Dataset for Coreference Resolution and Machine Translation](#2021-09-10-3)
+  - [4. Ensemble Fine-tuned mBERT for Translation Quality Estimation](#2021-09-10-4)
+  - [5. Competence-based Curriculum Learning for Multilingual Machine Translation](#2021-09-10-5)
+  - [6. Distributionally Robust Multilingual Machine Translation](#2021-09-10-6)
+  - [7. Efficient Nearest Neighbor Language Models](#2021-09-10-7)
+  - [8. Generalised Unsupervised Domain Adaptation of Neural Machine Translation with Cross-Lingual Data Selection](#2021-09-10-8)
+  - [9. MATE: Multi-view Attention for Table Transformer Efficiency](#2021-09-10-9)
+  - [10. Smoothed Contrastive Learning for Unsupervised Sentence Embedding](#2021-09-10-10)
+  - [11. PPT: Pre-trained Prompt Tuning for Few-shot Learning](#2021-09-10-11)
+  - [12. ESimCSE: Enhanced Sample Building Method for Contrastive Learning of Unsupervised Sentence Embedding](#2021-09-10-12)
+  - [13. HintedBT: Augmenting Back-Translation with Quality and Transliteration Hints](#2021-09-10-13)
+  - [14. Vision-and-Language or Vision-for-Language? On Cross-Modal Influence in Multimodal Transformers](#2021-09-10-14)
+- [2021-09-09](#2021-09-09)
+
+  - [1. Mixup Decoding for Diverse Machine Translation](#2021-09-09-1)
+  - [2. Vision Matters When It Should: Sanity Checking Multimodal Machine Translation Models](#2021-09-09-2)
+  - [3. Sequence Level Contrastive Learning for Text Summarization](#2021-09-09-3)
+  - [4. RefineCap: Concept-Aware Refinement for Image Captioning](#2021-09-09-4)
+  - [5. Discrete and Soft Prompting for Multilingual Models](#2021-09-09-5)
+  - [6. Rethinking Data Augmentation for Low-Resource Neural Machine Translation: A Multi-Task Learning Approach](#2021-09-09-6)
+  - [7. Active Learning by Acquiring Contrastive Examples](#2021-09-09-7)
 - [2021-09-08](#2021-09-08)
 
   - [1. Paraphrase Generation as Unsupervised Machine Translation](#2021-09-08-1)
@@ -53,6 +78,416 @@
   - [4. Enjoy the Salience: Towards Better Transformer-based Faithful Explanations with Word Salience](#2021-09-01-4)
   - [5. Thermostat: A Large Collection of NLP Model Explanations and Analysis Tools](#2021-09-01-5)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-09-10
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-09-10-1">1. Non-autoregressive End-to-end Speech Translation with Parallel Autoregressive Rescoring
+</h2>
+
+Title: [Non-autoregressive End-to-end Speech Translation with Parallel Autoregressive Rescoring](https://arxiv.org/abs/2109.04411)
+
+Authors: [Hirofumi Inaguma](https://arxiv.org/search/eess?searchtype=author&query=Inaguma%2C+H), [Yosuke Higuchi](https://arxiv.org/search/eess?searchtype=author&query=Higuchi%2C+Y), [Kevin Duh](https://arxiv.org/search/eess?searchtype=author&query=Duh%2C+K), [Tatsuya Kawahara](https://arxiv.org/search/eess?searchtype=author&query=Kawahara%2C+T), [Shinji Watanabe](https://arxiv.org/search/eess?searchtype=author&query=Watanabe%2C+S)
+
+> This article describes an efficient end-to-end speech translation (E2E-ST) framework based on non-autoregressive (NAR) models. End-to-end speech translation models have several advantages over traditional cascade systems such as inference latency reduction. However, conventional AR decoding methods are not fast enough because each token is generated incrementally. NAR models, however, can accelerate the decoding speed by generating multiple tokens in parallel on the basis of the token-wise conditional independence assumption. We propose a unified NAR E2E-ST framework called Orthros, which has an NAR decoder and an auxiliary shallow AR decoder on top of the shared encoder. The auxiliary shallow AR decoder selects the best hypothesis by rescoring multiple candidates generated from the NAR decoder in parallel (parallel AR rescoring). We adopt conditional masked language model (CMLM) and a connectionist temporal classification (CTC)-based model as NAR decoders for Orthros, referred to as Orthros-CMLM and Orthros-CTC, respectively. We also propose two training methods to enhance the CMLM decoder. Experimental evaluations on three benchmark datasets with six language directions demonstrated that Orthros achieved large improvements in translation quality with a very small overhead compared with the baseline NAR model. Moreover, the Conformer encoder architecture enabled large quality improvements, especially for CTC-based models. Orthros-CTC with the Conformer encoder increased decoding speed by 3.63x on CPU with translation quality comparable to that of an AR model.
+
+| Subjects: | **Audio and Speech Processing (eess.AS)**; Computation and Language (cs.CL); Sound (cs.SD) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2109.04411](https://arxiv.org/abs/2109.04411) [eess.AS]** |
+|           | (or **[arXiv:2109.04411v1](https://arxiv.org/abs/2109.04411v1) [eess.AS]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-10-2">2. TxT: Crossmodal End-to-End Learning with Transformers
+</h2>
+
+Title: [TxT: Crossmodal End-to-End Learning with Transformers](https://arxiv.org/abs/2109.04422)
+
+Authors: [Jan-Martin O. Steitz](https://arxiv.org/search/cs?searchtype=author&query=Steitz%2C+J+O), [Jonas Pfeiffer](https://arxiv.org/search/cs?searchtype=author&query=Pfeiffer%2C+J), [Iryna Gurevych](https://arxiv.org/search/cs?searchtype=author&query=Gurevych%2C+I), [Stefan Roth](https://arxiv.org/search/cs?searchtype=author&query=Roth%2C+S)
+
+> Reasoning over multiple modalities, e.g. in Visual Question Answering (VQA), requires an alignment of semantic concepts across domains. Despite the widespread success of end-to-end learning, today's multimodal pipelines by and large leverage pre-extracted, fixed features from object detectors, typically Faster R-CNN, as representations of the visual world. The obvious downside is that the visual representation is not specifically tuned to the multimodal task at hand. At the same time, while transformer-based object detectors have gained popularity, they have not been employed in today's multimodal pipelines. We address both shortcomings with TxT, a transformer-based crossmodal pipeline that enables fine-tuning both language and visual components on the downstream task in a fully end-to-end manner. We overcome existing limitations of transformer-based detectors for multimodal reasoning regarding the integration of global context and their scalability. Our transformer-based multimodal model achieves considerable gains from end-to-end learning for multimodal question answering.
+
+| Comments: | To appear at the 43rd DAGM German Conference on Pattern Recognition (GCPR) 2021 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2109.04422](https://arxiv.org/abs/2109.04422) [cs.CV]** |
+|           | (or **[arXiv:2109.04422v1](https://arxiv.org/abs/2109.04422v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-10-3">3. Collecting a Large-Scale Gender Bias Dataset for Coreference Resolution and Machine Translation
+</h2>
+
+Title: [Collecting a Large-Scale Gender Bias Dataset for Coreference Resolution and Machine Translation](https://arxiv.org/abs/2109.03858)
+
+Authors: [Shahar Levy](https://arxiv.org/search/cs?searchtype=author&query=Levy%2C+S), [Koren Lazar](https://arxiv.org/search/cs?searchtype=author&query=Lazar%2C+K), [abriel Stanovsky](https://arxiv.org/search/cs?searchtype=author&query=Stanovsky%2C+a)
+
+> Recent works have found evidence of gender bias in models of machine translation and coreference resolution using mostly synthetic diagnostic datasets. While these quantify bias in a controlled experiment, they often do so on a small scale and consist mostly of artificial, out-of-distribution sentences. In this work, we find grammatical patterns indicating stereotypical and non-stereotypical gender-role assignments (e.g., female nurses versus male dancers) in corpora from three domains, resulting in a first large-scale gender bias dataset of 108K diverse real-world English sentences. We manually verify the quality of our corpus and use it to evaluate gender bias in various coreference resolution and machine translation models. We find that all tested models tend to over-rely on gender stereotypes when presented with natural inputs, which may be especially harmful when deployed in commercial systems. Finally, we show that our dataset lends itself to finetuning a coreference resolution model, finding it mitigates bias on a held out set. Our dataset and models are publicly available at [this http URL](http://www.github.com/SLAB-NLP/BUG). We hope they will spur future research into gender bias evaluation mitigation techniques in realistic settings.
+
+| Comments: | Accepted to Findings of EMNLP 2021                           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2109.03858](https://arxiv.org/abs/2109.03858) [cs.CL]** |
+|           | (or **[arXiv:2109.03858v1](https://arxiv.org/abs/2109.03858v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-10-4">4. Ensemble Fine-tuned mBERT for Translation Quality Estimation
+</h2>
+
+Title: [Ensemble Fine-tuned mBERT for Translation Quality Estimation](https://arxiv.org/abs/2109.03914)
+
+Authors: [Shaika Chowdhury](https://arxiv.org/search/cs?searchtype=author&query=Chowdhury%2C+S), [Naouel Baili](https://arxiv.org/search/cs?searchtype=author&query=Baili%2C+N), [Brian Vannah](https://arxiv.org/search/cs?searchtype=author&query=Vannah%2C+B)
+
+> Quality Estimation (QE) is an important component of the machine translation workflow as it assesses the quality of the translated output without consulting reference translations. In this paper, we discuss our submission to the WMT 2021 QE Shared Task. We participate in Task 2 sentence-level sub-task that challenge participants to predict the HTER score for sentence-level post-editing effort. Our proposed system is an ensemble of multilingual BERT (mBERT)-based regression models, which are generated by fine-tuning on different input settings. It demonstrates comparable performance with respect to the Pearson's correlation and beats the baseline system in MAE/ RMSE for several language pairs. In addition, we adapt our system for the zero-shot setting by exploiting target language-relevant language pairs and pseudo-reference translations.
+
+| Comments: | The Sixth Conference on Machine Translation, WMT 2021        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2109.03914](https://arxiv.org/abs/2109.03914) [cs.CL]** |
+|           | (or **[arXiv:2109.03914v1](https://arxiv.org/abs/2109.03914v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-10-5">5. Competence-based Curriculum Learning for Multilingual Machine Translation
+</h2>
+
+Title: [Competence-based Curriculum Learning for Multilingual Machine Translation](https://arxiv.org/abs/2109.04002)
+
+Authors: [Mingliang Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+M), [Fandong Meng](https://arxiv.org/search/cs?searchtype=author&query=Meng%2C+F), [Yunhai Tong](https://arxiv.org/search/cs?searchtype=author&query=Tong%2C+Y), [Jie Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+J)
+
+> Currently, multilingual machine translation is receiving more and more attention since it brings better performance for low resource languages (LRLs) and saves more space. However, existing multilingual machine translation models face a severe challenge: imbalance. As a result, the translation performance of different languages in multilingual translation models are quite different. We argue that this imbalance problem stems from the different learning competencies of different languages. Therefore, we focus on balancing the learning competencies of different languages and propose Competence-based Curriculum Learning for Multilingual Machine Translation, named CCL-M. Specifically, we firstly define two competencies to help schedule the high resource languages (HRLs) and the low resource languages: 1) Self-evaluated Competence, evaluating how well the language itself has been learned; and 2) HRLs-evaluated Competence, evaluating whether an LRL is ready to be learned according to HRLs' Self-evaluated Competence. Based on the above competencies, we utilize the proposed CCL-M algorithm to gradually add new languages into the training set in a curriculum learning manner. Furthermore, we propose a novel competenceaware dynamic balancing sampling strategy for better selecting training samples in multilingual training. Experimental results show that our approach has achieved a steady and significant performance gain compared to the previous state-of-the-art approach on the TED talks dataset.
+
+| Comments: | Accepted by Findings of EMNLP 2021. We release the codes at [this https URL](https://github.com/zml24/ccl-m) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2109.04002](https://arxiv.org/abs/2109.04002) [cs.CL]** |
+|           | (or **[arXiv:2109.04002v1](https://arxiv.org/abs/2109.04002v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-10-6">6. Distributionally Robust Multilingual Machine Translation
+</h2>
+
+Title: [Distributionally Robust Multilingual Machine Translation](https://arxiv.org/abs/2109.04020)
+
+Authors: [Chunting Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+C), [Daniel Levy](https://arxiv.org/search/cs?searchtype=author&query=Levy%2C+D), [Xian Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+X), [Marjan Ghazvininejad](https://arxiv.org/search/cs?searchtype=author&query=Ghazvininejad%2C+M), [Graham Neubig](https://arxiv.org/search/cs?searchtype=author&query=Neubig%2C+G)
+
+> Multilingual neural machine translation (MNMT) learns to translate multiple language pairs with a single model, potentially improving both the accuracy and the memory-efficiency of deployed models. However, the heavy data imbalance between languages hinders the model from performing uniformly across language pairs. In this paper, we propose a new learning objective for MNMT based on distributionally robust optimization, which minimizes the worst-case expected loss over the set of language pairs. We further show how to practically optimize this objective for large translation corpora using an iterated best response scheme, which is both effective and incurs negligible additional computational cost compared to standard empirical risk minimization. We perform extensive experiments on three sets of languages from two datasets and show that our method consistently outperforms strong baseline methods in terms of average and per-language performance under both many-to-one and one-to-many translation settings.
+
+| Comments: | Long paper accepted by EMNLP2021 main conference             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2109.04020](https://arxiv.org/abs/2109.04020) [cs.CL]** |
+|           | (or **[arXiv:2109.04020v1](https://arxiv.org/abs/2109.04020v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-10-7">7. Efficient Nearest Neighbor Language Models
+</h2>
+
+Title: [Efficient Nearest Neighbor Language Models](https://arxiv.org/abs/2109.04212)
+
+Authors: [Junxian He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+J), [Graham Neubig](https://arxiv.org/search/cs?searchtype=author&query=Neubig%2C+G), [Taylor Berg-Kirkpatrick](https://arxiv.org/search/cs?searchtype=author&query=Berg-Kirkpatrick%2C+T)
+
+> Non-parametric neural language models (NLMs) learn predictive distributions of text utilizing an external datastore, which allows them to learn through explicitly memorizing the training datapoints. While effective, these models often require retrieval from a large datastore at test time, significantly increasing the inference overhead and thus limiting the deployment of non-parametric NLMs in practical applications. In this paper, we take the recently proposed k-nearest neighbors language model (Khandelwal et al., 2019) as an example, exploring methods to improve its efficiency along various dimensions. Experiments on the standard WikiText-103 benchmark and domain-adaptation datasets show that our methods are able to achieve up to a 6x speed-up in inference speed while retaining comparable performance. The empirical analysis we present may provide guidelines for future research seeking to develop or deploy more efficient non-parametric NLMs.
+
+| Comments: | EMNLP 2021                                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2109.04212](https://arxiv.org/abs/2109.04212) [cs.CL]** |
+|           | (or **[arXiv:2109.04212v1](https://arxiv.org/abs/2109.04212v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-10-8">8. Generalised Unsupervised Domain Adaptation of Neural Machine Translation with Cross-Lingual Data Selection
+</h2>
+
+Title: [Generalised Unsupervised Domain Adaptation of Neural Machine Translation with Cross-Lingual Data Selection](https://arxiv.org/abs/2109.04292)
+
+Authors: [Thuy-Trang Vu](https://arxiv.org/search/cs?searchtype=author&query=Vu%2C+T), [Xuanli He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+X), [Dinh Phung](https://arxiv.org/search/cs?searchtype=author&query=Phung%2C+D), [Gholamreza Haffari](https://arxiv.org/search/cs?searchtype=author&query=Haffari%2C+G)
+
+> This paper considers the unsupervised domain adaptation problem for neural machine translation (NMT), where we assume the access to only monolingual text in either the source or target language in the new domain. We propose a cross-lingual data selection method to extract in-domain sentences in the missing language side from a large generic monolingual corpus. Our proposed method trains an adaptive layer on top of multilingual BERT by contrastive learning to align the representation between the source and target language. This then enables the transferability of the domain classifier between the languages in a zero-shot manner. Once the in-domain data is detected by the classifier, the NMT model is then adapted to the new domain by jointly learning translation and domain discrimination tasks. We evaluate our cross-lingual data selection method on NMT across five diverse domains in three language pairs, as well as a real-world scenario of translation for COVID-19. The results show that our proposed method outperforms other selection baselines up to +1.5 BLEU score.
+
+| Comments: | EMNLP2021                                                    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2109.04292](https://arxiv.org/abs/2109.04292) [cs.CL]** |
+|           | (or **[arXiv:2109.04292v1](https://arxiv.org/abs/2109.04292v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-10-9">9. MATE: Multi-view Attention for Table Transformer Efficiency
+</h2>
+
+Title: [MATE: Multi-view Attention for Table Transformer Efficiency](https://arxiv.org/abs/2109.04312)
+
+Authors: [Julian Martin Eisenschlos](https://arxiv.org/search/cs?searchtype=author&query=Eisenschlos%2C+J+M), [Maharshi Gor](https://arxiv.org/search/cs?searchtype=author&query=Gor%2C+M), [Thomas Müller](https://arxiv.org/search/cs?searchtype=author&query=Müller%2C+T), [William W. Cohen](https://arxiv.org/search/cs?searchtype=author&query=Cohen%2C+W+W)
+
+> This work presents a sparse-attention Transformer architecture for modeling documents that contain large tables. Tables are ubiquitous on the web, and are rich in information. However, more than 20% of relational tables on the web have 20 or more rows (Cafarella et al., 2008), and these large tables present a challenge for current Transformer models, which are typically limited to 512 tokens. Here we propose MATE, a novel Transformer architecture designed to model the structure of web tables. MATE uses sparse attention in a way that allows heads to efficiently attend to either rows or columns in a table. This architecture scales linearly with respect to speed and memory, and can handle documents containing more than 8000 tokens with current accelerators. MATE also has a more appropriate inductive bias for tabular data, and sets a new state-of-the-art for three table reasoning datasets. For HybridQA (Chen et al., 2020b), a dataset that involves large documents containing tables, we improve the best prior result by 19 points.
+
+| Comments: | Accepted to EMNLP 2021                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Information Retrieval (cs.IR); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2109.04312](https://arxiv.org/abs/2109.04312) [cs.CL]** |
+|           | (or **[arXiv:2109.04312v1](https://arxiv.org/abs/2109.04312v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-10-10">10. Smoothed Contrastive Learning for Unsupervised Sentence Embedding
+</h2>
+
+Title: [Smoothed Contrastive Learning for Unsupervised Sentence Embedding](https://arxiv.org/abs/2109.04321)
+
+Authors: [Xing Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+X), [Chaochen Gao](https://arxiv.org/search/cs?searchtype=author&query=Gao%2C+C), [Liangjun Zang](https://arxiv.org/search/cs?searchtype=author&query=Zang%2C+L), [Jizhong Han](https://arxiv.org/search/cs?searchtype=author&query=Han%2C+J), [Zhongyuan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Z), [Songlin Hu](https://arxiv.org/search/cs?searchtype=author&query=Hu%2C+S)
+
+> Contrastive learning has been gradually applied to learn high-quality unsupervised sentence embedding. Among the previous un-supervised methods, the latest state-of-the-art method, as far as we know, is unsupervised SimCSE (unsup-SimCSE). Unsup-SimCSE uses the InfoNCE1loss function in the training stage by pulling semantically similar sentences together and pushing apart dis-similar ones.Theoretically, we expect to use larger batches in unsup-SimCSE to get more adequate comparisons among samples and avoid overfitting. However, increasing the batch size does not always lead to improvements, but instead even lead to performance degradation when the batch size exceeds a threshold. Through statistical observation, we find that this is probably due to the introduction of low-confidence negative pairs after in-creasing the batch size. To alleviate this problem, we introduce a simple smoothing strategy upon the InfoNCE loss function, termedGaussian Smoothing InfoNCE (GS-InfoNCE).Specifically, we add random Gaussian noise vectors as negative samples, which act asa smoothing of the negative sample space.Though being simple, the proposed smooth-ing strategy brings substantial improvements to unsup-SimCSE. We evaluate GS-InfoNCEon the standard semantic text similarity (STS)task. GS-InfoNCE outperforms the state-of-the-art unsup-SimCSE by an average Spear-man correlation of 1.38%, 0.72%, 1.17% and0.28% on the base of BERT-base, BERT-large,RoBERTa-base and RoBERTa-large, respectively.
+
+| Comments: | 6 pages, 2 figures                                           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2109.04321](https://arxiv.org/abs/2109.04321) [cs.CL]** |
+|           | (or **[arXiv:2109.04321v1](https://arxiv.org/abs/2109.04321v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-10-11">11. PPT: Pre-trained Prompt Tuning for Few-shot Learning
+</h2>
+
+Title: [PPT: Pre-trained Prompt Tuning for Few-shot Learning](https://arxiv.org/abs/2109.04332)
+
+Authors: [Yuxian Gu](https://arxiv.org/search/cs?searchtype=author&query=Gu%2C+Y), [Xu Han](https://arxiv.org/search/cs?searchtype=author&query=Han%2C+X), [Zhiyuan Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Z), [Minlie Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+M)
+
+> Prompts for pre-trained language models (PLMs) have shown remarkable performance by bridging the gap between pre-training tasks and various downstream tasks. Among these methods, prompt tuning, which freezes PLMs and only tunes soft prompts, provides an efficient and effective solution for adapting large-scale PLMs to downstream tasks. However, prompt tuning is yet to be fully explored. In our pilot experiments, we find that prompt tuning performs comparably with conventional full-model fine-tuning when downstream data are sufficient, whereas it performs much worse under few-shot learning settings, which may hinder the application of prompt tuning in practice. We attribute this low performance to the manner of initializing soft prompts. Therefore, in this work, we propose to pre-train prompts by adding soft prompts into the pre-training stage to obtain a better initialization. We name this Pre-trained Prompt Tuning framework "PPT". To ensure the generalization of PPT, we formulate similar classification tasks into a unified task form and pre-train soft prompts for this unified task. Extensive experiments show that tuning pre-trained prompts for downstream tasks can reach or even outperform full-model fine-tuning under both full-data and few-shot settings. Our approach is effective and efficient for using large-scale PLMs in practice.
+
+| Comments: | 10 pages, 4 figures                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2109.04332](https://arxiv.org/abs/2109.04332) [cs.CL]** |
+|           | (or **[arXiv:2109.04332v1](https://arxiv.org/abs/2109.04332v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-10-12">12. ESimCSE: Enhanced Sample Building Method for Contrastive Learning of Unsupervised Sentence Embedding
+</h2>
+
+Title: [ESimCSE: Enhanced Sample Building Method for Contrastive Learning of Unsupervised Sentence Embedding](https://arxiv.org/abs/2109.04380)
+
+Authors: [Xing Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+X), [Chaochen Gao](https://arxiv.org/search/cs?searchtype=author&query=Gao%2C+C), [Liangjun Zang](https://arxiv.org/search/cs?searchtype=author&query=Zang%2C+L), [Jizhong Han](https://arxiv.org/search/cs?searchtype=author&query=Han%2C+J), [Zhongyuan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Z), [Songlin Hu](https://arxiv.org/search/cs?searchtype=author&query=Hu%2C+S)
+
+> Contrastive learning has been attracting much attention for learning unsupervised sentence embeddings. The current state-of-the-art unsupervised method is the unsupervised SimCSE (unsup-SimCSE). Unsup-SimCSE takes dropout as a minimal data augmentation method, and passes the same input sentence to a pre-trained Transformer encoder (with dropout turned on) twice to obtain the two corresponding embeddings to build a positive pair. As the length information of a sentence will generally be encoded into the sentence embeddings due to the usage of position embedding in Transformer, each positive pair in unsup-SimCSE actually contains the same length information. And thus unsup-SimCSE trained with these positive pairs is probably biased, which would tend to consider that sentences of the same or similar length are more similar in semantics. Through statistical observations, we find that unsup-SimCSE does have such a problem. To alleviate it, we apply a simple repetition operation to modify the input sentence, and then pass the input sentence and its modified counterpart to the pre-trained Transformer encoder, respectively, to get the positive pair. Additionally, we draw inspiration from the community of computer vision and introduce a momentum contrast, enlarging the number of negative pairs without additional calculations. The proposed two modifications are applied on positive and negative pairs separately, and build a new sentence embedding method, termed Enhanced Unsup-SimCSE (ESimCSE). We evaluate the proposed ESimCSE on several benchmark datasets w.r.t the semantic text similarity (STS) task. Experimental results show that ESimCSE outperforms the state-of-the-art unsup-SimCSE by an average Spearman correlation of 2.02% on BERT-base.
+
+| Comments: | 9 pages, 2 figures                                           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2109.04380](https://arxiv.org/abs/2109.04380) [cs.CL]** |
+|           | (or **[arXiv:2109.04380v1](https://arxiv.org/abs/2109.04380v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-10-13">13. HintedBT: Augmenting Back-Translation with Quality and Transliteration Hints
+</h2>
+
+Title: [HintedBT: Augmenting Back-Translation with Quality and Transliteration Hints](https://arxiv.org/abs/2109.04443)
+
+Authors: [Sahana Ramnath](https://arxiv.org/search/cs?searchtype=author&query=Ramnath%2C+S), [Melvin Johnson](https://arxiv.org/search/cs?searchtype=author&query=Johnson%2C+M), [Abhirut Gupta](https://arxiv.org/search/cs?searchtype=author&query=Gupta%2C+A), [Aravindan Raghuveer](https://arxiv.org/search/cs?searchtype=author&query=Raghuveer%2C+A)
+
+> Back-translation (BT) of target monolingual corpora is a widely used data augmentation strategy for neural machine translation (NMT), especially for low-resource language pairs. To improve effectiveness of the available BT data, we introduce HintedBT -- a family of techniques which provides hints (through tags) to the encoder and decoder. First, we propose a novel method of using both high and low quality BT data by providing hints (as source tags on the encoder) to the model about the quality of each source-target pair. We don't filter out low quality data but instead show that these hints enable the model to learn effectively from noisy data. Second, we address the problem of predicting whether a source token needs to be translated or transliterated to the target language, which is common in cross-script translation tasks (i.e., where source and target do not share the written script). For such cases, we propose training the model with additional hints (as target tags on the decoder) that provide information about the operation required on the source (translation or both translation and transliteration). We conduct experiments and detailed analyses on standard WMT benchmarks for three cross-script low/medium-resource language pairs: {Hindi,Gujarati,Tamil}-to-English. Our methods compare favorably with five strong and well established baselines. We show that using these hints, both separately and together, significantly improves translation quality and leads to state-of-the-art performance in all three language pairs in corresponding bilingual settings.
+
+| Comments: | 17 pages including references and appendix. Accepted at EMNLP 2021 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2109.04443](https://arxiv.org/abs/2109.04443) [cs.CL]** |
+|           | (or **[arXiv:2109.04443v1](https://arxiv.org/abs/2109.04443v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-10-14">14. Vision-and-Language or Vision-for-Language? On Cross-Modal Influence in Multimodal Transformers
+</h2>
+
+Title: [Vision-and-Language or Vision-for-Language? On Cross-Modal Influence in Multimodal Transformers](https://arxiv.org/abs/2109.04448)
+
+Authors: [Stella Frank](https://arxiv.org/search/cs?searchtype=author&query=Frank%2C+S), [Emanuele Bugliarello](https://arxiv.org/search/cs?searchtype=author&query=Bugliarello%2C+E), [Desmond Elliott](https://arxiv.org/search/cs?searchtype=author&query=Elliott%2C+D)
+
+> Pretrained vision-and-language BERTs aim to learn representations that combine information from both modalities. We propose a diagnostic method based on cross-modal input ablation to assess the extent to which these models actually integrate cross-modal information. This method involves ablating inputs from one modality, either entirely or selectively based on cross-modal grounding alignments, and evaluating the model prediction performance on the other modality. Model performance is measured by modality-specific tasks that mirror the model pretraining objectives (e.g. masked language modelling for text). Models that have learned to construct cross-modal representations using both modalities are expected to perform worse when inputs are missing from a modality. We find that recently proposed models have much greater relative difficulty predicting text when visual information is ablated, compared to predicting visual object categories when text is ablated, indicating that these models are not symmetrically cross-modal.
+
+| Comments: | EMNLP 2021                                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Computer Vision and Pattern Recognition (cs.CV) |
+| Cite as:  | **[arXiv:2109.04448](https://arxiv.org/abs/2109.04448) [cs.CL]** |
+|           | (or **[arXiv:2109.04448v1](https://arxiv.org/abs/2109.04448v1) [cs.CL]** for this version) |
+
+
+
+
+
+# 2021-09-09
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-09-09-1">1. Mixup Decoding for Diverse Machine Translation
+</h2>
+
+Title: [Mixup Decoding for Diverse Machine Translation](https://arxiv.org/abs/2109.03402)
+
+Authors: [Jicheng Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+J), [Pengzhi Gao](https://arxiv.org/search/cs?searchtype=author&query=Gao%2C+P), [Xuanfu Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+X), [Yang Feng](https://arxiv.org/search/cs?searchtype=author&query=Feng%2C+Y), [Zhongjun He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+Z), [Hua Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+H), [Haifeng Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+H)
+
+> Diverse machine translation aims at generating various target language translations for a given source language sentence. Leveraging the linear relationship in the sentence latent space introduced by the mixup training, we propose a novel method, MixDiversity, to generate different translations for the input sentence by linearly interpolating it with different sentence pairs sampled from the training corpus when decoding. To further improve the faithfulness and diversity of the translations, we propose two simple but effective approaches to select diverse sentence pairs in the training corpus and adjust the interpolation weight for each pair correspondingly. Moreover, by controlling the interpolation weight, our method can achieve the trade-off between faithfulness and diversity without any additional training, which is required in most of the previous methods. Experiments on WMT'16 en-ro, WMT'14 en-de, and WMT'17 zh-en are conducted to show that our method substantially outperforms all previous diverse machine translation methods.
+
+| Comments: | Findings of EMNLP 2021                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2109.03402](https://arxiv.org/abs/2109.03402) [cs.CL]** |
+|           | (or **[arXiv:2109.03402v1](https://arxiv.org/abs/2109.03402v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-09-2">2. Vision Matters When It Should: Sanity Checking Multimodal Machine Translation Models
+</h2>
+
+Title: [Vision Matters When It Should: Sanity Checking Multimodal Machine Translation Models](https://arxiv.org/abs/2109.03415)
+
+Authors: [Jiaoda Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+J), [Duygu Ataman](https://arxiv.org/search/cs?searchtype=author&query=Ataman%2C+D), [Rico Sennrich](https://arxiv.org/search/cs?searchtype=author&query=Sennrich%2C+R)
+
+> Multimodal machine translation (MMT) systems have been shown to outperform their text-only neural machine translation (NMT) counterparts when visual context is available. However, recent studies have also shown that the performance of MMT models is only marginally impacted when the associated image is replaced with an unrelated image or noise, which suggests that the visual context might not be exploited by the model at all. We hypothesize that this might be caused by the nature of the commonly used evaluation benchmark, also known as Multi30K, where the translations of image captions were prepared without actually showing the images to human translators. In this paper, we present a qualitative study that examines the role of datasets in stimulating the leverage of visual modality and we propose methods to highlight the importance of visual signals in the datasets which demonstrate improvements in reliance of models on the source images. Our findings suggest the research on effective MMT architectures is currently impaired by the lack of suitable datasets and careful consideration must be taken in creation of future MMT datasets, for which we also provide useful insights.
+
+| Comments: | EMNLP 2021                                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2109.03415](https://arxiv.org/abs/2109.03415) [cs.CL]** |
+|           | (or **[arXiv:2109.03415v1](https://arxiv.org/abs/2109.03415v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-09-3">3. Sequence Level Contrastive Learning for Text Summarization
+</h2>
+
+Title: [Sequence Level Contrastive Learning for Text Summarization](https://arxiv.org/abs/2109.03481)
+
+Authors: [Shusheng Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+S), [Xingxing Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+X), [Yi Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+Y), [Furu Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+F)
+
+> Contrastive learning models have achieved great success in unsupervised visual representation learning, which maximize the similarities between feature representations of different views of the same image, while minimize the similarities between feature representations of views of different images. In text summarization, the output summary is a shorter form of the input document and they have similar meanings. In this paper, we propose a contrastive learning model for supervised abstractive text summarization, where we view a document, its gold summary and its model generated summaries as different views of the same mean representation and maximize the similarities between them during training. We improve over a strong sequence-to-sequence text generation model (i.e., BART) on three different summarization datasets. Human evaluation also shows that our model achieves better faithfulness ratings compared to its counterpart without contrastive objectives.
+
+| Comments: | 2 figures, 12 tables                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2109.03481](https://arxiv.org/abs/2109.03481) [cs.CL]** |
+|           | (or **[arXiv:2109.03481v1](https://arxiv.org/abs/2109.03481v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-09-4">4. RefineCap: Concept-Aware Refinement for Image Captioning
+</h2>
+
+Title: [RefineCap: Concept-Aware Refinement for Image Captioning](https://arxiv.org/abs/2109.03529)
+
+Authors: [Yekun Chai](https://arxiv.org/search/cs?searchtype=author&query=Chai%2C+Y), [Shuo Jin](https://arxiv.org/search/cs?searchtype=author&query=Jin%2C+S), [Junliang Xing](https://arxiv.org/search/cs?searchtype=author&query=Xing%2C+J)
+
+> Automatically translating images to texts involves image scene understanding and language modeling. In this paper, we propose a novel model, termed RefineCap, that refines the output vocabulary of the language decoder using decoder-guided visual semantics, and implicitly learns the mapping between visual tag words and images. The proposed Visual-Concept Refinement method can allow the generator to attend to semantic details in the image, thereby generating more semantically descriptive captions. Our model achieves superior performance on the MS-COCO dataset in comparison with previous visual-concept based models.
+
+| Comments: | Accepted at ViGIL @NAACL 2021                                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2109.03529](https://arxiv.org/abs/2109.03529) [cs.CL]** |
+|           | (or **[arXiv:2109.03529v1](https://arxiv.org/abs/2109.03529v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-09-5">5. Discrete and Soft Prompting for Multilingual Models
+</h2>
+
+Title: [Discrete and Soft Prompting for Multilingual Models](https://arxiv.org/abs/2109.03630)
+
+Authors: [Mengjie Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+M), [Hinrich Schütze](https://arxiv.org/search/cs?searchtype=author&query=Schütze%2C+H)
+
+> It has been shown for English that discrete and soft prompting perform strongly in few-shot learning with pretrained language models (PLMs). In this paper, we show that discrete and soft prompting perform better than finetuning in multilingual cases: Crosslingual transfer and in-language training of multilingual natural language inference. For example, with 48 English training examples, finetuning obtains 33.74% accuracy in crosslingual transfer, barely surpassing the majority baseline (33.33%). In contrast, discrete and soft prompting outperform finetuning, achieving 36.43% and 38.79%. We also demonstrate good performance of prompting with training data in multiple languages other than English.
+
+| Comments: | EMNLP 2021                                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2109.03630](https://arxiv.org/abs/2109.03630) [cs.CL]** |
+|           | (or **[arXiv:2109.03630v1](https://arxiv.org/abs/2109.03630v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-09-6">6. Rethinking Data Augmentation for Low-Resource Neural Machine Translation: A Multi-Task Learning Approach
+</h2>
+
+Title: [Rethinking Data Augmentation for Low-Resource Neural Machine Translation: A Multi-Task Learning Approach](https://arxiv.org/abs/2109.03645)
+
+Authors: [Víctor M. Sánchez-Cartagena](https://arxiv.org/search/cs?searchtype=author&query=Sánchez-Cartagena%2C+V+M), [Miquel Esplà-Gomis](https://arxiv.org/search/cs?searchtype=author&query=Esplà-Gomis%2C+M), [Juan Antonio Pérez-Ortiz](https://arxiv.org/search/cs?searchtype=author&query=Pérez-Ortiz%2C+J+A), [Felipe Sánchez-Martínez](https://arxiv.org/search/cs?searchtype=author&query=Sánchez-Martínez%2C+F)
+
+> In the context of neural machine translation, data augmentation (DA) techniques may be used for generating additional training samples when the available parallel data are scarce. Many DA approaches aim at expanding the support of the empirical data distribution by generating new sentence pairs that contain infrequent words, thus making it closer to the true data distribution of parallel sentences. In this paper, we propose to follow a completely different approach and present a multi-task DA approach in which we generate new sentence pairs with transformations, such as reversing the order of the target sentence, which produce unfluent target sentences. During training, these augmented sentences are used as auxiliary tasks in a multi-task framework with the aim of providing new contexts where the target prefix is not informative enough to predict the next word. This strengthens the encoder and forces the decoder to pay more attention to the source representations of the encoder. Experiments carried out on six low-resource translation tasks show consistent improvements over the baseline and over DA methods aiming at extending the support of the empirical data distribution. The systems trained with our approach rely more on the source tokens, are more robust against domain shift and suffer less hallucinations.
+
+| Comments: | To be published as long paper in EMNLP 2021                  |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2109.03645](https://arxiv.org/abs/2109.03645) [cs.CL]** |
+|           | (or **[arXiv:2109.03645v1](https://arxiv.org/abs/2109.03645v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-09-7">7. Active Learning by Acquiring Contrastive Examples
+</h2>
+
+Title: [Active Learning by Acquiring Contrastive Examples](https://arxiv.org/abs/2109.03764)
+
+Authors: [Katerina Margatina](https://arxiv.org/search/cs?searchtype=author&query=Margatina%2C+K), [Giorgos Vernikos](https://arxiv.org/search/cs?searchtype=author&query=Vernikos%2C+G), [Loïc Barrault](https://arxiv.org/search/cs?searchtype=author&query=Barrault%2C+L), [Nikolaos Aletras](https://arxiv.org/search/cs?searchtype=author&query=Aletras%2C+N)
+
+> Common acquisition functions for active learning use either uncertainty or diversity sampling, aiming to select difficult and diverse data points from the pool of unlabeled data, respectively. In this work, leveraging the best of both worlds, we propose an acquisition function that opts for selecting \textit{contrastive examples}, i.e. data points that are similar in the model feature space and yet the model outputs maximally different predictive likelihoods. We compare our approach, CAL (Contrastive Active Learning), with a diverse set of acquisition functions in four natural language understanding tasks and seven datasets. Our experiments show that CAL performs consistently better or equal than the best performing baseline across all tasks, on both in-domain and out-of-domain data. We also conduct an extensive ablation study of our method and we further analyze all actively acquired datasets showing that CAL achieves a better trade-off between uncertainty and diversity compared to other strategies.
+
+| Comments: | Accepted at EMNLP 2021                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2109.03764](https://arxiv.org/abs/2109.03764) [cs.CL]** |
+|           | (or **[arXiv:2109.03764v1](https://arxiv.org/abs/2109.03764v1) [cs.CL]** for this version) |
+
+
 
 
 
