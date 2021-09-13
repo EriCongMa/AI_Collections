@@ -3,8 +3,24 @@
 # Index
 
 
-- [2021-09-10](#2021-09-10)
+- [2021-09-11](#2021-09-11)
 
+  - [1. LAViTeR: Learning Aligned Visual and Textual Representations Assisted by Image and Caption Generation](#2021-09-11-1)
+  - [2. Speechformer: Reducing Information Loss in Direct Speech Translation](#2021-09-11-2)
+  - [3. BERT, mBERT, or BiBERT? A Study on Contextualized Embeddings for Neural Machine Translation](#2021-09-11-3)
+  - [4. A Large-Scale Study of Machine Translation in the Turkic Languages](#2021-09-11-4)
+  - [5. Rule-based Morphological Inflection Improves Neural Terminology Translation](#2021-09-11-5)
+  - [6. EfficientCLIP: Efficient Cross-Modal Pre-training by Ensemble Confident Learning and Language Modeling](#2021-09-11-6)
+  - [7. Rethinking Zero-shot Neural Machine Translation: From a Perspective of Latent Variables](#2021-09-11-7)
+  - [8. Pre-train or Annotate? Domain Adaptation with a Constrained Budget](#2021-09-11-8)
+  - [9. AfroMT: Pretraining Strategies and Reproducible Benchmarks for Translation of 8 African Languages](#2021-09-11-9)
+  - [10. A Simple and Effective Method To Eliminate the Self Language Bias in Multilingual Representations](#2021-09-11-10)
+  - [11. Improving Multilingual Translation by Representation and Gradient Regularization](#2021-09-11-11)
+  - [12. Artificial Text Detection via Examining the Topology of Attention Maps](#2021-09-11-12)
+  - [13. Box Embeddings: An open-source library for representation learning using geometric structures](#2021-09-11-13)
+  - [14. BiSECT: Learning to Split and Rephrase Sentences with Bitexts](#2021-09-11-14)
+  - [15. Neural Machine Translation Quality and Post-Editing Performance](#2021-09-11-15)
+- [2021-09-10](#2021-09-10)
   - [1. Non-autoregressive End-to-end Speech Translation with Parallel Autoregressive Rescoring](#2021-09-10-1)
   - [2. TxT: Crossmodal End-to-End Learning with Transformers](#2021-09-10-2)
   - [3. Collecting a Large-Scale Gender Bias Dataset for Coreference Resolution and Machine Translation](#2021-09-10-3)
@@ -78,6 +94,325 @@
   - [4. Enjoy the Salience: Towards Better Transformer-based Faithful Explanations with Word Salience](#2021-09-01-4)
   - [5. Thermostat: A Large Collection of NLP Model Explanations and Analysis Tools](#2021-09-01-5)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-09-11
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-09-11-1">1. LAViTeR: Learning Aligned Visual and Textual Representations Assisted by Image and Caption Generation
+</h2>
+
+Title: [LAViTeR: Learning Aligned Visual and Textual Representations Assisted by Image and Caption Generation](https://arxiv.org/abs/2109.04993)
+
+Authors: [Mohammad Abuzar Shaikh](https://arxiv.org/search/cs?searchtype=author&query=Shaikh%2C+M+A), [Zhanghexuan Ji](https://arxiv.org/search/cs?searchtype=author&query=Ji%2C+Z), [Dana Moukheiber](https://arxiv.org/search/cs?searchtype=author&query=Moukheiber%2C+D), [Sargur Srihari](https://arxiv.org/search/cs?searchtype=author&query=Srihari%2C+S), [Mingchen Gao](https://arxiv.org/search/cs?searchtype=author&query=Gao%2C+M)
+
+> Pre-training visual and textual representations from large-scale image-text pairs is becoming a standard approach for many downstream vision-language tasks. The transformer-based models learn inter and intra-modal attention through a list of self-supervised learning tasks. This paper proposes LAViTeR, a novel architecture for visual and textual representation learning. The main module, Visual Textual Alignment (VTA) will be assisted by two auxiliary tasks, GAN-based image synthesis and Image Captioning. We also propose a new evaluation metric measuring the similarity between the learnt visual and textual embedding. The experimental results on two public datasets, CUB and MS-COCO, demonstrate superior visual and textual representation alignment in the joint feature embedding space
+
+| Comments: | 14 pages, 10 Figures, 5 Tables                               |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2109.04993](https://arxiv.org/abs/2109.04993) [cs.CV]** |
+|           | (or **[arXiv:2109.04993v1](https://arxiv.org/abs/2109.04993v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-11-2">2. Speechformer: Reducing Information Loss in Direct Speech Translation
+</h2>
+
+Title: [Speechformer: Reducing Information Loss in Direct Speech Translation](https://arxiv.org/abs/2109.04574)
+
+Authors: [Sara Papi](https://arxiv.org/search/cs?searchtype=author&query=Papi%2C+S), [Marco Gaido](https://arxiv.org/search/cs?searchtype=author&query=Gaido%2C+M), [Matteo Negri](https://arxiv.org/search/cs?searchtype=author&query=Negri%2C+M), [Marco Turchi](https://arxiv.org/search/cs?searchtype=author&query=Turchi%2C+M)
+
+> Transformer-based models have gained increasing popularity achieving state-of-the-art performance in many research fields including speech translation. However, Transformer's quadratic complexity with respect to the input sequence length prevents its adoption as is with audio signals, which are typically represented by long sequences. Current solutions resort to an initial sub-optimal compression based on a fixed sampling of raw audio features. Therefore, potentially useful linguistic information is not accessible to higher-level layers in the architecture. To solve this issue, we propose Speechformer, an architecture that, thanks to reduced memory usage in the attention layers, avoids the initial lossy compression and aggregates information only at a higher level according to more informed linguistic criteria. Experiments on three language pairs (en->de/es/nl) show the efficacy of our solution, with gains of up to 0.8 BLEU on the standard MuST-C corpus and of up to 4.0 BLEU in a low resource scenario.
+
+| Comments: | Accepted to EMNLP 2021 Main Conference                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2109.04574](https://arxiv.org/abs/2109.04574) [cs.CL]** |
+|           | (or **[arXiv:2109.04574v1](https://arxiv.org/abs/2109.04574v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-09-11-3">3. BERT, mBERT, or BiBERT? A Study on Contextualized Embeddings for Neural Machine Translation
+</h2>
+
+Title: [BERT, mBERT, or BiBERT? A Study on Contextualized Embeddings for Neural Machine Translation](https://arxiv.org/abs/2109.04588)
+
+Authors: [Haoran Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+H), [Benjamin Van Durme](https://arxiv.org/search/cs?searchtype=author&query=Van+Durme%2C+B), [Kenton Murray](https://arxiv.org/search/cs?searchtype=author&query=Murray%2C+K)
+
+> The success of bidirectional encoders using masked language models, such as BERT, on numerous natural language processing tasks has prompted researchers to attempt to incorporate these pre-trained models into neural machine translation (NMT) systems. However, proposed methods for incorporating pre-trained models are non-trivial and mainly focus on BERT, which lacks a comparison of the impact that other pre-trained models may have on translation performance. In this paper, we demonstrate that simply using the output (contextualized embeddings) of a tailored and suitable bilingual pre-trained language model (dubbed BiBERT) as the input of the NMT encoder achieves state-of-the-art translation performance. Moreover, we also propose a stochastic layer selection approach and a concept of dual-directional translation model to ensure the sufficient utilization of contextualized embeddings. In the case of without using back translation, our best models achieve BLEU scores of 30.45 for En->De and 38.61 for De->En on the IWSLT'14 dataset, and 31.26 for En->De and 34.94 for De->En on the WMT'14 dataset, which exceeds all published numbers.
+
+| Comments:          | EMNLP 2021                                                   |
+| ------------------ | ------------------------------------------------------------ |
+| Subjects:          | **Computation and Language (cs.CL)**                         |
+| Journal reference: | EMNLP 2021                                                   |
+| Cite as:           | **[arXiv:2109.04588](https://arxiv.org/abs/2109.04588) [cs.CL]** |
+|                    | (or **[arXiv:2109.04588v1](https://arxiv.org/abs/2109.04588v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-09-11-4">4. A Large-Scale Study of Machine Translation in the Turkic Languages
+</h2>
+
+Title: [A Large-Scale Study of Machine Translation in the Turkic Languages](https://arxiv.org/abs/2109.04593)
+
+Authors: [Jamshidbek Mirzakhalov](https://arxiv.org/search/cs?searchtype=author&query=Mirzakhalov%2C+J), [Anoop Babu](https://arxiv.org/search/cs?searchtype=author&query=Babu%2C+A), [Duygu Ataman](https://arxiv.org/search/cs?searchtype=author&query=Ataman%2C+D), [Sherzod Kariev](https://arxiv.org/search/cs?searchtype=author&query=Kariev%2C+S), [Francis Tyers](https://arxiv.org/search/cs?searchtype=author&query=Tyers%2C+F), [Otabek Abduraufov](https://arxiv.org/search/cs?searchtype=author&query=Abduraufov%2C+O), [Mammad Hajili](https://arxiv.org/search/cs?searchtype=author&query=Hajili%2C+M), [Sardana Ivanova](https://arxiv.org/search/cs?searchtype=author&query=Ivanova%2C+S), [Abror Khaytbaev](https://arxiv.org/search/cs?searchtype=author&query=Khaytbaev%2C+A), [Antonio Laverghetta Jr.](https://arxiv.org/search/cs?searchtype=author&query=Laverghetta%2C+A), [Behzodbek Moydinboyev](https://arxiv.org/search/cs?searchtype=author&query=Moydinboyev%2C+B), [Esra Onal](https://arxiv.org/search/cs?searchtype=author&query=Onal%2C+E), [Shaxnoza Pulatova](https://arxiv.org/search/cs?searchtype=author&query=Pulatova%2C+S), [Ahsan Wahab](https://arxiv.org/search/cs?searchtype=author&query=Wahab%2C+A), [Orhan Firat](https://arxiv.org/search/cs?searchtype=author&query=Firat%2C+O), [Sriram Chellappan](https://arxiv.org/search/cs?searchtype=author&query=Chellappan%2C+S)
+
+> Recent advances in neural machine translation (NMT) have pushed the quality of machine translation systems to the point where they are becoming widely adopted to build competitive systems. However, there is still a large number of languages that are yet to reap the benefits of NMT. In this paper, we provide the first large-scale case study of the practical application of MT in the Turkic language family in order to realize the gains of NMT for Turkic languages under high-resource to extremely low-resource scenarios. In addition to presenting an extensive analysis that identifies the bottlenecks towards building competitive systems to ameliorate data scarcity, our study has several key contributions, including, i) a large parallel corpus covering 22 Turkic languages consisting of common public datasets in combination with new datasets of approximately 2 million parallel sentences, ii) bilingual baselines for 26 language pairs, iii) novel high-quality test sets in three different translation domains and iv) human evaluation scores. All models, scripts, and data will be released to the public.
+
+| Comments: | 9 pages, 1 figure, 8 tables. Main proceedings of EMNLP 2021  |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2109.04593](https://arxiv.org/abs/2109.04593) [cs.CL]** |
+|           | (or **[arXiv:2109.04593v1](https://arxiv.org/abs/2109.04593v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+
+
+<h2 id="2021-09-11-5">5. Rule-based Morphological Inflection Improves Neural Terminology Translation
+</h2>
+
+Title: [Rule-based Morphological Inflection Improves Neural Terminology Translation](https://arxiv.org/abs/2109.04620)
+
+Authors: [Weijia Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+W), [Marine Carpuat](https://arxiv.org/search/cs?searchtype=author&query=Carpuat%2C+M)
+
+> Current approaches to incorporating terminology constraints in machine translation (MT) typically assume that the constraint terms are provided in their correct morphological forms. This limits their application to real-world scenarios where constraint terms are provided as lemmas. In this paper, we introduce a modular framework for incorporating lemma constraints in neural MT (NMT) in which linguistic knowledge and diverse types of NMT models can be flexibly applied. It is based on a novel cross-lingual inflection module that inflects the target lemma constraints based on the source context. We explore linguistically motivated rule-based and data-driven neural-based inflection modules and design English-German health and English-Lithuanian news test suites to evaluate them in domain adaptation and low-resource MT settings. Results show that our rule-based inflection module helps NMT models incorporate lemma constraints more accurately than a neural module and outperforms the existing end-to-end approach with lower training costs.
+
+| Comments: | EMNLP 2021                                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2109.04620](https://arxiv.org/abs/2109.04620) [cs.CL]** |
+|           | (or **[arXiv:2109.04620v1](https://arxiv.org/abs/2109.04620v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-09-11-6">6. EfficientCLIP: Efficient Cross-Modal Pre-training by Ensemble Confident Learning and Language Modeling
+</h2>
+
+Title: [EfficientCLIP: Efficient Cross-Modal Pre-training by Ensemble Confident Learning and Language Modeling](https://arxiv.org/abs/2109.04699)
+
+Authors: [Jue Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+J), [Haofan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+H), [Jincan Deng](https://arxiv.org/search/cs?searchtype=author&query=Deng%2C+J), [Weijia Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+W), [Debing Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+D)
+
+> While large scale pre-training has achieved great achievements in bridging the gap between vision and language, it still faces several challenges. First, the cost for pre-training is expensive. Second, there is no efficient way to handle the data noise which degrades model performance. Third, previous methods only leverage limited image-text paired data, while ignoring richer single-modal data, which may result in poor generalization to single-modal downstream tasks. In this work, we propose an EfficientCLIP method via Ensemble Confident Learning to obtain a less noisy data subset. Extra rich non-paired single-modal text data is used for boosting the generalization of text branch. We achieve the state-of-the-art performance on Chinese cross-modal retrieval tasks with only 1/10 training resources compared to CLIP and WenLan, while showing excellent generalization to single-modal tasks, including text retrieval and text classification.
+
+| Subjects: | **Computation and Language (cs.CL)**; Computer Vision and Pattern Recognition (cs.CV); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2109.04699](https://arxiv.org/abs/2109.04699) [cs.CL]** |
+|           | (or **[arXiv:2109.04699v1](https://arxiv.org/abs/2109.04699v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-09-11-7">7. Rethinking Zero-shot Neural Machine Translation: From a Perspective of Latent Variables
+</h2>
+
+Title: [Rethinking Zero-shot Neural Machine Translation: From a Perspective of Latent Variables](https://arxiv.org/abs/2109.04705)
+
+Authors: [Weizhi Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+W), [Zhirui Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Z), [Yichao Du](https://arxiv.org/search/cs?searchtype=author&query=Du%2C+Y), [Boxing Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+B), [Jun Xie](https://arxiv.org/search/cs?searchtype=author&query=Xie%2C+J), [Weihua Luo](https://arxiv.org/search/cs?searchtype=author&query=Luo%2C+W)
+
+> Zero-shot translation, directly translating between language pairs unseen in training, is a promising capability of multilingual neural machine translation (NMT). However, it usually suffers from capturing spurious correlations between the output language and language invariant semantics due to the maximum likelihood training objective, leading to poor transfer performance on zero-shot translation. In this paper, we introduce a denoising autoencoder objective based on pivot language into traditional training objective to improve the translation accuracy on zero-shot directions. The theoretical analysis from the perspective of latent variables shows that our approach actually implicitly maximizes the probability distributions for zero-shot directions. On two benchmark machine translation datasets, we demonstrate that the proposed method is able to effectively eliminate the spurious correlations and significantly outperforms state-of-the-art methods with a remarkable performance. Our code is available at [this https URL](https://github.com/Victorwz/zs-nmt-dae).
+
+| Comments: | EMNLP Findings 2021                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2109.04705](https://arxiv.org/abs/2109.04705) [cs.CL]** |
+|           | (or **[arXiv:2109.04705v1](https://arxiv.org/abs/2109.04705v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-09-11-8">8. Pre-train or Annotate? Domain Adaptation with a Constrained Budget
+</h2>
+
+Title: [Pre-train or Annotate? Domain Adaptation with a Constrained Budget](https://arxiv.org/abs/2109.04711)
+
+Authors: [Fan Bai](https://arxiv.org/search/cs?searchtype=author&query=Bai%2C+F), [Alan Ritter](https://arxiv.org/search/cs?searchtype=author&query=Ritter%2C+A), [Wei Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+W)
+
+> Recent work has demonstrated that pre-training in-domain language models can boost performance when adapting to a new domain. However, the costs associated with pre-training raise an important question: given a fixed budget, what steps should an NLP practitioner take to maximize performance? In this paper, we study domain adaptation under budget constraints, and approach it as a customer choice problem between data annotation and pre-training. Specifically, we measure the annotation cost of three procedural text datasets and the pre-training cost of three in-domain language models. Then we evaluate the utility of different combinations of pre-training and data annotation under varying budget constraints to assess which combination strategy works best. We find that, for small budgets, spending all funds on annotation leads to the best performance; once the budget becomes large enough, a combination of data annotation and in-domain pre-training works more optimally. We therefore suggest that task-specific data annotation should be part of an economical strategy when adapting an NLP model to a new domain.
+
+| Comments: | Accepted to EMNLP 2021                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2109.04711](https://arxiv.org/abs/2109.04711) [cs.CL]** |
+|           | (or **[arXiv:2109.04711v1](https://arxiv.org/abs/2109.04711v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-09-11-9">9. AfroMT: Pretraining Strategies and Reproducible Benchmarks for Translation of 8 African Languages
+</h2>
+
+Title: [AfroMT: Pretraining Strategies and Reproducible Benchmarks for Translation of 8 African Languages](https://arxiv.org/abs/2109.04715)
+
+Authors: [Machel Reid](https://arxiv.org/search/cs?searchtype=author&query=Reid%2C+M), [Junjie Hu](https://arxiv.org/search/cs?searchtype=author&query=Hu%2C+J), [Graham Neubig](https://arxiv.org/search/cs?searchtype=author&query=Neubig%2C+G), [Yutaka Matsuo](https://arxiv.org/search/cs?searchtype=author&query=Matsuo%2C+Y)
+
+> Reproducible benchmarks are crucial in driving progress of machine translation research. However, existing machine translation benchmarks have been mostly limited to high-resource or well-represented languages. Despite an increasing interest in low-resource machine translation, there are no standardized reproducible benchmarks for many African languages, many of which are used by millions of speakers but have less digitized textual data. To tackle these challenges, we propose AfroMT, a standardized, clean, and reproducible machine translation benchmark for eight widely spoken African languages. We also develop a suite of analysis tools for system diagnosis taking into account the unique properties of these languages. Furthermore, we explore the newly considered case of low-resource focused pretraining and develop two novel data augmentation-based strategies, leveraging word-level alignment information and pseudo-monolingual data for pretraining multilingual sequence-to-sequence models. We demonstrate significant improvements when pretraining on 11 languages, with gains of up to 2 BLEU points over strong baselines. We also show gains of up to 12 BLEU points over cross-lingual transfer baselines in data-constrained scenarios. All code and pretrained models will be released as further steps towards larger reproducible benchmarks for African languages.
+
+| Comments: | EMNLP 2021                                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2109.04715](https://arxiv.org/abs/2109.04715) [cs.CL]** |
+|           | (or **[arXiv:2109.04715v1](https://arxiv.org/abs/2109.04715v1) [cs.CL]** for this version) |
+
+
+
+<h2 id="2021-09-11-10">10. A Simple and Effective Method To Eliminate the Self Language Bias in Multilingual Representations
+</h2>
+
+Title: [A Simple and Effective Method To Eliminate the Self Language Bias in Multilingual Representations](https://arxiv.org/abs/2109.04727)
+
+Authors: [Ziyi Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+Z), [Yinfei Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+Y), [Daniel Cer](https://arxiv.org/search/cs?searchtype=author&query=Cer%2C+D), [Eric Darve](https://arxiv.org/search/cs?searchtype=author&query=Darve%2C+E)
+
+> Language agnostic and semantic-language information isolation is an emerging research direction for multilingual representations models. We explore this problem from a novel angle of geometric algebra and semantic space. A simple but highly effective method "Language Information Removal (LIR)" factors out language identity information from semantic related components in multilingual representations pre-trained on multi-monolingual data. A post-training and model-agnostic method, LIR only uses simple linear operations, e.g. matrix factorization and orthogonal projection. LIR reveals that for weak-alignment multilingual systems, the principal components of semantic spaces primarily encodes language identity information. We first evaluate the LIR on a cross-lingual question answer retrieval task (LAReQA), which requires the strong alignment for the multilingual embedding space. Experiment shows that LIR is highly effectively on this task, yielding almost 100% relative improvement in MAP for weak-alignment models. We then evaluate the LIR on Amazon Reviews and XEVAL dataset, with the observation that removing language information is able to improve the cross-lingual transfer performance.
+
+| Comments: | Accepted to the 2021 Conference on Empirical Methods in Natural Language Processing |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2109.04727](https://arxiv.org/abs/2109.04727) [cs.CL]** |
+|           | (or **[arXiv:2109.04727v1](https://arxiv.org/abs/2109.04727v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-09-11-11">11. Improving Multilingual Translation by Representation and Gradient Regularization
+</h2>
+
+Title: [Improving Multilingual Translation by Representation and Gradient Regularization](https://arxiv.org/abs/2109.04778)
+
+Authors: [Yilin Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+Y), [Akiko Eriguchi](https://arxiv.org/search/cs?searchtype=author&query=Eriguchi%2C+A), [Alexandre Muzio](https://arxiv.org/search/cs?searchtype=author&query=Muzio%2C+A), [Prasad Tadepalli](https://arxiv.org/search/cs?searchtype=author&query=Tadepalli%2C+P), [Stefan Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+S), [Hany Hassan](https://arxiv.org/search/cs?searchtype=author&query=Hassan%2C+H)
+
+> Multilingual Neural Machine Translation (NMT) enables one model to serve all translation directions, including ones that are unseen during training, i.e. zero-shot translation. Despite being theoretically attractive, current models often produce low quality translations -- commonly failing to even produce outputs in the right target language. In this work, we observe that off-target translation is dominant even in strong multilingual systems, trained on massive multilingual corpora. To address this issue, we propose a joint approach to regularize NMT models at both representation-level and gradient-level. At the representation level, we leverage an auxiliary target language prediction task to regularize decoder outputs to retain information about the target language. At the gradient level, we leverage a small amount of direct data (in thousands of sentence pairs) to regularize model gradients. Our results demonstrate that our approach is highly effective in both reducing off-target translation occurrences and improving zero-shot translation performance by +5.59 and +10.38 BLEU on WMT and OPUS datasets respectively. Moreover, experiments show that our method also works well when the small amount of direct data is not available.
+
+| Comments: | EMNLP 2021 (Long)                                            |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2109.04778](https://arxiv.org/abs/2109.04778) [cs.CL]** |
+|           | (or **[arXiv:2109.04778v1](https://arxiv.org/abs/2109.04778v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-09-11-12">12. Artificial Text Detection via Examining the Topology of Attention Maps
+</h2>
+
+Title: [Artificial Text Detection via Examining the Topology of Attention Maps](https://arxiv.org/abs/2109.04825)
+
+Authors: [Laida Kushnareva](https://arxiv.org/search/cs?searchtype=author&query=Kushnareva%2C+L), [Daniil Cherniavskii](https://arxiv.org/search/cs?searchtype=author&query=Cherniavskii%2C+D), [Vladislav Mikhailov](https://arxiv.org/search/cs?searchtype=author&query=Mikhailov%2C+V), [Ekaterina Artemova](https://arxiv.org/search/cs?searchtype=author&query=Artemova%2C+E), [Serguei Barannikov](https://arxiv.org/search/cs?searchtype=author&query=Barannikov%2C+S), [Alexander Bernstein](https://arxiv.org/search/cs?searchtype=author&query=Bernstein%2C+A), [Irina Piontkovskaya](https://arxiv.org/search/cs?searchtype=author&query=Piontkovskaya%2C+I), [Dmitri Piontkovski](https://arxiv.org/search/cs?searchtype=author&query=Piontkovski%2C+D), [Evgeny Burnaev](https://arxiv.org/search/cs?searchtype=author&query=Burnaev%2C+E)
+
+> The impressive capabilities of recent generative models to create texts that are challenging to distinguish from the human-written ones can be misused for generating fake news, product reviews, and even abusive content. Despite the prominent performance of existing methods for artificial text detection, they still lack interpretability and robustness towards unseen models. To this end, we propose three novel types of interpretable topological features for this task based on Topological Data Analysis (TDA) which is currently understudied in the field of NLP. We empirically show that the features derived from the BERT model outperform count- and neural-based baselines up to 10\% on three common datasets, and tend to be the most robust towards unseen GPT-style generation models as opposed to existing methods. The probing analysis of the features reveals their sensitivity to the surface and syntactic properties. The results demonstrate that TDA is a promising line with respect to NLP tasks, specifically the ones that incorporate surface and structural information.
+
+| Comments: | Accepted to EMNLP 2021                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2109.04825](https://arxiv.org/abs/2109.04825) [cs.CL]** |
+|           | (or **[arXiv:2109.04825v1](https://arxiv.org/abs/2109.04825v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-09-11-13">13. Box Embeddings: An open-source library for representation learning using geometric structures
+</h2>
+
+Title: [Box Embeddings: An open-source library for representation learning using geometric structures](https://arxiv.org/abs/2109.04997)
+
+Authors: [Tejas Chheda](https://arxiv.org/search/cs?searchtype=author&query=Chheda%2C+T), [Purujit Goyal](https://arxiv.org/search/cs?searchtype=author&query=Goyal%2C+P), [Trang Tran](https://arxiv.org/search/cs?searchtype=author&query=Tran%2C+T), [Dhruvesh Patel](https://arxiv.org/search/cs?searchtype=author&query=Patel%2C+D), [Michael Boratko](https://arxiv.org/search/cs?searchtype=author&query=Boratko%2C+M), [Shib Sankar Dasgupta](https://arxiv.org/search/cs?searchtype=author&query=Dasgupta%2C+S+S), [Andrew McCallum](https://arxiv.org/search/cs?searchtype=author&query=McCallum%2C+A)
+
+> A major factor contributing to the success of modern representation learning is the ease of performing various vector operations. Recently, objects with geometric structures (eg. distributions, complex or hyperbolic vectors, or regions such as cones, disks, or boxes) have been explored for their alternative inductive biases and additional representational capacities. In this work, we introduce Box Embeddings, a Python library that enables researchers to easily apply and extend probabilistic box embeddings.
+
+| Comments: | The source code and the usage and API documentation for the library is available at [this https URL](https://github.com/iesl/box-embeddings) and [this https URL](https://www.iesl.cs.umass.edu/box-embeddings/main/index.html) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2109.04997](https://arxiv.org/abs/2109.04997) [cs.CL]** |
+|           | (or **[arXiv:2109.04997v1](https://arxiv.org/abs/2109.04997v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-09-11-14">14. BiSECT: Learning to Split and Rephrase Sentences with Bitexts
+</h2>
+
+Title: [BiSECT: Learning to Split and Rephrase Sentences with Bitexts](https://arxiv.org/abs/2109.05006)
+
+Authors: [Joongwon Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%2C+J), [Mounica Maddela](https://arxiv.org/search/cs?searchtype=author&query=Maddela%2C+M), [Reno Kriz](https://arxiv.org/search/cs?searchtype=author&query=Kriz%2C+R), [Wei Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+W), [Chris Callison-Burch](https://arxiv.org/search/cs?searchtype=author&query=Callison-Burch%2C+C)
+
+> An important task in NLP applications such as sentence simplification is the ability to take a long, complex sentence and split it into shorter sentences, rephrasing as necessary. We introduce a novel dataset and a new model for this `split and rephrase' task. Our BiSECT training data consists of 1 million long English sentences paired with shorter, meaning-equivalent English sentences. We obtain these by extracting 1-2 sentence alignments in bilingual parallel corpora and then using machine translation to convert both sides of the corpus into the same language. BiSECT contains higher quality training examples than previous Split and Rephrase corpora, with sentence splits that require more significant modifications. We categorize examples in our corpus, and use these categories in a novel model that allows us to target specific regions of the input sentence to be split and edited. Moreover, we show that models trained on BiSECT can perform a wider variety of split operations and improve upon previous state-of-the-art approaches in automatic and human evaluations.
+
+| Comments: | 9 pages, 9 figures. Long paper to appear in Empirical Methods in Natural Language Processing 2021 (EMNLP 2021) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2109.05006](https://arxiv.org/abs/2109.05006) [cs.CL]** |
+|           | (or **[arXiv:2109.05006v1](https://arxiv.org/abs/2109.05006v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-11-15">15. Neural Machine Translation Quality and Post-Editing Performance
+</h2>
+
+Title: [Neural Machine Translation Quality and Post-Editing Performance](https://arxiv.org/abs/2109.05016)
+
+Authors: [Vilém Zouhar](https://arxiv.org/search/cs?searchtype=author&query=Zouhar%2C+V), [Aleš Tamchyna](https://arxiv.org/search/cs?searchtype=author&query=Tamchyna%2C+A), [Martin Popel](https://arxiv.org/search/cs?searchtype=author&query=Popel%2C+M), [Ondřej Bojar](https://arxiv.org/search/cs?searchtype=author&query=Bojar%2C+O)
+
+> We test the natural expectation that using MT in professional translation saves human processing time. The last such study was carried out by Sanchez-Torron and Koehn (2016) with phrase-based MT, artificially reducing the translation quality. In contrast, we focus on neural MT (NMT) of high quality, which has become the state-of-the-art approach since then and also got adopted by most translation companies.
+> Through an experimental study involving over 30 professional translators for English -> Czech translation, we examine the relationship between NMT performance and post-editing time and quality. Across all models, we found that better MT systems indeed lead to fewer changes in the sentences in this industry setting. The relation between system quality and post-editing time is however not straightforward and, contrary to the results on phrase-based MT, BLEU is definitely not a stable predictor of the time or final output quality.
+
+| Comments: | 9 pages, 1 page appendix. To be presented at EMNLP2021       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Human-Computer Interaction (cs.HC) |
+| Cite as:  | **[arXiv:2109.05016](https://arxiv.org/abs/2109.05016) [cs.CL]** |
+|           | (or **[arXiv:2109.05016v1](https://arxiv.org/abs/2109.05016v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
 
 
 
