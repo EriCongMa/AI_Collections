@@ -3,23 +3,37 @@
 # Index
 
 
-- [2021-09-11](#2021-09-11)
+- [2021-09-14](#2021-09-14)
 
-  - [1. LAViTeR: Learning Aligned Visual and Textual Representations Assisted by Image and Caption Generation](#2021-09-11-1)
-  - [2. Speechformer: Reducing Information Loss in Direct Speech Translation](#2021-09-11-2)
-  - [3. BERT, mBERT, or BiBERT? A Study on Contextualized Embeddings for Neural Machine Translation](#2021-09-11-3)
-  - [4. A Large-Scale Study of Machine Translation in the Turkic Languages](#2021-09-11-4)
-  - [5. Rule-based Morphological Inflection Improves Neural Terminology Translation](#2021-09-11-5)
-  - [6. EfficientCLIP: Efficient Cross-Modal Pre-training by Ensemble Confident Learning and Language Modeling](#2021-09-11-6)
-  - [7. Rethinking Zero-shot Neural Machine Translation: From a Perspective of Latent Variables](#2021-09-11-7)
-  - [8. Pre-train or Annotate? Domain Adaptation with a Constrained Budget](#2021-09-11-8)
-  - [9. AfroMT: Pretraining Strategies and Reproducible Benchmarks for Translation of 8 African Languages](#2021-09-11-9)
-  - [10. A Simple and Effective Method To Eliminate the Self Language Bias in Multilingual Representations](#2021-09-11-10)
-  - [11. Improving Multilingual Translation by Representation and Gradient Regularization](#2021-09-11-11)
-  - [12. Artificial Text Detection via Examining the Topology of Attention Maps](#2021-09-11-12)
-  - [13. Box Embeddings: An open-source library for representation learning using geometric structures](#2021-09-11-13)
-  - [14. BiSECT: Learning to Split and Rephrase Sentences with Bitexts](#2021-09-11-14)
-  - [15. Neural Machine Translation Quality and Post-Editing Performance](#2021-09-11-15)
+  - [1. MURAL: Multimodal, Multitask Retrieval Across Languages](#2021-09-14-1)
+  - [2. GradTS: A Gradient-Based Automatic Auxiliary Task Selection Method Based on Transformer Networks](#2021-09-14-2)
+  - [3. Universal Simultaneous Machine Translation with Mixture-of-Experts Wait-k Policy](#2021-09-14-3)
+  - [4. Modeling Concentrated Cross-Attention for Neural Machine Translation with Gaussian Mixture Model](#2021-09-14-4)
+  - [5. Multilingual Translation via Grafting Pre-trained Language Models](#2021-09-14-5)
+  - [6. Pairwise Supervised Contrastive Learning of Sentence Representations](#2021-09-14-6)
+  - [7. Contrastive Learning for Context-aware Neural Machine TranslationUsing Coreference Information](#2021-09-14-7)
+  - [8. CPT: A Pre-Trained Unbalanced Transformerfor Both Chinese Language Understanding and Generation](#2021-09-14-8)
+  - [9. Attention Weights in Transformer NMT Fail Aligning Words Between Sequences but Largely Explain Model Predictions](#2021-09-14-9)
+  - [10. Efficient Contrastive Learning via Novel Data Augmentation and Curriculum Learning](#2021-09-14-10)
+  - [11. Tamizhi-Net OCR: Creating A Quality Large Scale Tamil-Sinhala-English Parallel Corpus Using Deep Learning Based Printed Character Recognition (PCR)](#2021-09-14-11)
+  - [12. xGQA: Cross-Lingual Visual Question Answering](#2021-09-14-12)
+- [2021-09-13](#2021-09-13)
+
+  - [1. LAViTeR: Learning Aligned Visual and Textual Representations Assisted by Image and Caption Generation](#2021-09-13-1)
+  - [2. Speechformer: Reducing Information Loss in Direct Speech Translation](#2021-09-13-2)
+  - [3. BERT, mBERT, or BiBERT? A Study on Contextualized Embeddings for Neural Machine Translation](#2021-09-13-3)
+  - [4. A Large-Scale Study of Machine Translation in the Turkic Languages](#2021-09-13-4)
+  - [5. Rule-based Morphological Inflection Improves Neural Terminology Translation](#2021-09-13-5)
+  - [6. EfficientCLIP: Efficient Cross-Modal Pre-training by Ensemble Confident Learning and Language Modeling](#2021-09-13-6)
+  - [7. Rethinking Zero-shot Neural Machine Translation: From a Perspective of Latent Variables](#2021-09-13-7)
+  - [8. Pre-train or Annotate? Domain Adaptation with a Constrained Budget](#2021-09-13-8)
+  - [9. AfroMT: Pretraining Strategies and Reproducible Benchmarks for Translation of 8 African Languages](#2021-09-13-9)
+  - [10. A Simple and Effective Method To Eliminate the Self Language Bias in Multilingual Representations](#2021-09-13-10)
+  - [11. Improving Multilingual Translation by Representation and Gradient Regularization](#2021-09-13-11)
+  - [12. Artificial Text Detection via Examining the Topology of Attention Maps](#2021-09-13-12)
+  - [13. Box Embeddings: An open-source library for representation learning using geometric structures](#2021-09-13-13)
+  - [14. BiSECT: Learning to Split and Rephrase Sentences with Bitexts](#2021-09-13-14)
+  - [15. Neural Machine Translation Quality and Post-Editing Performance](#2021-09-13-15)
 - [2021-09-10](#2021-09-10)
   - [1. Non-autoregressive End-to-end Speech Translation with Parallel Autoregressive Rescoring](#2021-09-10-1)
   - [2. TxT: Crossmodal End-to-End Learning with Transformers](#2021-09-10-2)
@@ -97,13 +111,244 @@
 
 
 
-# 2021-09-11
+# 2021-09-14
 
 [Return to Index](#Index)
 
 
 
-<h2 id="2021-09-11-1">1. LAViTeR: Learning Aligned Visual and Textual Representations Assisted by Image and Caption Generation
+<h2 id="2021-09-14-1">1. MURAL: Multimodal, Multitask Retrieval Across Languages
+</h2>
+
+Title: [MURAL: Multimodal, Multitask Retrieval Across Languages](https://arxiv.org/abs/2109.05125)
+
+Authors: [Aashi Jain](https://arxiv.org/search/cs?searchtype=author&query=Jain%2C+A), [Mandy Guo](https://arxiv.org/search/cs?searchtype=author&query=Guo%2C+M), [Krishna Srinivasan](https://arxiv.org/search/cs?searchtype=author&query=Srinivasan%2C+K), [Ting Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+T), [Sneha Kudugunta](https://arxiv.org/search/cs?searchtype=author&query=Kudugunta%2C+S), [Chao Jia](https://arxiv.org/search/cs?searchtype=author&query=Jia%2C+C), [Yinfei Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+Y), [Jason Baldridge](https://arxiv.org/search/cs?searchtype=author&query=Baldridge%2C+J)
+
+> Both image-caption pairs and translation pairs provide the means to learn deep representations of and connections between languages. We use both types of pairs in MURAL (MUltimodal, MUltitask Representations Across Languages), a dual encoder that solves two tasks: 1) image-text matching and 2) translation pair matching. By incorporating billions of translation pairs, MURAL extends ALIGN (Jia et al. PMLR'21)--a state-of-the-art dual encoder learned from 1.8 billion noisy image-text pairs. When using the same encoders, MURAL's performance matches or exceeds ALIGN's cross-modal retrieval performance on well-resourced languages across several datasets. More importantly, it considerably improves performance on under-resourced languages, showing that text-text learning can overcome a paucity of image-caption examples for these languages. On the Wikipedia Image-Text dataset, for example, MURAL-base improves zero-shot mean recall by 8.1% on average for eight under-resourced languages and by 6.8% on average when fine-tuning. We additionally show that MURAL's text representations cluster not only with respect to genealogical connections but also based on areal linguistics, such as the Balkan Sprachbund.
+
+| Subjects: | **Information Retrieval (cs.IR)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2109.05125](https://arxiv.org/abs/2109.05125) [cs.IR]** |
+|           | (or **[arXiv:2109.05125v1](https://arxiv.org/abs/2109.05125v1) [cs.IR]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-14-2">2. GradTS: A Gradient-Based Automatic Auxiliary Task Selection Method Based on Transformer Networks
+</h2>
+
+Title: [GradTS: A Gradient-Based Automatic Auxiliary Task Selection Method Based on Transformer Networks](https://arxiv.org/abs/2109.05748)
+
+Authors: [Weicheng Ma](https://arxiv.org/search/cs?searchtype=author&query=Ma%2C+W), [Renze Lou](https://arxiv.org/search/cs?searchtype=author&query=Lou%2C+R), [Kai Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+K), [Lili Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+L), [Soroush Vosoughi](https://arxiv.org/search/cs?searchtype=author&query=Vosoughi%2C+S)
+
+> A key problem in multi-task learning (MTL) research is how to select high-quality auxiliary tasks automatically. This paper presents GradTS, an automatic auxiliary task selection method based on gradient calculation in Transformer-based models. Compared to AUTOSEM, a strong baseline method, GradTS improves the performance of MT-DNN with a bert-base-cased backend model, from 0.33% to 17.93% on 8 natural language understanding (NLU) tasks in the GLUE benchmarks. GradTS is also time-saving since (1) its gradient calculations are based on single-task experiments and (2) the gradients are re-used without additional experiments when the candidate task set changes. On the 8 GLUE classification tasks, for example, GradTS costs on average 21.32% less time than AUTOSEM with comparable GPU consumption. Further, we show the robustness of GradTS across various task settings and model selections, e.g. mixed objectives among candidate tasks. The efficiency and efficacy of GradTS in these case studies illustrate its general applicability in MTL research without requiring manual task filtering or costly parameter tuning.
+
+| Comments: | In EMNLP 2021                                                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2109.05748](https://arxiv.org/abs/2109.05748) [cs.LG]** |
+|           | (or **[arXiv:2109.05748v1](https://arxiv.org/abs/2109.05748v1) [cs.LG]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-14-3">3. Universal Simultaneous Machine Translation with Mixture-of-Experts Wait-k Policy
+</h2>
+
+Title: [Universal Simultaneous Machine Translation with Mixture-of-Experts Wait-k Policy](https://arxiv.org/abs/2109.05238)
+
+Authors: [Shaolei Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+S), [Yang Feng](https://arxiv.org/search/cs?searchtype=author&query=Feng%2C+Y)
+
+> Simultaneous machine translation (SiMT) generates translation before reading the entire source sentence and hence it has to trade off between translation quality and latency. To fulfill the requirements of different translation quality and latency in practical applications, the previous methods usually need to train multiple SiMT models for different latency levels, resulting in large computational costs. In this paper, we propose a universal SiMT model with Mixture-of-Experts Wait-k Policy to achieve the best translation quality under arbitrary latency with only one trained model. Specifically, our method employs multi-head attention to accomplish the mixture of experts where each head is treated as a wait-k expert with its own waiting words number, and given a test latency and source inputs, the weights of the experts are accordingly adjusted to produce the best translation. Experiments on three datasets show that our method outperforms all the strong baselines under different latency, including the state-of-the-art adaptive policy.
+
+| Comments: | Accepted by EMNLP2021. 12 pages, 7 figures, 4 tables         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2109.05238](https://arxiv.org/abs/2109.05238) [cs.CL]** |
+|           | (or **[arXiv:2109.05238v1](https://arxiv.org/abs/2109.05238v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-09-14-4">4. Modeling Concentrated Cross-Attention for Neural Machine Translation with Gaussian Mixture Model
+</h2>
+
+Title: [Modeling Concentrated Cross-Attention for Neural Machine Translation with Gaussian Mixture Model](https://arxiv.org/abs/2109.05244)
+
+Authors: [Shaolei Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+S), [Yang Feng](https://arxiv.org/search/cs?searchtype=author&query=Feng%2C+Y)
+
+> Cross-attention is an important component of neural machine translation (NMT), which is always realized by dot-product attention in previous methods. However, dot-product attention only considers the pair-wise correlation between words, resulting in dispersion when dealing with long sentences and neglect of source neighboring relationships. Inspired by linguistics, the above issues are caused by ignoring a type of cross-attention, called concentrated attention, which focuses on several central words and then spreads around them. In this work, we apply Gaussian Mixture Model (GMM) to model the concentrated attention in cross-attention. Experiments and analyses we conducted on three datasets show that the proposed method outperforms the baseline and has significant improvement on alignment quality, N-gram accuracy, and long sentence translation.
+
+| Comments: | Accepted by the Findings of EMNLP2021. 11 pages, 7 figures, 7 tables |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2109.05244](https://arxiv.org/abs/2109.05244) [cs.CL]** |
+|           | (or **[arXiv:2109.05244v1](https://arxiv.org/abs/2109.05244v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-14-5">5. Multilingual Translation via Grafting Pre-trained Language Models
+</h2>
+
+Title: [Multilingual Translation via Grafting Pre-trained Language Models](https://arxiv.org/abs/2109.05256)
+
+Authors: [Zewei Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+Z), [Mingxuan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+M), [Lei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L)
+
+> Can pre-trained BERT for one language and GPT for another be glued together to translate texts? Self-supervised training using only monolingual data has led to the success of pre-trained (masked) language models in many NLP tasks. However, directly connecting BERT as an encoder and GPT as a decoder can be challenging in machine translation, for GPT-like models lack a cross-attention component that is needed in seq2seq decoders. In this paper, we propose Graformer to graft separately pre-trained (masked) language models for machine translation. With monolingual data for pre-training and parallel data for grafting training, we maximally take advantage of the usage of both types of data. Experiments on 60 directions show that our method achieves average improvements of 5.8 BLEU in x2en and 2.9 BLEU in en2x directions comparing with the multilingual Transformer of the same size.
+
+| Comments: | Accepted in EMNLP 2021 (Findings)                            |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2109.05256](https://arxiv.org/abs/2109.05256) [cs.CL]** |
+|           | (or **[arXiv:2109.05256v1](https://arxiv.org/abs/2109.05256v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-14-6">6. Pairwise Supervised Contrastive Learning of Sentence Representations
+</h2>
+
+Title: [Pairwise Supervised Contrastive Learning of Sentence Representations](https://arxiv.org/abs/2109.05424)
+
+Authors: [Dejiao Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+D), [Shang-Wen Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+S), [Wei Xiao](https://arxiv.org/search/cs?searchtype=author&query=Xiao%2C+W), [Henghui Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+H), [Ramesh Nallapati](https://arxiv.org/search/cs?searchtype=author&query=Nallapati%2C+R), [Andrew O. Arnold](https://arxiv.org/search/cs?searchtype=author&query=Arnold%2C+A+O), [Bing Xiang](https://arxiv.org/search/cs?searchtype=author&query=Xiang%2C+B)
+
+> Many recent successes in sentence representation learning have been achieved by simply fine-tuning on the Natural Language Inference (NLI) datasets with triplet loss or siamese loss. Nevertheless, they share a common weakness: sentences in a contradiction pair are not necessarily from different semantic categories. Therefore, optimizing the semantic entailment and contradiction reasoning objective alone is inadequate to capture the high-level semantic structure. The drawback is compounded by the fact that the vanilla siamese or triplet losses only learn from individual sentence pairs or triplets, which often suffer from bad local optima. In this paper, we propose PairSupCon, an instance discrimination based approach aiming to bridge semantic entailment and contradiction understanding with high-level categorical concept encoding. We evaluate PairSupCon on various downstream tasks that involve understanding sentence semantics at different granularities. We outperform the previous state-of-the-art method with 10%--13% averaged improvement on eight clustering tasks, and 5%--6% averaged improvement on seven semantic textual similarity (STS) tasks.
+
+| Comments: | 9 pages, EMNLP 2021                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2109.05424](https://arxiv.org/abs/2109.05424) [cs.CL]** |
+|           | (or **[arXiv:2109.05424v1](https://arxiv.org/abs/2109.05424v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-14-7">7. Contrastive Learning for Context-aware Neural Machine TranslationUsing Coreference Information
+</h2>
+
+Title: [Contrastive Learning for Context-aware Neural Machine TranslationUsing Coreference Information](https://arxiv.org/abs/2109.05712)
+
+Authors: [Yongkeun Hwang](https://arxiv.org/search/cs?searchtype=author&query=Hwang%2C+Y), [Hyungu Yun](https://arxiv.org/search/cs?searchtype=author&query=Yun%2C+H), [Kyomin Jung](https://arxiv.org/search/cs?searchtype=author&query=Jung%2C+K)
+
+> Context-aware neural machine translation (NMT) incorporates contextual information of surrounding texts, that can improve the translation quality of document-level machine translation. Many existing works on context-aware NMT have focused on developing new model architectures for incorporating additional contexts and have shown some promising results. However, most existing works rely on cross-entropy loss, resulting in limited use of contextual information. In this paper, we propose CorefCL, a novel data augmentation and contrastive learning scheme based on coreference between the source and contextual sentences. By corrupting automatically detected coreference mentions in the contextual sentence, CorefCL can train the model to be sensitive to coreference inconsistency. We experimented with our method on common context-aware NMT models and two document-level translation tasks. In the experiments, our method consistently improved BLEU of compared models on English-German and English-Korean tasks. We also show that our method significantly improves coreference resolution in the English-German contrastive test suite.
+
+| Comments: | WMT 2021                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2109.05712](https://arxiv.org/abs/2109.05712) [cs.CL]** |
+|           | (or **[arXiv:2109.05712v1](https://arxiv.org/abs/2109.05712v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-14-8">8. CPT: A Pre-Trained Unbalanced Transformerfor Both Chinese Language Understanding and Generation
+</h2>
+
+Title: [CPT: A Pre-Trained Unbalanced Transformerfor Both Chinese Language Understanding and Generation](https://arxiv.org/abs/2109.05729)
+
+Authors: [Yunfan Shao](https://arxiv.org/search/cs?searchtype=author&query=Shao%2C+Y), [Zhichao Geng](https://arxiv.org/search/cs?searchtype=author&query=Geng%2C+Z), [Yitao Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Y), [Junqi Dai](https://arxiv.org/search/cs?searchtype=author&query=Dai%2C+J), [Fei Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+F), [Li Zhe](https://arxiv.org/search/cs?searchtype=author&query=Zhe%2C+L), [Hujun Bao](https://arxiv.org/search/cs?searchtype=author&query=Bao%2C+H), [Xipeng Qiu](https://arxiv.org/search/cs?searchtype=author&query=Qiu%2C+X)
+
+> In this paper, we take the advantage of previous pre-trained models (PTMs) and propose a novel Chinese Pre-trained Unbalanced Transformer (CPT). Different from previous Chinese PTMs, CPT is designed for both natural language understanding (NLU) and natural language generation (NLG) tasks. CPT consists of three parts: a shared encoder, an understanding decoder, and a generation decoder. Two specific decoders with a shared encoder are pre-trained with masked language modeling (MLM) and denoising auto-encoding (DAE) tasks, respectively. With the partially shared architecture and multi-task pre-training, CPT can (1) learn specific knowledge of both NLU or NLG tasks with two decoders and (2) be fine-tuned flexibly that fully exploits the potential of the model. Moreover, the unbalanced Transformer saves the computational and storage cost, which makes CPT competitive and greatly accelerates the inference of text generation. Experimental results on a wide range of Chinese NLU and NLG tasks show the effectiveness of CPT.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2109.05729](https://arxiv.org/abs/2109.05729) [cs.CL]** |
+|           | (or **[arXiv:2109.05729v1](https://arxiv.org/abs/2109.05729v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-14-9">9. Attention Weights in Transformer NMT Fail Aligning Words Between Sequences but Largely Explain Model Predictions
+</h2>
+
+Title: [Attention Weights in Transformer NMT Fail Aligning Words Between Sequences but Largely Explain Model Predictions](https://arxiv.org/abs/2109.05853)
+
+Authors: [Javier Ferrando](https://arxiv.org/search/cs?searchtype=author&query=Ferrando%2C+J), [Marta R. Costa-jussà](https://arxiv.org/search/cs?searchtype=author&query=Costa-jussà%2C+M+R)
+
+> This work proposes an extensive analysis of the Transformer architecture in the Neural Machine Translation (NMT) setting. Focusing on the encoder-decoder attention mechanism, we prove that attention weights systematically make alignment errors by relying mainly on uninformative tokens from the source sequence. However, we observe that NMT models assign attention to these tokens to regulate the contribution in the prediction of the two contexts, the source and the prefix of the target sequence. We provide evidence about the influence of wrong alignments on the model behavior, demonstrating that the encoder-decoder attention mechanism is well suited as an interpretability method for NMT. Finally, based on our analysis, we propose methods that largely reduce the word alignment error rate compared to standard induced alignments from attention weights.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2109.05853](https://arxiv.org/abs/2109.05853) [cs.CL]** |
+|           | (or **[arXiv:2109.05853v1](https://arxiv.org/abs/2109.05853v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-14-10">10. Efficient Contrastive Learning via Novel Data Augmentation and Curriculum Learning
+</h2>
+
+Title: [Efficient Contrastive Learning via Novel Data Augmentation and Curriculum Learning](https://arxiv.org/abs/2109.05941)
+
+Authors: [Seonghyeon Ye](https://arxiv.org/search/cs?searchtype=author&query=Ye%2C+S), [Jiseon Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%2C+J), [Alice Oh](https://arxiv.org/search/cs?searchtype=author&query=Oh%2C+A)
+
+> We introduce EfficientCL, a memory-efficient continual pretraining method that applies contrastive learning with novel data augmentation and curriculum learning. For data augmentation, we stack two types of operation sequentially: cutoff and PCA jittering. While pretraining steps proceed, we apply curriculum learning by incrementing the augmentation degree for each difficulty step. After data augmentation is finished, contrastive learning is applied on projected embeddings of original and augmented examples. When finetuned on GLUE benchmark, our model outperforms baseline models, especially for sentence-level tasks. Additionally, this improvement is capable with only 70% of computational memory compared to the baseline model.
+
+| Comments: | EMNLP 2021                                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2109.05941](https://arxiv.org/abs/2109.05941) [cs.CL]** |
+|           | (or **[arXiv:2109.05941v1](https://arxiv.org/abs/2109.05941v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-14-11">11. Tamizhi-Net OCR: Creating A Quality Large Scale Tamil-Sinhala-English Parallel Corpus Using Deep Learning Based Printed Character Recognition (PCR)
+</h2>
+
+Title: [Tamizhi-Net OCR: Creating A Quality Large Scale Tamil-Sinhala-English Parallel Corpus Using Deep Learning Based Printed Character Recognition (PCR)](https://arxiv.org/abs/2109.05952)
+
+Authors: [Charangan Vasantharajan](https://arxiv.org/search/cs?searchtype=author&query=Vasantharajan%2C+C), [Uthayasanker Thayasivam](https://arxiv.org/search/cs?searchtype=author&query=Thayasivam%2C+U)
+
+> Most of the low resource languages do not have the necessary resources to create even a substantial monolingual corpus. These languages may often be found in government proceedings but mostly in the form of Portable Document Formats (PDFs) that contains legacy fonts. Extracting text from these documents to create a monolingual corpus is challenging due to legacy font usage and printer-friendly encoding which are not optimized for text extraction. Therefore, we propose a simple, automatic, and novel idea that can scale for Tamil, Sinhala, and English languages and many documents. For this purpose, we enhanced the performance of Tesseract 4.1.1 by employing LSTM-based training on many legacy fonts to recognize printed characters in the above languages. Especially, our model detects code-mix text, numbers, and special characters from the printed document. It is shown that this approach can boost the character-level accuracy of Tesseract 4.1.1 from 85.5 to 98.2 for Tamil (+12.9% relative change) and 91.8 to 94.8 for Sinhala (+3.26% relative change) on a dataset that is considered as challenging by its authors.
+
+| Comments: | 7 Pages                                                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2109.05952](https://arxiv.org/abs/2109.05952) [cs.CL]** |
+|           | (or **[arXiv:2109.05952v1](https://arxiv.org/abs/2109.05952v1) [cs.CL]** for this version) |
+
+
+
+<h2 id="2021-09-14-12">12. xGQA: Cross-Lingual Visual Question Answering
+</h2>
+
+Title: [xGQA: Cross-Lingual Visual Question Answering](https://arxiv.org/abs/2109.06082)
+
+Authors: [Jonas Pfeiffer](https://arxiv.org/search/cs?searchtype=author&query=Pfeiffer%2C+J), [Gregor Geigle](https://arxiv.org/search/cs?searchtype=author&query=Geigle%2C+G), [Aishwarya Kamath](https://arxiv.org/search/cs?searchtype=author&query=Kamath%2C+A), [Jan-Martin O. Steitz](https://arxiv.org/search/cs?searchtype=author&query=Steitz%2C+J+O), [Stefan Roth](https://arxiv.org/search/cs?searchtype=author&query=Roth%2C+S), [Ivan Vulić](https://arxiv.org/search/cs?searchtype=author&query=Vulić%2C+I), [Iryna Gurevych](https://arxiv.org/search/cs?searchtype=author&query=Gurevych%2C+I)
+
+> Recent advances in multimodal vision and language modeling have predominantly focused on the English language, mostly due to the lack of multilingual multimodal datasets to steer modeling efforts. In this work, we address this gap and provide xGQA, a new multilingual evaluation benchmark for the visual question answering task. We extend the established English GQA dataset to 7 typologically diverse languages, enabling us to detect and explore crucial challenges in cross-lingual visual question answering. We further propose new adapter-based approaches to adapt multimodal transformer-based models to become multilingual, and -- vice versa -- multilingual models to become multimodal. Our proposed methods outperform current state-of-the-art multilingual multimodal models (e.g., M3P) in zero-shot cross-lingual settings, but the accuracy remains low across the board; a performance drop of around 38 accuracy points in target languages showcases the difficulty of zero-shot cross-lingual transfer for this task. Our results suggest that simple cross-lingual transfer of multimodal models yields latent multilingual multimodal misalignment, calling for more sophisticated methods for vision and multilingual language modeling. The xGQA dataset is available online at: [this https URL](https://github.com/Adapter-Hub/xGQA).
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2109.06082](https://arxiv.org/abs/2109.06082) [cs.CL]** |
+|           | (or **[arXiv:2109.06082v1](https://arxiv.org/abs/2109.06082v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+# 2021-09-13
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-09-13-1">1. LAViTeR: Learning Aligned Visual and Textual Representations Assisted by Image and Caption Generation
 </h2>
 
 Title: [LAViTeR: Learning Aligned Visual and Textual Representations Assisted by Image and Caption Generation](https://arxiv.org/abs/2109.04993)
@@ -122,7 +367,7 @@ Authors: [Mohammad Abuzar Shaikh](https://arxiv.org/search/cs?searchtype=author&
 
 
 
-<h2 id="2021-09-11-2">2. Speechformer: Reducing Information Loss in Direct Speech Translation
+<h2 id="2021-09-13-2">2. Speechformer: Reducing Information Loss in Direct Speech Translation
 </h2>
 
 Title: [Speechformer: Reducing Information Loss in Direct Speech Translation](https://arxiv.org/abs/2109.04574)
@@ -143,7 +388,7 @@ Authors: [Sara Papi](https://arxiv.org/search/cs?searchtype=author&query=Papi%2C
 
 
 
-<h2 id="2021-09-11-3">3. BERT, mBERT, or BiBERT? A Study on Contextualized Embeddings for Neural Machine Translation
+<h2 id="2021-09-13-3">3. BERT, mBERT, or BiBERT? A Study on Contextualized Embeddings for Neural Machine Translation
 </h2>
 
 Title: [BERT, mBERT, or BiBERT? A Study on Contextualized Embeddings for Neural Machine Translation](https://arxiv.org/abs/2109.04588)
@@ -165,7 +410,7 @@ Authors: [Haoran Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+H
 
 
 
-<h2 id="2021-09-11-4">4. A Large-Scale Study of Machine Translation in the Turkic Languages
+<h2 id="2021-09-13-4">4. A Large-Scale Study of Machine Translation in the Turkic Languages
 </h2>
 
 Title: [A Large-Scale Study of Machine Translation in the Turkic Languages](https://arxiv.org/abs/2109.04593)
@@ -188,7 +433,7 @@ Authors: [Jamshidbek Mirzakhalov](https://arxiv.org/search/cs?searchtype=author&
 
 
 
-<h2 id="2021-09-11-5">5. Rule-based Morphological Inflection Improves Neural Terminology Translation
+<h2 id="2021-09-13-5">5. Rule-based Morphological Inflection Improves Neural Terminology Translation
 </h2>
 
 Title: [Rule-based Morphological Inflection Improves Neural Terminology Translation](https://arxiv.org/abs/2109.04620)
@@ -209,7 +454,7 @@ Authors: [Weijia Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+W
 
 
 
-<h2 id="2021-09-11-6">6. EfficientCLIP: Efficient Cross-Modal Pre-training by Ensemble Confident Learning and Language Modeling
+<h2 id="2021-09-13-6">6. EfficientCLIP: Efficient Cross-Modal Pre-training by Ensemble Confident Learning and Language Modeling
 </h2>
 
 Title: [EfficientCLIP: Efficient Cross-Modal Pre-training by Ensemble Confident Learning and Language Modeling](https://arxiv.org/abs/2109.04699)
@@ -229,7 +474,7 @@ Authors: [Jue Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+
 
 
 
-<h2 id="2021-09-11-7">7. Rethinking Zero-shot Neural Machine Translation: From a Perspective of Latent Variables
+<h2 id="2021-09-13-7">7. Rethinking Zero-shot Neural Machine Translation: From a Perspective of Latent Variables
 </h2>
 
 Title: [Rethinking Zero-shot Neural Machine Translation: From a Perspective of Latent Variables](https://arxiv.org/abs/2109.04705)
@@ -250,7 +495,7 @@ Authors: [Weizhi Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%
 
 
 
-<h2 id="2021-09-11-8">8. Pre-train or Annotate? Domain Adaptation with a Constrained Budget
+<h2 id="2021-09-13-8">8. Pre-train or Annotate? Domain Adaptation with a Constrained Budget
 </h2>
 
 Title: [Pre-train or Annotate? Domain Adaptation with a Constrained Budget](https://arxiv.org/abs/2109.04711)
@@ -271,7 +516,7 @@ Authors: [Fan Bai](https://arxiv.org/search/cs?searchtype=author&query=Bai%2C+F)
 
 
 
-<h2 id="2021-09-11-9">9. AfroMT: Pretraining Strategies and Reproducible Benchmarks for Translation of 8 African Languages
+<h2 id="2021-09-13-9">9. AfroMT: Pretraining Strategies and Reproducible Benchmarks for Translation of 8 African Languages
 </h2>
 
 Title: [AfroMT: Pretraining Strategies and Reproducible Benchmarks for Translation of 8 African Languages](https://arxiv.org/abs/2109.04715)
@@ -288,7 +533,7 @@ Authors: [Machel Reid](https://arxiv.org/search/cs?searchtype=author&query=Reid%
 
 
 
-<h2 id="2021-09-11-10">10. A Simple and Effective Method To Eliminate the Self Language Bias in Multilingual Representations
+<h2 id="2021-09-13-10">10. A Simple and Effective Method To Eliminate the Self Language Bias in Multilingual Representations
 </h2>
 
 Title: [A Simple and Effective Method To Eliminate the Self Language Bias in Multilingual Representations](https://arxiv.org/abs/2109.04727)
@@ -309,7 +554,7 @@ Authors: [Ziyi Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C
 
 
 
-<h2 id="2021-09-11-11">11. Improving Multilingual Translation by Representation and Gradient Regularization
+<h2 id="2021-09-13-11">11. Improving Multilingual Translation by Representation and Gradient Regularization
 </h2>
 
 Title: [Improving Multilingual Translation by Representation and Gradient Regularization](https://arxiv.org/abs/2109.04778)
@@ -330,7 +575,7 @@ Authors: [Yilin Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2
 
 
 
-<h2 id="2021-09-11-12">12. Artificial Text Detection via Examining the Topology of Attention Maps
+<h2 id="2021-09-13-12">12. Artificial Text Detection via Examining the Topology of Attention Maps
 </h2>
 
 Title: [Artificial Text Detection via Examining the Topology of Attention Maps](https://arxiv.org/abs/2109.04825)
@@ -351,7 +596,7 @@ Authors: [Laida Kushnareva](https://arxiv.org/search/cs?searchtype=author&query=
 
 
 
-<h2 id="2021-09-11-13">13. Box Embeddings: An open-source library for representation learning using geometric structures
+<h2 id="2021-09-13-13">13. Box Embeddings: An open-source library for representation learning using geometric structures
 </h2>
 
 Title: [Box Embeddings: An open-source library for representation learning using geometric structures](https://arxiv.org/abs/2109.04997)
@@ -372,7 +617,7 @@ Authors: [Tejas Chheda](https://arxiv.org/search/cs?searchtype=author&query=Chhe
 
 
 
-<h2 id="2021-09-11-14">14. BiSECT: Learning to Split and Rephrase Sentences with Bitexts
+<h2 id="2021-09-13-14">14. BiSECT: Learning to Split and Rephrase Sentences with Bitexts
 </h2>
 
 Title: [BiSECT: Learning to Split and Rephrase Sentences with Bitexts](https://arxiv.org/abs/2109.05006)
@@ -391,7 +636,7 @@ Authors: [Joongwon Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%
 
 
 
-<h2 id="2021-09-11-15">15. Neural Machine Translation Quality and Post-Editing Performance
+<h2 id="2021-09-13-15">15. Neural Machine Translation Quality and Post-Editing Performance
 </h2>
 
 Title: [Neural Machine Translation Quality and Post-Editing Performance](https://arxiv.org/abs/2109.05016)
