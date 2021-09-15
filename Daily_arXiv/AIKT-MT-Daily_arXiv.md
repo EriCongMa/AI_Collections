@@ -3,6 +3,18 @@
 # Index
 
 
+- [2021-09-15](#2021-09-15)
+
+  - [1. Scalable Font Reconstruction with Dual Latent Manifolds](#2021-09-15-1)
+  - [2. Multi-Sentence Resampling: A Simple Approach to Alleviate Dataset Length Bias and Beam-Search Degradation](#2021-09-15-2)
+  - [3. Evaluating Multiway Multilingual NMT in the Turkic Languages](#2021-09-15-3)
+  - [4. Post-OCR Document Correction with large Ensembles of Character Sequence Models](#2021-09-15-4)
+  - [5. Mitigating Catastrophic Forgetting in Scheduled Sampling with Elastic Weight Consolidation in Neural Machine Translation](#2021-09-15-5)
+  - [6. Uncertainty-Aware Machine Translation Evaluation](#2021-09-15-6)
+  - [7. AligNART: Non-autoregressive Neural Machine Translation by Jointly Learning to Estimate Alignment and Translate](#2021-09-15-7)
+  - [8. Non-Parametric Unsupervised Domain Adaptation for Neural Machine Translation](#2021-09-15-8)
+  - [9. Efficient Inference for Multilingual Neural Machine Translation](#2021-09-15-9)
+  - [10. LM-Critic: Language Models for Unsupervised Grammatical Error Correction](#2021-09-15-10)
 - [2021-09-14](#2021-09-14)
 
   - [1. MURAL: Multimodal, Multitask Retrieval Across Languages](#2021-09-14-1)
@@ -108,6 +120,199 @@
   - [4. Enjoy the Salience: Towards Better Transformer-based Faithful Explanations with Word Salience](#2021-09-01-4)
   - [5. Thermostat: A Large Collection of NLP Model Explanations and Analysis Tools](#2021-09-01-5)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-09-15
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-09-15-1">1. Scalable Font Reconstruction with Dual Latent Manifolds
+</h2>
+
+Title: [Scalable Font Reconstruction with Dual Latent Manifolds](https://arxiv.org/abs/2109.06627)
+
+Authors: [Nikita Srivatsan](https://arxiv.org/search/cs?searchtype=author&query=Srivatsan%2C+N), [Si Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+S), [Jonathan T. Barron](https://arxiv.org/search/cs?searchtype=author&query=Barron%2C+J+T), [Taylor Berg-Kirkpatrick](https://arxiv.org/search/cs?searchtype=author&query=Berg-Kirkpatrick%2C+T)
+
+> We propose a deep generative model that performs typography analysis and font reconstruction by learning disentangled manifolds of both font style and character shape. Our approach enables us to massively scale up the number of character types we can effectively model compared to previous methods. Specifically, we infer separate latent variables representing character and font via a pair of inference networks which take as input sets of glyphs that either all share a character type, or belong to the same font. This design allows our model to generalize to characters that were not observed during training time, an important task in light of the relative sparsity of most fonts. We also put forward a new loss, adapted from prior work that measures likelihood using an adaptive distribution in a projected space, resulting in more natural images without requiring a discriminator. We evaluate on the task of font reconstruction over various datasets representing character types of many languages, and compare favorably to modern style transfer systems according to both automatic and manually-evaluated metrics.
+
+| Comments: | EMNLP 2021                                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2109.06627](https://arxiv.org/abs/2109.06627) [cs.CV]** |
+|           | (or **[arXiv:2109.06627v1](https://arxiv.org/abs/2109.06627v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-15-2">2. Multi-Sentence Resampling: A Simple Approach to Alleviate Dataset Length Bias and Beam-Search Degradation
+</h2>
+
+Title: [Multi-Sentence Resampling: A Simple Approach to Alleviate Dataset Length Bias and Beam-Search Degradation](https://arxiv.org/abs/2109.06253)
+
+Authors: [Ivan Provilkov](https://arxiv.org/search/cs?searchtype=author&query=Provilkov%2C+I), [Andrey Malinin](https://arxiv.org/search/cs?searchtype=author&query=Malinin%2C+A)
+
+> Neural Machine Translation (NMT) is known to suffer from a beam-search problem: after a certain point, increasing beam size causes an overall drop in translation quality. This effect is especially pronounced for long sentences. While much work was done analyzing this phenomenon, primarily for autoregressive NMT models, there is still no consensus on its underlying cause. In this work, we analyze errors that cause major quality degradation with large beams in NMT and Automatic Speech Recognition (ASR). We show that a factor that strongly contributes to the quality degradation with large beams is \textit{dataset length-bias} - \textit{NMT datasets are strongly biased towards short sentences}. To mitigate this issue, we propose a new data augmentation technique -- \textit{Multi-Sentence Resampling (MSR)}. This technique extends the training examples by concatenating several sentences from the original dataset to make a long training example. We demonstrate that MSR significantly reduces degradation with growing beam size and improves final translation quality on the IWSTL15 En-Vi, IWSTL17 En-Fr, and WMT14 En-De datasets.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2109.06253](https://arxiv.org/abs/2109.06253) [cs.CL]** |
+|           | (or **[arXiv:2109.06253v1](https://arxiv.org/abs/2109.06253v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-15-3">3. Evaluating Multiway Multilingual NMT in the Turkic Languages
+</h2>
+
+Title: [Evaluating Multiway Multilingual NMT in the Turkic Languages](https://arxiv.org/abs/2109.06262)
+
+Authors: [Jamshidbek Mirzakhalov](https://arxiv.org/search/cs?searchtype=author&query=Mirzakhalov%2C+J), [Anoop Babu](https://arxiv.org/search/cs?searchtype=author&query=Babu%2C+A), [Aigiz Kunafin](https://arxiv.org/search/cs?searchtype=author&query=Kunafin%2C+A), [Ahsan Wahab](https://arxiv.org/search/cs?searchtype=author&query=Wahab%2C+A), [Behzod Moydinboyev](https://arxiv.org/search/cs?searchtype=author&query=Moydinboyev%2C+B), [Sardana Ivanova](https://arxiv.org/search/cs?searchtype=author&query=Ivanova%2C+S), [Mokhiyakhon Uzokova](https://arxiv.org/search/cs?searchtype=author&query=Uzokova%2C+M), [Shaxnoza Pulatova](https://arxiv.org/search/cs?searchtype=author&query=Pulatova%2C+S), [Duygu Ataman](https://arxiv.org/search/cs?searchtype=author&query=Ataman%2C+D), [Julia Kreutzer](https://arxiv.org/search/cs?searchtype=author&query=Kreutzer%2C+J), [Francis Tyers](https://arxiv.org/search/cs?searchtype=author&query=Tyers%2C+F), [Orhan Firat](https://arxiv.org/search/cs?searchtype=author&query=Firat%2C+O), [John Licato](https://arxiv.org/search/cs?searchtype=author&query=Licato%2C+J), [Sriram Chellappan](https://arxiv.org/search/cs?searchtype=author&query=Chellappan%2C+S)
+
+> Despite the increasing number of large and comprehensive machine translation (MT) systems, evaluation of these methods in various languages has been restrained by the lack of high-quality parallel corpora as well as engagement with the people that speak these languages. In this study, we present an evaluation of state-of-the-art approaches to training and evaluating MT systems in 22 languages from the Turkic language family, most of which being extremely under-explored. First, we adopt the TIL Corpus with a few key improvements to the training and the evaluation sets. Then, we train 26 bilingual baselines as well as a multi-way neural MT (MNMT) model using the corpus and perform an extensive analysis using automatic metrics as well as human evaluations. We find that the MNMT model outperforms almost all bilingual baselines in the out-of-domain test sets and finetuning the model on a downstream task of a single pair also results in a huge performance boost in both low- and high-resource scenarios. Our attentive analysis of evaluation criteria for MT models in Turkic languages also points to the necessity for further research in this direction. We release the corpus splits, test sets as well as models to the public.
+
+| Comments: | 9 pages, 3 figures, 7 tables. To be presented at WMT 2021    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2109.06262](https://arxiv.org/abs/2109.06262) [cs.CL]** |
+|           | (or **[arXiv:2109.06262v1](https://arxiv.org/abs/2109.06262v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-09-15-4">4. Post-OCR Document Correction with large Ensembles of Character Sequence Models
+</h2>
+
+Title: [Post-OCR Document Correction with large Ensembles of Character Sequence Models](https://arxiv.org/abs/2109.06264)
+
+Authors: [Juan Ramirez-Orta](https://arxiv.org/search/cs?searchtype=author&query=Ramirez-Orta%2C+J), [Eduardo Xamena](https://arxiv.org/search/cs?searchtype=author&query=Xamena%2C+E), [Ana Maguitman](https://arxiv.org/search/cs?searchtype=author&query=Maguitman%2C+A), [Evangelos Milios](https://arxiv.org/search/cs?searchtype=author&query=Milios%2C+E), [Axel J. Soto](https://arxiv.org/search/cs?searchtype=author&query=Soto%2C+A+J)
+
+> In this paper, we propose a novel method based on character sequence-to-sequence models to correct documents already processed with Optical Character Recognition (OCR) systems. The main contribution of this paper is a set of strategies to accurately process strings much longer than the ones used to train the sequence model while being sample- and resource-efficient, supported by thorough experimentation. The strategy with the best performance involves splitting the input document in character n-grams and combining their individual corrections into the final output using a voting scheme that is equivalent to an ensemble of a large number of sequence models. We further investigate how to weigh the contributions from each one of the members of this ensemble. We test our method on nine languages of the ICDAR 2019 competition on post-OCR text correction and achieve a new state-of-the-art performance in five of them. Our code for post-OCR correction is shared at [this https URL](https://github.com/jarobyte91/post_ocr_correction).
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2109.06264](https://arxiv.org/abs/2109.06264) [cs.CL]** |
+|           | (or **[arXiv:2109.06264v1](https://arxiv.org/abs/2109.06264v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-15-5">5. Mitigating Catastrophic Forgetting in Scheduled Sampling with Elastic Weight Consolidation in Neural Machine Translation
+</h2>
+
+Title: [Mitigating Catastrophic Forgetting in Scheduled Sampling with Elastic Weight Consolidation in Neural Machine Translation](https://arxiv.org/abs/2109.06308)
+
+Authors: [Michalis Korakakis](https://arxiv.org/search/cs?searchtype=author&query=Korakakis%2C+M), [Andreas Vlachos](https://arxiv.org/search/cs?searchtype=author&query=Vlachos%2C+A)
+
+> Despite strong performance in many sequence-to-sequence tasks, autoregressive models trained with maximum likelihood estimation suffer from exposure bias, i.e. a discrepancy between the ground-truth prefixes used during training and the model-generated prefixes used at inference time. Scheduled sampling is a simple and often empirically successful approach which addresses this issue by incorporating model-generated prefixes into the training process. However, it has been argued that it is an inconsistent training objective leading to models ignoring the prefixes altogether. In this paper, we conduct systematic experiments and find that it ameliorates exposure bias by increasing model reliance on the input sequence. We also observe that as a side-effect, it worsens performance when the model-generated prefix is correct, a form of catastrophic forgetting. We propose using Elastic Weight Consolidation as trade-off between mitigating exposure bias and retaining output quality. Experiments on two IWSLT'14 translation tasks demonstrate that our approach alleviates catastrophic forgetting and significantly improves BLEU compared to standard scheduled sampling.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2109.06308](https://arxiv.org/abs/2109.06308) [cs.CL]** |
+|           | (or **[arXiv:2109.06308v1](https://arxiv.org/abs/2109.06308v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-15-6">6. Uncertainty-Aware Machine Translation Evaluation
+</h2>
+
+Title: [Uncertainty-Aware Machine Translation Evaluation](https://arxiv.org/abs/2109.06352)
+
+Authors: [Taisiya Glushkova](https://arxiv.org/search/cs?searchtype=author&query=Glushkova%2C+T), [Chrysoula Zerva](https://arxiv.org/search/cs?searchtype=author&query=Zerva%2C+C), [Ricardo Rei](https://arxiv.org/search/cs?searchtype=author&query=Rei%2C+R), [André F. T. Martins](https://arxiv.org/search/cs?searchtype=author&query=Martins%2C+A+F+T)
+
+> Several neural-based metrics have been recently proposed to evaluate machine translation quality. However, all of them resort to point estimates, which provide limited information at segment level. This is made worse as they are trained on noisy, biased and scarce human judgements, often resulting in unreliable quality predictions. In this paper, we introduce uncertainty-aware MT evaluation and analyze the trustworthiness of the predicted quality. We combine the COMET framework with two uncertainty estimation methods, Monte Carlo dropout and deep ensembles, to obtain quality scores along with confidence intervals. We compare the performance of our uncertainty-aware MT evaluation methods across multiple language pairs from the QT21 dataset and the WMT20 metrics task, augmented with MQM annotations. We experiment with varying numbers of references and further discuss the usefulness of uncertainty-aware quality estimation (without references) to flag possibly critical translation mistakes.
+
+| Comments: | Accepted to Findings of EMNLP 2021                           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2109.06352](https://arxiv.org/abs/2109.06352) [cs.CL]** |
+|           | (or **[arXiv:2109.06352v1](https://arxiv.org/abs/2109.06352v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-15-7">7. AligNART: Non-autoregressive Neural Machine Translation by Jointly Learning to Estimate Alignment and Translate
+</h2>
+
+Title: [AligNART: Non-autoregressive Neural Machine Translation by Jointly Learning to Estimate Alignment and Translate](https://arxiv.org/abs/2109.06481)
+
+Authors: [Jongyoon Song](https://arxiv.org/search/cs?searchtype=author&query=Song%2C+J), [Sungwon Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%2C+S), [Sungroh Yoon](https://arxiv.org/search/cs?searchtype=author&query=Yoon%2C+S)
+
+> Non-autoregressive neural machine translation (NART) models suffer from the multi-modality problem which causes translation inconsistency such as token repetition. Most recent approaches have attempted to solve this problem by implicitly modeling dependencies between outputs. In this paper, we introduce AligNART, which leverages full alignment information to explicitly reduce the modality of the target distribution. AligNART divides the machine translation task into (i) alignment estimation and (ii) translation with aligned decoder inputs, guiding the decoder to focus on simplified one-to-one translation. To alleviate the alignment estimation problem, we further propose a novel alignment decomposition method. Our experiments show that AligNART outperforms previous non-iterative NART models that focus on explicit modality reduction on WMT14 En↔De and WMT16 Ro→En. Furthermore, AligNART achieves BLEU scores comparable to those of the state-of-the-art connectionist temporal classification based models on WMT14 En↔De. We also observe that AligNART effectively addresses the token repetition problem even without sequence-level knowledge distillation.
+
+| Comments: | Accepted by EMNLP 2021                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2109.06481](https://arxiv.org/abs/2109.06481) [cs.CL]** |
+|           | (or **[arXiv:2109.06481v1](https://arxiv.org/abs/2109.06481v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-15-8">8. Non-Parametric Unsupervised Domain Adaptation for Neural Machine Translation
+</h2>
+
+Title: [Non-Parametric Unsupervised Domain Adaptation for Neural Machine Translation](https://arxiv.org/abs/2109.06604)
+
+Authors: [Xin Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng%2C+X), [Zhirui Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Z), [Shujian Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+S), [Boxing Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+B), [Jun Xie](https://arxiv.org/search/cs?searchtype=author&query=Xie%2C+J), [Weihua Luo](https://arxiv.org/search/cs?searchtype=author&query=Luo%2C+W), [Jiajun Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+J)
+
+> Recently, kNN-MT has shown the promising capability of directly incorporating the pre-trained neural machine translation (NMT) model with domain-specific token-level k-nearest-neighbor (kNN) retrieval to achieve domain adaptation without retraining. Despite being conceptually attractive, it heavily relies on high-quality in-domain parallel corpora, limiting its capability on unsupervised domain adaptation, where in-domain parallel corpora are scarce or nonexistent. In this paper, we propose a novel framework that directly uses in-domain monolingual sentences in the target language to construct an effective datastore for k-nearest-neighbor retrieval. To this end, we first introduce an autoencoder task based on the target language, and then insert lightweight adapters into the original NMT model to map the token-level representation of this task to the ideal representation of translation task. Experiments on multi-domain datasets demonstrate that our proposed approach significantly improves the translation accuracy with target-side monolingual data, while achieving comparable performance with back-translation.
+
+| Comments: | Findings of EMNLP 2021                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2109.06604](https://arxiv.org/abs/2109.06604) [cs.CL]** |
+|           | (or **[arXiv:2109.06604v1](https://arxiv.org/abs/2109.06604v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-15-9">9. Efficient Inference for Multilingual Neural Machine Translation
+</h2>
+
+Title: [Efficient Inference for Multilingual Neural Machine Translation](https://arxiv.org/abs/2109.06679)
+
+Authors: [Alexandre Berard](https://arxiv.org/search/cs?searchtype=author&query=Berard%2C+A), [Dain Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+D), [Stéphane Clinchant](https://arxiv.org/search/cs?searchtype=author&query=Clinchant%2C+S), [Kweonwoo Jung](https://arxiv.org/search/cs?searchtype=author&query=Jung%2C+K), [Vassilina Nikoulina](https://arxiv.org/search/cs?searchtype=author&query=Nikoulina%2C+V)
+
+> Multilingual NMT has become an attractive solution for MT deployment in production. But to match bilingual quality, it comes at the cost of larger and slower models. In this work, we consider several ways to make multilingual NMT faster at inference without degrading its quality. We experiment with several "light decoder" architectures in two 20-language multi-parallel settings: small-scale on TED Talks and large-scale on ParaCrawl. Our experiments demonstrate that combining a shallow decoder with vocabulary filtering leads to more than twice faster inference with no loss in translation quality. We validate our findings with BLEU and chrF (on 380 language pairs), robustness evaluation and human evaluation.
+
+| Comments: | Accepted as a long paper to EMNLP 2021                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2109.06679](https://arxiv.org/abs/2109.06679) [cs.CL]** |
+|           | (or **[arXiv:2109.06679v1](https://arxiv.org/abs/2109.06679v1) [cs.CL]** for this version) |
+
+
+
+<h2 id="2021-09-15-10">10. LM-Critic: Language Models for Unsupervised Grammatical Error Correction
+</h2>
+
+Title: [LM-Critic: Language Models for Unsupervised Grammatical Error Correction](https://arxiv.org/abs/2109.06822)
+
+Authors: [Michihiro Yasunaga](https://arxiv.org/search/cs?searchtype=author&query=Yasunaga%2C+M), [Jure Leskovec](https://arxiv.org/search/cs?searchtype=author&query=Leskovec%2C+J), [Percy Liang](https://arxiv.org/search/cs?searchtype=author&query=Liang%2C+P)
+
+> Training a model for grammatical error correction (GEC) requires a set of labeled ungrammatical / grammatical sentence pairs, but manually annotating such pairs can be expensive. Recently, the Break-It-Fix-It (BIFI) framework has demonstrated strong results on learning to repair a broken program without any labeled examples, but this relies on a perfect critic (e.g., a compiler) that returns whether an example is valid or not, which does not exist for the GEC task. In this work, we show how to leverage a pretrained language model (LM) in defining an LM-Critic, which judges a sentence to be grammatical if the LM assigns it a higher probability than its local perturbations. We apply this LM-Critic and BIFI along with a large set of unlabeled sentences to bootstrap realistic ungrammatical / grammatical pairs for training a corrector. We evaluate our approach on GEC datasets across multiple domains (CoNLL-2014, BEA-2019, GMEG-wiki and GMEG-yahoo) and show that it outperforms existing methods in both the unsupervised setting (+7.7 F0.5) and the supervised setting (+0.5 F0.5).
+
+| Comments: | EMNLP 2021. Code & data available at [this https URL](https://github.com/michiyasunaga/LM-Critic) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2109.06822](https://arxiv.org/abs/2109.06822) [cs.CL]** |
+|           | (or **[arXiv:2109.06822v1](https://arxiv.org/abs/2109.06822v1) [cs.CL]** for this version) |
+
+
 
 
 
