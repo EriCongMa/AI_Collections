@@ -3,8 +3,22 @@
 # Index
 
 
-- [2021-09-15](#2021-09-15)
+- [2021-09-16](#2021-09-16-1)
 
+  - [1. fairseq S^2: A Scalable and Integrable Speech Synthesis Toolkit](#2021-09-16-1)
+  - [2. On the Language-specificity of Multilingual BERT and the Impact of Fine-tuning](#2021-09-16-2)
+  - [3. The Stem Cell Hypothesis: Dilemma behind Multi-Task Learning with Transformer Encoders](#2021-09-16-3)
+  - [4. Beyond Glass-Box Features: Uncertainty Quantification Enhanced Quality Estimation for Neural Machine Translation](#2021-09-16-4)
+  - [5. Regressive Ensemble for Machine Translation Quality Evaluation](#2021-09-16-5)
+  - [6. Sequence Length is a Domain: Length-based Overfitting in Transformer Models](#2021-09-16-6)
+  - [7. What Vision-Language Models `See' when they See Scenes](#2021-09-16-7)
+  - [8.Cross-lingual Transfer of Monolingual Models](#2021-09-16-8)
+  - [9. UniST: Unified End-to-end Model for Streaming and Non-streaming Speech Translation](#2021-09-16-9)
+  - [10. SupCL-Seq: Supervised Contrastive Learning for Downstream Optimized Sequence Representations](#2021-09-16-10)
+  - [11. Is "moby dick" a Whale or a Bird? Named Entities and Terminology in Speech Translation](#2021-09-16-11)
+  - [12. When Does Translation Require Context? A Data-driven, Multilingual Exploration](#2021-09-16-12)
+  - [13. On the Limits of Minimal Pairs in Contrastive Evaluation](#2021-09-16-13)
+- [2021-09-15](#2021-09-15)
   - [1. Scalable Font Reconstruction with Dual Latent Manifolds](#2021-09-15-1)
   - [2. Multi-Sentence Resampling: A Simple Approach to Alleviate Dataset Length Bias and Beam-Search Degradation](#2021-09-15-2)
   - [3. Evaluating Multiway Multilingual NMT in the Turkic Languages](#2021-09-15-3)
@@ -120,6 +134,258 @@
   - [4. Enjoy the Salience: Towards Better Transformer-based Faithful Explanations with Word Salience](#2021-09-01-4)
   - [5. Thermostat: A Large Collection of NLP Model Explanations and Analysis Tools](#2021-09-01-5)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-09-16
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-09-16-1">1. fairseq S^2: A Scalable and Integrable Speech Synthesis Toolkit
+</h2>
+
+Title: [fairseq S^2: A Scalable and Integrable Speech Synthesis Toolkit](https://arxiv.org/abs/2109.06912)
+
+Authors: [Changhan Wang](https://arxiv.org/search/eess?searchtype=author&query=Wang%2C+C), [Wei-Ning Hsu](https://arxiv.org/search/eess?searchtype=author&query=Hsu%2C+W), [Yossi Adi](https://arxiv.org/search/eess?searchtype=author&query=Adi%2C+Y), [Adam Polyak](https://arxiv.org/search/eess?searchtype=author&query=Polyak%2C+A), [Ann Lee](https://arxiv.org/search/eess?searchtype=author&query=Lee%2C+A), [Peng-Jen Chen](https://arxiv.org/search/eess?searchtype=author&query=Chen%2C+P), [Jiatao Gu](https://arxiv.org/search/eess?searchtype=author&query=Gu%2C+J), [Juan Pino](https://arxiv.org/search/eess?searchtype=author&query=Pino%2C+J)
+
+> This paper presents fairseq S^2, a fairseq extension for speech synthesis. We implement a number of autoregressive (AR) and non-AR text-to-speech models, and their multi-speaker variants. To enable training speech synthesis models with less curated data, a number of preprocessing tools are built and their importance is shown empirically. To facilitate faster iteration of development and analysis, a suite of automatic metrics is included. Apart from the features added specifically for this extension, fairseq S^2 also benefits from the scalability offered by fairseq and can be easily integrated with other state-of-the-art systems provided in this framework. The code, documentation, and pre-trained models are available at [this https URL](https://github.com/pytorch/fairseq/tree/master/examples/speech_synthesis).
+
+| Comments: | Accepted to EMNLP 2021 Demo                                  |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Audio and Speech Processing (eess.AS)**; Computation and Language (cs.CL); Sound (cs.SD) |
+| Cite as:  | **[arXiv:2109.06912](https://arxiv.org/abs/2109.06912) [eess.AS]** |
+|           | (or **[arXiv:2109.06912v1](https://arxiv.org/abs/2109.06912v1) [eess.AS]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-16-2">2. On the Language-specificity of Multilingual BERT and the Impact of Fine-tuning
+</h2>
+
+Title: [On the Language-specificity of Multilingual BERT and the Impact of Fine-tuning](https://arxiv.org/abs/2109.06935)
+
+Authors: [Marc Tanti](https://arxiv.org/search/cs?searchtype=author&query=Tanti%2C+M), [Lonneke van der Plas](https://arxiv.org/search/cs?searchtype=author&query=van+der+Plas%2C+L), [Claudia Borg](https://arxiv.org/search/cs?searchtype=author&query=Borg%2C+C), [Albert Gatt](https://arxiv.org/search/cs?searchtype=author&query=Gatt%2C+A)
+
+> Recent work has shown evidence that the knowledge acquired by multilingual BERT (mBERT) has two components: a language-specific and a language-neutral one. This paper analyses the relationship between them, in the context of fine-tuning on two tasks -- POS tagging and natural language inference -- which require the model to bring to bear different degrees of language-specific knowledge. Visualisations reveal that mBERT loses the ability to cluster representations by language after fine-tuning, a result that is supported by evidence from language identification experiments. However, further experiments on 'unlearning' language-specific representations using gradient reversal and iterative adversarial learning are shown not to add further improvement to the language-independent component over and above the effect of fine-tuning. The results presented here suggest that the process of fine-tuning causes a reorganisation of the model's limited representational capacity, enhancing language-independent representations at the expense of language-specific ones.
+
+| Comments: | 22 pages, 6 figures, 5 tables, to appear in BlackBoxNLP 2021 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Neural and Evolutionary Computing (cs.NE) |
+| Cite as:  | **[arXiv:2109.06935](https://arxiv.org/abs/2109.06935) [cs.CL]** |
+|           | (or **[arXiv:2109.06935v1](https://arxiv.org/abs/2109.06935v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-09-16-3">3. The Stem Cell Hypothesis: Dilemma behind Multi-Task Learning with Transformer Encoders
+</h2>
+
+Title: [The Stem Cell Hypothesis: Dilemma behind Multi-Task Learning with Transformer Encoders](https://arxiv.org/abs/2109.06939)
+
+Authors: [Han He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+H), [Jinho D. Choi](https://arxiv.org/search/cs?searchtype=author&query=Choi%2C+J+D)
+
+> Multi-task learning with transformer encoders (MTL) has emerged as a powerful technique to improve performance on closely-related tasks for both accuracy and efficiency while a question still remains whether or not it would perform as well on tasks that are distinct in nature. We first present MTL results on five NLP tasks, POS, NER, DEP, CON, and SRL, and depict its deficiency over single-task learning. We then conduct an extensive pruning analysis to show that a certain set of attention heads get claimed by most tasks during MTL, who interfere with one another to fine-tune those heads for their own objectives. Based on this finding, we propose the Stem Cell Hypothesis to reveal the existence of attention heads naturally talented for many tasks that cannot be jointly trained to create adequate embeddings for all of those tasks. Finally, we design novel parameter-free probes to justify our hypothesis and demonstrate how attention heads are transformed across the five tasks during MTL through label analysis.
+
+| Comments: | Accepted to EMNLP 2021: The 2021 Conference on Empirical Methods in Natural Language Processing |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2109.06939](https://arxiv.org/abs/2109.06939) [cs.CL]** |
+|           | (or **[arXiv:2109.06939v1](https://arxiv.org/abs/2109.06939v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-16-4">4. Beyond Glass-Box Features: Uncertainty Quantification Enhanced Quality Estimation for Neural Machine Translation
+</h2>
+
+Title: [Beyond Glass-Box Features: Uncertainty Quantification Enhanced Quality Estimation for Neural Machine Translation](https://arxiv.org/abs/2109.07141)
+
+Authors: [Ke Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+K), [Yangbin Shi](https://arxiv.org/search/cs?searchtype=author&query=Shi%2C+Y), [Jiayi Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+J), [Yuqi Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Y), [Yu Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+Y), [Xiaolin Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng%2C+X)
+
+> Quality Estimation (QE) plays an essential role in applications of Machine Translation (MT). Traditionally, a QE system accepts the original source text and translation from a black-box MT system as input. Recently, a few studies indicate that as a by-product of translation, QE benefits from the model and training data's information of the MT system where the translations come from, and it is called the "glass-box QE". In this paper, we extend the definition of "glass-box QE" generally to uncertainty quantification with both "black-box" and "glass-box" approaches and design several features deduced from them to blaze a new trial in improving QE's performance. We propose a framework to fuse the feature engineering of uncertainty quantification into a pre-trained cross-lingual language model to predict the translation quality. Experiment results show that our method achieves state-of-the-art performances on the datasets of WMT 2020 QE shared task.
+
+| Comments: | Accepted by Findings of EMNLP 2021                           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2109.07141](https://arxiv.org/abs/2109.07141) [cs.CL]** |
+|           | (or **[arXiv:2109.07141v1](https://arxiv.org/abs/2109.07141v1) [cs.CL]** for this version) |
+
+
+
+<h2 id="2021-09-16-5">5. Regressive Ensemble for Machine Translation Quality Evaluation
+</h2>
+
+Title: [Regressive Ensemble for Machine Translation Quality Evaluation](https://arxiv.org/abs/2109.07242)
+
+Authors: [Michal Štefánik](https://arxiv.org/search/cs?searchtype=author&query=Štefánik%2C+M), [Vít Novotný](https://arxiv.org/search/cs?searchtype=author&query=Novotný%2C+V), [Petr Sojka](https://arxiv.org/search/cs?searchtype=author&query=Sojka%2C+P)
+
+> This work introduces a simple regressive ensemble for evaluating machine translation quality based on a set of novel and established metrics. We evaluate the ensemble using a correlation to expert-based MQM scores of the WMT 2021 Metrics workshop. In both monolingual and zero-shot cross-lingual settings, we show a significant performance improvement over single metrics. In the cross-lingual settings, we also demonstrate that an ensemble approach is well-applicable to unseen languages. Furthermore, we identify a strong reference-free baseline that consistently outperforms the commonly-used BLEU and METEOR measures and significantly improves our ensemble's performance.
+
+| Comments: | 8 pages incl. references, Proceedings of EMNLP 2021 Sixth Conference on Machine Translation (WMT 21) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2109.07242](https://arxiv.org/abs/2109.07242) [cs.CL]** |
+|           | (or **[arXiv:2109.07242v1](https://arxiv.org/abs/2109.07242v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-16-6">6. Sequence Length is a Domain: Length-based Overfitting in Transformer Models
+</h2>
+
+Title: [Sequence Length is a Domain: Length-based Overfitting in Transformer Models](https://arxiv.org/abs/2109.07276)
+
+Authors: [Dušan Variš](https://arxiv.org/search/cs?searchtype=author&query=Variš%2C+D), [Ondřej Bojar](https://arxiv.org/search/cs?searchtype=author&query=Bojar%2C+O)
+
+> Transformer-based sequence-to-sequence architectures, while achieving state-of-the-art results on a large number of NLP tasks, can still suffer from overfitting during training. In practice, this is usually countered either by applying regularization methods (e.g. dropout, L2-regularization) or by providing huge amounts of training data. Additionally, Transformer and other architectures are known to struggle when generating very long sequences. For example, in machine translation, the neural-based systems perform worse on very long sequences when compared to the preceding phrase-based translation approaches (Koehn and Knowles, 2017).
+> We present results which suggest that the issue might also be in the mismatch between the length distributions of the training and validation data combined with the aforementioned tendency of the neural networks to overfit to the training data. We demonstrate on a simple string editing task and a machine translation task that the Transformer model performance drops significantly when facing sequences of length diverging from the length distribution in the training data. Additionally, we show that the observed drop in performance is due to the hypothesis length corresponding to the lengths seen by the model during training rather than the length of the input sequence.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2109.07276](https://arxiv.org/abs/2109.07276) [cs.CL]** |
+|           | (or **[arXiv:2109.07276v1](https://arxiv.org/abs/2109.07276v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-16-7">7. What Vision-Language Models `See' when they See Scenes
+</h2>
+
+Title: [What Vision-Language Models `See' when they See Scenes](https://arxiv.org/abs/2109.07301)
+
+Authors: [Michele Cafagna](https://arxiv.org/search/cs?searchtype=author&query=Cafagna%2C+M), [Kees van Deemter](https://arxiv.org/search/cs?searchtype=author&query=van+Deemter%2C+K), [Albert Gatt](https://arxiv.org/search/cs?searchtype=author&query=Gatt%2C+A)
+
+> Images can be described in terms of the objects they contain, or in terms of the types of scene or place that they instantiate. In this paper we address to what extent pretrained Vision and Language models can learn to align descriptions of both types with images. We compare 3 state-of-the-art models, VisualBERT, LXMERT and CLIP. We find that (i) V&L models are susceptible to stylistic biases acquired during pretraining; (ii) only CLIP performs consistently well on both object- and scene-level descriptions. A follow-up ablation study shows that CLIP uses object-level information in the visual modality to align with scene-level textual descriptions.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2109.07301](https://arxiv.org/abs/2109.07301) [cs.CL]** |
+|           | (or **[arXiv:2109.07301v1](https://arxiv.org/abs/2109.07301v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-16-8">8. Cross-lingual Transfer of Monolingual Models
+</h2>
+
+Title: [Cross-lingual Transfer of Monolingual Models](https://arxiv.org/abs/2109.07348)
+
+Authors: [Evangelia Gogoulou](https://arxiv.org/search/cs?searchtype=author&query=Gogoulou%2C+E), [Ariel Ekgren](https://arxiv.org/search/cs?searchtype=author&query=Ekgren%2C+A), [Tim Isbister](https://arxiv.org/search/cs?searchtype=author&query=Isbister%2C+T), [Magnus Sahlgren](https://arxiv.org/search/cs?searchtype=author&query=Sahlgren%2C+M)
+
+> Recent studies in zero-shot cross-lingual learning using multilingual models have falsified the previous hypothesis that shared vocabulary and joint pre-training are the keys to cross-lingual generalization. Inspired by this advancement, we introduce a cross-lingual transfer method for monolingual models based on domain adaptation. We study the effects of such transfer from four different languages to English. Our experimental results on GLUE show that the transferred models outperform the native English model independently of the source language. After probing the English linguistic knowledge encoded in the representations before and after transfer, we find that semantic information is retained from the source language, while syntactic information is learned during transfer. Additionally, the results of evaluating the transferred models in source language tasks reveal that their performance in the source domain deteriorates after transfer.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2109.07348](https://arxiv.org/abs/2109.07348) [cs.CL]** |
+|           | (or **[arXiv:2109.07348v1](https://arxiv.org/abs/2109.07348v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-09-16-9">9. UniST: Unified End-to-end Model for Streaming and Non-streaming Speech Translation
+</h2>
+
+Title: [UniST: Unified End-to-end Model for Streaming and Non-streaming Speech Translation](https://arxiv.org/abs/2109.07368)
+
+Authors: [Qianqian Dong](https://arxiv.org/search/cs?searchtype=author&query=Dong%2C+Q), [Yaoming Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+Y), [Mingxuan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+M), [Lei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L)
+
+> This paper presents a unified end-to-end frame-work for both streaming and non-streamingspeech translation. While the training recipes for non-streaming speech translation have been mature, the recipes for streaming speechtranslation are yet to be built. In this work, wefocus on developing a unified model (UniST) which supports streaming and non-streaming ST from the perspective of fundamental components, including training objective, attention mechanism and decoding policy. Experiments on the most popular speech-to-text translation benchmark dataset, MuST-C, show that UniST achieves significant improvement for non-streaming ST, and a better-learned trade-off for BLEU score and latency metrics for streaming ST, compared with end-to-end baselines and the cascaded models. We will make our codes and evaluation tools publicly available.
+
+| Subjects: | **Computation and Language (cs.CL)**; Audio and Speech Processing (eess.AS) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2109.07368](https://arxiv.org/abs/2109.07368) [cs.CL]** |
+|           | (or **[arXiv:2109.07368v1](https://arxiv.org/abs/2109.07368v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-16-10">10. SupCL-Seq: Supervised Contrastive Learning for Downstream Optimized Sequence Representations
+</h2>
+
+Title: [SupCL-Seq: Supervised Contrastive Learning for Downstream Optimized Sequence Representations](https://arxiv.org/abs/2109.07424)
+
+Authors: [Hooman Sedghamiz](https://arxiv.org/search/cs?searchtype=author&query=Sedghamiz%2C+H), [Shivam Raval](https://arxiv.org/search/cs?searchtype=author&query=Raval%2C+S), [Enrico Santus](https://arxiv.org/search/cs?searchtype=author&query=Santus%2C+E), [Tuka Alhanai](https://arxiv.org/search/cs?searchtype=author&query=Alhanai%2C+T), [Mohammad Ghassemi](https://arxiv.org/search/cs?searchtype=author&query=Ghassemi%2C+M)
+
+> While contrastive learning is proven to be an effective training strategy in computer vision, Natural Language Processing (NLP) is only recently adopting it as a self-supervised alternative to Masked Language Modeling (MLM) for improving sequence representations. This paper introduces SupCL-Seq, which extends the supervised contrastive learning from computer vision to the optimization of sequence representations in NLP. By altering the dropout mask probability in standard Transformer architectures, for every representation (anchor), we generate augmented altered views. A supervised contrastive loss is then utilized to maximize the system's capability of pulling together similar samples (e.g., anchors and their altered views) and pushing apart the samples belonging to the other classes. Despite its simplicity, SupCLSeq leads to large gains in many sequence classification tasks on the GLUE benchmark compared to a standard BERTbase, including 6% absolute improvement on CoLA, 5.4% on MRPC, 4.7% on RTE and 2.6% on STSB. We also show consistent gains over self supervised contrastively learned representations, especially in non-semantic tasks. Finally we show that these gains are not solely due to augmentation, but rather to a downstream optimized sequence representation. Code: [this https URL](https://github.com/hooman650/SupCL-Seq)
+
+| Comments: | short paper, EMNLP 2021, Findings                            |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2109.07424](https://arxiv.org/abs/2109.07424) [cs.CL]** |
+|           | (or **[arXiv:2109.07424v1](https://arxiv.org/abs/2109.07424v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-16-11">11. Is "moby dick" a Whale or a Bird? Named Entities and Terminology in Speech Translation
+</h2>
+
+Title: [Is "moby dick" a Whale or a Bird? Named Entities and Terminology in Speech Translation](https://arxiv.org/abs/2109.07439)
+
+Authors: [Marco Gaido](https://arxiv.org/search/cs?searchtype=author&query=Gaido%2C+M), [Susana Rodríguez](https://arxiv.org/search/cs?searchtype=author&query=Rodríguez%2C+S), [Matteo Negri](https://arxiv.org/search/cs?searchtype=author&query=Negri%2C+M), [Luisa Bentivogli](https://arxiv.org/search/cs?searchtype=author&query=Bentivogli%2C+L), [Marco Turchi](https://arxiv.org/search/cs?searchtype=author&query=Turchi%2C+M)
+
+> Automatic translation systems are known to struggle with rare words. Among these, named entities (NEs) and domain-specific terms are crucial, since errors in their translation can lead to severe meaning distortions. Despite their importance, previous speech translation (ST) studies have neglected them, also due to the dearth of publicly available resources tailored to their specific evaluation. To fill this gap, we i) present the first systematic analysis of the behavior of state-of-the-art ST systems in translating NEs and terminology, and ii) release NEuRoparl-ST, a novel benchmark built from European Parliament speeches annotated with NEs and terminology. Our experiments on the three language directions covered by our benchmark (en->es/fr/it) show that ST systems correctly translate 75-80% of terms and 65-70% of NEs, with very low performance (37-40%) on person names.
+
+| Comments: | Accepted at EMNLP2021                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2109.07439](https://arxiv.org/abs/2109.07439) [cs.CL]** |
+|           | (or **[arXiv:2109.07439v1](https://arxiv.org/abs/2109.07439v1) [cs.CL]** for this version) |
+
+
+
+<h2 id="2021-09-16-12">12. When Does Translation Require Context? A Data-driven, Multilingual Exploration
+</h2>
+
+Title: [When Does Translation Require Context? A Data-driven, Multilingual Exploration](https://arxiv.org/abs/2109.07446)
+
+Authors: [Kayo Yin](https://arxiv.org/search/cs?searchtype=author&query=Yin%2C+K), [Patrick Fernandes](https://arxiv.org/search/cs?searchtype=author&query=Fernandes%2C+P), [André F. T. Martins](https://arxiv.org/search/cs?searchtype=author&query=Martins%2C+A+F+T), [Graham Neubig](https://arxiv.org/search/cs?searchtype=author&query=Neubig%2C+G)
+
+> Although proper handling of discourse phenomena significantly contributes to the quality of machine translation (MT), common translation quality metrics do not adequately capture them. Recent works in context-aware MT attempt to target a small set of these phenomena during evaluation. In this paper, we propose a new metric, P-CXMI, which allows us to identify translations that require context systematically and confirm the difficulty of previously studied phenomena as well as uncover new ones that have not been addressed in previous work. We then develop the Multilingual Discourse-Aware (MuDA) benchmark, a series of taggers for these phenomena in 14 different language pairs, which we use to evaluate context-aware MT. We find that state-of-the-art context-aware MT models find marginal improvements over context-agnostic models on our benchmark, which suggests current models do not handle these ambiguities effectively. We release code and data to invite the MT research community to increase efforts on context-aware translation on discourse phenomena and languages that are currently overlooked.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2109.07446](https://arxiv.org/abs/2109.07446) [cs.CL]** |
+|           | (or **[arXiv:2109.07446v1](https://arxiv.org/abs/2109.07446v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-16-13">13. On the Limits of Minimal Pairs in Contrastive Evaluation
+</h2>
+
+Title: [On the Limits of Minimal Pairs in Contrastive Evaluation](https://arxiv.org/abs/2109.07465)
+
+Authors: [Jannis Vamvas](https://arxiv.org/search/cs?searchtype=author&query=Vamvas%2C+J), [Rico Sennrich](https://arxiv.org/search/cs?searchtype=author&query=Sennrich%2C+R)
+
+> Minimal sentence pairs are frequently used to analyze the behavior of language models. It is often assumed that model behavior on contrastive pairs is predictive of model behavior at large. We argue that two conditions are necessary for this assumption to hold: First, a tested hypothesis should be well-motivated, since experiments show that contrastive evaluation can lead to false positives. Secondly, test data should be chosen such as to minimize distributional discrepancy between evaluation time and deployment time. For a good approximation of deployment-time decoding, we recommend that minimal pairs are created based on machine-generated text, as opposed to human-written references. We present a contrastive evaluation suite for English-German MT that implements this recommendation.
+
+| Comments: | BlackboxNLP 2021                                             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2109.07465](https://arxiv.org/abs/2109.07465) [cs.CL]** |
+|           | (or **[arXiv:2109.07465v1](https://arxiv.org/abs/2109.07465v1) [cs.CL]** for this version) |
+
+
+
+
+
 
 
 
