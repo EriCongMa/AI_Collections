@@ -3,6 +3,15 @@
 # Index
 
 
+- [2021-09-17](#2021-09-17)
+
+  - [1. Scaling Laws for Neural Machine Translation](#2021-09-17-1)
+  - [2. CONTaiNER: Few-Shot Named Entity Recognition via Contrastive Learning](#2021-09-17-2)
+  - [3. Comparing Feature-Engineering and Feature-Learning Approaches for Multilingual Translationese Classification](#2021-09-17-3)
+  - [4. Language Models are Few-shot Multilingual Learners](#2021-09-17-4)
+  - [5. Improving Neural Machine Translation by Bidirectional Training](#2021-09-17-5)
+  - [6. The Language Model Understood the Prompt was Ambiguous: Probing Syntactic Uncertainty Through Generation](#2021-09-17-6)
+  - [7. The NiuTrans System for the WMT21 Efficiency Task](#2021-09-17-7)
 - [2021-09-16](#2021-09-16-1)
 
   - [1. fairseq S^2: A Scalable and Integrable Speech Synthesis Toolkit](#2021-09-16-1)
@@ -134,6 +143,145 @@
   - [4. Enjoy the Salience: Towards Better Transformer-based Faithful Explanations with Word Salience](#2021-09-01-4)
   - [5. Thermostat: A Large Collection of NLP Model Explanations and Analysis Tools](#2021-09-01-5)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-09-17
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-09-17-1">1. Scaling Laws for Neural Machine Translation
+</h2>
+
+Title: [Scaling Laws for Neural Machine Translation](https://arxiv.org/abs/2109.07740)
+
+Authors: [Behrooz Ghorbani](https://arxiv.org/search/cs?searchtype=author&query=Ghorbani%2C+B), [Orhan Firat](https://arxiv.org/search/cs?searchtype=author&query=Firat%2C+O), [Markus Freitag](https://arxiv.org/search/cs?searchtype=author&query=Freitag%2C+M), [Ankur Bapna](https://arxiv.org/search/cs?searchtype=author&query=Bapna%2C+A), [Maxim Krikun](https://arxiv.org/search/cs?searchtype=author&query=Krikun%2C+M), [Xavier Garcia](https://arxiv.org/search/cs?searchtype=author&query=Garcia%2C+X), [Ciprian Chelba](https://arxiv.org/search/cs?searchtype=author&query=Chelba%2C+C), [Colin Cherry](https://arxiv.org/search/cs?searchtype=author&query=Cherry%2C+C)
+
+> We present an empirical study of scaling properties of encoder-decoder Transformer models used in neural machine translation (NMT). We show that cross-entropy loss as a function of model size follows a certain scaling law. Specifically (i) We propose a formula which describes the scaling behavior of cross-entropy loss as a bivariate function of encoder and decoder size, and show that it gives accurate predictions under a variety of scaling approaches and languages; we show that the total number of parameters alone is not sufficient for such purposes. (ii) We observe different power law exponents when scaling the decoder vs scaling the encoder, and provide recommendations for optimal allocation of encoder/decoder capacity based on this observation. (iii) We also report that the scaling behavior of the model is acutely influenced by composition bias of the train/test sets, which we define as any deviation from naturally generated text (either via machine generated or human translated text). We observe that natural text on the target side enjoys scaling, which manifests as successful reduction of the cross-entropy loss. (iv) Finally, we investigate the relationship between the cross-entropy loss and the quality of the generated translations. We find two different behaviors, depending on the nature of the test data. For test sets which were originally translated from target language to source language, both loss and BLEU score improve as model size increases. In contrast, for test sets originally translated from source language to target language, the loss improves, but the BLEU score stops improving after a certain threshold. We release generated text from all models used in this study.
+
+| Comments: | 31 pages, 23 figures                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Machine Learning (cs.LG)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2109.07740](https://arxiv.org/abs/2109.07740) [cs.LG]** |
+|           | (or **[arXiv:2109.07740v1](https://arxiv.org/abs/2109.07740v1) [cs.LG]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-17-2">2. CONTaiNER: Few-Shot Named Entity Recognition via Contrastive Learning
+</h2>
+
+Title: [CONTaiNER: Few-Shot Named Entity Recognition via Contrastive Learning](https://arxiv.org/abs/2109.07589)
+
+Authors: [Sarkar Snigdha Sarathi Das](https://arxiv.org/search/cs?searchtype=author&query=Das%2C+S+S+S), [Arzoo Katiyar](https://arxiv.org/search/cs?searchtype=author&query=Katiyar%2C+A), [Rebecca J. Passonneau](https://arxiv.org/search/cs?searchtype=author&query=Passonneau%2C+R+J), [Rui Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+R)
+
+> Named Entity Recognition (NER) in Few-Shot setting is imperative for entity tagging in low resource domains. Existing approaches only learn class-specific semantic features and intermediate representations from source domains. This affects generalizability to unseen target domains, resulting in suboptimal performances. To this end, we present CONTaiNER, a novel contrastive learning technique that optimizes the inter-token distribution distance for Few-Shot NER. Instead of optimizing class-specific attributes, CONTaiNER optimizes a generalized objective of differentiating between token categories based on their Gaussian-distributed embeddings. This effectively alleviates overfitting issues originating from training domains. Our experiments in several traditional test domains (OntoNotes, CoNLL'03, WNUT '17, GUM) and a new large scale Few-Shot NER dataset (Few-NERD) demonstrate that on average, CONTaiNER outperforms previous methods by 3%-13% absolute F1 points while showing consistent performance trends, even in challenging scenarios where previous approaches could not achieve appreciable performance.
+
+| Comments: | 10 pages, 6 tables, 2 figures                                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2109.07589](https://arxiv.org/abs/2109.07589) [cs.CL]** |
+|           | (or **[arXiv:2109.07589v1](https://arxiv.org/abs/2109.07589v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-17-3">3. Comparing Feature-Engineering and Feature-Learning Approaches for Multilingual Translationese Classification
+</h2>
+
+Title: [Comparing Feature-Engineering and Feature-Learning Approaches for Multilingual Translationese Classification](https://arxiv.org/abs/2109.07604)
+
+Authors: [Daria Pylypenko](https://arxiv.org/search/cs?searchtype=author&query=Pylypenko%2C+D), [Kwabena Amponsah-Kaakyire](https://arxiv.org/search/cs?searchtype=author&query=Amponsah-Kaakyire%2C+K), [Koel Dutta Chowdhury](https://arxiv.org/search/cs?searchtype=author&query=Chowdhury%2C+K+D), [Josef van Genabith](https://arxiv.org/search/cs?searchtype=author&query=van+Genabith%2C+J), [Cristina España-Bonet](https://arxiv.org/search/cs?searchtype=author&query=España-Bonet%2C+C)
+
+> Traditional hand-crafted linguistically-informed features have often been used for distinguishing between translated and original non-translated texts. By contrast, to date, neural architectures without manual feature engineering have been less explored for this task. In this work, we (i) compare the traditional feature-engineering-based approach to the feature-learning-based one and (ii) analyse the neural architectures in order to investigate how well the hand-crafted features explain the variance in the neural models' predictions. We use pre-trained neural word embeddings, as well as several end-to-end neural architectures in both monolingual and multilingual settings and compare them to feature-engineering-based SVM classifiers. We show that (i) neural architectures outperform other approaches by more than 20 accuracy points, with the BERT-based model performing the best in both the monolingual and multilingual settings; (ii) while many individual hand-crafted translationese features correlate with neural model predictions, feature importance analysis shows that the most important features for neural and classical architectures differ; and (iii) our multilingual experiments provide empirical evidence for translationese universals across languages.
+
+| Comments: | 9 pages, 5 pages appendix, 2 figures, 7 tables. The first 3 authors contributed equally. Accepted to EMNLP 2021, Main Conference |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2109.07604](https://arxiv.org/abs/2109.07604) [cs.CL]** |
+|           | (or **[arXiv:2109.07604v1](https://arxiv.org/abs/2109.07604v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-17-4">4. Language Models are Few-shot Multilingual Learners
+</h2>
+
+Title: [Language Models are Few-shot Multilingual Learners](https://arxiv.org/abs/2109.07684)
+
+Authors: [Genta Indra Winata](https://arxiv.org/search/cs?searchtype=author&query=Winata%2C+G+I), [Andrea Madotto](https://arxiv.org/search/cs?searchtype=author&query=Madotto%2C+A), [Zhaojiang Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+Z), [Rosanne Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+R), [Jason Yosinski](https://arxiv.org/search/cs?searchtype=author&query=Yosinski%2C+J), [Pascale Fung](https://arxiv.org/search/cs?searchtype=author&query=Fung%2C+P)
+
+> General-purpose language models have demonstrated impressive capabilities, performing on par with state-of-the-art approaches on a range of downstream natural language processing (NLP) tasks and benchmarks when inferring instructions from very few examples. Here, we evaluate the multilingual skills of the GPT and T5 models in conducting multi-class classification on non-English languages without any parameter updates. We show that, given a few English examples as context, pre-trained language models can predict not only English test samples but also non-English ones. Finally, we find the in-context few-shot cross-lingual prediction results of language models are significantly better than random prediction, and they are competitive compared to the existing state-of-the-art cross-lingual models.
+
+| Comments: | 14 pages                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2109.07684](https://arxiv.org/abs/2109.07684) [cs.CL]** |
+|           | (or **[arXiv:2109.07684v1](https://arxiv.org/abs/2109.07684v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-17-5">5. Improving Neural Machine Translation by Bidirectional Training
+</h2>
+
+Title: [Improving Neural Machine Translation by Bidirectional Training](https://arxiv.org/abs/2109.07780)
+
+Authors: [Liang Ding](https://arxiv.org/search/cs?searchtype=author&query=Ding%2C+L), [Di Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+D), [Dacheng Tao](https://arxiv.org/search/cs?searchtype=author&query=Tao%2C+D)
+
+> We present a simple and effective pretraining strategy -- bidirectional training (BiT) for neural machine translation. Specifically, we bidirectionally update the model parameters at the early stage and then tune the model normally. To achieve bidirectional updating, we simply reconstruct the training samples from "src→tgt" to "src+tgt→tgt+src" without any complicated model modifications. Notably, our approach does not increase any parameters or training steps, requiring the parallel data merely. Experimental results show that BiT pushes the SOTA neural machine translation performance across 15 translation tasks on 8 language pairs (data sizes range from 160K to 38M) significantly higher. Encouragingly, our proposed model can complement existing data manipulation strategies, i.e. back translation, data distillation, and data diversification. Extensive analyses show that our approach functions as a novel bilingual code-switcher, obtaining better bilingual alignment.
+
+| Comments: | EMNLP 2021. arXiv admin note: text overlap with [arXiv:2107.11572](https://arxiv.org/abs/2107.11572) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2109.07780](https://arxiv.org/abs/2109.07780) [cs.CL]** |
+|           | (or **[arXiv:2109.07780v1](https://arxiv.org/abs/2109.07780v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-17-6">6. The Language Model Understood the Prompt was Ambiguous: Probing Syntactic Uncertainty Through Generation
+</h2>
+
+Title: [The Language Model Understood the Prompt was Ambiguous: Probing Syntactic Uncertainty Through Generation](https://arxiv.org/abs/2109.07848)
+
+Authors: [Laura Aina](https://arxiv.org/search/cs?searchtype=author&query=Aina%2C+L), [Tal Linzen](https://arxiv.org/search/cs?searchtype=author&query=Linzen%2C+T)
+
+> Temporary syntactic ambiguities arise when the beginning of a sentence is compatible with multiple syntactic analyses. We inspect to which extent neural language models (LMs) exhibit uncertainty over such analyses when processing temporarily ambiguous inputs, and how that uncertainty is modulated by disambiguating cues. We probe the LM's expectations by generating from it: we use stochastic decoding to derive a set of sentence completions, and estimate the probability that the LM assigns to each interpretation based on the distribution of parses across completions. Unlike scoring-based methods for targeted syntactic evaluation, this technique makes it possible to explore completions that are not hypothesized in advance by the researcher. We apply this method to study the behavior of two LMs (GPT2 and an LSTM) on three types of temporary ambiguity, using materials from human sentence processing experiments. We find that LMs can track multiple analyses simultaneously; the degree of uncertainty varies across constructions and contexts. As a response to disambiguating cues, the LMs often select the correct interpretation, but occasional errors point to potential areas of improvement.
+
+| Comments: | To appear in Proceedings of BlackboxNLP 2021: Analyzing and Interpreting Neural Networks for NLP |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2109.07848](https://arxiv.org/abs/2109.07848) [cs.CL]** |
+|           | (or **[arXiv:2109.07848v1](https://arxiv.org/abs/2109.07848v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-17-7">7. The NiuTrans System for the WMT21 Efficiency Task
+</h2>
+
+Title: [The NiuTrans System for the WMT21 Efficiency Task](https://arxiv.org/abs/2109.08003)
+
+Authors: [Chenglong Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+C), [Chi Hu](https://arxiv.org/search/cs?searchtype=author&query=Hu%2C+C), [Yongyu Mu](https://arxiv.org/search/cs?searchtype=author&query=Mu%2C+Y), [Zhongxiang Yan](https://arxiv.org/search/cs?searchtype=author&query=Yan%2C+Z), [Siming Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+S), [Minyi Hu](https://arxiv.org/search/cs?searchtype=author&query=Hu%2C+M), [Hang Cao](https://arxiv.org/search/cs?searchtype=author&query=Cao%2C+H), [Bei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+B), [Ye Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+Y), [Tong Xiao](https://arxiv.org/search/cs?searchtype=author&query=Xiao%2C+T), [Jingbo Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+J)
+
+> This paper describes the NiuTrans system for the WMT21 translation efficiency task ([this http URL](http://statmt.org/wmt21/efficiency-task.html)). Following last year's work, we explore various techniques to improve efficiency while maintaining translation quality. We investigate the combinations of lightweight Transformer architectures and knowledge distillation strategies. Also, we improve the translation efficiency with graph optimization, low precision, dynamic batching, and parallel pre/post-processing. Our system can translate 247,000 words per second on an NVIDIA A100, being 3× faster than last year's system. Our system is the fastest and has the lowest memory consumption on the GPU-throughput track. The code, model, and pipeline will be available at NiuTrans.NMT ([this https URL](https://github.com/NiuTrans/NiuTrans.NMT)).
+
+| Comments: | NiuTrans at the WMT21 Translation Efficiency Task            |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2109.08003](https://arxiv.org/abs/2109.08003) [cs.CL]** |
+|           | (or **[arXiv:2109.08003v1](https://arxiv.org/abs/2109.08003v1) [cs.CL]** for this version) |
+
+
 
 
 
