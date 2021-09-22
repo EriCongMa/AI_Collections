@@ -3,6 +3,29 @@
 # Index
 
 
+- [2021-09-22](#2021-09-22)
+
+  - [1. TrOCR: Transformer-based Optical Character Recognition with Pre-trained Models](#2021-09-22-1)
+  - [2. Learning Kernel-Smoothed Machine Translation with Retrieved Examples](#2021-09-22-2)
+  - [3. Knowledge Distillation with Noisy Labels for Natural Language Understanding](#2021-09-22-3)
+  - [4. TranslateLocally: Blazing-fast translation running on the local CPU](#2021-09-22-4)
+  - [5. One Source, Two Targets: Challenges and Rewards of Dual Decoding](#2021-09-22-5)
+  - [6. Does Vision-and-Language Pretraining Improve Lexical Grounding?](#2021-09-22-6)
+  - [7.Multilingual Document-Level Translation Enables Zero-Shot Transfer From Sentences to Documents ](#2021-09-22-7)
+- [2021-09-21](#2021-09-21)
+
+  - [1. MM-Deacon: Multimodal molecular domain embedding analysis via contrastive learning](#2021-09-21-1)
+  - [2. Back-translation for Large-Scale Multilingual Machine Translation](#2021-09-21-2)
+  - [3. Adversarial Training with Contrastive Learning in NLP](#2021-09-21-3)
+  - [4. Preventing Author Profiling through Zero-Shot Multilingual Back-Translation](#2021-09-21-4)
+  - [5. Towards Zero-Label Language Learning](#2021-09-21-5)
+  - [6. CUNI systems for WMT21: Terminology translation Shared Task](#2021-09-21-6)
+  - [7. CUNI systems for WMT21: Multilingual Low-Resource Translation for Indo-European Languages Shared Task](#2021-09-21-7)
+  - [8.MeetDot: Videoconferencing with Live Translation Captions ](#2021-09-21-8)
+  - [9. BERT Cannot Align Characters](#2021-09-21-9)
+- [2021-09-20](#2021-09-20)
+
+  - [1. Primer: Searching for Efficient Transformers for Language Modeling](#2021-09-20-1)
 - [2021-09-17](#2021-09-17)
 
   - [1. Scaling Laws for Neural Machine Translation](#2021-09-17-1)
@@ -143,6 +166,340 @@
   - [4. Enjoy the Salience: Towards Better Transformer-based Faithful Explanations with Word Salience](#2021-09-01-4)
   - [5. Thermostat: A Large Collection of NLP Model Explanations and Analysis Tools](#2021-09-01-5)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-09-22
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-09-22-1">1. TrOCR: Transformer-based Optical Character Recognition with Pre-trained Models
+</h2>
+
+Title: [TrOCR: Transformer-based Optical Character Recognition with Pre-trained Models](https://arxiv.org/abs/2109.10282)
+
+Authors: [Minghao Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+M), [Tengchao Lv](https://arxiv.org/search/cs?searchtype=author&query=Lv%2C+T), [Lei Cui](https://arxiv.org/search/cs?searchtype=author&query=Cui%2C+L), [Yijuan Lu](https://arxiv.org/search/cs?searchtype=author&query=Lu%2C+Y), [Dinei Florencio](https://arxiv.org/search/cs?searchtype=author&query=Florencio%2C+D), [Cha Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+C), [Zhoujun Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Z), [Furu Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+F)
+
+> Text recognition is a long-standing research problem for document digitalization. Existing approaches for text recognition are usually built based on CNN for image understanding and RNN for char-level text generation. In addition, another language model is usually needed to improve the overall accuracy as a post-processing step. In this paper, we propose an end-to-end text recognition approach with pre-trained image Transformer and text Transformer models, namely TrOCR, which leverages the Transformer architecture for both image understanding and wordpiece-level text generation. The TrOCR model is simple but effective, and can be pre-trained with large-scale synthetic data and fine-tuned with human-labeled datasets. Experiments show that the TrOCR model outperforms the current state-of-the-art models on both printed and handwritten text recognition tasks. The code and models will be publicly available at [this https URL](https://aka.ms/TrOCR).
+
+| Comments: | Work in Progress                                             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Computer Vision and Pattern Recognition (cs.CV) |
+| Cite as:  | **[arXiv:2109.10282](https://arxiv.org/abs/2109.10282) [cs.CL]** |
+|           | (or **[arXiv:2109.10282v1](https://arxiv.org/abs/2109.10282v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-22-2">2. Learning Kernel-Smoothed Machine Translation with Retrieved Examples
+</h2>
+
+Title: [Learning Kernel-Smoothed Machine Translation with Retrieved Examples](https://arxiv.org/abs/2109.09991)
+
+Authors: [Qingnan Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+Q), [Mingxuan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+M), [Jun Cao](https://arxiv.org/search/cs?searchtype=author&query=Cao%2C+J), [Shanbo Cheng](https://arxiv.org/search/cs?searchtype=author&query=Cheng%2C+S), [Shujian Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+S), [Lei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L)
+
+> How to effectively adapt neural machine translation (NMT) models according to emerging cases without retraining? Despite the great success of neural machine translation, updating the deployed models online remains a challenge. Existing non-parametric approaches that retrieve similar examples from a database to guide the translation process are promising but are prone to overfit the retrieved examples. However, non-parametric methods are prone to overfit the retrieved examples. In this work, we propose to learn Kernel-Smoothed Translation with Example Retrieval (KSTER), an effective approach to adapt neural machine translation models online. Experiments on domain adaptation and multi-domain machine translation datasets show that even without expensive retraining, KSTER is able to achieve improvement of 1.1 to 1.5 BLEU scores over the best existing online adaptation methods. The code and trained models are released at [this https URL](https://github.com/jiangqn/KSTER).
+
+| Comments: | EMNLP 2021                                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2109.09991](https://arxiv.org/abs/2109.09991) [cs.CL]** |
+|           | (or **[arXiv:2109.09991v1](https://arxiv.org/abs/2109.09991v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-22-3">3. Knowledge Distillation with Noisy Labels for Natural Language Understanding
+</h2>
+
+Title: [Knowledge Distillation with Noisy Labels for Natural Language Understanding](https://arxiv.org/abs/2109.10147)
+
+Authors: [Shivendra Bhardwaj](https://arxiv.org/search/cs?searchtype=author&query=Bhardwaj%2C+S), [Abbas Ghaddar](https://arxiv.org/search/cs?searchtype=author&query=Ghaddar%2C+A), [Ahmad Rashid](https://arxiv.org/search/cs?searchtype=author&query=Rashid%2C+A), [Khalil Bibi](https://arxiv.org/search/cs?searchtype=author&query=Bibi%2C+K), [Chengyang Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+C), [Ali Ghodsi](https://arxiv.org/search/cs?searchtype=author&query=Ghodsi%2C+A), [Philippe Langlais](https://arxiv.org/search/cs?searchtype=author&query=Langlais%2C+P), [Mehdi Rezagholizadeh](https://arxiv.org/search/cs?searchtype=author&query=Rezagholizadeh%2C+M)
+
+> Knowledge Distillation (KD) is extensively used to compress and deploy large pre-trained language models on edge devices for real-world applications. However, one neglected area of research is the impact of noisy (corrupted) labels on KD. We present, to the best of our knowledge, the first study on KD with noisy labels in Natural Language Understanding (NLU). We document the scope of the problem and present two methods to mitigate the impact of label noise. Experiments on the GLUE benchmark show that our methods are effective even under high noise levels. Nevertheless, our results indicate that more research is necessary to cope with label noise under the KD.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2109.10147](https://arxiv.org/abs/2109.10147) [cs.CL]** |
+|           | (or **[arXiv:2109.10147v1](https://arxiv.org/abs/2109.10147v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-22-4">4. TranslateLocally: Blazing-fast translation running on the local CPU
+</h2>
+
+Title: [TranslateLocally: Blazing-fast translation running on the local CPU](https://arxiv.org/abs/2109.10194)
+
+Authors: [Nikolay Bogoychev](https://arxiv.org/search/cs?searchtype=author&query=Bogoychev%2C+N), [Jelmer Van der Linde](https://arxiv.org/search/cs?searchtype=author&query=Van+der+Linde%2C+J), [Kenneth Heafield](https://arxiv.org/search/cs?searchtype=author&query=Heafield%2C+K)
+
+> Every day, millions of people sacrifice their privacy and browsing habits in exchange for online machine translation. Companies and governments with confidentiality requirements often ban online translation or pay a premium to disable logging. To bring control back to the end user and demonstrate speed, we developed translateLocally. Running locally on a desktop or laptop CPU, translateLocally delivers cloud-like translation speed and quality even on 10 year old hardware. The open-source software is based on Marian and runs on Linux, Windows, and macOS.
+
+| Comments: | Accepted at EMNLP 2021 demo track; [this https URL](https://translatelocally.com/) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2109.10194](https://arxiv.org/abs/2109.10194) [cs.CL]** |
+|           | (or **[arXiv:2109.10194v1](https://arxiv.org/abs/2109.10194v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-22-5">5. One Source, Two Targets: Challenges and Rewards of Dual Decoding
+</h2>
+
+Title: [One Source, Two Targets: Challenges and Rewards of Dual Decoding](https://arxiv.org/abs/2109.10197)
+
+Authors: [Jitao Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+J), [François Yvon](https://arxiv.org/search/cs?searchtype=author&query=Yvon%2C+F)
+
+> Machine translation is generally understood as generating one target text from an input source document. In this paper, we consider a stronger requirement: to jointly generate two texts so that each output side effectively depends on the other. As we discuss, such a device serves several practical purposes, from multi-target machine translation to the generation of controlled variations of the target text. We present an analysis of possible implementations of dual decoding, and experiment with four applications. Viewing the problem from multiple angles allows us to better highlight the challenges of dual decoding and to also thoroughly analyze the benefits of generating matched, rather than independent, translations.
+
+| Comments: | Accepted at EMNLP 2021                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2109.10197](https://arxiv.org/abs/2109.10197) [cs.CL]** |
+|           | (or **[arXiv:2109.10197v1](https://arxiv.org/abs/2109.10197v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-22-6">6. Does Vision-and-Language Pretraining Improve Lexical Grounding?
+</h2>
+
+Title: [Does Vision-and-Language Pretraining Improve Lexical Grounding?](https://arxiv.org/abs/2109.10246)
+
+Authors: [Tian Yun](https://arxiv.org/search/cs?searchtype=author&query=Yun%2C+T), [Chen Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+C), [Ellie Pavlick](https://arxiv.org/search/cs?searchtype=author&query=Pavlick%2C+E)
+
+> Linguistic representations derived from text alone have been criticized for their lack of grounding, i.e., connecting words to their meanings in the physical world. Vision-and-Language (VL) models, trained jointly on text and image or video data, have been offered as a response to such criticisms. However, while VL pretraining has shown success on multimodal tasks such as visual question answering, it is not yet known how the internal linguistic representations themselves compare to their text-only counterparts. This paper compares the semantic representations learned via VL vs. text-only pretraining for two recent VL models using a suite of analyses (clustering, probing, and performance on a commonsense question answering task) in a language-only setting. We find that the multimodal models fail to significantly outperform the text-only variants, suggesting that future work is required if multimodal pretraining is to be pursued as a means of improving NLP in general.
+
+| Comments: | Camera ready for Findings of EMNLP 2021                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Computer Vision and Pattern Recognition (cs.CV) |
+| Cite as:  | **[arXiv:2109.10246](https://arxiv.org/abs/2109.10246) [cs.CL]** |
+|           | (or **[arXiv:2109.10246v1](https://arxiv.org/abs/2109.10246v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-22-7">7. Multilingual Document-Level Translation Enables Zero-Shot Transfer From Sentences to Documents
+</h2>
+
+Title: [Multilingual Document-Level Translation Enables Zero-Shot Transfer From Sentences to Documents](https://arxiv.org/abs/2109.10341)
+
+Authors: [Biao Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+B), [Ankur Bapna](https://arxiv.org/search/cs?searchtype=author&query=Bapna%2C+A), [Melvin Johnson](https://arxiv.org/search/cs?searchtype=author&query=Johnson%2C+M), [Ali Dabirmoghaddam](https://arxiv.org/search/cs?searchtype=author&query=Dabirmoghaddam%2C+A), [Naveen Arivazhagan](https://arxiv.org/search/cs?searchtype=author&query=Arivazhagan%2C+N), [Orhan Firat](https://arxiv.org/search/cs?searchtype=author&query=Firat%2C+O)
+
+> Document-level neural machine translation (DocNMT) delivers coherent translations by incorporating cross-sentence context. However, for most language pairs there's a shortage of parallel documents, although parallel sentences are readily available. In this paper, we study whether and how contextual modeling in DocNMT is transferable from sentences to documents in a zero-shot fashion (i.e. no parallel documents for student languages) through multilingual modeling. Using simple concatenation-based DocNMT, we explore the effect of 3 factors on multilingual transfer: the number of document-supervised teacher languages, the data schedule for parallel documents at training, and the data condition of parallel documents (genuine vs. backtranslated). Our experiments on Europarl-7 and IWSLT-10 datasets show the feasibility of multilingual transfer for DocNMT, particularly on document-specific metrics. We observe that more teacher languages and adequate data schedule both contribute to better transfer quality. Surprisingly, the transfer is less sensitive to the data condition and multilingual DocNMT achieves comparable performance with both back-translated and genuine document pairs.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2109.10341](https://arxiv.org/abs/2109.10341) [cs.CL]** |
+|           | (or **[arXiv:2109.10341v1](https://arxiv.org/abs/2109.10341v1) [cs.CL]** for this version) |
+
+
+
+# 2021-09-21
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-09-21-1">1. MM-Deacon: Multimodal molecular domain embedding analysis via contrastive learning
+</h2>
+
+Title: [MM-Deacon: Multimodal molecular domain embedding analysis via contrastive learning](https://arxiv.org/abs/2109.08830)
+
+Authors: [Zhihui Guo](https://arxiv.org/search/cs?searchtype=author&query=Guo%2C+Z), [Pramod Kumar Sharma](https://arxiv.org/search/cs?searchtype=author&query=Sharma%2C+P+K), [Liang Du](https://arxiv.org/search/cs?searchtype=author&query=Du%2C+L), [Robin Abraham](https://arxiv.org/search/cs?searchtype=author&query=Abraham%2C+R)
+
+> Molecular representation learning plays an essential role in cheminformatics. Recently, language model-based approaches have been popular as an alternative to traditional expert-designed features to encode molecules. However, these approaches only utilize a single modality for representing molecules. Driven by the fact that a given molecule can be described through different modalities such as Simplified Molecular Line Entry System (SMILES), The International Union of Pure and Applied Chemistry (IUPAC), and The IUPAC International Chemical Identifier (InChI), we propose a multimodal molecular embedding generation approach called MM-Deacon (multimodal molecular domain embedding analysis via contrastive learning). MM-Deacon is trained using SMILES and IUPAC molecule representations as two different modalities. First, SMILES and IUPAC strings are encoded by using two different transformer-based language models independently, then the contrastive loss is utilized to bring these encoded representations from different modalities closer to each other if they belong to the same molecule, and to push embeddings farther from each other if they belong to different molecules. We evaluate the robustness of our molecule embeddings on molecule clustering, cross-modal molecule search, drug similarity assessment and drug-drug interaction tasks.
+
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL); Chemical Physics (physics.chem-ph) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2109.08830](https://arxiv.org/abs/2109.08830) [cs.LG]** |
+|           | (or **[arXiv:2109.08830v1](https://arxiv.org/abs/2109.08830v1) [cs.LG]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-21-2">2. Back-translation for Large-Scale Multilingual Machine Translation
+</h2>
+
+Title: [Back-translation for Large-Scale Multilingual Machine Translation](https://arxiv.org/abs/2109.08712)
+
+Authors: [Baohao Liao](https://arxiv.org/search/cs?searchtype=author&query=Liao%2C+B), [Shahram Khadivi](https://arxiv.org/search/cs?searchtype=author&query=Khadivi%2C+S), [Sanjika Hewavitharana](https://arxiv.org/search/cs?searchtype=author&query=Hewavitharana%2C+S)
+
+> This paper illustrates our approach to the shared task on large-scale multilingual machine translation in the sixth conference on machine translation (WMT-21). This work aims to build a single multilingual translation system with a hypothesis that a universal cross-language representation leads to better multilingual translation performance. We extend the exploration of different back-translation methods from bilingual translation to multilingual translation. Better performance is obtained by the constrained sampling method, which is different from the finding of the bilingual translation. Besides, we also explore the effect of vocabularies and the amount of synthetic data. Surprisingly, the smaller size of vocabularies perform better, and the extensive monolingual English data offers a modest improvement. We submitted to both the small tasks and achieved the second place.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2109.08712](https://arxiv.org/abs/2109.08712) [cs.CL]** |
+|           | (or **[arXiv:2109.08712v1](https://arxiv.org/abs/2109.08712v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-21-3">3. Adversarial Training with Contrastive Learning in NLP
+</h2>
+
+Title: [Adversarial Training with Contrastive Learning in NLP](https://arxiv.org/abs/2109.09075)
+
+Authors: [Daniela N. Rim](https://arxiv.org/search/cs?searchtype=author&query=Rim%2C+D+N), [DongNyeong Heo](https://arxiv.org/search/cs?searchtype=author&query=Heo%2C+D), [Heeyoul Choi](https://arxiv.org/search/cs?searchtype=author&query=Choi%2C+H)
+
+> For years, adversarial training has been extensively studied in natural language processing (NLP) settings. The main goal is to make models robust so that similar inputs derive in semantically similar outcomes, which is not a trivial problem since there is no objective measure of semantic similarity in language. Previous works use an external pre-trained NLP model to tackle this challenge, introducing an extra training stage with huge memory consumption during training. However, the recent popular approach of contrastive learning in language processing hints a convenient way of obtaining such similarity restrictions. The main advantage of the contrastive learning approach is that it aims for similar data points to be mapped close to each other and further from different ones in the representation space. In this work, we propose adversarial training with contrastive learning (ATCL) to adversarially train a language processing task using the benefits of contrastive learning. The core idea is to make linear perturbations in the embedding space of the input via fast gradient methods (FGM) and train the model to keep the original and perturbed representations close via contrastive learning. In NLP experiments, we applied ATCL to language modeling and neural machine translation tasks. The results show not only an improvement in the quantitative (perplexity and BLEU) scores when compared to the baselines, but ATCL also achieves good qualitative results in the semantic level for both tasks without using a pre-trained model.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2109.09075](https://arxiv.org/abs/2109.09075) [cs.CL]** |
+|           | (or **[arXiv:2109.09075v1](https://arxiv.org/abs/2109.09075v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-21-4">4. Preventing Author Profiling through Zero-Shot Multilingual Back-Translation
+</h2>
+
+Title: [Preventing Author Profiling through Zero-Shot Multilingual Back-Translation](https://arxiv.org/abs/2109.09133)
+
+Authors: [David Ifeoluwa Adelani](https://arxiv.org/search/cs?searchtype=author&query=Adelani%2C+D+I), [Miaoran Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+M), [Xiaoyu Shen](https://arxiv.org/search/cs?searchtype=author&query=Shen%2C+X), [Ali Davody](https://arxiv.org/search/cs?searchtype=author&query=Davody%2C+A), [Thomas Kleinbauer](https://arxiv.org/search/cs?searchtype=author&query=Kleinbauer%2C+T), [Dietrich Klakow](https://arxiv.org/search/cs?searchtype=author&query=Klakow%2C+D)
+
+> Documents as short as a single sentence may inadvertently reveal sensitive information about their authors, including e.g. their gender or ethnicity. Style transfer is an effective way of transforming texts in order to remove any information that enables author profiling. However, for a number of current state-of-the-art approaches the improved privacy is accompanied by an undesirable drop in the down-stream utility of the transformed data. In this paper, we propose a simple, zero-shot way to effectively lower the risk of author profiling through multilingual back-translation using off-the-shelf translation models. We compare our models with five representative text style transfer models on three datasets across different domains. Results from both an automatic and a human evaluation show that our approach achieves the best overall performance while requiring no training data. We are able to lower the adversarial prediction of gender and race by up to 22% while retaining 95% of the original utility on downstream tasks.
+
+| Comments: | Accepted to EMNLP 2021 (Main Conference), 9 pages            |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2109.09133](https://arxiv.org/abs/2109.09133) [cs.CL]** |
+|           | (or **[arXiv:2109.09133v1](https://arxiv.org/abs/2109.09133v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-21-5">5. Towards Zero-Label Language Learning
+</h2>
+
+Title: [Towards Zero-Label Language Learning](https://arxiv.org/abs/2109.09193)
+
+Authors: [Zirui Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Z), [Adams Wei Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+A+W), [Orhan Firat](https://arxiv.org/search/cs?searchtype=author&query=Firat%2C+O), [Yuan Cao](https://arxiv.org/search/cs?searchtype=author&query=Cao%2C+Y)
+
+> This paper explores zero-label learning in Natural Language Processing (NLP), whereby no human-annotated data is used anywhere during training and models are trained purely on synthetic data. At the core of our framework is a novel approach for better leveraging the powerful pretrained language models. Specifically, inspired by the recent success of few-shot inference on GPT-3, we present a training data creation procedure named Unsupervised Data Generation (UDG), which leverages few-shot prompts to synthesize high-quality training data without real human annotations. Our method enables zero-label learning as we train task-specific models solely on the synthetic data, yet we achieve better or comparable results from strong baseline models trained on human-labeled data. Furthermore, when mixed with labeled data, our approach serves as a highly effective data augmentation procedure, achieving new state-of-the-art results on the SuperGLUE benchmark.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2109.09193](https://arxiv.org/abs/2109.09193) [cs.CL]** |
+|           | (or **[arXiv:2109.09193v1](https://arxiv.org/abs/2109.09193v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-09-21-6">6. CUNI systems for WMT21: Terminology translation Shared Task
+</h2>
+
+Title: [CUNI systems for WMT21: Terminology translation Shared Task](https://arxiv.org/abs/2109.09350)
+
+Authors: [Josef Jon](https://arxiv.org/search/cs?searchtype=author&query=Jon%2C+J), [Michal Novák](https://arxiv.org/search/cs?searchtype=author&query=Novák%2C+M), [João Paulo Aires](https://arxiv.org/search/cs?searchtype=author&query=Aires%2C+J+P), [Dušan Variš](https://arxiv.org/search/cs?searchtype=author&query=Variš%2C+D), [Ondřej Bojar](https://arxiv.org/search/cs?searchtype=author&query=Bojar%2C+O)
+
+> This paper describes Charles University submission for Terminology translation Shared Task at WMT21. The objective of this task is to design a system which translates certain terms based on a provided terminology database, while preserving high overall translation quality. We competed in English-French language pair. Our approach is based on providing the desired translations alongside the input sentence and training the model to use these provided terms. We lemmatize the terms both during the training and inference, to allow the model to learn how to produce correct surface forms of the words, when they differ from the forms provided in the terminology database. Our submission ranked second in Exact Match metric which evaluates the ability of the model to produce desired terms in the translation.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2109.09350](https://arxiv.org/abs/2109.09350) [cs.CL]** |
+|           | (or **[arXiv:2109.09350v1](https://arxiv.org/abs/2109.09350v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-21-7">7. CUNI systems for WMT21: Multilingual Low-Resource Translation for Indo-European Languages Shared Task
+</h2>
+
+Title: [CUNI systems for WMT21: Multilingual Low-Resource Translation for Indo-European Languages Shared Task](https://arxiv.org/abs/2109.09354)
+
+Authors: [Josef Jon](https://arxiv.org/search/cs?searchtype=author&query=Jon%2C+J), [Michal Novák](https://arxiv.org/search/cs?searchtype=author&query=Novák%2C+M), [João Paulo Aires](https://arxiv.org/search/cs?searchtype=author&query=Aires%2C+J+P), [Dušan Variš](https://arxiv.org/search/cs?searchtype=author&query=Variš%2C+D), [Ondřej Bojar](https://arxiv.org/search/cs?searchtype=author&query=Bojar%2C+O)
+
+> This paper describes Charles University submission for Multilingual Low-Resource Translation for Indo-European Languages shared task at WMT21. We competed in translation from Catalan into Romanian, Italian and Occitan. Our systems are based on shared multilingual model. We show that using joint model for multiple similar language pairs improves upon translation quality in each pair. We also demonstrate that chararacter-level bilingual models are competitive for very similar language pairs (Catalan-Occitan) but less so for more distant pairs. We also describe our experiments with multi-task learning, where aside from a textual translation, the models are also trained to perform grapheme-to-phoneme conversion.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2109.09354](https://arxiv.org/abs/2109.09354) [cs.CL]** |
+|           | (or **[arXiv:2109.09354v1](https://arxiv.org/abs/2109.09354v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-21-8">8. MeetDot: Videoconferencing with Live Translation Captions
+</h2>
+
+Title: [MeetDot: Videoconferencing with Live Translation Captions](https://arxiv.org/abs/2109.09577)
+
+Authors: [Arkady Arkhangorodsky](https://arxiv.org/search/cs?searchtype=author&query=Arkhangorodsky%2C+A), [Christopher Chu](https://arxiv.org/search/cs?searchtype=author&query=Chu%2C+C), [Scot Fang](https://arxiv.org/search/cs?searchtype=author&query=Fang%2C+S), [Yiqi Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+Y), [Denglin Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+D), [Ajay Nagesh](https://arxiv.org/search/cs?searchtype=author&query=Nagesh%2C+A), [Boliang Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+B), [Kevin Knight](https://arxiv.org/search/cs?searchtype=author&query=Knight%2C+K)
+
+> We present MeetDot, a videoconferencing system with live translation captions overlaid on screen. The system aims to facilitate conversation between people who speak different languages, thereby reducing communication barriers between multilingual participants. Currently, our system supports speech and captions in 4 languages and combines automatic speech recognition (ASR) and machine translation (MT) in a cascade. We use the re-translation strategy to translate the streamed speech, resulting in caption flicker. Additionally, our system has very strict latency requirements to have acceptable call quality. We implement several features to enhance user experience and reduce their cognitive load, such as smooth scrolling captions and reducing caption flicker. The modular architecture allows us to integrate different ASR and MT services in our backend. Our system provides an integrated evaluation suite to optimize key intrinsic evaluation metrics such as accuracy, latency and erasure. Finally, we present an innovative cross-lingual word-guessing game as an extrinsic evaluation metric to measure end-to-end system performance. We plan to make our system open-source for research purposes.
+
+| Comments: | 7 pages, 4 figures, Accepted as EMNLP 2021 demo paper        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2109.09577](https://arxiv.org/abs/2109.09577) [cs.CL]** |
+|           | (or **[arXiv:2109.09577v1](https://arxiv.org/abs/2109.09577v1) [cs.CL]** for this version) |
+
+
+
+<h2 id="2021-09-21-9">9. BERT Cannot Align Characters
+</h2>
+
+Title: [BERT Cannot Align Characters](https://arxiv.org/abs/2109.09700)
+
+Authors: [Antonis Maronikolakis](https://arxiv.org/search/cs?searchtype=author&query=Maronikolakis%2C+A), [Philipp Dufter](https://arxiv.org/search/cs?searchtype=author&query=Dufter%2C+P), [Hinrich Schütze](https://arxiv.org/search/cs?searchtype=author&query=Schütze%2C+H)
+
+> In previous work, it has been shown that BERT can adequately align cross-lingual sentences on the word level. Here we investigate whether BERT can also operate as a char-level aligner. The languages examined are English, Fake-English, German and Greek. We show that the closer two languages are, the better BERT can align them on the character level. BERT indeed works well in English to Fake-English alignment, but this does not generalize to natural languages to the same extent. Nevertheless, the proximity of two languages does seem to be a factor. English is more related to German than to Greek and this is reflected in how well BERT aligns them; English to German is better than English to Greek. We examine multiple setups and show that the similarity matrices for natural languages show weaker relations the further apart two languages are.
+
+| Comments: | Second Workshop on Insights from Negative Results, EMNLP 2021 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2109.09700](https://arxiv.org/abs/2109.09700) [cs.CL]** |
+|           | (or **[arXiv:2109.09700v1](https://arxiv.org/abs/2109.09700v1) [cs.CL]** for this version) |
+
+
+
+# 2021-09-20
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-09-20-1">1. Primer: Searching for Efficient Transformers for Language Modeling
+</h2>
+
+Title: [Primer: Searching for Efficient Transformers for Language Modeling](https://arxiv.org/abs/2109.08668)
+
+Authors: [David R. So](https://arxiv.org/search/cs?searchtype=author&query=So%2C+D+R), [Wojciech Mańke](https://arxiv.org/search/cs?searchtype=author&query=Mańke%2C+W), [Hanxiao Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+H), [Zihang Dai](https://arxiv.org/search/cs?searchtype=author&query=Dai%2C+Z), [Noam Shazeer](https://arxiv.org/search/cs?searchtype=author&query=Shazeer%2C+N), [Quoc V. Le](https://arxiv.org/search/cs?searchtype=author&query=Le%2C+Q+V)
+
+> Large Transformer models have been central to recent advances in natural language processing. The training and inference costs of these models, however, have grown rapidly and become prohibitively expensive. Here we aim to reduce the costs of Transformers by searching for a more efficient variant. Compared to previous approaches, our search is performed at a lower level, over the primitives that define a Transformer TensorFlow program. We identify an architecture, named Primer, that has a smaller training cost than the original Transformer and other variants for auto-regressive language modeling. Primer's improvements can be mostly attributed to two simple modifications: squaring ReLU activations and adding a depthwise convolution layer after each Q, K, and V projection in self-attention.
+> Experiments show Primer's gains over Transformer increase as compute scale grows and follow a power law with respect to quality at optimal model sizes. We also verify empirically that Primer can be dropped into different codebases to significantly speed up training without additional tuning. For example, at a 500M parameter size, Primer improves the original T5 architecture on C4 auto-regressive language modeling, reducing the training cost by 4X. Furthermore, the reduced training cost means Primer needs much less compute to reach a target one-shot performance. For instance, in a 1.9B parameter configuration similar to GPT-3 XL, Primer uses 1/3 of the training compute to achieve the same one-shot performance as Transformer. We open source our models and several comparisons in T5 to help with reproducibility.
+
+| Comments: | "Primer: Searching for Efficient Transformers for Language Modeling" initial preprint. 35 pages |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Machine Learning (cs.LG)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL); Neural and Evolutionary Computing (cs.NE) |
+| Cite as:  | **[arXiv:2109.08668](https://arxiv.org/abs/2109.08668) [cs.LG]** |
+|           | (or **[arXiv:2109.08668v1](https://arxiv.org/abs/2109.08668v1) [cs.LG]** for this version) |
+
+
+
+
+
+
 
 
 
