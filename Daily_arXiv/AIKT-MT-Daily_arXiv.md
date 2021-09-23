@@ -3,8 +3,15 @@
 # Index
 
 
-- [2021-09-22](#2021-09-22)
+- [2021-09-23](#2021-09-23)
 
+  - [1. Scalable and Efficient MoE Training for Multitask Multilingual Models](#2021-09-23-1)
+  - [2. The NiuTrans Machine Translation Systems for WMT21](#2021-09-23-2)
+  - [3. Unsupervised Contextualized Document Representation](#2021-09-23-3)
+  - [4. COVR: A test-bed for Visually Grounded Compositional Generalization with real images](#2021-09-23-4)
+  - [5. Contrastive Learning for Fair Representations](#2021-09-23-5)
+  - [6. Scale Efficiently: Insights from Pre-training and Fine-tuning Transformers](#2021-09-23-6)
+- [2021-09-22](#2021-09-22)
   - [1. TrOCR: Transformer-based Optical Character Recognition with Pre-trained Models](#2021-09-22-1)
   - [2. Learning Kernel-Smoothed Machine Translation with Retrieved Examples](#2021-09-22-2)
   - [3. Knowledge Distillation with Noisy Labels for Natural Language Understanding](#2021-09-22-3)
@@ -166,6 +173,125 @@
   - [4. Enjoy the Salience: Towards Better Transformer-based Faithful Explanations with Word Salience](#2021-09-01-4)
   - [5. Thermostat: A Large Collection of NLP Model Explanations and Analysis Tools](#2021-09-01-5)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-09-23
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-09-23-1">1. Scalable and Efficient MoE Training for Multitask Multilingual Models
+</h2>
+
+Title: [Scalable and Efficient MoE Training for Multitask Multilingual Models](https://arxiv.org/abs/2109.10465)
+
+Authors:[Young Jin Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%2C+Y+J), [Ammar Ahmad Awan](https://arxiv.org/search/cs?searchtype=author&query=Awan%2C+A+A), [Alexandre Muzio](https://arxiv.org/search/cs?searchtype=author&query=Muzio%2C+A), [Andres Felipe Cruz Salinas](https://arxiv.org/search/cs?searchtype=author&query=Salinas%2C+A+F+C), [Liyang Lu](https://arxiv.org/search/cs?searchtype=author&query=Lu%2C+L), [Amr Hendy](https://arxiv.org/search/cs?searchtype=author&query=Hendy%2C+A), [Samyam Rajbhandari](https://arxiv.org/search/cs?searchtype=author&query=Rajbhandari%2C+S), [Yuxiong He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+Y), [Hany Hassan Awadalla](https://arxiv.org/search/cs?searchtype=author&query=Awadalla%2C+H+H)
+
+> The Mixture of Experts (MoE) models are an emerging class of sparsely activated deep learning models that have sublinear compute costs with respect to their parameters. In contrast with dense models, the sparse architecture of MoE offers opportunities for drastically growing model size with significant accuracy gain while consuming much lower compute budget. However, supporting large scale MoE training also has its own set of system and modeling challenges. To overcome the challenges and embrace the opportunities of MoE, we first develop a system capable of scaling MoE models efficiently to trillions of parameters. It combines multi-dimensional parallelism and heterogeneous memory technologies harmoniously with MoE to empower 8x larger models on the same hardware compared with existing work. Besides boosting system efficiency, we also present new training methods to improve MoE sample efficiency and leverage expert pruning strategy to improve inference time efficiency. By combining the efficient system and training methods, we are able to significantly scale up large multitask multilingual models for language generation which results in a great improvement in model accuracy. A model trained with 10 billion parameters on 50 languages can achieve state-of-the-art performance in Machine Translation (MT) and multilingual natural language generation tasks. The system support of efficient MoE training has been implemented and open-sourced with the DeepSpeed library.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2109.10465](https://arxiv.org/abs/2109.10465) [cs.CL]** |
+|           | (or **[arXiv:2109.10465v1](https://arxiv.org/abs/2109.10465v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-23-2">2. The NiuTrans Machine Translation Systems for WMT21
+</h2>
+
+Title: [The NiuTrans Machine Translation Systems for WMT21](https://arxiv.org/abs/2109.10485)
+
+Authors:[Shuhan Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+S), [Tao Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+T), [Binghao Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+B), [Yingfeng Luo](https://arxiv.org/search/cs?searchtype=author&query=Luo%2C+Y), [Yongyu Mu](https://arxiv.org/search/cs?searchtype=author&query=Mu%2C+Y), [Zefan Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+Z), [Chenglong Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+C), [Xuanjun Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+X), [Chuanhao Lv](https://arxiv.org/search/cs?searchtype=author&query=Lv%2C+C), [Yi Jing](https://arxiv.org/search/cs?searchtype=author&query=Jing%2C+Y), [Laohu Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+L), [Jingnan Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+J), [Canan Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+C), [Zhongxiang Yan](https://arxiv.org/search/cs?searchtype=author&query=Yan%2C+Z), [Chi Hu](https://arxiv.org/search/cs?searchtype=author&query=Hu%2C+C), [Bei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+B), [Tong Xiao](https://arxiv.org/search/cs?searchtype=author&query=Xiao%2C+T), [Jingbo Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+J)
+
+> This paper describes NiuTrans neural machine translation systems of the WMT 2021 news translation tasks. We made submissions to 9 language directions, including English↔{Chinese, Japanese, Russian, Icelandic} and English→Hausa tasks. Our primary systems are built on several effective variants of Transformer, e.g., Transformer-DLCL, ODE-Transformer. We also utilize back-translation, knowledge distillation, post-ensemble, and iterative fine-tuning techniques to enhance the model performance further.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2109.10485](https://arxiv.org/abs/2109.10485) [cs.CL]** |
+|           | (or **[arXiv:2109.10485v1](https://arxiv.org/abs/2109.10485v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-23-3">3. Unsupervised Contextualized Document Representation
+</h2>
+
+Title: [Unsupervised Contextualized Document Representation](https://arxiv.org/abs/2109.10509)
+
+Authors:[Ankur Gupta](https://arxiv.org/search/cs?searchtype=author&query=Gupta%2C+A), [Vivek Gupta](https://arxiv.org/search/cs?searchtype=author&query=Gupta%2C+V)
+
+> Several NLP tasks need the effective representation of text documents. Arora et. al., 2017 demonstrate that simple weighted averaging of word vectors frequently outperforms neural models. SCDV (Mekala et. al., 2017) further extends this from sentences to documents by employing soft and sparse clustering over pre-computed word vectors. However, both techniques ignore the polysemy and contextual character of words. In this paper, we address this issue by proposing SCDV+BERT(ctxd), a simple and effective unsupervised representation that combines contextualized BERT (Devlin et al., 2019) based word embedding for word sense disambiguation with SCDV soft clustering approach. We show that our embeddings outperform original SCDV, pre-train BERT, and several other baselines on many classification datasets. We also demonstrate our embeddings effectiveness on other tasks, such as concept matching and sentence similarity. In addition, we show that SCDV+BERT(ctxd) outperforms fine-tune BERT and different embedding approaches in scenarios with limited data and only few shots examples.
+
+| Comments: | 9 Pages, 4 Figures, 7 tables, SustaiNLP2021 @ EMNLP-2021     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Information Retrieval (cs.IR); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2109.10509](https://arxiv.org/abs/2109.10509) [cs.CL]** |
+|           | (or **[arXiv:2109.10509v1](https://arxiv.org/abs/2109.10509v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-09-23-4">4. COVR: A test-bed for Visually Grounded Compositional Generalization with real images
+</h2>
+
+Title: [COVR: A test-bed for Visually Grounded Compositional Generalization with real images](https://arxiv.org/abs/2109.10613)
+
+Authors:[Ben Bogin](https://arxiv.org/search/cs?searchtype=author&query=Bogin%2C+B), [Shivanshu Gupta](https://arxiv.org/search/cs?searchtype=author&query=Gupta%2C+S), [Matt Gardner](https://arxiv.org/search/cs?searchtype=author&query=Gardner%2C+M), [Jonathan Berant](https://arxiv.org/search/cs?searchtype=author&query=Berant%2C+J)
+
+> While interest in models that generalize at test time to new compositions has risen in recent years, benchmarks in the visually-grounded domain have thus far been restricted to synthetic images. In this work, we propose COVR, a new test-bed for visually-grounded compositional generalization with real images. To create COVR, we use real images annotated with scene graphs, and propose an almost fully automatic procedure for generating question-answer pairs along with a set of context images. COVR focuses on questions that require complex reasoning, including higher-order operations such as quantification and aggregation. Due to the automatic generation process, COVR facilitates the creation of compositional splits, where models at test time need to generalize to new concepts and compositions in a zero- or few-shot setting. We construct compositional splits using COVR and demonstrate a myriad of cases where state-of-the-art pre-trained language-and-vision models struggle to compositionally generalize.
+
+| Comments: | EMNLP 2021                                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2109.10613](https://arxiv.org/abs/2109.10613) [cs.CL]** |
+|           | (or **[arXiv:2109.10613v1](https://arxiv.org/abs/2109.10613v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-23-5">5. Contrastive Learning for Fair Representations
+</h2>
+
+Title: [Contrastive Learning for Fair Representations](https://arxiv.org/abs/2109.10645)
+
+Authors:[Aili Shen](https://arxiv.org/search/cs?searchtype=author&query=Shen%2C+A), [Xudong Han](https://arxiv.org/search/cs?searchtype=author&query=Han%2C+X), [Trevor Cohn](https://arxiv.org/search/cs?searchtype=author&query=Cohn%2C+T), [Timothy Baldwin](https://arxiv.org/search/cs?searchtype=author&query=Baldwin%2C+T), [Lea Frermann](https://arxiv.org/search/cs?searchtype=author&query=Frermann%2C+L)
+
+> Trained classification models can unintentionally lead to biased representations and predictions, which can reinforce societal preconceptions and stereotypes. Existing debiasing methods for classification models, such as adversarial training, are often expensive to train and difficult to optimise. In this paper, we propose a method for mitigating bias in classifier training by incorporating contrastive learning, in which instances sharing the same class label are encouraged to have similar representations, while instances sharing a protected attribute are forced further apart. In such a way our method learns representations which capture the task label in focused regions, while ensuring the protected attribute has diverse spread, and thus has limited impact on prediction and thereby results in fairer models. Extensive experimental results across four tasks in NLP and computer vision show (a) that our proposed method can achieve fairer representations and realises bias reductions compared with competitive baselines; and (b) that it can do so without sacrificing main task performance; (c) that it sets a new state-of-the-art performance in one task despite reducing the bias. Finally, our method is conceptually simple and agnostic to network architectures, and incurs minimal additional compute cost.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2109.10645](https://arxiv.org/abs/2109.10645) [cs.CL]** |
+|           | (or **[arXiv:2109.10645v1](https://arxiv.org/abs/2109.10645v1) [cs.CL]** for this version) |
+
+
+
+<h2 id="2021-09-23-6">6. Scale Efficiently: Insights from Pre-training and Fine-tuning Transformers
+</h2>
+
+Title: [Scale Efficiently: Insights from Pre-training and Fine-tuning Transformers](https://arxiv.org/abs/2109.10686)
+
+Authors:[Yi Tay](https://arxiv.org/search/cs?searchtype=author&query=Tay%2C+Y), [Mostafa Dehghani](https://arxiv.org/search/cs?searchtype=author&query=Dehghani%2C+M), [Jinfeng Rao](https://arxiv.org/search/cs?searchtype=author&query=Rao%2C+J), [William Fedus](https://arxiv.org/search/cs?searchtype=author&query=Fedus%2C+W), [Samira Abnar](https://arxiv.org/search/cs?searchtype=author&query=Abnar%2C+S), [Hyung Won Chung](https://arxiv.org/search/cs?searchtype=author&query=Chung%2C+H+W), [Sharan Narang](https://arxiv.org/search/cs?searchtype=author&query=Narang%2C+S), [Dani Yogatama](https://arxiv.org/search/cs?searchtype=author&query=Yogatama%2C+D), [Ashish Vaswani](https://arxiv.org/search/cs?searchtype=author&query=Vaswani%2C+A), [Donald Metzler](https://arxiv.org/search/cs?searchtype=author&query=Metzler%2C+D)
+
+> There remain many open questions pertaining to the scaling behaviour of Transformer architectures. These scaling decisions and findings can be critical, as training runs often come with an associated computational cost which have both financial and/or environmental impact. The goal of this paper is to present scaling insights from pretraining and finetuning Transformers. While Kaplan et al. presents a comprehensive study of the scaling behaviour of Transformer language models, the scope is only on the upstream (pretraining) loss. Therefore, it is still unclear if these set of findings transfer to downstream task within the context of the pretrain-finetune paradigm. The key findings of this paper are as follows: (1) we show that aside from only the model size, model shape matters for downstream fine-tuning, (2) scaling protocols operate differently at different compute regions, (3) widely adopted T5-base and T5-large sizes are Pareto-inefficient. To this end, we present improved scaling protocols whereby our redesigned models achieve similar downstream fine-tuning quality while having 50\% fewer parameters and training 40\% faster compared to the widely adopted T5-base model. We publicly release over 100 pretrained checkpoints of different T5 configurations to facilitate future research and analysis.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Computer Vision and Pattern Recognition (cs.CV); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2109.10686](https://arxiv.org/abs/2109.10686) [cs.CL]** |
+|           | (or **[arXiv:2109.10686v1](https://arxiv.org/abs/2109.10686v1) [cs.CL]** for this version) |
+
+
+
+
+
 
 
 
