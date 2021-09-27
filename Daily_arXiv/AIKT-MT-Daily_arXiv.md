@@ -3,6 +3,28 @@
 # Index
 
 
+- [2021-09-27](#2021-09-27)
+
+  - [1. Dense Contrastive Visual-Linguistic Pretraining](#2021-09-27-1)
+  - [2. CPT: Colorful Prompt Tuning for Pre-trained Vision-Language Models](#2021-09-27-2)
+  - [3. Document Automation Architectures and Technologies: A Survey](#2021-09-27-3)
+  - [4. Lacking the embedding of a word? Look it up into a traditional dictionary](#2021-09-27-4)
+  - [5. Unsupervised Translation of German--Lower Sorbian: Exploring Training and Novel Transfer Methods on a Low-Resource Language](#2021-09-27-5)
+  - [6. Indirectly Supervised English Sentence Break Prediction Using Paragraph Break Probability Estimates](#2021-09-27-6)
+  - [7. Investigating Post-pretraining Representation Alignment for Cross-Lingual Question Answering](#2021-09-27-7)
+  - [8. Transformers Generalize Linearly](#2021-09-27-8)
+  - [9. AraT5: Text-to-Text Transformers for Arabic Language Understanding and Generation](#2021-09-27-9)
+  - [10. Faithful Target Attribute Prediction in Neural Machine Translation](#2021-09-27-10)
+- [2021-09-24](#2021-09-24)
+  - [1. MARMOT: A Deep Learning Framework for Constructing Multimodal Representations for Vision-and-Language Tasks](#2021-09-241-1)
+  - [2. Conditional Poisson Stochastic Beam Search](#2021-09-24-2)
+  - [3. Distiller: A Systematic Study of Model Distillation Methods in Natural Language Processing](#2021-09-24-3)
+  - [4. Cross-Lingual Language Model Meta-Pretraining](#2021-09-24-4)
+  - [5. Non-Parametric Online Learning from Human Feedback for Neural Machine Translation](#2021-09-24-5)
+  - [6. Exploiting Curriculum Learning in Unsupervised Neural Machine Translation](#2021-09-24-6)
+  - [7. The Volctrans GLAT System: Non-autoregressive Translation Meets WMT21](#2021-09-24-7)
+  - [8. Dynamic Knowledge Distillation for Pre-trained Language Models](#2021-09-24-8)
+  - [9. Transferring Knowledge from Vision to Language: How to Achieve it and how to Measure it?](#2021-09-24-9)
 - [2021-09-23](#2021-09-23)
 
   - [1. Scalable and Efficient MoE Training for Multitask Multilingual Models](#2021-09-23-1)
@@ -173,6 +195,374 @@
   - [4. Enjoy the Salience: Towards Better Transformer-based Faithful Explanations with Word Salience](#2021-09-01-4)
   - [5. Thermostat: A Large Collection of NLP Model Explanations and Analysis Tools](#2021-09-01-5)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-09-27
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-09-27-1">1. Dense Contrastive Visual-Linguistic Pretraining
+</h2>
+
+Title: [Dense Contrastive Visual-Linguistic Pretraining](https://arxiv.org/abs/2109.11778)
+
+Authors: [Lei Shi](https://arxiv.org/search/cs?searchtype=author&query=Shi%2C+L), [Kai Shuang](https://arxiv.org/search/cs?searchtype=author&query=Shuang%2C+K), [Shijie Geng](https://arxiv.org/search/cs?searchtype=author&query=Geng%2C+S), [Peng Gao](https://arxiv.org/search/cs?searchtype=author&query=Gao%2C+P), [Zuohui Fu](https://arxiv.org/search/cs?searchtype=author&query=Fu%2C+Z), [Gerard de Melo](https://arxiv.org/search/cs?searchtype=author&query=de+Melo%2C+G), [Yunpeng Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+Y), [Sen Su](https://arxiv.org/search/cs?searchtype=author&query=Su%2C+S)
+
+> Inspired by the success of BERT, several multimodal representation learning approaches have been proposed that jointly represent image and text. These approaches achieve superior performance by capturing high-level semantic information from large-scale multimodal pretraining. In particular, LXMERT and UNITER adopt visual region feature regression and label classification as pretext tasks. However, they tend to suffer from the problems of noisy labels and sparse semantic annotations, based on the visual features having been pretrained on a crowdsourced dataset with limited and inconsistent semantic labeling. To overcome these issues, we propose unbiased Dense Contrastive Visual-Linguistic Pretraining (DCVLP), which replaces the region regression and classification with cross-modality region contrastive learning that requires no annotations. Two data augmentation strategies (Mask Perturbation and Intra-/Inter-Adversarial Perturbation) are developed to improve the quality of negative samples used in contrastive learning. Overall, DCVLP allows cross-modality dense region contrastive learning in a self-supervised setting independent of any object annotations. We compare our method against prior visual-linguistic pretraining frameworks to validate the superiority of dense contrastive learning on multimodal representation learning.
+
+| Comments: | Accepted by ACM Multimedia 2021. arXiv admin note: text overlap with [arXiv:2007.13135](https://arxiv.org/abs/2007.13135) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2109.11778](https://arxiv.org/abs/2109.11778) [cs.CV]** |
+|           | (or **[arXiv:2109.11778v1](https://arxiv.org/abs/2109.11778v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-27-2">2. CPT: Colorful Prompt Tuning for Pre-trained Vision-Language Models
+</h2>
+
+Title: [CPT: Colorful Prompt Tuning for Pre-trained Vision-Language Models](https://arxiv.org/abs/2109.11797)
+
+Authors: [Yuan Yao](https://arxiv.org/search/cs?searchtype=author&query=Yao%2C+Y), [Ao Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+A), [Zhengyan Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Z), [Zhiyuan Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Z), [Tat-Seng Chua](https://arxiv.org/search/cs?searchtype=author&query=Chua%2C+T), [Maosong Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+M)
+
+> Pre-Trained Vision-Language Models (VL-PTMs) have shown promising capabilities in grounding natural language in image data, facilitating a broad variety of cross-modal tasks. However, we note that there exists a significant gap between the objective forms of model pre-training and fine-tuning, resulting in a need for quantities of labeled data to stimulate the visual grounding capability of VL-PTMs for downstream tasks. To address the challenge, we present Cross-modal Prompt Tuning (CPT, alternatively, Colorful Prompt Tuning), a novel paradigm for tuning VL-PTMs, which reformulates visual grounding into a fill-in-the-blank problem with color-based co-referential markers in image and text, maximally mitigating the gap. In this way, our prompt tuning approach enables strong few-shot and even zero-shot visual grounding capabilities of VL-PTMs. Comprehensive experimental results show that prompt tuned VL-PTMs outperform their fine-tuned counterparts by a large margin (e.g., 17.3% absolute accuracy improvement, and 73.8% relative standard deviation reduction on average with one shot in RefCOCO evaluation). All the data and code will be available to facilitate future research.
+
+| Comments: | Work in progress                                             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2109.11797](https://arxiv.org/abs/2109.11797) [cs.CV]** |
+|           | (or **[arXiv:2109.11797v1](https://arxiv.org/abs/2109.11797v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-27-3">3. Document Automation Architectures and Technologies: A Survey
+</h2>
+
+Title: [Document Automation Architectures and Technologies: A Survey](https://arxiv.org/abs/2109.11603)
+
+Authors: [Mohammad Ahmadi Achachlouei](https://arxiv.org/search/cs?searchtype=author&query=Achachlouei%2C+M+A), [Omkar Patil](https://arxiv.org/search/cs?searchtype=author&query=Patil%2C+O), [Tarun Joshi](https://arxiv.org/search/cs?searchtype=author&query=Joshi%2C+T), [Vijayan N. Nair](https://arxiv.org/search/cs?searchtype=author&query=Nair%2C+V+N)
+
+> This paper surveys the current state of the art in document automation (DA). The objective of DA is to reduce the manual effort during the generation of documents by automatically integrating input from different sources and assembling documents conforming to defined templates. There have been reviews of commercial solutions of DA, particularly in the legal domain, but to date there has been no comprehensive review of the academic research on DA architectures and technologies. The current survey of DA reviews the academic literature and provides a clearer definition and characterization of DA and its features, identifies state-of-the-art DA architectures and technologies in academic research, and provides ideas that can lead to new research opportunities within the DA field in light of recent advances in artificial intelligence and deep neural networks.
+
+| Comments:    | 34 pages, 11 figures, 5 tables                               |
+| ------------ | ------------------------------------------------------------ |
+| Subjects:    | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| MSC classes: | 68T50                                                        |
+| ACM classes: | I.7.0; I.2.7; I.2.4                                          |
+| Cite as:     | **[arXiv:2109.11603](https://arxiv.org/abs/2109.11603) [cs.CL]** |
+|              | (or **[arXiv:2109.11603v1](https://arxiv.org/abs/2109.11603v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-09-27-4">4. Lacking the embedding of a word? Look it up into a traditional dictionary
+</h2>
+
+Title: [Lacking the embedding of a word? Look it up into a traditional dictionary](https://arxiv.org/abs/2109.11763)
+
+Authors: [Elena Sofia Ruzzetti](https://arxiv.org/search/cs?searchtype=author&query=Ruzzetti%2C+E+S), [Leonardo Ranaldi](https://arxiv.org/search/cs?searchtype=author&query=Ranaldi%2C+L), [Michele Mastromattei](https://arxiv.org/search/cs?searchtype=author&query=Mastromattei%2C+M), [Francesca Fallucchi](https://arxiv.org/search/cs?searchtype=author&query=Fallucchi%2C+F), [Fabio Massimo Zanzotto](https://arxiv.org/search/cs?searchtype=author&query=Zanzotto%2C+F+M)
+
+> Word embeddings are powerful dictionaries, which may easily capture language variations. However, these dictionaries fail to give sense to rare words, which are surprisingly often covered by traditional dictionaries. In this paper, we propose to use definitions retrieved in traditional dictionaries to produce word embeddings for rare words. For this purpose, we introduce two methods: Definition Neural Network (DefiNNet) and Define BERT (DefBERT). In our experiments, DefiNNet and DefBERT significantly outperform state-of-the-art as well as baseline methods devised for producing embeddings of unknown words. In fact, DefiNNet significantly outperforms FastText, which implements a method for the same task-based on n-grams, and DefBERT significantly outperforms the BERT method for OOV words. Then, definitions in traditional dictionaries are useful to build word embeddings for rare words.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2109.11763](https://arxiv.org/abs/2109.11763) [cs.CL]** |
+|           | (or **[arXiv:2109.11763v1](https://arxiv.org/abs/2109.11763v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-27-5">5. Unsupervised Translation of German--Lower Sorbian: Exploring Training and Novel Transfer Methods on a Low-Resource Language
+</h2>
+
+Title: [Unsupervised Translation of German--Lower Sorbian: Exploring Training and Novel Transfer Methods on a Low-Resource Language](https://arxiv.org/abs/2109.12012)
+
+Authors: [Lukas Edman](https://arxiv.org/search/cs?searchtype=author&query=Edman%2C+L), [Ahmet Üstün](https://arxiv.org/search/cs?searchtype=author&query=Üstün%2C+A), [Antonio Toral](https://arxiv.org/search/cs?searchtype=author&query=Toral%2C+A), [Gertjan van Noord](https://arxiv.org/search/cs?searchtype=author&query=van+Noord%2C+G)
+
+> This paper describes the methods behind the systems submitted by the University of Groningen for the WMT 2021 Unsupervised Machine Translation task for German--Lower Sorbian (DE--DSB): a high-resource language to a low-resource one. Our system uses a transformer encoder-decoder architecture in which we make three changes to the standard training procedure. First, our training focuses on two languages at a time, contrasting with a wealth of research on multilingual systems. Second, we introduce a novel method for initializing the vocabulary of an unseen language, achieving improvements of 3.2 BLEU for DE→DSB and 4.0 BLEU for DSB→DE. Lastly, we experiment with the order in which offline and online back-translation are used to train an unsupervised system, finding that using online back-translation first works better for DE→DSB by 2.76 BLEU. Our submissions ranked first (tied with another team) for DSB→DE and third for DE→DSB.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2109.12012](https://arxiv.org/abs/2109.12012) [cs.CL]** |
+|           | (or **[arXiv:2109.12012v1](https://arxiv.org/abs/2109.12012v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-27-6">6. Indirectly Supervised English Sentence Break Prediction Using Paragraph Break Probability Estimates
+</h2>
+
+Title: [Indirectly Supervised English Sentence Break Prediction Using Paragraph Break Probability Estimates](https://arxiv.org/abs/2109.12023)
+
+Authors: [Robert C. Moore](https://arxiv.org/search/cs?searchtype=author&query=Moore%2C+R+C)
+
+> This report explores the use of paragraph break probability estimates to help predict the location of sentence breaks in English natural language text. We show that a sentence break predictor based almost solely on paragraph break probability estimates can achieve high accuracy on this task. This sentence break predictor is trained almost entirely on a large amount of naturally occurring text without sentence break annotations, with only a small amount of annotated data needed to tune two hyperparameters. We also show that even better results can be achieved across in-domain and out-of-domain test data, if paragraph break probability signals are combined with a support vector machine classifier trained on a somewhat larger amount of sentence-break-annotated data. Numerous related issues are addressed along the way.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2109.12023](https://arxiv.org/abs/2109.12023) [cs.CL]** |
+|           | (or **[arXiv:2109.12023v1](https://arxiv.org/abs/2109.12023v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-27-7">7. Investigating Post-pretraining Representation Alignment for Cross-Lingual Question Answering
+</h2>
+
+Title: [Investigating Post-pretraining Representation Alignment for Cross-Lingual Question Answering](https://arxiv.org/abs/2109.12028)
+
+Authors: [Fahim Faisal](https://arxiv.org/search/cs?searchtype=author&query=Faisal%2C+F), [Antonios Anastasopoulos](https://arxiv.org/search/cs?searchtype=author&query=Anastasopoulos%2C+A)
+
+> Human knowledge is collectively encoded in the roughly 6500 languages spoken around the world, but it is not distributed equally across languages. Hence, for information-seeking question answering (QA) systems to adequately serve speakers of all languages, they need to operate cross-lingually. In this work we investigate the capabilities of multilingually pre-trained language models on cross-lingual QA. We find that explicitly aligning the representations across languages with a post-hoc fine-tuning step generally leads to improved performance. We additionally investigate the effect of data size as well as the language choice in this fine-tuning step, also releasing a dataset for evaluating cross-lingual QA systems. Code and dataset are publicly available here: [this https URL](https://github.com/ffaisal93/aligned_qa)
+
+| Comments: | Accepted at MRQA Workshop 2021                               |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2109.12028](https://arxiv.org/abs/2109.12028) [cs.CL]** |
+|           | (or **[arXiv:2109.12028v1](https://arxiv.org/abs/2109.12028v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-27-8">8. Transformers Generalize Linearly
+</h2>
+
+Title: [Transformers Generalize Linearly](https://arxiv.org/abs/2109.12036)
+
+Authors: [Jackson Petty](https://arxiv.org/search/cs?searchtype=author&query=Petty%2C+J), [Robert Frank](https://arxiv.org/search/cs?searchtype=author&query=Frank%2C+R)
+
+> Natural language exhibits patterns of hierarchically governed dependencies, in which relations between words are sensitive to syntactic structure rather than linear ordering. While re-current network models often fail to generalize in a hierarchically sensitive way (McCoy et al.,2020) when trained on ambiguous data, the improvement in performance of newer Trans-former language models (Vaswani et al., 2017)on a range of syntactic benchmarks trained on large data sets (Goldberg, 2019; Warstadtet al., 2019) opens the question of whether these models might exhibit hierarchical generalization in the face of impoverished [this http URL](http://data.in/) this paper we examine patterns of structural generalization for Transformer sequence-to-sequence models and find that not only do Transformers fail to generalize hierarchically across a wide variety of grammatical mapping tasks, but they exhibit an even stronger preference for linear generalization than comparable recurrent networks
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2109.12036](https://arxiv.org/abs/2109.12036) [cs.CL]** |
+|           | (or **[arXiv:2109.12036v1](https://arxiv.org/abs/2109.12036v1) [cs.CL]** for this version) |
+
+
+
+<h2 id="2021-09-27-9">9. AraT5: Text-to-Text Transformers for Arabic Language Understanding and Generation
+</h2>
+
+Title: [AraT5: Text-to-Text Transformers for Arabic Language Understanding and Generation](https://arxiv.org/abs/2109.12068)
+
+Authors: [El Moatez Billah Nagoudi](https://arxiv.org/search/cs?searchtype=author&query=Nagoudi%2C+E+M+B), [Muhammad Abdul-Mageed](https://arxiv.org/search/cs?searchtype=author&query=Abdul-Mageed%2C+M), [AbdelRahim Elmadany](https://arxiv.org/search/cs?searchtype=author&query=Elmadany%2C+A)
+
+> Transfer learning with a unified Transformer framework (T5) that converts all language problems into a text-to-text format has recently been proposed as a simple, yet effective, transfer learning approach. Although a multilingual version of the T5 model (mT5) has been introduced, it is not clear how well it can fare on non-English tasks involving diverse data. To investigate this question, we apply mT5 on a language with a wide variety of dialects--Arabic. For evaluation, we use an existing benchmark for Arabic language understanding and introduce a new benchmark for Arabic language generation (ARGEN). We also pre-train three powerful Arabic-specific text-to-text Transformer based models and evaluate them on the two benchmarks. Our new models perform significantly better than mT5 and exceed MARBERT, the current state-of-the-art Arabic BERT-based model, on Arabic language understanding. The models also set new SOTA on the generation benchmark. Our new models and are publicly released at [this https URL](https://github.com/UBC-NLP/araT5) and ARLGE will be released through the same repository.
+
+| Comments: | All authors contributed equally                              |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2109.12068](https://arxiv.org/abs/2109.12068) [cs.CL]** |
+|           | (or **[arXiv:2109.12068v1](https://arxiv.org/abs/2109.12068v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-27-10">10. Faithful Target Attribute Prediction in Neural Machine TranslationTasks
+</h2>
+
+Title: [Faithful Target Attribute Prediction in Neural Machine Translation](https://arxiv.org/abs/2109.12105)
+
+Authors: [Xing Niu](https://arxiv.org/search/cs?searchtype=author&query=Niu%2C+X), [Georgiana Dinu](https://arxiv.org/search/cs?searchtype=author&query=Dinu%2C+G), [Prashant Mathur](https://arxiv.org/search/cs?searchtype=author&query=Mathur%2C+P), [Anna Currey](https://arxiv.org/search/cs?searchtype=author&query=Currey%2C+A)
+
+> The training data used in NMT is rarely controlled with respect to specific attributes, such as word casing or gender, which can cause errors in translations. We argue that predicting the target word and attributes simultaneously is an effective way to ensure that translations are more faithful to the training data distribution with respect to these attributes. Experimental results on two tasks, uppercased input translation and gender prediction, show that this strategy helps mirror the training data distribution in testing. It also facilitates data augmentation on the task of uppercased input translation.
+
+| Comments: | Withdrawn from Findings of ACL 2021                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2109.12105](https://arxiv.org/abs/2109.12105) [cs.CL]** |
+|           | (or **[arXiv:2109.12105v1](https://arxiv.org/abs/2109.12105v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+# 2021-09-24
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-09-24-1">1. MARMOT: A Deep Learning Framework for Constructing Multimodal Representations for Vision-and-Language Tasks
+</h2>
+
+Title: [MARMOT: A Deep Learning Framework for Constructing Multimodal Representations for Vision-and-Language Tasks](https://arxiv.org/abs/2109.11526)
+
+Authors: [Patrick Y. Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+P+Y), [Walter R. Mebane Jr](https://arxiv.org/search/cs?searchtype=author&query=Mebane%2C+W+R)
+
+> Political activity on social media presents a data-rich window into political behavior, but the vast amount of data means that almost all content analyses of social media require a data labeling step. However, most automated machine classification methods ignore the multimodality of posted content, focusing either on text or images. State-of-the-art vision-and-language models are unusable for most political science research: they require all observations to have both image and text and require computationally expensive pretraining. This paper proposes a novel vision-and-language framework called multimodal representations using modality translation (MARMOT). MARMOT presents two methodological contributions: it can construct representations for observations missing image or text, and it replaces the computationally expensive pretraining with modality translation. MARMOT outperforms an ensemble text-only classifier in 19 of 20 categories in multilabel classifications of tweets reporting election incidents during the 2016 U.S. general election. Moreover, MARMOT shows significant improvements over the results of benchmark multimodal models on the Hateful Memes dataset, improving the best result set by VisualBERT in terms of accuracy from 0.6473 to 0.6760 and area under the receiver operating characteristic curve (AUC) from 0.7141 to 0.7530.
+
+| Comments: | 57 pages, 16 figures. Forthcoming in Computational Communication Research |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL); Computers and Society (cs.CY); Machine Learning (cs.LG); Multimedia (cs.MM) |
+| Cite as:  | **[arXiv:2109.11526](https://arxiv.org/abs/2109.11526) [cs.CV]** |
+|           | (or **[arXiv:2109.11526v1](https://arxiv.org/abs/2109.11526v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-24-2">2. Conditional Poisson Stochastic Beam Search
+</h2>
+
+Title: [Conditional Poisson Stochastic Beam Search](https://arxiv.org/abs/2109.11034)
+
+Authors: [Clara Meister](https://arxiv.org/search/cs?searchtype=author&query=Meister%2C+C), [Afra Amini](https://arxiv.org/search/cs?searchtype=author&query=Amini%2C+A), [Tim Viera](https://arxiv.org/search/cs?searchtype=author&query=Viera%2C+T), [Ryan Cotterell](https://arxiv.org/search/cs?searchtype=author&query=Cotterell%2C+R)
+
+> Beam search is the default decoding strategy for many sequence generation tasks in NLP. The set of approximate K-best items returned by the algorithm is a useful summary of the distribution for many applications; however, the candidates typically exhibit high overlap and may give a highly biased estimate for expectations under our model. These problems can be addressed by instead using stochastic decoding strategies. In this work, we propose a new method for turning beam search into a stochastic process: Conditional Poisson stochastic beam search. Rather than taking the maximizing set at each iteration, we sample K candidates without replacement according to the conditional Poisson sampling design. We view this as a more natural alternative to Kool et. al. 2019's stochastic beam search (SBS). Furthermore, we show how samples generated under the CPSBS design can be used to build consistent estimators and sample diverse sets from sequence models. In our experiments, we observe CPSBS produces lower variance and more efficient estimators than SBS, even showing improvements in high entropy settings.
+
+| Subjects:          | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| ------------------ | ------------------------------------------------------------ |
+| Journal reference: | Proceedings of EMNLP 2021                                    |
+| Cite as:           | **[arXiv:2109.11034](https://arxiv.org/abs/2109.11034) [cs.CL]** |
+|                    | (or **[arXiv:2109.11034v1](https://arxiv.org/abs/2109.11034v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-09-24-3">3. Distiller: A Systematic Study of Model Distillation Methods in Natural Language Processing
+</h2>
+
+Title: [Distiller: A Systematic Study of Model Distillation Methods in Natural Language Processing](https://arxiv.org/abs/2109.11105)
+
+Authors: [Haoyu He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+H), [Xingjian Shi](https://arxiv.org/search/cs?searchtype=author&query=Shi%2C+X), [Jonas Mueller](https://arxiv.org/search/cs?searchtype=author&query=Mueller%2C+J), [Zha Sheng](https://arxiv.org/search/cs?searchtype=author&query=Sheng%2C+Z), [Mu Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+M), [George Karypis](https://arxiv.org/search/cs?searchtype=author&query=Karypis%2C+G)
+
+> We aim to identify how different components in the KD pipeline affect the resulting performance and how much the optimal KD pipeline varies across different datasets/tasks, such as the data augmentation policy, the loss function, and the intermediate representation for transferring the knowledge between teacher and student. To tease apart their effects, we propose Distiller, a meta KD framework that systematically combines a broad range of techniques across different stages of the KD pipeline, which enables us to quantify each component's contribution. Within Distiller, we unify commonly used objectives for distillation of intermediate representations under a universal mutual information (MI) objective and propose a class of MI-α objective functions with better bias/variance trade-off for estimating the MI between the teacher and the student. On a diverse set of NLP datasets, the best Distiller configurations are identified via large-scale hyperparameter optimization. Our experiments reveal the following: 1) the approach used to distill the intermediate representations is the most important factor in KD performance, 2) among different objectives for intermediate distillation, MI-α performs the best, and 3) data augmentation provides a large boost for small training datasets or small student networks. Moreover, we find that different datasets/tasks prefer different KD algorithms, and thus propose a simple AutoDistiller algorithm that can recommend a good KD pipeline for a new dataset.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2109.11105](https://arxiv.org/abs/2109.11105) [cs.CL]** |
+|           | (or **[arXiv:2109.11105v1](https://arxiv.org/abs/2109.11105v1) [cs.CL]** for this version) |
+
+
+
+<h2 id="2021-09-24-4">4. Cross-Lingual Language Model Meta-Pretraining
+</h2>
+
+Title: [Cross-Lingual Language Model Meta-Pretraining](https://arxiv.org/abs/2109.11129)
+
+Authors: [Zewen Chi](https://arxiv.org/search/cs?searchtype=author&query=Chi%2C+Z), [Heyan Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+H), [Luyang Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+L), [Yu Bai](https://arxiv.org/search/cs?searchtype=author&query=Bai%2C+Y), [Xian-Ling Mao](https://arxiv.org/search/cs?searchtype=author&query=Mao%2C+X)
+
+> The success of pretrained cross-lingual language models relies on two essential abilities, i.e., generalization ability for learning downstream tasks in a source language, and cross-lingual transferability for transferring the task knowledge to other languages. However, current methods jointly learn the two abilities in a single-phase cross-lingual pretraining process, resulting in a trade-off between generalization and cross-lingual transfer. In this paper, we propose cross-lingual language model meta-pretraining, which learns the two abilities in different training phases. Our method introduces an additional meta-pretraining phase before cross-lingual pretraining, where the model learns generalization ability on a large-scale monolingual corpus. Then, the model focuses on learning cross-lingual transfer on a multilingual corpus. Experimental results show that our method improves both generalization and cross-lingual transfer, and produces better-aligned representations across different languages.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2109.11129](https://arxiv.org/abs/2109.11129) [cs.CL]** |
+|           | (or **[arXiv:2109.11129v1](https://arxiv.org/abs/2109.11129v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-09-24-5">5. Non-Parametric Online Learning from Human Feedback for Neural Machine Translation
+</h2>
+
+Title: [Non-Parametric Online Learning from Human Feedback for Neural Machine Translation](https://arxiv.org/abs/2109.11136)
+
+Authors: [Dongqi Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+D), [Haoran Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+H), [Zhirui Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Z), [Shujian Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+S), [Jun Xie](https://arxiv.org/search/cs?searchtype=author&query=Xie%2C+J), [Weihua Luo](https://arxiv.org/search/cs?searchtype=author&query=Luo%2C+W), [Jiajun Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+J)
+
+> We study the problem of online learning with human feedback in the human-in-the-loop machine translation, in which the human translators revise the machine-generated translations and then the corrected translations are used to improve the neural machine translation (NMT) system. However, previous methods require online model updating or additional translation memory networks to achieve high-quality performance, making them inflexible and inefficient in practice. In this paper, we propose a novel non-parametric online learning method without changing the model structure. This approach introduces two k-nearest-neighbor (KNN) modules: one module memorizes the human feedback, which is the correct sentences provided by human translators, while the other balances the usage of the history human feedback and original NMT models adaptively. Experiments conducted on EMEA and JRC-Acquis benchmarks demonstrate that our proposed method obtains substantial improvements on translation accuracy and achieves better adaptation performance with less repeating human correction operations.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2109.11136](https://arxiv.org/abs/2109.11136) [cs.CL]** |
+|           | (or **[arXiv:2109.11136v1](https://arxiv.org/abs/2109.11136v1) [cs.CL]** for this version) |
+
+
+
+<h2 id="2021-09-24-6">6. Exploiting Curriculum Learning in Unsupervised Neural Machine Translation
+</h2>
+
+Title: [Exploiting Curriculum Learning in Unsupervised Neural Machine Translation](https://arxiv.org/abs/2109.11177)
+
+Authors: [Jinliang Lu](https://arxiv.org/search/cs?searchtype=author&query=Lu%2C+J), [Jiajun Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+J)
+
+> Back-translation (BT) has become one of the de facto components in unsupervised neural machine translation (UNMT), and it explicitly makes UNMT have translation ability. However, all the pseudo bi-texts generated by BT are treated equally as clean data during optimization without considering the quality diversity, leading to slow convergence and limited translation performance. To address this problem, we propose a curriculum learning method to gradually utilize pseudo bi-texts based on their quality from multiple granularities. Specifically, we first apply cross-lingual word embedding to calculate the potential translation difficulty (quality) for the monolingual sentences. Then, the sentences are fed into UNMT from easy to hard batch by batch. Furthermore, considering the quality of sentences/tokens in a particular batch are also diverse, we further adopt the model itself to calculate the fine-grained quality scores, which are served as learning factors to balance the contributions of different parts when computing loss and encourage the UNMT model to focus on pseudo data with higher quality. Experimental results on WMT 14 En-Fr, WMT 16 En-De, WMT 16 En-Ro, and LDC En-Zh translation tasks demonstrate that the proposed method achieves consistent improvements with faster convergence speed.
+
+| Comments: | Camera-ready for Findings of EMNLP 2021                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2109.11177](https://arxiv.org/abs/2109.11177) [cs.CL]** |
+|           | (or **[arXiv:2109.11177v1](https://arxiv.org/abs/2109.11177v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-09-24-7">7. The Volctrans GLAT System: Non-autoregressive Translation Meets WMT21
+</h2>
+
+Title: [The Volctrans GLAT System: Non-autoregressive Translation Meets WMT21](https://arxiv.org/abs/2109.11247)
+
+Authors: [Lihua Qian](https://arxiv.org/search/cs?searchtype=author&query=Qian%2C+L), [Yi Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+Y), [Zaixiang Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng%2C+Z), [Yaoming Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+Y), [Zehui Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+Z), [Jiangtao Feng](https://arxiv.org/search/cs?searchtype=author&query=Feng%2C+J), [Shanbo Cheng](https://arxiv.org/search/cs?searchtype=author&query=Cheng%2C+S), [Lei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L), [Mingxuan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+M), [Hao Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+H)
+
+> This paper describes the Volctrans' submission to the WMT21 news translation shared task for German->English translation. We build a parallel (i.e., non-autoregressive) translation system using the Glancing Transformer, which enables fast and accurate parallel decoding in contrast to the currently prevailing autoregressive models. To the best of our knowledge, this is the first parallel translation system that can be scaled to such a practical scenario like WMT competition. More importantly, our parallel translation system achieves the best BLEU score (35.0) on German->English translation task, outperforming all strong autoregressive counterparts.
+
+| Comments: | 10 pages, 5 figures, WMT2021                                 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2109.11247](https://arxiv.org/abs/2109.11247) [cs.CL]** |
+|           | (or **[arXiv:2109.11247v1](https://arxiv.org/abs/2109.11247v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-24-8">8. Dynamic Knowledge Distillation for Pre-trained Language Models
+</h2>
+
+Title: [Dynamic Knowledge Distillation for Pre-trained Language Models](https://arxiv.org/abs/2109.11295)
+
+Authors: [Lei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L), [Yankai Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+Y), [Shuhuai Ren](https://arxiv.org/search/cs?searchtype=author&query=Ren%2C+S), [Peng Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+P), [Jie Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+J), [Xu Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+X)
+
+> Knowledge distillation~(KD) has been proved effective for compressing large-scale pre-trained language models. However, existing methods conduct KD statically, e.g., the student model aligns its output distribution to that of a selected teacher model on the pre-defined training dataset. In this paper, we explore whether a dynamic knowledge distillation that empowers the student to adjust the learning procedure according to its competency, regarding the student performance and learning efficiency. We explore the dynamical adjustments on three aspects: teacher model adoption, data selection, and KD objective adaptation. Experimental results show that (1) proper selection of teacher model can boost the performance of student model; (2) conducting KD with 10% informative instances achieves comparable performance while greatly accelerates the training; (3) the student performance can be boosted by adjusting the supervision contribution of different alignment objective. We find dynamic knowledge distillation is promising and provide discussions on potential future directions towards more efficient KD methods. Our code is available at [this https URL](https://github.com/lancopku/DynamicKD).
+
+| Comments: | Main Conference EMNLP 2021, Camera Ready                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2109.11295](https://arxiv.org/abs/2109.11295) [cs.CL]** |
+|           | (or **[arXiv:2109.11295v1](https://arxiv.org/abs/2109.11295v1) [cs.CL]** for this version) |
+
+
+
+<h2 id="2021-09-24-9">9. Transferring Knowledge from Vision to Language: How to Achieve it and how to Measure it?
+</h2>
+
+Title: [Transferring Knowledge from Vision to Language: How to Achieve it and how to Measure it?](https://arxiv.org/abs/2109.11321)
+
+Authors: [Tobias Norlund](https://arxiv.org/search/cs?searchtype=author&query=Norlund%2C+T), [Lovisa Hagström](https://arxiv.org/search/cs?searchtype=author&query=Hagström%2C+L), [Richard Johanssom](https://arxiv.org/search/cs?searchtype=author&query=Johanssom%2C+R)
+
+> Large language models are known to suffer from the hallucination problem in that they are prone to output statements that are false or inconsistent, indicating a lack of knowledge. A proposed solution to this is to provide the model with additional data modalities that complements the knowledge obtained through text. We investigate the use of visual data to complement the knowledge of large language models by proposing a method for evaluating visual knowledge transfer to text for uni- or multimodal language models. The method is based on two steps, 1) a novel task querying for knowledge of memory colors, i.e. typical colors of well-known objects, and 2) filtering of model training data to clearly separate knowledge contributions. Additionally, we introduce a model architecture that involves a visual imagination step and evaluate it with our proposed method. We find that our method can successfully be used to measure visual knowledge transfer capabilities in models and that our novel model architecture shows promising results for leveraging multimodal knowledge in a unimodal setting.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2109.11321](https://arxiv.org/abs/2109.11321) [cs.CL]** |
+|           | (or **[arXiv:2109.11321v1](https://arxiv.org/abs/2109.11321v1) [cs.CL]** for this version) |
+
+
 
 
 
