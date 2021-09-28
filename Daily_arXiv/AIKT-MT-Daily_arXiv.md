@@ -3,6 +3,18 @@
 # Index
 
 
+- [2021-09-28](#2021-09-28)
+
+  - [1. Fast-MD: Fast Multi-Decoder End-to-End Speech Translation with Non-Autoregressive Hidden Intermediates](#2021-09-28-1)
+  - [2. RuleBert: Teaching Soft Rules to Pre-trained Language Models](#2021-09-28-2)
+  - [3. Multimodal Integration of Human-Like Attention in Visual Question Answering](#2021-09-28-3)
+  - [4. Predicting Attention Sparsity in Transformers](#2021-09-28-4)
+  - [5. XLM-K: Improving Cross-Lingual Language Model Pre-Training with Multilingual Knowledge](#2021-09-28-5)
+  - [6. Curb Your Carbon Emissions: Benchmarking Carbon Emissions in Machine Translation](#2021-09-28-6)
+  - [7. On the Prunability of Attention Heads in Multilingual BERT](#2021-09-28-7)
+  - [8. Integrated Training for Sequence-to-Sequence Models Using Non-Autoregressive Transformer](#2021-09-28-8)
+  - [9. Trans-Encoder: Unsupervised sentence-pair modelling through self- and mutual-distillations](#2021-09-28-9)
+  - [10. Towards Reinforcement Learning for Pivot-based Neural Machine Translation with Non-autoregressive Transformer](#2021-09-28-10)
 - [2021-09-27](#2021-09-27)
 
   - [1. Dense Contrastive Visual-Linguistic Pretraining](#2021-09-27-1)
@@ -195,6 +207,191 @@
   - [4. Enjoy the Salience: Towards Better Transformer-based Faithful Explanations with Word Salience](#2021-09-01-4)
   - [5. Thermostat: A Large Collection of NLP Model Explanations and Analysis Tools](#2021-09-01-5)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-09-28
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-09-28-1">1. Fast-MD: Fast Multi-Decoder End-to-End Speech Translation with Non-Autoregressive Hidden Intermediates
+</h2>
+
+Title: [Fast-MD: Fast Multi-Decoder End-to-End Speech Translation with Non-Autoregressive Hidden Intermediates](https://arxiv.org/abs/2109.12804)
+Authors: [Hirofumi Inaguma](https://arxiv.org/search/eess?searchtype=author&query=Inaguma%2C+H), [Siddharth Dalmia](https://arxiv.org/search/eess?searchtype=author&query=Dalmia%2C+S), [Brian Yan](https://arxiv.org/search/eess?searchtype=author&query=Yan%2C+B), [Shinji Watanabe](https://arxiv.org/search/eess?searchtype=author&query=Watanabe%2C+S)
+
+> The multi-decoder (MD) end-to-end speech translation model has demonstrated high translation quality by searching for better intermediate automatic speech recognition (ASR) decoder states as hidden intermediates (HI). It is a two-pass decoding model decomposing the overall task into ASR and machine translation sub-tasks. However, the decoding speed is not fast enough for real-world applications because it conducts beam search for both sub-tasks during inference. We propose Fast-MD, a fast MD model that generates HI by non-autoregressive (NAR) decoding based on connectionist temporal classification (CTC) outputs followed by an ASR decoder. We investigated two types of NAR HI: (1) parallel HI by using an autoregressive Transformer ASR decoder and (2) masked HI by using Mask-CTC, which combines CTC and the conditional masked language model. To reduce a mismatch in the ASR decoder between teacher-forcing during training and conditioning on CTC outputs during testing, we also propose sampling CTC outputs during training. Experimental evaluations on three corpora show that Fast-MD achieved about 2x and 4x faster decoding speed than that of the naïve MD model on GPU and CPU with comparable translation quality. Adopting the Conformer encoder and intermediate CTC loss further boosts its quality without sacrificing decoding speed.
+
+| Comments: | Accepted at IEEE ASRU 2021                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Audio and Speech Processing (eess.AS)**; Computation and Language (cs.CL); Sound (cs.SD) |
+| Cite as:  | **[arXiv:2109.12804](https://arxiv.org/abs/2109.12804) [eess.AS]** |
+|           | (or **[arXiv:2109.12804v1](https://arxiv.org/abs/2109.12804v1) [eess.AS]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-28-2">2. RuleBert: Teaching Soft Rules to Pre-trained Language Models
+</h2>
+
+Title: [RuleBert: Teaching Soft Rules to Pre-trained Language Models](https://arxiv.org/abs/2109.13006)
+Authors: [Mohammed Saeed](https://arxiv.org/search/cs?searchtype=author&query=Saeed%2C+M), [Naser Ahmadi](https://arxiv.org/search/cs?searchtype=author&query=Ahmadi%2C+N), [Preslav Nakov](https://arxiv.org/search/cs?searchtype=author&query=Nakov%2C+P), [Paolo Papotti](https://arxiv.org/search/cs?searchtype=author&query=Papotti%2C+P)
+
+> While pre-trained language models (PLMs) are the go-to solution to tackle many natural language processing problems, they are still very limited in their ability to capture and to use common-sense knowledge. In fact, even if information is available in the form of approximate (soft) logical rules, it is not clear how to transfer it to a PLM in order to improve its performance for deductive reasoning tasks. Here, we aim to bridge this gap by teaching PLMs how to reason with soft Horn rules. We introduce a classification task where, given facts and soft rules, the PLM should return a prediction with a probability for a given hypothesis. We release the first dataset for this task, and we propose a revised loss function that enables the PLM to learn how to predict precise probabilities for the task. Our evaluation results show that the resulting fine-tuned models achieve very high performance, even on logical rules that were unseen at training. Moreover, we demonstrate that logical notions expressed by the rules are transferred to the fine-tuned model, yielding state-of-the-art results on external datasets.
+
+| Comments:          | Logical reasoning, soft Horn rules, Transformers, pre-trained language models, combining symbolic and probabilistic methods, BERT |
+| ------------------ | ------------------------------------------------------------ |
+| Subjects:          | **Artificial Intelligence (cs.AI)**; Computation and Language (cs.CL); Machine Learning (cs.LG); Logic in Computer Science (cs.LO); Neural and Evolutionary Computing (cs.NE) |
+| MSC classes:       | 68T50                                                        |
+| ACM classes:       | F.2.2; I.2.7                                                 |
+| Journal reference: | EMNLP-2021                                                   |
+| Cite as:           | **[arXiv:2109.13006](https://arxiv.org/abs/2109.13006) [cs.AI]** |
+|                    | (or **[arXiv:2109.13006v1](https://arxiv.org/abs/2109.13006v1) [cs.AI]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-28-3">3. Multimodal Integration of Human-Like Attention in Visual Question Answering
+</h2>
+
+Title: [Multimodal Integration of Human-Like Attention in Visual Question Answering](https://arxiv.org/abs/2109.13139)
+Authors: [Ekta Sood](https://arxiv.org/search/cs?searchtype=author&query=Sood%2C+E), [Fabian Kögel](https://arxiv.org/search/cs?searchtype=author&query=Kögel%2C+F), [Philipp Müller](https://arxiv.org/search/cs?searchtype=author&query=Müller%2C+P), [Dominike Thomas](https://arxiv.org/search/cs?searchtype=author&query=Thomas%2C+D), [Mihai Bace](https://arxiv.org/search/cs?searchtype=author&query=Bace%2C+M), [Andreas Bulling](https://arxiv.org/search/cs?searchtype=author&query=Bulling%2C+A)
+
+> Human-like attention as a supervisory signal to guide neural attention has shown significant promise but is currently limited to uni-modal integration - even for inherently multimodal tasks such as visual question answering (VQA). We present the Multimodal Human-like Attention Network (MULAN) - the first method for multimodal integration of human-like attention on image and text during training of VQA models. MULAN integrates attention predictions from two state-of-the-art text and image saliency models into neural self-attention layers of a recent transformer-based VQA model. Through evaluations on the challenging VQAv2 dataset, we show that MULAN achieves a new state-of-the-art performance of 73.98% accuracy on test-std and 73.72% on test-dev and, at the same time, has approximately 80% fewer trainable parameters than prior work. Overall, our work underlines the potential of integrating multimodal human-like and neural attention for VQA
+
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2109.13139](https://arxiv.org/abs/2109.13139) [cs.CV]** |
+|           | (or **[arXiv:2109.13139v1](https://arxiv.org/abs/2109.13139v1) [cs.CV]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-09-28-4">4. Predicting Attention Sparsity in Transformers
+</h2>
+
+Title: [Predicting Attention Sparsity in Transformers](https://arxiv.org/abs/2109.12188)
+Authors: [Marcos Treviso](https://arxiv.org/search/cs?searchtype=author&query=Treviso%2C+M), [António Góis](https://arxiv.org/search/cs?searchtype=author&query=Góis%2C+A), [Patrick Fernandes](https://arxiv.org/search/cs?searchtype=author&query=Fernandes%2C+P), [Erick Fonseca](https://arxiv.org/search/cs?searchtype=author&query=Fonseca%2C+E), [André F. T. Martins](https://arxiv.org/search/cs?searchtype=author&query=Martins%2C+A+F+T)
+
+> A bottleneck in transformer architectures is their quadratic complexity with respect to the input sequence, which has motivated a body of work on efficient sparse approximations to softmax. An alternative path, used by entmax transformers, consists of having built-in exact sparse attention; however this approach still requires quadratic computation. In this paper, we propose Sparsefinder, a simple model trained to identify the sparsity pattern of entmax attention before computing it. We experiment with three variants of our method, based on distances, quantization, and clustering, on two tasks: machine translation (attention in the decoder) and masked language modeling (encoder-only). Our work provides a new angle to study model efficiency by doing extensive analysis of the tradeoff between the sparsity and recall of the predicted attention graph. This allows for detailed comparison between different models, and may guide future benchmarks for sparse models.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2109.12188](https://arxiv.org/abs/2109.12188) [cs.CL]** |
+|           | (or **[arXiv:2109.12188v1](https://arxiv.org/abs/2109.12188v1) [cs.CL]** for this version) |
+
+
+
+<h2 id="2021-09-28-5">5. XLM-K: Improving Cross-Lingual Language Model Pre-Training with Multilingual Knowledge
+</h2>
+
+Title: [XLM-K: Improving Cross-Lingual Language Model Pre-Training with Multilingual Knowledge](https://arxiv.org/abs/2109.12573)
+Authors: [Xiaoze Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+X), [Yaobo Liang](https://arxiv.org/search/cs?searchtype=author&query=Liang%2C+Y), [Weizhu Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+W), [Nan Duan](https://arxiv.org/search/cs?searchtype=author&query=Duan%2C+N)
+
+> Cross-lingual pre-training has achieved great successes using monolingual and bilingual plain text corpora. However, existing pre-trained models neglect multilingual knowledge, which is language agnostic but comprises abundant cross-lingual structure alignment. In this paper, we propose XLM-K, a cross-lingual language model incorporating multilingual knowledge in pre-training. XLM-K augments existing multilingual pre-training with two knowledge tasks, namely Masked Entity Prediction Task and Object Entailment Task. We evaluate XLM-K on MLQA, NER and XNLI. Experimental results clearly demonstrate significant improvements over existing multilingual language models. The results on MLQA and NER exhibit the superiority of XLM-K in knowledge related tasks. The success in XNLI shows a better cross-lingual transferability obtained in XLM-K. What is more, we provide a detailed probing analysis to confirm the desired knowledge captured in our pre-training regimen.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2109.12573](https://arxiv.org/abs/2109.12573) [cs.CL]** |
+|           | (or **[arXiv:2109.12573v1](https://arxiv.org/abs/2109.12573v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-09-28-6">6. Curb Your Carbon Emissions: Benchmarking Carbon Emissions in Machine Translation
+</h2>
+
+Title: [Curb Your Carbon Emissions: Benchmarking Carbon Emissions in Machine Translation](https://arxiv.org/abs/2109.12584)
+Authors: [Mirza Yusuf](https://arxiv.org/search/cs?searchtype=author&query=Yusuf%2C+M), [Praatibh Surana](https://arxiv.org/search/cs?searchtype=author&query=Surana%2C+P), [Gauri Gupta](https://arxiv.org/search/cs?searchtype=author&query=Gupta%2C+G), [Krithika Ramesh](https://arxiv.org/search/cs?searchtype=author&query=Ramesh%2C+K)
+
+> In recent times, there has been definitive progress in the field of NLP, with its applications growing as the utility of our language models increases with advances in their performance. However, these models require a large amount of computational power and data to train, consequently leading to large carbon footprints. Therefore, is it imperative that we study the carbon efficiency and look for alternatives to reduce the overall environmental impact of training models, in particular large language models. In our work, we assess the performance of models for machine translation, across multiple language pairs to assess the difference in computational power required to train these models for each of these language pairs and examine the various components of these models to analyze aspects of our pipeline that can be optimized to reduce these carbon emissions.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2109.12584](https://arxiv.org/abs/2109.12584) [cs.CL]** |
+|           | (or **[arXiv:2109.12584v1](https://arxiv.org/abs/2109.12584v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-28-7">7.On the Prunability of Attention Heads in Multilingual BERT
+</h2>
+
+Title: [On the Prunability of Attention Heads in Multilingual BERT](https://arxiv.org/abs/2109.12683)
+Authors: [Aakriti Budhraja](https://arxiv.org/search/cs?searchtype=author&query=Budhraja%2C+A), [Madhura Pande](https://arxiv.org/search/cs?searchtype=author&query=Pande%2C+M), [Pratyush Kumar](https://arxiv.org/search/cs?searchtype=author&query=Kumar%2C+P), [Mitesh M. Khapra](https://arxiv.org/search/cs?searchtype=author&query=Khapra%2C+M+M)
+
+> Large multilingual models, such as mBERT, have shown promise in crosslingual transfer. In this work, we employ pruning to quantify the robustness and interpret layer-wise importance of mBERT. On four GLUE tasks, the relative drops in accuracy due to pruning have almost identical results on mBERT and BERT suggesting that the reduced attention capacity of the multilingual models does not affect robustness to pruning. For the crosslingual task XNLI, we report higher drops in accuracy with pruning indicating lower robustness in crosslingual transfer. Also, the importance of the encoder layers sensitively depends on the language family and the pre-training corpus size. The top layers, which are relatively more influenced by fine-tuning, encode important information for languages similar to English (SVO) while the bottom layers, which are relatively less influenced by fine-tuning, are particularly important for agglutinative and low-resource languages.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2109.12683](https://arxiv.org/abs/2109.12683) [cs.CL]** |
+|           | (or **[arXiv:2109.12683v1](https://arxiv.org/abs/2109.12683v1) [cs.CL]** for this version) |
+
+
+
+<h2 id="2021-09-28-8">8. Integrated Training for Sequence-to-Sequence Models Using Non-Autoregressive Transformer
+</h2>
+
+Title: [Integrated Training for Sequence-to-Sequence Models Using Non-Autoregressive Transformer](https://arxiv.org/abs/2109.12950)
+Authors: [Evgeniia Tokarchuk](https://arxiv.org/search/cs?searchtype=author&query=Tokarchuk%2C+E), [Jan Rosendahl](https://arxiv.org/search/cs?searchtype=author&query=Rosendahl%2C+J), [Weiyue Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+W), [Pavel Petrushkov](https://arxiv.org/search/cs?searchtype=author&query=Petrushkov%2C+P), [Tomer Lancewicki](https://arxiv.org/search/cs?searchtype=author&query=Lancewicki%2C+T), [Shahram Khadivi](https://arxiv.org/search/cs?searchtype=author&query=Khadivi%2C+S), [Hermann Ney](https://arxiv.org/search/cs?searchtype=author&query=Ney%2C+H)
+
+> Complex natural language applications such as speech translation or pivot translation traditionally rely on cascaded models. However, cascaded models are known to be prone to error propagation and model discrepancy problems. Furthermore, there is no possibility of using end-to-end training data in conventional cascaded systems, meaning that the training data most suited for the task cannot be used. Previous studies suggested several approaches for integrated end-to-end training to overcome those problems, however they mostly rely on (synthetic or natural) three-way data. We propose a cascaded model based on the non-autoregressive Transformer that enables end-to-end training without the need for an explicit intermediate representation. This new architecture (i) avoids unnecessary early decisions that can cause errors which are then propagated throughout the cascaded models and (ii) utilizes the end-to-end training data directly. We conduct an evaluation on two pivot-based machine translation tasks, namely French-German and German-Czech. Our experimental results show that the proposed architecture yields an improvement of more than 2 BLEU for French-German over the cascaded baseline.
+
+| Comments: | IWSLT 2021 camera-ready                                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| DOI:      | [10.18653/v1/2021.iwslt-1.32](https://arxiv.org/ct?url=https%3A%2F%2Fdx.doi.org%2F10.18653%2Fv1%2F2021.iwslt-1.32&v=f8d255d8) |
+| Cite as:  | **[arXiv:2109.12950](https://arxiv.org/abs/2109.12950) [cs.CL]** |
+|           | (or **[arXiv:2109.12950v1](https://arxiv.org/abs/2109.12950v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-28-9">9. Trans-Encoder: Unsupervised sentence-pair modelling through self- and mutual-distillations
+</h2>
+
+Title: [Trans-Encoder: Unsupervised sentence-pair modelling through self- and mutual-distillations](https://arxiv.org/abs/2109.13059)
+Authors: [Fangyu Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+F), [Serhii Havrylov](https://arxiv.org/search/cs?searchtype=author&query=Havrylov%2C+S), [Yunlong Jiao](https://arxiv.org/search/cs?searchtype=author&query=Jiao%2C+Y), [Jordan Massiah](https://arxiv.org/search/cs?searchtype=author&query=Massiah%2C+J), [Emine Yilmaz](https://arxiv.org/search/cs?searchtype=author&query=Yilmaz%2C+E)
+
+> In NLP, a large volume of tasks involve pairwise comparison between two sequences (e.g. sentence similarity and paraphrase identification). Predominantly, two formulations are used for sentence-pair tasks: bi-encoders and cross-encoders. Bi-encoders produce fixed-dimensional sentence representations and are computationally efficient, however, they usually underperform cross-encoders. Cross-encoders can leverage their attention heads to exploit inter-sentence interactions for better performance but they require task fine-tuning and are computationally more expensive. In this paper, we present a completely unsupervised sentence representation model termed as Trans-Encoder that combines the two learning paradigms into an iterative joint framework to simultaneously learn enhanced bi- and cross-encoders. Specifically, on top of a pre-trained Language Model (PLM), we start with converting it to an unsupervised bi-encoder, and then alternate between the bi- and cross-encoder task formulations. In each alternation, one task formulation will produce pseudo-labels which are used as learning signals for the other task formulation. We then propose an extension to conduct such self-distillation approach on multiple PLMs in parallel and use the average of their pseudo-labels for mutual-distillation. Trans-Encoder creates, to the best of our knowledge, the first completely unsupervised cross-encoder and also a state-of-the-art unsupervised bi-encoder for sentence similarity. Both the bi-encoder and cross-encoder formulations of Trans-Encoder outperform recently proposed state-of-the-art unsupervised sentence encoders such as Mirror-BERT and SimCSE by up to 5% on the sentence similarity benchmarks.
+
+| Comments: | 16 pages                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2109.13059](https://arxiv.org/abs/2109.13059) [cs.CL]** |
+|           | (or **[arXiv:2109.13059v1](https://arxiv.org/abs/2109.13059v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-28-10">10. Towards Reinforcement Learning for Pivot-based Neural Machine Translation with Non-autoregressive Transformer
+</h2>
+
+Title: [Towards Reinforcement Learning for Pivot-based Neural Machine Translation with Non-autoregressive Transformer](https://arxiv.org/abs/2109.13097)
+Authors: [Evgeniia Tokarchuk](https://arxiv.org/search/cs?searchtype=author&query=Tokarchuk%2C+E), [Jan Rosendahl](https://arxiv.org/search/cs?searchtype=author&query=Rosendahl%2C+J), [Weiyue Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+W), [Pavel Petrushkov](https://arxiv.org/search/cs?searchtype=author&query=Petrushkov%2C+P), [Tomer Lancewicki](https://arxiv.org/search/cs?searchtype=author&query=Lancewicki%2C+T), [Shahram Khadivi](https://arxiv.org/search/cs?searchtype=author&query=Khadivi%2C+S), [Hermann Ney](https://arxiv.org/search/cs?searchtype=author&query=Ney%2C+H)
+
+> Pivot-based neural machine translation (NMT) is commonly used in low-resource setups, especially for translation between non-English language pairs. It benefits from using high resource source-pivot and pivot-target language pairs and an individual system is trained for both sub-tasks. However, these models have no connection during training, and the source-pivot model is not optimized to produce the best translation for the source-target task. In this work, we propose to train a pivot-based NMT system with the reinforcement learning (RL) approach, which has been investigated for various text generation tasks, including machine translation (MT). We utilize a non-autoregressive transformer and present an end-to-end pivot-based integrated model, enabling training on source-target data.
+
+| Comments: | RL4RealLife Workshop 2021 camera-ready                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2109.13097](https://arxiv.org/abs/2109.13097) [cs.CL]** |
+|           | (or **[arXiv:2109.13097v1](https://arxiv.org/abs/2109.13097v1) [cs.CL]** for this version) |
+
+
 
 
 
