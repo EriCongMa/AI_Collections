@@ -3,6 +3,11 @@
 # Index
 
 
+- [2021-09-29](#2021-09-29)
+
+  - [1. Analyzing the Use of Character-Level Translation with Sparse and Noisy Datasets](#2021-09-29-1)
+  - [2. Translating from Morphologically Complex Languages: A Paraphrase-Based Approach](#2021-09-29-2)
+  - [3. Chekhov's Gun Recognition](#2021-09-29-3)
 - [2021-09-28](#2021-09-28)
 
   - [1. Fast-MD: Fast Multi-Decoder End-to-End Speech Translation with Non-Autoregressive Hidden Intermediates](#2021-09-28-1)
@@ -207,6 +212,75 @@
   - [4. Enjoy the Salience: Towards Better Transformer-based Faithful Explanations with Word Salience](#2021-09-01-4)
   - [5. Thermostat: A Large Collection of NLP Model Explanations and Analysis Tools](#2021-09-01-5)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-09-29
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-09-29-1">1. Analyzing the Use of Character-Level Translation with Sparse and Noisy Datasets
+</h2>
+
+Title: [Analyzing the Use of Character-Level Translation with Sparse and Noisy Datasets](https://arxiv.org/abs/2109.13723)
+
+Authors: [Jörg Tiedemann](https://arxiv.org/search/cs?searchtype=author&query=Tiedemann%2C+J), [Preslav Nakov](https://arxiv.org/search/cs?searchtype=author&query=Nakov%2C+P)
+
+> This paper provides an analysis of character-level machine translation models used in pivot-based translation when applied to sparse and noisy datasets, such as crowdsourced movie subtitles. In our experiments, we find that such character-level models cut the number of untranslated words by over 40% and are especially competitive (improvements of 2-3 BLEU points) in the case of limited training data. We explore the impact of character alignment, phrase table filtering, bitext size and the choice of pivot language on translation quality. We further compare cascaded translation models to the use of synthetic training data via multiple pivots, and we find that the latter works significantly better. Finally, we demonstrate that neither word-nor character-BLEU correlate perfectly with human judgments, due to BLEU's sensitivity to length.
+
+| Comments:          | machine translation, character-level, pivoting, cascade models, character alignment, phrase table filtering |
+| ------------------ | ------------------------------------------------------------ |
+| Subjects:          | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| MSC classes:       | 68T50                                                        |
+| ACM classes:       | F.2.2; I.2.7                                                 |
+| Journal reference: | RANLP-2013                                                   |
+| Cite as:           | **[arXiv:2109.13723](https://arxiv.org/abs/2109.13723) [cs.CL]** |
+|                    | (or **[arXiv:2109.13723v1](https://arxiv.org/abs/2109.13723v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-29-2">2. Translating from Morphologically Complex Languages: A Paraphrase-Based Approach
+</h2>
+
+Title: [Translating from Morphologically Complex Languages: A Paraphrase-Based Approach](https://arxiv.org/abs/2109.13724)
+
+Authors: [Preslav Nakov](https://arxiv.org/search/cs?searchtype=author&query=Nakov%2C+P), [Hwee Tou Ng](https://arxiv.org/search/cs?searchtype=author&query=Ng%2C+H+T)
+
+> We propose a novel approach to translating from a morphologically complex language. Unlike previous research, which has targeted word inflections and concatenations, we focus on the pairwise relationship between morphologically related words, which we treat as potential paraphrases and handle using paraphrasing techniques at the word, phrase, and sentence level. An important advantage of this framework is that it can cope with derivational morphology, which has so far remained largely beyond the capabilities of statistical machine translation systems. Our experiments translating from Malay, whose morphology is mostly derivational, into English show significant improvements over rivaling approaches based on five automatic evaluation measures (for 320,000 sentence pairs; 9.5 million English word tokens).
+
+| Comments:          | machine translation, morphologically complex languages, paraphrases (word, phrase, and sentence level), infelctional morphology, derivational morphology, Malay, Indonesian |
+| ------------------ | ------------------------------------------------------------ |
+| Subjects:          | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| MSC classes:       | 68T50                                                        |
+| ACM classes:       | F.2.2; I.2.7                                                 |
+| Journal reference: | ACL-2011                                                     |
+| Cite as:           | **[arXiv:2109.13724](https://arxiv.org/abs/2109.13724) [cs.CL]** |
+|                    | (or **[arXiv:2109.13724v1](https://arxiv.org/abs/2109.13724v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-29-3">3. Chekhov's Gun Recognition
+</h2>
+
+Title: [Chekhov's Gun Recognition](https://arxiv.org/abs/2109.13855)
+
+Authors: [Alexey Tikhonov](https://arxiv.org/search/cs?searchtype=author&query=Tikhonov%2C+A), [Ivan P. Yamshchikov](https://arxiv.org/search/cs?searchtype=author&query=Yamshchikov%2C+I+P)
+
+> Chekhov's gun is a dramatic principle stating that every element in a story must be necessary, and irrelevant elements should be removed. This paper presents a new natural language processing task - Chekhov's gun recognition or (CGR) - recognition of entities that are pivotal for the development of the plot. Though similar to classical Named Entity Recognition (NER) it has profound differences and is crucial for the tasks of narrative processing, since Chekhov's guns have a profound impact on the causal relationship in a story. The paper presents a new benchmark dataset for the CGR task that includes 5550 descriptions with one or more Chekhov's Gun in each and validates the task on two more datasets available in the natural language processing (NLP) literature.
+
+| Subjects:    | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Information Retrieval (cs.IR) |
+| ------------ | ------------------------------------------------------------ |
+| ACM classes: | J.5; I.2.6; I.2.7                                            |
+| Cite as:     | **[arXiv:2109.13855](https://arxiv.org/abs/2109.13855) [cs.CL]** |
+|              | (or **[arXiv:2109.13855v1](https://arxiv.org/abs/2109.13855v1) [cs.CL]** for this version) |
+
+
 
 
 
