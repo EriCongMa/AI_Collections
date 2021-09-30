@@ -3,6 +3,13 @@
 # Index
 
 
+- [2021-09-30](#2021-09-30)
+
+  - [1. VideoCLIP: Contrastive Pre-training for Zero-shot Video-Text Understanding](#2021-09-30-1)
+  - [2. Contrastive Video-Language Segmentation](#2021-09-30-2)
+  - [3. Hierarchical Character Tagger for Short Text Spelling Error Correction](#2021-09-30-3)
+  - [4. EdinSaar@WMT21: North-Germanic Low-Resource Multilingual NMT](#2021-09-30-4)
+  - [5. FastCorrect 2: Fast Error Correction on Multiple Candidates for Automatic Speech Recognition](#2021-09-30-5)
 - [2021-09-29](#2021-09-29)
 
   - [1. Analyzing the Use of Character-Level Translation with Sparse and Noisy Datasets](#2021-09-29-1)
@@ -212,6 +219,106 @@
   - [4. Enjoy the Salience: Towards Better Transformer-based Faithful Explanations with Word Salience](#2021-09-01-4)
   - [5. Thermostat: A Large Collection of NLP Model Explanations and Analysis Tools](#2021-09-01-5)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-09-30
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-09-30-1">1. VideoCLIP: Contrastive Pre-training for Zero-shot Video-Text Understanding
+</h2>
+
+Title: [VideoCLIP: Contrastive Pre-training for Zero-shot Video-Text Understanding](https://arxiv.org/abs/2109.14084)
+
+Authors: [Hu Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+H), [Gargi Ghosh](https://arxiv.org/search/cs?searchtype=author&query=Ghosh%2C+G), [Po-Yao Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+P), [Dmytro Okhonko](https://arxiv.org/search/cs?searchtype=author&query=Okhonko%2C+D), [Armen Aghajanyan](https://arxiv.org/search/cs?searchtype=author&query=Aghajanyan%2C+A), [Florian Metze Luke Zettlemoyer Christoph Feichtenhofer](https://arxiv.org/search/cs?searchtype=author&query=Feichtenhofer%2C+F+M+L+Z+C)
+
+> We present VideoCLIP, a contrastive approach to pre-train a unified model for zero-shot video and text understanding, without using any labels on downstream tasks. VideoCLIP trains a transformer for video and text by contrasting temporally overlapping positive video-text pairs with hard negatives from nearest neighbor retrieval. Our experiments on a diverse series of downstream tasks, including sequence-level text-video retrieval, VideoQA, token-level action localization, and action segmentation reveal state-of-the-art performance, surpassing prior work, and in some cases even outperforming supervised approaches. Code is made available at [this https URL](https://github.com/pytorch/fairseq/examples/MMPT).
+
+| Comments: | EMNLP 2021                                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2109.14084](https://arxiv.org/abs/2109.14084) [cs.CV]** |
+|           | (or **[arXiv:2109.14084v1](https://arxiv.org/abs/2109.14084v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-30-2">2. Contrastive Video-Language Segmentation
+</h2>
+
+Title: [Contrastive Video-Language Segmentation](https://arxiv.org/abs/2109.14131)
+
+Authors: [Chen Liang](https://arxiv.org/search/cs?searchtype=author&query=Liang%2C+C), [Yawei Luo](https://arxiv.org/search/cs?searchtype=author&query=Luo%2C+Y), [Yu Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+Y), [Yi Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+Y)
+
+> We focus on the problem of segmenting a certain object referred by a natural language sentence in video content, at the core of formulating a pinpoint vision-language relation. While existing attempts mainly construct such relation in an implicit way, i.e., grid-level multi-modal feature fusion, it has been proven problematic to distinguish semantically similar objects under this paradigm. In this work, we propose to interwind the visual and linguistic modalities in an explicit way via the contrastive learning objective, which directly aligns the referred object and the language description and separates the unreferred content apart across frames. Moreover, to remedy for the degradation problem, we present two complementary hard instance mining strategies, i.e., Language-relevant Channel Filter and Relative Hard Instance Construction. They encourage the network to exclude visual-distinguishable feature and to focus on easy-confused objects during the contrastive training. Extensive experiments on two benchmarks, i.e., A2D Sentences and J-HMDB Sentences, quantitatively demonstrate the state-of-the-arts performance of our method and qualitatively show the more accurate distinguishment between semantically similar objects over baselines.
+
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2109.14131](https://arxiv.org/abs/2109.14131) [cs.CV]** |
+|           | (or **[arXiv:2109.14131v1](https://arxiv.org/abs/2109.14131v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-09-30-3">3. Hierarchical Character Tagger for Short Text Spelling Error Correction
+</h2>
+
+Title: [Hierarchical Character Tagger for Short Text Spelling Error Correction](https://arxiv.org/abs/2109.14259)
+
+Authors: [Mengyi Gao](https://arxiv.org/search/cs?searchtype=author&query=Gao%2C+M), [Canran Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+C), [Peng Shi](https://arxiv.org/search/cs?searchtype=author&query=Shi%2C+P)
+
+> State-of-the-art approaches to spelling error correction problem include Transformer-based Seq2Seq models, which require large training sets and suffer from slow inference time; and sequence labeling models based on Transformer encoders like BERT, which involve token-level label space and therefore a large pre-defined vocabulary dictionary. In this paper we present a Hierarchical Character Tagger model, or HCTagger, for short text spelling error correction. We use a pre-trained language model at the character level as a text encoder, and then predict character-level edits to transform the original text into its error-free form with a much smaller label space. For decoding, we propose a hierarchical multi-task approach to alleviate the issue of long-tail label distribution without introducing extra model parameters. Experiments on two public misspelling correction datasets demonstrate that HCTagger is an accurate and much faster approach than many existing models.
+
+| Comments: | To appear in WNUT 2021 workshop, 8 pages, 2 figures          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2109.14259](https://arxiv.org/abs/2109.14259) [cs.CL]** |
+|           | (or **[arXiv:2109.14259v1](https://arxiv.org/abs/2109.14259v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-09-30-4">4. EdinSaar@WMT21: North-Germanic Low-Resource Multilingual NMT
+</h2>
+
+Title: [EdinSaar@WMT21: North-Germanic Low-Resource Multilingual NMT](https://arxiv.org/abs/2109.14368)
+
+Authors: [Svetlana Tchistiakova](https://arxiv.org/search/cs?searchtype=author&query=Tchistiakova%2C+S), [Jesujoba Alabi](https://arxiv.org/search/cs?searchtype=author&query=Alabi%2C+J), [Koel Dutta Chowdhury](https://arxiv.org/search/cs?searchtype=author&query=Chowdhury%2C+K+D), [Sourav Dutta](https://arxiv.org/search/cs?searchtype=author&query=Dutta%2C+S), [Dana Ruiter](https://arxiv.org/search/cs?searchtype=author&query=Ruiter%2C+D)
+
+> We describe the EdinSaar submission to the shared task of Multilingual Low-Resource Translation for North Germanic Languages at the Sixth Conference on Machine Translation (WMT2021). We submit multilingual translation models for translations to/from Icelandic (is), Norwegian-Bokmal (nb), and Swedish (sv). We employ various experimental approaches, including multilingual pre-training, back-translation, fine-tuning, and ensembling. In most translation directions, our models outperform other submitted systems.
+
+| Comments: | To be published WMT2021                                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2109.14368](https://arxiv.org/abs/2109.14368) [cs.CL]** |
+|           | (or **[arXiv:2109.14368v1](https://arxiv.org/abs/2109.14368v1) [cs.CL]** for this version) |
+
+
+
+<h2 id="2021-09-30-5">5. FastCorrect 2: Fast Error Correction on Multiple Candidates for Automatic Speech Recognition
+</h2>
+
+Title: [FastCorrect 2: Fast Error Correction on Multiple Candidates for Automatic Speech Recognition](https://arxiv.org/abs/2109.14420)
+
+Authors: [Yichong Leng](https://arxiv.org/search/cs?searchtype=author&query=Leng%2C+Y), [Xu Tan](https://arxiv.org/search/cs?searchtype=author&query=Tan%2C+X), [Rui Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+R), [Linchen Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+L), [Jin Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+J), [Linquan Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+L), [Tao Qin](https://arxiv.org/search/cs?searchtype=author&query=Qin%2C+T), [Xiang-Yang Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+X), [Edward Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+E), [Tie-Yan Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+T)
+
+> Error correction is widely used in automatic speech recognition (ASR) to post-process the generated sentence, and can further reduce the word error rate (WER). Although multiple candidates are generated by an ASR system through beam search, current error correction approaches can only correct one sentence at a time, failing to leverage the voting effect from multiple candidates to better detect and correct error tokens. In this work, we propose FastCorrect 2, an error correction model that takes multiple ASR candidates as input for better correction accuracy. FastCorrect 2 adopts non-autoregressive generation for fast inference, which consists of an encoder that processes multiple source sentences and a decoder that generates the target sentence in parallel from the adjusted source sentence, where the adjustment is based on the predicted duration of each source token. However, there are some issues when handling multiple source sentences. First, it is non-trivial to leverage the voting effect from multiple source sentences since they usually vary in length. Thus, we propose a novel alignment algorithm to maximize the degree of token alignment among multiple sentences in terms of token and pronunciation similarity. Second, the decoder can only take one adjusted source sentence as input, while there are multiple source sentences. Thus, we develop a candidate predictor to detect the most suitable candidate for the decoder. Experiments on our inhouse dataset and AISHELL-1 show that FastCorrect 2 can further reduce the WER over the previous correction model with single candidate by 3.2% and 2.6%, demonstrating the effectiveness of leveraging multiple candidates in ASR error correction. FastCorrect 2 achieves better performance than the cascaded re-scoring and correction pipeline and can serve as a unified post-processing module for ASR.
+
+| Comments: | Findings of EMNLP 2021                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG); Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2109.14420](https://arxiv.org/abs/2109.14420) [cs.CL]** |
+|           | (or **[arXiv:2109.14420v1](https://arxiv.org/abs/2109.14420v1) [cs.CL]** for this version) |
+
+
 
 
 
