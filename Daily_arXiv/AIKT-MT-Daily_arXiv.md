@@ -3,8 +3,19 @@
 # Index
 
 
-- [2021-10-06](#2021-10-06)
+- [2021-10-08](#2021-10-08)
 
+  - [1. Unsupervised Multimodal Language Representations using Convolutional Autoencoders](#2021-10-08-1)
+  - [2. The Low-Resource Double Bind: An Empirical Study of Pruning for Low-Resource Machine Translation](#2021-10-08-2)
+  - [3. On Neurons Invariant to Sentence Structural Changes in Neural Machine Translation](#2021-10-08-3)
+  - [4. Towards Continual Knowledge Learning of Language Models](#2021-10-08-4)
+- [2021-10-07](#2021-10-07)
+
+  - [1. Sequential Reptile: Inter-Task Gradient Alignment for Multilingual Learning](#2021-10-07-1)
+  - [2. How BPE Affects Memorization in Transformers](#2021-10-07-2)
+  - [3. Sequence-to-Sequence Lexical Normalization with Multilingual Transformers](#2021-10-07-3)
+  - [4. Using Optimal Transport as Alignment Objective for fine-tuning Multilingual Contextualized Embeddings](#2021-10-07-4)
+- [2021-10-06](#2021-10-06)
   - [1. OPAD: An Optimized Policy-based Active Learning Framework for Document Content Analysis](#2021-10-06-1)
   - [2. Rerunning OCR -- A Machine Learning Approach to Quality Assessment and Enhancement Prediction](#2021-10-06-2)
   - [3. On the Complementarity between Pre-Training and Back-Translation for Neural Machine Translation](#2021-10-06-3)
@@ -25,6 +36,178 @@
   - [1. Phonetic Word Embeddings](#2021-10-01-1)
   - [2. Improved statistical machine translation using monolingual paraphrases](#2021-10-01-2)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+
+
+# 2021-10-08
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-10-08-1">1. Unsupervised Multimodal Language Representations using Convolutional Autoencoders
+</h2>
+
+Title: [Unsupervised Multimodal Language Representations using Convolutional Autoencoders](https://arxiv.org/abs/2110.03007)
+
+Authors: [Panagiotis Koromilas](https://arxiv.org/search/cs?searchtype=author&query=Koromilas%2C+P), [Theodoros Giannakopoulos](https://arxiv.org/search/cs?searchtype=author&query=Giannakopoulos%2C+T)
+
+> Multimodal Language Analysis is a demanding area of research, since it is associated with two requirements: combining different modalities and capturing temporal information. During the last years, several works have been proposed in the area, mostly centered around supervised learning in downstream tasks. In this paper we propose extracting unsupervised Multimodal Language representations that are universal and can be applied to different tasks. Towards this end, we map the word-level aligned multimodal sequences to 2-D matrices and then use Convolutional Autoencoders to learn embeddings by combining multiple datasets. Extensive experimentation on Sentiment Analysis (MOSEI) and Emotion Recognition (IEMOCAP) indicate that the learned representations can achieve near-state-of-the-art performance with just the use of a Logistic Regression algorithm for downstream classification. It is also shown that our method is extremely lightweight and can be easily generalized to other tasks and unseen data with small performance drop and almost the same number of parameters. The proposed multimodal representation models are open-sourced and will help grow the applicability of Multimodal Language.
+
+| Comments: | 5 pages                                                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG); Multimedia (cs.MM) |
+| Cite as:  | **[arXiv:2110.03007](https://arxiv.org/abs/2110.03007) [cs.CL]** |
+|           | (or **[arXiv:2110.03007v1](https://arxiv.org/abs/2110.03007v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-10-08-2">2. The Low-Resource Double Bind: An Empirical Study of Pruning for Low-Resource Machine Translation
+</h2>
+
+Title: [The Low-Resource Double Bind: An Empirical Study of Pruning for Low-Resource Machine Translation](https://arxiv.org/abs/2110.03036)
+
+Authors: [Orevaoghene Ahia](https://arxiv.org/search/cs?searchtype=author&query=Ahia%2C+O), [Julia Kreutzer](https://arxiv.org/search/cs?searchtype=author&query=Kreutzer%2C+J), [Sara Hooker](https://arxiv.org/search/cs?searchtype=author&query=Hooker%2C+S)
+
+> A "bigger is better" explosion in the number of parameters in deep neural networks has made it increasingly challenging to make state-of-the-art networks accessible in compute-restricted environments. Compression techniques have taken on renewed importance as a way to bridge the gap. However, evaluation of the trade-offs incurred by popular compression techniques has been centered on high-resource datasets. In this work, we instead consider the impact of compression in a data-limited regime. We introduce the term low-resource double bind to refer to the co-occurrence of data limitations and compute resource constraints. This is a common setting for NLP for low-resource languages, yet the trade-offs in performance are poorly studied. Our work offers surprising insights into the relationship between capacity and generalization in data-limited regimes for the task of machine translation. Our experiments on magnitude pruning for translations from English into Yoruba, Hausa, Igbo and German show that in low-resource regimes, sparsity preserves performance on frequent sentences but has a disparate impact on infrequent ones. However, it improves robustness to out-of-distribution shifts, especially for datasets that are very distinct from the training distribution. Our findings suggest that sparsity can play a beneficial role at curbing memorization of low frequency attributes, and therefore offers a promising solution to the low-resource double bind.
+
+| Comments: | Accepted to Findings of EMNLP 2021                           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2110.03036](https://arxiv.org/abs/2110.03036) [cs.CL]** |
+|           | (or **[arXiv:2110.03036v1](https://arxiv.org/abs/2110.03036v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-10-08-3">3. On Neurons Invariant to Sentence Structural Changes in Neural Machine Translation
+</h2>
+
+Title: [On Neurons Invariant to Sentence Structural Changes in Neural Machine Translation](https://arxiv.org/abs/2110.03067)
+
+Authors: [Gal Patel](https://arxiv.org/search/cs?searchtype=author&query=Patel%2C+G), [Leshem Choshen](https://arxiv.org/search/cs?searchtype=author&query=Choshen%2C+L), [Omri Abend](https://arxiv.org/search/cs?searchtype=author&query=Abend%2C+O)
+
+> To gain insight into the role neurons play, we study the activation patterns corresponding to meaning-preserving paraphrases (e.g., active-passive). We compile a dataset of controlled syntactic paraphrases in English with their reference German translations and demonstrate our model-agnostic approach with the Transformer translation model. First, we identify neurons that correlate across paraphrases and dissect the observed correlation into possible confounds. Although lower-level components are found as the cause of similar activations, no sentence-level semantics or syntax are detected locally. Later, we manipulate neuron activations to influence translation towards a particular syntactic form. We find that a simple value shift is effective, and more so when many neurons are modified. These suggest that complex syntactic constructions are indeed encoded in the model. We conclude by discussing how to better manipulate it using the correlations we first obtained.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2110.03067](https://arxiv.org/abs/2110.03067) [cs.CL]** |
+|           | (or **[arXiv:2110.03067v1](https://arxiv.org/abs/2110.03067v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-10-08-4">4. Towards Continual Knowledge Learning of Language Models
+</h2>
+
+Title: [Towards Continual Knowledge Learning of Language Models](https://arxiv.org/abs/2110.03215)
+
+Authors: [Joel Jang](https://arxiv.org/search/cs?searchtype=author&query=Jang%2C+J), [Seonghyeon Ye](https://arxiv.org/search/cs?searchtype=author&query=Ye%2C+S), [Sohee Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+S), [Joongbo Shin](https://arxiv.org/search/cs?searchtype=author&query=Shin%2C+J), [Janghoon Han](https://arxiv.org/search/cs?searchtype=author&query=Han%2C+J), [Gyeonghun Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%2C+G), [Stanley Jungkyu Choi](https://arxiv.org/search/cs?searchtype=author&query=Choi%2C+S+J), [Minjoon Seo](https://arxiv.org/search/cs?searchtype=author&query=Seo%2C+M)
+
+> Large Language Models (LMs) are known to encode world knowledge in their parameters as they pretrain on a vast amount of web corpus, which is often utilized for performing knowledge-dependent downstream tasks such as question answering, fact-checking, and open dialogue. In real-world scenarios, the world knowledge stored in the LMs can quickly become outdated as the world changes, but it is non-trivial to avoid catastrophic forgetting and reliably acquire new knowledge while preserving invariant knowledge. To push the community towards better maintenance of ever-changing LMs, we formulate a new continual learning (CL) problem called Continual Knowledge Learning (CKL). We construct a new benchmark and metric to quantify the retention of time-invariant world knowledge, the update of outdated knowledge, and the acquisition of new knowledge. We adopt applicable recent methods from literature to create several strong baselines. Through extensive experiments, we find that CKL exhibits unique challenges that are not addressed in previous CL setups, where parameter expansion is necessary to reliably retain and learn knowledge simultaneously. By highlighting the critical causes of knowledge forgetting, we show that CKL is a challenging and important problem that helps us better understand and train ever-changing LMs.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2110.03215](https://arxiv.org/abs/2110.03215) [cs.CL]** |
+|           | (or **[arXiv:2110.03215v1](https://arxiv.org/abs/2110.03215v1) [cs.CL]** for this version) |
+
+
+
+
+
+# 2021-10-07
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-10-07-1">1. Sequential Reptile: Inter-Task Gradient Alignment for Multilingual Learning
+</h2>
+
+Title: [Sequential Reptile: Inter-Task Gradient Alignment for Multilingual Learning](https://arxiv.org/abs/2110.02600)
+
+Authors: [Seanie Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+S), [Hae Beom Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+H+B), [Juho Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+J), [Sung Ju Hwang](https://arxiv.org/search/cs?searchtype=author&query=Hwang%2C+S+J)
+
+> Multilingual models jointly pretrained on multiple languages have achieved remarkable performance on various multilingual downstream tasks. Moreover, models finetuned on a single monolingual downstream task have shown to generalize to unseen languages. In this paper, we first show that it is crucial for those tasks to align gradients between them in order to maximize knowledge transfer while minimizing negative transfer. Despite its importance, the existing methods for gradient alignment either have a completely different purpose, ignore inter-task alignment, or aim to solve continual learning problems in rather inefficient ways. As a result of the misaligned gradients between tasks, the model suffers from severe negative transfer in the form of catastrophic forgetting of the knowledge acquired from the pretraining. To overcome the limitations, we propose a simple yet effective method that can efficiently align gradients between tasks. Specifically, we perform each inner-optimization by sequentially sampling batches from all the tasks, followed by a Reptile outer update. Thanks to the gradients aligned between tasks by our method, the model becomes less vulnerable to negative transfer and catastrophic forgetting. We extensively validate our method on various multi-task learning and zero-shot cross-lingual transfer tasks, where our method largely outperforms all the relevant baselines we consider.
+
+| Comments: | preprint                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2110.02600](https://arxiv.org/abs/2110.02600) [cs.CL]** |
+|           | (or **[arXiv:2110.02600v1](https://arxiv.org/abs/2110.02600v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-10-07-2">2. How BPE Affects Memorization in Transformers
+</h2>
+
+Title: [How BPE Affects Memorization in Transformers](https://arxiv.org/abs/2110.02782)
+
+Authors: [Eugene Kharitonov](https://arxiv.org/search/cs?searchtype=author&query=Kharitonov%2C+E), [Marco Baroni](https://arxiv.org/search/cs?searchtype=author&query=Baroni%2C+M), [Dieuwke Hupkes](https://arxiv.org/search/cs?searchtype=author&query=Hupkes%2C+D)
+
+> Training data memorization in NLP can both be beneficial (e.g., closed-book QA) and undesirable (personal data extraction). In any case, successful model training requires a non-trivial amount of memorization to store word spellings, various linguistic idiosyncrasies and common knowledge. However, little is known about what affects the memorization behavior of NLP models, as the field tends to focus on the equally important question of generalization. In this work, we demonstrate that the size of the subword vocabulary learned by Byte-Pair Encoding (BPE) greatly affects both ability and tendency of standard Transformer models to memorize training data, even when we control for the number of learned parameters. We find that with a large subword vocabulary size, Transformer models fit random mappings more easily and are more vulnerable to membership inference attacks. Similarly, given a prompt, Transformer-based language models with large subword vocabularies reproduce the training data more often. We conjecture this effect is caused by reduction in the sequences' length that happens as the BPE vocabulary grows. Our findings can allow a more informed choice of hyper-parameters, that is better tailored for a particular use-case.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2110.02782](https://arxiv.org/abs/2110.02782) [cs.CL]** |
+|           | (or **[arXiv:2110.02782v1](https://arxiv.org/abs/2110.02782v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-10-07-3">3. Sequence-to-Sequence Lexical Normalization with Multilingual Transformers
+</h2>
+
+Title: [Sequence-to-Sequence Lexical Normalization with Multilingual Transformers](https://arxiv.org/abs/2110.02869)
+
+Authors: [Ana-Maria Bucur](https://arxiv.org/search/cs?searchtype=author&query=Bucur%2C+A), [Adrian Cosma](https://arxiv.org/search/cs?searchtype=author&query=Cosma%2C+A), [Liviu P. Dinu](https://arxiv.org/search/cs?searchtype=author&query=Dinu%2C+L+P)
+
+> Current benchmark tasks for natural language processing contain text that is qualitatively different from the text used in informal day to day digital communication. This discrepancy has led to severe performance degradation of state-of-the-art NLP models when fine-tuned on real-world data. One way to resolve this issue is through lexical normalization, which is the process of transforming non-standard text, usually from social media, into a more standardized form. In this work, we propose a sentence-level sequence-to-sequence model based on mBART, which frames the problem as a machine translation problem. As the noisy text is a pervasive problem across languages, not just English, we leverage the multi-lingual pre-training of mBART to fine-tune it to our data. While current approaches mainly operate at the word or subword level, we argue that this approach is straightforward from a technical standpoint and builds upon existing pre-trained transformer networks. Our results show that while word-level, intrinsic, performance evaluation is behind other methods, our model improves performance on extrinsic, downstream tasks through normalization compared to models operating on raw, unprocessed, social media text.
+
+| Comments: | Accepted to Proceedings of the 7th Workshop on Noisy User-generated Text (WNUT 2021), EMNLP 2021 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2110.02869](https://arxiv.org/abs/2110.02869) [cs.CL]** |
+|           | (or **[arXiv:2110.02869v2](https://arxiv.org/abs/2110.02869v2) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-10-07-4">4. Using Optimal Transport as Alignment Objective for fine-tuning Multilingual Contextualized Embeddings
+</h2>
+
+Title: [Using Optimal Transport as Alignment Objective for fine-tuning Multilingual Contextualized Embeddings](https://arxiv.org/abs/2110.02887)
+
+Authors: [Sawsan Alqahtani](https://arxiv.org/search/cs?searchtype=author&query=Alqahtani%2C+S), [Garima Lalwani](https://arxiv.org/search/cs?searchtype=author&query=Lalwani%2C+G), [Yi Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Y), [Salvatore Romeo](https://arxiv.org/search/cs?searchtype=author&query=Romeo%2C+S), [Saab Mansour](https://arxiv.org/search/cs?searchtype=author&query=Mansour%2C+S)
+
+> Recent studies have proposed different methods to improve multilingual word representations in contextualized settings including techniques that align between source and target embedding spaces. For contextualized embeddings, alignment becomes more complex as we additionally take context into consideration. In this work, we propose using Optimal Transport (OT) as an alignment objective during fine-tuning to further improve multilingual contextualized representations for downstream cross-lingual transfer. This approach does not require word-alignment pairs prior to fine-tuning that may lead to sub-optimal matching and instead learns the word alignments within context in an unsupervised manner. It also allows different types of mappings due to soft matching between source and target sentences. We benchmark our proposed method on two tasks (XNLI and XQuAD) and achieve improvements over baselines as well as competitive results compared to similar recent works.
+
+| Subjects:          | **Computation and Language (cs.CL)**                         |
+| ------------------ | ------------------------------------------------------------ |
+| Journal reference: | EMNLP 2021                                                   |
+| Cite as:           | **[arXiv:2110.02887](https://arxiv.org/abs/2110.02887) [cs.CL]** |
+|                    | (or **[arXiv:2110.02887v1](https://arxiv.org/abs/2110.02887v1) [cs.CL]** for this version) |
+
+
+
+
+
 
 
 
