@@ -3,6 +3,16 @@
 # Index
 
 
+- [2021-10-11](#2021-10-11)
+
+  - [1. Speeding up Deep Model Training by Sharing Weights and Then Unsharing](#2021-10-11-1)
+  - [2. QTN-VQC: An End-to-End Learning framework for Quantum Neural Networks](#2021-10-11-2)
+  - [3. M6-10T: A Sharing-Delinking Paradigm for Efficient Multi-Trillion Parameter Pretraining](#2021-10-11-3)
+  - [4. Iterative Decoding for Compositional Generalization in Transformers](#2021-10-11-4)
+  - [5. Machine Translation Verbosity Control for Automatic Dubbing](#2021-10-11-5)
+  - [6. Text analysis and deep learning: A network approach](#2021-10-11-6)
+  - [7. Contrastive String Representation Learning using Synthetic Data](#2021-10-11-7)
+  - [8. Local and Global Context-Based Pairwise Models for Sentence Ordering](#2021-10-11-8)
 - [2021-10-08](#2021-10-08)
 
   - [1. Unsupervised Multimodal Language Representations using Convolutional Autoencoders](#2021-10-08-1)
@@ -36,6 +46,158 @@
   - [1. Phonetic Word Embeddings](#2021-10-01-1)
   - [2. Improved statistical machine translation using monolingual paraphrases](#2021-10-01-2)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-10-11
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-10-11-1">1. Speeding up Deep Model Training by Sharing Weights and Then Unsharing
+</h2>
+
+Title: [Speeding up Deep Model Training by Sharing Weights and Then Unsharing](https://arxiv.org/abs/2110.03848)
+
+Authors: [Shuo Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+S), [Le Hou](https://arxiv.org/search/cs?searchtype=author&query=Hou%2C+L), [Xiaodan Song](https://arxiv.org/search/cs?searchtype=author&query=Song%2C+X), [Qiang Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Q), [Denny Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+D)
+
+> We propose a simple and efficient approach for training the BERT model. Our approach exploits the special structure of BERT that contains a stack of repeated modules (i.e., transformer encoders). Our proposed approach first trains BERT with the weights shared across all the repeated modules till some point. This is for learning the commonly shared component of weights across all repeated layers. We then stop weight sharing and continue training until convergence. We present theoretic insights for training by sharing weights then unsharing with analysis for simplified models. Empirical experiments on the BERT model show that our method yields better performance of trained models, and significantly reduces the number of training iterations.
+
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2110.03848](https://arxiv.org/abs/2110.03848) [cs.LG]** |
+|           | (or **[arXiv:2110.03848v1](https://arxiv.org/abs/2110.03848v1) [cs.LG]** for this version) |
+
+
+
+
+
+<h2 id="2021-10-11-2">2. QTN-VQC: An End-to-End Learning framework for Quantum Neural Networks
+</h2>
+
+Title: [QTN-VQC: An End-to-End Learning framework for Quantum Neural Networks](https://arxiv.org/abs/2110.03861)
+
+Authors: [Jun Qi](https://arxiv.org/search/quant-ph?searchtype=author&query=Qi%2C+J), [Chao-Han Huck Yang](https://arxiv.org/search/quant-ph?searchtype=author&query=Yang%2C+C+H), [Pin-Yu Chen](https://arxiv.org/search/quant-ph?searchtype=author&query=Chen%2C+P)
+
+> The advent of noisy intermediate-scale quantum (NISQ) computers raises a crucial challenge to design quantum neural networks for fully quantum learning tasks. To bridge the gap, this work proposes an end-to-end learning framework named QTN-VQC, by introducing a trainable quantum tensor network (QTN) for quantum embedding on a variational quantum circuit (VQC). The architecture of QTN is composed of a parametric tensor-train network for feature extraction and a tensor product encoding for quantum encoding. We highlight the QTN for quantum embedding in terms of two perspectives: (1) we theoretically characterize QTN by analyzing its representation power of input features; (2) QTN enables an end-to-end parametric model pipeline, namely QTN-VQC, from the generation of quantum embedding to the output measurement. Our experiments on the MNIST dataset demonstrate the advantages of QTN for quantum embedding over other quantum embedding approaches.
+
+| Subjects: | **Quantum Physics (quant-ph)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL); Computer Vision and Pattern Recognition (cs.CV); Machine Learning (cs.LG); Neural and Evolutionary Computing (cs.NE) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2110.03861](https://arxiv.org/abs/2110.03861) [quant-ph]** |
+|           | (or **[arXiv:2110.03861v1](https://arxiv.org/abs/2110.03861v1) [quant-ph]** for this version) |
+
+
+
+
+
+<h2 id="2021-10-11-3">3. M6-10T: A Sharing-Delinking Paradigm for Efficient Multi-Trillion Parameter Pretraining
+</h2>
+
+Title: [M6-10T: A Sharing-Delinking Paradigm for Efficient Multi-Trillion Parameter Pretraining](https://arxiv.org/abs/2110.03888)
+
+Authors: [Junyang Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+J), [An Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+A), [Jinze Bai](https://arxiv.org/search/cs?searchtype=author&query=Bai%2C+J), [Chang Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+C), [Le Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+L), [Xianyan Jia](https://arxiv.org/search/cs?searchtype=author&query=Jia%2C+X), [Ang Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+A), [Jie Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+J), [Yong Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Y), [Wei Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+W), [Jingren Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+J), [Hongxia Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+H)
+
+> Recent expeditious developments in deep learning algorithms, distributed training, and even hardware design for large models have enabled training extreme-scale models, say GPT-3 and Switch Transformer possessing hundreds of billions or even trillions of parameters. However, under limited resources, extreme-scale model training that requires enormous amounts of computes and memory footprint suffers from frustratingly low efficiency in model convergence. In this paper, we propose a simple training strategy called "Pseudo-to-Real" for high-memory-footprint-required large models. Pseudo-to-Real is compatible with large models with architecture of sequential layers. We demonstrate a practice of pretraining unprecedented 10-trillion-parameter model, an order of magnitude larger than the state-of-the-art, on solely 512 GPUs within 10 days. Besides demonstrating the application of Pseudo-to-Real, we also provide a technique, Granular CPU offloading, to manage CPU memory for training large model and maintain high GPU utilities. Fast training of extreme-scale models on a decent amount of resources can bring much smaller carbon footprint and contribute to greener AI.
+
+| Comments: | 14 pages, 4 figures                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2110.03888](https://arxiv.org/abs/2110.03888) [cs.LG]** |
+|           | (or **[arXiv:2110.03888v1](https://arxiv.org/abs/2110.03888v1) [cs.LG]** for this version) |
+
+
+
+
+
+<h2 id="2021-10-11-4">4. Iterative Decoding for Compositional Generalization in Transformers
+</h2>
+
+Title: [Iterative Decoding for Compositional Generalization in Transformers](https://arxiv.org/abs/2110.04169)
+
+Authors: [Luana Ruiz](https://arxiv.org/search/cs?searchtype=author&query=Ruiz%2C+L), [Joshua Ainslie](https://arxiv.org/search/cs?searchtype=author&query=Ainslie%2C+J), [Santiago Ontañón](https://arxiv.org/search/cs?searchtype=author&query=Ontañón%2C+S)
+
+> Deep learning models do well at generalizing to in-distribution data but struggle to generalize compositionally, i.e., to combine a set of learned primitives to solve more complex tasks. In particular, in sequence-to-sequence (seq2seq) learning, transformers are often unable to predict correct outputs for even marginally longer examples than those seen during training. This paper introduces iterative decoding, an alternative to seq2seq learning that (i) improves transformer compositional generalization and (ii) evidences that, in general, seq2seq transformers do not learn iterations that are not unrolled. Inspired by the idea of compositionality -- that complex tasks can be solved by composing basic primitives -- training examples are broken down into a sequence of intermediate steps that the transformer then learns iteratively. At inference time, the intermediate outputs are fed back to the transformer as intermediate inputs until an end-of-iteration token is predicted. Through numerical experiments, we show that transfomers trained via iterative decoding outperform their seq2seq counterparts on the PCFG dataset, and solve the problem of calculating Cartesian products between vectors longer than those seen during training with 100% accuracy, a task at which seq2seq models have been shown to fail. We also illustrate a limitation of iterative decoding, specifically, that it can make sorting harder to learn on the CFQ dataset.
+
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2110.04169](https://arxiv.org/abs/2110.04169) [cs.LG]** |
+|           | (or **[arXiv:2110.04169v1](https://arxiv.org/abs/2110.04169v1) [cs.LG]** for this version) |
+
+
+
+
+
+<h2 id="2021-10-11-5">5. Machine Translation Verbosity Control for Automatic Dubbing
+</h2>
+
+Title: [Machine Translation Verbosity Control for Automatic Dubbing](https://arxiv.org/abs/2110.03847)
+
+Authors: [Surafel M. Lakew](https://arxiv.org/search/cs?searchtype=author&query=Lakew%2C+S+M), [Marcello Federico](https://arxiv.org/search/cs?searchtype=author&query=Federico%2C+M), [Yue Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Y), [Cuong Hoang](https://arxiv.org/search/cs?searchtype=author&query=Hoang%2C+C), [Yogesh Virkar](https://arxiv.org/search/cs?searchtype=author&query=Virkar%2C+Y), [Roberto Barra-Chicote](https://arxiv.org/search/cs?searchtype=author&query=Barra-Chicote%2C+R), [Robert Enyedi](https://arxiv.org/search/cs?searchtype=author&query=Enyedi%2C+R)
+
+> Automatic dubbing aims at seamlessly replacing the speech in a video document with synthetic speech in a different language. The task implies many challenges, one of which is generating translations that not only convey the original content, but also match the duration of the corresponding utterances. In this paper, we focus on the problem of controlling the verbosity of machine translation output, so that subsequent steps of our automatic dubbing pipeline can generate dubs of better quality. We propose new methods to control the verbosity of MT output and compare them against the state of the art with both intrinsic and extrinsic evaluations. For our experiments we use a public data set to dub English speeches into French, Italian, German and Spanish. Finally, we report extensive subjective tests that measure the impact of MT verbosity control on the final quality of dubbed video clips.
+
+| Comments: | Accepted at IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP) 2021 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2110.03847](https://arxiv.org/abs/2110.03847) [cs.CL]** |
+|           | (or **[arXiv:2110.03847v1](https://arxiv.org/abs/2110.03847v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-10-11-6">6. Text analysis and deep learning: A network approach
+</h2>
+
+Title: [Text analysis and deep learning: A network approach](https://arxiv.org/abs/2110.04151)
+
+Authors: [Ingo Marquart](https://arxiv.org/search/cs?searchtype=author&query=Marquart%2C+I)
+
+> Much information available to applied researchers is contained within written language or spoken text. Deep language models such as BERT have achieved unprecedented success in many applications of computational linguistics. However, much less is known about how these models can be used to analyze existing text. We propose a novel method that combines transformer models with network analysis to form a self-referential representation of language use within a corpus of interest. Our approach produces linguistic relations strongly consistent with the underlying model as well as mathematically well-defined operations on them, while reducing the amount of discretionary choices of representation and distance measures. It represents, to the best of our knowledge, the first unsupervised method to extract semantic networks directly from deep language models. We illustrate our approach in a semantic analysis of the term "founder". Using the entire corpus of Harvard Business Review from 1980 to 2020, we find that ties in our network track the semantics of discourse over time, and across contexts, identifying and relating clusters of semantic and syntactic relations. Finally, we discuss how this method can also complement and inform analyses of the behavior of deep learning models.
+
+| Subjects:    | **Computation and Language (cs.CL)**; Social and Information Networks (cs.SI) |
+| ------------ | ------------------------------------------------------------ |
+| ACM classes: | I.2.7; I.5.4; J.4                                            |
+| Cite as:     | **[arXiv:2110.04151](https://arxiv.org/abs/2110.04151) [cs.CL]** |
+|              | (or **[arXiv:2110.04151v1](https://arxiv.org/abs/2110.04151v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-10-11-7">7. Contrastive String Representation Learning using Synthetic Data
+</h2>
+
+Title: [Contrastive String Representation Learning using Synthetic Data](https://arxiv.org/abs/2110.04217)
+
+Authors: [Urchade Zaratiana](https://arxiv.org/search/cs?searchtype=author&query=Zaratiana%2C+U)
+
+> String representation Learning (SRL) is an important task in the field of Natural Language Processing, but it remains under-explored. The goal of SRL is to learn dense and low-dimensional vectors (or embeddings) for encoding character sequences. The learned representation from this task can be used in many downstream application tasks such as string similarity matching or lexical normalization. In this paper, we propose a new method for to train a SRL model by only using synthetic data. Our approach makes use of Contrastive Learning in order to maximize similarity between related strings while minimizing it for unrelated strings. We demonstrate the effectiveness of our approach by evaluating the learned representation on the task of string similarity matching. Codes, data and pretrained models will be made publicly available.
+
+| Subjects: | **Computation and Language (cs.CL)**; Information Retrieval (cs.IR) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2110.04217](https://arxiv.org/abs/2110.04217) [cs.CL]** |
+|           | (or **[arXiv:2110.04217v1](https://arxiv.org/abs/2110.04217v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-10-11-8">8. Local and Global Context-Based Pairwise Models for Sentence Ordering
+</h2>
+
+Title: [Local and Global Context-Based Pairwise Models for Sentence Ordering](https://arxiv.org/abs/2110.04291)
+
+Authors: [Ruskin Raj Manku](https://arxiv.org/search/cs?searchtype=author&query=Manku%2C+R+R), [Aditya Jyoti Paul](https://arxiv.org/search/cs?searchtype=author&query=Paul%2C+A+J)
+
+> Sentence Ordering refers to the task of rearranging a set of sentences into the appropriate coherent order. For this task, most previous approaches have explored global context-based end-to-end methods using Sequence Generation techniques. In this paper, we put forward a set of robust local and global context-based pairwise ordering strategies, leveraging which our prediction strategies outperform all previous works in this domain. Our proposed encoding method utilizes the paragraph's rich global contextual information to predict the pairwise order using novel transformer architectures. Analysis of the two proposed decoding strategies helps better explain error propagation in pairwise models. This approach is the most accurate pure pairwise model and our encoding strategy also significantly improves the performance of other recent approaches that use pairwise models, including the previous state-of-the-art, demonstrating the research novelty and generalizability of this work. Additionally, we show how the pre-training task for ALBERT helps it to significantly outperform BERT, despite having considerably lesser parameters. The extensive experimental results, architectural analysis and ablation studies demonstrate the effectiveness and superiority of the proposed models compared to the previous state-of-the-art, besides providing a much better understanding of the functioning of pairwise models.
+
+| Comments: | Under review by Knowledge-Based Systems                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Information Retrieval (cs.IR); Machine Learning (cs.LG); Logic in Computer Science (cs.LO) |
+| Cite as:  | **[arXiv:2110.04291](https://arxiv.org/abs/2110.04291) [cs.CL]** |
+|           | (or **[arXiv:2110.04291v1](https://arxiv.org/abs/2110.04291v1) [cs.CL]** for this version) |
 
 
 
