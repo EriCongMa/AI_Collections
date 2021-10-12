@@ -3,8 +3,15 @@
 # Index
 
 
-- [2021-10-11](#2021-10-11)
+- [2021-10-12](#2021-10-12)
 
+  - [1. CLIP-Adapter: Better Vision-Language Models with Feature Adapters](#2021-10-12-1)
+  - [2. The Inductive Bias of In-Context Learning: Rethinking Pretraining Example Design](#2021-10-12-2)
+  - [3. Yuan 1.0: Large-Scale Pre-trained Language Model in Zero-Shot and Few-Shot Learning](#2021-10-12-3)
+  - [4. WeTS: A Benchmark for Translation Suggestion](#2021-10-12-4)
+  - [5. It is Not as Good as You Think! Evaluating Simultaneous Machine Translation on Interpretation Data](#2021-10-12-5)
+  - [6. Unsupervised Neural Machine Translation with Generative Language Models Only](#2021-10-12-6)
+- [2021-10-11](#2021-10-11)
   - [1. Speeding up Deep Model Training by Sharing Weights and Then Unsharing](#2021-10-11-1)
   - [2. QTN-VQC: An End-to-End Learning framework for Quantum Neural Networks](#2021-10-11-2)
   - [3. M6-10T: A Sharing-Delinking Paradigm for Efficient Multi-Trillion Parameter Pretraining](#2021-10-11-3)
@@ -46,6 +53,125 @@
   - [1. Phonetic Word Embeddings](#2021-10-01-1)
   - [2. Improved statistical machine translation using monolingual paraphrases](#2021-10-01-2)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-10-12
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-10-12-1">1. CLIP-Adapter: Better Vision-Language Models with Feature Adapters
+</h2>
+
+Title: [CLIP-Adapter: Better Vision-Language Models with Feature Adapters](https://arxiv.org/abs/2110.04544)
+
+Authors: [Peng Gao](https://arxiv.org/search/cs?searchtype=author&query=Gao%2C+P), [Shijie Geng](https://arxiv.org/search/cs?searchtype=author&query=Geng%2C+S), [Renrui Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+R), [Teli Ma](https://arxiv.org/search/cs?searchtype=author&query=Ma%2C+T), [Rongyao Fang](https://arxiv.org/search/cs?searchtype=author&query=Fang%2C+R), [Yongfeng Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Y), [Hongsheng Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+H), [Yu Qiao](https://arxiv.org/search/cs?searchtype=author&query=Qiao%2C+Y)
+
+> Large-scale contrastive vision-language pre-training has shown significant progress in visual representation learning. Unlike traditional visual systems trained by a fixed set of discrete labels, a new paradigm was introduced in \cite{radford2021learning} to directly learn to align images with raw texts in an open-vocabulary setting. On downstream tasks, a carefully chosen text prompt is employed to make zero-shot predictions.~To avoid non-trivial prompt engineering, context optimization \cite{zhou2021coop} has been proposed to learn continuous vectors as task-specific prompts with few-shot training examples.~In this paper, we show that there is an alternative path to achieve better vision-language models other than prompt tuning.~While prompt tuning is for the textual inputs, we propose CLIP-Adapter to conduct fine-tuning with feature adapters on either visual or language branch. Specifically, CLIP-Adapter adopts an additional bottleneck layer to learn new features and performs residual-style feature blending with the original pre-trained features.~As a consequence, CLIP-Adapter is able to outperform context optimization while maintains a simple design. Experiments and extensive ablation studies on various visual classification tasks demonstrate the effectiveness of our approach.
+
+| Comments: | Technical Report                                             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2110.04544](https://arxiv.org/abs/2110.04544) [cs.CV]** |
+|           | (or **[arXiv:2110.04544v1](https://arxiv.org/abs/2110.04544v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-10-12-2">2. The Inductive Bias of In-Context Learning: Rethinking Pretraining Example Design
+</h2>
+
+Title: [The Inductive Bias of In-Context Learning: Rethinking Pretraining Example Design](https://arxiv.org/abs/2110.04541)
+
+Authors: [Yoav Levine](https://arxiv.org/search/cs?searchtype=author&query=Levine%2C+Y), [Noam Wies](https://arxiv.org/search/cs?searchtype=author&query=Wies%2C+N), [Daniel Jannai](https://arxiv.org/search/cs?searchtype=author&query=Jannai%2C+D), [Dan Navon](https://arxiv.org/search/cs?searchtype=author&query=Navon%2C+D), [Yedid Hoshen](https://arxiv.org/search/cs?searchtype=author&query=Hoshen%2C+Y), [Amnon Shashua](https://arxiv.org/search/cs?searchtype=author&query=Shashua%2C+A)
+
+> Pretraining Neural Language Models (NLMs) over a large corpus involves chunking the text into training examples, which are contiguous text segments of sizes processable by the neural architecture. We highlight a bias introduced by this common practice: we prove that the pretrained NLM can model much stronger dependencies between text segments that appeared in the same training example, than it can between text segments that appeared in different training examples. This intuitive result has a twofold role. First, it formalizes the motivation behind a broad line of recent successful NLM training heuristics, proposed for the pretraining and fine-tuning stages, which do not necessarily appear related at first glance. Second, our result clearly indicates further improvements to be made in NLM pretraining for the benefit of Natural Language Understanding tasks. As an example, we propose "kNN-Pretraining": we show that including semantically related non-neighboring sentences in the same pretraining example yields improved sentence representations and open domain question answering abilities. This theoretically motivated degree of freedom for "pretraining example design" indicates new training schemes for self-improving representations.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2110.04541](https://arxiv.org/abs/2110.04541) [cs.CL]** |
+|           | (or **[arXiv:2110.04541v1](https://arxiv.org/abs/2110.04541v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-10-12-3">3. Yuan 1.0: Large-Scale Pre-trained Language Model in Zero-Shot and Few-Shot Learning
+</h2>
+
+Title: [Yuan 1.0: Large-Scale Pre-trained Language Model in Zero-Shot and Few-Shot Learning](https://arxiv.org/abs/2110.04725)
+
+Authors: [Shaohua Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+S), [Xudong Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+X), [Tong Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+T), [Rongguo Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+R), [Chong Shen](https://arxiv.org/search/cs?searchtype=author&query=Shen%2C+C), [Hongli Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+H), [Feng Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+F), [Hong Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+H), [Jiangang Luo](https://arxiv.org/search/cs?searchtype=author&query=Luo%2C+J), [Liang Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+L), [Xuanwei Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+X), [Jun Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+J)
+
+> Recent work like GPT-3 has demonstrated excellent performance of Zero-Shot and Few-Shot learning on many natural language processing (NLP) tasks by scaling up model size, dataset size and the amount of computation. However, training a model like GPT-3 requires huge amount of computational resources which makes it challengeable to researchers. In this work, we propose a method that incorporates large-scale distributed training performance into model architecture design. With this method, Yuan 1.0, the current largest singleton language model with 245B parameters, achieves excellent performance on thousands GPUs during training, and the state-of-the-art results on NLP tasks. A data processing method is designed to efficiently filter massive amount of raw data. The current largest high-quality Chinese corpus with 5TB high quality texts is built based on this method. In addition, a calibration and label expansion method is proposed to improve the Zero-Shot and Few-Shot performance, and steady improvement is observed on the accuracy of various tasks. Yuan 1.0 presents strong capacity of natural language generation, and the generated articles are difficult to distinguish from the human-written ones.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2110.04725](https://arxiv.org/abs/2110.04725) [cs.CL]** |
+|           | (or **[arXiv:2110.04725v1](https://arxiv.org/abs/2110.04725v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-10-12-4">4. WeTS: A Benchmark for Translation Suggestion
+</h2>
+
+Title: [WeTS: A Benchmark for Translation Suggestion](https://arxiv.org/abs/2110.05151)
+
+Authors: [Zhen Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+Z), [Yingxue Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Y), [Ernan Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+E), [Fandong Meng](https://arxiv.org/search/cs?searchtype=author&query=Meng%2C+F), [Jie Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+J)
+
+> Translation Suggestion (TS), which provides alternatives for specific words or phrases given the entire documents translated by machine translation (MT) \cite{lee2021intellicat}, has been proven to play a significant role in post editing (PE). However, there is still no publicly available data set to support in-depth research for this problem, and no reproducible experimental results can be followed by researchers in this community. To break this limitation, we create a benchmark data set for TS, called \emph{WeTS}, which contains golden corpus annotated by expert translators on four translation directions. Apart from the human-annotated golden corpus, we also propose several novel methods to generate synthetic corpus which can substantially improve the performance of TS. With the corpus we construct, we introduce the Transformer-based model for TS, and experimental results show that our model achieves State-Of-The-Art (SOTA) results on all four translation directions, including English-to-German, German-to-English, Chinese-to-English and English-to-Chinese. Codes and corpus can be found at \url{[this https URL](https://github.com/ZhenYangIACAS/WeTS.git)}.
+
+| Comments: | Translation suggestion, Transformer                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2110.05151](https://arxiv.org/abs/2110.05151) [cs.CL]** |
+|           | (or **[arXiv:2110.05151v1](https://arxiv.org/abs/2110.05151v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-10-12-5">5. It is Not as Good as You Think! Evaluating Simultaneous Machine Translation on Interpretation Data
+</h2>
+
+Title: [It is Not as Good as You Think! Evaluating Simultaneous Machine Translation on Interpretation Data](https://arxiv.org/abs/2110.05213)
+
+Authors: [Jinming Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+J), [Philip Arthur](https://arxiv.org/search/cs?searchtype=author&query=Arthur%2C+P), [Gholamreza Haffari](https://arxiv.org/search/cs?searchtype=author&query=Haffari%2C+G), [Trevor Cohn](https://arxiv.org/search/cs?searchtype=author&query=Cohn%2C+T), [Ehsan Shareghi](https://arxiv.org/search/cs?searchtype=author&query=Shareghi%2C+E)
+
+> Most existing simultaneous machine translation (SiMT) systems are trained and evaluated on offline translation corpora. We argue that SiMT systems should be trained and tested on real interpretation data. To illustrate this argument, we propose an interpretation test set and conduct a realistic evaluation of SiMT trained on offline translations. Our results, on our test set along with 3 existing smaller scale language pairs, highlight the difference of up-to 13.83 BLEU score when SiMT models are evaluated on translation vs interpretation data. In the absence of interpretation training data, we propose a translation-to-interpretation (T2I) style transfer method which allows converting existing offline translations into interpretation-style data, leading to up-to 2.8 BLEU improvement. However, the evaluation gap remains notable, calling for constructing large-scale interpretation corpora better suited for evaluating and developing SiMT systems.
+
+| Comments: | EMNLP2021                                                    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2110.05213](https://arxiv.org/abs/2110.05213) [cs.CL]** |
+|           | (or **[arXiv:2110.05213v1](https://arxiv.org/abs/2110.05213v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-10-12-6">6. Unsupervised Neural Machine Translation with Generative Language Models Only
+</h2>
+
+Title: [Unsupervised Neural Machine Translation with Generative Language Models Only](https://arxiv.org/abs/2110.05448)
+
+Authors: [Jesse Michael Han](https://arxiv.org/search/cs?searchtype=author&query=Han%2C+J+M), [Igor Babuschkin](https://arxiv.org/search/cs?searchtype=author&query=Babuschkin%2C+I), [Harrison Edwards](https://arxiv.org/search/cs?searchtype=author&query=Edwards%2C+H), [Arvind Neelakantan](https://arxiv.org/search/cs?searchtype=author&query=Neelakantan%2C+A), [Tao Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+T), [Stanislas Polu](https://arxiv.org/search/cs?searchtype=author&query=Polu%2C+S), [Alex Ray](https://arxiv.org/search/cs?searchtype=author&query=Ray%2C+A), [Pranav Shyam](https://arxiv.org/search/cs?searchtype=author&query=Shyam%2C+P), [Aditya Ramesh](https://arxiv.org/search/cs?searchtype=author&query=Ramesh%2C+A), [Alec Radford](https://arxiv.org/search/cs?searchtype=author&query=Radford%2C+A), [Ilya Sutskever](https://arxiv.org/search/cs?searchtype=author&query=Sutskever%2C+I)
+
+> We show how to derive state-of-the-art unsupervised neural machine translation systems from generatively pre-trained language models. Our method consists of three steps: few-shot amplification, distillation, and backtranslation. We first use the zero-shot translation ability of large pre-trained language models to generate translations for a small set of unlabeled sentences. We then amplify these zero-shot translations by using them as few-shot demonstrations for sampling a larger synthetic dataset. This dataset is distilled by discarding the few-shot demonstrations and then fine-tuning. During backtranslation, we repeatedly generate translations for a set of inputs and then fine-tune a single language model on both directions of the translation task at once, ensuring cycle-consistency by swapping the roles of gold monotext and generated translations when fine-tuning. By using our method to leverage GPT-3's zero-shot translation capability, we achieve a new state-of-the-art in unsupervised translation on the WMT14 English-French benchmark, attaining a BLEU score of 42.1.
+
+| Comments: | 10 pages                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2110.05448](https://arxiv.org/abs/2110.05448) [cs.CL]** |
+|           | (or **[arXiv:2110.05448v1](https://arxiv.org/abs/2110.05448v1) [cs.CL]** for this version) |
+
+
+
 
 
 
