@@ -9,6 +9,7 @@ This repository is constructed to collect interesting resource in Artificial Int
 
 
 - [Artificial-Intelligence-Terminology-Database](https://github.com/jiqizhixin/Artificial-Intelligence-Terminology-Database)
+- [Awesome Document Understanding](https://github.com/tstanislawek/awesome-document-understanding)
 - [Generate arXiv citation format](https://arxiv2bibtex.org/)
 - [ZNLP: State-of-the-art-NLP](https://github.com/ZNLP/SOTA-MT)
 - [An NLP Entrance Page made by Kevin Knight's team.](https://chinesenlp.xyz/#/)

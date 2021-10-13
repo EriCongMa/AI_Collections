@@ -3,6 +3,9 @@
 # Index
 
 
+- [2021-10-13](#2021-10-13)
+
+  - [1. Doubly-Trained Adversarial Data Augmentation for Neural Machine Translation](#2021-10-13)
 - [2021-10-12](#2021-10-12)
 
   - [1. CLIP-Adapter: Better Vision-Language Models with Feature Adapters](#2021-10-12-1)
@@ -53,6 +56,36 @@
   - [1. Phonetic Word Embeddings](#2021-10-01-1)
   - [2. Improved statistical machine translation using monolingual paraphrases](#2021-10-01-2)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-10-13
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-10-13-1">1. Doubly-Trained Adversarial Data Augmentation for Neural Machine Translation
+</h2>
+
+Title: [Doubly-Trained Adversarial Data Augmentation for Neural Machine Translation](https://arxiv.org/abs/2110.05691)
+
+Authors: [Weiting Tan](https://arxiv.org/search/cs?searchtype=author&query=Tan%2C+W), [Shuoyang Ding](https://arxiv.org/search/cs?searchtype=author&query=Ding%2C+S), [Huda Khayrallah](https://arxiv.org/search/cs?searchtype=author&query=Khayrallah%2C+H), [Philipp Koehn](https://arxiv.org/search/cs?searchtype=author&query=Koehn%2C+P)
+
+> Neural Machine Translation (NMT) models are known to suffer from noisy inputs. To make models robust, we generate adversarial augmentation samples that attack the model and preserve the source-side semantic meaning at the same time. To generate such samples, we propose a doubly-trained architecture that pairs two NMT models of opposite translation directions with a joint loss function, which combines the target-side attack and the source-side semantic similarity constraint. The results from our experiments across three different language pairs and two evaluation metrics show that these adversarial samples improve the model robustness.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2110.05691](https://arxiv.org/abs/2110.05691) [cs.CL]** |
+|           | (or **[arXiv:2110.05691v1](https://arxiv.org/abs/2110.05691v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+
 
 
 
