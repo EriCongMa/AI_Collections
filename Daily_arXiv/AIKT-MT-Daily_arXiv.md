@@ -3,6 +3,14 @@
 # Index
 
 
+- [2021-10-14](#2021-10-14)
+
+  - [1. Learning Compact Metrics for MT](#2021-10-14-1)
+  - [2. Tell Me How to Survey: Literature Review Made Simple with Automatic Reading Path Generation](#2021-10-14-2)
+  - [3. MSP: Multi-Stage Prompting for Making Pre-trained Language Models Better Translators](#2021-10-14-3)
+  - [4. Maximizing Efficiency of Language Model Pre-training for Learning Representation](#2021-10-14-4)
+  - [5. Mengzi: Towards Lightweight yet Ingenious Pre-trained Models for Chinese](#2021-10-14-5)
+  - [6. Semantics-aware Attention Improves Neural Machine Translation](#2021-10-14-6)
 - [2021-10-13](#2021-10-13)
 
   - [1. Doubly-Trained Adversarial Data Augmentation for Neural Machine Translation](#2021-10-13)
@@ -56,6 +64,124 @@
   - [1. Phonetic Word Embeddings](#2021-10-01-1)
   - [2. Improved statistical machine translation using monolingual paraphrases](#2021-10-01-2)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-10-14
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-10-14-1">1. Learning Compact Metrics for MT
+</h2>
+
+Title: [Learning Compact Metrics for MT](https://arxiv.org/abs/2110.06341)
+
+Authors: [Amy Pu](https://arxiv.org/search/cs?searchtype=author&query=Pu%2C+A), [Hyung Won Chung](https://arxiv.org/search/cs?searchtype=author&query=Chung%2C+H+W), [Ankur P. Parikh](https://arxiv.org/search/cs?searchtype=author&query=Parikh%2C+A+P), [Sebastian Gehrmann](https://arxiv.org/search/cs?searchtype=author&query=Gehrmann%2C+S), [Thibault Sellam](https://arxiv.org/search/cs?searchtype=author&query=Sellam%2C+T)
+
+> Recent developments in machine translation and multilingual text generation have led researchers to adopt trained metrics such as COMET or BLEURT, which treat evaluation as a regression problem and use representations from multilingual pre-trained models such as XLM-RoBERTa or mBERT. Yet studies on related tasks suggest that these models are most efficient when they are large, which is costly and impractical for evaluation. We investigate the trade-off between multilinguality and model capacity with RemBERT, a state-of-the-art multilingual language model, using data from the WMT Metrics Shared Task. We present a series of experiments which show that model size is indeed a bottleneck for cross-lingual transfer, then demonstrate how distillation can help addressing this bottleneck, by leveraging synthetic data generation and transferring knowledge from one teacher to multiple students trained on related languages. Our method yields up to 10.5% improvement over vanilla fine-tuning and reaches 92.6% of RemBERT's performance using only a third of its parameters.
+
+| Comments: | Accepted at EMNLP 2021                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2110.06341](https://arxiv.org/abs/2110.06341) [cs.CL]** |
+|           | (or **[arXiv:2110.06341v1](https://arxiv.org/abs/2110.06341v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-10-14-2">2. Tell Me How to Survey: Literature Review Made Simple with Automatic Reading Path Generation
+</h2>
+
+Title: [Tell Me How to Survey: Literature Review Made Simple with Automatic Reading Path Generation](https://arxiv.org/abs/2110.06354)
+
+Authors: [Jiayuan Ding](https://arxiv.org/search/cs?searchtype=author&query=Ding%2C+J), [Tong Xiang](https://arxiv.org/search/cs?searchtype=author&query=Xiang%2C+T), [Zijing Ou](https://arxiv.org/search/cs?searchtype=author&query=Ou%2C+Z), [Wangyang Zuo](https://arxiv.org/search/cs?searchtype=author&query=Zuo%2C+W), [Ruihui Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+R), [Chenghua Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+C), [Yefeng Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng%2C+Y), [Bang Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+B)
+
+> Recent years have witnessed the dramatic growth of paper volumes with plenty of new research papers published every day, especially in the area of computer science. How to glean papers worth reading from the massive literature to do a quick survey or keep up with the latest advancement about a specific research topic has become a challenging task. Existing academic search engines such as Google Scholar return relevant papers by individually calculating the relevance between each paper and query. However, such systems usually omit the prerequisite chains of a research topic and cannot form a meaningful reading path. In this paper, we introduce a new task named Reading Path Generation (RPG) which aims at automatically producing a path of papers to read for a given query. To serve as a research benchmark, we further propose SurveyBank, a dataset consisting of large quantities of survey papers in the field of computer science as well as their citation relationships. Each survey paper contains key phrases extracted from its title and multi-level reading lists inferred from its references. Furthermore, we propose a graph-optimization-based approach for reading path generation which takes the relationship between papers into account. Extensive evaluations demonstrate that our approach outperforms other baselines. A Real-time Reading Path Generation System (RePaGer) has been also implemented with our designed model. To the best of our knowledge, we are the first to target this important research problem. Our source code of RePaGer system and SurveyBank dataset can be found on here.
+
+| Comments: | 16 pages, 12 figures                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Information Retrieval (cs.IR); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2110.06354](https://arxiv.org/abs/2110.06354) [cs.CL]** |
+|           | (or **[arXiv:2110.06354v1](https://arxiv.org/abs/2110.06354v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-10-14-3">3. MSP: Multi-Stage Prompting for Making Pre-trained Language Models Better Translators
+</h2>
+
+Title: [MSP: Multi-Stage Prompting for Making Pre-trained Language Models Better Translators](https://arxiv.org/abs/2110.06609)
+
+Authors: [Zhixing Tan](https://arxiv.org/search/cs?searchtype=author&query=Tan%2C+Z), [Xiangwen Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+X), [Shuo Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+S), [Yang Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Y)
+
+> Pre-trained language models have recently been shown to be able to perform translation without finetuning via prompting. Inspired by these findings, we study improving the performance of pre-trained language models on translation tasks, where training neural machine translation models is the current de facto approach. We present Multi-Stage Prompting, a simple and lightweight approach for better adapting pre-trained language models to translation tasks. To make pre-trained language models better translators, we divide the translation process via pre-trained language models into three separate stages: the encoding stage, the re-encoding stage, and the decoding stage. During each stage, we independently apply different continuous prompts for allowing pre-trained language models better adapting to translation tasks. We conduct extensive experiments on low-, medium-, and high-resource translation tasks. Experiments show that our method can significantly improve the translation performance of pre-trained language models.
+
+| Comments: | Work in progress                                             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2110.06609](https://arxiv.org/abs/2110.06609) [cs.CL]** |
+|           | (or **[arXiv:2110.06609v1](https://arxiv.org/abs/2110.06609v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-10-14-4">4. Maximizing Efficiency of Language Model Pre-training for Learning Representation
+</h2>
+
+Title: [Maximizing Efficiency of Language Model Pre-training for Learning Representation](https://arxiv.org/abs/2110.06620)
+
+Authors: [Junmo Kang](https://arxiv.org/search/cs?searchtype=author&query=Kang%2C+J), [Suwon Shin](https://arxiv.org/search/cs?searchtype=author&query=Shin%2C+S), [Jeonghwan Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%2C+J), [Jaeyoung Jo](https://arxiv.org/search/cs?searchtype=author&query=Jo%2C+J), [Sung-Hyon Myaeng](https://arxiv.org/search/cs?searchtype=author&query=Myaeng%2C+S)
+
+> Pre-trained language models in the past years have shown exponential growth in model parameters and compute time. ELECTRA is a novel approach for improving the compute efficiency of pre-trained language models (e.g. BERT) based on masked language modeling (MLM) by addressing the sample inefficiency problem with the replaced token detection (RTD) task. Our work proposes adaptive early exit strategy to maximize the efficiency of the pre-training process by relieving the model's subsequent layers of the need to process latent features by leveraging earlier layer representations. Moreover, we evaluate an initial approach to the problem that has not succeeded in maintaining the accuracy of the model while showing a promising compute efficiency by thoroughly investigating the necessity of the generator module of ELECTRA.
+
+| Comments: | Published in KSC 2020                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2110.06620](https://arxiv.org/abs/2110.06620) [cs.CL]** |
+|           | (or **[arXiv:2110.06620v1](https://arxiv.org/abs/2110.06620v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-10-14-5">5. Mengzi: Towards Lightweight yet Ingenious Pre-trained Models for Chinese
+</h2>
+
+Title: [Mengzi: Towards Lightweight yet Ingenious Pre-trained Models for Chinese](https://arxiv.org/abs/2110.06696)
+
+Authors: [Zhuosheng Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Z), [Hanqing Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+H), [Keming Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+K), [Yuhang Guo](https://arxiv.org/search/cs?searchtype=author&query=Guo%2C+Y), [Jingyun Hua](https://arxiv.org/search/cs?searchtype=author&query=Hua%2C+J), [Yulong Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Y), [Ming Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+M)
+
+> Although pre-trained models (PLMs) have achieved remarkable improvements in a wide range of NLP tasks, they are expensive in terms of time and resources. This calls for the study of training more efficient models with less computation but still ensures impressive performance. Instead of pursuing a larger scale, we are committed to developing lightweight yet more powerful models trained with equal or less computation and friendly to rapid deployment. This technical report releases our pre-trained model called Mengzi, which stands for a family of discriminative, generative, domain-specific, and multimodal pre-trained model variants, capable of a wide range of language and vision tasks. Compared with public Chinese PLMs, Mengzi is simple but more powerful. Our lightweight model has achieved new state-of-the-art results on the widely-used CLUE benchmark with our optimized pre-training and fine-tuning techniques. Without modifying the model architecture, our model can be easily employed as an alternative to existing PLMs. Our sources are available at [this https URL](https://github.com/Langboat/Mengzi).
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2110.06696](https://arxiv.org/abs/2110.06696) [cs.CL]** |
+|           | (or **[arXiv:2110.06696v1](https://arxiv.org/abs/2110.06696v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-10-14-6">6. Semantics-aware Attention Improves Neural Machine Translation
+</h2>
+
+Title: [Semantics-aware Attention Improves Neural Machine Translation](https://arxiv.org/abs/2110.06920)
+
+Authors: [Aviv Slobodkin](https://arxiv.org/search/cs?searchtype=author&query=Slobodkin%2C+A), [Leshem Choshen](https://arxiv.org/search/cs?searchtype=author&query=Choshen%2C+L), [Omri Abend](https://arxiv.org/search/cs?searchtype=author&query=Abend%2C+O)
+
+> The integration of syntactic structures into Transformer machine translation has shown positive results, but to our knowledge, no work has attempted to do so with semantic structures. In this work we propose two novel parameter-free methods for injecting semantic information into Transformers, both rely on semantics-aware masking of (some of) the attention heads. One such method operates on the encoder, through a Scene-Aware Self-Attention (SASA) head. Another on the decoder, through a Scene-Aware Cross-Attention (SACrA) head. We show a consistent improvement over the vanilla Transformer and syntax-aware models for four language pairs. We further show an additional gain when using both semantic and syntactic structures in some language pairs.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2110.06920](https://arxiv.org/abs/2110.06920) [cs.CL]** |
+|           | (or **[arXiv:2110.06920v1](https://arxiv.org/abs/2110.06920v1) [cs.CL]** for this version) |
+
+
 
 
 
