@@ -3,6 +3,15 @@
 # Index
 
 
+- [2021-10-15](#2021-10-15)
+
+  - [1. Evaluating Off-the-Shelf Machine Listening and Natural Language Models for Automated Audio Captioning](#2021-10-15-1)
+  - [2. Bandits Don't Follow Rules: Balancing Multi-Facet Machine Translation with Multi-Armed Bandits](#2021-10-15-2)
+  - [3. LFPT5: A Unified Framework for Lifelong Few-shot Language Learning Based on Prompt Tuning of T5](#2021-10-15-3)
+  - [4. An Empirical Investigation of Multi-bridge Multilingual NMT models](#2021-10-15-4)
+  - [5. Non-Autoregressive Translation with Layer-Wise Prediction and Deep Supervision](#2021-10-15-5)
+  - [6. UniPELT: A Unified Framework for Parameter-Efficient Language Model Tuning](#2021-10-15-6)
+  - [7. P-Tuning v2: Prompt Tuning Can Be Comparable to Fine-tuning Universally Across Scales and Tasks](#2021-10-15-7)
 - [2021-10-14](#2021-10-14)
 
   - [1. Learning Compact Metrics for MT](#2021-10-14-1)
@@ -64,6 +73,141 @@
   - [1. Phonetic Word Embeddings](#2021-10-01-1)
   - [2. Improved statistical machine translation using monolingual paraphrases](#2021-10-01-2)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-10-15
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-10-15-1">1. Evaluating Off-the-Shelf Machine Listening and Natural Language Models for Automated Audio Captioning
+</h2>
+
+Title: [Evaluating Off-the-Shelf Machine Listening and Natural Language Models for Automated Audio Captioning](https://arxiv.org/abs/2110.07410)
+
+Authors: [Benno Weck](https://arxiv.org/search/cs?searchtype=author&query=Weck%2C+B), [Xavier Favory](https://arxiv.org/search/cs?searchtype=author&query=Favory%2C+X), [Konstantinos Drossos](https://arxiv.org/search/cs?searchtype=author&query=Drossos%2C+K), [Xavier Serra](https://arxiv.org/search/cs?searchtype=author&query=Serra%2C+X)
+
+> Automated audio captioning (AAC) is the task of automatically generating textual descriptions for general audio signals. A captioning system has to identify various information from the input signal and express it with natural language. Existing works mainly focus on investigating new methods and try to improve their performance measured on existing datasets. Having attracted attention only recently, very few works on AAC study the performance of existing pre-trained audio and natural language processing resources. In this paper, we evaluate the performance of off-the-shelf models with a Transformer-based captioning approach. We utilize the freely available Clotho dataset to compare four different pre-trained machine listening models, four word embedding models, and their combinations in many different settings. Our evaluation suggests that YAMNet combined with BERT embeddings produces the best captions. Moreover, in general, fine-tuning pre-trained word embeddings can lead to better performance. Finally, we show that sequences of audio embeddings can be processed using a Transformer encoder to produce higher-quality captions.
+
+| Comments: | 5 pages, 4 figures. Accepted at Detection and Classification of Acoustic Scenes and Events 2021 (DCASE2021) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL); Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2110.07410](https://arxiv.org/abs/2110.07410) [cs.LG]** |
+|           | (or **[arXiv:2110.07410v1](https://arxiv.org/abs/2110.07410v1) [cs.LG]** for this version) |
+
+
+
+
+
+<h2 id="2021-10-15-2">2. Bandits Don't Follow Rules: Balancing Multi-Facet Machine Translation with Multi-Armed Bandits
+</h2>
+
+Title: [Bandits Don't Follow Rules: Balancing Multi-Facet Machine Translation with Multi-Armed Bandits](https://arxiv.org/abs/2110.06997)
+
+Authors: [Julia Kreutzer](https://arxiv.org/search/cs?searchtype=author&query=Kreutzer%2C+J), [David Vilar](https://arxiv.org/search/cs?searchtype=author&query=Vilar%2C+D), [Artem Sokolov](https://arxiv.org/search/cs?searchtype=author&query=Sokolov%2C+A)
+
+> Training data for machine translation (MT) is often sourced from a multitude of large corpora that are multi-faceted in nature, e.g. containing contents from multiple domains or different levels of quality or complexity. Naturally, these facets do not occur with equal frequency, nor are they equally important for the test scenario at hand. In this work, we propose to optimize this balance jointly with MT model parameters to relieve system developers from manual schedule design. A multi-armed bandit is trained to dynamically choose between facets in a way that is most beneficial for the MT system. We evaluate it on three different multi-facet applications: balancing translationese and natural training data, or data from multiple domains or multiple language pairs. We find that bandit learning leads to competitive MT systems across tasks, and our analysis provides insights into its learned strategies and the underlying data sets.
+
+| Comments: | EMNLP Findings 2021                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2110.06997](https://arxiv.org/abs/2110.06997) [cs.CL]** |
+|           | (or **[arXiv:2110.06997v1](https://arxiv.org/abs/2110.06997v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-10-15-3">3. LFPT5: A Unified Framework for Lifelong Few-shot Language Learning Based on Prompt Tuning of T5
+</h2>
+
+Title: [LFPT5: A Unified Framework for Lifelong Few-shot Language Learning Based on Prompt Tuning of T5](https://arxiv.org/abs/2110.07298)
+
+Authors: [Chengwei Qin](https://arxiv.org/search/cs?searchtype=author&query=Qin%2C+C), [Shafiq Joty](https://arxiv.org/search/cs?searchtype=author&query=Joty%2C+S)
+
+> Existing approaches to lifelong language learning rely on plenty of labeled data for learning a new task, which is hard to obtain in most real scenarios. Considering that humans can continually learn new tasks from a handful of examples, we expect the models also to be able to generalize well on new few-shot tasks without forgetting the previous ones. In this work, we define this more challenging yet practical problem as Lifelong Few-shot Language Learning (LFLL) and propose a unified framework for it based on prompt tuning of T5. Our framework called LFPT5 takes full advantage of PT's strong few-shot learning ability, and simultaneously trains the model as a task solver and a data generator. Before learning a new domain of the same task type, LFPT5 generates pseudo (labeled) samples of previously learned domains, and later gets trained on those samples to alleviate forgetting of previous knowledge as it learns the new domain. In addition, a KL divergence loss is minimized to achieve label consistency between the previous and the current model. While adapting to a new task type, LFPT5 includes and tunes additional prompt embeddings for the new task. With extensive experiments, we demonstrate that LFPT5 can be applied to various different types of tasks and significantly outperform previous methods in different LFLL settings.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2110.07298](https://arxiv.org/abs/2110.07298) [cs.CL]** |
+|           | (or **[arXiv:2110.07298v1](https://arxiv.org/abs/2110.07298v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-10-15-4">4. An Empirical Investigation of Multi-bridge Multilingual NMT models
+</h2>
+
+Title: [An Empirical Investigation of Multi-bridge Multilingual NMT models](https://arxiv.org/abs/2110.07304)
+
+Authors: [Anoop Kunchukuttan](https://arxiv.org/search/cs?searchtype=author&query=Kunchukuttan%2C+A)
+
+> In this paper, we present an extensive investigation of multi-bridge, many-to-many multilingual NMT models (MB-M2M) ie., models trained on non-English language pairs in addition to English-centric language pairs. In addition to validating previous work which shows that MB-M2M models can overcome zeroshot translation problems, our analysis reveals the following results about multibridge models: (1) it is possible to extract a reasonable amount of parallel corpora between non-English languages for low-resource languages (2) with limited non-English centric data, MB-M2M models are competitive with or outperform pivot models, (3) MB-M2M models can outperform English-Any models and perform at par with Any-English models, so a single multilingual NMT system can serve all translation directions.
+
+| Comments: | 6 pages                                                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2110.07304](https://arxiv.org/abs/2110.07304) [cs.CL]** |
+|           | (or **[arXiv:2110.07304v1](https://arxiv.org/abs/2110.07304v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-10-15-5">5. Non-Autoregressive Translation with Layer-Wise Prediction and Deep Supervision
+</h2>
+
+Title: [Non-Autoregressive Translation with Layer-Wise Prediction and Deep Supervision](https://arxiv.org/abs/2110.07515)
+
+Authors: [Chenyang Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+C), [Hao Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+H), [Osmar R. Zaïane](https://arxiv.org/search/cs?searchtype=author&query=Zaïane%2C+O+R), [Lili Mou](https://arxiv.org/search/cs?searchtype=author&query=Mou%2C+L), [Lei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L)
+
+> How do we perform efficient inference while retaining high translation quality? Existing neural machine translation models, such as Transformer, achieve high performance, but they decode words one by one, which is inefficient. Recent non-autoregressive translation models speed up the inference, but their quality is still inferior. In this work, we propose DSLP, a highly efficient and high-performance model for machine translation. The key insight is to train a non-autoregressive Transformer with Deep Supervision and feed additional Layer-wise Predictions. We conducted extensive experiments on four translation tasks (both directions of WMT'14 EN-DE and WMT'16 EN-RO). Results show that our approach consistently improves the BLEU scores compared with respective base models. Specifically, our best variant outperforms the autoregressive model on three translation tasks, while being 14.8 times more efficient in inference.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2110.07515](https://arxiv.org/abs/2110.07515) [cs.CL]** |
+|           | (or **[arXiv:2110.07515v1](https://arxiv.org/abs/2110.07515v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-10-15-6">6. UniPELT: A Unified Framework for Parameter-Efficient Language Model Tuning
+</h2>
+
+Title: [UniPELT: A Unified Framework for Parameter-Efficient Language Model Tuning](https://arxiv.org/abs/2110.07577)
+
+Authors: [Yuning Mao](https://arxiv.org/search/cs?searchtype=author&query=Mao%2C+Y), [Lambert Mathias](https://arxiv.org/search/cs?searchtype=author&query=Mathias%2C+L), [Rui Hou](https://arxiv.org/search/cs?searchtype=author&query=Hou%2C+R), [Amjad Almahairi](https://arxiv.org/search/cs?searchtype=author&query=Almahairi%2C+A), [Hao Ma](https://arxiv.org/search/cs?searchtype=author&query=Ma%2C+H), [Jiawei Han](https://arxiv.org/search/cs?searchtype=author&query=Han%2C+J), [Wen-tau Yih](https://arxiv.org/search/cs?searchtype=author&query=Yih%2C+W), [Madian Khabsa](https://arxiv.org/search/cs?searchtype=author&query=Khabsa%2C+M)
+
+> Conventional fine-tuning of pre-trained language models tunes all model parameters and stores a full model copy for each downstream task, which has become increasingly infeasible as the model size grows larger. Recent parameter-efficient language model tuning (PELT) methods manage to match the performance of fine-tuning with much fewer trainable parameters and perform especially well when the training data is limited. However, different PELT methods may perform rather differently on the same task, making it nontrivial to select the most appropriate method for a specific task, especially considering the fast-growing number of new PELT methods and downstream tasks. In light of model diversity and the difficulty of model selection, we propose a unified framework, UniPELT, which incorporates different PELT methods as submodules and learns to activate the ones that best suit the current data or task setup. Remarkably, on the GLUE benchmark, UniPELT consistently achieves 1~3pt gains compared to the best individual PELT method that it incorporates and even outperforms fine-tuning under different setups. Moreover, UniPELT often surpasses the upper bound when taking the best performance of all its submodules used individually on each task, indicating that a mixture of multiple PELT methods may be inherently more effective than single methods.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2110.07577](https://arxiv.org/abs/2110.07577) [cs.CL]** |
+|           | (or **[arXiv:2110.07577v1](https://arxiv.org/abs/2110.07577v1) [cs.CL]** for this version) |
+
+
+
+<h2 id="2021-10-15-7">7. P-Tuning v2: Prompt Tuning Can Be Comparable to Fine-tuning Universally Across Scales and Tasks
+</h2>
+
+Title: [P-Tuning v2: Prompt Tuning Can Be Comparable to Fine-tuning Universally Across Scales and Tasks](https://arxiv.org/abs/2110.07602)
+
+Authors: [Xiao Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+X), [Kaixuan Ji](https://arxiv.org/search/cs?searchtype=author&query=Ji%2C+K), [Yicheng Fu](https://arxiv.org/search/cs?searchtype=author&query=Fu%2C+Y), [Zhengxiao Du](https://arxiv.org/search/cs?searchtype=author&query=Du%2C+Z), [Zhilin Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+Z), [Jie Tang](https://arxiv.org/search/cs?searchtype=author&query=Tang%2C+J)
+
+> Prompt tuning, which only tunes continuous prompts with a frozen language model, substantially reduces per-task storage and memory usage at training. However, in the context of NLU, prior work and our results reveal that existing methods of prompt tuning do not perform well for normal-sized pre-trained models and for hard sequence tasks, indicating lack of universality. We present a novel empirical finding that properly-optimized prompt tuning can be universally effective across a wide range of model scales and NLU tasks, where it matches the performance of fine-tuning while having only 0.1\%-3\% tuned parameters. Our method P-Tuning v2 is not a new method but a version of prefix-tuning \cite{li2021prefix} optimized and adapted for NLU. Given the universality and simplicity of P-Tuning v2, we believe it can serve as an alternative for fine-tuning and a strong baseline for future research.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2110.07602](https://arxiv.org/abs/2110.07602) [cs.CL]** |
+|           | (or **[arXiv:2110.07602v1](https://arxiv.org/abs/2110.07602v1) [cs.CL]** for this version) |
+
+
 
 
 
