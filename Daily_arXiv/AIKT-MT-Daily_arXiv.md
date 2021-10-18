@@ -3,8 +3,20 @@
 # Index
 
 
-- [2021-10-15](#2021-10-15)
+- [2021-10-18](#2021-10-18)
 
+  - [1. StreaMulT: Streaming Multimodal Transformer for Heterogeneous and Arbitrary Long Sequential Data](#2021-10-18-1)
+  - [2. Multitask Prompted Training Enables Zero-Shot Task Generalization](#2021-10-18-2)
+  - [3. Alternative Input Signals Ease Transfer in Multilingual Machine Translation](#2021-10-18-3)
+  - [4. Multilingual Neural Machine Translation:Can Linguistic Hierarchies Help?](#2021-10-18-4)
+  - [5. SPoT: Better Frozen Model Adaptation through Soft Prompt Transfer](#2021-10-18-5)
+  - [6. Breaking Down Multilingual Machine Translation](#2021-10-18-6)
+  - [7. Sparse Progressive Distillation: Resolving Overfitting under Pretrain-and-Finetune Paradigm](#2021-10-18-7)
+  - [8. Why don't people use character-level machine translation?](#2021-10-18-8)
+  - [9. Incremental Speech Synthesis For Speech-To-Speech Translation](#2021-10-18-9)
+  - [10. Tricks for Training Sparse Translation Models](#2021-10-18-10)
+  - [11. Direct simultaneous speech to speech translation](#2021-10-18-11)
+- [2021-10-15](#2021-10-15)
   - [1. Evaluating Off-the-Shelf Machine Listening and Natural Language Models for Automated Audio Captioning](#2021-10-15-1)
   - [2. Bandits Don't Follow Rules: Balancing Multi-Facet Machine Translation with Multi-Armed Bandits](#2021-10-15-2)
   - [3. LFPT5: A Unified Framework for Lifelong Few-shot Language Learning Based on Prompt Tuning of T5](#2021-10-15-3)
@@ -73,6 +85,218 @@
   - [1. Phonetic Word Embeddings](#2021-10-01-1)
   - [2. Improved statistical machine translation using monolingual paraphrases](#2021-10-01-2)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-10-18
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-10-18-1">1. StreaMulT: Streaming Multimodal Transformer for Heterogeneous and Arbitrary Long Sequential Data
+</h2>
+
+Title: [StreaMulT: Streaming Multimodal Transformer for Heterogeneous and Arbitrary Long Sequential Data](https://arxiv.org/abs/2110.08021)
+
+Authors: [Victor Pellegrain](https://arxiv.org/search/cs?searchtype=author&query=Pellegrain%2C+V) (1 and 2), [Myriam Tami](https://arxiv.org/search/cs?searchtype=author&query=Tami%2C+M) (2), [Michel Batteux](https://arxiv.org/search/cs?searchtype=author&query=Batteux%2C+M) (1), [Céline Hudelot](https://arxiv.org/search/cs?searchtype=author&query=Hudelot%2C+C) (2) ((1) Institut de Recherche Technologique SystemX, (2) Université Paris-Saclay, CentraleSupélec, MICS)
+
+> This paper tackles the problem of processing and combining efficiently arbitrary long data streams, coming from different modalities with different acquisition frequencies. Common applications can be, for instance, long-time industrial or real-life systems monitoring from multimodal heterogeneous data (sensor data, monitoring report, images, etc.). To tackle this problem, we propose StreaMulT, a Streaming Multimodal Transformer, relying on cross-modal attention and an augmented memory bank to process arbitrary long input sequences at training time and run in a streaming way at inference. StreaMulT reproduces state-of-the-art results on CMU-MOSEI dataset, while being able to deal with much longer inputs than other models such as previous Multimodal Transformer.
+
+| Comments: | 5 pages, 4 figures, submitted to ICASSP 2022                 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL); Multimedia (cs.MM) |
+| Cite as:  | **[arXiv:2110.08021](https://arxiv.org/abs/2110.08021) [cs.LG]** |
+|           | (or **[arXiv:2110.08021v1](https://arxiv.org/abs/2110.08021v1) [cs.LG]** for this version) |
+
+
+
+
+
+<h2 id="2021-10-18-2">2. Multitask Prompted Training Enables Zero-Shot Task Generalization
+</h2>
+
+Title: [Multitask Prompted Training Enables Zero-Shot Task Generalization](https://arxiv.org/abs/2110.08207)
+
+Authors: [Victor Sanh](https://arxiv.org/search/cs?searchtype=author&query=Sanh%2C+V), [Albert Webson](https://arxiv.org/search/cs?searchtype=author&query=Webson%2C+A), [Colin Raffel](https://arxiv.org/search/cs?searchtype=author&query=Raffel%2C+C), [Stephen H. Bach](https://arxiv.org/search/cs?searchtype=author&query=Bach%2C+S+H), [Lintang Sutawika](https://arxiv.org/search/cs?searchtype=author&query=Sutawika%2C+L), [Zaid Alyafeai](https://arxiv.org/search/cs?searchtype=author&query=Alyafeai%2C+Z), [Antoine Chaffin](https://arxiv.org/search/cs?searchtype=author&query=Chaffin%2C+A), [Arnaud Stiegler](https://arxiv.org/search/cs?searchtype=author&query=Stiegler%2C+A), [Teven Le Scao](https://arxiv.org/search/cs?searchtype=author&query=Scao%2C+T+L), [Arun Raja](https://arxiv.org/search/cs?searchtype=author&query=Raja%2C+A), [Manan Dey](https://arxiv.org/search/cs?searchtype=author&query=Dey%2C+M), [M Saiful Bari](https://arxiv.org/search/cs?searchtype=author&query=Bari%2C+M+S), [Canwen Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+C), [Urmish Thakker](https://arxiv.org/search/cs?searchtype=author&query=Thakker%2C+U), [Shanya Sharma Sharma](https://arxiv.org/search/cs?searchtype=author&query=Sharma%2C+S+S), [Eliza Szczechla](https://arxiv.org/search/cs?searchtype=author&query=Szczechla%2C+E), [Taewoon Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%2C+T), [Gunjan Chhablani](https://arxiv.org/search/cs?searchtype=author&query=Chhablani%2C+G), [Nihal Nayak](https://arxiv.org/search/cs?searchtype=author&query=Nayak%2C+N), [Debajyoti Datta](https://arxiv.org/search/cs?searchtype=author&query=Datta%2C+D), [Jonathan Chang](https://arxiv.org/search/cs?searchtype=author&query=Chang%2C+J), [Mike Tian-Jian Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+M+T), [Han Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+H), [Matteo Manica](https://arxiv.org/search/cs?searchtype=author&query=Manica%2C+M), [Sheng Shen](https://arxiv.org/search/cs?searchtype=author&query=Shen%2C+S), [Zheng Xin Yong](https://arxiv.org/search/cs?searchtype=author&query=Yong%2C+Z+X), [Harshit Pandey](https://arxiv.org/search/cs?searchtype=author&query=Pandey%2C+H), [Rachel Bawden](https://arxiv.org/search/cs?searchtype=author&query=Bawden%2C+R), [Thomas Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+T), [Trishala Neeraj](https://arxiv.org/search/cs?searchtype=author&query=Neeraj%2C+T), [Jos Rozen](https://arxiv.org/search/cs?searchtype=author&query=Rozen%2C+J), [Abheesht Sharma](https://arxiv.org/search/cs?searchtype=author&query=Sharma%2C+A), [Andrea Santilli](https://arxiv.org/search/cs?searchtype=author&query=Santilli%2C+A), [Thibault Fevry](https://arxiv.org/search/cs?searchtype=author&query=Fevry%2C+T), [Jason Alan Fries](https://arxiv.org/search/cs?searchtype=author&query=Fries%2C+J+A), [Ryan Teehan](https://arxiv.org/search/cs?searchtype=author&query=Teehan%2C+R), [Stella Biderman](https://arxiv.org/search/cs?searchtype=author&query=Biderman%2C+S), [Leo Gao](https://arxiv.org/search/cs?searchtype=author&query=Gao%2C+L), [Tali Bers](https://arxiv.org/search/cs?searchtype=author&query=Bers%2C+T), [Thomas Wolf](https://arxiv.org/search/cs?searchtype=author&query=Wolf%2C+T), [Alexander M. Rush](https://arxiv.org/search/cs?searchtype=author&query=Rush%2C+A+M)
+
+> Large language models have recently been shown to attain reasonable zero-shot generalization on a diverse set of tasks. It has been hypothesized that this is a consequence of implicit multitask learning in language model training. Can zero-shot generalization instead be directly induced by explicit multitask learning? To test this question at scale, we develop a system for easily mapping general natural language tasks into a human-readable prompted form. We convert a large set of supervised datasets, each with multiple prompts using varying natural language. These prompted datasets allow for benchmarking the ability of a model to perform completely unseen tasks specified in natural language. We fine-tune a pretrained encoder-decoder model on this multitask mixture covering a wide variety of tasks. The model attains strong zero-shot performance on several standard datasets, often outperforming models 16x its size. Further, our approach attains strong performance on a subset of tasks from the BIG-Bench benchmark, outperforming models 6x its size. All prompts and trained models are available at [this http URL](http://github.com/bigscience-workshop/promptsource/).
+
+| Comments: | [this https URL](https://github.com/bigscience-workshop/promptsource/) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2110.08207](https://arxiv.org/abs/2110.08207) [cs.LG]** |
+|           | (or **[arXiv:2110.08207v1](https://arxiv.org/abs/2110.08207v1) [cs.LG]** for this version) |
+
+
+
+
+
+<h2 id="2021-10-18-3">3. Alternative Input Signals Ease Transfer in Multilingual Machine Translation
+</h2>
+
+Title: [Alternative Input Signals Ease Transfer in Multilingual Machine Translation](https://arxiv.org/abs/2110.07804)
+
+Authors: [Simeng Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+S), [Angela Fan](https://arxiv.org/search/cs?searchtype=author&query=Fan%2C+A), [James Cross](https://arxiv.org/search/cs?searchtype=author&query=Cross%2C+J), [Vishrav Chaudhary](https://arxiv.org/search/cs?searchtype=author&query=Chaudhary%2C+V), [Chau Tran](https://arxiv.org/search/cs?searchtype=author&query=Tran%2C+C), [Philipp Koehn](https://arxiv.org/search/cs?searchtype=author&query=Koehn%2C+P), [Francisco Guzman](https://arxiv.org/search/cs?searchtype=author&query=Guzman%2C+F)
+
+> Recent work in multilingual machine translation (MMT) has focused on the potential of positive transfer between languages, particularly cases where higher-resourced languages can benefit lower-resourced ones. While training an MMT model, the supervision signals learned from one language pair can be transferred to the other via the tokens shared by multiple source languages. However, the transfer is inhibited when the token overlap among source languages is small, which manifests naturally when languages use different writing systems. In this paper, we tackle inhibited transfer by augmenting the training data with alternative signals that unify different writing systems, such as phonetic, romanized, and transliterated input. We test these signals on Indic and Turkic languages, two language families where the writing systems differ but languages still share common features. Our results indicate that a straightforward multi-source self-ensemble -- training a model on a mixture of various signals and ensembling the outputs of the same model fed with different signals during inference, outperforms strong ensemble baselines by 1.3 BLEU points on both language families. Further, we find that incorporating alternative inputs via self-ensemble can be particularly effective when training set is small, leading to +5 BLEU when only 5% of the total training data is accessible. Finally, our analysis demonstrates that including alternative signals yields more consistency and translates named entities more accurately, which is crucial for increased factuality of automated systems.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2110.07804](https://arxiv.org/abs/2110.07804) [cs.CL]** |
+|           | (or **[arXiv:2110.07804v1](https://arxiv.org/abs/2110.07804v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-10-18-4">4. Multilingual Neural Machine Translation:Can Linguistic Hierarchies Help?
+</h2>
+
+Title: [Multilingual Neural Machine Translation:Can Linguistic Hierarchies Help?](https://arxiv.org/abs/2110.07816)
+
+Authors: [Fahimeh Saleh](https://arxiv.org/search/cs?searchtype=author&query=Saleh%2C+F), [Wray Buntine](https://arxiv.org/search/cs?searchtype=author&query=Buntine%2C+W), [Gholamreza Haffari](https://arxiv.org/search/cs?searchtype=author&query=Haffari%2C+G), [Lan Du](https://arxiv.org/search/cs?searchtype=author&query=Du%2C+L)
+
+> Multilingual Neural Machine Translation (MNMT) trains a single NMT model that supports translation between multiple languages, rather than training separate models for different languages. Learning a single model can enhance the low-resource translation by leveraging data from multiple languages. However, the performance of an MNMT model is highly dependent on the type of languages used in training, as transferring knowledge from a diverse set of languages degrades the translation performance due to negative transfer. In this paper, we propose a Hierarchical Knowledge Distillation (HKD) approach for MNMT which capitalises on language groups generated according to typological features and phylogeny of languages to overcome the issue of negative transfer. HKD generates a set of multilingual teacher-assistant models via a selective knowledge distillation mechanism based on the language groups, and then distils the ultimate multilingual model from those assistants in an adaptive way. Experimental results derived from the TED dataset with 53 languages demonstrate the effectiveness of our approach in avoiding the negative transfer effect in MNMT, leading to an improved translation performance (about 1 BLEU score on average) compared to strong baselines.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2110.07816](https://arxiv.org/abs/2110.07816) [cs.CL]** |
+|           | (or **[arXiv:2110.07816v1](https://arxiv.org/abs/2110.07816v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-10-18-5">5. SPoT: Better Frozen Model Adaptation through Soft Prompt Transfer
+</h2>
+
+Title: [SPoT: Better Frozen Model Adaptation through Soft Prompt Transfer](https://arxiv.org/abs/2110.07904)
+
+Authors: [Tu Vu](https://arxiv.org/search/cs?searchtype=author&query=Vu%2C+T), [Brian Lester](https://arxiv.org/search/cs?searchtype=author&query=Lester%2C+B), [Noah Constant](https://arxiv.org/search/cs?searchtype=author&query=Constant%2C+N), [Rami Al-Rfou](https://arxiv.org/search/cs?searchtype=author&query=Al-Rfou%2C+R), [Daniel Cer](https://arxiv.org/search/cs?searchtype=author&query=Cer%2C+D)
+
+> As pre-trained language models have gotten larger, there has been growing interest in parameter-efficient methods to apply these models to downstream tasks. Building on the PromptTuning approach of Lester et al. (2021), which learns task-specific soft prompts to condition a frozen language model to perform downstream tasks, we propose a novel prompt-based transfer learning approach called SPoT: Soft Prompt Transfer. SPoT first learns a prompt on one or more source tasks and then uses it to initialize the prompt for a target task. We show that SPoT significantly boosts the performance of PromptTuning across many tasks. More importantly, SPoT either matches or outperforms ModelTuning, which fine-tunes the entire model on each individual task, across all model sizes while being more parameter-efficient (up to 27,000x fewer task-specific parameters). We further conduct a large-scale study on task transferability with 26 NLP tasks and 160 combinations of source-target tasks, and demonstrate that tasks can often benefit each other via prompt transfer. Finally, we propose a simple yet efficient retrieval approach that interprets task prompts as task embeddings to identify the similarity between tasks and predict the most transferable source tasks for a given novel target task.
+
+| Comments: | 20 pages, 6 figures, 5 tables                                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2110.07904](https://arxiv.org/abs/2110.07904) [cs.CL]** |
+|           | (or **[arXiv:2110.07904v1](https://arxiv.org/abs/2110.07904v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-10-18-6">6. Breaking Down Multilingual Machine Translation
+</h2>
+
+Title: [Breaking Down Multilingual Machine Translation](https://arxiv.org/abs/2110.08130)
+
+Authors: [Ting-Rui Chiang](https://arxiv.org/search/cs?searchtype=author&query=Chiang%2C+T), [Yi-Pei Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+Y), [Yi-Ting Yeh](https://arxiv.org/search/cs?searchtype=author&query=Yeh%2C+Y), [Graham Neubig](https://arxiv.org/search/cs?searchtype=author&query=Neubig%2C+G)
+
+> While multilingual training is now an essential ingredient in machine translation (MT) systems, recent work has demonstrated that it has different effects in different multilingual settings, such as many-to-one, one-to-many, and many-to-many learning. These training settings expose the encoder and the decoder in a machine translation model with different data distributions. In this paper, we examine how different varieties of multilingual training contribute to learning these two components of the MT model. Specifically, we compare bilingual models with encoders and/or decoders initialized by multilingual training. We show that multilingual training is beneficial to encoders in general, while it only benefits decoders for low-resource languages (LRLs). We further find the important attention heads for each language pair and compare their correlations during inference. Our analysis sheds light on how multilingual translation models work and also enables us to propose methods to improve performance by training with highly related languages. Our many-to-one models for high-resource languages and one-to-many models for LRL outperform the best results reported by Aharoni et al. (2019).
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2110.08130](https://arxiv.org/abs/2110.08130) [cs.CL]** |
+|           | (or **[arXiv:2110.08130v1](https://arxiv.org/abs/2110.08130v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-10-18-7">7. Sparse Progressive Distillation: Resolving Overfitting under Pretrain-and-Finetune Paradigm
+</h2>
+
+Title: [Sparse Progressive Distillation: Resolving Overfitting under Pretrain-and-Finetune Paradigm](https://arxiv.org/abs/2110.08190)
+
+Authors: [Shaoyi Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+S), [Dongkuan Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+D), [Ian E.H. Yen](https://arxiv.org/search/cs?searchtype=author&query=Yen%2C+I+E), [Sung-en Chang](https://arxiv.org/search/cs?searchtype=author&query=Chang%2C+S), [Bingbing Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+B), [Shiyang Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+S), [Mimi Xie](https://arxiv.org/search/cs?searchtype=author&query=Xie%2C+M), [Hang Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+H), [Caiwen Ding](https://arxiv.org/search/cs?searchtype=author&query=Ding%2C+C)
+
+> Various pruning approaches have been proposed to reduce the footprint requirements of Transformer-based language models. Conventional wisdom is that pruning reduces the model expressiveness and thus is more likely to underfit than overfit compared to the original model. However, under the trending pretrain-and-finetune paradigm, we argue that pruning increases the risk of overfitting if pruning was performed at the fine-tuning phase, as it increases the amount of information a model needs to learn from the downstream task, resulting in relative data deficiency. In this paper, we aim to address the overfitting issue under the pretrain-and-finetune paradigm to improve pruning performance via progressive knowledge distillation (KD) and sparse pruning. Furthermore, to mitigate the interference between different strategies of learning rate, pruning and distillation, we propose a three-stage learning framework. We show for the first time that reducing the risk of overfitting can help the effectiveness of pruning under the pretrain-and-finetune paradigm. Experiments on multiple datasets of GLUE benchmark show that our method achieves highly competitive pruning performance over the state-of-the-art competitors across different pruning ratio constraints.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2110.08190](https://arxiv.org/abs/2110.08190) [cs.CL]** |
+|           | (or **[arXiv:2110.08190v1](https://arxiv.org/abs/2110.08190v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-10-18-8">8. Why don't people use character-level machine translation?
+</h2>
+
+Title: [Why don't people use character-level machine translation?](https://arxiv.org/abs/2110.08191)
+
+Authors: [Jindřich Libovický](https://arxiv.org/search/cs?searchtype=author&query=Libovický%2C+J), [Helmut Schmid](https://arxiv.org/search/cs?searchtype=author&query=Schmid%2C+H), [Alexander Fraser](https://arxiv.org/search/cs?searchtype=author&query=Fraser%2C+A)
+
+> We present a literature and empirical survey that critically assesses the state of the art in character-level modeling for machine translation (MT). Despite evidence in the literature that character-level systems are comparable with subword systems, they are virtually never used in competitive setups in WMT competitions. We empirically show that even with recent modeling innovations in character-level natural language processing, character-level MT systems still struggle to match their subword-based counterparts both in terms of translation quality and training and inference speed. Character-level MT systems show neither better domain robustness, nor better morphological generalization, despite being often so motivated. On the other hand, they tend to be more robust towards source side noise and the translation quality does not degrade with increasing beam size at decoding time.
+
+| Comments: | 16 pages, 4 figures                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2110.08191](https://arxiv.org/abs/2110.08191) [cs.CL]** |
+|           | (or **[arXiv:2110.08191v1](https://arxiv.org/abs/2110.08191v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-10-18-9">9. Incremental Speech Synthesis For Speech-To-Speech Translation
+</h2>
+
+Title: [Incremental Speech Synthesis For Speech-To-Speech Translation](https://arxiv.org/abs/2110.08214)
+
+Authors: [Danni Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+D), [Changhan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+C), [Hongyu Gong](https://arxiv.org/search/cs?searchtype=author&query=Gong%2C+H), [Xutai Ma](https://arxiv.org/search/cs?searchtype=author&query=Ma%2C+X), [Yun Tang](https://arxiv.org/search/cs?searchtype=author&query=Tang%2C+Y), [Juan Pino](https://arxiv.org/search/cs?searchtype=author&query=Pino%2C+J)
+
+> In a speech-to-speech translation (S2ST) pipeline, the text-to-speech (TTS) module is an important component for delivering the translated speech to users. To enable incremental S2ST, the TTS module must be capable of synthesizing and playing utterances while its input text is still streaming in. In this work, we focus on improving the incremental synthesis performance of TTS models. With a simple data augmentation strategy based on prefixes, we are able to improve the incremental TTS quality to approach offline performance. Furthermore, we bring our incremental TTS system to the practical scenario in combination with an upstream simultaneous speech translation system, and show the gains also carry over to this use-case. In addition, we propose latency metrics tailored to S2ST applications, and investigate methods for latency reduction in this context.
+
+| Comments: | Work-in-progress                                             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2110.08214](https://arxiv.org/abs/2110.08214) [cs.CL]** |
+|           | (or **[arXiv:2110.08214v1](https://arxiv.org/abs/2110.08214v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-10-18-10">10. Tricks for Training Sparse Translation Models
+</h2>
+
+Title: [Tricks for Training Sparse Translation Models](https://arxiv.org/abs/2110.08246)
+
+Authors: [Dheeru Dua](https://arxiv.org/search/cs?searchtype=author&query=Dua%2C+D), [Shruti Bhosale](https://arxiv.org/search/cs?searchtype=author&query=Bhosale%2C+S), [Vedanuj Goswami](https://arxiv.org/search/cs?searchtype=author&query=Goswami%2C+V), [James Cross](https://arxiv.org/search/cs?searchtype=author&query=Cross%2C+J), [Mike Lewis](https://arxiv.org/search/cs?searchtype=author&query=Lewis%2C+M), [Angela Fan](https://arxiv.org/search/cs?searchtype=author&query=Fan%2C+A)
+
+> Multi-task learning with an unbalanced data distribution skews model learning towards high resource tasks, especially when model capacity is fixed and fully shared across all tasks. Sparse scaling architectures, such as BASELayers, provide flexible mechanisms for different tasks to have a variable number of parameters, which can be useful to counterbalance skewed data distributions. We find that that sparse architectures for multilingual machine translation can perform poorly out of the box, and propose two straightforward techniques to mitigate this - a temperature heating mechanism and dense pre-training. Overall, these methods improve performance on two multilingual translation benchmarks compared to standard BASELayers and Dense scaling baselines, and in combination, more than 2x model convergence speed.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2110.08246](https://arxiv.org/abs/2110.08246) [cs.CL]** |
+|           | (or **[arXiv:2110.08246v1](https://arxiv.org/abs/2110.08246v1) [cs.CL]** for this version) |
+
+
+
+<h2 id="2021-10-18-11">11. Direct simultaneous speech to speech translation
+</h2>
+
+Title: [Direct simultaneous speech to speech translation](https://arxiv.org/abs/2110.08250)
+
+Authors: [Xutai Ma](https://arxiv.org/search/cs?searchtype=author&query=Ma%2C+X), [Hongyu Gong](https://arxiv.org/search/cs?searchtype=author&query=Gong%2C+H), [Danni Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+D), [Ann Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+A), [Yun Tang](https://arxiv.org/search/cs?searchtype=author&query=Tang%2C+Y), [Peng-Jen Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+P), [Wei-Ning Hsu](https://arxiv.org/search/cs?searchtype=author&query=Hsu%2C+W), [Kenneth Heafield](https://arxiv.org/search/cs?searchtype=author&query=Heafield%2C+K), [Phillip Koehn](https://arxiv.org/search/cs?searchtype=author&query=Koehn%2C+P), [Juan Pino](https://arxiv.org/search/cs?searchtype=author&query=Pino%2C+J)
+
+> We present the first direct simultaneous speech-to-speech translation (Simul-S2ST) model, with the ability to start generating translation in the target speech before consuming the full source speech content and independently from intermediate text representations. Our approach leverages recent progress on direct speech-to-speech translation with discrete units. Instead of continuous spectrogram features, a sequence of direct representations, which are learned in a unsupervised manner, are predicted from the model and passed directly to a vocoder for speech synthesis. The simultaneous policy then operates on source speech features and target discrete units. Finally, a vocoder synthesize the target speech from discrete units on-the-fly. We carry out numerical studies to compare cascaded and direct approach on Fisher Spanish-English dataset.
+
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2110.08250](https://arxiv.org/abs/2110.08250) [cs.CL]** |
+|           | (or **[arXiv:2110.08250v1](https://arxiv.org/abs/2110.08250v1) [cs.CL]** for this version) |
+
+
+
+
+
 
 
 
