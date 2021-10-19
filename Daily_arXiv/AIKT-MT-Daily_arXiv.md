@@ -3,8 +3,17 @@
 # Index
 
 
-- [2021-10-18](#2021-10-18)
+- [2021-10-19](#2021-10-19)
 
+  - [1. A Good Prompt Is Worth Millions of Parameters? Low-resource Prompt-based Learning for Vision-Language Models](#2021-10-19-1)
+  - [2. Invariant Language Modeling](#2021-10-19-2)
+  - [3. EncT5: Fine-tuning T5 Encoder for Non-autoregressive Tasks](#2021-10-19-3)
+  - [4. MarkupLM: Pre-training of Text and Markup Language for Visually-rich Document Understanding](#2021-10-19-4)
+  - [5. Towards Making the Most of Multilingual Pretraining for Zero-Shot Neural Machine Translation](#2021-10-19-5)
+  - [6. Virtual Augmentation Supported Contrastive Learning of Sentence Representations](#2021-10-19-6)
+  - [7. GNN-LM: Language Modeling based on Global Contexts via GNN](#2021-10-19-7)
+  - [8. Predicting the Performance of Multilingual NLP Models](#2021-10-19-8)
+- [2021-10-18](#2021-10-18)
   - [1. StreaMulT: Streaming Multimodal Transformer for Heterogeneous and Arbitrary Long Sequential Data](#2021-10-18-1)
   - [2. Multitask Prompted Training Enables Zero-Shot Task Generalization](#2021-10-18-2)
   - [3. Alternative Input Signals Ease Transfer in Multilingual Machine Translation](#2021-10-18-3)
@@ -85,6 +94,163 @@
   - [1. Phonetic Word Embeddings](#2021-10-01-1)
   - [2. Improved statistical machine translation using monolingual paraphrases](#2021-10-01-2)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-10-19
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-10-19-1">1. A Good Prompt Is Worth Millions of Parameters? Low-resource Prompt-based Learning for Vision-Language Models
+</h2>
+
+Title: [A Good Prompt Is Worth Millions of Parameters? Low-resource Prompt-based Learning for Vision-Language Models](https://arxiv.org/abs/2110.08484)
+
+Authors: [Woojeong Jin](https://arxiv.org/search/cs?searchtype=author&query=Jin%2C+W), [Yu Cheng](https://arxiv.org/search/cs?searchtype=author&query=Cheng%2C+Y), [Yelong Shen](https://arxiv.org/search/cs?searchtype=author&query=Shen%2C+Y), [Weizhu Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+W), [Xiang Ren](https://arxiv.org/search/cs?searchtype=author&query=Ren%2C+X)
+
+> Large pretrained vision-language (VL) models can learn a new task with a handful of examples or generalize to a new task without fine-tuning. However, these gigantic VL models are hard to deploy for real-world applications due to their impractically huge model size and slow inference speed. In this work, we propose FewVLM, a few-shot prompt-based learner on vision-language tasks. We pretrain a sequence-to-sequence Transformer model with both prefix language modeling (PrefixLM) and masked language modeling (MaskedLM), and introduce simple prompts to improve zero-shot and few-shot performance on VQA and image captioning. Experimental results on five VQA and captioning datasets show that \method\xspace outperforms Frozen which is 31 times larger than ours by 18.2% point on zero-shot VQAv2 and achieves comparable results to a 246× larger model, PICa. We observe that (1) prompts significantly affect zero-shot performance but marginally affect few-shot performance, (2) MaskedLM helps few-shot VQA tasks while PrefixLM boosts captioning performance, and (3) performance significantly increases when training set size is small.
+
+| Comments: | Preprint                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2110.08484](https://arxiv.org/abs/2110.08484) [cs.CV]** |
+|           | (or **[arXiv:2110.08484v1](https://arxiv.org/abs/2110.08484v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-10-19-2">2. Invariant Language Modeling
+</h2>
+
+Title: [Invariant Language Modeling](https://arxiv.org/abs/2110.08413)
+
+Authors: [Maxime Peyrard](https://arxiv.org/search/cs?searchtype=author&query=Peyrard%2C+M), [Sarvjeet Singh Ghotra](https://arxiv.org/search/cs?searchtype=author&query=Ghotra%2C+S+S), [Martin Josifoski](https://arxiv.org/search/cs?searchtype=author&query=Josifoski%2C+M), [Vidhan Agarwal](https://arxiv.org/search/cs?searchtype=author&query=Agarwal%2C+V), [Barun Patra](https://arxiv.org/search/cs?searchtype=author&query=Patra%2C+B), [Dean Carignan](https://arxiv.org/search/cs?searchtype=author&query=Carignan%2C+D), [Emre Kiciman](https://arxiv.org/search/cs?searchtype=author&query=Kiciman%2C+E), [Robert West](https://arxiv.org/search/cs?searchtype=author&query=West%2C+R)
+
+> Modern pretrained language models are critical components of NLP pipelines. Yet, they suffer from spurious correlations, poor out-of-domain generalization, and biases. Inspired by recent progress in causal machine learning, in particular the invariant risk minimization (IRM) paradigm, we propose invariant language modeling, a framework for learning invariant representations that generalize better across multiple environments. In particular, we adapt a game-theoretic implementation of IRM (IRM-games) to language models, where the invariance emerges from a specific training schedule in which all the environments compete to optimize their own environment-specific loss by updating subsets of the model in a round-robin fashion. In a series of controlled experiments, we demonstrate the ability of our method to (i) remove structured noise, (ii) ignore specific spurious correlations without affecting global performance, and (iii) achieve better out-of-domain generalization. These benefits come with a negligible computational overhead compared to standard training, do not require changing the local loss, and can be applied to any language model architecture. We believe this framework is promising to help mitigate spurious correlations and biases in language models.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2110.08413](https://arxiv.org/abs/2110.08413) [cs.CL]** |
+|           | (or **[arXiv:2110.08413v1](https://arxiv.org/abs/2110.08413v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-10-19-3">3. EncT5: Fine-tuning T5 Encoder for Non-autoregressive Tasks
+</h2>
+
+Title: [EncT5: Fine-tuning T5 Encoder for Non-autoregressive Tasks](https://arxiv.org/abs/2110.08426)
+
+Authors: [Frederick Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+F), [Siamak Shakeri](https://arxiv.org/search/cs?searchtype=author&query=Shakeri%2C+S), [Hongkun Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+H), [Jing Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+J)
+
+> Encoder-decoder transformer architectures have become popular recently with the advent of T5 models. It is also more favorable over architectures like BERT for pre-training on language model task when it comes to large scale models which could take months to train given it's generality. While being able to generalize to more tasks, it is not evident if the proposed encoder-decoder architecture is the most efficient for fine-tuning on classification and regression tasks given the pre-trained model. In this work, we study fine-tuning pre-trained encoder-decoder models such as T5. Particularly, we propose \textbf{EncT5} as a way to efficiently fine-tune pre-trained encoder-decoder T5 models for classification and regression tasks by using the encoder layers. Our experimental results show that \textbf{EncT5} with less than half of the parameters of T5 performs similarly to T5 models on GLUE benchmark. We believe our proposed approach can be easily applied to any pre-trained encoder-decoder model.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2110.08426](https://arxiv.org/abs/2110.08426) [cs.CL]** |
+|           | (or **[arXiv:2110.08426v1](https://arxiv.org/abs/2110.08426v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-10-19-4">4. MarkupLM: Pre-training of Text and Markup Language for Visually-rich Document Understanding
+</h2>
+
+Title: [MarkupLM: Pre-training of Text and Markup Language for Visually-rich Document Understanding](https://arxiv.org/abs/2110.08518)
+
+Authors: [Junlong Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+J), [Yiheng Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+Y), [Lei Cui](https://arxiv.org/search/cs?searchtype=author&query=Cui%2C+L), [Furu Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+F)
+
+> Multimodal pre-training with text, layout, and image has made significant progress for Visually-rich Document Understanding (VrDU), especially the fixed-layout documents such as scanned document images. While, there are still a large number of digital documents where the layout information is not fixed and needs to be interactively and dynamically rendered for visualization, making existing layout-based pre-training approaches not easy to apply. In this paper, we propose MarkupLM for document understanding tasks with markup languages as the backbone such as HTML/XML-based documents, where text and markup information is jointly pre-trained. Experiment results show that the pre-trained MarkupLM significantly outperforms the existing strong baseline models on several document understanding tasks. The pre-trained model and code will be publicly available at [this https URL](https://aka.ms/markuplm).
+
+| Comments: | Work in Progress                                             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2110.08518](https://arxiv.org/abs/2110.08518) [cs.CL]** |
+|           | (or **[arXiv:2110.08518v1](https://arxiv.org/abs/2110.08518v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-10-19-5">5. Towards Making the Most of Multilingual Pretraining for Zero-Shot Neural Machine Translation
+</h2>
+
+Title: [Towards Making the Most of Multilingual Pretraining for Zero-Shot Neural Machine Translation](https://arxiv.org/abs/2110.08547)
+
+Authors: [Guanhua Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+G), [Shuming Ma](https://arxiv.org/search/cs?searchtype=author&query=Ma%2C+S), [Yun Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+Y), [Dongdong Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+D), [Jia Pan](https://arxiv.org/search/cs?searchtype=author&query=Pan%2C+J), [Wenping Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+W), [Furu Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+F)
+
+> This paper demonstrates that multilingual pretraining, a proper fine-tuning method and a large-scale parallel dataset from multiple auxiliary languages are all critical for zero-shot translation, where the NMT model is tested on source languages unseen during supervised training. Following this idea, we present SixT++, a strong many-to-English NMT model that supports 100 source languages but is trained once with a parallel dataset from only six source languages. SixT++ initializes the decoder embedding and the full encoder with XLM-R large, and then trains the encoder and decoder layers with a simple two-stage training strategy. SixT++ achieves impressive performance on many-to-English translation. It significantly outperforms CRISS and m2m-100, two strong multilingual NMT systems, with an average gain of 7.2 and 5.0 BLEU respectively. Additionally, SixT++ offers a set of model parameters that can be further fine-tuned to develop unsupervised NMT models for low-resource languages. With back-translation on monolingual data of low-resource language, it outperforms all current state-of-the-art unsupervised methods on Nepali and Sinhal for both translating into and from English.
+
+| Comments: | Preprint                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2110.08547](https://arxiv.org/abs/2110.08547) [cs.CL]** |
+|           | (or **[arXiv:2110.08547v1](https://arxiv.org/abs/2110.08547v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-10-19-6">6. Virtual Augmentation Supported Contrastive Learning of Sentence Representations
+</h2>
+
+Title: [Virtual Augmentation Supported Contrastive Learning of Sentence Representations](https://arxiv.org/abs/2110.08552)
+
+Authors: [Dejiao Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+D), [Wei Xiao](https://arxiv.org/search/cs?searchtype=author&query=Xiao%2C+W), [Henghui Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+H), [Xiaofei Ma](https://arxiv.org/search/cs?searchtype=author&query=Ma%2C+X), [Andrew O. Arnold](https://arxiv.org/search/cs?searchtype=author&query=Arnold%2C+A+O)
+
+> Despite profound successes, contrastive representation learning relies on carefully designed data augmentations using domain specific knowledge. This challenge is magnified in natural language processing where no general rules exist for data augmentation due to the discrete nature of natural language. We tackle this challenge by presenting a Virtual augmentation Supported Contrastive Learning of sentence representations (VaSCL). Originating from the interpretation that data augmentation essentially constructs the neighborhoods of each training instance, we in turn utilize the neighborhood to generate effective data augmentations. Leveraging the large training batch size of contrastive learning, we approximate the neighborhood of an instance via its K-nearest in-batch neighbors in the representation space. We then define an instance discrimination task within this neighborhood, and generate the virtual augmentation in an adversarial training manner. We access the performance of VaSCL on a wide range of downstream tasks, and set a new state-of-the-art for unsupervised sentence representation learning.
+
+| Comments: | 8 pages, 3 figures, 3 tables                                 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2110.08552](https://arxiv.org/abs/2110.08552) [cs.CL]** |
+|           | (or **[arXiv:2110.08552v1](https://arxiv.org/abs/2110.08552v1) [cs.CL]** for this version) |
+
+
+
+<h2 id="2021-10-19-7">7. GNN-LM: Language Modeling based on Global Contexts via GNN
+</h2>
+
+Title: [GNN-LM: Language Modeling based on Global Contexts via GNN](https://arxiv.org/abs/2110.08743)
+
+Authors: [Yuxian Meng](https://arxiv.org/search/cs?searchtype=author&query=Meng%2C+Y), [Shi Zong](https://arxiv.org/search/cs?searchtype=author&query=Zong%2C+S), [Xiaoya Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+X), [Xiaofei Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+X), [Tianwei Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+T), [Fei Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+F), [Jiwei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+J)
+
+> Inspired by the notion that ``{\it to copy is easier than to memorize}``, in this work, we introduce GNN-LM, which extends the vanilla neural language model (LM) by allowing to reference similar contexts in the entire training corpus. We build a directed heterogeneous graph between an input context and its semantically related neighbors selected from the training corpus, where nodes are tokens in the input context and retrieved neighbor contexts, and edges represent connections between nodes. Graph neural networks (GNNs) are constructed upon the graph to aggregate information from similar contexts to decode the token. This learning paradigm provides direct access to the reference contexts and helps improve a model's generalization ability. We conduct comprehensive experiments to validate the effectiveness of the GNN-LM: GNN-LM achieves a new state-of-the-art perplexity of 14.8 on WikiText-103 (a 4.5 point improvement over its counterpart of the vanilla LM model) and shows substantial improvement on One Billion Word and Enwiki8 datasets against strong baselines. In-depth ablation studies are performed to understand the mechanics of GNN-LM.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2110.08743](https://arxiv.org/abs/2110.08743) [cs.CL]** |
+|           | (or **[arXiv:2110.08743v1](https://arxiv.org/abs/2110.08743v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-10-19-8">8. Predicting the Performance of Multilingual NLP Models
+</h2>
+
+Title: [Predicting the Performance of Multilingual NLP Models](https://arxiv.org/abs/2110.08875)
+
+Authors: [Anirudh Srinivasan](https://arxiv.org/search/cs?searchtype=author&query=Srinivasan%2C+A), [Sunayana Sitaram](https://arxiv.org/search/cs?searchtype=author&query=Sitaram%2C+S), [Tanuja Ganu](https://arxiv.org/search/cs?searchtype=author&query=Ganu%2C+T), [Sandipan Dandapat](https://arxiv.org/search/cs?searchtype=author&query=Dandapat%2C+S), [Kalika Bali](https://arxiv.org/search/cs?searchtype=author&query=Bali%2C+K), [Monojit Choudhury](https://arxiv.org/search/cs?searchtype=author&query=Choudhury%2C+M)
+
+> Recent advancements in NLP have given us models like mBERT and XLMR that can serve over 100 languages. The languages that these models are evaluated on, however, are very few in number, and it is unlikely that evaluation datasets will cover all the languages that these models support. Potential solutions to the costly problem of dataset creation are to translate datasets to new languages or use template-filling based techniques for creation. This paper proposes an alternate solution for evaluating a model across languages which make use of the existing performance scores of the model on languages that a particular task has test sets for. We train a predictor on these performance scores and use this predictor to predict the model's performance in different evaluation settings. Our results show that our method is effective in filling the gaps in the evaluation for an existing set of languages, but might require additional improvements if we want it to generalize to unseen languages.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2110.08875](https://arxiv.org/abs/2110.08875) [cs.CL]** |
+|           | (or **[arXiv:2110.08875v1](https://arxiv.org/abs/2110.08875v1) [cs.CL]** for this version) |
+
+
+
+
+
 
 
 
