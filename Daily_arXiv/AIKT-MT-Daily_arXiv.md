@@ -3,6 +3,12 @@
 # Index
 
 
+- [2021-10-20](#2021-10-20)
+
+  - [1. Unifying Multimodal Transformer for Bi-directional Image and Text Generation](#2021-10-20-1)
+  - [2. A Picture is Worth a Thousand Words: A Unified System for Diverse Captions and Rich Images Generation](#2021-10-20-2)
+  - [3. Multilingual Domain Adaptation for NMT: Decoupling Language and Domain Information with Adapters](#2021-10-20-3)
+  - [4. Entity Relation Extraction as Dependency Parsing in Visually Rich Documents](#2021-10-20-4)
 - [2021-10-19](#2021-10-19)
 
   - [1. A Good Prompt Is Worth Millions of Parameters? Low-resource Prompt-based Learning for Vision-Language Models](#2021-10-19-1)
@@ -94,6 +100,90 @@
   - [1. Phonetic Word Embeddings](#2021-10-01-1)
   - [2. Improved statistical machine translation using monolingual paraphrases](#2021-10-01-2)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-10-20
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-10-20-1">1. Unifying Multimodal Transformer for Bi-directional Image and Text Generation
+</h2>
+
+Title: [Unifying Multimodal Transformer for Bi-directional Image and Text Generation](https://arxiv.org/abs/2110.09753)
+
+Authors: [Yupan Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+Y), [Hongwei Xue](https://arxiv.org/search/cs?searchtype=author&query=Xue%2C+H), [Bei Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+B), [Yutong Lu](https://arxiv.org/search/cs?searchtype=author&query=Lu%2C+Y)
+
+> We study the joint learning of image-to-text and text-to-image generations, which are naturally bi-directional tasks. Typical existing works design two separate task-specific models for each task, which impose expensive design efforts. In this work, we propose a unified image-and-text generative framework based on a single multimodal model to jointly study the bi-directional tasks. We adopt Transformer as our unified architecture for its strong performance and task-agnostic design. Specifically, we formulate both tasks as sequence generation tasks, where we represent images and text as unified sequences of tokens, and the Transformer learns multimodal interactions to generate sequences. We further propose two-level granularity feature representations and sequence-level training to improve the Transformer-based unified framework. Experiments show that our approach significantly improves previous Transformer-based model X-LXMERT's FID from 37.0 to 29.9 (lower is better) for text-to-image generation, and improves CIDEr-D score from 100.9% to 122.6% for fine-tuned image-to-text generation on the MS-COCO dataset. Our code is available online.
+
+| Comments: | ACM MM 2021 (Industrial Track). Code: [this https URL](https://github.com/researchmm/generate-it) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL); Multimedia (cs.MM) |
+| DOI:      | [10.1145/3474085.3481540](https://arxiv.org/ct?url=https%3A%2F%2Fdx.doi.org%2F10.1145%2F3474085.3481540&v=1d938f2d) |
+| Cite as:  | **[arXiv:2110.09753](https://arxiv.org/abs/2110.09753) [cs.CV]** |
+|           | (or **[arXiv:2110.09753v1](https://arxiv.org/abs/2110.09753v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-10-20-2">2. A Picture is Worth a Thousand Words: A Unified System for Diverse Captions and Rich Images Generation
+</h2>
+
+Title: [A Picture is Worth a Thousand Words: A Unified System for Diverse Captions and Rich Images Generation](https://arxiv.org/abs/2110.09756)
+
+Authors: [Yupan Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+Y), [Bei Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+B), [Jianlong Fu](https://arxiv.org/search/cs?searchtype=author&query=Fu%2C+J), [Yutong Lu](https://arxiv.org/search/cs?searchtype=author&query=Lu%2C+Y)
+
+> A creative image-and-text generative AI system mimics humans' extraordinary abilities to provide users with diverse and comprehensive caption suggestions, as well as rich image creations. In this work, we demonstrate such an AI creation system to produce both diverse captions and rich images. When users imagine an image and associate it with multiple captions, our system paints a rich image to reflect all captions faithfully. Likewise, when users upload an image, our system depicts it with multiple diverse captions. We propose a unified multi-modal framework to achieve this goal. Specifically, our framework jointly models image-and-text representations with a Transformer network, which supports rich image creation by accepting multiple captions as input. We consider the relations among input captions to encourage diversity in training and adopt a non-autoregressive decoding strategy to enable real-time inference. Based on these, our system supports both diverse captions and rich images generations. Our code is available online.
+
+| Comments: | ACM MM 2021 (Video and Demo Track). Code: [this https URL](https://github.com/researchmm/generate-it) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL); Multimedia (cs.MM) |
+| DOI:      | [10.1145/3474085.3478561](https://arxiv.org/ct?url=https%3A%2F%2Fdx.doi.org%2F10.1145%2F3474085.3478561&v=36cdb3a9) |
+| Cite as:  | **[arXiv:2110.09756](https://arxiv.org/abs/2110.09756) [cs.CV]** |
+|           | (or **[arXiv:2110.09756v1](https://arxiv.org/abs/2110.09756v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-10-20-3">3. Multilingual Domain Adaptation for NMT: Decoupling Language and Domain Information with Adapters
+</h2>
+
+Title: [Multilingual Domain Adaptation for NMT: Decoupling Language and Domain Information with Adapters](https://arxiv.org/abs/2110.09574)
+
+Authors: [Asa Cooper Stickland](https://arxiv.org/search/cs?searchtype=author&query=Stickland%2C+A+C), [Alexandre Bérard](https://arxiv.org/search/cs?searchtype=author&query=Bérard%2C+A), [Vassilina Nikoulina](https://arxiv.org/search/cs?searchtype=author&query=Nikoulina%2C+V)
+
+> Adapter layers are lightweight, learnable units inserted between transformer layers. Recent work explores using such layers for neural machine translation (NMT), to adapt pre-trained models to new domains or language pairs, training only a small set of parameters for each new setting (language pair or domain). In this work we study the compositionality of language and domain adapters in the context of Machine Translation. We aim to study, 1) parameter-efficient adaptation to multiple domains and languages simultaneously (full-resource scenario) and 2) cross-lingual transfer in domains where parallel data is unavailable for certain language pairs (partial-resource scenario). We find that in the partial resource scenario a naive combination of domain-specific and language-specific adapters often results in `catastrophic forgetting' of the missing languages. We study other ways to combine the adapters to alleviate this issue and maximize cross-lingual transfer. With our best adapter combinations, we obtain improvements of 3-4 BLEU on average for source languages that do not have in-domain data. For target languages without in-domain data, we achieve a similar improvement by combining adapters with back-translation. Supplementary material is available at[this https URL](https://tinyurl.com/r66stbxj)
+
+| Comments: | Accepted at The Sixth Conference in Machine Translation (WMT21) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2110.09574](https://arxiv.org/abs/2110.09574) [cs.CL]** |
+|           | (or **[arXiv:2110.09574v1](https://arxiv.org/abs/2110.09574v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-10-20-4">4. Entity Relation Extraction as Dependency Parsing in Visually Rich Documents
+</h2>
+
+Title: [Entity Relation Extraction as Dependency Parsing in Visually Rich Documents](https://arxiv.org/abs/2110.09915)
+
+Authors: [Yue Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Y), [Bo Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+B), [Rui Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+R), [Junjie Cao](https://arxiv.org/search/cs?searchtype=author&query=Cao%2C+J), [Chen Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+C), [Zuyi Bao](https://arxiv.org/search/cs?searchtype=author&query=Bao%2C+Z)
+
+> Previous works on key information extraction from visually rich documents (VRDs) mainly focus on labeling the text within each bounding box (i.e., semantic entity), while the relations in-between are largely unexplored. In this paper, we adapt the popular dependency parsing model, the biaffine parser, to this entity relation extraction task. Being different from the original dependency parsing model which recognizes dependency relations between words, we identify relations between groups of words with layout information instead. We have compared different representations of the semantic entity, different VRD encoders, and different relation decoders. The results demonstrate that our proposed model achieves 65.96% F1 score on the FUNSD dataset. As for the real-world application, our model has been applied to the in-house customs data, achieving reliable performance in the production setting.
+
+| Comments: | Accepted to EMNLP 2021 (main conference)                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2110.09915](https://arxiv.org/abs/2110.09915) [cs.CL]** |
+|           | (or **[arXiv:2110.09915v1](https://arxiv.org/abs/2110.09915v1) [cs.CL]** for this version) |
+
+
 
 
 
