@@ -3,6 +3,16 @@
 # Index
 
 
+- [2021-10-22](#2021-10-22)
+
+  - [1. Knowledge distillation from language model to acoustic model: a hierarchical multi-task learning approach](#2021-10-22-1)
+  - [2. SLAM: A Unified Encoder for Speech and Language Modeling via Speech-Text Joint Pre-Training](#2021-10-22-2)
+  - [3. Interpreting Deep Learning Models in Natural Language Processing: A Review](#2021-10-22-3)
+  - [4. Multilingual Unsupervised Neural Machine Translation with Denoising Adapters](#2021-10-22-4)
+  - [5. Continual Learning in Multilingual NMT via Language-Specific Embeddings](#2021-10-22-5)
+  - [6. SciXGen: A Scientific Paper Dataset for Context-Aware Text Generation](#2021-10-22-6)
+  - [7. Contrastive Document Representation Learning with Graph Attention Networks](#2021-10-22-7)
+  - [8. Improving Non-autoregressive Generation with Mixup Training](#2021-10-22-8)
 - [2021-10-20](#2021-10-20)
 
   - [1. Unifying Multimodal Transformer for Bi-directional Image and Text Generation](#2021-10-20-1)
@@ -100,6 +110,162 @@
   - [1. Phonetic Word Embeddings](#2021-10-01-1)
   - [2. Improved statistical machine translation using monolingual paraphrases](#2021-10-01-2)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+
+
+# 2021-10-22
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-10-22-1">1. Knowledge distillation from language model to acoustic model: a hierarchical multi-task learning approach
+</h2>
+
+Title: [Knowledge distillation from language model to acoustic model: a hierarchical multi-task learning approach](https://arxiv.org/abs/2110.10429)
+
+Authors: [Mun-Hak Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+M), [Joon-Hyuk Chang](https://arxiv.org/search/cs?searchtype=author&query=Chang%2C+J)
+
+> The remarkable performance of the pre-trained language model (LM) using self-supervised learning has led to a major paradigm shift in the study of natural language processing. In line with these changes, leveraging the performance of speech recognition systems with massive deep learning-based LMs is a major topic of speech recognition research. Among the various methods of applying LMs to speech recognition systems, in this paper, we focus on a cross-modal knowledge distillation method that transfers knowledge between two types of deep neural networks with different modalities. We propose an acoustic model structure with multiple auxiliary output layers for cross-modal distillation and demonstrate that the proposed method effectively compensates for the shortcomings of the existing label-interpolation-based distillation method. In addition, we extend the proposed method to a hierarchical distillation method using LMs trained in different units (senones, monophones, and subwords) and reveal the effectiveness of the hierarchical distillation method through an ablation study.
+
+| Comments: | 4page + 1page for citation + 2 pages for appendix            |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL); Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2110.10429](https://arxiv.org/abs/2110.10429) [cs.LG]** |
+|           | (or **[arXiv:2110.10429v1](https://arxiv.org/abs/2110.10429v1) [cs.LG]** for this version) |
+
+
+
+
+
+<h2 id="2021-10-22-2">2. SLAM: A Unified Encoder for Speech and Language Modeling via Speech-Text Joint Pre-Training
+</h2>
+
+Title: [SLAM: A Unified Encoder for Speech and Language Modeling via Speech-Text Joint Pre-Training](https://arxiv.org/abs/2110.10329)
+
+Authors: [Ankur Bapna](https://arxiv.org/search/cs?searchtype=author&query=Bapna%2C+A), [Yu-an Chung](https://arxiv.org/search/cs?searchtype=author&query=Chung%2C+Y), [Nan Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+N), [Anmol Gulati](https://arxiv.org/search/cs?searchtype=author&query=Gulati%2C+A), [Ye Jia](https://arxiv.org/search/cs?searchtype=author&query=Jia%2C+Y), [Jonathan H. Clark](https://arxiv.org/search/cs?searchtype=author&query=Clark%2C+J+H), [Melvin Johnson](https://arxiv.org/search/cs?searchtype=author&query=Johnson%2C+M), [Jason Riesa](https://arxiv.org/search/cs?searchtype=author&query=Riesa%2C+J), [Alexis Conneau](https://arxiv.org/search/cs?searchtype=author&query=Conneau%2C+A), [Yu Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Y)
+
+> Unsupervised pre-training is now the predominant approach for both text and speech understanding. Self-attention models pre-trained on large amounts of unannotated data have been hugely successful when fine-tuned on downstream tasks from a variety of domains and languages. This paper takes the universality of unsupervised language pre-training one step further, by unifying speech and text pre-training within a single model. We build a single encoder with the BERT objective on unlabeled text together with the w2v-BERT objective on unlabeled speech. To further align our model representations across modalities, we leverage alignment losses, specifically Translation Language Modeling (TLM) and Speech Text Matching (STM) that make use of supervised speech-text recognition data. We demonstrate that incorporating both speech and text data during pre-training can significantly improve downstream quality on CoVoST~2 speech translation, by around 1 BLEU compared to single-modality pre-trained models, while retaining close to SotA performance on LibriSpeech and SpeechStew ASR tasks. On four GLUE tasks and text-normalization, we observe evidence of capacity limitations and interference between the two modalities, leading to degraded performance compared to an equivalent text-only model, while still being competitive with BERT. Through extensive empirical analysis we also demonstrate the importance of the choice of objective function for speech pre-training, and the beneficial effect of adding additional supervised signals on the quality of the learned representations.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2110.10329](https://arxiv.org/abs/2110.10329) [cs.CL]** |
+|           | (or **[arXiv:2110.10329v1](https://arxiv.org/abs/2110.10329v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-10-22-3">3. Interpreting Deep Learning Models in Natural Language Processing: A Review
+</h2>
+
+Title: [Interpreting Deep Learning Models in Natural Language Processing: A Review](https://arxiv.org/abs/2110.10470)
+
+Authors: [Xiaofei Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+X), [Diyi Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+D), [Xiaoya Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+X), [Tianwei Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+T), [Yuxian Meng](https://arxiv.org/search/cs?searchtype=author&query=Meng%2C+Y), [Qiu Han](https://arxiv.org/search/cs?searchtype=author&query=Han%2C+Q), [Guoyin Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+G), [Eduard Hovy](https://arxiv.org/search/cs?searchtype=author&query=Hovy%2C+E), [Jiwei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+J)
+
+> Neural network models have achieved state-of-the-art performances in a wide range of natural language processing (NLP) tasks. However, a long-standing criticism against neural network models is the lack of interpretability, which not only reduces the reliability of neural NLP systems but also limits the scope of their applications in areas where interpretability is essential (e.g., health care applications). In response, the increasing interest in interpreting neural NLP models has spurred a diverse array of interpretation methods over recent years. In this survey, we provide a comprehensive review of various interpretation methods for neural models in NLP. We first stretch out a high-level taxonomy for interpretation methods in NLP, i.e., training-based approaches, test-based approaches, and hybrid approaches. Next, we describe sub-categories in each category in detail, e.g., influence-function based methods, KNN-based methods, attention-based models, saliency-based methods, perturbation-based methods, etc. We point out deficiencies of current methods and suggest some avenues for future research.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2110.10470](https://arxiv.org/abs/2110.10470) [cs.CL]** |
+|           | (or **[arXiv:2110.10470v1](https://arxiv.org/abs/2110.10470v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-10-22-4">4. Multilingual Unsupervised Neural Machine Translation with Denoising Adapters
+</h2>
+
+Title: [Multilingual Unsupervised Neural Machine Translation with Denoising Adapters](https://arxiv.org/abs/2110.10472)
+
+Authors: [Ahmet Üstün](https://arxiv.org/search/cs?searchtype=author&query=Üstün%2C+A), [Alexandre Bérard](https://arxiv.org/search/cs?searchtype=author&query=Bérard%2C+A), [Laurent Besacier](https://arxiv.org/search/cs?searchtype=author&query=Besacier%2C+L), [Matthias Gallé](https://arxiv.org/search/cs?searchtype=author&query=Gallé%2C+M)
+
+> We consider the problem of multilingual unsupervised machine translation, translating to and from languages that only have monolingual data by using auxiliary parallel language pairs. For this problem the standard procedure so far to leverage the monolingual data is back-translation, which is computationally costly and hard to tune. 
+> In this paper we propose instead to use denoising adapters, adapter layers with a denoising objective, on top of pre-trained mBART-50. In addition to the modularity and flexibility of such an approach we show that the resulting translations are on-par with back-translating as measured by BLEU, and furthermore it allows adding unseen languages incrementally.
+
+| Comments: | Accepted as a long paper to EMNLP 2021                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2110.10472](https://arxiv.org/abs/2110.10472) [cs.CL]** |
+|           | (or **[arXiv:2110.10472v1](https://arxiv.org/abs/2110.10472v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-10-22-5">5. Continual Learning in Multilingual NMT via Language-Specific Embeddings
+</h2>
+
+Title: [Continual Learning in Multilingual NMT via Language-Specific Embeddings](https://arxiv.org/abs/2110.10478)
+
+Authors: [Alexandre Berard](https://arxiv.org/search/cs?searchtype=author&query=Berard%2C+A)
+
+> This paper proposes a technique for adding a new source or target language to an existing multilingual NMT model without re-training it on the initial set of languages. It consists in replacing the shared vocabulary with a small language-specific vocabulary and fine-tuning the new embeddings on the new language's parallel data. Some additional language-specific components may be trained to improve performance (e.g., Transformer layers or adapter modules). Because the parameters of the original model are not modified, its performance on the initial languages does not degrade. We show on two sets of experiments (small-scale on TED Talks, and large-scale on ParaCrawl) that this approach performs as well or better as the more costly alternatives; and that it has excellent zero-shot performance: training on English-centric data is enough to translate between the new language and any of the initial languages.
+
+| Comments: | Accepted as a research paper to WMT 2021                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2110.10478](https://arxiv.org/abs/2110.10478) [cs.CL]** |
+|           | (or **[arXiv:2110.10478v1](https://arxiv.org/abs/2110.10478v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-10-22-6">6. SciXGen: A Scientific Paper Dataset for Context-Aware Text Generation
+</h2>
+
+Title: [SciXGen: A Scientific Paper Dataset for Context-Aware Text Generation](https://arxiv.org/abs/2110.10774)
+
+Authors: [Hong Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+H), [Hiroya Takamura](https://arxiv.org/search/cs?searchtype=author&query=Takamura%2C+H), [Hideki Nakayama](https://arxiv.org/search/cs?searchtype=author&query=Nakayama%2C+H)
+
+> Generating texts in scientific papers requires not only capturing the content contained within the given input but also frequently acquiring the external information called \textit{context}. We push forward the scientific text generation by proposing a new task, namely \textbf{context-aware text generation} in the scientific domain, aiming at exploiting the contributions of context in generated texts. To this end, we present a novel challenging large-scale \textbf{Sci}entific Paper Dataset for Conte\textbf{X}t-Aware Text \textbf{Gen}eration (SciXGen), consisting of well-annotated 205,304 papers with full references to widely-used objects (e.g., tables, figures, algorithms) in a paper. We comprehensively benchmark, using state-of-the-arts, the efficacy of our newly constructed SciXGen dataset in generating description and paragraph. Our dataset and benchmarks will be made publicly available to hopefully facilitate the scientific text generation research.
+
+| Comments: | this paper was accepted by EMNLP2021-findings                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2110.10774](https://arxiv.org/abs/2110.10774) [cs.CL]** |
+|           | (or **[arXiv:2110.10774v1](https://arxiv.org/abs/2110.10774v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-10-22-7">7. Contrastive Document Representation Learning with Graph Attention Networks
+</h2>
+
+Title: [Contrastive Document Representation Learning with Graph Attention Networks](https://arxiv.org/abs/2110.10778)
+
+Authors: [Peng Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+P), [Xinchi Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+X), [Xiaofei Ma](https://arxiv.org/search/cs?searchtype=author&query=Ma%2C+X), [Zhiheng Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+Z), [Bing Xiang](https://arxiv.org/search/cs?searchtype=author&query=Xiang%2C+B)
+
+> Recent progress in pretrained Transformer-based language models has shown great success in learning contextual representation of text. However, due to the quadratic self-attention complexity, most of the pretrained Transformers models can only handle relatively short text. It is still a challenge when it comes to modeling very long documents. In this work, we propose to use a graph attention network on top of the available pretrained Transformers model to learn document embeddings. This graph attention network allows us to leverage the high-level semantic structure of the document. In addition, based on our graph document model, we design a simple contrastive learning strategy to pretrain our models on a large amount of unlabeled corpus. Empirically, we demonstrate the effectiveness of our approaches in document classification and document retrieval tasks.
+
+| Comments: | Findings of EMNLP 2021                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2110.10778](https://arxiv.org/abs/2110.10778) [cs.CL]** |
+|           | (or **[arXiv:2110.10778v1](https://arxiv.org/abs/2110.10778v1) [cs.CL]** for this version) |
+
+
+
+<h2 id="2021-10-22-8">8. Improving Non-autoregressive Generation with Mixup Training
+</h2>
+
+Title: [Improving Non-autoregressive Generation with Mixup Training](https://arxiv.org/abs/2110.11115)
+
+Authors: [Ting Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+T), [Shaohan Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+S), [Zihan Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Z), [Deqing Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+D), [Fuzhen Zhuang](https://arxiv.org/search/cs?searchtype=author&query=Zhuang%2C+F), [Furu Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+F), [Haizhen Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+H), [Liangjie Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+L), [Qi Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Q)
+
+> While pre-trained language models have achieved great success on various natural language understanding tasks, how to effectively leverage them into non-autoregressive generation tasks remains a challenge. To solve this problem, we present a non-autoregressive generation model based on pre-trained transformer models. To bridge the gap between autoregressive and non-autoregressive models, we propose a simple and effective iterative training method called MIx Source and pseudo Target (MIST). Unlike other iterative decoding methods, which sacrifice the inference speed to achieve better performance based on multiple decoding iterations, MIST works in the training stage and has no effect on inference time. Our experiments on three generation benchmarks including question generation, summarization and paraphrase generation, show that the proposed framework achieves the new state-of-the-art results for fully non-autoregressive models. We also demonstrate that our method can be used to a variety of pre-trained models. For instance, MIST based on the small pre-trained model also obtains comparable performance with seq2seq models.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2110.11115](https://arxiv.org/abs/2110.11115) [cs.CL]** |
+|           | (or **[arXiv:2110.11115v1](https://arxiv.org/abs/2110.11115v1) [cs.CL]** for this version) |
 
 
 
