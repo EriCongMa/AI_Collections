@@ -3,8 +3,14 @@
 # Index
 
 
-- [2021-10-22](#2021-10-22)
+- [2021-10-25](#2021-10-25)
 
+  - [1. VLDeformer: Learning Visual-Semantic Embeddings by Vision-Language Transformer Decomposing](#2021-10-25-1)
+  - [2. Adaptive Bridge between Training and Inference for Dialogue](#2021-10-25-2)
+  - [3. Lightweight Decoding Strategies for Increasing Specificity](#2021-10-25-3)
+  - [4. Deep learning-based NLP Data Pipeline for EHR Scanned Document Information Extraction](#2021-10-25-4)
+  - [5. Cleaning Dirty Books: Post-OCR Processing for Previously Scanned Texts](#2021-10-25-5)
+- [2021-10-22](#2021-10-22)
   - [1. Knowledge distillation from language model to acoustic model: a hierarchical multi-task learning approach](#2021-10-22-1)
   - [2. SLAM: A Unified Encoder for Speech and Language Modeling via Speech-Text Joint Pre-Training](#2021-10-22-2)
   - [3. Interpreting Deep Learning Models in Natural Language Processing: A Review](#2021-10-22-3)
@@ -110,6 +116,108 @@
   - [1. Phonetic Word Embeddings](#2021-10-01-1)
   - [2. Improved statistical machine translation using monolingual paraphrases](#2021-10-01-2)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+
+
+# 2021-10-25
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-10-25-1">1. VLDeformer: Learning Visual-Semantic Embeddings by Vision-Language Transformer Decomposing
+</h2>
+
+Title: [VLDeformer: Learning Visual-Semantic Embeddings by Vision-Language Transformer Decomposing](https://arxiv.org/abs/2110.11338)
+
+Authors: [Lisai Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+L), [Hongfa Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+H), [Qingcai Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+Q), [Yimeng Deng](https://arxiv.org/search/cs?searchtype=author&query=Deng%2C+Y), [Zhonghua Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Z), [Dejiang Kong](https://arxiv.org/search/cs?searchtype=author&query=Kong%2C+D), [Zhao Cao](https://arxiv.org/search/cs?searchtype=author&query=Cao%2C+Z), [Joanna Siebert](https://arxiv.org/search/cs?searchtype=author&query=Siebert%2C+J), [Yunpeng Han](https://arxiv.org/search/cs?searchtype=author&query=Han%2C+Y)
+
+> Vision-language transformers (VL transformers) have shown impressive accuracy in cross-modal retrieval. However, most of the existing VL transformers use early-interaction dataflow that computes a joint representation for the text-image input. In the retrieval stage, such models need to infer on all the matched text-image combinations, which causes high computing costs. The goal of this paper is to decompose the early-interaction dataflow inside the pre-trained VL transformer to achieve acceleration while maintaining its outstanding accuracy. To achieve this, we propose a novel Vision-language Transformer Decomposing (VLDeformer) to modify the VL transformer as an individual encoder for a single image or text through contrastive learning, which accelerates retrieval speed by thousands of times. Meanwhile, we propose to compose bi-modal hard negatives for the contrastive learning objective, which enables the VLDeformer to maintain the outstanding accuracy of the backbone VL transformer. Extensive experiments on COCO and Flickr30k datasets demonstrate the superior performance of the proposed method. Considering both effectiveness and efficiency, VLDeformer provides a superior selection for cross-modal retrieval in the similar pre-training datascale.
+
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL); Information Retrieval (cs.IR) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2110.11338](https://arxiv.org/abs/2110.11338) [cs.CV]** |
+|           | (or **[arXiv:2110.11338v1](https://arxiv.org/abs/2110.11338v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-10-25-2">2. Adaptive Bridge between Training and Inference for Dialogue
+</h2>
+
+Title: [Adaptive Bridge between Training and Inference for Dialogue](https://arxiv.org/abs/2110.11560)
+
+Authors: [Haoran Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+H), [Hainan Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+H), [Yanyan Zou](https://arxiv.org/search/cs?searchtype=author&query=Zou%2C+Y), [Hongshen Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+H), [Zhuoye Ding](https://arxiv.org/search/cs?searchtype=author&query=Ding%2C+Z), [Yanyan Lan](https://arxiv.org/search/cs?searchtype=author&query=Lan%2C+Y)
+
+> Although exposure bias has been widely studied in some NLP tasks, it faces its unique challenges in dialogue response generation, the representative one-to-various generation scenario. In real human dialogue, there are many appropriate responses for the same context, not only with different expressions, but also with different topics. Therefore, due to the much bigger gap between various ground-truth responses and the generated synthetic response, exposure bias is more challenging in dialogue generation task. What's more, as MLE encourages the model to only learn the common words among different ground-truth responses, but ignores the interesting and specific parts, exposure bias may further lead to the common response generation problem, such as "I don't know" and "HaHa?" In this paper, we propose a novel adaptive switching mechanism, which learns to automatically transit between ground-truth learning and generated learning regarding the word-level matching score, such as the cosine similarity. Experimental results on both Chinese STC dataset and English Reddit dataset, show that our adaptive method achieves a significant improvement in terms of metric-based evaluation and human evaluation, as compared with the state-of-the-art exposure bias approaches. Further analysis on NMT task also shows that our model can achieve a significant improvement.
+
+| Comments: | EMNLP2021                                                    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Human-Computer Interaction (cs.HC) |
+| Cite as:  | **[arXiv:2110.11560](https://arxiv.org/abs/2110.11560) [cs.CL]** |
+|           | (or **[arXiv:2110.11560v1](https://arxiv.org/abs/2110.11560v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-10-25-3">3. Lightweight Decoding Strategies for Increasing Specificity
+</h2>
+
+Title: [Lightweight Decoding Strategies for Increasing Specificity](https://arxiv.org/abs/2110.11850)
+
+Authors: [Katy Ilonka Gero](https://arxiv.org/search/cs?searchtype=author&query=Gero%2C+K+I), [Chris Kedzie](https://arxiv.org/search/cs?searchtype=author&query=Kedzie%2C+C), [Savvas Petridis](https://arxiv.org/search/cs?searchtype=author&query=Petridis%2C+S), [Lydia Chilton](https://arxiv.org/search/cs?searchtype=author&query=Chilton%2C+L)
+
+> Language models are known to produce vague and generic outputs. We propose two unsupervised decoding strategies based on either word-frequency or point-wise mutual information to increase the specificity of any model that outputs a probability distribution over its vocabulary at generation time. We test the strategies in a prompt completion task; with human evaluations, we find that both strategies increase the specificity of outputs with only modest decreases in sensibility. We also briefly present a summarization use case, where these strategies can produce more specific summaries.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2110.11850](https://arxiv.org/abs/2110.11850) [cs.CL]** |
+|           | (or **[arXiv:2110.11850v1](https://arxiv.org/abs/2110.11850v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-10-25-4">4. Deep learning-based NLP Data Pipeline for EHR Scanned Document Information Extraction
+</h2>
+
+Title: [Deep learning-based NLP Data Pipeline for EHR Scanned Document Information Extraction](https://arxiv.org/abs/2110.11864)
+
+Authors: [Enshuo Hsu](https://arxiv.org/search/cs?searchtype=author&query=Hsu%2C+E) (1, 3, and 4), [Ioannis Malagaris](https://arxiv.org/search/cs?searchtype=author&query=Malagaris%2C+I) (1), [Yong-Fang Kuo](https://arxiv.org/search/cs?searchtype=author&query=Kuo%2C+Y) (1), [Rizwana Sultana](https://arxiv.org/search/cs?searchtype=author&query=Sultana%2C+R) (2), [Kirk Roberts](https://arxiv.org/search/cs?searchtype=author&query=Roberts%2C+K) (3) ((1) Office of Biostatistics, (2) Division of Pulmonary, Critical Care and Sleep Medicine, Department of Internal Medicine, University of Texas Medical Branch, Galveston, Texas, USA. (3) School of Biomedical Informatics, University of Texas Health Science Center at Houston, Houston, Texas, USA. (4) Center for Outcomes Research, Houston Methodist, Houston, TX, USA.)
+
+> Scanned documents in electronic health records (EHR) have been a challenge for decades, and are expected to stay in the foreseeable future. Current approaches for processing often include image preprocessing, optical character recognition (OCR), and text mining. However, there is limited work that evaluates the choice of image preprocessing methods, the selection of NLP models, and the role of document layout. The impact of each element remains unknown. We evaluated this method on a use case of two key indicators for sleep apnea, Apnea hypopnea index (AHI) and oxygen saturation (SaO2) values, from scanned sleep study reports. Our data that included 955 manually annotated reports was secondarily utilized from a previous study in the University of Texas Medical Branch. We performed image preprocessing: gray-scaling followed by 1 iteration of dilating and erode, and 20% contrast increasing. The OCR was implemented with the Tesseract OCR engine. A total of seven Bag-of-Words models (Logistic Regression, Ridge Regression, Lasso Regression, Support Vector Machine, k-Nearest Neighbor, Naïve Bayes, and Random Forest) and three deep learning-based models (BiLSTM, BERT, and Clinical BERT) were evaluated. We also evaluated the combinations of image preprocessing methods (gray-scaling, dilate & erode, increased contrast by 20%, increased contrast by 60%), and two deep learning architectures (with and without structured input that provides document layout information). Our proposed method using Clinical BERT reached an AUROC of 0.9743 and document accuracy of 94.76% for AHI, and an AUROC of 0.9523, and document accuracy of 91.61% for SaO2. We demonstrated the proper use of image preprocessing and document layout could be beneficial to scanned document processing.
+
+| Comments: | 6 tables, 7 figures                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Computer Vision and Pattern Recognition (cs.CV) |
+| Cite as:  | **[arXiv:2110.11864](https://arxiv.org/abs/2110.11864) [cs.CL]** |
+|           | (or **[arXiv:2110.11864v1](https://arxiv.org/abs/2110.11864v1) [cs.CL]** for this version) |
+
+
+
+<h2 id="2021-10-25-5">5. Cleaning Dirty Books: Post-OCR Processing for Previously Scanned Texts
+</h2>
+
+Title: [Cleaning Dirty Books: Post-OCR Processing for Previously Scanned Texts](https://arxiv.org/abs/2110.11934)
+
+Authors: Cleaning Dirty Books: Post-OCR Processing for Previously Scanned Texts
+
+[Allen Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%2C+A), [Charuta Pethe](https://arxiv.org/search/cs?searchtype=author&query=Pethe%2C+C), [Naoya Inoue](https://arxiv.org/search/cs?searchtype=author&query=Inoue%2C+N), [Steve Skiena](https://arxiv.org/search/cs?searchtype=author&query=Skiena%2C+S)
+
+> Substantial amounts of work are required to clean large collections of digitized books for NLP analysis, both because of the presence of errors in the scanned text and the presence of duplicate volumes in the corpora. In this paper, we consider the issue of deduplication in the presence of optical character recognition (OCR) errors. We present methods to handle these errors, evaluated on a collection of 19,347 texts from the Project Gutenberg dataset and 96,635 texts from the HathiTrust Library. We demonstrate that improvements in language models now enable the detection and correction of OCR errors without consideration of the scanning image itself. The inconsistencies found by aligning pairs of scans of the same underlying work provides training data to build models for detecting and correcting errors. We identify the canonical version for each of 17,136 repeatedly-scanned books from 58,808 scans. Finally, we investigate methods to detect and correct errors in single-copy texts. We show that on average, our method corrects over six times as many errors as it introduces. We also provide interesting analysis on the relation between scanning quality and other factors such as location and publication year.
+
+| Comments: | Accepted for Findings of EMNLP 2021                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2110.11934](https://arxiv.org/abs/2110.11934) [cs.CL]** |
+|           | (or **[arXiv:2110.11934v1](https://arxiv.org/abs/2110.11934v1) [cs.CL]** for this version) |
+
 
 
 
