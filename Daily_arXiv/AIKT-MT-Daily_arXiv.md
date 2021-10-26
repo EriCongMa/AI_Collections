@@ -3,8 +3,16 @@
 # Index
 
 
-- [2021-10-25](#2021-10-25)
+- [2021-10-26](#2021-10-26)
 
+  - [1. Alignment Attention by Matching Key and Query Distributions](#2021-10-26-1)
+  - [2. Generating Watermarked Adversarial Texts](#2021-10-26-2)
+  - [3. PhoMT: A High-Quality and Large-Scale Benchmark Dataset for Vietnamese-English Machine Translation](#2021-10-26-3)
+  - [4. Sentence Punctuation for Collaborative Commentary Generation in Esports Live-Streaming](#2021-10-26-4)
+  - [5. Understanding the Impact of UGC Specificities on Translation Quality](#2021-10-26-5)
+  - [6. Noisy UGC Translation at the Character Level: Revisiting Open-Vocabulary Capabilities and Robustness of Char-Based Models](#2021-10-26-6)
+  - [7. Generating artificial texts as substitution or complement of training data](#2021-10-26-7)
+- [2021-10-25](#2021-10-25)
   - [1. VLDeformer: Learning Visual-Semantic Embeddings by Vision-Language Transformer Decomposing](#2021-10-25-1)
   - [2. Adaptive Bridge between Training and Inference for Dialogue](#2021-10-25-2)
   - [3. Lightweight Decoding Strategies for Increasing Specificity](#2021-10-25-3)
@@ -116,6 +124,145 @@
   - [1. Phonetic Word Embeddings](#2021-10-01-1)
   - [2. Improved statistical machine translation using monolingual paraphrases](#2021-10-01-2)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-10-26
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-10-26-1">1. Alignment Attention by Matching Key and Query Distributions
+</h2>
+
+Title: [Alignment Attention by Matching Key and Query Distributions](https://arxiv.org/abs/2110.12567)
+
+Authors: [Shujian Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+S), [Xinjie Fan](https://arxiv.org/search/cs?searchtype=author&query=Fan%2C+X), [Huangjie Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng%2C+H), [Korawat Tanwisuth](https://arxiv.org/search/cs?searchtype=author&query=Tanwisuth%2C+K), [Mingyuan Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+M)
+
+> The neural attention mechanism has been incorporated into deep neural networks to achieve state-of-the-art performance in various domains. Most such models use multi-head self-attention which is appealing for the ability to attend to information from different perspectives. This paper introduces alignment attention that explicitly encourages self-attention to match the distributions of the key and query within each head. The resulting alignment attention networks can be optimized as an unsupervised regularization in the existing attention framework. It is simple to convert any models with self-attention, including pre-trained ones, to the proposed alignment attention. On a variety of language understanding tasks, we show the effectiveness of our method in accuracy, uncertainty estimation, generalization across domains, and robustness to adversarial attacks. We further demonstrate the general applicability of our approach on graph attention and visual question answering, showing the great potential of incorporating our alignment method into various attention-related tasks.
+
+| Comments: | NeurIPS 2021; Our code is publicly available at [this https URL](https://github.com/szhang42/alignment_attention) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL); Machine Learning (stat.ML) |
+| Cite as:  | **[arXiv:2110.12567](https://arxiv.org/abs/2110.12567) [cs.LG]** |
+|           | (or **[arXiv:2110.12567v1](https://arxiv.org/abs/2110.12567v1) [cs.LG]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-10-26-2">2. Generating Watermarked Adversarial Texts
+</h2>
+
+Title: [Generating Watermarked Adversarial Texts](https://arxiv.org/abs/2110.12948)
+
+Authors: [Mingjie Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+M), [Hanzhou Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+H), [Xinpeng Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+X)
+
+> Adversarial example generation has been a hot spot in recent years because it can cause deep neural networks (DNNs) to misclassify the generated adversarial examples, which reveals the vulnerability of DNNs, motivating us to find good solutions to improve the robustness of DNN models. Due to the extensiveness and high liquidity of natural language over the social networks, various natural language based adversarial attack algorithms have been proposed in the literature. These algorithms generate adversarial text examples with high semantic quality. However, the generated adversarial text examples may be maliciously or illegally used. In order to tackle with this problem, we present a general framework for generating watermarked adversarial text examples. For each word in a given text, a set of candidate words are determined to ensure that all the words in the set can be used to either carry secret bits or facilitate the construction of adversarial example. By applying a word-level adversarial text generation algorithm, the watermarked adversarial text example can be finally generated. Experiments show that the adversarial text examples generated by the proposed method not only successfully fool advanced DNN models, but also carry a watermark that can effectively verify the ownership and trace the source of the adversarial examples. Moreover, the watermark can still survive after attacked with adversarial example generation algorithms, which has shown the applicability and superiority.
+
+| Comments: | [this https URL](https://scholar.google.com/citations?user=IdiF7M0AAAAJ&hl=en) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Cryptography and Security (cs.CR)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2110.12948](https://arxiv.org/abs/2110.12948) [cs.CR]** |
+|           | (or **[arXiv:2110.12948v1](https://arxiv.org/abs/2110.12948v1) [cs.CR]** for this version) |
+
+
+
+
+
+<h2 id="2021-10-26-3">3. PhoMT: A High-Quality and Large-Scale Benchmark Dataset for Vietnamese-English Machine Translation
+</h2>
+
+Title: [PhoMT: A High-Quality and Large-Scale Benchmark Dataset for Vietnamese-English Machine Translation](https://arxiv.org/abs/2110.12199)
+
+Authors: [Long Doan](https://arxiv.org/search/cs?searchtype=author&query=Doan%2C+L), [Linh The Nguyen](https://arxiv.org/search/cs?searchtype=author&query=Nguyen%2C+L+T), [Nguyen Luong Tran](https://arxiv.org/search/cs?searchtype=author&query=Tran%2C+N+L), [Thai Hoang](https://arxiv.org/search/cs?searchtype=author&query=Hoang%2C+T), [Dat Quoc Nguyen](https://arxiv.org/search/cs?searchtype=author&query=Nguyen%2C+D+Q)
+
+> We introduce a high-quality and large-scale Vietnamese-English parallel dataset of 3.02M sentence pairs, which is 2.9M pairs larger than the benchmark Vietnamese-English machine translation corpus IWSLT15. We conduct experiments comparing strong neural baselines and well-known automatic translation engines on our dataset and find that in both automatic and human evaluations: the best performance is obtained by fine-tuning the pre-trained sequence-to-sequence denoising auto-encoder mBART. To our best knowledge, this is the first large-scale Vietnamese-English machine translation study. We hope our publicly available dataset and study can serve as a starting point for future research and applications on Vietnamese-English machine translation.
+
+| Comments: | To appear in Proceedings of EMNLP 2021 (main conference). The first three authors contribute equally to this work |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2110.12199](https://arxiv.org/abs/2110.12199) [cs.CL]** |
+|           | (or **[arXiv:2110.12199v1](https://arxiv.org/abs/2110.12199v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-10-26-4">4. Sentence Punctuation for Collaborative Commentary Generation in Esports Live-Streaming
+</h2>
+
+Title: [Sentence Punctuation for Collaborative Commentary Generation in Esports Live-Streaming](https://arxiv.org/abs/2110.12416)
+
+Authors: [Hong Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+H), [Junjie H. Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+J+H), [Xiaoling Ling](https://arxiv.org/search/cs?searchtype=author&query=Ling%2C+X), [Pujana Paliyawan](https://arxiv.org/search/cs?searchtype=author&query=Paliyawan%2C+P)
+
+> To solve the existing sentence punctuation problem for collaborative commentary generation in Esports live-streaming, this paper presents two strategies for sentence punctuation for text sequences of game commentary, that is, punctuating sentences by two or three text sequence(s) originally punctuated by Youtube to obtain a complete sentence of commentary. We conducted comparative experiments utilizing and fine-tuning a state-of-the-art pre-trained generative language model among two strategies and the baseline to generate collaborative commentary. Both objective evaluations by automatic metrics and subjective analyses showed that our strategy of punctuating sentences by two text sequences outperformed the baseline.
+
+| Comments: | 2 pages, review manuscript, accepted by IEEE ICCE 2022       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Multimedia (cs.MM)     |
+| Cite as:  | **[arXiv:2110.12416](https://arxiv.org/abs/2110.12416) [cs.CL]** |
+|           | (or **[arXiv:2110.12416v1](https://arxiv.org/abs/2110.12416v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-10-26-5">5. Understanding the Impact of UGC Specificities on Translation Quality
+</h2>
+
+Title: [Understanding the Impact of UGC Specificities on Translation Quality](https://arxiv.org/abs/2110.12551)
+
+Authors: [José Carlos Rosales Núñez](https://arxiv.org/search/cs?searchtype=author&query=Núñez%2C+J+C+R), [Djamé Seddah](https://arxiv.org/search/cs?searchtype=author&query=Seddah%2C+D), [Guillaume Wisniewski](https://arxiv.org/search/cs?searchtype=author&query=Wisniewski%2C+G)
+
+> This work takes a critical look at the evaluation of user-generated content automatic translation, the well-known specificities of which raise many challenges for MT. Our analyses show that measuring the average-case performance using a standard metric on a UGC test set falls far short of giving a reliable image of the UGC translation quality. That is why we introduce a new data set for the evaluation of UGC translation in which UGC specificities have been manually annotated using a fine-grained typology. Using this data set, we conduct several experiments to measure the impact of different kinds of UGC specificities on translation quality, more precisely than previously possible.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2110.12551](https://arxiv.org/abs/2110.12551) [cs.CL]** |
+|           | (or **[arXiv:2110.12551v1](https://arxiv.org/abs/2110.12551v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-10-26-6">6. Noisy UGC Translation at the Character Level: Revisiting Open-Vocabulary Capabilities and Robustness of Char-Based Models
+</h2>
+
+Title: [Noisy UGC Translation at the Character Level: Revisiting Open-Vocabulary Capabilities and Robustness of Char-Based Models](https://arxiv.org/abs/2110.12552)
+
+Authors: [José Carlos Rosales Núñez](https://arxiv.org/search/cs?searchtype=author&query=Núñez%2C+J+C+R), [Guillaume Wisniewski](https://arxiv.org/search/cs?searchtype=author&query=Wisniewski%2C+G), [Djamé Seddah](https://arxiv.org/search/cs?searchtype=author&query=Seddah%2C+D)
+
+> This work explores the capacities of character-based Neural Machine Translation to translate noisy User-Generated Content (UGC) with a strong focus on exploring the limits of such approaches to handle productive UGC phenomena, which almost by definition, cannot be seen at training time. Within a strict zero-shot scenario, we first study the detrimental impact on translation performance of various user-generated content phenomena on a small annotated dataset we developed, and then show that such models are indeed incapable of handling unknown letters, which leads to catastrophic translation failure once such characters are encountered. We further confirm this behavior with a simple, yet insightful, copy task experiment and highlight the importance of reducing the vocabulary size hyper-parameter to increase the robustness of character-based models for machine translation.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2110.12552](https://arxiv.org/abs/2110.12552) [cs.CL]** |
+|           | (or **[arXiv:2110.12552v1](https://arxiv.org/abs/2110.12552v1) [cs.CL]** for this version) |
+
+
+
+<h2 id="2021-10-26-7">7. Generating artificial texts as substitution or complement of training data
+</h2>
+
+Title: [Generating artificial texts as substitution or complement of training data](https://arxiv.org/abs/2110.13016)
+
+Authors: [Vincent Claveau](https://arxiv.org/search/cs?searchtype=author&query=Claveau%2C+V), [Antoine Chaffin](https://arxiv.org/search/cs?searchtype=author&query=Chaffin%2C+A), [Ewa Kijak](https://arxiv.org/search/cs?searchtype=author&query=Kijak%2C+E)
+
+> The quality of artificially generated texts has considerably improved with the advent of transformers. The question of using these models to generate learning data for supervised learning tasks naturally arises. In this article, this question is explored under 3 aspects: (i) are artificial data an efficient complement? (ii) can they replace the original data when those are not available or cannot be distributed for confidentiality reasons? (iii) can they improve the explainability of classifiers? Different experiments are carried out on Web-related classification tasks -- namely sentiment analysis on product reviews and Fake News detection -- using artificially generated data by fine-tuned GPT-2 models. The results show that such artificial data can be used in a certain extend but require pre-processing to significantly improve performance. We show that bag-of-word approaches benefit the most from such data augmentation.
+
+| Comments: | 8 pages                                                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Information Retrieval (cs.IR) |
+| Cite as:  | **[arXiv:2110.13016](https://arxiv.org/abs/2110.13016) [cs.CL]** |
+|           | (or **[arXiv:2110.13016v1](https://arxiv.org/abs/2110.13016v1) [cs.CL]** for this version) |
+
+
 
 
 
