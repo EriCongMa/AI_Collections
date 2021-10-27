@@ -3,6 +3,13 @@
 # Index
 
 
+- [2021-10-27](#2021-10-27)
+
+  - [1. Hierarchical Transformers Are More Efficient Language Models](#2021-10-27-1)
+  - [2. AVocaDo: Strategy for Adapting Vocabulary to Downstream Domain](#2021-10-27-2)
+  - [3. Simultaneous Neural Machine Translation with Constituent Label Prediction](#2021-10-27-3)
+  - [4. s2s-ft: Fine-Tuning Pretrained Transformer Encoders for Sequence-to-Sequence Learning](#2021-10-27-4)
+  - [5. Assessing Evaluation Metrics for Speech-to-Speech Translation](#2021-10-27-5)
 - [2021-10-26](#2021-10-26)
 
   - [1. Alignment Attention by Matching Key and Query Distributions](#2021-10-26-1)
@@ -124,6 +131,106 @@
   - [1. Phonetic Word Embeddings](#2021-10-01-1)
   - [2. Improved statistical machine translation using monolingual paraphrases](#2021-10-01-2)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-10-27
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-10-27-1">1. Hierarchical Transformers Are More Efficient Language Models
+</h2>
+
+Title: [Hierarchical Transformers Are More Efficient Language Models](https://arxiv.org/abs/2110.13711)
+
+Authors: [Piotr Nawrot](https://arxiv.org/search/cs?searchtype=author&query=Nawrot%2C+P), [Szymon Tworkowski](https://arxiv.org/search/cs?searchtype=author&query=Tworkowski%2C+S), [Michał Tyrolski](https://arxiv.org/search/cs?searchtype=author&query=Tyrolski%2C+M), [Łukasz Kaiser](https://arxiv.org/search/cs?searchtype=author&query=Kaiser%2C+Ł), [Yuhuai Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+Y), [Christian Szegedy](https://arxiv.org/search/cs?searchtype=author&query=Szegedy%2C+C), [Henryk Michalewski](https://arxiv.org/search/cs?searchtype=author&query=Michalewski%2C+H)
+
+> Transformer models yield impressive results on many NLP and sequence modeling tasks. Remarkably, Transformers can handle long sequences which allows them to produce long coherent outputs: full paragraphs produced by GPT-3 or well-structured images produced by DALL-E. These large language models are impressive but also very inefficient and costly, which limits their applications and accessibility. We postulate that having an explicit hierarchical architecture is the key to Transformers that efficiently handle long sequences. To verify this claim, we first study different ways to downsample and upsample activations in Transformers so as to make them hierarchical. We use the best performing upsampling and downsampling layers to create Hourglass - a hierarchical Transformer language model. Hourglass improves upon the Transformer baseline given the same amount of computation and can yield the same results as Transformers more efficiently. In particular, Hourglass sets new state-of-the-art for Transformer models on the ImageNet32 generation task and improves language modeling efficiency on the widely studied enwik8 benchmark.
+
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2110.13711](https://arxiv.org/abs/2110.13711) [cs.LG]** |
+|           | (or **[arXiv:2110.13711v1](https://arxiv.org/abs/2110.13711v1) [cs.LG]** for this version) |
+
+
+
+
+
+<h2 id="2021-10-27-2">2. AVocaDo: Strategy for Adapting Vocabulary to Downstream Domain
+</h2>
+
+Title: [AVocaDo: Strategy for Adapting Vocabulary to Downstream Domain](https://arxiv.org/abs/2110.13434)
+
+Authors: [Jimin Hong](https://arxiv.org/search/cs?searchtype=author&query=Hong%2C+J), [Taehee Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%2C+T), [Hyesu Lim](https://arxiv.org/search/cs?searchtype=author&query=Lim%2C+H), [Jaegul Choo](https://arxiv.org/search/cs?searchtype=author&query=Choo%2C+J)
+
+> During the fine-tuning phase of transfer learning, the pretrained vocabulary remains unchanged, while model parameters are updated. The vocabulary generated based on the pretrained data is suboptimal for downstream data when domain discrepancy exists. We propose to consider the vocabulary as an optimizable parameter, allowing us to update the vocabulary by expanding it with domain-specific vocabulary based on a tokenization statistic. Furthermore, we preserve the embeddings of the added words from overfitting to downstream data by utilizing knowledge learned from a pretrained language model with a regularization term. Our method achieved consistent performance improvements on diverse domains (i.e., biomedical, computer science, news, and reviews).
+
+| Comments: | EMNLP2021 Accepted                                           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2110.13434](https://arxiv.org/abs/2110.13434) [cs.CL]** |
+|           | (or **[arXiv:2110.13434v1](https://arxiv.org/abs/2110.13434v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-10-27-3">3. Simultaneous Neural Machine Translation with Constituent Label Prediction
+</h2>
+
+Title: [Simultaneous Neural Machine Translation with Constituent Label Prediction](https://arxiv.org/abs/2110.13480)
+
+Authors: [Yasumasa Kano](https://arxiv.org/search/cs?searchtype=author&query=Kano%2C+Y), [Katsuhito Sudoh](https://arxiv.org/search/cs?searchtype=author&query=Sudoh%2C+K), [Satoshi Nakamura](https://arxiv.org/search/cs?searchtype=author&query=Nakamura%2C+S)
+
+> Simultaneous translation is a task in which translation begins before the speaker has finished speaking, so it is important to decide when to start the translation process. However, deciding whether to read more input words or start to translate is difficult for language pairs with different word orders such as English and Japanese. Motivated by the concept of pre-reordering, we propose a couple of simple decision rules using the label of the next constituent predicted by incremental constituent label prediction. In experiments on English-to-Japanese simultaneous translation, the proposed method outperformed baselines in the quality-latency trade-off.
+
+| Comments: | WMT2021                                                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2110.13480](https://arxiv.org/abs/2110.13480) [cs.CL]** |
+|           | (or **[arXiv:2110.13480v1](https://arxiv.org/abs/2110.13480v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-10-27-4">4. s2s-ft: Fine-Tuning Pretrained Transformer Encoders for Sequence-to-Sequence Learning
+</h2>
+
+Title: [s2s-ft: Fine-Tuning Pretrained Transformer Encoders for Sequence-to-Sequence Learning](https://arxiv.org/abs/2110.13640)
+
+Authors: [Hangbo Bao](https://arxiv.org/search/cs?searchtype=author&query=Bao%2C+H), [Li Dong](https://arxiv.org/search/cs?searchtype=author&query=Dong%2C+L), [Wenhui Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+W), [Nan Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+N), [Furu Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+F)
+
+> Pretrained bidirectional Transformers, such as BERT, have achieved significant improvements in a wide variety of language understanding tasks, while it is not straightforward to directly apply them for natural language generation. In this paper, we present a sequence-to-sequence fine-tuning toolkit s2s-ft, which adopts pretrained Transformers for conditional generation tasks. Inspired by UniLM, we implement three sequence-to-sequence fine-tuning algorithms, namely, causal fine-tuning, masked fine-tuning, and pseudo-masked fine-tuning. By leveraging the existing pretrained bidirectional Transformers, experimental results show that s2s-ft achieves strong performance on several benchmarks of abstractive summarization, and question generation. Moreover, we demonstrate that the package s2s-ft supports both monolingual and multilingual NLG tasks. The s2s-ft toolkit is available at [this https URL](https://github.com/microsoft/unilm/tree/master/s2s-ft).
+
+| Comments: | Demo paper for the s2s-ft toolkit: [this https URL](https://github.com/microsoft/unilm/tree/master/s2s-ft) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2110.13640](https://arxiv.org/abs/2110.13640) [cs.CL]** |
+|           | (or **[arXiv:2110.13640v1](https://arxiv.org/abs/2110.13640v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-10-27-5">5. Assessing Evaluation Metrics for Speech-to-Speech Translation
+</h2>
+
+Title: [Assessing Evaluation Metrics for Speech-to-Speech Translation](https://arxiv.org/abs/2110.13877)
+
+Authors: [Elizabeth Salesky](https://arxiv.org/search/cs?searchtype=author&query=Salesky%2C+E), [Julian Mäder](https://arxiv.org/search/cs?searchtype=author&query=Mäder%2C+J), [Severin Klinger](https://arxiv.org/search/cs?searchtype=author&query=Klinger%2C+S)
+
+> Speech-to-speech translation combines machine translation with speech synthesis, introducing evaluation challenges not present in either task alone. How to automatically evaluate speech-to-speech translation is an open question which has not previously been explored. Translating to speech rather than to text is often motivated by unwritten languages or languages without standardized orthographies. However, we show that the previously used automatic metric for this task is best equipped for standardized high-resource languages only. In this work, we first evaluate current metrics for speech-to-speech translation, and second assess how translation to dialectal variants rather than to standardized languages impacts various evaluation methods.
+
+| Comments: | ASRU 2021                                                    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2110.13877](https://arxiv.org/abs/2110.13877) [cs.CL]** |
+|           | (or **[arXiv:2110.13877v1](https://arxiv.org/abs/2110.13877v1) [cs.CL]** for this version) |
+
+
 
 
 
