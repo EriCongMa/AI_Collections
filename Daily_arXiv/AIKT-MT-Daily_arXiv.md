@@ -3,8 +3,13 @@
 # Index
 
 
-- [2021-10-27](#2021-10-27)
+- [2021-10-29](#2021-10-29)
 
+  - [1. Generating Table Vector Representations](#2021-10-29-1)
+  - [2. Fine Grained Human Evaluation for English-to-Chinese Machine Translation: A Case Study on Scientific Text](#2021-10-29-2)
+  - [3. Diversity-Driven Combination for Grammatical Error Correction](#2021-10-29-3)
+  - [4. Bridge the Gap Between CV and NLP! A Gradient-based Textual Adversarial Attack Framework](#2021-10-29-4)
+- [2021-10-27](#2021-10-27)
   - [1. Hierarchical Transformers Are More Efficient Language Models](#2021-10-27-1)
   - [2. AVocaDo: Strategy for Adapting Vocabulary to Downstream Domain](#2021-10-27-2)
   - [3. Simultaneous Neural Machine Translation with Constituent Label Prediction](#2021-10-27-3)
@@ -131,6 +136,89 @@
   - [1. Phonetic Word Embeddings](#2021-10-01-1)
   - [2. Improved statistical machine translation using monolingual paraphrases](#2021-10-01-2)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-10-29
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-10-29-1">1. Generating Table Vector Representations
+</h2>
+
+Title: [Generating Table Vector Representations](https://arxiv.org/abs/2110.15132)
+
+Authors: [Aneta Koleva](https://arxiv.org/search/cs?searchtype=author&query=Koleva%2C+A), [Martin Ringsquandl](https://arxiv.org/search/cs?searchtype=author&query=Ringsquandl%2C+M), [Mitchell Joblin](https://arxiv.org/search/cs?searchtype=author&query=Joblin%2C+M), [Volker Tresp](https://arxiv.org/search/cs?searchtype=author&query=Tresp%2C+V)
+
+> High-quality Web tables are rich sources of information that can be used to populate Knowledge Graphs (KG). The focus of this paper is an evaluation of methods for table-to-class annotation, which is a sub-task of Table Interpretation (TI). We provide a formal definition for table classification as a machine learning task. We propose an experimental setup and we evaluate 5 fundamentally different approaches to find the best method for generating vector table representations. Our findings indicate that although transfer learning methods achieve high F1 score on the table classification task, dedicated table encoding models are a promising direction as they appear to capture richer semantics.
+
+| Comments: | Accepted at DL4KF@ISWC                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2110.15132](https://arxiv.org/abs/2110.15132) [cs.LG]** |
+|           | (or **[arXiv:2110.15132v1](https://arxiv.org/abs/2110.15132v1) [cs.LG]** for this version) |
+
+
+
+
+
+<h2 id="2021-10-29-2">2. Fine Grained Human Evaluation for English-to-Chinese Machine Translation: A Case Study on Scientific Text
+</h2>
+
+Title: [Fine Grained Human Evaluation for English-to-Chinese Machine Translation: A Case Study on Scientific Text](https://arxiv.org/abs/2110.14766)
+
+Authors: [Ming Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+M), [He Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+H), [Guanhao Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+G)
+
+> Recent research suggests that neural machine translation (MT) in the news domain has reached human-level performance, but for other professional domains, it is far below the level. In this paper, we conduct a fine-grained systematic human evaluation for four widely used Chinese-English NMT systems on scientific abstracts which are collected from published journals and books. Our human evaluation results show that all the systems return with more than 10\% error rates on average, which requires much post editing effort for real academic use. Furthermore, we categorize six main error types and and provide some real examples. Our findings emphasise the needs that research attention in the MT community should be shifted from short text generic translation to professional machine translation and build large scale bilingual corpus for these specific domains.
+
+| Comments: | 12 pages, 3 tables                                           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2110.14766](https://arxiv.org/abs/2110.14766) [cs.CL]** |
+|           | (or **[arXiv:2110.14766v1](https://arxiv.org/abs/2110.14766v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-10-29-3">3. Diversity-Driven Combination for Grammatical Error Correction
+</h2>
+
+Title: [Diversity-Driven Combination for Grammatical Error Correction](https://arxiv.org/abs/2110.15149)
+
+Authors: [Wenjuan Han](https://arxiv.org/search/cs?searchtype=author&query=Han%2C+W), [Hwee Tou Ng](https://arxiv.org/search/cs?searchtype=author&query=Ng%2C+H+T)
+
+> Grammatical error correction (GEC) is the task of detecting and correcting errors in a written text. The idea of combining multiple system outputs has been successfully used in GEC. To achieve successful system combination, multiple component systems need to produce corrected sentences that are both diverse and of comparable quality. However, most existing state-of-the-art GEC approaches are based on similar sequence-to-sequence neural networks, so the gains are limited from combining the outputs of component systems similar to one another. In this paper, we present Diversity-Driven Combination (DDC) for GEC, a system combination strategy that encourages diversity among component systems. We evaluate our system combination strategy on the CoNLL-2014 shared task and the BEA-2019 shared task. On both benchmarks, DDC achieves significant performance gain with a small number of training examples and outperforms the component systems by a large margin. Our source code is available at [this https URL](https://github.com/nusnlp/gec-ddc).
+
+| Comments: | Accepted by ICTAI 2021                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2110.15149](https://arxiv.org/abs/2110.15149) [cs.CL]** |
+|           | (or **[arXiv:2110.15149v1](https://arxiv.org/abs/2110.15149v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-10-29-4">4. Bridge the Gap Between CV and NLP! A Gradient-based Textual Adversarial Attack Framework
+</h2>
+
+Title: [Bridge the Gap Between CV and NLP! A Gradient-based Textual Adversarial Attack Framework](https://arxiv.org/abs/2110.15317)
+
+Authors: [Lifan Yuan](https://arxiv.org/search/cs?searchtype=author&query=Yuan%2C+L), [Yichi Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Y), [Yangyi Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+Y), [Wei Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+W)
+
+> Despite great success on many machine learning tasks, deep neural networks are still vulnerable to adversarial samples. While gradient-based adversarial attack methods are well-explored in the field of computer vision, it is impractical to directly apply them in natural language processing due to the discrete nature of text. To bridge this gap, we propose a general framework to adapt existing gradient-based methods to craft textual adversarial samples. In this framework, gradient-based continuous perturbations are added to the embedding layer and are amplified in the forward propagation process. Then the final perturbed latent representations are decoded with a mask language model head to obtain potential adversarial samples. In this paper, we instantiate our framework with \textbf{T}extual \textbf{P}rojected \textbf{G}radient \textbf{D}escent (\textbf{TPGD}). We conduct comprehensive experiments to evaluate our framework by performing transfer black-box attacks on BERT, RoBERTa and ALBERT on three benchmark datasets. Experimental results demonstrate our method achieves an overall better performance and produces more fluent and grammatical adversarial samples compared to strong baseline methods. All the code and data will be made public.
+
+| Comments: | Work on progress                                             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Cryptography and Security (cs.CR); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2110.15317](https://arxiv.org/abs/2110.15317) [cs.CL]** |
+|           | (or **[arXiv:2110.15317v1](https://arxiv.org/abs/2110.15317v1) [cs.CL]** for this version) |
+
+
+
 
 
 
