@@ -3,6 +3,15 @@
 # Index
 
 
+- [2021-11-02](#2021-11-02)
+
+  - [1. Introspective Distillation for Robust Question Answering](#2021-11-02-1)
+  - [2. TransAug: Translate as Augmentation for Sentence Embeddings](#2021-11-02-2)
+  - [3. How should human translation coexist with NMT? Efficient tool for building high quality parallel corpus](#2021-11-02-3)
+  - [4. Visualization: the missing factor in Simultaneous Speech Translation](#2021-11-02-4)
+  - [5. Quality Estimation Using Round-trip Translation with Sentence Embeddings](#2021-11-02-5)
+  - [6. Unsupervised Domain Adaptation with Adapter](#2021-11-02-6)
+  - [7. Interpretable contrastive word mover's embedding](#2021-11-02-7)
 - [2021-11-01](#2021-11-01)
   - [1. Decision Attentive Regularization to Improve Simultaneous Speech Translation Systems](#2021-11-01-1)
   - [2. Analysing the Effect of Masking Length Distribution of MLM: An Evaluation Framework and Case Study on Chinese MRC Datasets](#2021-11-01-2)
@@ -10,8 +19,145 @@
   - [4. Batch-Softmax Contrastive Loss for Pairwise Sentence Scoring Tasks](#2021-11-01-4)
   - [5. BERMo: What can BERT learn from ELMo?](#2021-11-01-5)
   - [6. MetaICL: Learning to Learn In Context](#2021-11-01-6)
-
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-11-02
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-11-02-1">1. Introspective Distillation for Robust Question Answering
+</h2>
+
+Title: [Introspective Distillation for Robust Question Answering](https://arxiv.org/abs/2111.01026)
+
+Authors: [Yulei Niu](https://arxiv.org/search/cs?searchtype=author&query=Niu%2C+Y), [Hanwang Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+H)
+
+> Question answering (QA) models are well-known to exploit data bias, e.g., the language prior in visual QA and the position bias in reading comprehension. Recent debiasing methods achieve good out-of-distribution (OOD) generalizability with a considerable sacrifice of the in-distribution (ID) performance. Therefore, they are only applicable in domains where the test distribution is known in advance. In this paper, we present a novel debiasing method called Introspective Distillation (IntroD) to make the best of both worlds for QA. Our key technical contribution is to blend the inductive bias of OOD and ID by introspecting whether a training sample fits in the factual ID world or the counterfactual OOD one. Experiments on visual QA datasets VQA v2, VQA-CP, and reading comprehension dataset SQuAD demonstrate that our proposed IntroD maintains the competitive OOD performance compared to other debiasing methods, while sacrificing little or even achieving better ID performance compared to the non-debiasing ones.
+
+| Comments: | Accepted by NeurIPS 2021                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2111.01026](https://arxiv.org/abs/2111.01026) [cs.CV]** |
+|           | (or **[arXiv:2111.01026v1](https://arxiv.org/abs/2111.01026v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-11-02-2">2. TransAug: Translate as Augmentation for Sentence Embeddings
+</h2>
+
+Title: [TransAug: Translate as Augmentation for Sentence Embeddings](https://arxiv.org/abs/2111.00157)
+
+Authors: [Jue Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+J), [Haofan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+H), [Xing Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+X), [Chaochen Gao](https://arxiv.org/search/cs?searchtype=author&query=Gao%2C+C), [Debing Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+D)
+
+> While contrastive learning greatly advances the representation of sentence embeddings, it is still limited by the size of the existing sentence datasets. In this paper, we present TransAug (Translate as Augmentation), which provide the first exploration of utilizing translated sentence pairs as data augmentation for text, and introduce a two-stage paradigm to advances the state-of-the-art sentence embeddings. Instead of adopting an encoder trained in other languages setting, we first distill a Chinese encoder from a SimCSE encoder (pretrained in English), so that their embeddings are close in semantic space, which can be regraded as implicit data augmentation. Then, we only update the English encoder via cross-lingual contrastive learning and frozen the distilled Chinese encoder. Our approach achieves a new state-of-art on standard semantic textual similarity (STS), outperforming both SimCSE and Sentence-T5, and the best performance in corresponding tracks on transfer tasks evaluated by SentEval.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2111.00157](https://arxiv.org/abs/2111.00157) [cs.CL]** |
+|           | (or **[arXiv:2111.00157v1](https://arxiv.org/abs/2111.00157v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-11-02-3">3. How should human translation coexist with NMT? Efficient tool for building high quality parallel corpus
+</h2>
+
+Title: [How should human translation coexist with NMT? Efficient tool for building high quality parallel corpus](https://arxiv.org/abs/2111.00191)
+
+Authors: [Chanjun Park](https://arxiv.org/search/cs?searchtype=author&query=Park%2C+C), [Seolhwa Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+S), [Hyeonseok Moon](https://arxiv.org/search/cs?searchtype=author&query=Moon%2C+H), [Sugyeong Eo](https://arxiv.org/search/cs?searchtype=author&query=Eo%2C+S), [Jaehyung Seo](https://arxiv.org/search/cs?searchtype=author&query=Seo%2C+J), [Heuiseok Lim](https://arxiv.org/search/cs?searchtype=author&query=Lim%2C+H)
+
+> This paper proposes a tool for efficiently constructing high-quality parallel corpora with minimizing human labor and making this tool publicly available. Our proposed construction process is based on neural machine translation (NMT) to allow for it to not only coexist with human translation, but also improve its efficiency by combining data quality control with human translation in a data-centric approach.
+
+| Comments: | Accepted for Data-centric AI workshop at NeurIPS 2021        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2111.00191](https://arxiv.org/abs/2111.00191) [cs.CL]** |
+|           | (or **[arXiv:2111.00191v1](https://arxiv.org/abs/2111.00191v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-11-02-4">4. Visualization: the missing factor in Simultaneous Speech Translation
+</h2>
+
+Title: [Visualization: the missing factor in Simultaneous Speech Translation](https://arxiv.org/abs/2111.00514)
+
+Authors: [Sara Papi](https://arxiv.org/search/cs?searchtype=author&query=Papi%2C+S), [Matteo Negri](https://arxiv.org/search/cs?searchtype=author&query=Negri%2C+M), [Marco Turchi](https://arxiv.org/search/cs?searchtype=author&query=Turchi%2C+M)
+
+> Simultaneous speech translation (SimulST) is the task in which output generation has to be performed on partial, incremental speech input. In recent years, SimulST has become popular due to the spread of cross-lingual application scenarios, like international live conferences and streaming lectures, in which on-the-fly speech translation can facilitate users' access to audio-visual content. In this paper, we analyze the characteristics of the SimulST systems developed so far, discussing their strengths and weaknesses. We then concentrate on the evaluation framework required to properly assess systems' effectiveness. To this end, we raise the need for a broader performance analysis, also including the user experience standpoint. SimulST systems, indeed, should be evaluated not only in terms of quality/latency measures, but also via task-oriented metrics accounting, for instance, for the visualization strategy adopted. In light of this, we highlight which are the goals achieved by the community and what is still missing.
+
+| Comments: | Accepted at CLIC-it 2021                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2111.00514](https://arxiv.org/abs/2111.00514) [cs.CL]** |
+|           | (or **[arXiv:2111.00514v1](https://arxiv.org/abs/2111.00514v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-11-02-5">5. Quality Estimation Using Round-trip Translation with Sentence Embeddings
+</h2>
+
+Title: [Quality Estimation Using Round-trip Translation with Sentence Embeddings](https://arxiv.org/abs/2111.00554)
+
+Authors: [Nathan Crone](https://arxiv.org/search/cs?searchtype=author&query=Crone%2C+N), [Adam Power](https://arxiv.org/search/cs?searchtype=author&query=Power%2C+A), [John Weldon](https://arxiv.org/search/cs?searchtype=author&query=Weldon%2C+J)
+
+> Estimating the quality of machine translation systems has been an ongoing challenge for researchers in this field. Many previous attempts at using round-trip translation as a measure of quality have failed, and there is much disagreement as to whether it can be a viable method of quality estimation. In this paper, we revisit round-trip translation, proposing a system which aims to solve the previous pitfalls found with the approach. Our method makes use of recent advances in language representation learning to more accurately gauge the similarity between the original and round-trip translated sentences. Experiments show that while our approach does not reach the performance of current state of the art methods, it may still be an effective approach for some language pairs.
+
+| Comments: | 10 pages, 5 figures                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2111.00554](https://arxiv.org/abs/2111.00554) [cs.CL]** |
+|           | (or **[arXiv:2111.00554v1](https://arxiv.org/abs/2111.00554v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-11-02-6">6. Unsupervised Domain Adaptation with Adapter
+</h2>
+
+Title: [Unsupervised Domain Adaptation with Adapter](https://arxiv.org/abs/2111.00667)
+
+Authors: [Rongsheng Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+R), [Yinhe Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng%2C+Y), [Xiaoxi Mao](https://arxiv.org/search/cs?searchtype=author&query=Mao%2C+X), [Minlie Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+M)
+
+> Unsupervised domain adaptation (UDA) with pre-trained language models (PrLM) has achieved promising results since these pre-trained models embed generic knowledge learned from various domains. However, fine-tuning all the parameters of the PrLM on a small domain-specific corpus distort the learned generic knowledge, and it is also expensive to deployment a whole fine-tuned PrLM for each domain. This paper explores an adapter-based fine-tuning approach for unsupervised domain adaptation. Specifically, several trainable adapter modules are inserted in a PrLM, and the embedded generic knowledge is preserved by fixing the parameters of the original PrLM at fine-tuning. A domain-fusion scheme is introduced to train these adapters using a mix-domain corpus to better capture transferable features. Elaborated experiments on two benchmark datasets are carried out, and the results demonstrate that our approach is effective with different tasks, dataset sizes, and domain similarities.
+
+| Comments: | Accepted by NeurIPS2021 workshop                             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2111.00667](https://arxiv.org/abs/2111.00667) [cs.CL]** |
+|           | (or **[arXiv:2111.00667v1](https://arxiv.org/abs/2111.00667v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-11-02-7">7. Interpretable contrastive word mover's embedding
+</h2>
+
+Title: [Interpretable contrastive word mover's embedding](https://arxiv.org/abs/2111.01023)
+
+Authors: [Ruijie Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+R), [Julia Gouvea](https://arxiv.org/search/cs?searchtype=author&query=Gouvea%2C+J), [Eric Miller](https://arxiv.org/search/cs?searchtype=author&query=Miller%2C+E), [David Hammer](https://arxiv.org/search/cs?searchtype=author&query=Hammer%2C+D), [Shuchin Aeron](https://arxiv.org/search/cs?searchtype=author&query=Aeron%2C+S)
+
+> This paper shows that a popular approach to the supervised embedding of documents for classification, namely, contrastive Word Mover's Embedding, can be significantly enhanced by adding interpretability. This interpretability is achieved by incorporating a clustering promoting mechanism into the contrastive loss. On several public datasets, we show that our method improves significantly upon existing baselines while providing interpretation to the clusters via identifying a set of keywords that are the most representative of a particular class. Our approach was motivated in part by the need to develop Natural Language Processing (NLP) methods for the \textit{novel problem of assessing student work for scientific writing and thinking} - a problem that is central to the area of (educational) Learning Sciences (LS). In this context, we show that our approach leads to a meaningful assessment of the student work related to lab reports from a biology class and can help LS researchers gain insights into student understanding and assess evidence of scientific thought processes.
+
+| Comments: | 8 pages, 4 figures                                           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2111.01023](https://arxiv.org/abs/2111.01023) [cs.CL]** |
+|           | (or **[arXiv:2111.01023v1](https://arxiv.org/abs/2111.01023v1) [cs.CL]** for this version) |
+
+
 
 
 
