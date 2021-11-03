@@ -3,8 +3,17 @@
 # Index
 
 
-- [2021-11-02](#2021-11-02)
+- [2021-11-03](#2021-11-03)
 
+  - [1. Recent Advances in End-to-End Automatic Speech Recognition](#2021-11-03-1)
+  - [2. Recent Advances in Natural Language Processing via Large Pre-Trained Language Models: A Survey](#2021-11-03-2)
+  - [3. Diverse Distributions of Self-Supervised Tasks for Meta-Learning in NLP](#2021-11-03-3)
+  - [4. Adapting to the Long Tail: A Meta-Analysis of Transfer Learning Research for Language Understanding Tasks](#2021-11-03-4)
+  - [5. System Combination for Grammatical Error Correction Based on Integer Programming](#2021-11-03-5)
+  - [6. Zero-Shot Translation using Diffusion Models](#2021-11-03-6)
+  - [7. HydraText: Multi-objective Optimization for Adversarial Textual Attack](#2021-11-03-7)
+  - [8. LMdiff: A Visual Diff Tool to Compare Language Models](#2021-11-03-8)
+- [2021-11-02](#2021-11-02)
   - [1. Introspective Distillation for Robust Question Answering](#2021-11-02-1)
   - [2. TransAug: Translate as Augmentation for Sentence Embeddings](#2021-11-02-2)
   - [3. How should human translation coexist with NMT? Efficient tool for building high quality parallel corpus](#2021-11-02-3)
@@ -20,6 +29,168 @@
   - [5. BERMo: What can BERT learn from ELMo?](#2021-11-01-5)
   - [6. MetaICL: Learning to Learn In Context](#2021-11-01-6)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-11-03
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-11-03-1">1. Recent Advances in End-to-End Automatic Speech Recognition
+</h2>
+
+Title: [Recent Advances in End-to-End Automatic Speech Recognition](https://arxiv.org/abs/2111.01690)
+
+Authors: [Jinyu Li](https://arxiv.org/search/eess?searchtype=author&query=Li%2C+J)
+
+> Recently, the speech community is seeing a significant trend of moving from deep neural network based hybrid modeling to end-to-end (E2E) modeling for automatic speech recognition (ASR). While E2E models achieve the state-of-the-art results in most benchmarks in terms of ASR accuracy, hybrid models are still used in a large proportion of commercial ASR systems at the current time. There are lots of practical factors that affect the production model deployment decision. Traditional hybrid models, being optimized for production for decades, are usually good at these factors. Without providing excellent solutions to all these factors, it is hard for E2E models to be widely commercialized. In this paper, we will overview the recent advances in E2E models, focusing on technologies addressing those challenges from the industry's perspective.
+
+| Comments: | invited paper submitted to APSIPA Transactions on Signal and Information Processing |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Audio and Speech Processing (eess.AS)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL); Sound (cs.SD) |
+| Cite as:  | **[arXiv:2111.01690](https://arxiv.org/abs/2111.01690) [eess.AS]** |
+|           | (or **[arXiv:2111.01690v1](https://arxiv.org/abs/2111.01690v1) [eess.AS]** for this version) |
+
+
+
+
+
+<h2 id="2021-11-03-2">2. Recent Advances in Natural Language Processing via Large Pre-Trained Language Models: A Survey
+</h2>
+
+Title: [Recent Advances in Natural Language Processing via Large Pre-Trained Language Models: A Survey](https://arxiv.org/abs/2111.01243)
+
+Authors: [Bonan Min](https://arxiv.org/search/cs?searchtype=author&query=Min%2C+B), [Hayley Ross](https://arxiv.org/search/cs?searchtype=author&query=Ross%2C+H), [Elior Sulem](https://arxiv.org/search/cs?searchtype=author&query=Sulem%2C+E), [Amir Pouran Ben Veyseh](https://arxiv.org/search/cs?searchtype=author&query=Veyseh%2C+A+P+B), [Thien Huu Nguyen](https://arxiv.org/search/cs?searchtype=author&query=Nguyen%2C+T+H), [Oscar Sainz](https://arxiv.org/search/cs?searchtype=author&query=Sainz%2C+O), [Eneko Agirre](https://arxiv.org/search/cs?searchtype=author&query=Agirre%2C+E), [Ilana Heinz](https://arxiv.org/search/cs?searchtype=author&query=Heinz%2C+I), [Dan Roth](https://arxiv.org/search/cs?searchtype=author&query=Roth%2C+D)
+
+> Large, pre-trained transformer-based language models such as BERT have drastically changed the Natural Language Processing (NLP) field. We present a survey of recent work that uses these large language models to solve NLP tasks via pre-training then fine-tuning, prompting, or text generation approaches. We also present approaches that use pre-trained language models to generate data for training augmentation or other purposes. We conclude with discussions on limitations and suggested directions for future research.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2111.01243](https://arxiv.org/abs/2111.01243) [cs.CL]** |
+|           | (or **[arXiv:2111.01243v1](https://arxiv.org/abs/2111.01243v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-11-03-3">3. Diverse Distributions of Self-Supervised Tasks for Meta-Learning in NLP
+</h2>
+
+Title: [Diverse Distributions of Self-Supervised Tasks for Meta-Learning in NLP](https://arxiv.org/abs/2111.01322)
+
+Authors: Diverse Distributions of Self-Supervised Tasks for Meta-Learning in NLP
+
+[Trapit Bansal](https://arxiv.org/search/cs?searchtype=author&query=Bansal%2C+T), [Karthick Gunasekaran](https://arxiv.org/search/cs?searchtype=author&query=Gunasekaran%2C+K), [Tong Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+T), [Tsendsuren Munkhdalai](https://arxiv.org/search/cs?searchtype=author&query=Munkhdalai%2C+T), [Andrew McCallum](https://arxiv.org/search/cs?searchtype=author&query=McCallum%2C+A)
+
+> Meta-learning considers the problem of learning an efficient learning process that can leverage its past experience to accurately solve new tasks. However, the efficacy of meta-learning crucially depends on the distribution of tasks available for training, and this is often assumed to be known a priori or constructed from limited supervised datasets. In this work, we aim to provide task distributions for meta-learning by considering self-supervised tasks automatically proposed from unlabeled text, to enable large-scale meta-learning in NLP. We design multiple distributions of self-supervised tasks by considering important aspects of task diversity, difficulty, type, domain, and curriculum, and investigate how they affect meta-learning performance. Our analysis shows that all these factors meaningfully alter the task distribution, some inducing significant improvements in downstream few-shot accuracy of the meta-learned models. Empirically, results on 20 downstream tasks show significant improvements in few-shot learning -- adding up to +4.2% absolute accuracy (on average) to the previous unsupervised meta-learning method, and perform comparably to supervised methods on the FewRel 2.0 benchmark.
+
+| Comments: | To appear at EMNLP 2021                                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2111.01322](https://arxiv.org/abs/2111.01322) [cs.CL]** |
+|           | (or **[arXiv:2111.01322v1](https://arxiv.org/abs/2111.01322v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-11-03-4">4. Adapting to the Long Tail: A Meta-Analysis of Transfer Learning Research for Language Understanding Tasks
+</h2>
+
+Title: [Adapting to the Long Tail: A Meta-Analysis of Transfer Learning Research for Language Understanding Tasks](https://arxiv.org/abs/2111.01340)
+
+Authors: [Aakanksha Naik](https://arxiv.org/search/cs?searchtype=author&query=Naik%2C+A), [Jill Lehman](https://arxiv.org/search/cs?searchtype=author&query=Lehman%2C+J), [Carolyn Rose](https://arxiv.org/search/cs?searchtype=author&query=Rose%2C+C)
+
+> Natural language understanding (NLU) has made massive progress driven by large benchmarks, paired with research on transfer learning to broaden its impact. Benchmarks are dominated by a small set of frequent phenomena, leaving a long tail of infrequent phenomena underrepresented. In this work, we reflect on the question: have transfer learning methods sufficiently addressed performance of benchmark-trained models on the long tail? Since benchmarks do not list included/excluded phenomena, we conceptualize the long tail using macro-level dimensions such as underrepresented genres, topics, etc. We assess trends in transfer learning research through a qualitative meta-analysis of 100 representative papers on transfer learning for NLU. Our analysis asks three questions: (i) Which long tail dimensions do transfer learning studies target? (ii) Which properties help adaptation methods improve performance on the long tail? (iii) Which methodological gaps have greatest negative impact on long tail performance? Our answers to these questions highlight major avenues for future research in transfer learning for the long tail. Lastly, we present a case study comparing the performance of various adaptation methods on clinical narratives to show how systematically conducted meta-experiments can provide insights that enable us to make progress along these future avenues.
+
+| Comments: | 14 pages                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2111.01340](https://arxiv.org/abs/2111.01340) [cs.CL]** |
+|           | (or **[arXiv:2111.01340v1](https://arxiv.org/abs/2111.01340v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-11-03-5">5. System Combination for Grammatical Error Correction Based on Integer Programming
+</h2>
+
+Title: [System Combination for Grammatical Error Correction Based on Integer Programming](https://arxiv.org/abs/2111.01465)
+
+Authors: [Ruixi Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+R), [Hwee Tou Ng](https://arxiv.org/search/cs?searchtype=author&query=Ng%2C+H+T)
+
+> In this paper, we propose a system combination method for grammatical error correction (GEC), based on nonlinear integer programming (IP). Our method optimizes a novel F score objective based on error types, and combines multiple end-to-end GEC systems. The proposed IP approach optimizes the selection of a single best system for each grammatical error type present in the data. Experiments of the IP approach on combining state-of-the-art standalone GEC systems show that the combined system outperforms all standalone systems. It improves F0.5 score by 3.61% when combining the two best participating systems in the BEA 2019 shared task, and achieves F0.5 score of 73.08%. We also perform experiments to compare our IP approach with another state-of-the-art system combination method for GEC, demonstrating IP's competitive combination capability.
+
+| Comments:          | Accepted for RANLP 2021                                      |
+| ------------------ | ------------------------------------------------------------ |
+| Subjects:          | **Computation and Language (cs.CL)**                         |
+| Journal reference: | RANLP (RECENT ADVANCES IN NATURAL LANGUAGE PROCESSING) (2021) |
+| Cite as:           | **[arXiv:2111.01465](https://arxiv.org/abs/2111.01465) [cs.CL]** |
+|                    | (or **[arXiv:2111.01465v1](https://arxiv.org/abs/2111.01465v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-11-03-6">6. Zero-Shot Translation using Diffusion Models
+</h2>
+
+Title: [Zero-Shot Translation using Diffusion Models](https://arxiv.org/abs/2111.01471)
+
+Authors: [Eliya Nachmani](https://arxiv.org/search/cs?searchtype=author&query=Nachmani%2C+E), [Shaked Dovrat](https://arxiv.org/search/cs?searchtype=author&query=Dovrat%2C+S)
+
+> In this work, we show a novel method for neural machine translation (NMT), using a denoising diffusion probabilistic model (DDPM), adjusted for textual data, following recent advances in the field. We show that it's possible to translate sentences non-autoregressively using a diffusion model conditioned on the source sentence. We also show that our model is able to translate between pairs of languages unseen during training (zero-shot learning).
+
+| Comments: | preprint                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2111.01471](https://arxiv.org/abs/2111.01471) [cs.CL]** |
+|           | (or **[arXiv:2111.01471v1](https://arxiv.org/abs/2111.01471v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-11-03-7">7. HydraText: Multi-objective Optimization for Adversarial Textual Attack
+</h2>
+
+Title: [HydraText: Multi-objective Optimization for Adversarial Textual Attack](https://arxiv.org/abs/2111.01528)
+
+Authors: [Shengcai Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+S), [Ning Lu](https://arxiv.org/search/cs?searchtype=author&query=Lu%2C+N), [Cheng Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+C), [Chao Qian](https://arxiv.org/search/cs?searchtype=author&query=Qian%2C+C), [Ke Tang](https://arxiv.org/search/cs?searchtype=author&query=Tang%2C+K)
+
+> The field of adversarial textual attack has significantly grown over the last years, where the commonly considered objective is to craft adversarial examples that can successfully fool the target models. However, the imperceptibility of attacks, which is also an essential objective, is often left out by previous studies. In this work, we advocate considering both objectives at the same time, and propose a novel multi-optimization approach (dubbed HydraText) with provable performance guarantee to achieve successful attacks with high imperceptibility. We demonstrate the efficacy of HydraText through extensive experiments under both score-based and decision-based settings, involving five modern NLP models across five benchmark datasets. In comparison to existing state-of-the-art attacks, HydraText consistently achieves simultaneously higher success rates, lower modification rates, and higher semantic similarity to the original texts. A human evaluation study shows that the adversarial examples crafted by HydraText maintain validity and naturality well. Finally, these examples also exhibit good transferability and can bring notable robustness improvement to the target models by adversarial training.
+
+| Subjects: | **Computation and Language (cs.CL)**; Neural and Evolutionary Computing (cs.NE) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2111.01528](https://arxiv.org/abs/2111.01528) [cs.CL]** |
+|           | (or **[arXiv:2111.01528v1](https://arxiv.org/abs/2111.01528v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-11-03-8">8. LMdiff: A Visual Diff Tool to Compare Language Models
+</h2>
+
+Title: [LMdiff: A Visual Diff Tool to Compare Language Models](https://arxiv.org/abs/2111.01582)
+
+Authors: [Hendrik Strobelt](https://arxiv.org/search/cs?searchtype=author&query=Strobelt%2C+H), [Benjamin Hoover](https://arxiv.org/search/cs?searchtype=author&query=Hoover%2C+B), [Arvind Satyanarayan](https://arxiv.org/search/cs?searchtype=author&query=Satyanarayan%2C+A), [Sebastian Gehrmann](https://arxiv.org/search/cs?searchtype=author&query=Gehrmann%2C+S)
+
+> While different language models are ubiquitous in NLP, it is hard to contrast their outputs and identify which contexts one can handle better than the other. To address this question, we introduce LMdiff, a tool that visually compares probability distributions of two models that differ, e.g., through finetuning, distillation, or simply training with different parameter sizes. LMdiff allows the generation of hypotheses about model behavior by investigating text instances token by token and further assists in choosing these interesting text instances by identifying the most interesting phrases from large corpora. We showcase the applicability of LMdiff for hypothesis generation across multiple case studies. A demo is available at [this http URL](http://lmdiff.net/) .
+
+| Comments: | EMNLP 2021 Demo Paper                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Human-Computer Interaction (cs.HC) |
+| Cite as:  | **[arXiv:2111.01582](https://arxiv.org/abs/2111.01582) [cs.CL]** |
+|           | (or **[arXiv:2111.01582v1](https://arxiv.org/abs/2111.01582v1) [cs.CL]** for this version) |
+
+
+
+
+
 
 
 
