@@ -3,6 +3,15 @@
 # Index
 
 
+- [2021-11-04](#2021-11-04)
+
+  - [1. LAION-400M: Open Dataset of CLIP-Filtered 400 Million Image-Text Pairs](#2021-11-04-1)
+  - [2. VLMo: Unified Vision-Language Pre-Training with Mixture-of-Modality-Experts](#2021-11-04-2)
+  - [3. An Empirical Study of Training End-to-End Vision-and-Language Transformers](#2021-11-04-3)
+  - [4. OpenPrompt: An Open-source Framework for Prompt-learning](#2021-11-04-4)
+  - [5. Multilingual Machine Translation Systems from Microsoft for WMT21 Shared Task](#2021-11-04-5)
+  - [6. Lingua Custodia's participation at the WMT 2021 Machine Translation using Terminologies shared task](#2021-11-04-6)
+  - [7. BERT-DRE: BERT with Deep Recursive Encoder for Natural Language Sentence Matching](#2021-11-04-7)
 - [2021-11-03](#2021-11-03)
 
   - [1. Recent Advances in End-to-End Automatic Speech Recognition](#2021-11-03-1)
@@ -29,6 +38,141 @@
   - [5. BERMo: What can BERT learn from ELMo?](#2021-11-01-5)
   - [6. MetaICL: Learning to Learn In Context](#2021-11-01-6)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-11-04
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-11-04-1">1. LAION-400M: Open Dataset of CLIP-Filtered 400 Million Image-Text Pairs
+</h2>
+
+Title: [LAION-400M: Open Dataset of CLIP-Filtered 400 Million Image-Text Pairs](https://arxiv.org/abs/2111.02114)
+
+Authors: [Christoph Schuhmann](https://arxiv.org/search/cs?searchtype=author&query=Schuhmann%2C+C), [Richard Vencu](https://arxiv.org/search/cs?searchtype=author&query=Vencu%2C+R), [Romain Beaumont](https://arxiv.org/search/cs?searchtype=author&query=Beaumont%2C+R), [Robert Kaczmarczyk](https://arxiv.org/search/cs?searchtype=author&query=Kaczmarczyk%2C+R), [Clayton Mullis](https://arxiv.org/search/cs?searchtype=author&query=Mullis%2C+C), [Aarush Katta](https://arxiv.org/search/cs?searchtype=author&query=Katta%2C+A), [Theo Coombes](https://arxiv.org/search/cs?searchtype=author&query=Coombes%2C+T), [Jenia Jitsev](https://arxiv.org/search/cs?searchtype=author&query=Jitsev%2C+J), [Aran Komatsuzaki](https://arxiv.org/search/cs?searchtype=author&query=Komatsuzaki%2C+A)
+
+> Multi-modal language-vision models trained on hundreds of millions of image-text pairs (e.g. CLIP, DALL-E) gained a recent surge, showing remarkable capability to perform zero- or few-shot learning and transfer even in absence of per-sample labels on target image data. Despite this trend, to date there has been no publicly available datasets of sufficient scale for training such models from scratch. To address this issue, in a community effort we build and release for public LAION-400M, a dataset with CLIP-filtered 400 million image-text pairs, their CLIP embeddings and kNN indices that allow efficient similarity search.
+
+| Comments: | Short version. Accepted at Data Centric AI NeurIPS Workshop 2021 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2111.02114](https://arxiv.org/abs/2111.02114) [cs.CV]** |
+|           | (or **[arXiv:2111.02114v1](https://arxiv.org/abs/2111.02114v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-11-04-2">2. VLMo: Unified Vision-Language Pre-Training with Mixture-of-Modality-Experts
+</h2>
+
+Title: [VLMo: Unified Vision-Language Pre-Training with Mixture-of-Modality-Experts](https://arxiv.org/abs/2111.02358)
+
+Authors: [Wenhui Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+W), [Hangbo Bao](https://arxiv.org/search/cs?searchtype=author&query=Bao%2C+H), [Li Dong](https://arxiv.org/search/cs?searchtype=author&query=Dong%2C+L), [Furu Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+F)
+
+> We present a unified Vision-Language pretrained Model (VLMo) that jointly learns a dual encoder and a fusion encoder with a modular Transformer network. Specifically, we introduce Mixture-of-Modality-Experts (MoME) Transformer, where each block contains a pool of modality-specific experts and a shared self-attention layer. Because of the modeling flexibility of MoME, pretrained VLMo can be fine-tuned as a fusion encoder for vision-language classification tasks, or used as a dual encoder for efficient image-text retrieval. Moreover, we propose a stagewise pre-training strategy, which effectively leverages large-scale image-only and text-only data besides image-text pairs. Experimental results show that VLMo achieves state-of-the-art results on various vision-language tasks, including VQA and NLVR2. The code and pretrained models are available at [this https URL](https://aka.ms/vlmo).
+
+| Comments: | Work in progress                                             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2111.02358](https://arxiv.org/abs/2111.02358) [cs.CV]** |
+|           | (or **[arXiv:2111.02358v1](https://arxiv.org/abs/2111.02358v1) [cs.CV]** for this version) |
+
+
+
+<h2 id="2021-11-04-3">3. An Empirical Study of Training End-to-End Vision-and-Language Transformers
+</h2>
+
+Title: [An Empirical Study of Training End-to-End Vision-and-Language Transformers](https://arxiv.org/abs/2111.02387)
+
+Authors: [Zi-Yi Dou](https://arxiv.org/search/cs?searchtype=author&query=Dou%2C+Z), [Yichong Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+Y), [Zhe Gan](https://arxiv.org/search/cs?searchtype=author&query=Gan%2C+Z), [Jianfeng Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+J), [Shuohang Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+S), [Lijuan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+L), [Chenguang Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+C), [Nanyun](https://arxiv.org/search/cs?searchtype=author&query=Nanyun) (Violet)[Peng](https://arxiv.org/search/cs?searchtype=author&query=Peng), [Zicheng Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Z), [Michael Zeng](https://arxiv.org/search/cs?searchtype=author&query=Zeng%2C+M)
+
+> Vision-and-language (VL) pre-training has proven to be highly effective on various VL downstream tasks. While recent work has shown that fully transformer-based VL models can be more efficient than previous region-feature-based methods, their performance on downstream tasks are often degraded significantly. In this paper, we present METER~(\textbf{M}ultimodal \textbf{E}nd-to-end \textbf{T}ransform\textbf{ER}), through which we systematically investigate how to design and pre-train a fully transformer-based VL model in an end-to-end manner. Specifically, we dissect the model designs along multiple dimensions: vision encoders (e.g., CLIP-ViT, Swin transformer), text encoders (e.g., RoBERTa, DeBERTa), multimodal fusion (e.g., merged attention vs. co-attention), architecture design (e.g., encoder-only vs. encoder-decoder), and pre-training objectives (e.g., masked image modeling). We conduct comprehensive experiments on a wide range of VL tasks, and provide insights on how to train a performant VL transformer while maintaining fast inference speed. Notably, METER~achieves an accuracy of 77.64\% on the VQAv2 test-std set using only 4M images for pre-training, surpassing the state-of-the-art region-feature-based VinVL model by +1.04\%, and outperforming the previous best fully transformer-based ALBEF model by +1.6\%.
+
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2111.02387](https://arxiv.org/abs/2111.02387) [cs.CV]** |
+|           | (or **[arXiv:2111.02387v1](https://arxiv.org/abs/2111.02387v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-11-04-4">4. OpenPrompt: An Open-source Framework for Prompt-learning
+</h2>
+
+Title: [OpenPrompt: An Open-source Framework for Prompt-learning](https://arxiv.org/abs/2111.01998)
+
+Authors: [Ning Ding](https://arxiv.org/search/cs?searchtype=author&query=Ding%2C+N), [Shengding Hu](https://arxiv.org/search/cs?searchtype=author&query=Hu%2C+S), [Weilin Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+W), [Yulin Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+Y), [Zhiyuan Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Z), [Hai-Tao Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng%2C+H), [Maosong Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+M)
+
+> Prompt-learning has become a new paradigm in modern natural language processing, which directly adapts pre-trained language models (PLMs) to cloze-style prediction, autoregressive modeling, or sequence to sequence generation, resulting in promising performances on various tasks. However, no standard implementation framework of prompt-learning is proposed yet, and most existing prompt-learning codebases, often unregulated, only provide limited implementations for specific scenarios. Since there are many details such as templating strategy, initializing strategy, and verbalizing strategy, etc. need to be considered in prompt-learning, practitioners face impediments to quickly adapting the desired prompt learning methods to their applications. In this paper, we present {OpenPrompt}, a unified easy-to-use toolkit to conduct prompt-learning over PLMs. OpenPrompt is a research-friendly framework that is equipped with efficiency, modularity, and extendibility, and its combinability allows the freedom to combine different PLMs, task formats, and prompting modules in a unified paradigm. Users could expediently deploy prompt-learning frameworks and evaluate the generalization of them on different NLP tasks without constraints. OpenPrompt is publicly released at {\url{ [this https URL](https://github.com/thunlp/OpenPrompt)}}.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2111.01998](https://arxiv.org/abs/2111.01998) [cs.CL]** |
+|           | (or **[arXiv:2111.01998v1](https://arxiv.org/abs/2111.01998v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-11-04-5">5. Multilingual Machine Translation Systems from Microsoft for WMT21 Shared Task
+</h2>
+
+Title: [Multilingual Machine Translation Systems from Microsoft for WMT21 Shared Task](https://arxiv.org/abs/2111.02086)
+
+Authors: [Jian Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+J), [Shuming Ma](https://arxiv.org/search/cs?searchtype=author&query=Ma%2C+S), [Haoyang Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+H), [Dongdong Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+D), [Li Dong](https://arxiv.org/search/cs?searchtype=author&query=Dong%2C+L), [Shaohan Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+S), [Alexandre Muzio](https://arxiv.org/search/cs?searchtype=author&query=Muzio%2C+A), [Saksham Singhal](https://arxiv.org/search/cs?searchtype=author&query=Singhal%2C+S), [Hany Hassan Awadalla](https://arxiv.org/search/cs?searchtype=author&query=Awadalla%2C+H+H), [Xia Song](https://arxiv.org/search/cs?searchtype=author&query=Song%2C+X), [Furu Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+F)
+
+> This report describes Microsoft's machine translation systems for the WMT21 shared task on large-scale multilingual machine translation. We participated in all three evaluation tracks including Large Track and two Small Tracks where the former one is unconstrained and the latter two are fully constrained. Our model submissions to the shared task were initialized with DeltaLM\footnote{\url{[this https URL](https://aka.ms/deltalm)}}, a generic pre-trained multilingual encoder-decoder model, and fine-tuned correspondingly with the vast collected parallel data and allowed data sources according to track settings, together with applying progressive learning and iterative back-translation approaches to further improve the performance. Our final submissions ranked first on three tracks in terms of the automatic evaluation metric.
+
+| Comments: | WMT21                                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2111.02086](https://arxiv.org/abs/2111.02086) [cs.CL]** |
+|           | (or **[arXiv:2111.02086v1](https://arxiv.org/abs/2111.02086v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-11-04-6">6. Lingua Custodia's participation at the WMT 2021 Machine Translation using Terminologies shared task
+</h2>
+
+Title: [Lingua Custodia's participation at the WMT 2021 Machine Translation using Terminologies shared task](https://arxiv.org/abs/2111.02120)
+
+Authors: [Melissa Ailem](https://arxiv.org/search/cs?searchtype=author&query=Ailem%2C+M), [Jinghsu Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+J), [Raheel Qader](https://arxiv.org/search/cs?searchtype=author&query=Qader%2C+R)
+
+> This paper describes Lingua Custodia's submission to the WMT21 shared task on machine translation using terminologies. We consider three directions, namely English to French, Russian, and Chinese. We rely on a Transformer-based architecture as a building block, and we explore a method which introduces two main changes to the standard procedure to handle terminologies. The first one consists in augmenting the training data in such a way as to encourage the model to learn a copy behavior when it encounters terminology constraint terms. The second change is constraint token masking, whose purpose is to ease copy behavior learning and to improve model generalization. Empirical results show that our method satisfies most terminology constraints while maintaining high translation quality.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2111.02120](https://arxiv.org/abs/2111.02120) [cs.CL]** |
+|           | (or **[arXiv:2111.02120v1](https://arxiv.org/abs/2111.02120v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-11-04-7">7. BERT-DRE: BERT with Deep Recursive Encoder for Natural Language Sentence Matching
+</h2>
+
+Title: [BERT-DRE: BERT with Deep Recursive Encoder for Natural Language Sentence Matching](https://arxiv.org/abs/2111.02188)
+
+Authors: [Ehsan Tavan](https://arxiv.org/search/cs?searchtype=author&query=Tavan%2C+E), [Ali Rahmati](https://arxiv.org/search/cs?searchtype=author&query=Rahmati%2C+A), [Maryam Najafi](https://arxiv.org/search/cs?searchtype=author&query=Najafi%2C+M), [Saeed Bibak](https://arxiv.org/search/cs?searchtype=author&query=Bibak%2C+S)
+
+> This paper presents a deep neural architecture, for Natural Language Sentence Matching (NLSM) by adding a deep recursive encoder to BERT so called BERT with Deep Recursive Encoder (BERT-DRE). Our analysis of model behavior shows that BERT still does not capture the full complexity of text, so a deep recursive encoder is applied on top of BERT. Three Bi-LSTM layers with residual connection are used to design a recursive encoder and an attention module is used on top of this encoder. To obtain the final vector, a pooling layer consisting of average and maximum pooling is used. We experiment our model on four benchmarks, SNLI, FarsTail, MultiNLI, SciTail, and a novel Persian religious questions dataset. This paper focuses on improving the BERT results in the NLSM task. In this regard, comparisons between BERT-DRE and BERT are conducted, and it is shown that in all cases, BERT-DRE outperforms only BERT. The BERT algorithm on the religious dataset achieved an accuracy of 89.70%, and BERT-DRE architectures improved to 90.29% using the same dataset.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2111.02188](https://arxiv.org/abs/2111.02188) [cs.CL]** |
+|           | (or **[arXiv:2111.02188v1](https://arxiv.org/abs/2111.02188v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
