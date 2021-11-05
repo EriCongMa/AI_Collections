@@ -3,6 +3,13 @@
 # Index
 
 
+- [2021-11-05](#2021-11-05)
+
+  - [1. Benchmarking Multimodal AutoML for Tabular Data with Text Fields](#2021-11-05-1)
+  - [2. Lexically Aware Semi-Supervised Learning for OCR Post-Correction](#2021-11-05-2)
+  - [3. Response Generation with Context-Aware Prompt Learning](#2021-11-05-3)
+  - [4. A text autoencoder from transformer for fast encoding language representation](#2021-11-05-4)
+  - [5. CoreLM: Coreference-aware Language Model Fine-Tuning](#2021-11-05-5)
 - [2021-11-04](#2021-11-04)
 
   - [1. LAION-400M: Open Dataset of CLIP-Filtered 400 Million Image-Text Pairs](#2021-11-04-1)
@@ -38,6 +45,108 @@
   - [5. BERMo: What can BERT learn from ELMo?](#2021-11-01-5)
   - [6. MetaICL: Learning to Learn In Context](#2021-11-01-6)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-11-05
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-11-05-1">1. Benchmarking Multimodal AutoML for Tabular Data with Text Fields
+</h2>
+
+Title: [Benchmarking Multimodal AutoML for Tabular Data with Text Fields](https://arxiv.org/abs/2111.02705)
+
+Authors: [Xingjian Shi](https://arxiv.org/search/cs?searchtype=author&query=Shi%2C+X), [Jonas Mueller](https://arxiv.org/search/cs?searchtype=author&query=Mueller%2C+J), [Nick Erickson](https://arxiv.org/search/cs?searchtype=author&query=Erickson%2C+N), [Mu Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+M), [Alexander J. Smola](https://arxiv.org/search/cs?searchtype=author&query=Smola%2C+A+J)
+
+> We consider the use of automated supervised learning systems for data tables that not only contain numeric/categorical columns, but one or more text fields as well. Here we assemble 18 multimodal data tables that each contain some text fields and stem from a real business application. Our publicly-available benchmark enables researchers to comprehensively evaluate their own methods for supervised learning with numeric, categorical, and text features. To ensure that any single modeling strategy which performs well over all 18 datasets will serve as a practical foundation for multimodal text/tabular AutoML, the diverse datasets in our benchmark vary greatly in: sample size, problem types (a mix of classification and regression tasks), number of features (with the number of text columns ranging from 1 to 28 between datasets), as well as how the predictive signal is decomposed between text vs. numeric/categorical features (and predictive interactions thereof). Over this benchmark, we evaluate various straightforward pipelines to model such data, including standard two-stage approaches where NLP is used to featurize the text such that AutoML for tabular data can then be applied. Compared with human data science teams, the fully automated methodology that performed best on our benchmark (stack ensembling a multimodal Transformer with various tree models) also manages to rank 1st place when fit to the raw text/tabular data in two MachineHack prediction competitions and 2nd place (out of 2380 teams) in Kaggle's Mercari Price Suggestion Challenge.
+
+| Comments: | Proceedings of the Neural Information Processing Systems (NeurIPS) Track on Datasets and Benchmarks 2021 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL); Machine Learning (stat.ML) |
+| Cite as:  | **[arXiv:2111.02705](https://arxiv.org/abs/2111.02705) [cs.LG]** |
+|           | (or **[arXiv:2111.02705v1](https://arxiv.org/abs/2111.02705v1) [cs.LG]** for this version) |
+
+
+
+
+
+<h2 id="2021-11-05-2">2. Lexically Aware Semi-Supervised Learning for OCR Post-Correction
+</h2>
+
+Title: [Lexically Aware Semi-Supervised Learning for OCR Post-Correction](https://arxiv.org/abs/2111.02622)
+
+Authors: [Shruti Rijhwani](https://arxiv.org/search/cs?searchtype=author&query=Rijhwani%2C+S), [Daisy Rosenblum](https://arxiv.org/search/cs?searchtype=author&query=Rosenblum%2C+D), [Antonios Anastasopoulos](https://arxiv.org/search/cs?searchtype=author&query=Anastasopoulos%2C+A), [Graham Neubig](https://arxiv.org/search/cs?searchtype=author&query=Neubig%2C+G)
+
+> Much of the existing linguistic data in many languages of the world is locked away in non-digitized books and documents. Optical character recognition (OCR) can be used to produce digitized text, and previous work has demonstrated the utility of neural post-correction methods that improve the results of general-purpose OCR systems on recognition of less-well-resourced languages. However, these methods rely on manually curated post-correction data, which are relatively scarce compared to the non-annotated raw images that need to be digitized. 
+> In this paper, we present a semi-supervised learning method that makes it possible to utilize these raw images to improve performance, specifically through the use of self-training, a technique where a model is iteratively trained on its own outputs. In addition, to enforce consistency in the recognized vocabulary, we introduce a lexically-aware decoding method that augments the neural post-correction model with a count-based language model constructed from the recognized texts, implemented using weighted finite-state automata (WFSA) for efficient and effective decoding. 
+> Results on four endangered languages demonstrate the utility of the proposed method, with relative error reductions of 15-29%, where we find the combination of self-training and lexically-aware decoding essential for achieving consistent improvements. Data and code are available at [this https URL](https://shrutirij.github.io/ocr-el/).
+
+| Comments: | Accepted to the Transactions of the Association for Computational Linguistics (TACL) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2111.02622](https://arxiv.org/abs/2111.02622) [cs.CL]** |
+|           | (or **[arXiv:2111.02622v1](https://arxiv.org/abs/2111.02622v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-11-05-3">3. Response Generation with Context-Aware Prompt Learning
+</h2>
+
+Title: [Response Generation with Context-Aware Prompt Learning](https://arxiv.org/abs/2111.02643)
+
+Authors: [Xiaodong Gu](https://arxiv.org/search/cs?searchtype=author&query=Gu%2C+X), [Kang Min Yoo](https://arxiv.org/search/cs?searchtype=author&query=Yoo%2C+K+M), [Sang-Woo Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+S)
+
+> Pre-trained language models (PLM) have marked a huge leap in neural dialogue modeling. While PLMs are pre-trained on large-scale text corpora, they are usually fine-tuned on scarce dialogue data with specific domain knowledge and dialogue styles. However, tailoring the language models while fully utilizing prior knowledge in large pre-trained models remains a challenge. In this paper, we present a novel approach for pre-trained dialogue modeling that casts the dialogue generation problem as a prompt-learning task. Instead of fine-tuning on limited dialogue data, our approach, DialogPrompt, learns continuous prompt embeddings optimized for dialogue contexts, which appropriately elicit knowledge from the large pre-trained model. To encourage the model to better utilize the prompt embeddings, the prompt encoders are designed to be conditioned on the input dialogue context. Experiments on popular conversation datasets show that our approach significantly outperforms the fine-tuning baseline and the generic prompt-learning methods. Furthermore, human evaluations strongly support the superiority of DialogPrompt in regard to response generation quality.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2111.02643](https://arxiv.org/abs/2111.02643) [cs.CL]** |
+|           | (or **[arXiv:2111.02643v1](https://arxiv.org/abs/2111.02643v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-11-05-4">4. A text autoencoder from transformer for fast encoding language representation
+</h2>
+
+Title: [A text autoencoder from transformer for fast encoding language representation](https://arxiv.org/abs/2111.02844)
+
+Authors: [Tan Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+T)
+
+> In recent years BERT shows apparent advantages and great potential in natural language processing tasks. However, both training and applying BERT requires intensive time and resources for computing contextual language representations, which hinders its universality and applicability. To overcome this bottleneck, we propose a deep bidirectional language model by using window masking mechanism at attention layer. This work computes contextual language representations without random masking as does in BERT and maintains the deep bidirectional architecture like BERT. To compute the same sentence representation, our method shows O(n) complexity less compared to other transformer-based models with O(n2). To further demonstrate its superiority, computing context language representations on CPU environments is conducted, by using the embeddings from the proposed method, logistic regression shows much higher accuracy in terms of SMS classification. Moverover, the proposed method also achieves significant higher performance in semantic similarity tasks.
+
+| Comments: | 8 pages, 8 figures. arXiv admin note: text overlap with [arXiv:2004.08097](https://arxiv.org/abs/2004.08097) by other authors |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2111.02844](https://arxiv.org/abs/2111.02844) [cs.CL]** |
+|           | (or **[arXiv:2111.02844v1](https://arxiv.org/abs/2111.02844v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-11-05-5">5. CoreLM: Coreference-aware Language Model Fine-Tuning
+</h2>
+
+Title: [CoreLM: Coreference-aware Language Model Fine-Tuning](https://arxiv.org/abs/2111.02687)
+
+Authors: [Nikolaos Stylianou](https://arxiv.org/search/cs?searchtype=author&query=Stylianou%2C+N), [Ioannis Vlahavas](https://arxiv.org/search/cs?searchtype=author&query=Vlahavas%2C+I)
+
+> Language Models are the underpin of all modern Natural Language Processing (NLP) tasks. The introduction of the Transformers architecture has contributed significantly into making Language Modeling very effective across many NLP task, leading to significant advancements in the field. However, Transformers come with a big computational cost, which grows quadratically with respect to the input length. This presents a challenge as to understand long texts requires a lot of context. In this paper, we propose a Fine-Tuning framework, named CoreLM, that extends the architecture of current Pretrained Language Models so that they incorporate explicit entity information. By introducing entity representations, we make available information outside the contextual space of the model, which results in a better Language Model for a fraction of the computational cost. We implement our approach using GPT2 and compare the fine-tuned model to the original. Our proposed model achieves a lower Perplexity in GUMBY and LAMBDADA datasets when compared to GPT2 and a fine-tuned version of GPT2 without any changes. We also compare the models' performance in terms of Accuracy in LAMBADA and Children's Book Test, with and without the use of model-created coreference annotations.
+
+| Comments: | 12 pages, 2 figures, Accepted at Fourth Workshop on Computational Models of Reference, Anaphora and Coreference |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2111.02687](https://arxiv.org/abs/2111.02687) [cs.CL]** |
+|           | (or **[arXiv:2111.02687v1](https://arxiv.org/abs/2111.02687v1) [cs.CL]** for this version) |
+
+
 
 
 
