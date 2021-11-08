@@ -3,8 +3,14 @@
 # Index
 
 
-- [2021-11-05](#2021-11-05)
+- [2021-11-08](#2021-11-08)
 
+  - [1. StyleCLIPDraw: Coupling Content and Style in Text-to-Drawing Synthesis](#2021-11-08-1)
+  - [2. The Curious Layperson: Fine-Grained Image Recognition without Expert Labels](#2021-11-08-2)
+  - [3. How Do Neural Sequence Models Generalize? Local and Global Context Cues for Out-of-Distribution Prediction](#2021-11-08-3)
+  - [4. A Syntax-Guided Grammatical Error Correction Model with Dependency Tree Correction](#2021-11-08-4)
+  
+- [2021-11-05](#2021-11-05)
   - [1. Benchmarking Multimodal AutoML for Tabular Data with Text Fields](#2021-11-05-1)
   - [2. Lexically Aware Semi-Supervised Learning for OCR Post-Correction](#2021-11-05-2)
   - [3. Response Generation with Context-Aware Prompt Learning](#2021-11-05-3)
@@ -45,6 +51,88 @@
   - [5. BERMo: What can BERT learn from ELMo?](#2021-11-01-5)
   - [6. MetaICL: Learning to Learn In Context](#2021-11-01-6)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+
+
+# 2021-11-08
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-11-08-1">1. StyleCLIPDraw: Coupling Content and Style in Text-to-Drawing Synthesis
+</h2>
+
+Title: [StyleCLIPDraw: Coupling Content and Style in Text-to-Drawing Synthesis](https://arxiv.org/abs/2111.03133)
+
+Authors: [Peter Schaldenbrand](https://arxiv.org/search/cs?searchtype=author&query=Schaldenbrand%2C+P), [Zhixuan Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Z), [Jean Oh](https://arxiv.org/search/cs?searchtype=author&query=Oh%2C+J)
+
+> Generating images that fit a given text description using machine learning has improved greatly with the release of technologies such as the CLIP image-text encoder model; however, current methods lack artistic control of the style of image to be generated. We introduce StyleCLIPDraw which adds a style loss to the CLIPDraw text-to-drawing synthesis model to allow artistic control of the synthesized drawings in addition to control of the content via text. Whereas performing decoupled style transfer on a generated image only affects the texture, our proposed coupled approach is able to capture a style in both texture and shape, suggesting that the style of the drawing is coupled with the drawing process itself. More results and our code are available at [this https URL](https://github.com/pschaldenbrand/StyleCLIPDraw)
+
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2111.03133](https://arxiv.org/abs/2111.03133) [cs.CV]** |
+|           | (or **[arXiv:2111.03133v1](https://arxiv.org/abs/2111.03133v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-11-08-2">2. The Curious Layperson: Fine-Grained Image Recognition without Expert Labels
+</h2>
+
+Title: [The Curious Layperson: Fine-Grained Image Recognition without Expert Labels](https://arxiv.org/abs/2111.03651)
+
+Authors: [Subhabrata Choudhury](https://arxiv.org/search/cs?searchtype=author&query=Choudhury%2C+S), [Iro Laina](https://arxiv.org/search/cs?searchtype=author&query=Laina%2C+I), [Christian Rupprecht](https://arxiv.org/search/cs?searchtype=author&query=Rupprecht%2C+C), [Andrea Vedaldi](https://arxiv.org/search/cs?searchtype=author&query=Vedaldi%2C+A)
+
+> Most of us are not experts in specific fields, such as ornithology. Nonetheless, we do have general image and language understanding capabilities that we use to match what we see to expert resources. This allows us to expand our knowledge and perform novel tasks without ad-hoc external supervision. On the contrary, machines have a much harder time consulting expert-curated knowledge bases unless trained specifically with that knowledge in mind. Thus, in this paper we consider a new problem: fine-grained image recognition without expert annotations, which we address by leveraging the vast knowledge available in web encyclopedias. First, we learn a model to describe the visual appearance of objects using non-expert image descriptions. We then train a fine-grained textual similarity model that matches image descriptions with documents on a sentence-level basis. We evaluate the method on two datasets and compare with several strong baselines and the state of the art in cross-modal retrieval. Code is available at: [this https URL](https://github.com/subhc/clever)
+
+| Comments: | To appear in BMVC 2021 (Oral). Project page: [this https URL](https://www.robots.ox.ac.uk/~vgg/research/clever/) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2111.03651](https://arxiv.org/abs/2111.03651) [cs.CV]** |
+|           | (or **[arXiv:2111.03651v1](https://arxiv.org/abs/2111.03651v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-11-08-3">3. How Do Neural Sequence Models Generalize? Local and Global Context Cues for Out-of-Distribution Prediction
+</h2>
+
+Title: [How Do Neural Sequence Models Generalize? Local and Global Context Cues for Out-of-Distribution Prediction](https://arxiv.org/abs/2111.03108)
+
+Authors: [Anthony Bau](https://arxiv.org/search/cs?searchtype=author&query=Bau%2C+A), [Jacob Andreas](https://arxiv.org/search/cs?searchtype=author&query=Andreas%2C+J)
+
+> After a neural sequence model encounters an unexpected token, can its behavior be predicted? We show that RNN and transformer language models exhibit structured, consistent generalization in out-of-distribution contexts. We begin by introducing two idealized models of generalization in next-word prediction: a local context model in which generalization is consistent with the last word observed, and a global context model in which generalization is consistent with the global structure of the input. In experiments in English, Finnish, Mandarin, and random regular languages, we demonstrate that neural language models interpolate between these two forms of generalization: their predictions are well-approximated by a log-linear combination of local and global predictive distributions. We then show that, in some languages, noise mediates the two forms of generalization: noise applied to input tokens encourages global generalization, while noise in history representations encourages local generalization. Finally, we offer a preliminary theoretical explanation of these results by proving that the observed interpolation behavior is expected in log-linear models with a particular feature correlation structure. These results help explain the effectiveness of two popular regularization schemes and show that aspects of sequence model generalization can be understood and controlled.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2111.03108](https://arxiv.org/abs/2111.03108) [cs.CL]** |
+|           | (or **[arXiv:2111.03108v1](https://arxiv.org/abs/2111.03108v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-11-08-4">4. A Syntax-Guided Grammatical Error Correction Model with Dependency Tree Correction
+</h2>
+
+Title: [A Syntax-Guided Grammatical Error Correction Model with Dependency Tree Correction](https://arxiv.org/abs/2111.03294)
+
+Authors: [Zhaohong Wan](https://arxiv.org/search/cs?searchtype=author&query=Wan%2C+Z), [Xiaojun Wan](https://arxiv.org/search/cs?searchtype=author&query=Wan%2C+X)
+
+> Grammatical Error Correction (GEC) is a task of detecting and correcting grammatical errors in sentences. Recently, neural machine translation systems have become popular approaches for this task. However, these methods lack the use of syntactic knowledge which plays an important role in the correction of grammatical errors. In this work, we propose a syntax-guided GEC model (SG-GEC) which adopts the graph attention mechanism to utilize the syntactic knowledge of dependency trees. Considering the dependency trees of the grammatically incorrect source sentences might provide incorrect syntactic knowledge, we propose a dependency tree correction task to deal with it. Combining with data augmentation method, our model achieves strong performances without using any large pre-trained models. We evaluate our model on public benchmarks of GEC task and it achieves competitive results.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2111.03294](https://arxiv.org/abs/2111.03294) [cs.CL]** |
+|           | (or **[arXiv:2111.03294v1](https://arxiv.org/abs/2111.03294v1) [cs.CL]** for this version) |
+
+
+
 
 
 
