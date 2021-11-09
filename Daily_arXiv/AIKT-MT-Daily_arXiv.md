@@ -3,13 +3,24 @@
 # Index
 
 
+- [2021-11-09](#2021-11-09)
+
+  - [1. Tip-Adapter: Training-free CLIP-Adapter for Better Vision-Language Modeling](#2021-11-09-1)
+  - [2. Analyzing Architectures for Neural Machine Translation Using Low Computational Resources](#2021-11-09-2)
+  - [3. Information Extraction from Visually Rich Documents with Font Style Embeddings](#2021-11-09-3)
+  - [4. Variance-Aware Machine Translation Test Sets](#2021-11-09-4)
+  - [5. Developing neural machine translation models for Hungarian-English](#2021-11-09-5)
+  - [6. NLP From Scratch Without Large-Scale Pretraining: A Simple and Efficient Framework](#2021-11-09-6)
+  - [7. Machine-in-the-Loop Rewriting for Creative Image Captioning](#2021-11-09-7)
+  - [8. TaCL: Improving BERT Pre-training with Token-aware Contrastive Learning](#2021-11-09-8)
+  
 - [2021-11-08](#2021-11-08)
 
   - [1. StyleCLIPDraw: Coupling Content and Style in Text-to-Drawing Synthesis](#2021-11-08-1)
   - [2. The Curious Layperson: Fine-Grained Image Recognition without Expert Labels](#2021-11-08-2)
   - [3. How Do Neural Sequence Models Generalize? Local and Global Context Cues for Out-of-Distribution Prediction](#2021-11-08-3)
   - [4. A Syntax-Guided Grammatical Error Correction Model with Dependency Tree Correction](#2021-11-08-4)
-  
+
 - [2021-11-05](#2021-11-05)
   - [1. Benchmarking Multimodal AutoML for Tabular Data with Text Fields](#2021-11-05-1)
   - [2. Lexically Aware Semi-Supervised Learning for OCR Post-Correction](#2021-11-05-2)
@@ -51,6 +62,159 @@
   - [5. BERMo: What can BERT learn from ELMo?](#2021-11-01-5)
   - [6. MetaICL: Learning to Learn In Context](#2021-11-01-6)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-11-09
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-11-09-1">1. Tip-Adapter: Training-free CLIP-Adapter for Better Vision-Language Modeling
+</h2>
+
+Title: [Tip-Adapter: Training-free CLIP-Adapter for Better Vision-Language Modeling](https://arxiv.org/abs/2111.03930)
+
+Authors: [Renrui Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+R), [Rongyao Fang](https://arxiv.org/search/cs?searchtype=author&query=Fang%2C+R), [Peng Gao](https://arxiv.org/search/cs?searchtype=author&query=Gao%2C+P), [Wei Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+W), [Kunchang Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+K), [Jifeng Dai](https://arxiv.org/search/cs?searchtype=author&query=Dai%2C+J), [Yu Qiao](https://arxiv.org/search/cs?searchtype=author&query=Qiao%2C+Y), [Hongsheng Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+H)
+
+> Contrastive Vision-Language Pre-training, known as CLIP, has provided a new paradigm for learning visual representations by using large-scale contrastive image-text pairs. It shows impressive performance on zero-shot knowledge transfer to downstream tasks. To further enhance CLIP's few-shot capability, CLIP-Adapter proposed to fine-tune a lightweight residual feature adapter and significantly improves the performance for few-shot classification. However, such a process still needs extra training and computational resources. In this paper, we propose \textbf{T}raining-Free CL\textbf{IP}-\textbf{Adapter} (\textbf{Tip-Adapter}), which not only inherits CLIP's training-free advantage but also performs comparably or even better than CLIP-Adapter. Tip-Adapter does not require any back propagation for training the adapter, but creates the weights by a key-value cache model constructed from the few-shot training set. In this non-parametric manner, Tip-Adapter acquires well-performed adapter weights without any training, which is both efficient and effective. Moreover, the performance of Tip-Adapter can be further boosted by fine-tuning such properly initialized adapter for only a few epochs with super-fast convergence speed. We conduct extensive experiments of few-shot classification on ImageNet and other 10 datasets to demonstrate the superiority of proposed Tip-Adapter. The code will be released at \url{[this https URL](https://github.com/gaopengcuhk/Tip-Adapter)}.
+
+| Comments: | preprints                                                    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2111.03930](https://arxiv.org/abs/2111.03930) [cs.CV]** |
+|           | (or **[arXiv:2111.03930v1](https://arxiv.org/abs/2111.03930v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-11-09-2">2. Analyzing Architectures for Neural Machine Translation Using Low Computational Resources
+</h2>
+
+Title: [Analyzing Architectures for Neural Machine Translation Using Low Computational Resources](https://arxiv.org/abs/2111.03813)
+
+Authors: [Aditya Mandke](https://arxiv.org/search/cs?searchtype=author&query=Mandke%2C+A), [Onkar Litake](https://arxiv.org/search/cs?searchtype=author&query=Litake%2C+O), [Dipali Kadam](https://arxiv.org/search/cs?searchtype=author&query=Kadam%2C+D)
+
+> With the recent developments in the field of Natural Language Processing, there has been a rise in the use of different architectures for Neural Machine Translation. Transformer architectures are used to achieve state-of-the-art accuracy, but they are very computationally expensive to train. Everyone cannot have such setups consisting of high-end GPUs and other resources. We train our models on low computational resources and investigate the results. As expected, transformers outperformed other architectures, but there were some surprising results. Transformers consisting of more encoders and decoders took more time to train but had fewer BLEU scores. LSTM performed well in the experiment and took comparatively less time to train than transformers, making it suitable to use in situations having time constraints.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2111.03813](https://arxiv.org/abs/2111.03813) [cs.CL]** |
+|           | (or **[arXiv:2111.03813v1](https://arxiv.org/abs/2111.03813v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-11-09-3">3. Information Extraction from Visually Rich Documents with Font Style Embeddings
+</h2>
+
+Title: [Information Extraction from Visually Rich Documents with Font Style Embeddings](https://arxiv.org/abs/2111.04045)
+
+Authors: [Ismail Oussaid](https://arxiv.org/search/cs?searchtype=author&query=Oussaid%2C+I), [William Vanhuffel](https://arxiv.org/search/cs?searchtype=author&query=Vanhuffel%2C+W), [Pirashanth Ratnamogan](https://arxiv.org/search/cs?searchtype=author&query=Ratnamogan%2C+P), [Mhamed Hajaiej](https://arxiv.org/search/cs?searchtype=author&query=Hajaiej%2C+M), [Alexis Mathey](https://arxiv.org/search/cs?searchtype=author&query=Mathey%2C+A), [Thomas Gilles](https://arxiv.org/search/cs?searchtype=author&query=Gilles%2C+T)
+
+> Information extraction (IE) from documents is an intensive area of research with a large set of industrial applications. Current state-of-the-art methods focus on scanned documents with approaches combining computer vision, natural language processing and layout representation. We propose to challenge the usage of computer vision in the case where both token style and visual representation are available (i.e native PDF documents). Our experiments on three real-world complex datasets demonstrate that using token style attributes based embedding instead of a raw visual embedding in LayoutLM model is beneficial. Depending on the dataset, such an embedding yields an improvement of 0.18% to 2.29% in the weighted F1-score with a decrease of 30.7% in the final number of trainable parameters of the model, leading to an improvement in both efficiency and effectiveness.
+
+| Subjects: | **Computation and Language (cs.CL)**; Computer Vision and Pattern Recognition (cs.CV) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2111.04045](https://arxiv.org/abs/2111.04045) [cs.CL]** |
+|           | (or **[arXiv:2111.04045v1](https://arxiv.org/abs/2111.04045v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-11-09-4">4. Variance-Aware Machine Translation Test Sets
+</h2>
+
+Title: [Variance-Aware Machine Translation Test Sets](https://arxiv.org/abs/2111.04079)
+
+Authors: [Runzhe Zhan](https://arxiv.org/search/cs?searchtype=author&query=Zhan%2C+R), [Xuebo Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+X), [Derek F. Wong](https://arxiv.org/search/cs?searchtype=author&query=Wong%2C+D+F), [Lidia S. Chao](https://arxiv.org/search/cs?searchtype=author&query=Chao%2C+L+S)
+
+> We release 70 small and discriminative test sets for machine translation (MT) evaluation called variance-aware test sets (VAT), covering 35 translation directions from WMT16 to WMT20 competitions. VAT is automatically created by a novel variance-aware filtering method that filters the indiscriminative test instances of the current MT test sets without any human labor. Experimental results show that VAT outperforms the original WMT test sets in terms of the correlation with human judgement across mainstream language pairs and test sets. Further analysis on the properties of VAT reveals the challenging linguistic features (e.g., translation of low-frequency words and proper nouns) for competitive MT systems, providing guidance for constructing future MT test sets. The test sets and the code for preparing variance-aware MT test sets are freely available at [this https URL](https://github.com/NLP2CT/Variance-Aware-MT-Test-Sets) .
+
+| Comments: | Accepted to NeurIPS 2021 Datasets and Benchmarks Track       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2111.04079](https://arxiv.org/abs/2111.04079) [cs.CL]** |
+|           | (or **[arXiv:2111.04079v1](https://arxiv.org/abs/2111.04079v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-11-09-5">5. Developing neural machine translation models for Hungarian-English
+</h2>
+
+Title: [Developing neural machine translation models for Hungarian-English](https://arxiv.org/abs/2111.04099)
+
+Authors: [Attila Nagy](https://arxiv.org/search/cs?searchtype=author&query=Nagy%2C+A)
+
+> I train models for the task of neural machine translation for English-Hungarian and Hungarian-English, using the Hunglish2 corpus. The main contribution of this work is evaluating different data augmentation methods during the training of NMT models. I propose 5 different augmentation methods that are structure-aware, meaning that instead of randomly selecting words for blanking or replacement, the dependency tree of sentences is used as a basis for augmentation. I start my thesis with a detailed literature review on neural networks, sequential modeling, neural machine translation, dependency parsing and data augmentation. After a detailed exploratory data analysis and preprocessing of the Hunglish2 corpus, I perform experiments with the proposed data augmentation techniques. The best model for Hungarian-English achieves a BLEU score of 33.9, while the best model for English-Hungarian achieves a BLEU score of 28.6.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2111.04099](https://arxiv.org/abs/2111.04099) [cs.CL]** |
+|           | (or **[arXiv:2111.04099v1](https://arxiv.org/abs/2111.04099v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-11-09-6">6. NLP From Scratch Without Large-Scale Pretraining: A Simple and Efficient Framework
+</h2>
+
+Title: [NLP From Scratch Without Large-Scale Pretraining: A Simple and Efficient Framework](https://arxiv.org/abs/2111.04130)
+
+Authors: [Xingcheng Yao](https://arxiv.org/search/cs?searchtype=author&query=Yao%2C+X), [Yanan Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng%2C+Y), [Xiaocong Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+X), [Zhilin Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+Z)
+
+> Pretrained language models have become the standard approach for many NLP tasks due to strong performance, but they are very expensive to train. We propose a simple and efficient learning framework, TLM, that does not rely on large-scale pretraining. Given some labeled task data and a large general corpus, TLM uses task data as queries to retrieve a tiny subset of the general corpus and jointly optimizes the task objective and the language modeling objective from scratch. On eight classification datasets in four domains, TLM achieves results better than or similar to pretrained language models (e.g., RoBERTa-Large) while reducing the training FLOPs by two orders of magnitude. With high accuracy and efficiency, we hope TLM will contribute to democratizing NLP and expediting its development.
+
+| Comments: | 13 pages, 5 figures                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2111.04130](https://arxiv.org/abs/2111.04130) [cs.CL]** |
+|           | (or **[arXiv:2111.04130v1](https://arxiv.org/abs/2111.04130v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-11-09-7">7. Machine-in-the-Loop Rewriting for Creative Image Captioning
+</h2>
+
+Title: [Machine-in-the-Loop Rewriting for Creative Image Captioning](https://arxiv.org/abs/2111.04193)
+
+Authors: [Vishakh Padmakumar](https://arxiv.org/search/cs?searchtype=author&query=Padmakumar%2C+V), [He He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+H)
+
+> Machine-in-the-loop writing aims to enable humans to collaborate with models to complete their writing tasks more effectively. Prior work has found that providing humans a machine-written draft or sentence-level continuations has limited success since the generated text tends to deviate from humans' intention. To allow the user to retain control over the content, we train a rewriting model that, when prompted, modifies specified spans of text within the user's original draft to introduce descriptive and figurative elements locally in the text. We evaluate the model on its ability to collaborate with humans on the task of creative image captioning. On a user study through Amazon Mechanical Turk, our model is rated to be more helpful than a baseline infilling language model. In addition, third-party evaluation shows that users write more descriptive and figurative captions when collaborating with our model compared to completing the task alone.
+
+| Comments: | Novel Ideas in Learning-to-Learn through Interaction - Workshop @ EMNLP 2021 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2111.04193](https://arxiv.org/abs/2111.04193) [cs.CL]** |
+|           | (or **[arXiv:2111.04193v1](https://arxiv.org/abs/2111.04193v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-11-09-8">8. TaCL: Improving BERT Pre-training with Token-aware Contrastive Learning
+</h2>
+
+Title: [TaCL: Improving BERT Pre-training with Token-aware Contrastive Learning](https://arxiv.org/abs/2111.04198)
+
+Authors: [Yixuan Su](https://arxiv.org/search/cs?searchtype=author&query=Su%2C+Y), [Fangyu Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+F), [Zaiqiao Meng](https://arxiv.org/search/cs?searchtype=author&query=Meng%2C+Z), [Lei Shu](https://arxiv.org/search/cs?searchtype=author&query=Shu%2C+L), [Ehsan Shareghi](https://arxiv.org/search/cs?searchtype=author&query=Shareghi%2C+E), [Nigel Collier](https://arxiv.org/search/cs?searchtype=author&query=Collier%2C+N)
+
+> Masked language models (MLMs) such as BERT and RoBERTa have revolutionized the field of Natural Language Understanding in the past few years. However, existing pre-trained MLMs often output an anisotropic distribution of token representations that occupies a narrow subset of the entire representation space. Such token representations are not ideal, especially for tasks that demand discriminative semantic meanings of distinct tokens. In this work, we propose TaCL (Token-aware Contrastive Learning), a novel continual pre-training approach that encourages BERT to learn an isotropic and discriminative distribution of token representations. TaCL is fully unsupervised and requires no additional data. We extensively test our approach on a wide range of English and Chinese benchmarks. The results show that TaCL brings consistent and notable improvements over the original BERT model. Furthermore, we conduct detailed ablation study and careful analysis to reveal the merits and inner-workings of our approach.
+
+| Comments: | Work in progress                                             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2111.04198](https://arxiv.org/abs/2111.04198) [cs.CL]** |
+|           | (or **[arXiv:2111.04198v1](https://arxiv.org/abs/2111.04198v1) [cs.CL]** for this version) |
 
 
 
