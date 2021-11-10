@@ -8,6 +8,7 @@ This repository is constructed to collect interesting resource in Artificial Int
 
 
 
+- [MA C.'s Daily Paper of Interest | MA C. 每日感兴趣论文（MA C.'s Daily POI）](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-POI-Daily-arXiv.md)
 - [Artificial-Intelligence-Terminology-Database](https://github.com/jiqizhixin/Artificial-Intelligence-Terminology-Database)
 - [Awesome Document Understanding](https://github.com/tstanislawek/awesome-document-understanding)
 - [Generate arXiv citation format](https://arxiv2bibtex.org/)
@@ -22,7 +23,7 @@ This repository is constructed to collect interesting resource in Artificial Int
   - 句表示学习（Sentence Representation）
   - 篇章表示学习（Document/Discourse Representation）
 - [机器翻译（Machine Translation）](https://github.com/EriCongMa/AI_Collections/blob/main/AIKT-Machine_Translation.md)
-  - [arXiv每日论文更新（Daily arXiv）](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv.md)
+  - ⏸️ [arXiv每日论文更新（Daily arXiv）](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv.md)
   - [论文推荐（Paper Recommendation）](https://github.com/EriCongMa/AI_Collections/blob/main/AIKT-Machine_Translation.md)
 - [对话系统（Dialogue System）](https://github.com/EriCongMa/AI_Collections/blob/main/AIKT-Dialogue_System.md)
 - [知识图谱（Knowledge Graph）](https://github.com/EriCongMa/AI_Collections/blob/main/AIKT-Knowledge_Graph.md)
