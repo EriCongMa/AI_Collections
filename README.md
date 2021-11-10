@@ -8,7 +8,7 @@ This repository is constructed to collect interesting resource in Artificial Int
 
 
 
-- [MA C.'s Daily Paper of Interest | MA C. 每日感兴趣论文（MA C.'s Daily POI）](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-POI-Daily-arXiv.md)
+- [MA C.'s Daily Paper of Interest | MA C. 每日感兴趣论文（MA C.'s Daily POI）](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI.md)
 - [Artificial-Intelligence-Terminology-Database](https://github.com/jiqizhixin/Artificial-Intelligence-Terminology-Database)
 - [Awesome Document Understanding](https://github.com/tstanislawek/awesome-document-understanding)
 - [Generate arXiv citation format](https://arxiv2bibtex.org/)
