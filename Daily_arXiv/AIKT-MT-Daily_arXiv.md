@@ -3,6 +3,12 @@
 # Index
 
 
+- [2021-11-10](#2021-11-10)
+
+  - [1. Speaker Generation](#2021-11-10-1)
+  - [2. A Survey on Green Deep Learning](#2021-11-10-2)
+  - [3. FPM: A Collection of Large-scale Foundation Pre-trained Language Models](#2021-11-10-3)
+  
 - [2021-11-09](#2021-11-09)
 
   - [1. Tip-Adapter: Training-free CLIP-Adapter for Better Vision-Language Modeling](#2021-11-09-1)
@@ -13,7 +19,7 @@
   - [6. NLP From Scratch Without Large-Scale Pretraining: A Simple and Efficient Framework](#2021-11-09-6)
   - [7. Machine-in-the-Loop Rewriting for Creative Image Captioning](#2021-11-09-7)
   - [8. TaCL: Improving BERT Pre-training with Token-aware Contrastive Learning](#2021-11-09-8)
-  
+
 - [2021-11-08](#2021-11-08)
 
   - [1. StyleCLIPDraw: Coupling Content and Style in Text-to-Drawing Synthesis](#2021-11-08-1)
@@ -62,6 +68,74 @@
   - [5. BERMo: What can BERT learn from ELMo?](#2021-11-01-5)
   - [6. MetaICL: Learning to Learn In Context](#2021-11-01-6)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MT-Daily_arXiv-index.md)
+
+
+
+# 2021-11-10
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-11-10-1">1. Speaker Generation
+</h2>
+
+Authors: [Speaker Generation](https://arxiv.org/abs/2111.05095)
+
+Title: [Daisy Stanton](https://arxiv.org/search/cs?searchtype=author&query=Stanton%2C+D), [Matt Shannon](https://arxiv.org/search/cs?searchtype=author&query=Shannon%2C+M), [Soroosh Mariooryad](https://arxiv.org/search/cs?searchtype=author&query=Mariooryad%2C+S), [RJ Skerry-Ryan](https://arxiv.org/search/cs?searchtype=author&query=Skerry-Ryan%2C+R), [Eric Battenberg](https://arxiv.org/search/cs?searchtype=author&query=Battenberg%2C+E), [Tom Bagby](https://arxiv.org/search/cs?searchtype=author&query=Bagby%2C+T), [David Kao](https://arxiv.org/search/cs?searchtype=author&query=Kao%2C+D)
+
+> This work explores the task of synthesizing speech in nonexistent human-sounding voices. We call this task "speaker generation", and present TacoSpawn, a system that performs competitively at this task. TacoSpawn is a recurrent attention-based text-to-speech model that learns a distribution over a speaker embedding space, which enables sampling of novel and diverse speakers. Our method is easy to implement, and does not require transfer learning from speaker ID systems. We present objective and subjective metrics for evaluating performance on this task, and demonstrate that our proposed objective metrics correlate with human perception of speaker similarity. Audio samples are available on our demo page.
+
+| Comments:    | 12 pages, 3 figures, 4 tables, appendix with 2 tables        |
+| ------------ | ------------------------------------------------------------ |
+| Subjects:    | **Sound (cs.SD)**; Computation and Language (cs.CL); Machine Learning (cs.LG); Audio and Speech Processing (eess.AS) |
+| ACM classes: | I.2.7; G.3                                                   |
+| Cite as:     | **[arXiv:2111.05095](https://arxiv.org/abs/2111.05095) [cs.SD]** |
+|              | (or **[arXiv:2111.05095v1](https://arxiv.org/abs/2111.05095v1) [cs.SD]** for this version) |
+
+
+
+
+
+<h2 id="2021-11-10-2">2. A Survey on Green Deep Learning
+</h2>
+
+Authors: [A Survey on Green Deep Learning](https://arxiv.org/abs/2111.05193)
+
+Title: [Jingjing Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+J), [Wangchunshu Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+W), [Zhiyi Fu](https://arxiv.org/search/cs?searchtype=author&query=Fu%2C+Z), [Hao Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+H), [Lei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L)
+
+> In recent years, larger and deeper models are springing up and continuously pushing state-of-the-art (SOTA) results across various fields like natural language processing (NLP) and computer vision (CV). However, despite promising results, it needs to be noted that the computations required by SOTA models have been increased at an exponential rate. Massive computations not only have a surprisingly large carbon footprint but also have negative effects on research inclusiveness and deployment on real-world applications. 
+> Green deep learning is an increasingly hot research field that appeals to researchers to pay attention to energy usage and carbon emission during model training and inference. The target is to yield novel results with lightweight and efficient technologies. Many technologies can be used to achieve this goal, like model compression and knowledge distillation. This paper focuses on presenting a systematic review of the development of Green deep learning technologies. We classify these approaches into four categories: (1) compact networks, (2) energy-efficient training strategies, (3) energy-efficient inference approaches, and (4) efficient data usage. For each category, we discuss the progress that has been achieved and the unresolved challenges.
+
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2111.05193](https://arxiv.org/abs/2111.05193) [cs.LG]** |
+|           | (or **[arXiv:2111.05193v1](https://arxiv.org/abs/2111.05193v1) [cs.LG]** for this version) |
+
+
+
+
+
+<h2 id="2021-11-10-3">3. FPM: A Collection of Large-scale Foundation Pre-trained Language Models
+</h2>
+
+Authors: [FPM: A Collection of Large-scale Foundation Pre-trained Language Models](https://arxiv.org/abs/2111.04909)
+
+Title: [Dezhou Shen](https://arxiv.org/search/cs?searchtype=author&query=Shen%2C+D)
+
+> Recent work in language modeling has shown that training large-scale Transformer models has promoted the latest developments in natural language processing applications. However, there is very little work to unify the current effective models. In this work, we use the current effective model structure to launch a model set through the current most mainstream technology. We think this will become the basic model in the future. For Chinese, using the GPT-2[9] model, a 10.3 billion parameter language model was trained on the Chinese dataset, and, in particular, a 2.9 billion parameter language model based on dialogue data was trained; the BERT model was trained on the Chinese dataset with 495 million parameters; the Transformer model has trained a language model with 5.6 billion parameters on the Chinese dataset. In English, corresponding training work has also been done. Using the GPT-2 model, a language model with 6.4 billion parameters was trained on the English dataset; the BERT[3] model trained a language model with 1.24 billion parameters on the English dataset, and in particular, it trained a 688 million parameter based on single card training technology Language model; Transformer model trained a language model with 5.6 billion parameters on the English dataset. In the TNEWS classification task evaluated by CLUE[13], the BERT-C model exceeded the 59.46% accuracy of ALBERT-xxlarge with an accuracy rate of 59.99%, an increase of 0.53%. In the QQP classification task evaluated by GLUE[11], the accuracy rate of 78.95% surpassed the accuracy rate of BERT-Large of 72.1%, an increase of 6.85%. Compared with the current accuracy rate of ERNIE, the first place in the GLUE evaluation of 75.2%, an increase of 3.75%.
+
+| Subjects:    | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| ------------ | ------------------------------------------------------------ |
+| ACM classes: | I.2.7                                                        |
+| Cite as:     | **[arXiv:2111.04909](https://arxiv.org/abs/2111.04909) [cs.CL]** |
+|              | (or **[arXiv:2111.04909v1](https://arxiv.org/abs/2111.04909v1) [cs.CL]** for this version) |
+
+
+
+
+
+
 
 
 
