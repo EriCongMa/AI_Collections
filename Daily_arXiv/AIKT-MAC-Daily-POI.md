@@ -3,12 +3,16 @@
 # Index
 
 
-- [2021-11-10](#2021-11-10)
+- [2021-11-11](#2021-11-11)
 
+  - [1. MNet-Sim: A Multi-layered Semantic Similarity Network to Evaluate Sentence Similarity](#2021-11-11-1)
+  - [2. Prune Once for All: Sparse Pre-Trained Language Models](#2021-11-11-2)
+  - [3. Cross-lingual Adaption Model-Agnostic Meta-Learning for Natural Language Understanding](#2021-11-11-3)
+  
+- [2021-11-10](#2021-11-10)
   - [1. Speaker Generation](#2021-11-10-1)
   - [2. A Survey on Green Deep Learning](#2021-11-10-2)
   - [3. FPM: A Collection of Large-scale Foundation Pre-trained Language Models](#2021-11-10-3)
-  
 - [2021-11-09](#2021-11-09)
 
   - [1. Tip-Adapter: Training-free CLIP-Adapter for Better Vision-Language Modeling](#2021-11-09-1)
@@ -19,14 +23,12 @@
   - [6. NLP From Scratch Without Large-Scale Pretraining: A Simple and Efficient Framework](#2021-11-09-6)
   - [7. Machine-in-the-Loop Rewriting for Creative Image Captioning](#2021-11-09-7)
   - [8. TaCL: Improving BERT Pre-training with Token-aware Contrastive Learning](#2021-11-09-8)
-
 - [2021-11-08](#2021-11-08)
 
   - [1. StyleCLIPDraw: Coupling Content and Style in Text-to-Drawing Synthesis](#2021-11-08-1)
   - [2. The Curious Layperson: Fine-Grained Image Recognition without Expert Labels](#2021-11-08-2)
   - [3. How Do Neural Sequence Models Generalize? Local and Global Context Cues for Out-of-Distribution Prediction](#2021-11-08-3)
   - [4. A Syntax-Guided Grammatical Error Correction Model with Dependency Tree Correction](#2021-11-08-4)
-
 - [2021-11-05](#2021-11-05)
   - [1. Benchmarking Multimodal AutoML for Tabular Data with Text Fields](#2021-11-05-1)
   - [2. Lexically Aware Semi-Supervised Learning for OCR Post-Correction](#2021-11-05-2)
@@ -68,6 +70,71 @@
   - [5. BERMo: What can BERT learn from ELMo?](#2021-11-01-5)
   - [6. MetaICL: Learning to Learn In Context](#2021-11-01-6)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2021-11-11
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-11-11-1">1. MNet-Sim: A Multi-layered Semantic Similarity Network to Evaluate Sentence Similarity
+</h2>
+
+Title: [MNet-Sim: A Multi-layered Semantic Similarity Network to Evaluate Sentence Similarity](https://arxiv.org/abs/2111.05412)
+
+Authors: [Manuela Nayantara Jeyaraj](https://arxiv.org/search/cs?searchtype=author&query=Jeyaraj%2C+M+N), [Dharshana Kasthurirathna](https://arxiv.org/search/cs?searchtype=author&query=Kasthurirathna%2C+D)
+
+> Similarity is a comparative-subjective measure that varies with the domain within which it is considered. In several NLP applications such as document classification, pattern recognition, chatbot question-answering, sentiment analysis, etc., identifying an accurate similarity score for sentence pairs has become a crucial area of research. In the existing models that assess similarity, the limitation of effectively computing this similarity based on contextual comparisons, the localization due to the centering theory, and the lack of non-semantic textual comparisons have proven to be drawbacks. Hence, this paper presents a multi-layered semantic similarity network model built upon multiple similarity measures that render an overall sentence similarity score based on the principles of Network Science, neighboring weighted relational edges, and a proposed extended node similarity computation formula. The proposed multi-layered network model was evaluated and tested against established state-of-the-art models and is shown to have demonstrated better performance scores in assessing sentence similarity.
+
+| Subjects:          | **Machine Learning (cs.LG)**; Computation and Language (cs.CL) |
+| ------------------ | ------------------------------------------------------------ |
+| Journal reference: | International Journal of Engineering Trends and Technology 69.7(2021):181-189 |
+| DOI:               | [10.14445/22315381/IJETT-V69I7P225](https://arxiv.org/ct?url=https%3A%2F%2Fdx.doi.org%2F10.14445%2F22315381%2FIJETT-V69I7P225&v=1c1e38c6) |
+| Cite as:           | **[arXiv:2111.05412](https://arxiv.org/abs/2111.05412) [cs.LG]** |
+|                    | (or **[arXiv:2111.05412v1](https://arxiv.org/abs/2111.05412v1) [cs.LG]** for this version) |
+
+
+
+
+
+<h2 id="2021-11-11-2">2. Prune Once for All: Sparse Pre-Trained Language Models
+</h2>
+
+Title: [Prune Once for All: Sparse Pre-Trained Language Models](https://arxiv.org/abs/2111.05754)
+
+Authors: [Ofir Zafrir](https://arxiv.org/search/cs?searchtype=author&query=Zafrir%2C+O), [Ariel Larey](https://arxiv.org/search/cs?searchtype=author&query=Larey%2C+A), [Guy Boudoukh](https://arxiv.org/search/cs?searchtype=author&query=Boudoukh%2C+G), [Haihao Shen](https://arxiv.org/search/cs?searchtype=author&query=Shen%2C+H), [Moshe Wasserblat](https://arxiv.org/search/cs?searchtype=author&query=Wasserblat%2C+M)
+
+> Transformer-based language models are applied to a wide range of applications in natural language processing. However, they are inefficient and difficult to deploy. In recent years, many compression algorithms have been proposed to increase the implementation efficiency of large Transformer-based models on target hardware. In this work we present a new method for training sparse pre-trained Transformer language models by integrating weight pruning and model distillation. These sparse pre-trained models can be used to transfer learning for a wide range of tasks while maintaining their sparsity pattern. We demonstrate our method with three known architectures to create sparse pre-trained BERT-Base, BERT-Large and DistilBERT. We show how the compressed sparse pre-trained models we trained transfer their knowledge to five different downstream natural language tasks with minimal accuracy loss. Moreover, we show how to further compress the sparse models' weights to 8bit precision using quantization-aware training. For example, with our sparse pre-trained BERT-Large fine-tuned on SQuADv1.1 and quantized to 8bit we achieve a compression ratio of 40X for the encoder with less than 1% accuracy loss. To the best of our knowledge, our results show the best compression-to-accuracy ratio for BERT-Base, BERT-Large, and DistilBERT.
+
+| Comments: | ENLSP NeurIPS Workshop 2021, 12 pages                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2111.05754](https://arxiv.org/abs/2111.05754) [cs.CL]** |
+|           | (or **[arXiv:2111.05754v1](https://arxiv.org/abs/2111.05754v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-11-11-3">3. Cross-lingual Adaption Model-Agnostic Meta-Learning for Natural Language Understanding 
+</h2>
+
+Title: [Cross-lingual Adaption Model-Agnostic Meta-Learning for Natural Language Understanding](https://arxiv.org/abs/2111.05805)
+
+Authors: [Qianying Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Q), [Fei Cheng](https://arxiv.org/search/cs?searchtype=author&query=Cheng%2C+F), [Sadao Kurohashi](https://arxiv.org/search/cs?searchtype=author&query=Kurohashi%2C+S)
+
+> Meta learning with auxiliary languages has demonstrated promising improvements for cross-lingual natural language processing. However, previous studies sample the meta-training and meta-testing data from the same language, which limits the ability of the model for cross-lingual transfer. In this paper, we propose XLA-MAML, which performs direct cross-lingual adaption in the meta-learning stage. We conduct zero-shot and few-shot experiments on Natural Language Inference and Question Answering. The experimental results demonstrate the effectiveness of our method across different languages, tasks, and pretrained models. We also give analysis on various cross-lingual specific settings for meta-learning including sampling strategy and parallelism.
+
+| Comments: | 11 pages                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2111.05805](https://arxiv.org/abs/2111.05805) [cs.CL]** |
+|           | (or **[arXiv:2111.05805v1](https://arxiv.org/abs/2111.05805v1) [cs.CL]** for this version) |
+
+
+
 
 
 
