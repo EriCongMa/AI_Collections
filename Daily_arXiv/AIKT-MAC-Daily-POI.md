@@ -3,12 +3,16 @@
 # Index
 
 
+- [2021-11-12](#2021-11-12)
+
+  - [1. Self-Normalized Importance Sampling for Neural Language Modeling](#2021-11-12-1)
+  
 - [2021-11-11](#2021-11-11)
 
   - [1. MNet-Sim: A Multi-layered Semantic Similarity Network to Evaluate Sentence Similarity](#2021-11-11-1)
   - [2. Prune Once for All: Sparse Pre-Trained Language Models](#2021-11-11-2)
   - [3. Cross-lingual Adaption Model-Agnostic Meta-Learning for Natural Language Understanding](#2021-11-11-3)
-  
+
 - [2021-11-10](#2021-11-10)
   - [1. Speaker Generation](#2021-11-10-1)
   - [2. A Survey on Green Deep Learning](#2021-11-10-2)
@@ -70,6 +74,31 @@
   - [5. BERMo: What can BERT learn from ELMo?](#2021-11-01-5)
   - [6. MetaICL: Learning to Learn In Context](#2021-11-01-6)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2021-11-12
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-11-12-1">1. Self-Normalized Importance Sampling for Neural Language Modeling
+</h2>
+
+Title: [Self-Normalized Importance Sampling for Neural Language Modeling](https://arxiv.org/abs/2111.06310)
+
+Authors: [Zijian Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+Z), [Yingbo Gao](https://arxiv.org/search/cs?searchtype=author&query=Gao%2C+Y), [Alexander Gerstenberger](https://arxiv.org/search/cs?searchtype=author&query=Gerstenberger%2C+A), [Jintao Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+J), [Ralf Schlüter](https://arxiv.org/search/cs?searchtype=author&query=Schlüter%2C+R), [Hermann Ney](https://arxiv.org/search/cs?searchtype=author&query=Ney%2C+H)
+
+> To mitigate the problem of having to traverse over the full vocabulary in the softmax normalization of a neural language model, sampling-based training criteria are proposed and investigated in the context of large vocabulary word-based neural language models. These training criteria typically enjoy the benefit of faster training and testing, at a cost of slightly degraded performance in terms of perplexity and almost no visible drop in word error rate. While noise contrastive estimation is one of the most popular choices, recently we show that other sampling-based criteria can also perform well, as long as an extra correction step is done, where the intended class posterior probability is recovered from the raw model outputs. In this work, we propose self-normalized importance sampling. Compared to our previous work, the criteria considered in this work are self-normalized and there is no need to further conduct a correction step. Compared to noise contrastive estimation, our method is directly comparable in terms of complexity in application. Through self-normalized language model training as well as lattice rescoring experiments, we show that our proposed self-normalized importance sampling is competitive in both research-oriented and production-oriented automatic speech recognition tasks.
+
+| Comments: | submitted to ICASSP 2022                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2111.06310](https://arxiv.org/abs/2111.06310) [cs.CL]** |
+|           | (or **[arXiv:2111.06310v1](https://arxiv.org/abs/2111.06310v1) [cs.CL]** for this version) |
+
+
 
 
 
