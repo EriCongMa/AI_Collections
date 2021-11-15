@@ -3,16 +3,19 @@
 # Index
 
 
-- [2021-11-12](#2021-11-12)
+- [2021-11-15](#2021-11-15)
 
-  - [1. Self-Normalized Importance Sampling for Neural Language Modeling](#2021-11-12-1)
+  - [1. On Transferability of Prompt Tuning for Natural Language Understanding](#2021-11-15-1)
+  - [2. BitextEdit: Automatic Bitext Editing for Improved Low-Resource Machine Translation](#2021-11-15-2)
+  - [3. Deciphering Speech: a Zero-Resource Approach to Cross-Lingual Transfer in ASR](#2021-11-15-3)
   
+- [2021-11-12](#2021-11-12)
+  - [1. Self-Normalized Importance Sampling for Neural Language Modeling](#2021-11-12-1)
 - [2021-11-11](#2021-11-11)
 
   - [1. MNet-Sim: A Multi-layered Semantic Similarity Network to Evaluate Sentence Similarity](#2021-11-11-1)
   - [2. Prune Once for All: Sparse Pre-Trained Language Models](#2021-11-11-2)
   - [3. Cross-lingual Adaption Model-Agnostic Meta-Learning for Natural Language Understanding](#2021-11-11-3)
-
 - [2021-11-10](#2021-11-10)
   - [1. Speaker Generation](#2021-11-10-1)
   - [2. A Survey on Green Deep Learning](#2021-11-10-2)
@@ -74,6 +77,67 @@
   - [5. BERMo: What can BERT learn from ELMo?](#2021-11-01-5)
   - [6. MetaICL: Learning to Learn In Context](#2021-11-01-6)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2021-11-15
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-11-15-1">1. On Transferability of Prompt Tuning for Natural Language Understanding
+</h2>
+
+Title: [On Transferability of Prompt Tuning for Natural Language Understanding](https://arxiv.org/abs/2111.06719)
+
+Authors: [Yusheng Su](https://arxiv.org/search/cs?searchtype=author&query=Su%2C+Y), [Xiaozhi Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+X), [Yujia Qin](https://arxiv.org/search/cs?searchtype=author&query=Qin%2C+Y), [Chi-Min Chan](https://arxiv.org/search/cs?searchtype=author&query=Chan%2C+C), [Yankai Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+Y), [Zhiyuan Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Z), [Peng Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+P), [Juanzi Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+J), [Lei Hou](https://arxiv.org/search/cs?searchtype=author&query=Hou%2C+L), [Maosong Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+M), [Jie Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+J)
+
+> Prompt tuning (PT) is a promising parameter-efficient method to utilize extremely large pre-trained language models (PLMs), which could achieve comparable performance to full-parameter fine-tuning by only tuning a few soft prompts. However, compared to fine-tuning, PT empirically requires much more training steps. To explore whether we can improve the efficiency of PT by reusing trained soft prompts and sharing learned knowledge, we empirically investigate the transferability of soft prompts across different tasks and models. In cross-task transfer, we find that trained soft prompts can well transfer to similar tasks and initialize PT for them to accelerate training and improve performance. Moreover, to explore what factors influence prompts' transferability across tasks, we investigate how to measure the prompt similarity and find that the overlapping rate of activated neurons highly correlates to the transferability. In cross-model transfer, we explore how to project the prompts of a PLM to another PLM and successfully train a kind of projector which can achieve non-trivial transfer performance on similar tasks. However, initializing PT with the projected prompts does not work well, which may be caused by optimization preferences and PLMs' high redundancy. Our findings show that improving PT with knowledge transfer is possible and promising, while prompts' cross-task transferability is generally better than the cross-model transferability.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2111.06719](https://arxiv.org/abs/2111.06719) [cs.CL]** |
+|           | (or **[arXiv:2111.06719v1](https://arxiv.org/abs/2111.06719v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-11-15-2">2. BitextEdit: Automatic Bitext Editing for Improved Low-Resource Machine Translation
+</h2>
+
+Title: [BitextEdit: Automatic Bitext Editing for Improved Low-Resource Machine Translation](https://arxiv.org/abs/2111.06787)
+
+Authors: [Eleftheria Briakou](https://arxiv.org/search/cs?searchtype=author&query=Briakou%2C+E), [Sida I. Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+S+I), [Luke Zettlemoyer](https://arxiv.org/search/cs?searchtype=author&query=Zettlemoyer%2C+L), [Marjan Ghazvininejad](https://arxiv.org/search/cs?searchtype=author&query=Ghazvininejad%2C+M)
+
+> Mined bitexts can contain imperfect translations that yield unreliable training signals for Neural Machine Translation (NMT). While filtering such pairs out is known to improve final model quality, we argue that it is suboptimal in low-resource conditions where even mined data can be limited. In our work, we propose instead, to refine the mined bitexts via automatic editing: given a sentence in a language xf, and a possibly imperfect translation of it xe, our model generates a revised version xf' or xe' that yields a more equivalent translation pair (i.e., <xf, xe'> or <xf', xe>). We use a simple editing strategy by (1) mining potentially imperfect translations for each sentence in a given bitext, (2) learning a model to reconstruct the original translations and translate, in a multi-task fashion. Experiments demonstrate that our approach successfully improves the quality of CCMatrix mined bitext for 5 low-resource language-pairs and 10 translation directions by up to ~ 8 BLEU points, in most cases improving upon a competitive back-translation baseline.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2111.06787](https://arxiv.org/abs/2111.06787) [cs.CL]** |
+|           | (or **[arXiv:2111.06787v1](https://arxiv.org/abs/2111.06787v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-11-15-3">3. Deciphering Speech: a Zero-Resource Approach to Cross-Lingual Transfer in ASR
+</h2>
+
+Title: [Deciphering Speech: a Zero-Resource Approach to Cross-Lingual Transfer in ASR](https://arxiv.org/abs/2111.06799)
+
+Authors: [Ondrej Klejch](https://arxiv.org/search/cs?searchtype=author&query=Klejch%2C+O), [Electra Wallington](https://arxiv.org/search/cs?searchtype=author&query=Wallington%2C+E), [Peter Bell](https://arxiv.org/search/cs?searchtype=author&query=Bell%2C+P)
+
+> We present a method for cross-lingual training an ASR system using absolutely no transcribed training data from the target language, and with no phonetic knowledge of the language in question. Our approach uses a novel application of a decipherment algorithm, which operates given only unpaired speech and text data from the target language. We apply this decipherment to phone sequences generated by a universal phone recogniser trained on out-of-language speech corpora, which we follow with flat-start semi-supervised training to obtain an acoustic model for the new language. To the best of our knowledge, this is the first practical approach to zero-resource cross-lingual ASR which does not rely on any hand-crafted phonetic information. We carry out experiments on read speech from the GlobalPhone corpus, and show that it is possible to learn a decipherment model on just 20 minutes of data from the target language. When used to generate pseudo-labels for semi-supervised training, we obtain WERs that range from 25% to just 5% absolute worse than the equivalent fully supervised models trained on the same data.
+
+| Subjects: | **Computation and Language (cs.CL)**; Audio and Speech Processing (eess.AS) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2111.06799](https://arxiv.org/abs/2111.06799) [cs.CL]** |
+|           | (or **[arXiv:2111.06799v1](https://arxiv.org/abs/2111.06799v1) [cs.CL]** for this version) |
+
+
+
 
 
 
