@@ -3,12 +3,24 @@
 # Index
 
 
+- [2021-11-16](#2021-11-16)
+
+  - [1. Curriculum Learning for Vision-and-Language Navigation](#2021-11-16-1)
+  - [2. LiT: Zero-Shot Transfer with Locked-image Text Tuning](#2021-11-16-2)
+  - [3. Explainable Semantic Space by Grounding Language to Vision with Cross-Modal Contrastive Learning](#2021-11-16-3)
+  - [4. DEEP: DEnoising Entity Pre-training for Neural Machine Translation](#2021-11-16-4)
+  - [5. Time Waits for No One! Analysis and Challenges of Temporal Misalignment](#2021-11-16-5)
+  - [6. Measuring Uncertainty in Translation Quality Evaluation (TQE)](#2021-11-16-6)
+  - [7. Data Augmentation for Speech Recognition in Maltese: A Low-Resource Perspective](#2021-11-16-7)
+  - [8. Evaluating Metrics for Bias in Word Embeddings](#2021-11-16-8)
+  - [9. CoLLIE: Continual Learning of Language Grounding from Language-Image Embeddings](#2021-11-16-9)
+  
 - [2021-11-15](#2021-11-15)
 
   - [1. On Transferability of Prompt Tuning for Natural Language Understanding](#2021-11-15-1)
   - [2. BitextEdit: Automatic Bitext Editing for Improved Low-Resource Machine Translation](#2021-11-15-2)
   - [3. Deciphering Speech: a Zero-Resource Approach to Cross-Lingual Transfer in ASR](#2021-11-15-3)
-  
+
 - [2021-11-12](#2021-11-12)
   - [1. Self-Normalized Importance Sampling for Neural Language Modeling](#2021-11-12-1)
 - [2021-11-11](#2021-11-11)
@@ -77,6 +89,183 @@
   - [5. BERMo: What can BERT learn from ELMo?](#2021-11-01-5)
   - [6. MetaICL: Learning to Learn In Context](#2021-11-01-6)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2021-11-16
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-11-16-1">1. Curriculum Learning for Vision-and-Language Navigation
+</h2>
+
+Title: [Curriculum Learning for Vision-and-Language Navigation](https://arxiv.org/abs/2111.07228)
+
+Authors: [Jiwen Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+J), [Zhongyu Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+Z), [Jianqing Fan](https://arxiv.org/search/cs?searchtype=author&query=Fan%2C+J), [Jiajie Peng](https://arxiv.org/search/cs?searchtype=author&query=Peng%2C+J)
+
+> Vision-and-Language Navigation (VLN) is a task where an agent navigates in an embodied indoor environment under human instructions. Previous works ignore the distribution of sample difficulty and we argue that this potentially degrade their agent performance. To tackle this issue, we propose a novel curriculum-based training paradigm for VLN tasks that can balance human prior knowledge and agent learning progress about training samples. We develop the principle of curriculum design and re-arrange the benchmark Room-to-Room (R2R) dataset to make it suitable for curriculum training. Experiments show that our method is model-agnostic and can significantly improve the performance, the generalizability, and the training efficiency of current state-of-the-art navigation agents without increasing model complexity.
+
+| Comments: | Accepted by NeurIPS 2021                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Machine Learning (cs.LG)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL); Computer Vision and Pattern Recognition (cs.CV) |
+| Cite as:  | **[arXiv:2111.07228](https://arxiv.org/abs/2111.07228) [cs.LG]** |
+|           | (or **[arXiv:2111.07228v1](https://arxiv.org/abs/2111.07228v1) [cs.LG]** for this version) |
+
+
+
+
+
+<h2 id="2021-11-16-2">2. LiT: Zero-Shot Transfer with Locked-image Text Tuning
+</h2>
+
+Title: [LiT: Zero-Shot Transfer with Locked-image Text Tuning](https://arxiv.org/abs/2111.07991)
+
+Authors: [Xiaohua Zhai](https://arxiv.org/search/cs?searchtype=author&query=Zhai%2C+X), [Xiao Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+X), [Basil Mustafa](https://arxiv.org/search/cs?searchtype=author&query=Mustafa%2C+B), [Andreas Steiner](https://arxiv.org/search/cs?searchtype=author&query=Steiner%2C+A), [Daniel Keysers](https://arxiv.org/search/cs?searchtype=author&query=Keysers%2C+D), [Alexander Kolesnikov](https://arxiv.org/search/cs?searchtype=author&query=Kolesnikov%2C+A), [Lucas Beyer](https://arxiv.org/search/cs?searchtype=author&query=Beyer%2C+L)
+
+> This paper presents contrastive-tuning, a simple method employing contrastive training to align image and text models while still taking advantage of their pre-training. In our empirical study we find that locked pre-trained image models with unlocked text models work best. We call this instance of contrastive-tuning "Locked-image Text tuning" (LiT-tuning), which just teaches a text model to read out good representations from a pre-trained image model for new tasks. A LiT-tuned model gains the capability of zero-shot transfer to new vision tasks, such as image classification or retrieval. The proposed LiT-tuning is widely applicable; it works reliably with multiple pre-training methods (supervised and unsupervised) and across diverse architectures (ResNet, Vision Transformers and MLP-Mixer) using three different image-text datasets. With the transformer-based pre-trained ViT-g/14 model, the LiT-tuned model achieves 84.5% zero-shot transfer accuracy on the ImageNet test set, and 81.1% on the challenging out-of-distribution ObjectNet test set.
+
+| Comments: | Xiaohua, Xiao, Basil, Andreas and Lucas contributed equally  |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2111.07991](https://arxiv.org/abs/2111.07991) [cs.CV]** |
+|           | (or **[arXiv:2111.07991v1](https://arxiv.org/abs/2111.07991v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-11-16-3">3. Explainable Semantic Space by Grounding Language to Vision with Cross-Modal Contrastive Learning
+</h2>
+
+Title: [Explainable Semantic Space by Grounding Language to Vision with Cross-Modal Contrastive Learning](https://arxiv.org/abs/2111.07180)
+
+Authors: [Yizhen Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Y), [Minkyu Choi](https://arxiv.org/search/cs?searchtype=author&query=Choi%2C+M), [Kuan Han](https://arxiv.org/search/cs?searchtype=author&query=Han%2C+K), [Zhongming Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Z)
+
+> In natural language processing, most models try to learn semantic representations merely from texts. The learned representations encode the distributional semantics but fail to connect to any knowledge about the physical world. In contrast, humans learn language by grounding concepts in perception and action and the brain encodes grounded semantics for cognition. Inspired by this notion and recent work in vision-language learning, we design a two-stream model for grounding language learning in vision. The model includes a VGG-based visual stream and a Bert-based language stream. The two streams merge into a joint representational space. Through cross-modal contrastive learning, the model first learns to align visual and language representations with the MS COCO dataset. The model further learns to retrieve visual objects with language queries through a cross-modal attention module and to infer the visual relations between the retrieved objects through a bilinear operator with the Visual Genome dataset. After training, the language stream of this model is a stand-alone language model capable of embedding concepts in a visually grounded semantic space. This semantic space manifests principal dimensions explainable with human intuition and neurobiological knowledge. Word embeddings in this semantic space are predictive of human-defined norms of semantic features and are segregated into perceptually distinctive clusters. Furthermore, the visually grounded language model also enables compositional language understanding based on visual knowledge and multimodal image search with queries based on images, texts, or their combinations.
+
+| Comments: | 10 pages, 7 figures, 1 appendix, to be published in Neurips 2021 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2111.07180](https://arxiv.org/abs/2111.07180) [cs.CL]** |
+|           | (or **[arXiv:2111.07180v1](https://arxiv.org/abs/2111.07180v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-11-16-4">4. DEEP: DEnoising Entity Pre-training for Neural Machine Translation
+</h2>
+
+Title: [DEEP: DEnoising Entity Pre-training for Neural Machine Translation](https://arxiv.org/abs/2111.07393)
+
+Authors: [Junjie Hu](https://arxiv.org/search/cs?searchtype=author&query=Hu%2C+J), [Hiroaki Hayashi](https://arxiv.org/search/cs?searchtype=author&query=Hayashi%2C+H), [Kyunghyun Cho](https://arxiv.org/search/cs?searchtype=author&query=Cho%2C+K), [Graham Neubig](https://arxiv.org/search/cs?searchtype=author&query=Neubig%2C+G)
+
+> It has been shown that machine translation models usually generate poor translations for named entities that are infrequent in the training corpus. Earlier named entity translation methods mainly focus on phonetic transliteration, which ignores the sentence context for translation and is limited in domain and language coverage. To address this limitation, we propose DEEP, a DEnoising Entity Pre-training method that leverages large amounts of monolingual data and a knowledge base to improve named entity translation accuracy within sentences. Besides, we investigate a multi-task learning strategy that finetunes a pre-trained neural machine translation model on both entity-augmented monolingual data and parallel data to further improve entity translation. Experimental results on three language pairs demonstrate that \method results in significant improvements over strong denoising auto-encoding baselines, with a gain of up to 1.3 BLEU and up to 9.2 entity accuracy points for English-Russian translation.
+
+| Comments: | 13 pages                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2111.07393](https://arxiv.org/abs/2111.07393) [cs.CL]** |
+|           | (or **[arXiv:2111.07393v1](https://arxiv.org/abs/2111.07393v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-11-16-5">5. Time Waits for No One! Analysis and Challenges of Temporal Misalignment
+</h2>
+
+Title: [Time Waits for No One! Analysis and Challenges of Temporal Misalignment](https://arxiv.org/abs/2111.07408)
+
+Authors: [Kelvin Luu](https://arxiv.org/search/cs?searchtype=author&query=Luu%2C+K), [Daniel Khashabi](https://arxiv.org/search/cs?searchtype=author&query=Khashabi%2C+D), [Suchin Gururangan](https://arxiv.org/search/cs?searchtype=author&query=Gururangan%2C+S), [Karishma Mandyam](https://arxiv.org/search/cs?searchtype=author&query=Mandyam%2C+K), [Noah A. Smith](https://arxiv.org/search/cs?searchtype=author&query=Smith%2C+N+A)
+
+> When an NLP model is trained on text data from one time period and tested or deployed on data from another, the resulting temporal misalignment can degrade end-task performance. In this work, we establish a suite of eight diverse tasks across different domains (social media, science papers, news, and reviews) and periods of time (spanning five years or more) to quantify the effects of temporal misalignment. Our study is focused on the ubiquitous setting where a pretrained model is optionally adapted through continued domain-specific pretraining, followed by task-specific finetuning. We establish a suite of tasks across multiple domains to study temporal misalignment in modern NLP systems. We find stronger effects of temporal misalignment on task performance than have been previously reported. We also find that, while temporal adaptation through continued pretraining can help, these gains are small compared to task-specific finetuning on data from the target time period. Our findings motivate continued research to improve temporal robustness of NLP models.
+
+| Comments: | 9 pages, 6 figures, 3 tables                                 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2111.07408](https://arxiv.org/abs/2111.07408) [cs.CL]** |
+|           | (or **[arXiv:2111.07408v1](https://arxiv.org/abs/2111.07408v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-11-16-6">6. Measuring Uncertainty in Translation Quality Evaluation (TQE)
+</h2>
+
+Title: [Measuring Uncertainty in Translation Quality Evaluation (TQE)](https://arxiv.org/abs/2111.07699)
+
+Authors: [Serge Gladkoff](https://arxiv.org/search/cs?searchtype=author&query=Gladkoff%2C+S), [Irina Sorokina](https://arxiv.org/search/cs?searchtype=author&query=Sorokina%2C+I), [Lifeng Han](https://arxiv.org/search/cs?searchtype=author&query=Han%2C+L), [Alexandra Alekseeva](https://arxiv.org/search/cs?searchtype=author&query=Alekseeva%2C+A)
+
+> From both human translators (HT) and machine translation (MT) researchers' point of view, translation quality evaluation (TQE) is an essential task. Translation service providers (TSPs) have to deliver large volumes of translations which meet customer specifications with harsh constraints of required quality level in tight time-frames and costs. MT researchers strive to make their models better, which also requires reliable quality evaluation. While automatic machine translation evaluation (MTE) metrics and quality estimation (QE) tools are widely available and easy to access, existing automated tools are not good enough, and human assessment from professional translators (HAP) are often chosen as the golden standard \cite{han-etal-2021-TQA}. Human evaluations, however, are often accused of having low reliability and agreement. Is this caused by subjectivity or statistics is at play? How to avoid the entire text to be checked and be more efficient with TQE from cost and efficiency perspectives, and what is the optimal sample size of the translated text, so as to reliably estimate the translation quality of the entire material? This work carries out such motivated research to correctly estimate the confidence intervals \cite{Brown_etal2001Interval} depending on the sample size of the translated text, e.g. the amount of words or sentences, that needs to be processed on TQE workflow step for confident and reliable evaluation of overall translation quality. The methodology we applied for this work is from Bernoulli Statistical Distribution Modelling (BSDM) and Monte Carlo Sampling Analysis (MCSA).
+
+| Comments: | 13 pages, 9 figures                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Numerical Analysis (math.NA); Applications (stat.AP) |
+| Cite as:  | **[arXiv:2111.07699](https://arxiv.org/abs/2111.07699) [cs.CL]** |
+|           | (or **[arXiv:2111.07699v1](https://arxiv.org/abs/2111.07699v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-11-16-7">7. Data Augmentation for Speech Recognition in Maltese: A Low-Resource Perspective
+</h2>
+
+Title: [Data Augmentation for Speech Recognition in Maltese: A Low-Resource Perspective](https://arxiv.org/abs/2111.07793)
+
+Authors: [Carlos Mena](https://arxiv.org/search/cs?searchtype=author&query=Mena%2C+C), [Andrea DeMarco](https://arxiv.org/search/cs?searchtype=author&query=DeMarco%2C+A), [Claudia Borg](https://arxiv.org/search/cs?searchtype=author&query=Borg%2C+C), [Lonneke van der Plas](https://arxiv.org/search/cs?searchtype=author&query=van+der+Plas%2C+L), [Albert Gatt](https://arxiv.org/search/cs?searchtype=author&query=Gatt%2C+A)
+
+> Developing speech technologies is a challenge for low-resource languages for which both annotated and raw speech data is sparse. Maltese is one such language. Recent years have seen an increased interest in the computational processing of Maltese, including speech technologies, but resources for the latter remain sparse. In this paper, we consider data augmentation techniques for improving speech recognition for such languages, focusing on Maltese as a test case. We consider three different types of data augmentation: unsupervised training, multilingual training and the use of synthesized speech as training data. The goal is to determine which of these techniques, or combination of them, is the most effective to improve speech recognition for languages where the starting point is a small corpus of approximately 7 hours of transcribed speech. Our results show that combining the three data augmentation techniques studied here lead us to an absolute WER improvement of 15% without the use of a language model.
+
+| Comments: | 30 pages; 9 tables                                           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2111.07793](https://arxiv.org/abs/2111.07793) [cs.CL]** |
+|           | (or **[arXiv:2111.07793v1](https://arxiv.org/abs/2111.07793v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-11-16-8">8. Evaluating Metrics for Bias in Word Embeddings
+</h2>
+
+Title: [Evaluating Metrics for Bias in Word Embeddings](https://arxiv.org/abs/2111.07864)
+
+Authors: [Sarah Schröder](https://arxiv.org/search/cs?searchtype=author&query=Schröder%2C+S), [Alexander Schulz](https://arxiv.org/search/cs?searchtype=author&query=Schulz%2C+A), [Philip Kenneweg](https://arxiv.org/search/cs?searchtype=author&query=Kenneweg%2C+P), [Robert Feldhans](https://arxiv.org/search/cs?searchtype=author&query=Feldhans%2C+R), [Fabian Hinder](https://arxiv.org/search/cs?searchtype=author&query=Hinder%2C+F), [Barbara Hammer](https://arxiv.org/search/cs?searchtype=author&query=Hammer%2C+B)
+
+> Over the last years, word and sentence embeddings have established as text preprocessing for all kinds of NLP tasks and improved the performances significantly. Unfortunately, it has also been shown that these embeddings inherit various kinds of biases from the training data and thereby pass on biases present in society to NLP solutions. Many papers attempted to quantify bias in word or sentence embeddings to evaluate debiasing methods or compare different embedding models, usually with cosine-based metrics. However, lately some works have raised doubts about these metrics showing that even though such metrics report low biases, other tests still show biases. In fact, there is a great variety of bias metrics or tests proposed in the literature without any consensus on the optimal solutions. Yet we lack works that evaluate bias metrics on a theoretical level or elaborate the advantages and disadvantages of different bias metrics. In this work, we will explore different cosine based bias metrics. We formalize a bias definition based on the ideas from previous works and derive conditions for bias metrics. Furthermore, we thoroughly investigate the existing cosine-based metrics and their limitations to show why these metrics can fail to report biases in some cases. Finally, we propose a new metric, SAME, to address the shortcomings of existing metrics and mathematically prove that SAME behaves appropriately.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2111.07864](https://arxiv.org/abs/2111.07864) [cs.CL]** |
+|           | (or **[arXiv:2111.07864v1](https://arxiv.org/abs/2111.07864v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-11-16-9">9. CoLLIE: Continual Learning of Language Grounding from Language-Image Embeddings
+</h2>
+
+Title: [CoLLIE: Continual Learning of Language Grounding from Language-Image Embeddings](https://arxiv.org/abs/2111.07993)
+
+Authors: [Gabriel Skantze](https://arxiv.org/search/cs?searchtype=author&query=Skantze%2C+G), [Bram Willemsen](https://arxiv.org/search/cs?searchtype=author&query=Willemsen%2C+B)
+
+> This paper presents CoLLIE: a simple, yet effective model for continual learning of how language is grounded in vision. Given a pre-trained multimodal embedding model, where language and images are projected in the same semantic space (in this case CLIP by OpenAI), CoLLIE learns a transformation function that adjusts the language embeddings when needed to accommodate new language use. Unlike traditional few-shot learning, the model does not just learn new classes and labels, but can also generalize to similar language use. We verify the model's performance on two different tasks of continual learning and show that it can efficiently learn and generalize from only a few examples, with little interference with the model's original zero-shot performance.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2111.07993](https://arxiv.org/abs/2111.07993) [cs.CL]** |
+|           | (or **[arXiv:2111.07993v1](https://arxiv.org/abs/2111.07993v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
