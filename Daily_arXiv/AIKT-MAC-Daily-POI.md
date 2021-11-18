@@ -3,6 +3,21 @@
 # Index
 
 
+- [2021-11-18](#2021-11-18)
+
+  - [1. Transparent Human Evaluation for Image Captioning](#2021-11-18-1)
+  - [2. Character Transformations for Non-Autoregressive GEC Tagging](#2021-11-18-2)
+  - [3. XLS-R: Self-supervised Cross-lingual Speech Representation Learning at Scale](#2021-11-18-3)
+  
+- [2021-11-17](#2021-11-17)
+  - [1. Joint Unsupervised and Supervised Training for Multilingual ASR](#2021-11-17-1)
+  - [2. Multi-Grained Vision Language Pre-Training: Aligning Texts with Visual Concepts](#2021-11-17-2)
+  - [3. Few-Shot Self-Rationalization with Natural Language Prompts](#2021-11-17-3)
+  - [4. Integrated Semantic and Phonetic Post-correction for Chinese Speech Recognition](#2021-11-17-4)
+  - [5. Generative Pre-Trained Transformer for Design Concept Generation: An Exploration](#2021-11-17-5)
+  - [6. CVSS-BERT: Explainable Natural Language Processing to Determine the Severity of a Computer Security Vulnerability from its Description](#2021-11-17-6)
+  - [7. NVIDIA NeMo Neural Machine Translation Systems for English-German and English-Russian News and Biomedical Tasks at WMT21](#2021-11-17-7)
+  - [8. Document AI: Benchmarks, Models and Applications](#2021-11-17-8)
 - [2021-11-16](#2021-11-16)
 
   - [1. Curriculum Learning for Vision-and-Language Navigation](#2021-11-16-1)
@@ -14,13 +29,11 @@
   - [7. Data Augmentation for Speech Recognition in Maltese: A Low-Resource Perspective](#2021-11-16-7)
   - [8. Evaluating Metrics for Bias in Word Embeddings](#2021-11-16-8)
   - [9. CoLLIE: Continual Learning of Language Grounding from Language-Image Embeddings](#2021-11-16-9)
-  
 - [2021-11-15](#2021-11-15)
 
   - [1. On Transferability of Prompt Tuning for Natural Language Understanding](#2021-11-15-1)
   - [2. BitextEdit: Automatic Bitext Editing for Improved Low-Resource Machine Translation](#2021-11-15-2)
   - [3. Deciphering Speech: a Zero-Resource Approach to Cross-Lingual Transfer in ASR](#2021-11-15-3)
-
 - [2021-11-12](#2021-11-12)
   - [1. Self-Normalized Importance Sampling for Neural Language Modeling](#2021-11-12-1)
 - [2021-11-11](#2021-11-11)
@@ -89,6 +102,206 @@
   - [5. BERMo: What can BERT learn from ELMo?](#2021-11-01-5)
   - [6. MetaICL: Learning to Learn In Context](#2021-11-01-6)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2021-11-18
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-11-18-1">1. Transparent Human Evaluation for Image Captioning
+</h2>
+
+Title: [Transparent Human Evaluation for Image Captioning](https://arxiv.org/abs/2111.08940)
+Authors: [Jungo Kasai](https://arxiv.org/search/cs?searchtype=author&query=Kasai%2C+J), [Keisuke Sakaguchi](https://arxiv.org/search/cs?searchtype=author&query=Sakaguchi%2C+K), [Lavinia Dunagan](https://arxiv.org/search/cs?searchtype=author&query=Dunagan%2C+L), [Jacob Morrison](https://arxiv.org/search/cs?searchtype=author&query=Morrison%2C+J), [Ronan Le Bras](https://arxiv.org/search/cs?searchtype=author&query=Bras%2C+R+L), [Yejin Choi](https://arxiv.org/search/cs?searchtype=author&query=Choi%2C+Y), [Noah A. Smith](https://arxiv.org/search/cs?searchtype=author&query=Smith%2C+N+A)
+
+> We establish a rubric-based human evaluation protocol for image captioning models. Our scoring rubrics and their definitions are carefully developed based on machine- and human-generated captions on the MSCOCO dataset. Each caption is evaluated along two main dimensions in a tradeoff (precision and recall) as well as other aspects that measure the text quality (fluency, conciseness, and inclusive language). Our evaluations demonstrate several critical problems of the current evaluation practice. Human-generated captions show substantially higher quality than machine-generated ones, especially in coverage of salient information (i.e., recall), while all automatic metrics say the opposite. Our rubric-based results reveal that CLIPScore, a recent metric that uses image features, better correlates with human judgments than conventional text-only metrics because it is more sensitive to recall. We hope that this work will promote a more transparent evaluation protocol for image captioning and its automatic metrics.
+
+| Subjects: | **Computation and Language (cs.CL)**; Computer Vision and Pattern Recognition (cs.CV) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2111.08940](https://arxiv.org/abs/2111.08940) [cs.CL]** |
+|           | (or **[arXiv:2111.08940v1](https://arxiv.org/abs/2111.08940v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-11-18-2">2. Character Transformations for Non-Autoregressive GEC Tagging
+</h2>
+
+Title: [Character Transformations for Non-Autoregressive GEC Tagging](https://arxiv.org/abs/2111.09280)
+Authors: [Milan Straka](https://arxiv.org/search/cs?searchtype=author&query=Straka%2C+M), [Jakub Náplava](https://arxiv.org/search/cs?searchtype=author&query=Náplava%2C+J), [Jana Straková](https://arxiv.org/search/cs?searchtype=author&query=Straková%2C+J)
+
+> We propose a character-based nonautoregressive GEC approach, with automatically generated character transformations. Recently, per-word classification of correction edits has proven an efficient, parallelizable alternative to current encoder-decoder GEC systems. We show that word replacement edits may be suboptimal and lead to explosion of rules for spelling, diacritization and errors in morphologically rich languages, and propose a method for generating character transformations from GEC corpus. Finally, we train character transformation models for Czech, German and Russian, reaching solid results and dramatic speedup compared to autoregressive systems. The source code is released at [this https URL](https://github.com/ufal/wnut2021_character_transformations_gec).
+
+| Comments: | Accepted to W-NUT 2021                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2111.09280](https://arxiv.org/abs/2111.09280) [cs.CL]** |
+|           | (or **[arXiv:2111.09280v1](https://arxiv.org/abs/2111.09280v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-11-18-3">3. XLS-R: Self-supervised Cross-lingual Speech Representation Learning at Scale
+</h2>
+
+Title: [XLS-R: Self-supervised Cross-lingual Speech Representation Learning at Scale](https://arxiv.org/abs/2111.09296)
+Authors: [Arun Babu](https://arxiv.org/search/cs?searchtype=author&query=Babu%2C+A), [Changhan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+C), [Andros Tjandra](https://arxiv.org/search/cs?searchtype=author&query=Tjandra%2C+A), [Kushal Lakhotia](https://arxiv.org/search/cs?searchtype=author&query=Lakhotia%2C+K), [Qiantong Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+Q), [Naman Goyal](https://arxiv.org/search/cs?searchtype=author&query=Goyal%2C+N), [Kritika Singh](https://arxiv.org/search/cs?searchtype=author&query=Singh%2C+K), [Patrick von Platen](https://arxiv.org/search/cs?searchtype=author&query=von+Platen%2C+P), [Yatharth Saraf](https://arxiv.org/search/cs?searchtype=author&query=Saraf%2C+Y), [Juan Pino](https://arxiv.org/search/cs?searchtype=author&query=Pino%2C+J), [Alexei Baevski](https://arxiv.org/search/cs?searchtype=author&query=Baevski%2C+A), [Alexis Conneau](https://arxiv.org/search/cs?searchtype=author&query=Conneau%2C+A), [Michael Auli](https://arxiv.org/search/cs?searchtype=author&query=Auli%2C+M)
+
+> This paper presents XLS-R, a large-scale model for cross-lingual speech representation learning based on wav2vec 2.0. We train models with up to 2B parameters on nearly half a million hours of publicly available speech audio in 128 languages, an order of magnitude more public data than the largest known prior work. Our evaluation covers a wide range of tasks, domains, data regimes and languages, both high and low-resource. On the CoVoST-2 speech translation benchmark, we improve the previous state of the art by an average of 7.4 BLEU over 21 translation directions into English. For speech recognition, XLS-R improves over the best known prior work on BABEL, MLS, CommonVoice as well as VoxPopuli, lowering error rates by 14-34% relative on average. XLS-R also sets a new state of the art on VoxLingua107 language identification. Moreover, we show that with sufficient model size, cross-lingual pretraining can outperform English-only pretraining when translating English speech into other languages, a setting which favors monolingual pretraining. We hope XLS-R can help to improve speech processing tasks for many more languages of the world.
+
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2111.09296](https://arxiv.org/abs/2111.09296) [cs.CL]** |
+|           | (or **[arXiv:2111.09296v1](https://arxiv.org/abs/2111.09296v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+# 2021-11-17
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-11-17-1">1. Joint Unsupervised and Supervised Training for Multilingual ASR
+</h2>
+
+Title: [Joint Unsupervised and Supervised Training for Multilingual ASR](https://arxiv.org/abs/2111.08137)
+
+Authors: [Junwen Bai](https://arxiv.org/search/cs?searchtype=author&query=Bai%2C+J), [Bo Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+B), [Yu Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Y), [Ankur Bapna](https://arxiv.org/search/cs?searchtype=author&query=Bapna%2C+A), [Nikhil Siddhartha](https://arxiv.org/search/cs?searchtype=author&query=Siddhartha%2C+N), [Khe Chai Sim](https://arxiv.org/search/cs?searchtype=author&query=Sim%2C+K+C), [Tara N. Sainath](https://arxiv.org/search/cs?searchtype=author&query=Sainath%2C+T+N)
+
+> Self-supervised training has shown promising gains in pretraining models and facilitating the downstream finetuning for speech recognition, like multilingual ASR. Most existing methods adopt a 2-stage scheme where the self-supervised loss is optimized in the first pretraining stage, and the standard supervised finetuning resumes in the second stage. In this paper, we propose an end-to-end (E2E) Joint Unsupervised and Supervised Training (JUST) method to combine the supervised RNN-T loss and the self-supervised contrastive and masked language modeling (MLM) losses. We validate its performance on the public dataset Multilingual LibriSpeech (MLS), which includes 8 languages and is extremely imbalanced. On MLS, we explore (1) JUST trained from scratch, and (2) JUST finetuned from a pretrained checkpoint. Experiments show that JUST can consistently outperform other existing state-of-the-art methods, and beat the monolingual baseline by a significant margin, demonstrating JUST's capability of handling low-resource languages in multilingual ASR. Our average WER of all languages outperforms average monolingual baseline by 33.3%, and the state-of-the-art 2-stage XLSR by 32%. On low-resource languages like Polish, our WER is less than half of the monolingual baseline and even beats the supervised transfer learning method which uses external supervision.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG); Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2111.08137](https://arxiv.org/abs/2111.08137) [cs.CL]** |
+|           | (or **[arXiv:2111.08137v1](https://arxiv.org/abs/2111.08137v1) [cs.CL]** for this version) |
+
+
+
+<h2 id="2021-11-17-2">2. Multi-Grained Vision Language Pre-Training: Aligning Texts with Visual Concepts
+</h2>
+
+Title: [Multi-Grained Vision Language Pre-Training: Aligning Texts with Visual Concepts](https://arxiv.org/abs/2111.08276)
+
+Authors: [Yan Zeng](https://arxiv.org/search/cs?searchtype=author&query=Zeng%2C+Y), [Xinsong Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+X), [Hang Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+H)
+
+> Most existing methods in vision language pre-training rely on object-centric features extracted through object detection, and make fine-grained alignments between the extracted features and texts. We argue that the use of object detection may not be suitable for vision language pre-training. Instead, we point out that the task should be performed so that the regions of `visual concepts' mentioned in the texts are located in the images, and in the meantime alignments between texts and visual concepts are identified, where the alignments are in multi-granularity. This paper proposes a new method called X-VLM to perform `multi-grained vision language pre-training'. Experimental results show that X-VLM consistently outperforms state-of-the-art methods in many downstream vision language tasks.
+
+| Comments: | 13 pages, 5 figures                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Computer Vision and Pattern Recognition (cs.CV) |
+| Cite as:  | **[arXiv:2111.08276](https://arxiv.org/abs/2111.08276) [cs.CL]** |
+|           | (or **[arXiv:2111.08276v1](https://arxiv.org/abs/2111.08276v1) [cs.CL]** for this version) |
+
+
+
+<h2 id="2021-11-17-3">3. Few-Shot Self-Rationalization with Natural Language Prompts
+</h2>
+
+Title: [Few-Shot Self-Rationalization with Natural Language Prompts](https://arxiv.org/abs/2111.08284)
+
+Authors: [Ana Marasović](https://arxiv.org/search/cs?searchtype=author&query=Marasović%2C+A), [Iz Beltagy](https://arxiv.org/search/cs?searchtype=author&query=Beltagy%2C+I), [Doug Downey](https://arxiv.org/search/cs?searchtype=author&query=Downey%2C+D), [Matthew E. Peters](https://arxiv.org/search/cs?searchtype=author&query=Peters%2C+M+E)
+
+> Self-rationalization models that predict task labels and generate free-text elaborations for their predictions could enable more intuitive interaction with NLP systems. These models are, however, currently trained with a large amount of human-written free-text explanations for each task which hinders their broader usage. We propose to study a more realistic setting of self-rationalization using few training examples. We present FEB -- a standardized collection of four existing English-language datasets and associated metrics. We identify the right prompting approach by extensively exploring natural language prompts on FEB. Then, by using this prompt and scaling the model size, we demonstrate that making progress on few-shot self-rationalization is possible. We show there is still ample room for improvement in this task: the average plausibility of generated explanations assessed by human annotators is at most 51%, while plausibility of human explanations is 76%. We hope that FEB together with our proposed approach will spur the community to take on the few-shot self-rationalization challenge.
+
+| Comments: | First two authors contributed equally                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2111.08284](https://arxiv.org/abs/2111.08284) [cs.CL]** |
+|           | (or **[arXiv:2111.08284v1](https://arxiv.org/abs/2111.08284v1) [cs.CL]** for this version) |
+
+
+
+<h2 id="2021-11-17-4">4. Integrated Semantic and Phonetic Post-correction for Chinese Speech Recognition
+</h2>
+
+Title: [Integrated Semantic and Phonetic Post-correction for Chinese Speech Recognition](https://arxiv.org/abs/2111.08400)
+
+Authors: [Yi-Chang Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+Y), [Chun-Yen Cheng](https://arxiv.org/search/cs?searchtype=author&query=Cheng%2C+C), [Chien-An Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+C), [Ming-Chieh Sung](https://arxiv.org/search/cs?searchtype=author&query=Sung%2C+M), [Yi-Ren Yeh](https://arxiv.org/search/cs?searchtype=author&query=Yeh%2C+Y)
+
+> Due to the recent advances of natural language processing, several works have applied the pre-trained masked language model (MLM) of BERT to the post-correction of speech recognition. However, existing pre-trained models only consider the semantic correction while the phonetic features of words is neglected. The semantic-only post-correction will consequently decrease the performance since homophonic errors are fairly common in Chinese ASR. In this paper, we proposed a novel approach to collectively exploit the contextualized representation and the phonetic information between the error and its replacing candidates to alleviate the error rate of Chinese ASR. Our experiment results on real world speech recognition datasets showed that our proposed method has evidently lower CER than the baseline model, which utilized a pre-trained BERT MLM as the corrector.
+
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2111.08400](https://arxiv.org/abs/2111.08400) [cs.CL]** |
+|           | (or **[arXiv:2111.08400v1](https://arxiv.org/abs/2111.08400v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-11-17-5">5. Generative Pre-Trained Transformer for Design Concept Generation: An Exploration
+</h2>
+
+Title: [Generative Pre-Trained Transformer for Design Concept Generation: An Exploration](https://arxiv.org/abs/2111.08489)
+
+Authors: [Qihao Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+Q), [Jianxi Luo](https://arxiv.org/search/cs?searchtype=author&query=Luo%2C+J)
+
+> Novel concepts are essential for design innovation and can be generated with the aid of data stimuli and computers. However, current generative design algorithms focus on diagrammatic or spatial concepts that are either too abstract to understand or too detailed for early phase design exploration. This paper explores the uses of generative pre-trained transformers (GPT) for natural language design concept generation. Our experiments involve the use of GPT-2 and GPT-3 for different creative reasonings in design tasks. Both show reasonably good performance for verbal design concept generation.
+
+| Comments: | Submitted to the DESIGN 2022 Conference                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2111.08489](https://arxiv.org/abs/2111.08489) [cs.CL]** |
+|           | (or **[arXiv:2111.08489v1](https://arxiv.org/abs/2111.08489v1) [cs.CL]** for this version) |
+
+<h2 id="2021-11-17-6">6. CVSS-BERT: Explainable Natural Language Processing to Determine the Severity of a Computer Security Vulnerability from its Description
+</h2>
+
+Title: [CVSS-BERT: Explainable Natural Language Processing to Determine the Severity of a Computer Security Vulnerability from its Description](https://arxiv.org/abs/2111.08510)
+
+Authors: [Mustafizur Shahid](https://arxiv.org/search/cs?searchtype=author&query=Shahid%2C+M) (IP Paris), [Hervé Debar](https://arxiv.org/search/cs?searchtype=author&query=Debar%2C+H)
+
+> When a new computer security vulnerability is publicly disclosed, only a textual description of it is available. Cybersecurity experts later provide an analysis of the severity of the vulnerability using the Common Vulnerability Scoring System (CVSS). Specifically, the different characteristics of the vulnerability are summarized into a vector (consisting of a set of metrics), from which a severity score is computed. However, because of the high number of vulnerabilities disclosed everyday this process requires lot of manpower, and several days may pass before a vulnerability is analyzed. We propose to leverage recent advances in the field of Natural Language Processing (NLP) to determine the CVSS vector and the associated severity score of a vulnerability from its textual description in an explainable manner. To this purpose, we trained multiple BERT classifiers, one for each metric composing the CVSS vector. Experimental results show that our trained classifiers are able to determine the value of the metrics of the CVSS vector with high accuracy. The severity score computed from the predicted CVSS vector is also very close to the real severity score attributed by a human expert. For explainability purpose, gradient-based input saliency method was used to determine the most relevant input words for a given prediction made by our classifiers. Often, the top relevant words include terms in agreement with the rationales of a human cybersecurity expert, making the explanation comprehensible for end-users.
+
+| Comments: | 2021 20th IEEE International Conference on Machine Learning and Applications (ICMLA), Dec 2021, Pasadena, United States |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2111.08510](https://arxiv.org/abs/2111.08510) [cs.CL]** |
+|           | (or **[arXiv:2111.08510v1](https://arxiv.org/abs/2111.08510v1) [cs.CL]** for this version) |
+
+
+
+<h2 id="2021-11-17-7">7. NVIDIA NeMo Neural Machine Translation Systems for English-German and English-Russian News and Biomedical Tasks at WMT21
+</h2>
+
+Title: [NVIDIA NeMo Neural Machine Translation Systems for English-German and English-Russian News and Biomedical Tasks at WMT21](https://arxiv.org/abs/2111.08634)
+
+Authors: [Sandeep Subramanian](https://arxiv.org/search/cs?searchtype=author&query=Subramanian%2C+S), [Oleksii Hrinchuk](https://arxiv.org/search/cs?searchtype=author&query=Hrinchuk%2C+O), [Virginia Adams](https://arxiv.org/search/cs?searchtype=author&query=Adams%2C+V), [Oleksii Kuchaiev](https://arxiv.org/search/cs?searchtype=author&query=Kuchaiev%2C+O)
+
+> This paper provides an overview of NVIDIA NeMo's neural machine translation systems for the constrained data track of the WMT21 News and Biomedical Shared Translation Tasks. Our news task submissions for English-German (En-De) and English-Russian (En-Ru) are built on top of a baseline transformer-based sequence-to-sequence model. Specifically, we use a combination of 1) checkpoint averaging 2) model scaling 3) data augmentation with backtranslation and knowledge distillation from right-to-left factorized models 4) finetuning on test sets from previous years 5) model ensembling 6) shallow fusion decoding with transformer language models and 7) noisy channel re-ranking. Additionally, our biomedical task submission for English-Russian uses a biomedically biased vocabulary and is trained from scratch on news task data, medically relevant text curated from the news task dataset, and biomedical data provided by the shared task. Our news system achieves a sacreBLEU score of 39.5 on the WMT'20 En-De test set outperforming the best submission from last year's task of 38.8. Our biomedical task Ru-En and En-Ru systems reach BLEU scores of 43.8 and 40.3 respectively on the WMT'20 Biomedical Task Test set, outperforming the previous year's best submissions.
+
+| Comments: | WMT'21 news and biomedical shared task submission            |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2111.08634](https://arxiv.org/abs/2111.08634) [cs.CL]** |
+|           | (or **[arXiv:2111.08634v1](https://arxiv.org/abs/2111.08634v1) [cs.CL]** for this version) |
+
+
+
+<h2 id="2021-11-17-8">8. Document AI: Benchmarks, Models and Applications
+</h2>
+
+Title: [Document AI: Benchmarks, Models and Applications](https://arxiv.org/abs/2111.08609)
+
+Authors: [Lei Cui](https://arxiv.org/search/cs?searchtype=author&query=Cui%2C+L), [Yiheng Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+Y), [Tengchao Lv](https://arxiv.org/search/cs?searchtype=author&query=Lv%2C+T), [Furu Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+F)
+
+> Document AI, or Document Intelligence, is a relatively new research topic that refers to the techniques for automatically reading, understanding, and analyzing business documents. It is an important research direction for natural language processing and computer vision. In recent years, the popularity of deep learning technology has greatly advanced the development of Document AI, such as document layout analysis, visual information extraction, document visual question answering, document image classification, etc. This paper briefly reviews some of the representative models, tasks, and benchmark datasets. Furthermore, we also introduce early-stage heuristic rule-based document analysis, statistical machine learning algorithms, and deep learning approaches especially pre-training methods. Finally, we look into future directions for Document AI research.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2111.08609](https://arxiv.org/abs/2111.08609) [cs.CL]** |
+|           | (or **[arXiv:2111.08609v1](https://arxiv.org/abs/2111.08609v1) [cs.CL]** for this version) |
+
+
 
 
 
