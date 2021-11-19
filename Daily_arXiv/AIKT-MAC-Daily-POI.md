@@ -3,12 +3,16 @@
 # Index
 
 
-- [2021-11-18](#2021-11-18)
+- [2021-11-19](#2021-11-19)
 
+  - [1. Minimum Bayes Risk Decoding with Neural Metrics of Translation Quality](#2021-11-19-1)
+  - [2. SDCUP: Schema Dependency-Enhanced Curriculum Pre-Training for Table Semantic Parsing](#2021-11-19-2)
+  - [3. To Augment or Not to Augment? A Comparative Study on Text Augmentation Techniques for Low-Resource NLP](#2021-11-19-3)
+  - [4. Dynamic-TinyBERT: Boost TinyBERT's Inference Efficiency by Dynamic Sequence Length](#2021-11-19-4)
+- [2021-11-18](#2021-11-18)
   - [1. Transparent Human Evaluation for Image Captioning](#2021-11-18-1)
   - [2. Character Transformations for Non-Autoregressive GEC Tagging](#2021-11-18-2)
   - [3. XLS-R: Self-supervised Cross-lingual Speech Representation Learning at Scale](#2021-11-18-3)
-  
 - [2021-11-17](#2021-11-17)
   - [1. Joint Unsupervised and Supervised Training for Multilingual ASR](#2021-11-17-1)
   - [2. Multi-Grained Vision Language Pre-Training: Aligning Texts with Visual Concepts](#2021-11-17-2)
@@ -105,6 +109,85 @@
 
 
 
+# 2021-11-19
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-11-19-1">1. Minimum Bayes Risk Decoding with Neural Metrics of Translation Quality
+</h2>
+
+Title: [Minimum Bayes Risk Decoding with Neural Metrics of Translation Quality](https://arxiv.org/abs/2111.09388)
+
+Authors:[Markus Freitag](https://arxiv.org/search/cs?searchtype=author&query=Freitag%2C+M), [David Grangier](https://arxiv.org/search/cs?searchtype=author&query=Grangier%2C+D), [Qijun Tan](https://arxiv.org/search/cs?searchtype=author&query=Tan%2C+Q), [Bowen Liang](https://arxiv.org/search/cs?searchtype=author&query=Liang%2C+B)
+
+> This work applies Minimum Bayes Risk (MBR) decoding to optimize diverse automated metrics of translation quality. Automatic metrics in machine translation have made tremendous progress recently. In particular, neural metrics, fine-tuned on human ratings (e.g. BLEURT, or COMET) are outperforming surface metrics in terms of correlations to human judgements. Our experiments show that the combination of a neural translation model with a neural reference-based metric, BLEURT, results in significant improvement in automatic and human evaluations. This improvement is obtained with translations different from classical beam-search output: these translations have much lower likelihood and are less favored by surface metrics like BLEU.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2111.09388](https://arxiv.org/abs/2111.09388) [cs.CL]** |
+|           | (or **[arXiv:2111.09388v1](https://arxiv.org/abs/2111.09388v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-11-19-2">2. SDCUP: Schema Dependency-Enhanced Curriculum Pre-Training for Table Semantic Parsing
+</h2>
+
+Title: [SDCUP: Schema Dependency-Enhanced Curriculum Pre-Training for Table Semantic Parsing](https://arxiv.org/abs/2111.09486)
+
+Authors: [Bowen Qin](https://arxiv.org/search/cs?searchtype=author&query=Qin%2C+B), [Lihan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+L), [Binyuan Hui](https://arxiv.org/search/cs?searchtype=author&query=Hui%2C+B), [Ruiying Geng](https://arxiv.org/search/cs?searchtype=author&query=Geng%2C+R), [Zheng Cao](https://arxiv.org/search/cs?searchtype=author&query=Cao%2C+Z), [Min Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+M), [Jian Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+J), [Yongbin Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Y)
+
+> Recently pre-training models have significantly improved the performance of various NLP tasks by leveraging large-scale text corpora to improve the contextual representation ability of the neural network. The large pre-training language model has also been applied in the area of table semantic parsing. However, existing pre-training approaches have not carefully explored explicit interaction relationships between a question and the corresponding database schema, which is a key ingredient for uncovering their semantic and structural correspondence. Furthermore, the question-aware representation learning in the schema grounding context has received less attention in pre-training [this http URL](http://objective.to/) alleviate these issues, this paper designs two novel pre-training objectives to impose the desired inductive bias into the learned representations for table pre-training. We further propose a schema-aware curriculum learning approach to mitigate the impact of noise and learn effectively from the pre-training data in an easy-to-hard manner. We evaluate our pre-trained framework by fine-tuning it on two benchmarks, Spider and SQUALL. The results demonstrate the effectiveness of our pre-training objective and curriculum compared to a variety of baselines.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2111.09486](https://arxiv.org/abs/2111.09486) [cs.CL]** |
+|           | (or **[arXiv:2111.09486v1](https://arxiv.org/abs/2111.09486v1) [cs.CL]** for this version) |
+
+
+
+<h2 id="2021-11-19-3">3. To Augment or Not to Augment? A Comparative Study on Text Augmentation Techniques for Low-Resource NLP
+</h2>
+
+Title: [To Augment or Not to Augment? A Comparative Study on Text Augmentation Techniques for Low-Resource NLP](https://arxiv.org/abs/2111.09618)
+
+Authors: [Gözde Gül Şahin](https://arxiv.org/search/cs?searchtype=author&query=Şahin%2C+G+G)
+
+> Data-hungry deep neural networks have established themselves as the standard for many NLP tasks including the traditional sequence tagging ones. Despite their state-of-the-art performance on high-resource languages, they still fall behind of their statistical counter-parts in low-resource scenarios. One methodology to counter attack this problem is text augmentation, i.e., generating new synthetic training data points from existing data. Although NLP has recently witnessed a load of textual augmentation techniques, the field still lacks a systematic performance analysis on a diverse set of languages and sequence tagging tasks. To fill this gap, we investigate three categories of text augmentation methodologies which perform changes on the syntax (e.g., cropping sub-sentences), token (e.g., random word insertion) and character (e.g., character swapping) levels. We systematically compare them on part-of-speech tagging, dependency parsing and semantic role labeling for a diverse set of language families using various models including the architectures that rely on pretrained multilingual contextualized language models such as mBERT. Augmentation most significantly improves dependency parsing, followed by part-of-speech tagging and semantic role labeling. We find the experimented techniques to be effective on morphologically rich languages in general rather than analytic languages such as Vietnamese. Our results suggest that the augmentation techniques can further improve over strong baselines based on mBERT. We identify the character-level methods as the most consistent performers, while synonym replacement and syntactic augmenters provide inconsistent improvements. Finally, we discuss that the results most heavily depend on the task, language pair, and the model type.
+
+| Comments: | Accepted to Computational Linguistics                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2111.09618](https://arxiv.org/abs/2111.09618) [cs.CL]** |
+|           | (or **[arXiv:2111.09618v1](https://arxiv.org/abs/2111.09618v1) [cs.CL]** for this version) |
+
+
+
+<h2 id="2021-11-19-4">4. Dynamic-TinyBERT: Boost TinyBERT's Inference Efficiency by Dynamic Sequence Length
+</h2>
+
+Title: [Dynamic-TinyBERT: Boost TinyBERT's Inference Efficiency by Dynamic Sequence Length](https://arxiv.org/abs/2111.09645)
+
+Authors:[Shira Guskin](https://arxiv.org/search/cs?searchtype=author&query=Guskin%2C+S), [Moshe Wasserblat](https://arxiv.org/search/cs?searchtype=author&query=Wasserblat%2C+M), [Ke Ding](https://arxiv.org/search/cs?searchtype=author&query=Ding%2C+K), [Gyuwan Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%2C+G)
+
+> Limited computational budgets often prevent transformers from being used in production and from having their high accuracy utilized. TinyBERT addresses the computational efficiency by self-distilling BERT into a smaller transformer representation having fewer layers and smaller internal embedding. However, TinyBERT's performance drops when we reduce the number of layers by 50%, and drops even more abruptly when we reduce the number of layers by 75% for advanced NLP tasks such as span question answering. Additionally, a separate model must be trained for each inference scenario with its distinct computational budget. In this work we present Dynamic-TinyBERT, a TinyBERT model that utilizes sequence-length reduction and Hyperparameter Optimization for enhanced inference efficiency per any computational budget. Dynamic-TinyBERT is trained only once, performing on-par with BERT and achieving an accuracy-speedup trade-off superior to any other efficient approaches (up to 3.3x with <1% loss-drop). Upon publication, the code to reproduce our work will be open-sourced.
+
+| Comments: | ENLSP NeurIPS Workshop 2021, 7 pages                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2111.09645](https://arxiv.org/abs/2111.09645) [cs.CL]** |
+|           | (or **[arXiv:2111.09645v1](https://arxiv.org/abs/2111.09645v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+
 # 2021-11-18
 
 [Return to Index](#Index)
@@ -113,7 +196,6 @@
 
 <h2 id="2021-11-18-1">1. Transparent Human Evaluation for Image Captioning
 </h2>
-
 Title: [Transparent Human Evaluation for Image Captioning](https://arxiv.org/abs/2111.08940)
 Authors: [Jungo Kasai](https://arxiv.org/search/cs?searchtype=author&query=Kasai%2C+J), [Keisuke Sakaguchi](https://arxiv.org/search/cs?searchtype=author&query=Sakaguchi%2C+K), [Lavinia Dunagan](https://arxiv.org/search/cs?searchtype=author&query=Dunagan%2C+L), [Jacob Morrison](https://arxiv.org/search/cs?searchtype=author&query=Morrison%2C+J), [Ronan Le Bras](https://arxiv.org/search/cs?searchtype=author&query=Bras%2C+R+L), [Yejin Choi](https://arxiv.org/search/cs?searchtype=author&query=Choi%2C+Y), [Noah A. Smith](https://arxiv.org/search/cs?searchtype=author&query=Smith%2C+N+A)
 
