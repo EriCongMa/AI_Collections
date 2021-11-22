@@ -3,8 +3,12 @@
 # Index
 
 
-- [2021-11-19](#2021-11-19)
+- [2021-11-20](#2021-11-20)
 
+  - [1. Combined Scaling for Zero-shot Transfer Learning](#2021-11-20-1)
+  - [2. Lattention: Lattice-attention in ASR rescoring](#2021-11-20-2)
+  
+- [2021-11-19](#2021-11-19)
   - [1. Minimum Bayes Risk Decoding with Neural Metrics of Translation Quality](#2021-11-19-1)
   - [2. SDCUP: Schema Dependency-Enhanced Curriculum Pre-Training for Table Semantic Parsing](#2021-11-19-2)
   - [3. To Augment or Not to Augment? A Comparative Study on Text Augmentation Techniques for Low-Resource NLP](#2021-11-19-3)
@@ -106,6 +110,51 @@
   - [5. BERMo: What can BERT learn from ELMo?](#2021-11-01-5)
   - [6. MetaICL: Learning to Learn In Context](#2021-11-01-6)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2021-11-20
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-11-20-1">1. Combined Scaling for Zero-shot Transfer Learning
+</h2>
+
+Title: [Combined Scaling for Zero-shot Transfer Learning](https://arxiv.org/abs/2111.10050)
+
+Authors: [Hieu Pham](https://arxiv.org/search/cs?searchtype=author&query=Pham%2C+H), [Zihang Dai](https://arxiv.org/search/cs?searchtype=author&query=Dai%2C+Z), [Golnaz Ghiasi](https://arxiv.org/search/cs?searchtype=author&query=Ghiasi%2C+G), [Hanxiao Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+H), [Adams Wei Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+A+W), [Minh-Thang Luong](https://arxiv.org/search/cs?searchtype=author&query=Luong%2C+M), [Mingxing Tan](https://arxiv.org/search/cs?searchtype=author&query=Tan%2C+M), [Quoc V. Le](https://arxiv.org/search/cs?searchtype=author&query=Le%2C+Q+V)
+
+> We present a combined scaling method called BASIC that achieves 85.7% top-1 zero-shot accuracy on the ImageNet ILSVRC-2012 validation set, surpassing the best-published zero-shot models - CLIP and ALIGN - by 9.3%. Our BASIC model also shows significant improvements in robustness benchmarks. For instance, on 5 test sets with natural distribution shifts such as ImageNet-{A,R,V2,Sketch} and ObjectNet, our model achieves 83.7% top-1 average accuracy, only a small drop from the its original ImageNet accuracy. 
+> To achieve these results, we scale up the contrastive learning framework of CLIP and ALIGN in three dimensions: data size, model size, and batch size. Our dataset has 6.6B noisy image-text pairs, which is 4x larger than ALIGN, and 16x larger than CLIP. Our largest model has 3B weights, which is 3.75x larger in parameters and 8x larger in FLOPs than ALIGN and CLIP. Our batch size is 65536 which is 2x more than CLIP and 4x more than ALIGN. The main challenge with scaling is the limited memory of our accelerators such as GPUs and TPUs. We hence propose a simple method of online gradient caching to overcome this limit.
+
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL); Computer Vision and Pattern Recognition (cs.CV) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2111.10050](https://arxiv.org/abs/2111.10050) [cs.LG]** |
+|           | (or **[arXiv:2111.10050v1](https://arxiv.org/abs/2111.10050v1) [cs.LG]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-11-20-2">2. Lattention: Lattice-attention in ASR rescoring
+</h2>
+
+Title: [Lattention: Lattice-attention in ASR rescoring](https://arxiv.org/abs/2111.10157)
+
+Authors: [Prabhat Pandey](https://arxiv.org/search/cs?searchtype=author&query=Pandey%2C+P), [Sergio Duarte Torres](https://arxiv.org/search/cs?searchtype=author&query=Torres%2C+S+D), [Ali Orkan Bayer](https://arxiv.org/search/cs?searchtype=author&query=Bayer%2C+A+O), [Ankur Gandhe](https://arxiv.org/search/cs?searchtype=author&query=Gandhe%2C+A), [Volker Leutnant](https://arxiv.org/search/cs?searchtype=author&query=Leutnant%2C+V)
+
+> Lattices form a compact representation of multiple hypotheses generated from an automatic speech recognition system and have been shown to improve performance of downstream tasks like spoken language understanding and speech translation, compared to using one-best hypothesis. In this work, we look into the effectiveness of lattice cues for rescoring n-best lists in second-pass. We encode lattices with a recurrent network and train an attention encoder-decoder model for n-best rescoring. The rescoring model with attention to lattices achieves 4-5% relative word error rate reduction over first-pass and 6-8% with attention to both lattices and acoustic features. We show that rescoring models with attention to lattices outperform models with attention to n-best hypotheses. We also study different ways to incorporate lattice weights in the lattice encoder and demonstrate their importance for n-best rescoring.
+
+| Comments:    | Submitted to ICASSP 2022                                     |
+| ------------ | ------------------------------------------------------------ |
+| Subjects:    | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| ACM classes: | I.2.7                                                        |
+| Cite as:     | **[arXiv:2111.10157](https://arxiv.org/abs/2111.10157) [cs.CL]** |
+|              | (or **[arXiv:2111.10157v1](https://arxiv.org/abs/2111.10157v1) [cs.CL]** for this version) |
 
 
 
