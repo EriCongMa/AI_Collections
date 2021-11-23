@@ -3,11 +3,21 @@
 # Index
 
 
-- [2021-11-20](#2021-11-20)
+- [2021-11-23](#2021-11-23)
 
-  - [1. Combined Scaling for Zero-shot Transfer Learning](#2021-11-20-1)
-  - [2. Lattention: Lattice-attention in ASR rescoring](#2021-11-20-2)
+  - [1. L-Verse: Bidirectional Generation Between Image and Text](#2021-11-23-1)
+  - [2. Data Processing Matters: SRPH-Konvergen AI's Machine Translation System for WMT'21](#2021-11-23-2)
+  - [3. RDF-to-Text Generation with Reinforcement Learning Based Graph-augmented Structural Neural Encoders](#2021-11-23-3)
+  - [4. Capitalization and Punctuation Restoration: a Survey](#2021-11-23-4)
+  - [5. TraVLR: Now You See It, Now You Don't! Evaluating Cross-Modal Transfer of Visio-Linguistic Reasoning](#2021-11-23-5)
+  - [6. ExT5: Towards Extreme Multi-Task Scaling for Transfer Learning](#2021-11-23-6)
+  - [7. Knowledge Based Multilingual Language Model](#2021-11-23-7)
   
+- [2021-11-22](#2021-11-22)
+
+  - [1. Combined Scaling for Zero-shot Transfer Learning](#2021-11-22-1)
+  - [2. Lattention: Lattice-attention in ASR rescoring](#2021-11-22-2)
+
 - [2021-11-19](#2021-11-19)
   - [1. Minimum Bayes Risk Decoding with Neural Metrics of Translation Quality](#2021-11-19-1)
   - [2. SDCUP: Schema Dependency-Enhanced Curriculum Pre-Training for Table Semantic Parsing](#2021-11-19-2)
@@ -113,13 +123,152 @@
 
 
 
-# 2021-11-20
+# 2021-11-23
 
 [Return to Index](#Index)
 
 
 
-<h2 id="2021-11-20-1">1. Combined Scaling for Zero-shot Transfer Learning
+<h2 id="2021-11-23-1">1. L-Verse: Bidirectional Generation Between Image and Text
+</h2>
+
+Title: [L-Verse: Bidirectional Generation Between Image and Text](https://arxiv.org/abs/2111.11133)
+
+Authors: [Taehoon Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%2C+T), [Gwangmo Song](https://arxiv.org/search/cs?searchtype=author&query=Song%2C+G), [Sihaeng Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+S), [Sangyun Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%2C+S), [Yewon Seo](https://arxiv.org/search/cs?searchtype=author&query=Seo%2C+Y), [Soonyoung Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+S), [Seung Hwan Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%2C+S+H), [Honglak Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+H), [Kyunghoon Bae](https://arxiv.org/search/cs?searchtype=author&query=Bae%2C+K)
+
+> Far beyond learning long-range interactions of natural language, transformers are becoming the de-facto standard for many vision tasks with their power and scalabilty. Especially with cross-modal tasks between image and text, vector quantized variational autoencoders (VQ-VAEs) are widely used to make a raw RGB image into a sequence of feature vectors. To better leverage the correlation between image and text, we propose L-Verse, a novel architecture consisting of feature-augmented variational autoencoder (AugVAE) and bidirectional auto-regressive transformer (BiART) for text-to-image and image-to-text generation. Our AugVAE shows the state-of-the-art reconstruction performance on ImageNet1K validation set, along with the robustness to unseen images in the wild. Unlike other models, BiART can distinguish between image (or text) as a conditional reference and a generation target. L-Verse can be directly used for image-to-text or text-to-image generation tasks without any finetuning or extra object detection frameworks. In quantitative and qualitative experiments, L-Verse shows impressive results against previous methods in both image-to-text and text-to-image generation on MS-COCO Captions. We furthermore assess the scalability of L-Verse architecture on Conceptual Captions and present the initial results of bidirectional vision-language representation learning on general domain. Codes available at: [this https URL](https://github.com/tgisaturday/L-Verse)
+
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2111.11133](https://arxiv.org/abs/2111.11133) [cs.CV]** |
+|           | (or **[arXiv:2111.11133v1](https://arxiv.org/abs/2111.11133v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-11-23-2">2. Data Processing Matters: SRPH-Konvergen AI's Machine Translation System for WMT'21
+</h2>
+
+Title: [Data Processing Matters: SRPH-Konvergen AI's Machine Translation System for WMT'21](https://arxiv.org/abs/2111.10513)
+
+Authors: [Lintang Sutawika](https://arxiv.org/search/cs?searchtype=author&query=Sutawika%2C+L), [Jan Christian Blaise Cruz](https://arxiv.org/search/cs?searchtype=author&query=Cruz%2C+J+C+B)
+
+> In this paper, we describe the submission of the joint Samsung Research Philippines-Konvergen AI team for the WMT'21 Large Scale Multilingual Translation Task - Small Track 2. We submit a standard Seq2Seq Transformer model to the shared task without any training or architecture tricks, relying mainly on the strength of our data preprocessing techniques to boost performance. Our final submission model scored 22.92 average BLEU on the FLORES-101 devtest set, and scored 22.97 average BLEU on the contest's hidden test set, ranking us sixth overall. Despite using only a standard Transformer, our model ranked first in Indonesian to Javanese, showing that data preprocessing matters equally, if not more, than cutting edge model architectures and training techniques.
+
+| Comments: | In Proceedings of the Sixth Conference on Machine Translation (WMT) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2111.10513](https://arxiv.org/abs/2111.10513) [cs.CL]** |
+|           | (or **[arXiv:2111.10513v1](https://arxiv.org/abs/2111.10513v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-11-23-3">3. RDF-to-Text Generation with Reinforcement Learning Based Graph-augmented Structural Neural Encoders
+</h2>
+
+Title: [RDF-to-Text Generation with Reinforcement Learning Based Graph-augmented Structural Neural Encoders](https://arxiv.org/abs/2111.10545)
+
+Authors: [Hanning Gao](https://arxiv.org/search/cs?searchtype=author&query=Gao%2C+H), [Lingfei Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+L), [Po Hu](https://arxiv.org/search/cs?searchtype=author&query=Hu%2C+P), [Zhihua Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+Z), [Fangli Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+F), [Bo Long](https://arxiv.org/search/cs?searchtype=author&query=Long%2C+B)
+
+> Considering a collection of RDF triples, the RDF-to-text generation task aims to generate a text description. Most previous methods solve this task using a sequence-to-sequence model or using a graph-based model to encode RDF triples and to generate a text sequence. Nevertheless, these approaches fail to clearly model the local and global structural information between and within RDF triples. Moreover, the previous methods also face the non-negligible problem of low faithfulness of the generated text, which seriously affects the overall performance of these models. To solve these problems, we propose a model combining two new graph-augmented structural neural encoders to jointly learn both local and global structural information in the input RDF triples. To further improve text faithfulness, we innovatively introduce a reinforcement learning (RL) reward based on information extraction (IE). We first extract triples from the generated text using a pretrained IE model and regard the correct number of the extracted triples as the additional RL reward. Experimental results on two benchmark datasets demonstrate that our proposed model outperforms the state-of-the-art baselines, and the additional reinforcement learning reward does help to improve the faithfulness of the generated text.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2111.10545](https://arxiv.org/abs/2111.10545) [cs.CL]** |
+|           | (or **[arXiv:2111.10545v1](https://arxiv.org/abs/2111.10545v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-11-23-4">4. Capitalization and Punctuation Restoration: a Survey
+</h2>
+
+Title: [Capitalization and Punctuation Restoration: a Survey](https://arxiv.org/abs/2111.10746)
+
+Authors: [Vasile Păiş](https://arxiv.org/search/cs?searchtype=author&query=Păiş%2C+V), [Dan Tufiş](https://arxiv.org/search/cs?searchtype=author&query=Tufiş%2C+D)
+
+> Ensuring proper punctuation and letter casing is a key pre-processing step towards applying complex natural language processing algorithms. This is especially significant for textual sources where punctuation and casing are missing, such as the raw output of automatic speech recognition systems. Additionally, short text messages and micro-blogging platforms offer unreliable and often wrong punctuation and casing. This survey offers an overview of both historical and state-of-the-art techniques for restoring punctuation and correcting word casing. Furthermore, current challenges and research directions are highlighted.
+
+| Comments:          | An improved version of this paper was published in Artificial Intelligence Review. This is the article version prior to any reviewer comments and improvements |
+| ------------------ | ------------------------------------------------------------ |
+| Subjects:          | **Computation and Language (cs.CL)**                         |
+| Journal reference: | Păiş, V., Tufiş, D. Capitalization and punctuation restoration: a survey. Artif Intell Rev (2021) |
+| DOI:               | [10.1007/s10462-021-10051-x](https://arxiv.org/ct?url=https%3A%2F%2Fdx.doi.org%2F10.1007%2Fs10462-021-10051-x&v=0c2611e9) |
+| Cite as:           | **[arXiv:2111.10746](https://arxiv.org/abs/2111.10746) [cs.CL]** |
+|                    | (or **[arXiv:2111.10746v1](https://arxiv.org/abs/2111.10746v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-11-23-5">5. TraVLR: Now You See It, Now You Don't! Evaluating Cross-Modal Transfer of Visio-Linguistic Reasoning
+</h2>
+
+Title: [TraVLR: Now You See It, Now You Don't! Evaluating Cross-Modal Transfer of Visio-Linguistic Reasoning](https://arxiv.org/abs/2111.10756)
+
+Authors: [Keng Ji Chow](https://arxiv.org/search/cs?searchtype=author&query=Chow%2C+K+J), [Samson Tan](https://arxiv.org/search/cs?searchtype=author&query=Tan%2C+S), [Min-Yen Kan](https://arxiv.org/search/cs?searchtype=author&query=Kan%2C+M)
+
+> Numerous visio-linguistic (V+L) representation learning methods have been developed, yet existing datasets do not evaluate the extent to which they represent visual and linguistic concepts in a unified space. Inspired by the crosslingual transfer and psycholinguistics literature, we propose a novel evaluation setting for V+L models: zero-shot cross-modal transfer. Existing V+L benchmarks also often report global accuracy scores on the entire dataset, rendering it difficult to pinpoint the specific reasoning tasks that models fail and succeed at. To address this issue and enable the evaluation of cross-modal transfer, we present TraVLR, a synthetic dataset comprising four V+L reasoning tasks. Each example encodes the scene bimodally such that either modality can be dropped during training/testing with no loss of relevant information. TraVLR's training and testing distributions are also constrained along task-relevant dimensions, enabling the evaluation of out-of-distribution generalisation. We evaluate four state-of-the-art V+L models and find that although they perform well on the test set from the same modality, all models fail to transfer cross-modally and have limited success accommodating the addition or deletion of one modality. In alignment with prior work, we also find these models to require large amounts of data to learn simple spatial relationships. We release TraVLR as an open challenge for the research community.
+
+| Comments: | The first two authors contributed equally                    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Computer Vision and Pattern Recognition (cs.CV); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2111.10756](https://arxiv.org/abs/2111.10756) [cs.CL]** |
+|           | (or **[arXiv:2111.10756v1](https://arxiv.org/abs/2111.10756v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-11-23-6">6. ExT5: Towards Extreme Multi-Task Scaling for Transfer Learning
+</h2>
+
+Title: [ExT5: Towards Extreme Multi-Task Scaling for Transfer Learning](https://arxiv.org/abs/2111.10952)
+
+Authors: [Vamsi Aribandi](https://arxiv.org/search/cs?searchtype=author&query=Aribandi%2C+V), [Yi Tay](https://arxiv.org/search/cs?searchtype=author&query=Tay%2C+Y), [Tal Schuster](https://arxiv.org/search/cs?searchtype=author&query=Schuster%2C+T), [Jinfeng Rao](https://arxiv.org/search/cs?searchtype=author&query=Rao%2C+J), [Huaixiu Steven Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng%2C+H+S), [Sanket Vaibhav Mehta](https://arxiv.org/search/cs?searchtype=author&query=Mehta%2C+S+V), [Honglei Zhuang](https://arxiv.org/search/cs?searchtype=author&query=Zhuang%2C+H), [Vinh Q. Tran](https://arxiv.org/search/cs?searchtype=author&query=Tran%2C+V+Q), [Dara Bahri](https://arxiv.org/search/cs?searchtype=author&query=Bahri%2C+D), [Jianmo Ni](https://arxiv.org/search/cs?searchtype=author&query=Ni%2C+J), [Jai Gupta](https://arxiv.org/search/cs?searchtype=author&query=Gupta%2C+J), [Kai Hui](https://arxiv.org/search/cs?searchtype=author&query=Hui%2C+K), [Sebastian Ruder](https://arxiv.org/search/cs?searchtype=author&query=Ruder%2C+S), [Donald Metzler](https://arxiv.org/search/cs?searchtype=author&query=Metzler%2C+D)
+
+> Despite the recent success of multi-task learning and transfer learning for natural language processing (NLP), few works have systematically studied the effect of scaling up the number of tasks during pre-training. Towards this goal, this paper introduces ExMix (Extreme Mixture): a massive collection of 107 supervised NLP tasks across diverse domains and task-families. Using ExMix, we study the effect of multi-task pre-training at the largest scale to date, and analyze co-training transfer amongst common families of tasks. Through this analysis, we show that manually curating an ideal set of tasks for multi-task pre-training is not straightforward, and that multi-task scaling can vastly improve models on its own. Finally, we propose ExT5: a model pre-trained using a multi-task objective of self-supervised span denoising and supervised ExMix. Via extensive experiments, we show that ExT5 outperforms strong T5 baselines on SuperGLUE, GEM, Rainbow, Closed-Book QA tasks, and several tasks outside of ExMix. ExT5 also significantly improves sample efficiency while pre-training.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2111.10952](https://arxiv.org/abs/2111.10952) [cs.CL]** |
+|           | (or **[arXiv:2111.10952v1](https://arxiv.org/abs/2111.10952v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-11-23-7">7. Knowledge Based Multilingual Language Model
+</h2>
+
+Title: [Knowledge Based Multilingual Language Model](https://arxiv.org/abs/2111.10962)
+
+Authors: [Linlin Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+L), [Xin Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+X), [Ruidan He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+R), [Lidong Bing](https://arxiv.org/search/cs?searchtype=author&query=Bing%2C+L), [Shafiq Joty](https://arxiv.org/search/cs?searchtype=author&query=Joty%2C+S), [Luo Si](https://arxiv.org/search/cs?searchtype=author&query=Si%2C+L)
+
+> Knowledge enriched language representation learning has shown promising performance across various knowledge-intensive NLP tasks. However, existing knowledge based language models are all trained with monolingual knowledge graph data, which limits their application to more languages. In this work, we present a novel framework to pretrain knowledge based multilingual language models (KMLMs). We first generate a large amount of code-switched synthetic sentences and reasoning-based multilingual training data using the Wikidata knowledge graphs. Then based on the intra- and inter-sentence structures of the generated data, we design pretraining tasks to facilitate knowledge learning, which allows the language models to not only memorize the factual knowledge but also learn useful logical patterns. Our pretrained KMLMs demonstrate significant performance improvements on a wide range of knowledge-intensive cross-lingual NLP tasks, including named entity recognition, factual knowledge retrieval, relation classification, and a new task designed by us, namely, logic reasoning. Our code and pretrained language models will be made publicly available.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2111.10962](https://arxiv.org/abs/2111.10962) [cs.CL]** |
+|           | (or **[arXiv:2111.10962v1](https://arxiv.org/abs/2111.10962v1) [cs.CL]** for this version) |
+
+
+
+
+
+# 2021-11-22
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-11-22-1">1. Combined Scaling for Zero-shot Transfer Learning
 </h2>
 
 Title: [Combined Scaling for Zero-shot Transfer Learning](https://arxiv.org/abs/2111.10050)
@@ -140,7 +289,7 @@ Authors: [Hieu Pham](https://arxiv.org/search/cs?searchtype=author&query=Pham%2C
 
 
 
-<h2 id="2021-11-20-2">2. Lattention: Lattice-attention in ASR rescoring
+<h2 id="2021-11-22-2">2. Lattention: Lattice-attention in ASR rescoring
 </h2>
 
 Title: [Lattention: Lattice-attention in ASR rescoring](https://arxiv.org/abs/2111.10157)
