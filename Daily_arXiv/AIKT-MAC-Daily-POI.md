@@ -3,6 +3,12 @@
 # Index
 
 
+- [2021-11-24](#2021-11-24)
+
+  - [1. SpeechMoE2: Mixture-of-Experts Model with Improved Routing](#2021-11-24-1)
+  - [2. Boosting Neural Machine Translation with Dependency-Scaled Self-Attention Network](#2021-11-24-2)
+  - [3. S-SimCSE: Sampled Sub-networks for Contrastive Learning of Sentence Embedding](#2021-11-24-3)
+  
 - [2021-11-23](#2021-11-23)
 
   - [1. L-Verse: Bidirectional Generation Between Image and Text](#2021-11-23-1)
@@ -12,7 +18,7 @@
   - [5. TraVLR: Now You See It, Now You Don't! Evaluating Cross-Modal Transfer of Visio-Linguistic Reasoning](#2021-11-23-5)
   - [6. ExT5: Towards Extreme Multi-Task Scaling for Transfer Learning](#2021-11-23-6)
   - [7. Knowledge Based Multilingual Language Model](#2021-11-23-7)
-  
+
 - [2021-11-22](#2021-11-22)
 
   - [1. Combined Scaling for Zero-shot Transfer Learning](#2021-11-22-1)
@@ -120,6 +126,68 @@
   - [5. BERMo: What can BERT learn from ELMo?](#2021-11-01-5)
   - [6. MetaICL: Learning to Learn In Context](#2021-11-01-6)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2021-11-24
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-11-24-1">1. SpeechMoE2: Mixture-of-Experts Model with Improved Routing
+</h2>
+
+Title: [SpeechMoE2: Mixture-of-Experts Model with Improved Routing](https://arxiv.org/abs/2111.11831)
+
+Authors:[Zhao You](https://arxiv.org/search/eess?searchtype=author&query=You%2C+Z), [Shulin Feng](https://arxiv.org/search/eess?searchtype=author&query=Feng%2C+S), [Dan Su](https://arxiv.org/search/eess?searchtype=author&query=Su%2C+D), [Dong Yu](https://arxiv.org/search/eess?searchtype=author&query=Yu%2C+D)
+
+> Mixture-of-experts based acoustic models with dynamic routing mechanisms have proved promising results for speech recognition. The design principle of router architecture is important for the large model capacity and high computational efficiency. Our previous work SpeechMoE only uses local grapheme embedding to help routers to make route decisions. To further improve speech recognition performance against varying domains and accents, we propose a new router architecture which integrates additional global domain and accent embedding into router input to promote adaptability. Experimental results show that the proposed SpeechMoE2 can achieve lower character error rate (CER) with comparable parameters than SpeechMoE on both multi-domain and multi-accent task. Primarily, the proposed method provides up to 1.6% - 4.8% relative CER improvement for the multidomain task and 1.9% - 17.7% relative CER improvement for the multi-accent task respectively. Besides, increasing the number of experts also achieves consistent performance improvement and keeps the computational cost constant.
+
+| Comments: | 5 pages, 1 figure. Submitted to ICASSP 2022                  |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Audio and Speech Processing (eess.AS)**; Computation and Language (cs.CL); Sound (cs.SD) |
+| Cite as:  | **[arXiv:2111.11831](https://arxiv.org/abs/2111.11831) [eess.AS]** |
+|           | (or **[arXiv:2111.11831v1](https://arxiv.org/abs/2111.11831v1) [eess.AS]** for this version) |
+
+
+
+
+
+<h2 id="2021-11-24-2">2. Boosting Neural Machine Translation with Dependency-Scaled Self-Attention Network
+</h2>
+
+Title: [Boosting Neural Machine Translation with Dependency-Scaled Self-Attention Network](https://arxiv.org/abs/2111.11707)
+
+Authors:[Ru Peng](https://arxiv.org/search/cs?searchtype=author&query=Peng%2C+R), [Nankai Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+N), [Yi Fang](https://arxiv.org/search/cs?searchtype=author&query=Fang%2C+Y), [Shengyi Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+S), [Junbo Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+J)
+
+> Neural machine translation model assumes that syntax knowledge can be learned from the bilingual corpus via attention network automatically. However, the attention network trained in weak supervision actually cannot capture the deep structure of the sentence. Naturally, we expect to introduce external syntax knowledge to guide the learning of attention network. Thus, we propose a novel, parameter-free, dependency-scaled self-attention network, which integrate explicit syntactic dependencies into attention network to dispel the dispersion of attention distribution. Finally, two knowledge sparse techniques are proposed to prevent the model from overfitting noisy syntactic dependencies. Experiments and extensive analyses on the IWSLT14 German-to-English and WMT16 German-to-English translation tasks validate the effectiveness of our approach.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2111.11707](https://arxiv.org/abs/2111.11707) [cs.CL]** |
+|           | (or **[arXiv:2111.11707v1](https://arxiv.org/abs/2111.11707v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-11-24-3">3. S-SimCSE: Sampled Sub-networks for Contrastive Learning of Sentence Embedding
+</h2>
+
+Title: [S-SimCSE: Sampled Sub-networks for Contrastive Learning of Sentence Embedding](https://arxiv.org/abs/2111.11750)
+
+Authors:[Junlei Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+J), [Zhenzhong lan](https://arxiv.org/search/cs?searchtype=author&query=lan%2C+Z)
+
+> Contrastive learning has been studied for improving the performance of sentence embedding learning. The current state-of-the-art method is the SimCSE, which takes dropout as a data augmentation method and feeds a pre-trained Transformer encoder the same input sentence twice. Then, two sentence embeddings derived from different dropout masks can get to build a positive pair. A network being applied a dropout mask can be regarded as a sub-network of itself, whose expected scale is determined by the dropout rate. In this paper, we push most sub-networks with different expected scales can learn similar embedding for the same sentence. SimCSE failed to do so because they fixed the dropout rate to a tuned value, while we sampled dropout rates for each of the dropout functions. As this method will increase the difficulties of optimization, we also propose a simple sentence-wise masks strategy to sample more sub-networks. We evaluated the proposed S-SimCSE on several popular semantic text similarity datasets. Experimental results show that S-SimCSE outperforms the state-of-the-art SimCSE more than 1% on BERT-base.
+
+| Comments: | 2 pages                                                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2111.11750](https://arxiv.org/abs/2111.11750) [cs.CL]** |
+|           | (or **[arXiv:2111.11750v1](https://arxiv.org/abs/2111.11750v1) [cs.CL]** for this version) |
+
+
 
 
 
