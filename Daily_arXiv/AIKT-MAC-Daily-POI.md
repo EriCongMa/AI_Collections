@@ -3,12 +3,17 @@
 # Index
 
 
+- [2021-11-25](#2021-11-25)
+
+  - [1. Scaling Up Vision-Language Pre-training for Image Captioning](#2021-11-25-1)
+  - [2. A Self-Supervised Automatic Post-Editing Data Generation Tool](#2021-11-25-2)
+  
 - [2021-11-24](#2021-11-24)
 
   - [1. SpeechMoE2: Mixture-of-Experts Model with Improved Routing](#2021-11-24-1)
   - [2. Boosting Neural Machine Translation with Dependency-Scaled Self-Attention Network](#2021-11-24-2)
   - [3. S-SimCSE: Sampled Sub-networks for Contrastive Learning of Sentence Embedding](#2021-11-24-3)
-  
+
 - [2021-11-23](#2021-11-23)
 
   - [1. L-Verse: Bidirectional Generation Between Image and Text](#2021-11-23-1)
@@ -126,6 +131,48 @@
   - [5. BERMo: What can BERT learn from ELMo?](#2021-11-01-5)
   - [6. MetaICL: Learning to Learn In Context](#2021-11-01-6)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2021-11-25
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-11-25-1">1. Scaling Up Vision-Language Pre-training for Image Captioning
+</h2>
+
+Title: [Scaling Up Vision-Language Pre-training for Image Captioning](https://arxiv.org/abs/2111.12233)
+
+Authors: [Xiaowei Hu](https://arxiv.org/search/cs?searchtype=author&query=Hu%2C+X), [Zhe Gan](https://arxiv.org/search/cs?searchtype=author&query=Gan%2C+Z), [Jianfeng Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+J), [Zhengyuan Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+Z), [Zicheng Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Z), [Yumao Lu](https://arxiv.org/search/cs?searchtype=author&query=Lu%2C+Y), [Lijuan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+L)
+
+> In recent years, we have witnessed significant performance boost in the image captioning task based on vision-language pre-training (VLP). Scale is believed to be an important factor for this advance. However, most existing work only focuses on pre-training transformers with moderate sizes (e.g., 12 or 24 layers) on roughly 4 million images. In this paper, we present LEMON, a LargE-scale iMage captiONer, and provide the first empirical study on the scaling behavior of VLP for image captioning. We use the state-of-the-art VinVL model as our reference model, which consists of an image feature extractor and a transformer model, and scale the transformer both up and down, with model sizes ranging from 13 to 675 million parameters. In terms of data, we conduct experiments with up to 200 million image-text pairs which are automatically collected from web based on the alt attribute of the image (dubbed as ALT200M). Extensive analysis helps to characterize the performance trend as the model size and the pre-training data size increase. We also compare different training recipes, especially for training on large-scale noisy data. As a result, LEMON achieves new state of the arts on several major image captioning benchmarks, including COCO Caption, nocaps, and Conceptual Captions. We also show LEMON can generate captions with long-tail visual concepts when used in a zero-shot manner.
+
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2111.12233](https://arxiv.org/abs/2111.12233) [cs.CV]** |
+|           | (or **[arXiv:2111.12233v1](https://arxiv.org/abs/2111.12233v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-11-25-2">2. A Self-Supervised Automatic Post-Editing Data Generation Tool
+</h2>
+
+Title: [A Self-Supervised Automatic Post-Editing Data Generation Tool](https://arxiv.org/abs/2111.12284)
+
+Authors: [Hyeonseok Moon](https://arxiv.org/search/cs?searchtype=author&query=Moon%2C+H), [Chanjun Park](https://arxiv.org/search/cs?searchtype=author&query=Park%2C+C), [Sugyeong Eo](https://arxiv.org/search/cs?searchtype=author&query=Eo%2C+S), [Jaehyung Seo](https://arxiv.org/search/cs?searchtype=author&query=Seo%2C+J), [SeungJun Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+S), [Heuiseok Lim](https://arxiv.org/search/cs?searchtype=author&query=Lim%2C+H)
+
+> Data building for automatic post-editing (APE) requires extensive and expert-level human effort, as it contains an elaborate process that involves identifying errors in sentences and providing suitable revisions. Hence, we develop a self-supervised data generation tool, deployable as a web application, that minimizes human supervision and constructs personalized APE data from a parallel corpus for several language pairs with English as the target language. Data-centric APE research can be conducted using this tool, involving many language pairs that have not been studied thus far owing to the lack of suitable data.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2111.12284](https://arxiv.org/abs/2111.12284) [cs.CL]** |
+|           | (or **[arXiv:2111.12284v1](https://arxiv.org/abs/2111.12284v1) [cs.CL]** for this version) |
+
+
 
 
 
