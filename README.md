@@ -9,7 +9,7 @@ This repository is constructed to collect interesting resource in Artificial Int
 
 
 - [MA C.'s Daily Paper of Interest | MA C. 每日感兴趣论文（MA C.'s Daily POI）](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI.md)
-- [Awesome Transformer OCR](https://github.com/EriCongMa/awesome-transformer-ocr#Code-Collection)
+- [Awesome Transformer OCR](https://github.com/EriCongMa/awesome-transformer-ocr)
 - [Recent Advances in Vision and Language PreTrained Models (VL-PTMs)](https://github.com/yuewang-cuhk/awesome-vision-language-pretraining-papers#task-specific)
 - [Artificial-Intelligence-Terminology-Database](https://github.com/jiqizhixin/Artificial-Intelligence-Terminology-Database)
 - [Awesome Document Understanding](https://github.com/tstanislawek/awesome-document-understanding)
