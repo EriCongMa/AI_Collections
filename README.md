@@ -4,11 +4,12 @@ This repository is constructed to collect interesting resource in Artificial Int
 
 > Acknowledgement: This repository is just a collection and we have to express our appreciation to many nice open-resource providers and SFFAI-AIKT. We tried our best to add the details of original links. If there is any missing links, please feel free to email me. Thanks for your kind suggestion! 
 
-[Contact Eric](mailto:cong.ma@nlpr.ia.ac.cn)
+[Contact Eric](mailto:macong275262544@outlook.com)
 
 
 
 - [MA C.'s Daily Paper of Interest | MA C. 每日感兴趣论文（MA C.'s Daily POI）](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI.md)
+- [Awesome Transformer OCR](https://github.com/EriCongMa/awesome-transformer-ocr#Code-Collection)
 - [Recent Advances in Vision and Language PreTrained Models (VL-PTMs)](https://github.com/yuewang-cuhk/awesome-vision-language-pretraining-papers#task-specific)
 - [Artificial-Intelligence-Terminology-Database](https://github.com/jiqizhixin/Artificial-Intelligence-Terminology-Database)
 - [Awesome Document Understanding](https://github.com/tstanislawek/awesome-document-understanding)
