@@ -3,17 +3,20 @@
 # Index
 
 
-- [2021-11-25](#2021-11-25)
+- [2021-11-29](#2021-11-29)
 
+  - [1. Sparse is Enough in Scaling Transformers](#2021-11-29-1)
+  - [2. Simple Contrastive Representation Adversarial Learning for NLP Tasks](#2021-11-29-2)
+  - [3. Do Language Models Have Beliefs? Methods for Detecting, Updating, and Visualizing Model Beliefs](#2021-11-29-3)
+  
+- [2021-11-25](#2021-11-25)
   - [1. Scaling Up Vision-Language Pre-training for Image Captioning](#2021-11-25-1)
   - [2. A Self-Supervised Automatic Post-Editing Data Generation Tool](#2021-11-25-2)
-  
 - [2021-11-24](#2021-11-24)
 
   - [1. SpeechMoE2: Mixture-of-Experts Model with Improved Routing](#2021-11-24-1)
   - [2. Boosting Neural Machine Translation with Dependency-Scaled Self-Attention Network](#2021-11-24-2)
   - [3. S-SimCSE: Sampled Sub-networks for Contrastive Learning of Sentence Embedding](#2021-11-24-3)
-
 - [2021-11-23](#2021-11-23)
 
   - [1. L-Verse: Bidirectional Generation Between Image and Text](#2021-11-23-1)
@@ -23,12 +26,10 @@
   - [5. TraVLR: Now You See It, Now You Don't! Evaluating Cross-Modal Transfer of Visio-Linguistic Reasoning](#2021-11-23-5)
   - [6. ExT5: Towards Extreme Multi-Task Scaling for Transfer Learning](#2021-11-23-6)
   - [7. Knowledge Based Multilingual Language Model](#2021-11-23-7)
-
 - [2021-11-22](#2021-11-22)
 
   - [1. Combined Scaling for Zero-shot Transfer Learning](#2021-11-22-1)
   - [2. Lattention: Lattice-attention in ASR rescoring](#2021-11-22-2)
-
 - [2021-11-19](#2021-11-19)
   - [1. Minimum Bayes Risk Decoding with Neural Metrics of Translation Quality](#2021-11-19-1)
   - [2. SDCUP: Schema Dependency-Enhanced Curriculum Pre-Training for Table Semantic Parsing](#2021-11-19-2)
@@ -131,6 +132,71 @@
   - [5. BERMo: What can BERT learn from ELMo?](#2021-11-01-5)
   - [6. MetaICL: Learning to Learn In Context](#2021-11-01-6)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2021-11-29
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-11-29-1">1. Sparse is Enough in Scaling Transformers
+</h2>
+
+Title: [Sparse is Enough in Scaling Transformers](https://arxiv.org/abs/2111.12763)
+
+Authors: [Sebastian Jaszczur](https://arxiv.org/search/cs?searchtype=author&query=Jaszczur%2C+S), [Aakanksha Chowdhery](https://arxiv.org/search/cs?searchtype=author&query=Chowdhery%2C+A), [Afroz Mohiuddin](https://arxiv.org/search/cs?searchtype=author&query=Mohiuddin%2C+A), [Łukasz Kaiser](https://arxiv.org/search/cs?searchtype=author&query=Kaiser%2C+Ł), [Wojciech Gajewski](https://arxiv.org/search/cs?searchtype=author&query=Gajewski%2C+W), [Henryk Michalewski](https://arxiv.org/search/cs?searchtype=author&query=Michalewski%2C+H), [Jonni Kanerva](https://arxiv.org/search/cs?searchtype=author&query=Kanerva%2C+J)
+
+> Large Transformer models yield impressive results on many tasks, but are expensive to train, or even fine-tune, and so slow at decoding that their use and study becomes out of reach. We address this problem by leveraging sparsity. We study sparse variants for all layers in the Transformer and propose Scaling Transformers, a family of next generation Transformer models that use sparse layers to scale efficiently and perform unbatched decoding much faster than the standard Transformer as we scale up the model size. Surprisingly, the sparse layers are enough to obtain the same perplexity as the standard Transformer with the same number of parameters. We also integrate with prior sparsity approaches to attention and enable fast inference on long sequences even with limited memory. This results in performance competitive to the state-of-the-art on long text summarization.
+
+| Comments: | NeurIPS 2021                                                 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2111.12763](https://arxiv.org/abs/2111.12763) [cs.LG]** |
+|           | (or **[arXiv:2111.12763v1](https://arxiv.org/abs/2111.12763v1) [cs.LG]** for this version) |
+
+
+
+
+
+<h2 id="2021-11-29-2">2. Simple Contrastive Representation Adversarial Learning for NLP Tasks
+</h2>
+
+Title: [Simple Contrastive Representation Adversarial Learning for NLP Tasks](https://arxiv.org/abs/2111.13301)
+
+Authors: [Deshui Miao](https://arxiv.org/search/cs?searchtype=author&query=Miao%2C+D), [Jiaqi Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+J), [Wenbo Xie](https://arxiv.org/search/cs?searchtype=author&query=Xie%2C+W), [Jian Song](https://arxiv.org/search/cs?searchtype=author&query=Song%2C+J), [Xin Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+X), [Lijuan Jia](https://arxiv.org/search/cs?searchtype=author&query=Jia%2C+L), [Ning Guo](https://arxiv.org/search/cs?searchtype=author&query=Guo%2C+N)
+
+> Self-supervised learning approach like contrastive learning is attached great attention in natural language processing. It uses pairs of training data augmentations to build a classification task for an encoder with well representation ability. However, the construction of learning pairs over contrastive learning is much harder in NLP tasks. Previous works generate word-level changes to form pairs, but small transforms may cause notable changes on the meaning of sentences as the discrete and sparse nature of natural language. In this paper, adversarial training is performed to generate challenging and harder learning adversarial examples over the embedding space of NLP as learning pairs. Using contrastive learning improves the generalization ability of adversarial training because contrastive loss can uniform the sample distribution. And at the same time, adversarial training also enhances the robustness of contrastive learning. Two novel frameworks, supervised contrastive adversarial learning (SCAL) and unsupervised SCAL (USCAL), are proposed, which yields learning pairs by utilizing the adversarial training for contrastive learning. The label-based loss of supervised tasks is exploited to generate adversarial examples while unsupervised tasks bring contrastive loss. To validate the effectiveness of the proposed framework, we employ it to Transformer-based models for natural language understanding, sentence semantic textual similarity and adversarial learning tasks. Experimental results on GLUE benchmark tasks show that our fine-tuned supervised method outperforms BERTbase over 1.75\%. We also evaluate our unsupervised method on semantic textual similarity (STS) tasks, and our method gets 77.29\% with BERTbase. The robustness of our approach conducts state-of-the-art results under multiple adversarial datasets on NLI tasks.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2111.13301](https://arxiv.org/abs/2111.13301) [cs.CL]** |
+|           | (or **[arXiv:2111.13301v1](https://arxiv.org/abs/2111.13301v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-11-29-3">3. Do Language Models Have Beliefs? Methods for Detecting, Updating, and Visualizing Model Beliefs
+</h2>
+
+Title: [Do Language Models Have Beliefs? Methods for Detecting, Updating, and Visualizing Model Beliefs](https://arxiv.org/abs/2111.13654)
+
+Authors: [Peter Hase](https://arxiv.org/search/cs?searchtype=author&query=Hase%2C+P), [Mona Diab](https://arxiv.org/search/cs?searchtype=author&query=Diab%2C+M), [Asli Celikyilmaz](https://arxiv.org/search/cs?searchtype=author&query=Celikyilmaz%2C+A), [Xian Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+X), [Zornitsa Kozareva](https://arxiv.org/search/cs?searchtype=author&query=Kozareva%2C+Z), [Veselin Stoyanov](https://arxiv.org/search/cs?searchtype=author&query=Stoyanov%2C+V), [Mohit Bansal](https://arxiv.org/search/cs?searchtype=author&query=Bansal%2C+M), [Srinivasan Iyer](https://arxiv.org/search/cs?searchtype=author&query=Iyer%2C+S)
+
+> Do language models have beliefs about the world? Dennett (1995) famously argues that even thermostats have beliefs, on the view that a belief is simply an informational state decoupled from any motivational state. In this paper, we discuss approaches to detecting when models have beliefs about the world, and we improve on methods for updating model beliefs to be more truthful, with a focus on methods based on learned optimizers or hypernetworks. Our main contributions include: (1) new metrics for evaluating belief-updating methods that focus on the logical consistency of beliefs, (2) a training objective for Sequential, Local, and Generalizing model updates (SLAG) that improves the performance of learned optimizers, and (3) the introduction of the belief graph, which is a new form of interface with language models that shows the interdependencies between model beliefs. Our experiments suggest that models possess belief-like qualities to only a limited extent, but update methods can both fix incorrect model beliefs and greatly improve their consistency. Although off-the-shelf optimizers are surprisingly strong belief-updating baselines, our learned optimizers can outperform them in more difficult settings than have been considered in past work. Code is available at [this https URL](https://github.com/peterbhase/SLAG-Belief-Updating)
+
+| Comments: | 19 pages                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2111.13654](https://arxiv.org/abs/2111.13654) [cs.CL]** |
+|           | (or **[arXiv:2111.13654v1](https://arxiv.org/abs/2111.13654v1) [cs.CL]** for this version) |
+
+
+
+
+
 
 
 
