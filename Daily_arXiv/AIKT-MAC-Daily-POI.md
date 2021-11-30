@@ -3,12 +3,17 @@
 # Index
 
 
-- [2021-11-29](#2021-11-29)
+- [2021-11-30](#2021-11-30)
 
+  - [1. Zero-Shot Image-to-Text Generation for Visual-Semantic Arithmetic](#2021-11-30-1)
+  - [2. An Empirical Study of Topic Transition in Dialogue](#2021-11-30-2)
+  - [3. ESPnet-SLU: Advancing Spoken Language Understanding through ESPnet](#2021-11-30-3)
+  - [4. Understanding Out-of-distribution: A Perspective of Data Dynamics](#2021-11-30-4)
+  
+- [2021-11-29](#2021-11-29)
   - [1. Sparse is Enough in Scaling Transformers](#2021-11-29-1)
   - [2. Simple Contrastive Representation Adversarial Learning for NLP Tasks](#2021-11-29-2)
   - [3. Do Language Models Have Beliefs? Methods for Detecting, Updating, and Visualizing Model Beliefs](#2021-11-29-3)
-  
 - [2021-11-25](#2021-11-25)
   - [1. Scaling Up Vision-Language Pre-training for Image Captioning](#2021-11-25-1)
   - [2. A Self-Supervised Automatic Post-Editing Data Generation Tool](#2021-11-25-2)
@@ -132,6 +137,87 @@
   - [5. BERMo: What can BERT learn from ELMo?](#2021-11-01-5)
   - [6. MetaICL: Learning to Learn In Context](#2021-11-01-6)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2021-11-30
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-11-30-1">1. Zero-Shot Image-to-Text Generation for Visual-Semantic Arithmetic
+</h2>
+
+Title: [Zero-Shot Image-to-Text Generation for Visual-Semantic Arithmetic](https://arxiv.org/abs/2111.14447)
+
+Authors: [Yoad Tewel](https://arxiv.org/search/cs?searchtype=author&query=Tewel%2C+Y), [Yoav Shalev](https://arxiv.org/search/cs?searchtype=author&query=Shalev%2C+Y), [Idan Schwartz](https://arxiv.org/search/cs?searchtype=author&query=Schwartz%2C+I), [Lior Wolf](https://arxiv.org/search/cs?searchtype=author&query=Wolf%2C+L)
+
+> Recent text-to-image matching models apply contrastive learning to large corpora of uncurated pairs of images and sentences. While such models can provide a powerful score for matching and subsequent zero-shot tasks, they are not capable of generating caption given an image. In this work, we repurpose such models to generate a descriptive text given an image at inference time, without any further training or tuning step. This is done by combining the visual-semantic model with a large language model, benefiting from the knowledge in both web-scale models. The resulting captions are much less restrictive than those obtained by supervised captioning methods. Moreover, as a zero-shot learning method, it is extremely flexible and we demonstrate its ability to perform image arithmetic in which the inputs can be either images or text and the output is a sentence. This enables novel high-level vision capabilities such as comparing two images or solving visual analogy tests.
+
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2111.14447](https://arxiv.org/abs/2111.14447) [cs.CV]** |
+|           | (or **[arXiv:2111.14447v1](https://arxiv.org/abs/2111.14447v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-11-30-2">2. An Empirical Study of Topic Transition in Dialogue
+</h2>
+
+Title: [An Empirical Study of Topic Transition in Dialogue](https://arxiv.org/abs/2111.14188)
+
+Authors: [Mayank Soni](https://arxiv.org/search/cs?searchtype=author&query=Soni%2C+M), [Brendan Spillane](https://arxiv.org/search/cs?searchtype=author&query=Spillane%2C+B), [Emer Gilmartin](https://arxiv.org/search/cs?searchtype=author&query=Gilmartin%2C+E), [Christian Saam](https://arxiv.org/search/cs?searchtype=author&query=Saam%2C+C), [Benjamin R. Cowan](https://arxiv.org/search/cs?searchtype=author&query=Cowan%2C+B+R), [Vincent Wade](https://arxiv.org/search/cs?searchtype=author&query=Wade%2C+V)
+
+> Transitioning between various topics is a natural component of human-human. Although, topic transitions has been studied in dialogue for decades, only a handful of corpora based studies have been performed to analyze the subtleties in topic transitions. Thus, this study annotates 215 conversations from switchboard corpus and studies how factors such as length of a conversation, number of topic transitions, topic transitions by participants are related. This paper presents an empirical study on topic transition in switchboard corpus followed by modelling topic transition with a precision of 83% for in-domain(id) test set and 82% on 10\textit{out-of-domain} (ood). It is envisioned that this work will be fundamental in emulating human-human like topic transition in open-domain dialog systems.
+
+| Comments: | 5 pages, 4 figures, 3 tables                                 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2111.14188](https://arxiv.org/abs/2111.14188) [cs.CL]** |
+|           | (or **[arXiv:2111.14188v1](https://arxiv.org/abs/2111.14188v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-11-30-3">3. ESPnet-SLU: Advancing Spoken Language Understanding through ESPnet
+</h2>
+
+Title: [ESPnet-SLU: Advancing Spoken Language Understanding through ESPnet](https://arxiv.org/abs/2111.14706)
+
+Authors: [Siddhant Arora](https://arxiv.org/search/cs?searchtype=author&query=Arora%2C+S), [Siddharth Dalmia](https://arxiv.org/search/cs?searchtype=author&query=Dalmia%2C+S), [Pavel Denisov](https://arxiv.org/search/cs?searchtype=author&query=Denisov%2C+P), [Xuankai Chang](https://arxiv.org/search/cs?searchtype=author&query=Chang%2C+X), [Yushi Ueda](https://arxiv.org/search/cs?searchtype=author&query=Ueda%2C+Y), [Yifan Peng](https://arxiv.org/search/cs?searchtype=author&query=Peng%2C+Y), [Yuekai Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Y), [Sujay Kumar](https://arxiv.org/search/cs?searchtype=author&query=Kumar%2C+S), [Karthik Ganesan](https://arxiv.org/search/cs?searchtype=author&query=Ganesan%2C+K), [Brian Yan](https://arxiv.org/search/cs?searchtype=author&query=Yan%2C+B), [Ngoc Thang Vu](https://arxiv.org/search/cs?searchtype=author&query=Vu%2C+N+T), [Alan W Black](https://arxiv.org/search/cs?searchtype=author&query=Black%2C+A+W), [Shinji Watanabe](https://arxiv.org/search/cs?searchtype=author&query=Watanabe%2C+S)
+
+> As Automatic Speech Processing (ASR) systems are getting better, there is an increasing interest of using the ASR output to do downstream Natural Language Processing (NLP) tasks. However, there are few open source toolkits that can be used to generate reproducible results on different Spoken Language Understanding (SLU) benchmarks. Hence, there is a need to build an open source standard that can be used to have a faster start into SLU research. We present ESPnet-SLU, which is designed for quick development of spoken language understanding in a single framework. ESPnet-SLU is a project inside end-to-end speech processing toolkit, ESPnet, which is a widely used open-source standard for various speech processing tasks like ASR, Text to Speech (TTS) and Speech Translation (ST). We enhance the toolkit to provide implementations for various SLU benchmarks that enable researchers to seamlessly mix-and-match different ASR and NLU models. We also provide pretrained models with intensively tuned hyper-parameters that can match or even outperform the current state-of-the-art performances. The toolkit is publicly available at [this https URL](https://github.com/espnet/espnet).
+
+| Comments: | Submitted to ICASSP 2022 (5 pages)                           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2111.14706](https://arxiv.org/abs/2111.14706) [cs.CL]** |
+|           | (or **[arXiv:2111.14706v1](https://arxiv.org/abs/2111.14706v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-11-30-4">4. Understanding Out-of-distribution: A Perspective of Data Dynamics
+</h2>
+
+Title: [Understanding Out-of-distribution: A Perspective of Data Dynamics](https://arxiv.org/abs/2111.14730)
+
+Authors: [Dyah Adila](https://arxiv.org/search/cs?searchtype=author&query=Adila%2C+D), [Dongyeop Kang](https://arxiv.org/search/cs?searchtype=author&query=Kang%2C+D)
+
+> Despite machine learning models' success in Natural Language Processing (NLP) tasks, predictions from these models frequently fail on out-of-distribution (OOD) samples. Prior works have focused on developing state-of-the-art methods for detecting OOD. The fundamental question of how OOD samples differ from in-distribution samples remains unanswered. This paper explores how data dynamics in training models can be used to understand the fundamental differences between OOD and in-distribution samples in extensive detail. We found that syntactic characteristics of the data samples that the model consistently predicts incorrectly in both OOD and in-distribution cases directly contradict each other. In addition, we observed preliminary evidence supporting the hypothesis that models are more likely to latch on trivial syntactic heuristics (e.g., overlap of words between two sentences) when making predictions on OOD samples. We hope our preliminary study accelerates the data-centric analysis on various machine learning phenomena.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2111.14730](https://arxiv.org/abs/2111.14730) [cs.CL]** |
+|           | (or **[arXiv:2111.14730v1](https://arxiv.org/abs/2111.14730v1) [cs.CL]** for this version) |
+
+
+
 
 
 
