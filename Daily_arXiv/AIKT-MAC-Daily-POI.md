@@ -9,8 +9,6 @@
   - [2. Improvement in Machine Translation with Generative Adversarial Networks](#2021-12-1-2)
   - [3. Pureformer: Do We Even Need Attention?](#2021-12-1-3)
   
-- [2021-11-30](#2021-11-30)
-  - [1. Zero-Shot Image-to-Text Generation for Visual-Semantic Arithmetic](#2021-11-30-1)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
 
 
