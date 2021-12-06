@@ -3,12 +3,18 @@
 # Index
 
 
-- [2021-12-3](#2021-12-3)
+- [2021-12-6](#2021-12-6)
 
+  - [1. Linear algebra with transformers](#2021-12-6-1)
+  - [2. Multitask Finetuning for Improving Neural Machine Translation in Indian Languages](#2021-12-6-2)
+  - [3. Translating Politeness Across Cultures: Case of Hindi and English](#2021-12-6-3)
+  - [4. Semantic Segmentation of Legal Documents via Rhetorical Roles](#2021-12-6-4)
+  - [5. A Proposal of Automatic Error Correction in Text](#2021-12-6-5)
+  
+- [2021-12-3](#2021-12-3)
   - [1. Consensus Graph Representation Learning for Better Grounded Image Captioning](#2021-12-3-1)
   - [2. A Mixture of Expert Based Deep Neural Network for Improved ASR](#2021-12-3-2)
   - [3. DenseCLIP: Extract Free Dense Labels from CLIP](#2021-12-3-3)
-  
 - [2021-12-2](#2021-12-2)
   - [1. CLIPstyler: Image Style Transfer with a Single Text Condition](#2021-12-2-1)
   - [2. Translation-equivariant Image Quantizer for Bi-directional Image-Text Generation](#2021-12-2-2)
@@ -19,6 +25,107 @@
   - [2. Improvement in Machine Translation with Generative Adversarial Networks](#2021-12-1-2)
   - [3. Pureformer: Do We Even Need Attention?](#2021-12-1-3)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2021-12-6
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-12-6-1">1. Linear algebra with transformers
+</h2>
+
+Title: [Linear algebra with transformers](https://arxiv.org/abs/2112.01898)
+
+Authors: [François Charton](https://arxiv.org/search/cs?searchtype=author&query=Charton%2C+F)
+
+> Most applications of transformers to mathematics, from integration to theorem proving, focus on symbolic computation. In this paper, we show that transformers can be trained to perform numerical calculations with high accuracy. We consider problems of linear algebra: matrix transposition, addition, multiplication, eigenvalues and vectors, singular value decomposition, and inversion. Training small transformers (up to six layers) over datasets of random matrices, we achieve high accuracies (over 90%) on all problems. We also show that trained models can generalize out of their training distribution, and that out-of-domain accuracy can be greatly improved by working from more diverse datasets (in particular, by training from matrices with non-independent and identically distributed coefficients). Finally, we show that few-shot learning can be leveraged to re-train models to solve larger problems.
+
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2112.01898](https://arxiv.org/abs/2112.01898) [cs.LG]** |
+|           | (or **[arXiv:2112.01898v1](https://arxiv.org/abs/2112.01898v1) [cs.LG]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-6-2">2. Multitask Finetuning for Improving Neural Machine Translation in Indian Languages
+</h2>
+
+Title: [Multitask Finetuning for Improving Neural Machine Translation in Indian Languages](https://arxiv.org/abs/2112.01742)
+
+Authors: [Shaily Desai](https://arxiv.org/search/cs?searchtype=author&query=Desai%2C+S), [Atharva Kshirsagar](https://arxiv.org/search/cs?searchtype=author&query=Kshirsagar%2C+A), [Manisha Marathe](https://arxiv.org/search/cs?searchtype=author&query=Marathe%2C+M)
+
+> Transformer based language models have led to impressive results across all domains in Natural Language Processing. Pretraining these models on language modeling tasks and finetuning them on downstream tasks such as Text Classification, Question Answering and Neural Machine Translation has consistently shown exemplary results. In this work, we propose a Multitask Finetuning methodology which combines the Bilingual Machine Translation task with an auxiliary Causal Language Modeling task to improve performance on the former task on Indian Languages. We conduct an empirical study on three language pairs, Marathi-Hindi, Marathi-English and Hindi-English, where we compare the multitask finetuning approach to the standard finetuning approach, for which we use the mBART50 model. Our study indicates that the multitask finetuning method could be a better technique than standard finetuning, and could improve Bilingual Machine Translation across language pairs.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2112.01742](https://arxiv.org/abs/2112.01742) [cs.CL]** |
+|           | (or **[arXiv:2112.01742v1](https://arxiv.org/abs/2112.01742v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-6-3">3. Translating Politeness Across Cultures: Case of Hindi and English
+</h2>
+
+Title: [Translating Politeness Across Cultures: Case of Hindi and English](https://arxiv.org/abs/2112.01822)
+
+Authors: [Ritesh Kumar](https://arxiv.org/search/cs?searchtype=author&query=Kumar%2C+R), [Girish Nath Jha](https://arxiv.org/search/cs?searchtype=author&query=Jha%2C+G+N)
+
+> In this paper, we present a corpus based study of politeness across two languages-English and Hindi. It studies the politeness in a translated parallel corpus of Hindi and English and sees how politeness in a Hindi text is translated into English. We provide a detailed theoretical background in which the comparison is carried out, followed by a brief description of the translated data within this theoretical model. Since politeness may become one of the major reasons of conflict and misunderstanding, it is a very important phenomenon to be studied and understood cross-culturally, particularly for such purposes as machine translation.
+
+| Subjects:          | **Computation and Language (cs.CL)**                         |
+| ------------------ | ------------------------------------------------------------ |
+| Journal reference: | Proceedings of the 3rd ACM International Conference on Inter-Cultural Collaboration (ICIC-2010), Copenhagen Business School, Denmark, pp. 175-178, 2010 |
+| Cite as:           | **[arXiv:2112.01822](https://arxiv.org/abs/2112.01822) [cs.CL]** |
+|                    | (or **[arXiv:2112.01822v1](https://arxiv.org/abs/2112.01822v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-6-4">4. Semantic Segmentation of Legal Documents via Rhetorical Roles
+</h2>
+
+Title: [Semantic Segmentation of Legal Documents via Rhetorical Roles](https://arxiv.org/abs/2112.01836)
+
+Authors: [Vijit Malik](https://arxiv.org/search/cs?searchtype=author&query=Malik%2C+V), [Rishabh Sanjay](https://arxiv.org/search/cs?searchtype=author&query=Sanjay%2C+R), [Shouvik Kumar Guha](https://arxiv.org/search/cs?searchtype=author&query=Guha%2C+S+K), [Shubham Kumar Nigam](https://arxiv.org/search/cs?searchtype=author&query=Nigam%2C+S+K), [Angshuman Hazarika](https://arxiv.org/search/cs?searchtype=author&query=Hazarika%2C+A), [Arnab Bhattacharya](https://arxiv.org/search/cs?searchtype=author&query=Bhattacharya%2C+A), [Ashutosh Modi](https://arxiv.org/search/cs?searchtype=author&query=Modi%2C+A)
+
+> Legal documents are unstructured, use legal jargon, and have considerable length, making it difficult to process automatically via conventional text processing techniques. A legal document processing system would benefit substantially if the documents could be semantically segmented into coherent units of information. This paper proposes a Rhetorical Roles (RR) system for segmenting a legal document into semantically coherent units: facts, arguments, statute, issue, precedent, ruling, and ratio. With the help of legal experts, we propose a set of 13 fine-grained rhetorical role labels and create a new corpus of legal documents annotated with the proposed RR. We develop a system for segmenting a document into rhetorical role units. In particular, we develop a multitask learning-based deep learning model with document rhetorical role label shift as an auxiliary task for segmenting a legal document. We experiment extensively with various deep learning models for predicting rhetorical roles in a document, and the proposed model shows superior performance over the existing models. Further, we apply RR for predicting the judgment of legal cases and show that the use of RR enhances the prediction compared to the transformer-based models.
+
+| Comments: | 16 pages                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2112.01836](https://arxiv.org/abs/2112.01836) [cs.CL]** |
+|           | (or **[arXiv:2112.01836v1](https://arxiv.org/abs/2112.01836v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-6-5">5. A Proposal of Automatic Error Correction in Text
+</h2>
+
+Title: [A Proposal of Automatic Error Correction in Text](https://arxiv.org/abs/2112.01846)
+
+Authors: [Wulfrano A. Luna-Ramírez](https://arxiv.org/search/cs?searchtype=author&query=Luna-Ramírez%2C+W+A), [Carlos R. Jaimez-González](https://arxiv.org/search/cs?searchtype=author&query=Jaimez-González%2C+C+R)
+
+> The great amount of information that can be stored in electronic media is growing up daily. Many of them is got mainly by typing, such as the huge of information obtained from web 2.0 sites; or scaned and processing by an Optical Character Recognition software, like the texts of libraries and goverment offices. Both processes introduce error in texts, so it is difficult to use the data for other purposes than just to read it, i.e. the processing of those texts by other applications like e-learning, learning of languages, electronic tutorials, data minning, information retrieval and even more specialized systems such as tiflologic software, specifically blinded people-oriented applications like automatic reading, where the text would be error free as possible in order to make easier the text to speech task, and so on. In this paper it is showed an application of automatic recognition and correction of ortographic errors in electronic texts. This task is composed of three stages: a) error detection; b) candidate corrections generation; and c) correction -selection of the best candidate. The proposal is based in part of speech text categorization, word similarity, word diccionaries, statistical measures, morphologic analisys and n-grams based language model of Spanish.
+
+| Comments:          | 15 pages, 3 figures, 11 tables, 1 algorithm. Formerly published on Journal of Research in Computer Science - Intl Conference on Computer CORE2012 |
+| ------------------ | ------------------------------------------------------------ |
+| Subjects:          | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Journal reference: | Luna-Ramírez, A., Jaimez-González, C. R. (2012). A Proposal of Automatic Error Correction in Text. Revista Research in Computing Science: Advances in Computing Science, Vol. 58, pp. 323-337. ISSN: 1870-4069 |
+| Cite as:           | **[arXiv:2112.01846](https://arxiv.org/abs/2112.01846) [cs.CL]** |
+|                    | (or **[arXiv:2112.01846v1](https://arxiv.org/abs/2112.01846v1) [cs.CL]** for this version) |
+
+
+
 
 
 
