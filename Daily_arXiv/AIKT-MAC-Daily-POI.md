@@ -3,6 +3,17 @@
 # Index
 
 
+- [2021-12-7](#2021-12-7)
+
+  - [1. Legal Document Retrieval using Document Vector Embeddings and Deep Learning](#2021-12-7-1)
+  - [2. VT-CLIP: Enhancing Vision-Language Models with Visual-guided Texts](#2021-12-7-2)
+  - [3. VarCLR: Variable Semantic Representation Pre-training via Contrastive Learning](#2021-12-7-3)
+  - [4. Embedding Arithmetic for Text-driven Image Transformation](#2021-12-7-4)
+  - [5. Text2Mesh: Text-Driven Neural Stylization for Meshes](#2021-12-7-5)
+  - [6. CLASSIC: Continual and Contrastive Learning of Aspect Sentiment Classification Tasks](#2021-12-7-6)
+  - [7. Towards More Robust Natural Language Understanding](#2021-12-7-7)
+  - [8. Quantifying Adaptability in Pre-trained Language Models with 500 Tasks](#2021-12-7-8)
+  
 - [2021-12-6](#2021-12-6)
 
   - [1. Linear algebra with transformers](#2021-12-6-1)
@@ -10,7 +21,7 @@
   - [3. Translating Politeness Across Cultures: Case of Hindi and English](#2021-12-6-3)
   - [4. Semantic Segmentation of Legal Documents via Rhetorical Roles](#2021-12-6-4)
   - [5. A Proposal of Automatic Error Correction in Text](#2021-12-6-5)
-  
+
 - [2021-12-3](#2021-12-3)
   - [1. Consensus Graph Representation Learning for Better Grounded Image Captioning](#2021-12-3-1)
   - [2. A Mixture of Expert Based Deep Neural Network for Improved ASR](#2021-12-3-2)
@@ -25,6 +36,166 @@
   - [2. Improvement in Machine Translation with Generative Adversarial Networks](#2021-12-1-2)
   - [3. Pureformer: Do We Even Need Attention?](#2021-12-1-3)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2021-12-7
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-12-7-1">1. Legal Document Retrieval using Document Vector Embeddings and Deep Learning
+</h2>
+
+Title: [Legal Document Retrieval using Document Vector Embeddings and Deep Learning](https://arxiv.org/abs/1805.10685)
+
+Authors: [Keet Sugathadasa](https://arxiv.org/search/cs?searchtype=author&query=Sugathadasa%2C+K), [Buddhi Ayesha](https://arxiv.org/search/cs?searchtype=author&query=Ayesha%2C+B), [Nisansa de Silva](https://arxiv.org/search/cs?searchtype=author&query=de+Silva%2C+N), [Amal Shehan Perera](https://arxiv.org/search/cs?searchtype=author&query=Perera%2C+A+S), [Vindula Jayawardana](https://arxiv.org/search/cs?searchtype=author&query=Jayawardana%2C+V), [Dimuthu Lakmal](https://arxiv.org/search/cs?searchtype=author&query=Lakmal%2C+D), [Madhavi Perera](https://arxiv.org/search/cs?searchtype=author&query=Perera%2C+M)
+
+> Domain specific information retrieval process has been a prominent and ongoing research in the field of natural language processing. Many researchers have incorporated different techniques to overcome the technical and domain specificity and provide a mature model for various domains of interest. The main bottleneck in these studies is the heavy coupling of domain experts, that makes the entire process to be time consuming and cumbersome. In this study, we have developed three novel models which are compared against a golden standard generated via the on line repositories provided, specifically for the legal domain. The three different models incorporated vector space representations of the legal domain, where document vector generation was done in two different mechanisms and as an ensemble of the above two. This study contains the research being carried out in the process of representing legal case documents into different vector spaces, whilst incorporating semantic word measures and natural language processing techniques. The ensemble model built in this study, shows a significantly higher accuracy level, which indeed proves the need for incorporation of domain specific semantic similarity measures into the information retrieval process. This study also shows, the impact of varying distribution of the word similarity measures, against varying document vector dimensions, which can lead to improvements in the process of legal information retrieval.
+
+| Subjects: | **Information Retrieval (cs.IR)**; Computation and Language (cs.CL) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:1805.10685](https://arxiv.org/abs/1805.10685) [cs.IR]** |
+|           | (or **[arXiv:1805.10685v1](https://arxiv.org/abs/1805.10685v1) [cs.IR]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-7-2">2. VT-CLIP: Enhancing Vision-Language Models with Visual-guided Texts
+</h2>
+
+Title: [VT-CLIP: Enhancing Vision-Language Models with Visual-guided Texts](https://arxiv.org/abs/2112.02399)
+
+Authors: [Renrui Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+R), [Longtian Qiu](https://arxiv.org/search/cs?searchtype=author&query=Qiu%2C+L), [Wei Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+W), [Ziyao Zeng](https://arxiv.org/search/cs?searchtype=author&query=Zeng%2C+Z)
+
+> Contrastive Vision-Language Pre-training (CLIP) has drown increasing attention recently for its transferable visual representation learning. Supervised by large-scale image-text pairs, CLIP is able to align paired images and texts and thus conduct zero-shot recognition in open-vocabulary scenarios. However, there exists semantic gap between the specific application and generally pre-trained knowledge, which makes the matching sub-optimal on downstream tasks. In this paper, we propose VT-CLIP to enhance vision-language modeling via visual-guided texts. Specifically, we guide the text feature to adaptively explore informative regions on the image and aggregate the visual feature by cross-attention machanism. In this way, the visual-guided text become more semantically correlated with the image, which greatly benefits the matching process. In few-shot settings, we evaluate our VT-CLIP on 11 well-known classification datasets and experiment extensive ablation studies to demonstrate the effectiveness of VT-CLIP. The code will be released soon.
+
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2112.02399](https://arxiv.org/abs/2112.02399) [cs.CV]** |
+|           | (or **[arXiv:2112.02399v1](https://arxiv.org/abs/2112.02399v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-7-3">3. VarCLR: Variable Semantic Representation Pre-training via Contrastive Learning
+</h2>
+
+Title: [VarCLR: Variable Semantic Representation Pre-training via Contrastive Learning](https://arxiv.org/abs/2112.02650)
+
+Authors: [Qibin Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+Q), [Jeremy Lacomis](https://arxiv.org/search/cs?searchtype=author&query=Lacomis%2C+J), [Edward J. Schwartz](https://arxiv.org/search/cs?searchtype=author&query=Schwartz%2C+E+J), [Graham Neubig](https://arxiv.org/search/cs?searchtype=author&query=Neubig%2C+G), [Bogdan Vasilescu](https://arxiv.org/search/cs?searchtype=author&query=Vasilescu%2C+B), [Claire Le Goues](https://arxiv.org/search/cs?searchtype=author&query=Goues%2C+C+L)
+
+> Variable names are critical for conveying intended program behavior. Machine learning-based program analysis methods use variable name representations for a wide range of tasks, such as suggesting new variable names and bug detection. Ideally, such methods could capture semantic relationships between names beyond syntactic similarity, e.g., the fact that the names average and mean are similar. Unfortunately, previous work has found that even the best of previous representation approaches primarily capture relatedness (whether two variables are linked at all), rather than similarity (whether they actually have the same meaning). 
+> We propose VarCLR, a new approach for learning semantic representations of variable names that effectively captures variable similarity in this stricter sense. We observe that this problem is an excellent fit for contrastive learning, which aims to minimize the distance between explicitly similar inputs, while maximizing the distance between dissimilar inputs. This requires labeled training data, and thus we construct a novel, weakly-supervised variable renaming dataset mined from GitHub edits. We show that VarCLR enables the effective application of sophisticated, general-purpose language models like BERT, to variable name representation and thus also to related downstream tasks like variable name similarity search or spelling correction. VarCLR produces models that significantly outperform the state-of-the-art on IdBench, an existing benchmark that explicitly captures variable similarity (as distinct from relatedness). Finally, we contribute a release of all data, code, and pre-trained models, aiming to provide a drop-in replacement for variable representations used in either existing or future program analyses that rely on variable names.
+
+| Comments: | Accepted by ICSE 2022                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Software Engineering (cs.SE)**; Computation and Language (cs.CL); Machine Learning (cs.LG); Programming Languages (cs.PL) |
+| Cite as:  | **[arXiv:2112.02650](https://arxiv.org/abs/2112.02650) [cs.SE]** |
+|           | (or **[arXiv:2112.02650v1](https://arxiv.org/abs/2112.02650v1) [cs.SE]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-7-4">4. Embedding Arithmetic for Text-driven Image Transformation
+</h2>
+
+Title: [Embedding Arithmetic for Text-driven Image Transformation](https://arxiv.org/abs/2112.03162)
+
+Authors: [Guillaume Couairon](https://arxiv.org/search/cs?searchtype=author&query=Couairon%2C+G), [Matthieu Cord](https://arxiv.org/search/cs?searchtype=author&query=Cord%2C+M), [Matthijs Douze](https://arxiv.org/search/cs?searchtype=author&query=Douze%2C+M), [Holger Schwenk](https://arxiv.org/search/cs?searchtype=author&query=Schwenk%2C+H)
+
+> Latent text representations exhibit geometric regularities, such as the famous analogy: queen is to king what woman is to man. Such structured semantic relations were not demonstrated on image representations. Recent works aiming at bridging this semantic gap embed images and text into a multimodal space, enabling the transfer of text-defined transformations to the image modality. 
+> We introduce the SIMAT dataset to evaluate the task of text-driven image transformation. SIMAT contains 6k images and 18k "transformation queries" that aim at either replacing scene elements or changing their pairwise relationships. The goal is to retrieve an image consistent with the (source image, transformation) query. We use an image/text matching oracle (OSCAR) to assess whether the image transformation is successful. The SIMAT dataset will be publicly available. 
+> We use SIMAT to show that vanilla CLIP multimodal embeddings are not very well suited for text-driven image transformation, but that a simple finetuning on the COCO dataset can bring dramatic improvements. We also study whether it is beneficial to leverage the geometric properties of pretrained universal sentence encoders (FastText, LASER and LaBSE).
+
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2112.03162](https://arxiv.org/abs/2112.03162) [cs.CV]** |
+|           | (or **[arXiv:2112.03162v1](https://arxiv.org/abs/2112.03162v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-7-5">5. Text2Mesh: Text-Driven Neural Stylization for Meshes
+</h2>
+
+Title: [Text2Mesh: Text-Driven Neural Stylization for Meshes](https://arxiv.org/abs/2112.03221)
+
+Authors: [Oscar Michel](https://arxiv.org/search/cs?searchtype=author&query=Michel%2C+O), [Roi Bar-On](https://arxiv.org/search/cs?searchtype=author&query=Bar-On%2C+R), [Richard Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+R), [Sagie Benaim](https://arxiv.org/search/cs?searchtype=author&query=Benaim%2C+S), [Rana Hanocka](https://arxiv.org/search/cs?searchtype=author&query=Hanocka%2C+R)
+
+> In this work, we develop intuitive controls for editing the style of 3D objects. Our framework, Text2Mesh, stylizes a 3D mesh by predicting color and local geometric details which conform to a target text prompt. We consider a disentangled representation of a 3D object using a fixed mesh input (content) coupled with a learned neural network, which we term neural style field network. In order to modify style, we obtain a similarity score between a text prompt (describing style) and a stylized mesh by harnessing the representational power of CLIP. Text2Mesh requires neither a pre-trained generative model nor a specialized 3D mesh dataset. It can handle low-quality meshes (non-manifold, boundaries, etc.) with arbitrary genus, and does not require UV parameterization. We demonstrate the ability of our technique to synthesize a myriad of styles over a wide variety of 3D meshes.
+
+| Comments: | project page: [this https URL](https://threedle.github.io/text2mesh/) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL); Graphics (cs.GR) |
+| Cite as:  | **[arXiv:2112.03221](https://arxiv.org/abs/2112.03221) [cs.CV]** |
+|           | (or **[arXiv:2112.03221v1](https://arxiv.org/abs/2112.03221v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-7-6">6. CLASSIC: Continual and Contrastive Learning of Aspect Sentiment Classification Tasks
+</h2>
+
+Title: [CLASSIC: Continual and Contrastive Learning of Aspect Sentiment Classification Tasks](https://arxiv.org/abs/2112.02714)
+
+Authors: [Zixuan Ke](https://arxiv.org/search/cs?searchtype=author&query=Ke%2C+Z), [Bing Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+B), [Hu Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+H), [Lei Shu](https://arxiv.org/search/cs?searchtype=author&query=Shu%2C+L)
+
+> This paper studies continual learning (CL) of a sequence of aspect sentiment classification(ASC) tasks in a particular CL setting called domain incremental learning (DIL). Each task is from a different domain or product. The DIL setting is particularly suited to ASC because in testing the system needs not know the task/domain to which the test data belongs. To our knowledge, this setting has not been studied before for ASC. This paper proposes a novel model called CLASSIC. The key novelty is a contrastive continual learning method that enables both knowledge transfer across tasks and knowledge distillation from old tasks to the new task, which eliminates the need for task ids in testing. Experimental results show the high effectiveness of CLASSIC.
+
+| Subjects:          | **Computation and Language (cs.CL)**                         |
+| ------------------ | ------------------------------------------------------------ |
+| Journal reference: | EMNLP 2021                                                   |
+| Cite as:           | **[arXiv:2112.02714](https://arxiv.org/abs/2112.02714) [cs.CL]** |
+|                    | (or **[arXiv:2112.02714v1](https://arxiv.org/abs/2112.02714v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-7-7">7. Towards More Robust Natural Language Understanding
+</h2>
+
+Title: [Towards More Robust Natural Language Understanding](https://arxiv.org/abs/2112.02992)
+
+Authors: [Xinliang Frederick Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+X+F)
+
+> Natural Language Understanding (NLU) is a branch of Natural Language Processing (NLP) that uses intelligent computer software to understand texts that encode human knowledge. Recent years have witnessed notable progress across various NLU tasks with deep learning techniques, especially with pretrained language models. Besides proposing more advanced model architectures, constructing more reliable and trustworthy datasets also plays a huge role in improving NLU systems, without which it would be impossible to train a decent NLU model. It's worth noting that the human ability of understanding natural language is flexible and robust. On the contrary, most of existing NLU systems fail to achieve desirable performance on out-of-domain data or struggle on handling challenging items (e.g., inherently ambiguous items, adversarial items) in the real world. Therefore, in order to have NLU models understand human language more effectively, it is expected to prioritize the study on robust natural language understanding. In this thesis, we deem that NLU systems are consisting of two components: NLU models and NLU datasets. As such, we argue that, to achieve robust NLU, the model architecture/training and the dataset are equally important. Specifically, we will focus on three NLU tasks to illustrate the robustness problem in different NLU tasks and our contributions (i.e., novel models and new datasets) to help achieve more robust natural language understanding. Moving forward, the ultimate goal for robust natural language understanding is to build NLU models which can behave humanly. That is, it's expected that robust NLU systems are capable to transfer the knowledge from training corpus to unseen documents more reliably and survive when encountering challenging items even if the system doesn't know a priori of users' inputs.
+
+| Comments: | Undergraduate Research Thesis, The Ohio State University     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2112.02992](https://arxiv.org/abs/2112.02992) [cs.CL]** |
+|           | (or **[arXiv:2112.02992v1](https://arxiv.org/abs/2112.02992v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-7-8">8. Quantifying Adaptability in Pre-trained Language Models with 500 Tasks
+</h2>
+
+Title: [Quantifying Adaptability in Pre-trained Language Models with 500 Tasks](https://arxiv.org/abs/2112.03204)
+
+Authors: [Belinda Z. Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+B+Z), [Jane Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+J), [Madian Khabsa](https://arxiv.org/search/cs?searchtype=author&query=Khabsa%2C+M), [Luke Zettlemoyer](https://arxiv.org/search/cs?searchtype=author&query=Zettlemoyer%2C+L), [Alon Halevy](https://arxiv.org/search/cs?searchtype=author&query=Halevy%2C+A), [Jacob Andreas](https://arxiv.org/search/cs?searchtype=author&query=Andreas%2C+J)
+
+> When a neural language model (LM) is adapted to perform a new task, what aspects of the task predict the eventual performance of the model? In NLP, systematic features of LM generalization to individual examples are well characterized, but systematic aspects of LM adaptability to new tasks are not nearly as well understood. We present a large-scale empirical study of the features and limits of LM adaptability using a new benchmark, TaskBench500, built from 500 procedurally generated sequence modeling tasks. These tasks combine core aspects of language processing, including lexical semantics, sequence processing, memorization, logical reasoning, and world knowledge. Using TaskBench500, we evaluate three facets of adaptability, finding that: (1) adaptation procedures differ dramatically in their ability to memorize small datasets; (2) within a subset of task types, adaptation procedures exhibit compositional adaptability to complex tasks; and (3) failure to match training label distributions is explained by mismatches in the intrinsic difficulty of predicting individual labels. Our experiments show that adaptability to new tasks, like generalization to new examples, can be systematically described and understood, and we conclude with a discussion of additional aspects of adaptability that could be studied using the new benchmark.
+
+| Comments: | 18 pages, 5 figures, 8 tables                                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2112.03204](https://arxiv.org/abs/2112.03204) [cs.CL]** |
+|           | (or **[arXiv:2112.03204v1](https://arxiv.org/abs/2112.03204v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
