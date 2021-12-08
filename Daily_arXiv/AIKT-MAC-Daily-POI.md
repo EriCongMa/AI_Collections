@@ -3,6 +3,13 @@
 # Index
 
 
+- [2021-12-8](#2021-12-8)
+
+  - [1. CMA-CLIP: Cross-Modality Attention CLIP for Image-Text Classification](#2021-12-8-1)
+  - [2. Grounded Language-Image Pre-training](#2021-12-8-2)
+  - [3. Parsing with Pretrained Language Models, Multiple Datasets, and Dataset Embeddings](#2021-12-8-3)
+  - [4. Natural Answer Generation: From Factoid Answer to Full-length Answer using Grammar Correction](#2021-12-8-4)
+  
 - [2021-12-7](#2021-12-7)
 
   - [1. Legal Document Retrieval using Document Vector Embeddings and Deep Learning](#2021-12-7-1)
@@ -13,7 +20,7 @@
   - [6. CLASSIC: Continual and Contrastive Learning of Aspect Sentiment Classification Tasks](#2021-12-7-6)
   - [7. Towards More Robust Natural Language Understanding](#2021-12-7-7)
   - [8. Quantifying Adaptability in Pre-trained Language Models with 500 Tasks](#2021-12-7-8)
-  
+
 - [2021-12-6](#2021-12-6)
 
   - [1. Linear algebra with transformers](#2021-12-6-1)
@@ -36,6 +43,87 @@
   - [2. Improvement in Machine Translation with Generative Adversarial Networks](#2021-12-1-2)
   - [3. Pureformer: Do We Even Need Attention?](#2021-12-1-3)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2021-12-8
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-12-8-1">1. CMA-CLIP: Cross-Modality Attention CLIP for Image-Text Classification
+</h2>
+
+Title: [CMA-CLIP: Cross-Modality Attention CLIP for Image-Text Classification](https://arxiv.org/abs/2112.03562)
+
+Authors: [Huidong Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+H) (1), [Shaoyuan Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+S) (2), [Jinmiao Fu](https://arxiv.org/search/cs?searchtype=author&query=Fu%2C+J) (2), [Yang Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Y) (2), [Ning Xie](https://arxiv.org/search/cs?searchtype=author&query=Xie%2C+N) (2), [Chien-chih Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+C) (2), [Bryan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+B) (2), [Yi Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+Y) (2) ((1) Stony Brook University, (2) Amazon Inc.)
+
+> Modern Web systems such as social media and e-commerce contain rich contents expressed in images and text. Leveraging information from multi-modalities can improve the performance of machine learning tasks such as classification and recommendation. In this paper, we propose the Cross-Modality Attention Contrastive Language-Image Pre-training (CMA-CLIP), a new framework which unifies two types of cross-modality attentions, sequence-wise attention and modality-wise attention, to effectively fuse information from image and text pairs. The sequence-wise attention enables the framework to capture the fine-grained relationship between image patches and text tokens, while the modality-wise attention weighs each modality by its relevance to the downstream tasks. In addition, by adding task specific modality-wise attentions and multilayer perceptrons, our proposed framework is capable of performing multi-task classification with multi-modalities. 
+> We conduct experiments on a Major Retail Website Product Attribute (MRWPA) dataset and two public datasets, Food101 and Fashion-Gen. The results show that CMA-CLIP outperforms the pre-trained and fine-tuned CLIP by an average of 11.9% in recall at the same level of precision on the MRWPA dataset for multi-task classification. It also surpasses the state-of-the-art method on Fashion-Gen Dataset by 5.5% in accuracy and achieves competitive performance on Food101 Dataset. Through detailed ablation studies, we further demonstrate the effectiveness of both cross-modality attention modules and our method's robustness against noise in image and text inputs, which is a common challenge in practice.
+
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2112.03562](https://arxiv.org/abs/2112.03562) [cs.CV]** |
+|           | (or **[arXiv:2112.03562v1](https://arxiv.org/abs/2112.03562v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-8-2">2. Grounded Language-Image Pre-training
+</h2>
+
+Title: [Grounded Language-Image Pre-training](https://arxiv.org/abs/2112.03857)
+
+Authors: [Liunian Harold Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L+H), [Pengchuan Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+P), [Haotian Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+H), [Jianwei Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+J), [Chunyuan Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+C), [Yiwu Zhong](https://arxiv.org/search/cs?searchtype=author&query=Zhong%2C+Y), [Lijuan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+L), [Lu Yuan](https://arxiv.org/search/cs?searchtype=author&query=Yuan%2C+L), [Lei Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+L), [Jenq-Neng Hwang](https://arxiv.org/search/cs?searchtype=author&query=Hwang%2C+J), [Kai-Wei Chang](https://arxiv.org/search/cs?searchtype=author&query=Chang%2C+K), [Jianfeng Gao](https://arxiv.org/search/cs?searchtype=author&query=Gao%2C+J)
+
+> This paper presents a grounded language-image pre-training (GLIP) model for learning object-level, language-aware, and semantic-rich visual representations. GLIP unifies object detection and phrase grounding for pre-training. The unification brings two benefits: 1) it allows GLIP to learn from both detection and grounding data to improve both tasks and bootstrap a good grounding model; 2) GLIP can leverage massive image-text pairs by generating grounding boxes in a self-training fashion, making the learned representation semantic-rich. In our experiments, we pre-train GLIP on 27M grounding data, including 3M human-annotated and 24M web-crawled image-text pairs. The learned representations demonstrate strong zero-shot and few-shot transferability to various object-level recognition tasks. 1) When directly evaluated on COCO and LVIS (without seeing any images in COCO during pre-training), GLIP achieves 49.8 AP and 26.9 AP, respectively, surpassing many supervised baselines. 2) After fine-tuned on COCO, GLIP achieves 60.8 AP on val and 61.5 AP on test-dev, surpassing prior SoTA. 3) When transferred to 13 downstream object detection tasks, a 1-shot GLIP rivals with a fully-supervised Dynamic Head. Code will be released at [this https URL](https://github.com/microsoft/GLIP).
+
+| Comments: | Code will be released at [this https URL](https://github.com/microsoft/GLIP) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL); Machine Learning (cs.LG); Multimedia (cs.MM) |
+| Cite as:  | **[arXiv:2112.03857](https://arxiv.org/abs/2112.03857) [cs.CV]** |
+|           | (or **[arXiv:2112.03857v1](https://arxiv.org/abs/2112.03857v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-8-3">3. Parsing with Pretrained Language Models, Multiple Datasets, and Dataset Embeddings
+</h2>
+
+Title: [Parsing with Pretrained Language Models, Multiple Datasets, and Dataset Embeddings](https://arxiv.org/abs/2112.03625)
+
+Authors: [Rob van der Goot](https://arxiv.org/search/cs?searchtype=author&query=van+der+Goot%2C+R), [Miryam de Lhoneux](https://arxiv.org/search/cs?searchtype=author&query=de+Lhoneux%2C+M)
+
+> With an increase of dataset availability, the potential for learning from a variety of data sources has increased. One particular method to improve learning from multiple data sources is to embed the data source during training. This allows the model to learn generalizable features as well as distinguishing features between datasets. However, these dataset embeddings have mostly been used before contextualized transformer-based embeddings were introduced in the field of Natural Language Processing. In this work, we compare two methods to embed datasets in a transformer-based multilingual dependency parser, and perform an extensive evaluation. We show that: 1) embedding the dataset is still beneficial with these models 2) performance increases are highest when embedding the dataset at the encoder level 3) unsurprisingly, we confirm that performance increases are highest for small datasets and datasets with a low baseline score. 4) we show that training on the combination of all datasets performs similarly to designing smaller clusters based on language-relatedness.
+
+| Comments: | Accepted to TLT at SyntaxFest 2021                           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2112.03625](https://arxiv.org/abs/2112.03625) [cs.CL]** |
+|           | (or **[arXiv:2112.03625v1](https://arxiv.org/abs/2112.03625v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-8-4">4. Natural Answer Generation: From Factoid Answer to Full-length Answer using Grammar Correction
+</h2>
+
+Title: [Natural Answer Generation: From Factoid Answer to Full-length Answer using Grammar Correction](https://arxiv.org/abs/2112.03849)
+
+Authors: [Manas Jain](https://arxiv.org/search/cs?searchtype=author&query=Jain%2C+M), [Sriparna Saha](https://arxiv.org/search/cs?searchtype=author&query=Saha%2C+S), [Pushpak Bhattacharyya](https://arxiv.org/search/cs?searchtype=author&query=Bhattacharyya%2C+P), [Gladvin Chinnadurai](https://arxiv.org/search/cs?searchtype=author&query=Chinnadurai%2C+G), [Manish Kumar Vatsa](https://arxiv.org/search/cs?searchtype=author&query=Vatsa%2C+M+K)
+
+> Question Answering systems these days typically use template-based language generation. Though adequate for a domain-specific task, these systems are too restrictive and predefined for domain-independent systems. This paper proposes a system that outputs a full-length answer given a question and the extracted factoid answer (short spans such as named entities) as the input. Our system uses constituency and dependency parse trees of questions. A transformer-based Grammar Error Correction model GECToR (2020), is used as a post-processing step for better fluency. We compare our system with (i) Modified Pointer Generator (SOTA) and (ii) Fine-tuned DialoGPT for factoid questions. We also test our approach on existential (yes-no) questions with better results. Our model generates accurate and fluent answers than the state-of-the-art (SOTA) approaches. The evaluation is done on NewsQA and SqUAD datasets with an increment of 0.4 and 0.9 percentage points in ROUGE-1 score respectively. Also the inference time is reduced by 85\% as compared to the SOTA. The improved datasets used for our evaluation will be released as part of the research contribution.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2112.03849](https://arxiv.org/abs/2112.03849) [cs.CL]** |
+|           | (or **[arXiv:2112.03849v1](https://arxiv.org/abs/2112.03849v1) [cs.CL]** for this version) |
+
+
 
 
 
