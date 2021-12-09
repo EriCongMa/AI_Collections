@@ -3,13 +3,20 @@
 # Index
 
 
+- [2021-12-9](#2021-12-9)
+
+  - [1. Transformer-Based Approach for Joint Handwriting and Named Entity Recognition in Historical documents](#2021-12-9-1)
+  - [2. MLP Architectures for Vision-and-Language Modeling: An Empirical Study](#2021-12-9-2)
+  - [3. Bidimensional Leaderboards: Generate and Evaluate Language Hand in Hand](#2021-12-9-3)
+  - [4. Improving language models by retrieving from trillions of tokens](#2021-12-9-4)
+  
 - [2021-12-8](#2021-12-8)
 
   - [1. CMA-CLIP: Cross-Modality Attention CLIP for Image-Text Classification](#2021-12-8-1)
   - [2. Grounded Language-Image Pre-training](#2021-12-8-2)
   - [3. Parsing with Pretrained Language Models, Multiple Datasets, and Dataset Embeddings](#2021-12-8-3)
   - [4. Natural Answer Generation: From Factoid Answer to Full-length Answer using Grammar Correction](#2021-12-8-4)
-  
+
 - [2021-12-7](#2021-12-7)
 
   - [1. Legal Document Retrieval using Document Vector Embeddings and Deep Learning](#2021-12-7-1)
@@ -43,6 +50,87 @@
   - [2. Improvement in Machine Translation with Generative Adversarial Networks](#2021-12-1-2)
   - [3. Pureformer: Do We Even Need Attention?](#2021-12-1-3)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2021-12-9
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-12-9-1">1. Transformer-Based Approach for Joint Handwriting and Named Entity Recognition in Historical documents
+</h2>
+
+Title: [Transformer-Based Approach for Joint Handwriting and Named Entity Recognition in Historical documents](https://arxiv.org/abs/2112.04189)
+
+Authors: [Ahmed Cheikh Rouhoua](https://arxiv.org/search/cs?searchtype=author&query=Rouhoua%2C+A+C), [Marwa Dhiaf](https://arxiv.org/search/cs?searchtype=author&query=Dhiaf%2C+M), [Yousri Kessentini](https://arxiv.org/search/cs?searchtype=author&query=Kessentini%2C+Y), [Sinda Ben Salem](https://arxiv.org/search/cs?searchtype=author&query=Salem%2C+S+B)
+
+> The extraction of relevant information carried out by named entities in handwriting documents is still a challenging task. Unlike traditional information extraction approaches that usually face text transcription and named entity recognition as separate subsequent tasks, we propose in this paper an end-to-end transformer-based approach to jointly perform these two tasks. The proposed approach operates at the paragraph level, which brings two main benefits. First, it allows the model to avoid unrecoverable early errors due to line segmentation. Second, it allows the model to exploit larger bi-dimensional context information to identify the semantic categories, reaching a higher final prediction accuracy. We also explore different training scenarios to show their effect on the performance and we demonstrate that a two-stage learning strategy can make the model reach a higher final prediction accuracy. As far as we know, this work presents the first approach that adopts the transformer networks for named entity recognition in handwritten documents. We achieve the new state-of-the-art performance in the ICDAR 2017 Information Extraction competition using the Esposalles database, for the complete task, even though the proposed technique does not use any dictionaries, language modeling, or post-processing.
+
+| Subjects:          | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| ------------------ | ------------------------------------------------------------ |
+| Journal reference: | Pattern Recognition Letters, 2022                            |
+| Cite as:           | **[arXiv:2112.04189](https://arxiv.org/abs/2112.04189) [cs.CV]** |
+|                    | (or **[arXiv:2112.04189v1](https://arxiv.org/abs/2112.04189v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-9-2">2. MLP Architectures for Vision-and-Language Modeling: An Empirical Study
+</h2>
+
+Title: [MLP Architectures for Vision-and-Language Modeling: An Empirical Study](https://arxiv.org/abs/2112.04453)
+
+Authors: [Yixin Nie](https://arxiv.org/search/cs?searchtype=author&query=Nie%2C+Y), [Linjie Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L), [Zhe Gan](https://arxiv.org/search/cs?searchtype=author&query=Gan%2C+Z), [Shuohang Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+S), [Chenguang Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+C), [Michael Zeng](https://arxiv.org/search/cs?searchtype=author&query=Zeng%2C+M), [Zicheng Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Z), [Mohit Bansal](https://arxiv.org/search/cs?searchtype=author&query=Bansal%2C+M), [Lijuan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+L)
+
+> We initiate the first empirical study on the use of MLP architectures for vision-and-language (VL) fusion. Through extensive experiments on 5 VL tasks and 5 robust VQA benchmarks, we find that: (i) Without pre-training, using MLPs for multimodal fusion has a noticeable performance gap compared to transformers; (ii) However, VL pre-training can help close the performance gap; (iii) Instead of heavy multi-head attention, adding tiny one-head attention to MLPs is sufficient to achieve comparable performance to transformers. Moreover, we also find that the performance gap between MLPs and transformers is not widened when being evaluated on the harder robust VQA benchmarks, suggesting using MLPs for VL fusion can generalize roughly to a similar degree as using transformers. These results hint that MLPs can effectively learn to align vision and text features extracted from lower-level encoders without heavy reliance on self-attention. Based on this, we ask an even bolder question: can we have an all-MLP architecture for VL modeling, where both VL fusion and the vision encoder are replaced with MLPs? Our result shows that an all-MLP VL model is sub-optimal compared to state-of-the-art full-featured VL models when both of them get pre-trained. However, pre-training an all-MLP can surprisingly achieve a better average score than full-featured transformer models without pre-training. This indicates the potential of large-scale pre-training of MLP-like architectures for VL modeling and inspires the future research direction on simplifying well-established VL modeling with less inductive design bias. Our code is publicly available at: [this https URL](https://github.com/easonnie/mlp-vil)
+
+| Comments: | 15 pages                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2112.04453](https://arxiv.org/abs/2112.04453) [cs.CV]** |
+|           | (or **[arXiv:2112.04453v1](https://arxiv.org/abs/2112.04453v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-9-3">3. Bidimensional Leaderboards: Generate and Evaluate Language Hand in Hand
+</h2>
+
+Title: [Bidimensional Leaderboards: Generate and Evaluate Language Hand in Hand](https://arxiv.org/abs/2112.04139)
+
+Authors: [Jungo Kasai](https://arxiv.org/search/cs?searchtype=author&query=Kasai%2C+J), [Keisuke Sakaguchi](https://arxiv.org/search/cs?searchtype=author&query=Sakaguchi%2C+K), [Ronan Le Bras](https://arxiv.org/search/cs?searchtype=author&query=Bras%2C+R+L), [Lavinia Dunagan](https://arxiv.org/search/cs?searchtype=author&query=Dunagan%2C+L), [Jacob Morrison](https://arxiv.org/search/cs?searchtype=author&query=Morrison%2C+J), [Alexander R. Fabbri](https://arxiv.org/search/cs?searchtype=author&query=Fabbri%2C+A+R), [Yejin Choi](https://arxiv.org/search/cs?searchtype=author&query=Choi%2C+Y), [Noah A. Smith](https://arxiv.org/search/cs?searchtype=author&query=Smith%2C+N+A)
+
+> Natural language processing researchers have identified limitations of evaluation methodology for generation tasks, with new questions raised about the validity of automatic metrics and of crowdworker judgments. Meanwhile, efforts to improve generation models tend to focus on simple n-gram overlap metrics (e.g., BLEU, ROUGE). We argue that new advances on models and metrics should each more directly benefit and inform the other. We therefore propose a generalization of leaderboards, bidimensional leaderboards (Billboards), that simultaneously tracks progress in language generation tasks and metrics for their evaluation. Unlike conventional unidimensional leaderboards that sort submitted systems by predetermined metrics, a Billboard accepts both generators and evaluation metrics as competing entries. A Billboard automatically creates an ensemble metric that selects and linearly combines a few metrics based on a global analysis across generators. Further, metrics are ranked based on their correlations with human judgments. We release four Billboards for machine translation, summarization, and image captioning. We demonstrate that a linear ensemble of a few diverse metrics sometimes substantially outperforms existing metrics in isolation. Our mixed-effects model analysis shows that most automatic metrics, especially the reference-based ones, overrate machine over human generation, demonstrating the importance of updating metrics as generation models become stronger (and perhaps more similar to humans) in the future.
+
+| Comments: | Project website: [this https URL](https://nlp.cs.washington.edu/billboard/) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2112.04139](https://arxiv.org/abs/2112.04139) [cs.CL]** |
+|           | (or **[arXiv:2112.04139v1](https://arxiv.org/abs/2112.04139v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-9-4">4. Improving language models by retrieving from trillions of tokens
+</h2>
+
+Title: [Improving language models by retrieving from trillions of tokens](https://arxiv.org/abs/2112.04426)
+
+Authors: [Sebastian Borgeaud](https://arxiv.org/search/cs?searchtype=author&query=Borgeaud%2C+S), [Arthur Mensch](https://arxiv.org/search/cs?searchtype=author&query=Mensch%2C+A), [Jordan Hoffmann](https://arxiv.org/search/cs?searchtype=author&query=Hoffmann%2C+J), [Trevor Cai](https://arxiv.org/search/cs?searchtype=author&query=Cai%2C+T), [Eliza Rutherford](https://arxiv.org/search/cs?searchtype=author&query=Rutherford%2C+E), [Katie Millican](https://arxiv.org/search/cs?searchtype=author&query=Millican%2C+K), [George van den Driessche](https://arxiv.org/search/cs?searchtype=author&query=van+den+Driessche%2C+G), [Jean-Baptiste Lespiau](https://arxiv.org/search/cs?searchtype=author&query=Lespiau%2C+J), [Bogdan Damoc](https://arxiv.org/search/cs?searchtype=author&query=Damoc%2C+B), [Aidan Clark](https://arxiv.org/search/cs?searchtype=author&query=Clark%2C+A), [Diego de Las Casas](https://arxiv.org/search/cs?searchtype=author&query=de+Las+Casas%2C+D), [Aurelia Guy](https://arxiv.org/search/cs?searchtype=author&query=Guy%2C+A), [Jacob Menick](https://arxiv.org/search/cs?searchtype=author&query=Menick%2C+J), [Roman Ring](https://arxiv.org/search/cs?searchtype=author&query=Ring%2C+R), [Tom Hennigan](https://arxiv.org/search/cs?searchtype=author&query=Hennigan%2C+T), [Saffron Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+S), [Loren Maggiore](https://arxiv.org/search/cs?searchtype=author&query=Maggiore%2C+L), [Chris Jones](https://arxiv.org/search/cs?searchtype=author&query=Jones%2C+C), [Albin Cassirer](https://arxiv.org/search/cs?searchtype=author&query=Cassirer%2C+A), [Andy Brock](https://arxiv.org/search/cs?searchtype=author&query=Brock%2C+A), [Michela Paganini](https://arxiv.org/search/cs?searchtype=author&query=Paganini%2C+M), [Geoffrey Irving](https://arxiv.org/search/cs?searchtype=author&query=Irving%2C+G), [Oriol Vinyals](https://arxiv.org/search/cs?searchtype=author&query=Vinyals%2C+O), [Simon Osindero](https://arxiv.org/search/cs?searchtype=author&query=Osindero%2C+S), [Karen Simonyan](https://arxiv.org/search/cs?searchtype=author&query=Simonyan%2C+K), [Jack W. Rae](https://arxiv.org/search/cs?searchtype=author&query=Rae%2C+J+W), [Erich Elsen](https://arxiv.org/search/cs?searchtype=author&query=Elsen%2C+E), [Laurent Sifre](https://arxiv.org/search/cs?searchtype=author&query=Sifre%2C+L)
+
+> We enhance auto-regressive language models by conditioning on document chunks retrieved from a large corpus, based on local similarity with preceding tokens. With a 2 trillion token database, our Retrieval-Enhanced Transformer (RETRO) obtains comparable performance to GPT-3 and Jurassic-1 on the Pile, despite using 25× fewer parameters. After fine-tuning, RETRO performance translates to downstream knowledge-intensive tasks such as question answering. RETRO combines a frozen Bert retriever, a differentiable encoder and a chunked cross-attention mechanism to predict tokens based on an order of magnitude more data than what is typically consumed during training. We typically train RETRO from scratch, yet can also rapidly RETROfit pre-trained transformers with retrieval and still achieve good performance. Our work opens up new avenues for improving language models through explicit memory at unprecedented scale.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2112.04426](https://arxiv.org/abs/2112.04426) [cs.CL]** |
+|           | (or **[arXiv:2112.04426v1](https://arxiv.org/abs/2112.04426v1) [cs.CL]** for this version) |
+
+
 
 
 
