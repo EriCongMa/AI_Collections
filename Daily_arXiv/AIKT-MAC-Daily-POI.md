@@ -3,13 +3,17 @@
 # Index
 
 
+- [2021-12-10](#2021-12-10)
+
+  - [1. Self-Supervised Image-to-Text and Text-to-Image Synthesis](#2021-12-10-1)
+  
 - [2021-12-9](#2021-12-9)
 
   - [1. Transformer-Based Approach for Joint Handwriting and Named Entity Recognition in Historical documents](#2021-12-9-1)
   - [2. MLP Architectures for Vision-and-Language Modeling: An Empirical Study](#2021-12-9-2)
   - [3. Bidimensional Leaderboards: Generate and Evaluate Language Hand in Hand](#2021-12-9-3)
   - [4. Improving language models by retrieving from trillions of tokens](#2021-12-9-4)
-  
+
 - [2021-12-8](#2021-12-8)
 
   - [1. CMA-CLIP: Cross-Modality Attention CLIP for Image-Text Classification](#2021-12-8-1)
@@ -50,6 +54,35 @@
   - [2. Improvement in Machine Translation with Generative Adversarial Networks](#2021-12-1-2)
   - [3. Pureformer: Do We Even Need Attention?](#2021-12-1-3)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2021-12-10
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-12-10-1">1. Self-Supervised Image-to-Text and Text-to-Image Synthesis
+</h2>
+
+Title: [Self-Supervised Image-to-Text and Text-to-Image Synthesis](https://arxiv.org/abs/2112.04928)
+
+Authors: [Anindya Sundar Das](https://arxiv.org/search/cs?searchtype=author&query=Das%2C+A+S), [Sriparna Saha](https://arxiv.org/search/cs?searchtype=author&query=Saha%2C+S)
+
+> A comprehensive understanding of vision and language and their interrelation are crucial to realize the underlying similarities and differences between these modalities and to learn more generalized, meaningful representations. In recent years, most of the works related to Text-to-Image synthesis and Image-to-Text generation, focused on supervised generative deep architectures to solve the problems, where very little interest was placed on learning the similarities between the embedding spaces across modalities. In this paper, we propose a novel self-supervised deep learning based approach towards learning the cross-modal embedding spaces; for both image to text and text to image generations. In our approach, we first obtain dense vector representations of images using StackGAN-based autoencoder model and also dense vector representations on sentence-level utilizing LSTM based text-autoencoder; then we study the mapping from embedding space of one modality to embedding space of the other modality utilizing GAN and maximum mean discrepancy based generative networks. We, also demonstrate that our model learns to generate textual description from image data as well as images from textual data both qualitatively and quantitatively.
+
+| Comments:          | ICONIP 2021 : The 28th International Conference on Neural Information Processing |
+| ------------------ | ------------------------------------------------------------ |
+| Subjects:          | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL); Machine Learning (cs.LG) |
+| Journal reference: | ICONIP 2021. Lecture Notes in Computer Science, vol 13111, pp 415-426. Springer, Cham |
+| DOI:               | [10.1007/978-3-030-92273-3_34](https://arxiv.org/ct?url=https%3A%2F%2Fdx.doi.org%2F10.1007%2F978-3-030-92273-3_34&v=e1cc4a4b) |
+| Cite as:           | **[arXiv:2112.04928](https://arxiv.org/abs/2112.04928) [cs.CV]** |
+|                    | (or **[arXiv:2112.04928v1](https://arxiv.org/abs/2112.04928v1) [cs.CV]** for this version) |
+
+
+
+
 
 
 
