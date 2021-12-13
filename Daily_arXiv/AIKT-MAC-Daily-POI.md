@@ -3,24 +3,30 @@
 # Index
 
 
-- [2021-12-10](#2021-12-10)
+- [2021-12-13](#2021-12-13)
 
-  - [1. Self-Supervised Image-to-Text and Text-to-Image Synthesis](#2021-12-10-1)
+  - [1. Injecting Semantic Concepts into End-to-End Image Captioning](#2021-12-13-1)
+  - [2. MAGMA -- Multimodal Augmentation of Generative Models through Adapter-based Finetuning](#2021-12-13-2)
+  - [3. Unified Multimodal Pre-training and Prompt-based Tuning for Vision-Language Understanding and Generation](#2021-12-13-3)
+  - [4. Word Embeddings via Causal Inference: Gender Bias Reducing and Semantic Information Preserving](#2021-12-13-4)
+  - [5. Shennong: a Python toolbox for audio speech features extraction](#2021-12-13-5)
+  - [6. Analysis and Prediction of NLP Models Via Task Embeddings](#2021-12-13-6)
+  - [7. Pruning Pretrained Encoders with a Multitask Objective](#2021-12-13-7)
   
+- [2021-12-10](#2021-12-10)
+  - [1. Self-Supervised Image-to-Text and Text-to-Image Synthesis](#2021-12-10-1)
 - [2021-12-9](#2021-12-9)
 
   - [1. Transformer-Based Approach for Joint Handwriting and Named Entity Recognition in Historical documents](#2021-12-9-1)
   - [2. MLP Architectures for Vision-and-Language Modeling: An Empirical Study](#2021-12-9-2)
   - [3. Bidimensional Leaderboards: Generate and Evaluate Language Hand in Hand](#2021-12-9-3)
   - [4. Improving language models by retrieving from trillions of tokens](#2021-12-9-4)
-
 - [2021-12-8](#2021-12-8)
 
   - [1. CMA-CLIP: Cross-Modality Attention CLIP for Image-Text Classification](#2021-12-8-1)
   - [2. Grounded Language-Image Pre-training](#2021-12-8-2)
   - [3. Parsing with Pretrained Language Models, Multiple Datasets, and Dataset Embeddings](#2021-12-8-3)
   - [4. Natural Answer Generation: From Factoid Answer to Full-length Answer using Grammar Correction](#2021-12-8-4)
-
 - [2021-12-7](#2021-12-7)
 
   - [1. Legal Document Retrieval using Document Vector Embeddings and Deep Learning](#2021-12-7-1)
@@ -31,7 +37,6 @@
   - [6. CLASSIC: Continual and Contrastive Learning of Aspect Sentiment Classification Tasks](#2021-12-7-6)
   - [7. Towards More Robust Natural Language Understanding](#2021-12-7-7)
   - [8. Quantifying Adaptability in Pre-trained Language Models with 500 Tasks](#2021-12-7-8)
-
 - [2021-12-6](#2021-12-6)
 
   - [1. Linear algebra with transformers](#2021-12-6-1)
@@ -39,7 +44,6 @@
   - [3. Translating Politeness Across Cultures: Case of Hindi and English](#2021-12-6-3)
   - [4. Semantic Segmentation of Legal Documents via Rhetorical Roles](#2021-12-6-4)
   - [5. A Proposal of Automatic Error Correction in Text](#2021-12-6-5)
-
 - [2021-12-3](#2021-12-3)
   - [1. Consensus Graph Representation Learning for Better Grounded Image Captioning](#2021-12-3-1)
   - [2. A Mixture of Expert Based Deep Neural Network for Improved ASR](#2021-12-3-2)
@@ -54,6 +58,145 @@
   - [2. Improvement in Machine Translation with Generative Adversarial Networks](#2021-12-1-2)
   - [3. Pureformer: Do We Even Need Attention?](#2021-12-1-3)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2021-12-13
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-12-13-1">1. Injecting Semantic Concepts into End-to-End Image Captioning
+</h2>
+
+Title: [Injecting Semantic Concepts into End-to-End Image Captioning](https://arxiv.org/abs/2112.05230)
+
+Authors: [Zhiyuan Fang](https://arxiv.org/search/cs?searchtype=author&query=Fang%2C+Z), [Jianfeng Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+J), [Xiaowei Hu](https://arxiv.org/search/cs?searchtype=author&query=Hu%2C+X), [Lin Liang](https://arxiv.org/search/cs?searchtype=author&query=Liang%2C+L), [Zhe Gan](https://arxiv.org/search/cs?searchtype=author&query=Gan%2C+Z), [Lijuan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+L), [Yezhou Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+Y), [Zicheng Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Z)
+
+> Tremendous progress has been made in recent years in developing better image captioning models, yet most of them rely on a separate object detector to extract regional features. Recent vision-language studies are shifting towards the detector-free trend by leveraging grid representations for more flexible model training and faster inference speed. However, such development is primarily focused on image understanding tasks, and remains less investigated for the caption generation task. In this paper, we are concerned with a better-performing detector-free image captioning model, and propose a pure vision transformer-based image captioning model, dubbed as ViTCAP, in which grid representations are used without extracting the regional features. For improved performance, we introduce a novel Concept Token Network (CTN) to predict the semantic concepts and then incorporate them into the end-to-end captioning. In particular, the CTN is built on the basis of a vision transformer and is designed to predict the concept tokens through a classification task, from which the rich semantic information contained greatly benefits the captioning task. Compared with the previous detector-based models, ViTCAP drastically simplifies the architectures and at the same time achieves competitive performance on various challenging image captioning datasets. In particular, ViTCAP reaches 138.1 CIDEr scores on COCO-caption Karpathy-split, 93.8 and 108.6 CIDEr scores on nocaps, and Google-CC captioning datasets, respectively.
+
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2112.05230](https://arxiv.org/abs/2112.05230) [cs.CV]** |
+|           | (or **[arXiv:2112.05230v1](https://arxiv.org/abs/2112.05230v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-13-2">2. MAGMA -- Multimodal Augmentation of Generative Models through Adapter-based Finetuning
+</h2>
+
+Title: [MAGMA -- Multimodal Augmentation of Generative Models through Adapter-based Finetuning](https://arxiv.org/abs/2112.05253)
+
+Authors: [Constantin Eichenberg](https://arxiv.org/search/cs?searchtype=author&query=Eichenberg%2C+C), [Sidney Black](https://arxiv.org/search/cs?searchtype=author&query=Black%2C+S), [Samuel Weinbach](https://arxiv.org/search/cs?searchtype=author&query=Weinbach%2C+S), [Letitia Parcalabescu](https://arxiv.org/search/cs?searchtype=author&query=Parcalabescu%2C+L), [Anette Frank](https://arxiv.org/search/cs?searchtype=author&query=Frank%2C+A)
+
+> Large-scale pretraining is fast becoming the norm in Vision-Language (VL) modeling. However, prevailing VL approaches are limited by the requirement for labeled data and the use of complex multi-step pretraining objectives. We present MAGMA - a simple method for augmenting generative language models with additional modalities using adapter-based finetuning. Building on Frozen, we train a series of VL models that autoregressively generate text from arbitrary combinations of visual and textual input. The pretraining is entirely end-to-end using a single language modeling objective, simplifying optimization compared to previous approaches. Importantly, the language model weights remain unchanged during training, allowing for transfer of encyclopedic knowledge and in-context learning abilities from language pretraining. MAGMA outperforms Frozen on open-ended generative tasks, achieving state of the art results on the OKVQA benchmark and competitive results on a range of other popular VL benchmarks, while pretraining on 0.2% of the number of samples used to train SimVLM.
+
+| Comments:    | 11 pages, 6 figures, 2 tables                                |
+| ------------ | ------------------------------------------------------------ |
+| Subjects:    | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| ACM classes: | I.2.7; I.4.8; I.5.1                                          |
+| Cite as:     | **[arXiv:2112.05253](https://arxiv.org/abs/2112.05253) [cs.CV]** |
+|              | (or **[arXiv:2112.05253v1](https://arxiv.org/abs/2112.05253v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-13-3">3. Unified Multimodal Pre-training and Prompt-based Tuning for Vision-Language Understanding and Generation
+</h2>
+
+Title: [Unified Multimodal Pre-training and Prompt-based Tuning for Vision-Language Understanding and Generation](https://arxiv.org/abs/2112.05587)
+
+Authors: [Tianyi Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+T), [Zuxuan Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+Z), [Wenhan Xiong](https://arxiv.org/search/cs?searchtype=author&query=Xiong%2C+W), [Jingjing Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+J), [Yu-Gang Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+Y)
+
+> Most existing vision-language pre-training methods focus on understanding tasks and use BERT-like objectives (masked language modeling and image-text matching) during pretraining. Although they perform well in many understanding downstream tasks, e.g., visual question answering, image-text retrieval and visual entailment, they do not possess the ability to generate. To tackle this problem, we propose Unified multimodal pre-training for both Vision-Language understanding and generation (UniVL). The proposed UniVL is capable of handling both understanding tasks and generative tasks. We augment existing pretraining paradigms that only use random masks with causal masks, i.e., triangular masks that mask out future tokens, such that the pre-trained models can have autoregressive generation abilities by design. We formulate several previous understanding tasks as a text generation task and propose to use prompt-based method for fine-tuning on different downstream tasks. Our experiments show that there is a trade-off between understanding tasks and generation tasks while using the same model, and a feasible way to improve both tasks is to use more data. Our UniVL framework attains comparable performance to recent vision-language pre-training methods on both understanding tasks and generation tasks. Moreover, we demostrate that prompt-based finetuning is more data-efficient - it outperforms discriminative methods in few-shot scenarios.
+
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2112.05587](https://arxiv.org/abs/2112.05587) [cs.CV]** |
+|           | (or **[arXiv:2112.05587v1](https://arxiv.org/abs/2112.05587v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-13-4">4. Word Embeddings via Causal Inference: Gender Bias Reducing and Semantic Information Preserving
+</h2>
+
+Title: [Word Embeddings via Causal Inference: Gender Bias Reducing and Semantic Information Preserving](https://arxiv.org/abs/2112.05194)
+
+Authors: [Lei Ding](https://arxiv.org/search/cs?searchtype=author&query=Ding%2C+L), [Dengdeng Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+D), [Jinhan Xie](https://arxiv.org/search/cs?searchtype=author&query=Xie%2C+J), [Wenxing Guo](https://arxiv.org/search/cs?searchtype=author&query=Guo%2C+W), [Shenggang Hu](https://arxiv.org/search/cs?searchtype=author&query=Hu%2C+S), [Meichen Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+M), [Linglong Kong](https://arxiv.org/search/cs?searchtype=author&query=Kong%2C+L), [Hongsheng Dai](https://arxiv.org/search/cs?searchtype=author&query=Dai%2C+H), [Yanchun Bao](https://arxiv.org/search/cs?searchtype=author&query=Bao%2C+Y), [Bei Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+B)
+
+> With widening deployments of natural language processing (NLP) in daily life, inherited social biases from NLP models have become more severe and problematic. Previous studies have shown that word embeddings trained on human-generated corpora have strong gender biases that can produce discriminative results in downstream tasks. Previous debiasing methods focus mainly on modeling bias and only implicitly consider semantic information while completely overlooking the complex underlying causal structure among bias and semantic components. To address these issues, we propose a novel methodology that leverages a causal inference framework to effectively remove gender bias. The proposed method allows us to construct and analyze the complex causal mechanisms facilitating gender information flow while retaining oracle semantic information within word embeddings. Our comprehensive experiments show that the proposed method achieves state-of-the-art results in gender-debiasing tasks. In addition, our methods yield better performance in word similarity evaluation and various extrinsic downstream NLP tasks.
+
+| Comments: | Accepted by AAAI 2022                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Computers and Society (cs.CY) |
+| Cite as:  | **[arXiv:2112.05194](https://arxiv.org/abs/2112.05194) [cs.CL]** |
+|           | (or **[arXiv:2112.05194v1](https://arxiv.org/abs/2112.05194v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-13-5">5. Shennong: a Python toolbox for audio speech features extraction
+</h2>
+
+Title: [Shennong: a Python toolbox for audio speech features extraction](https://arxiv.org/abs/2112.05555)
+
+Authors: [Mathieu Bernard](https://arxiv.org/search/cs?searchtype=author&query=Bernard%2C+M), [Maxime Poli](https://arxiv.org/search/cs?searchtype=author&query=Poli%2C+M), [Julien Karadayi](https://arxiv.org/search/cs?searchtype=author&query=Karadayi%2C+J), [Emmanuel Dupoux](https://arxiv.org/search/cs?searchtype=author&query=Dupoux%2C+E)
+
+> We introduce Shennong, a Python toolbox and command-line utility for speech features extraction. It implements a wide range of well-established state of art algorithms including spectro-temporal filters such as Mel-Frequency Cepstral Filterbanks or Predictive Linear Filters, pre-trained neural networks, pitch estimators as well as speaker normalization methods and post-processing algorithms. Shennong is an open source, easy-to-use, reliable and extensible framework. The use of Python makes the integration to others speech modeling and machine learning tools easy. It aims to replace or complement several heterogeneous software, such as Kaldi or Praat. After describing the Shennong software architecture, its core components and implemented algorithms, this paper illustrates its use on three applications: a comparison of speech features performances on a phones discrimination task, an analysis of a Vocal Tract Length Normalization model as a function of the speech duration used for training and a comparison of pitch estimation algorithms under various noise conditions.
+
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2112.05555](https://arxiv.org/abs/2112.05555) [cs.CL]** |
+|           | (or **[arXiv:2112.05555v1](https://arxiv.org/abs/2112.05555v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-13-6">6. Analysis and Prediction of NLP Models Via Task Embeddings
+</h2>
+
+Title: [Analysis and Prediction of NLP Models Via Task Embeddings](https://arxiv.org/abs/2112.05647)
+
+Authors: [Damien Sileo](https://arxiv.org/search/cs?searchtype=author&query=Sileo%2C+D), [Marie-Francine Moens](https://arxiv.org/search/cs?searchtype=author&query=Moens%2C+M)
+
+> Task embeddings are low-dimensional representations that are trained to capture task properties. In this paper, we propose MetaEval, a collection of 101 NLP tasks. We fit a single transformer to all MetaEval tasks jointly while conditioning it on learned embeddings. The resulting task embeddings enable a novel analysis of the space of tasks. We then show that task aspects can be mapped to task embeddings for new tasks without using any annotated examples. 
+> Predicted embeddings can modulate the encoder for zero-shot inference and outperform a zero-shot baseline on GLUE tasks. The provided multitask setup can function as a benchmark for future transfer learning research.
+
+| Subjects:    | **Computation and Language (cs.CL)**                         |
+| ------------ | ------------------------------------------------------------ |
+| ACM classes: | I.2.7; I.2.6                                                 |
+| Cite as:     | **[arXiv:2112.05647](https://arxiv.org/abs/2112.05647) [cs.CL]** |
+|              | (or **[arXiv:2112.05647v1](https://arxiv.org/abs/2112.05647v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-13-7">7. Pruning Pretrained Encoders with a Multitask Objective
+</h2>
+
+Title: [Pruning Pretrained Encoders with a Multitask Objective](https://arxiv.org/abs/2112.05705)
+
+Authors: [Patrick Xia](https://arxiv.org/search/cs?searchtype=author&query=Xia%2C+P), [Richard Shin](https://arxiv.org/search/cs?searchtype=author&query=Shin%2C+R)
+
+> The sizes of pretrained language models make them challenging and expensive to use when there are multiple desired downstream tasks. In this work, we adopt recent strategies for model pruning during finetuning to explore the question of whether it is possible to prune a single encoder so that it can be used for multiple tasks. We allocate a fixed parameter budget and compare pruning a single model with a multitask objective against the best ensemble of single-task models. We find that under two pruning strategies (element-wise and rank pruning), the approach with the multitask objective outperforms training models separately when averaged across all tasks, and it is competitive on each individual one. Additional analysis finds that using a multitask objective during pruning can also be an effective method for reducing model sizes for low-resource tasks.
+
+| Comments: | ENLSP NeurIPS 2021                                           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2112.05705](https://arxiv.org/abs/2112.05705) [cs.CL]** |
+|           | (or **[arXiv:2112.05705v1](https://arxiv.org/abs/2112.05705v1) [cs.CL]** for this version) |
+
+
+
 
 
 
