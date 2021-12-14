@@ -3,6 +3,16 @@
 # Index
 
 
+- [2021-12-14](#2021-12-14)
+
+  - [1. VL-Adapter: Parameter-Efficient Transfer Learning for Vision-and-Language Tasks](#2021-12-14-1)
+  - [2. Sequence-level self-learning with multiple hypotheses](#2021-12-14-2)
+  - [3. Selecting Parallel In-domain Sentences for Neural Machine Translation Using Monolingual Texts](#2021-12-14-3)
+  - [4. Communication-Efficient Federated Learning for Neural Machine Translation](#2021-12-14-4)
+  - [5. Do Data-based Curricula Work?](#2021-12-14-5)
+  - [6. WECHSEL: Effective initialization of subword embeddings for cross-lingual transfer of monolingual language models](#2021-12-14-6)
+  - [7. GLaM: Efficient Scaling of Language Models with Mixture-of-Experts](#2021-12-14-7)
+  
 - [2021-12-13](#2021-12-13)
 
   - [1. Injecting Semantic Concepts into End-to-End Image Captioning](#2021-12-13-1)
@@ -12,7 +22,7 @@
   - [5. Shennong: a Python toolbox for audio speech features extraction](#2021-12-13-5)
   - [6. Analysis and Prediction of NLP Models Via Task Embeddings](#2021-12-13-6)
   - [7. Pruning Pretrained Encoders with a Multitask Objective](#2021-12-13-7)
-  
+
 - [2021-12-10](#2021-12-10)
   - [1. Self-Supervised Image-to-Text and Text-to-Image Synthesis](#2021-12-10-1)
 - [2021-12-9](#2021-12-9)
@@ -58,6 +68,139 @@
   - [2. Improvement in Machine Translation with Generative Adversarial Networks](#2021-12-1-2)
   - [3. Pureformer: Do We Even Need Attention?](#2021-12-1-3)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2021-12-14
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-12-14-1">1. VL-Adapter: Parameter-Efficient Transfer Learning for Vision-and-Language Tasks
+</h2>
+
+Title: [VL-Adapter: Parameter-Efficient Transfer Learning for Vision-and-Language Tasks](https://arxiv.org/abs/2112.06825)
+Authors: [Yi-Lin Sung](https://arxiv.org/search/cs?searchtype=author&query=Sung%2C+Y), [Jaemin Cho](https://arxiv.org/search/cs?searchtype=author&query=Cho%2C+J), [Mohit Bansal](https://arxiv.org/search/cs?searchtype=author&query=Bansal%2C+M)
+
+> Recently, fine-tuning language models pre-trained on large text corpora have provided huge improvements on vision-and-language (V&L) tasks as well as on pure language tasks. However, fine-tuning the entire parameter set of pre-trained models becomes impractical since the model size is growing rapidly. Hence, in this paper, we introduce adapter-based parameter-efficient transfer learning techniques to V&L models such as VL-BART and VL-T5. We evaluate our methods in a unified multi-task setup on four diverse V&L tasks: VQAv2, GQA, NLVR2 , and MSCOCO image captioning. With careful training and thorough experiments, we benchmark three popular adapter-based methods (Adapter, Hyperformer, Compacter) against the standard full fine-tuning and the recently proposed prompt-tuning approach. We also enhance the efficiency and performance of adapters by sharing their weights to attain knowledge across tasks. Our results demonstrate that training the adapter with the weight-sharing technique (4.4% of total parameters) can match the performance of fine-tuning the entire model. Lastly, we present a comprehensive analysis including the combination of adapter and task-specific prompts and the impact of V&L pre-training on adapters. Our code is available at: [this https URL](https://github.com/ylsung/VL_adapter).
+
+| Comments: | 13 pages                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2112.06825](https://arxiv.org/abs/2112.06825) [cs.CV]** |
+|           | (or **[arXiv:2112.06825v1](https://arxiv.org/abs/2112.06825v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-14-2">2. Sequence-level self-learning with multiple hypotheses
+</h2>
+
+Title: [Sequence-level self-learning with multiple hypotheses](https://arxiv.org/abs/2112.05826)
+Authors: [Kenichi Kumatani](https://arxiv.org/search/cs?searchtype=author&query=Kumatani%2C+K), [Dimitrios Dimitriadis](https://arxiv.org/search/cs?searchtype=author&query=Dimitriadis%2C+D), [Yashesh Gaur](https://arxiv.org/search/cs?searchtype=author&query=Gaur%2C+Y), [Robert Gmyr](https://arxiv.org/search/cs?searchtype=author&query=Gmyr%2C+R), [Sefik Emre Eskimez](https://arxiv.org/search/cs?searchtype=author&query=Eskimez%2C+S+E), [Jinyu Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+J), [Michael Zeng](https://arxiv.org/search/cs?searchtype=author&query=Zeng%2C+M)
+
+> In this work, we develop new self-learning techniques with an attention-based sequence-to-sequence (seq2seq) model for automatic speech recognition (ASR). For untranscribed speech data, the hypothesis from an ASR system must be used as a label. However, the imperfect ASR result makes unsupervised learning difficult to consistently improve recognition performance especially in the case that multiple powerful teacher models are unavailable. In contrast to conventional unsupervised learning approaches, we adopt the \emph{multi-task learning} (MTL) framework where the n-th best ASR hypothesis is used as the label of each task. The seq2seq network is updated through the MTL framework so as to find the common representation that can cover multiple hypotheses. By doing so, the effect of the \emph{hard-decision} errors can be alleviated. 
+> We first demonstrate the effectiveness of our self-learning methods through ASR experiments in an accent adaptation task between the US and British English speech. Our experiment results show that our method can reduce the WER on the British speech data from 14.55\% to 10.36\% compared to the baseline model trained with the US English data only. Moreover, we investigate the effect of our proposed methods in a federated learning scenario.
+
+| Comments: | Published in Interspeech 2020: [this https URL](https://www.isca-speech.org/archive_v0/Interspeech_2020/pdfs/2020.pdf) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2112.05826](https://arxiv.org/abs/2112.05826) [cs.CL]** |
+|           | (or **[arXiv:2112.05826v1](https://arxiv.org/abs/2112.05826v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-14-3">3. Selecting Parallel In-domain Sentences for Neural Machine Translation Using Monolingual Texts
+</h2>
+
+Title: [Selecting Parallel In-domain Sentences for Neural Machine Translation Using Monolingual Texts](https://arxiv.org/abs/2112.06096)
+Authors: [Javad Pourmostafa Roshan Sharami](https://arxiv.org/search/cs?searchtype=author&query=Sharami%2C+J+P+R), [Dimitar Shterionov](https://arxiv.org/search/cs?searchtype=author&query=Shterionov%2C+D), [Pieter Spronck](https://arxiv.org/search/cs?searchtype=author&query=Spronck%2C+P)
+
+> Continuously-growing data volumes lead to larger generic models. Specific use-cases are usually left out, since generic models tend to perform poorly in domain-specific cases. Our work addresses this gap with a method for selecting in-domain data from generic-domain (parallel text) corpora, for the task of machine translation. The proposed method ranks sentences in parallel general-domain data according to their cosine similarity with a monolingual domain-specific data set. We then select the top K sentences with the highest similarity score to train a new machine translation system tuned to the specific in-domain data. Our experimental results show that models trained on this in-domain data outperform models trained on generic or a mixture of generic and domain data. That is, our method selects high-quality domain-specific training instances at low computational cost and data size.
+
+| Comments: | Accepted to the CLIN Journal on Dec 6, 2021                  |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2112.06096](https://arxiv.org/abs/2112.06096) [cs.CL]** |
+|           | (or **[arXiv:2112.06096v1](https://arxiv.org/abs/2112.06096v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-14-4">4. Communication-Efficient Federated Learning for Neural Machine Translation
+</h2>
+
+Title: [Communication-Efficient Federated Learning for Neural Machine Translation](https://arxiv.org/abs/2112.06135)
+Authors: [Tanya Roosta](https://arxiv.org/search/cs?searchtype=author&query=Roosta%2C+T), [Peyman Passban](https://arxiv.org/search/cs?searchtype=author&query=Passban%2C+P), [Ankit Chadha](https://arxiv.org/search/cs?searchtype=author&query=Chadha%2C+A)
+
+> Training neural machine translation (NMT) models in federated learning (FL) settings could be inefficient both computationally and communication-wise, due to the large size of translation engines as well as the multiple rounds of updates required to train clients and a central server. In this paper, we explore how to efficiently build NMT models in an FL setup by proposing a novel solution. In order to reduce the communication overhead, out of all neural layers we only exchange what we term "Controller" layers. Controllers are a small number of additional neural components connected to our pre-trained architectures. These new components are placed in between original layers. They act as liaisons to communicate with the central server and learn minimal information that is sufficient enough to update clients. 
+> We evaluated the performance of our models on five datasets from different domains to translate from German into English. We noted that the models equipped with Controllers preform on par with those trained in a central and non-FL setting. In addition, we observed a substantial reduction in the communication traffic of the FL pipeline, which is a direct consequence of using Controllers. Based on our experiments, Controller-based models are ~6 times less expensive than their other peers. This reduction is significantly important when we consider the number of parameters in large models and it becomes even more critical when such parameters need to be exchanged for multiple rounds in FL settings.
+
+| Comments: | The first two authors contributed equally                    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2112.06135](https://arxiv.org/abs/2112.06135) [cs.CL]** |
+|           | (or **[arXiv:2112.06135v1](https://arxiv.org/abs/2112.06135v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-14-5">5. Do Data-based Curricula Work?
+</h2>
+
+Title: [Do Data-based Curricula Work?](https://arxiv.org/abs/2112.06510)
+Authors: [Maxim K. Surkov](https://arxiv.org/search/cs?searchtype=author&query=Surkov%2C+M+K), [Vladislav D. Mosin](https://arxiv.org/search/cs?searchtype=author&query=Mosin%2C+V+D), [Ivan P. Yamshchikov](https://arxiv.org/search/cs?searchtype=author&query=Yamshchikov%2C+I+P)
+
+> Current state-of-the-art NLP systems use large neural networks that require lots of computational resources for training. Inspired by human knowledge acquisition, researchers have proposed curriculum learning, - sequencing of tasks (task-based curricula) or ordering and sampling of the datasets (data-based curricula) that facilitate training. This work investigates the benefits of data-based curriculum learning for large modern language models such as BERT and T5. We experiment with various curricula based on a range of complexity measures and different sampling strategies. Extensive experiments on different NLP tasks show that curricula based on various complexity measures rarely has any benefits while random sampling performs either as well or better than curricula.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2112.06510](https://arxiv.org/abs/2112.06510) [cs.CL]** |
+|           | (or **[arXiv:2112.06510v1](https://arxiv.org/abs/2112.06510v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-14-6">6. WECHSEL: Effective initialization of subword embeddings for cross-lingual transfer of monolingual language models
+</h2>
+
+Title: [WECHSEL: Effective initialization of subword embeddings for cross-lingual transfer of monolingual language models](https://arxiv.org/abs/2112.06598)
+Authors: [Benjamin Minixhofer](https://arxiv.org/search/cs?searchtype=author&query=Minixhofer%2C+B), [Fabian Paischer](https://arxiv.org/search/cs?searchtype=author&query=Paischer%2C+F), [Navid Rekabsaz](https://arxiv.org/search/cs?searchtype=author&query=Rekabsaz%2C+N)
+
+> Recently, large pretrained language models (LMs) have gained popularity. Training these models requires ever more computational resources and most of the existing models are trained on English text only. It is exceedingly expensive to train these models in other languages. To alleviate this problem, we introduce a method -- called WECHSEL -- to transfer English models to new languages. We exchange the tokenizer of the English model with a tokenizer in the target language and initialize token embeddings such that they are close to semantically similar English tokens by utilizing multilingual static word embeddings covering English and the target language. We use WECHSEL to transfer GPT-2 and RoBERTa models to 4 other languages (French, German, Chinese and Swahili). WECHSEL improves over a previously proposed method for cross-lingual parameter transfer and outperforms models of comparable size trained from scratch in the target language with up to 64x less training effort. Our method makes training large language models for new languages more accessible and less damaging to the environment. We make our code and models publicly available.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2112.06598](https://arxiv.org/abs/2112.06598) [cs.CL]** |
+|           | (or **[arXiv:2112.06598v1](https://arxiv.org/abs/2112.06598v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-14-7">7. GLaM: Efficient Scaling of Language Models with Mixture-of-Experts
+</h2>
+
+Title: [GLaM: Efficient Scaling of Language Models with Mixture-of-Experts](https://arxiv.org/abs/2112.06905)
+Authors: [Nan Du](https://arxiv.org/search/cs?searchtype=author&query=Du%2C+N), [Yanping Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+Y), [Andrew M. Dai](https://arxiv.org/search/cs?searchtype=author&query=Dai%2C+A+M), [Simon Tong](https://arxiv.org/search/cs?searchtype=author&query=Tong%2C+S), [Dmitry Lepikhin](https://arxiv.org/search/cs?searchtype=author&query=Lepikhin%2C+D), [Yuanzhong Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+Y), [Maxim Krikun](https://arxiv.org/search/cs?searchtype=author&query=Krikun%2C+M), [Yanqi Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+Y), [Adams Wei Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+A+W), [Orhan Firat](https://arxiv.org/search/cs?searchtype=author&query=Firat%2C+O), [Barret Zoph](https://arxiv.org/search/cs?searchtype=author&query=Zoph%2C+B), [Liam Fedus](https://arxiv.org/search/cs?searchtype=author&query=Fedus%2C+L), [Maarten Bosma](https://arxiv.org/search/cs?searchtype=author&query=Bosma%2C+M), [Zongwei Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+Z), [Tao Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+T), [Yu Emma Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Y+E), [Kellie Webster](https://arxiv.org/search/cs?searchtype=author&query=Webster%2C+K), [Marie Pellat](https://arxiv.org/search/cs?searchtype=author&query=Pellat%2C+M), [Kevin Robinson](https://arxiv.org/search/cs?searchtype=author&query=Robinson%2C+K), [Kathy Meier-Hellstern](https://arxiv.org/search/cs?searchtype=author&query=Meier-Hellstern%2C+K), [Toju Duke](https://arxiv.org/search/cs?searchtype=author&query=Duke%2C+T), [Lucas Dixon](https://arxiv.org/search/cs?searchtype=author&query=Dixon%2C+L), [Kun Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+K), [Quoc V Le](https://arxiv.org/search/cs?searchtype=author&query=Le%2C+Q+V), [Yonghui Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+Y), [Zhifeng Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+Z), [Claire Cui](https://arxiv.org/search/cs?searchtype=author&query=Cui%2C+C)
+
+> Scaling language models with more data, compute and parameters has driven significant progress in natural language processing. For example, thanks to scaling, GPT-3 was able to achieve strong results on in-context learning tasks. However, training these large dense models requires significant amounts of computing resources. In this paper, we propose and develop a family of language models named GLaM (Generalist Language Model), which uses a sparsely activated mixture-of-experts architecture to scale the model capacity while also incurring substantially less training cost compared to dense variants. The largest GLaM has 1.2 trillion parameters, which is approximately 7x larger than GPT-3. It consumes only 1/3 of the energy used to train GPT-3 and requires half of the computation flops for inference, while still achieving better overall zero-shot and one-shot performance across 29 NLP tasks.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2112.06905](https://arxiv.org/abs/2112.06905) [cs.CL]** |
+|           | (or **[arXiv:2112.06905v1](https://arxiv.org/abs/2112.06905v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
