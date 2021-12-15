@@ -3,6 +3,16 @@
 # Index
 
 
+- [2021-12-15](#2021-12-15)
+
+  - [1. Improving Hybrid CTC/Attention End-to-end Speech Recognition with Pretrained Acoustic and Language Model](#2021-12-15-1)
+  - [2. CoCo-BERT: Improving Video-Language Pre-training with Contrastive Cross-modal Matching and Denoising](#2021-12-15-2)
+  - [3. Language Models are not Models of Language](#2021-12-15-3)
+  - [4. From Dense to Sparse: Contrastive Pruning for Better Pre-trained Language Model Compression](#2021-12-15-4)
+  - [5. Model Uncertainty-Aware Knowledge Amalgamation for Pre-Trained Language Models](#2021-12-15-5)
+  - [6. VALSE: A Task-Independent Benchmark for Vision and Language Models Centered on Linguistic Phenomena](#2021-12-15-6)
+  - [7. Massive-scale Decoding for Text Generation using Lattices](#2021-12-15-7)
+  
 - [2021-12-14](#2021-12-14)
 
   - [1. VL-Adapter: Parameter-Efficient Transfer Learning for Vision-and-Language Tasks](#2021-12-14-1)
@@ -12,7 +22,7 @@
   - [5. Do Data-based Curricula Work?](#2021-12-14-5)
   - [6. WECHSEL: Effective initialization of subword embeddings for cross-lingual transfer of monolingual language models](#2021-12-14-6)
   - [7. GLaM: Efficient Scaling of Language Models with Mixture-of-Experts](#2021-12-14-7)
-  
+
 - [2021-12-13](#2021-12-13)
 
   - [1. Injecting Semantic Concepts into End-to-End Image Captioning](#2021-12-13-1)
@@ -68,6 +78,145 @@
   - [2. Improvement in Machine Translation with Generative Adversarial Networks](#2021-12-1-2)
   - [3. Pureformer: Do We Even Need Attention?](#2021-12-1-3)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2021-12-15
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-12-15-1">1. Improving Hybrid CTC/Attention End-to-end Speech Recognition with Pretrained Acoustic and Language Model
+</h2>
+
+Title: [Improving Hybrid CTC/Attention End-to-end Speech Recognition with Pretrained Acoustic and Language Model](https://arxiv.org/abs/2112.07254)
+
+Authors: [Keqi Deng](https://arxiv.org/search/eess?searchtype=author&query=Deng%2C+K), [Songjun Cao](https://arxiv.org/search/eess?searchtype=author&query=Cao%2C+S), [Yike Zhang](https://arxiv.org/search/eess?searchtype=author&query=Zhang%2C+Y), [Long Ma](https://arxiv.org/search/eess?searchtype=author&query=Ma%2C+L)
+
+> Recently, self-supervised pretraining has achieved impressive results in end-to-end (E2E) automatic speech recognition (ASR). However, the dominant sequence-to-sequence (S2S) E2E model is still hard to fully utilize the self-supervised pre-training methods because its decoder is conditioned on acoustic representation thus cannot be pretrained separately. In this paper, we propose a pretrained Transformer (Preformer) S2S ASR architecture based on hybrid CTC/attention E2E models to fully utilize the pretrained acoustic models (AMs) and language models (LMs). In our framework, the encoder is initialized with a pretrained AM (wav2vec2.0). The Preformer leverages CTC as an auxiliary task during training and inference. Furthermore, we design a one-cross decoder (OCD), which relaxes the dependence on acoustic representations so that it can be initialized with pretrained LM (DistilGPT2). Experiments are conducted on the AISHELL-1 corpus and achieve a 4.6% character error rate (CER) on the test set. Compared with our vanilla hybrid CTC/attention Transformer baseline, our proposed CTC/attention-based Preformer yields 27% relative CER reduction. To the best of our knowledge, this is the first work to utilize both pretrained AM and LM in a S2S ASR system.
+
+| Comments: | ASRU2021                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Audio and Speech Processing (eess.AS)**; Computation and Language (cs.CL); Sound (cs.SD) |
+| Cite as:  | **[arXiv:2112.07254](https://arxiv.org/abs/2112.07254) [eess.AS]** |
+|           | (or **[arXiv:2112.07254v1](https://arxiv.org/abs/2112.07254v1) [eess.AS]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-15-2">2. CoCo-BERT: Improving Video-Language Pre-training with Contrastive Cross-modal Matching and Denoising
+</h2>
+
+Title: [CoCo-BERT: Improving Video-Language Pre-training with Contrastive Cross-modal Matching and Denoising](https://arxiv.org/abs/2112.07515)
+
+Authors: [Jianjie Luo](https://arxiv.org/search/cs?searchtype=author&query=Luo%2C+J), [Yehao Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Y), [Yingwei Pan](https://arxiv.org/search/cs?searchtype=author&query=Pan%2C+Y), [Ting Yao](https://arxiv.org/search/cs?searchtype=author&query=Yao%2C+T), [Hongyang Chao](https://arxiv.org/search/cs?searchtype=author&query=Chao%2C+H), [Tao Mei](https://arxiv.org/search/cs?searchtype=author&query=Mei%2C+T)
+
+> BERT-type structure has led to the revolution of vision-language pre-training and the achievement of state-of-the-art results on numerous vision-language downstream tasks. Existing solutions dominantly capitalize on the multi-modal inputs with mask tokens to trigger mask-based proxy pre-training tasks (e.g., masked language modeling and masked object/frame prediction). In this work, we argue that such masked inputs would inevitably introduce noise for cross-modal matching proxy task, and thus leave the inherent vision-language association under-explored. As an alternative, we derive a particular form of cross-modal proxy objective for video-language pre-training, i.e., Contrastive Cross-modal matching and denoising (CoCo). By viewing the masked frame/word sequences as the noisy augmentation of primary unmasked ones, CoCo strengthens video-language association by simultaneously pursuing inter-modal matching and intra-modal denoising between masked and unmasked inputs in a contrastive manner. Our CoCo proxy objective can be further integrated into any BERT-type encoder-decoder structure for video-language pre-training, named as Contrastive Cross-modal BERT (CoCo-BERT). We pre-train CoCo-BERT on TV dataset and a newly collected large-scale GIF video dataset (ACTION). Through extensive experiments over a wide range of downstream tasks (e.g., cross-modal retrieval, video question answering, and video captioning), we demonstrate the superiority of CoCo-BERT as a pre-trained structure.
+
+| Comments: | ACM Multimedia 2021                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL); Multimedia (cs.MM) |
+| Cite as:  | **[arXiv:2112.07515](https://arxiv.org/abs/2112.07515) [cs.CV]** |
+|           | (or **[arXiv:2112.07515v1](https://arxiv.org/abs/2112.07515v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-15-3">3. Language Models are not Models of Language
+</h2>
+
+Title: [Language Models are not Models of Language](https://arxiv.org/abs/2112.07055)
+
+Authors: [Csaba Veres](https://arxiv.org/search/cs?searchtype=author&query=Veres%2C+C)
+
+> Natural Language Processing (NLP) has become one of the leading application areas in the current Artificial Intelligence boom. Transfer learning has enabled large deep learning neural networks trained on the language modeling task to vastly improve performance in almost all language tasks. Interestingly, when the models are trained with data that includes software code, they demonstrate remarkable abilities in generating functioning computer code from natural language specifications. We argue that this creates a conundrum for claims that neural models provide an alternative theory to generative phrase structure grammars in explaining how language works. Since the syntax of programming languages is determined by phrase structure grammars, successful neural models are apparently uninformative about the theoretical foundations of programming languages, and by extension, natural languages. We argue that the term language model is misleading because deep learning models are not theoretical models of language and propose the adoption of corpus model instead, which better reflects the genesis and contents of the model.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2112.07055](https://arxiv.org/abs/2112.07055) [cs.CL]** |
+|           | (or **[arXiv:2112.07055v1](https://arxiv.org/abs/2112.07055v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-15-4">4. From Dense to Sparse: Contrastive Pruning for Better Pre-trained Language Model Compression
+</h2>
+
+Title: [From Dense to Sparse: Contrastive Pruning for Better Pre-trained Language Model Compression](https://arxiv.org/abs/2112.07198)
+
+Authors: Pre-trained Language Models (PLMs) have achieved great success in various Natural Language Processing (NLP) tasks under the pre-training and fine-tuning paradigm. With large quantities of parameters, PLMs are computation-intensive and resource-hungry. Hence, model pruning has been introduced to compress large-scale PLMs. However, most prior approaches only consider task-specific knowledge towards downstream tasks, but ignore the essential task-agnostic knowledge during pruning, which may cause catastrophic forgetting problem and lead to poor generalization ability. To maintain both task-agnostic and task-specific knowledge in our pruned model, we propose ContrAstive Pruning (CAP) under the paradigm of pre-training and fine-tuning. It is designed as a general framework, compatible with both structured and unstructured pruning. Unified in contrastive learning, CAP enables the pruned model to learn from the pre-trained model for task-agnostic knowledge, and fine-tuned model for task-specific knowledge. Besides, to better retain the performance of the pruned model, the snapshots (i.e., the intermediate models at each pruning iteration) also serve as effective supervisions for pruning. Our extensive experiments show that adopting CAP consistently yields significant improvements, especially in extremely high sparsity scenarios. With only 3% model parameters reserved (i.e., 97% sparsity), CAP successfully achieves 99.2% and 96.3% of the original BERT performance in QQP and MNLI tasks. In addition, our probing experiments demonstrate that the model pruned by CAP tends to achieve better generalization ability.
+
+| Comments: | Accepted to AAAI 2022                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2112.07198](https://arxiv.org/abs/2112.07198) [cs.CL]** |
+|           | (or **[arXiv:2112.07198v1](https://arxiv.org/abs/2112.07198v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-15-5">5. Model Uncertainty-Aware Knowledge Amalgamation for Pre-Trained Language Models
+</h2>
+
+Title: [Model Uncertainty-Aware Knowledge Amalgamation for Pre-Trained Language Models](https://arxiv.org/abs/2112.07327)
+
+Authors: [Lei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L), [Yankai Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+Y), [Xuancheng Ren](https://arxiv.org/search/cs?searchtype=author&query=Ren%2C+X), [Guangxiang Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+G), [Peng Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+P), [Jie Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+J), [Xu Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+X)
+
+> As many fine-tuned pre-trained language models~(PLMs) with promising performance are generously released, investigating better ways to reuse these models is vital as it can greatly reduce the retraining computational cost and the potential environmental side-effects. In this paper, we explore a novel model reuse paradigm, Knowledge Amalgamation~(KA) for PLMs. Without human annotations available, KA aims to merge the knowledge from different teacher-PLMs, each of which specializes in a different classification problem, into a versatile student model. The achieve this, we design a Model Uncertainty--aware Knowledge Amalgamation~(MUKA) framework, which identifies the potential adequate teacher using Monte-Carlo Dropout for approximating the golden supervision to guide the student. Experimental results demonstrate that MUKA achieves substantial improvements over baselines on benchmark datasets. Further analysis shows that MUKA can generalize well under several complicate settings with multiple teacher models, heterogeneous teachers, and even cross-dataset teachers.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2112.07327](https://arxiv.org/abs/2112.07327) [cs.CL]** |
+|           | (or **[arXiv:2112.07327v1](https://arxiv.org/abs/2112.07327v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-15-6">6. VALSE: A Task-Independent Benchmark for Vision and Language Models Centered on Linguistic Phenomena
+</h2>
+
+Title: [VALSE: A Task-Independent Benchmark for Vision and Language Models Centered on Linguistic Phenomena](https://arxiv.org/abs/2112.07566)
+
+Authors: [Letitia Parcalabescu](https://arxiv.org/search/cs?searchtype=author&query=Parcalabescu%2C+L), [Michele Cafagna](https://arxiv.org/search/cs?searchtype=author&query=Cafagna%2C+M), [Lilitta Muradjan](https://arxiv.org/search/cs?searchtype=author&query=Muradjan%2C+L), [Anette Frank](https://arxiv.org/search/cs?searchtype=author&query=Frank%2C+A), [Iacer Calixto](https://arxiv.org/search/cs?searchtype=author&query=Calixto%2C+I), [Albert Gatt](https://arxiv.org/search/cs?searchtype=author&query=Gatt%2C+A)
+
+> We propose VALSE (Vision And Language Structured Evaluation), a novel benchmark designed for testing general-purpose pretrained vision and language (V&L) models for their visio-linguistic grounding capabilities on specific linguistic phenomena. VALSE offers a suite of six tests covering various linguistic constructs. Solving these requires models to ground linguistic phenomena in the visual modality, allowing more fine-grained evaluations than hitherto possible. We build VALSE using methods that support the construction of valid foils, and report results from evaluating five widely-used V&L models. Our experiments suggest that current models have considerable difficulty addressing most phenomena. Hence, we expect VALSE to serve as an important benchmark to measure future progress of pretrained V&L models from a linguistic perspective, complementing the canonical task-centred V&L evaluations.
+
+| Comments:    | 28 pages, 4 figures, 11 tables                               |
+| ------------ | ------------------------------------------------------------ |
+| Subjects:    | **Computation and Language (cs.CL)**; Computer Vision and Pattern Recognition (cs.CV) |
+| MSC classes: | 68Txx                                                        |
+| ACM classes: | I.2.7; I.2.10                                                |
+| Cite as:     | **[arXiv:2112.07566](https://arxiv.org/abs/2112.07566) [cs.CL]** |
+|              | (or **[arXiv:2112.07566v1](https://arxiv.org/abs/2112.07566v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-15-7">7. Massive-scale Decoding for Text Generation using Lattices
+</h2>
+
+Title: [Massive-scale Decoding for Text Generation using Lattices](https://arxiv.org/abs/2112.07660)
+
+Authors: [Jiacheng Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+J), [Greg Durrett](https://arxiv.org/search/cs?searchtype=author&query=Durrett%2C+G)
+
+> Neural text generation models like those used for summarization and translation generate high-quality outputs, but often concentrate around a mode when what we really want is a diverse set of options. We present a search algorithm to construct lattices encoding a massive number of generation options. First, we restructure decoding as a best-first search, which explores the space differently than beam search and improves efficiency by avoiding pruning paths. Second, we revisit the idea of hypothesis recombination: we can identify pairs of similar generation candidates during search and merge them as an approximation. On both document summarization and machine translation, we show that our algorithm encodes hundreds to thousands of diverse options that remain grammatical and high-quality into one linear-sized lattice. This algorithm provides a foundation for building downstream generation applications on top of massive-scale diverse outputs.
+
+| Comments: | 19 pages, 13 figures, see [this https URL](https://github.com/jiacheng-xu/lattice-generation) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2112.07660](https://arxiv.org/abs/2112.07660) [cs.CL]** |
+|           | (or **[arXiv:2112.07660v1](https://arxiv.org/abs/2112.07660v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
