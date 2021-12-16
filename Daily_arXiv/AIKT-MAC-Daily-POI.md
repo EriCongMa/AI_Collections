@@ -3,6 +3,16 @@
 # Index
 
 
+- [2021-12-16](#2021-12-16)
+
+  - [1. Est-ce que vous compute? Code-switching, cultural identity, and AI](#2021-12-16-1)
+  - [2. LongT5: Efficient Text-To-Text Transformer for Long Sequences](#2021-12-16-2)
+  - [3. Faster Nearest Neighbor Machine Translation](#2021-12-16-3)
+  - [4. Lesan -- Machine Translation for Low Resource Languages](#2021-12-16-4)
+  - [5. Improving both domain robustness and domain adaptability in machine translation](#2021-12-16-5)
+  - [6. Measure and Improve Robustness in NLP Models: A Survey](#2021-12-16-6)
+  - [7. Textless Speech-to-Speech Translation on Real Data](#2021-12-16-7)
+  
 - [2021-12-15](#2021-12-15)
 
   - [1. Improving Hybrid CTC/Attention End-to-end Speech Recognition with Pretrained Acoustic and Language Model](#2021-12-15-1)
@@ -12,7 +22,7 @@
   - [5. Model Uncertainty-Aware Knowledge Amalgamation for Pre-Trained Language Models](#2021-12-15-5)
   - [6. VALSE: A Task-Independent Benchmark for Vision and Language Models Centered on Linguistic Phenomena](#2021-12-15-6)
   - [7. Massive-scale Decoding for Text Generation using Lattices](#2021-12-15-7)
-  
+
 - [2021-12-14](#2021-12-14)
 
   - [1. VL-Adapter: Parameter-Efficient Transfer Learning for Vision-and-Language Tasks](#2021-12-14-1)
@@ -78,6 +88,142 @@
   - [2. Improvement in Machine Translation with Generative Adversarial Networks](#2021-12-1-2)
   - [3. Pureformer: Do We Even Need Attention?](#2021-12-1-3)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2021-12-16
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-12-16-1">1. Est-ce que vous compute? Code-switching, cultural identity, and AI
+</h2>
+
+Title: [Est-ce que vous compute? Code-switching, cultural identity, and AI](https://arxiv.org/abs/2112.08256)
+
+Authors: [Arianna Falbo](https://arxiv.org/search/cs?searchtype=author&query=Falbo%2C+A), [Travis LaCroix](https://arxiv.org/search/cs?searchtype=author&query=LaCroix%2C+T)
+
+> Cultural code-switching concerns how we adjust our overall behaviours, manners of speaking, and appearance in response to a perceived change in our social environment. We defend the need to investigate cultural code-switching capacities in artificial intelligence systems. We explore a series of ethical and epistemic issues that arise when bringing cultural code-switching to bear on artificial intelligence. Building upon Dotson's (2014) analysis of testimonial smothering, we discuss how emerging technologies in AI can give rise to epistemic oppression, and specifically, a form of self-silencing that we call 'cultural smothering'. By leaving the socio-dynamic features of cultural code-switching unaddressed, AI systems risk negatively impacting already-marginalised social groups by widening opportunity gaps and further entrenching social inequalities.
+
+| Comments: | 19 pages. Under Review. Please cite published version, if available |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computers and Society (cs.CY)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2112.08256](https://arxiv.org/abs/2112.08256) [cs.CY]** |
+|           | (or **[arXiv:2112.08256v1](https://arxiv.org/abs/2112.08256v1) [cs.CY]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-16-2">2. LongT5: Efficient Text-To-Text Transformer for Long Sequences
+</h2>
+
+Title: [LongT5: Efficient Text-To-Text Transformer for Long Sequences](https://arxiv.org/abs/2112.07916)
+
+Authors: [Mandy Guo](https://arxiv.org/search/cs?searchtype=author&query=Guo%2C+M), [Joshua Ainslie](https://arxiv.org/search/cs?searchtype=author&query=Ainslie%2C+J), [David Uthus](https://arxiv.org/search/cs?searchtype=author&query=Uthus%2C+D), [Santiago Ontanon](https://arxiv.org/search/cs?searchtype=author&query=Ontanon%2C+S), [Jianmo Ni](https://arxiv.org/search/cs?searchtype=author&query=Ni%2C+J), [Yun-Hsuan Sung](https://arxiv.org/search/cs?searchtype=author&query=Sung%2C+Y), [Yinfei Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+Y)
+
+> Recent work has shown that either (1) increasing the input length or (2) increasing model size can improve the performance of Transformer-based neural models. In this paper, we present a new model, called LongT5, with which we explore the effects of scaling both the input length and model size at the same time. Specifically, we integrated attention ideas from long-input transformers (ETC), and adopted pre-training strategies from summarization pre-training (PEGASUS) into the scalable T5 architecture. The result is a new attention mechanism we call {\em Transient Global} (TGlobal), which mimics ETC's local/global attention mechanism, but without requiring additional side-inputs. We are able to achieve state-of-the-art results on several summarization tasks and outperform the original T5 models on question answering tasks.
+
+| Comments: | preprint                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2112.07916](https://arxiv.org/abs/2112.07916) [cs.CL]** |
+|           | (or **[arXiv:2112.07916v1](https://arxiv.org/abs/2112.07916v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-16-3">3. Faster Nearest Neighbor Machine Translation
+</h2>
+
+Title: [Faster Nearest Neighbor Machine Translation](https://arxiv.org/abs/2112.08152)
+
+Authors: [Shuhe Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+S), [Jiwei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+J), [Yuxian Meng](https://arxiv.org/search/cs?searchtype=author&query=Meng%2C+Y), [Rongbin Ouyang](https://arxiv.org/search/cs?searchtype=author&query=Ouyang%2C+R), [Guoyin Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+G), [Xiaoya Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+X), [Tianwei Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+T), [Shi Zong](https://arxiv.org/search/cs?searchtype=author&query=Zong%2C+S)
+
+> kNN based neural machine translation (kNN-MT) has achieved state-of-the-art results in a variety of MT tasks. One significant shortcoming of kNN-MT lies in its inefficiency in identifying the k nearest neighbors of the query representation from the entire datastore, which is prohibitively time-intensive when the datastore size is large. In this work, we propose \textbf{Faster kNN-MT} to address this issue. The core idea of Faster kNN-MT is to use a hierarchical clustering strategy to approximate the distance between the query and a data point in the datastore, which is decomposed into two parts: the distance between the query and the center of the cluster that the data point belongs to, and the distance between the data point and the cluster center. We propose practical ways to compute these two parts in a significantly faster manner. Through extensive experiments on different MT benchmarks, we show that \textbf{Faster kNN-MT} is faster than Fast kNN-MT \citep{meng2021fast} and only slightly (1.2 times) slower than its vanilla counterpart while preserving model performance as kNN-MT. Faster kNN-MT enables the deployment of kNN-MT models on real-world MT services.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2112.08152](https://arxiv.org/abs/2112.08152) [cs.CL]** |
+|           | (or **[arXiv:2112.08152v1](https://arxiv.org/abs/2112.08152v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-16-4">4. Lesan -- Machine Translation for Low Resource Languages
+</h2>
+
+Title: [Lesan -- Machine Translation for Low Resource Languages](https://arxiv.org/abs/2112.08191)
+
+Authors: [Asmelash Teka Hadgu](https://arxiv.org/search/cs?searchtype=author&query=Hadgu%2C+A+T), [Abel Aregawi](https://arxiv.org/search/cs?searchtype=author&query=Aregawi%2C+A), [Adam Beaudoin](https://arxiv.org/search/cs?searchtype=author&query=Beaudoin%2C+A)
+
+> Millions of people around the world can not access content on the Web because most of the content is not readily available in their language. Machine translation (MT) systems have the potential to change this for many languages. Current MT systems provide very accurate results for high resource language pairs, e.g., German and English. However, for many low resource languages, MT is still under active research. The key challenge is lack of datasets to build these systems. We present Lesan, an MT system for low resource languages. Our pipeline solves the key bottleneck to low resource MT by leveraging online and offline sources, a custom OCR system for Ethiopic and an automatic alignment module. The final step in the pipeline is a sequence to sequence model that takes parallel corpus as input and gives us a translation model. Lesan's translation model is based on the Transformer architecture. After constructing a base model, back translation, is used to leverage monolingual corpora. Currently Lesan supports translation to and from Tigrinya, Amharic and English. We perform extensive human evaluation and show that Lesan outperforms state-of-the-art systems such as Google Translate and Microsoft Translator across all six pairs. Lesan is freely available and has served more than 10 million translations so far. At the moment, there are only 217 Tigrinya and 15,009 Amharic Wikipedia articles. We believe that Lesan will contribute towards democratizing access to the Web through MT for millions of people.
+
+| Comments:    | 4 pages, 2 figures, 35th Conference on Neural Information Processing Systems (NeurIPS 2021) demonstrations track |
+| ------------ | ------------------------------------------------------------ |
+| Subjects:    | **Computation and Language (cs.CL)**                         |
+| ACM classes: | I.2.7; I.2.1                                                 |
+| Cite as:     | **[arXiv:2112.08191](https://arxiv.org/abs/2112.08191) [cs.CL]** |
+|              | (or **[arXiv:2112.08191v1](https://arxiv.org/abs/2112.08191v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-16-5">5. Improving both domain robustness and domain adaptability in machine translation
+</h2>
+
+Title: [Improving both domain robustness and domain adaptability in machine translation](https://arxiv.org/abs/2112.08288)
+
+Authors: [Wen Lai](https://arxiv.org/search/cs?searchtype=author&query=Lai%2C+W), [Jindřich Libovický](https://arxiv.org/search/cs?searchtype=author&query=Libovický%2C+J), [Alexander Fraser](https://arxiv.org/search/cs?searchtype=author&query=Fraser%2C+A)
+
+> We address two problems of domain adaptation in neural machine translation. First, we want to reach domain robustness, i.e., good quality of both domains from the training data, and domains unseen in the training data. Second, we want our systems to be adaptive, i.e., making it possible to finetune systems with just hundreds of in-domain parallel sentences. In this paper, we introduce a novel combination of two previous approaches, word adaptive modelling, which addresses domain robustness, and meta-learning, which addresses domain adaptability, and we present empirical results showing that our new combination improves both of these properties.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2112.08288](https://arxiv.org/abs/2112.08288) [cs.CL]** |
+|           | (or **[arXiv:2112.08288v1](https://arxiv.org/abs/2112.08288v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-16-6">6. Measure and Improve Robustness in NLP Models: A Survey
+</h2>
+
+Title: [Measure and Improve Robustness in NLP Models: A Survey](https://arxiv.org/abs/2112.08313)
+
+Authors: [Xuezhi Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+X), [Haohan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+H), [Diyi Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+D)
+
+> As NLP models achieved state-of-the-art performances over benchmarks and gained wide applications, it has been increasingly important to ensure the safe deployment of these models in the real world, e.g., making sure the models are robust against unseen or challenging scenarios. Despite robustness being an increasingly studied topic, it has been separately explored in applications like vision and NLP, with various definitions, evaluation and mitigation strategies in multiple lines of research. In this paper, we aim to provide a unifying survey of how to define, measure and improve robustness in NLP. We first connect multiple definitions of robustness, then unify various lines of work on identifying robustness failures and evaluating models' robustness. Correspondingly, we present mitigation strategies that are data-driven, model-driven, and inductive-prior-based, with a more systematic view of how to effectively improve robustness in NLP models. Finally, we conclude by outlining open challenges and future directions to motivate further research in this area.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2112.08313](https://arxiv.org/abs/2112.08313) [cs.CL]** |
+|           | (or **[arXiv:2112.08313v1](https://arxiv.org/abs/2112.08313v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-16-7">7. Textless Speech-to-Speech Translation on Real Data
+</h2>
+
+Title: [Textless Speech-to-Speech Translation on Real Data](https://arxiv.org/abs/2112.08352)
+
+Authors: [Ann Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+A), [Hongyu Gong](https://arxiv.org/search/cs?searchtype=author&query=Gong%2C+H), [Paul-Ambroise Duquenne](https://arxiv.org/search/cs?searchtype=author&query=Duquenne%2C+P), [Holger Schwenk](https://arxiv.org/search/cs?searchtype=author&query=Schwenk%2C+H), [Peng-Jen Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+P), [Changhan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+C), [Sravya Popuri](https://arxiv.org/search/cs?searchtype=author&query=Popuri%2C+S), [Juan Pino](https://arxiv.org/search/cs?searchtype=author&query=Pino%2C+J), [Jiatao Gu](https://arxiv.org/search/cs?searchtype=author&query=Gu%2C+J), [Wei-Ning Hsu](https://arxiv.org/search/cs?searchtype=author&query=Hsu%2C+W)
+
+> We present a textless speech-to-speech translation (S2ST) system that can translate speech from one language into another language and can be built without the need of any text data. Different from existing work in the literature, we tackle the challenge in modeling multi-speaker target speech and train the systems with real-world S2ST data. The key to our approach is a self-supervised unit-based speech normalization technique, which finetunes a pre-trained speech encoder with paired audios from multiple speakers and a single reference speaker to reduce the variations due to accents, while preserving the lexical content. With only 10 minutes of paired data for speech normalization, we obtain on average 3.2 BLEU gain when training the S2ST model on the \vp~S2ST dataset, compared to a baseline trained on un-normalized speech target. We also incorporate automatically mined S2ST data and show an additional 2.0 BLEU gain. To our knowledge, we are the first to establish a textless S2ST technique that can be trained with real-world data and works for multiple language pairs.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG); Audio and Speech Processing (eess.AS) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2112.08352](https://arxiv.org/abs/2112.08352) [cs.CL]** |
+|           | (or **[arXiv:2112.08352v1](https://arxiv.org/abs/2112.08352v1) [cs.CL]** for this version) |
+
+
 
 
 
