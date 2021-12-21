@@ -3,6 +3,28 @@
 # Index
 
 
+- [2021-12-21](#2021-12-21)
+
+  - [1. English-to-Chinese Transliteration with Phonetic Back-transliteration](#2021-12-21-1)
+  - [2. Between words and characters: A Brief History of Open-Vocabulary Modeling and Tokenization in NLP](#2021-12-21-2)
+  - [3. Few-shot Learning with Multilingual Language Models](#2021-12-21-3)
+  - [4. Efficient Large Scale Language Modeling with Mixtures of Experts](#2021-12-21-4)
+  
+- [2021-12-20](#2021-12-20)
+  - [1. An Empirical Investigation of the Role of Pre-training in Lifelong Learning](#2021-12-20-1)
+  - [2. Continual Learning for Monolingual End-to-End Automatic Speech Recognition](#2021-12-20-2)
+  - [3. Explain, Edit, and Understand: Rethinking User Study Design for Evaluating Model Explanations](#2021-12-20-3)
+- [2021-12-17](#2021-12-17)
+  - [1. Lacuna Reconstruction: Self-supervised Pre-training for Low-Resource Historical Document Transcription](#2021-12-17-1)
+  - [2. Prosody-Aware Neural Machine Translation for Dubbing](#2021-12-17-2)
+  - [3. Neural Content Extraction for Poster Generation of Scientific Papers](#2021-12-17-3)
+  - [4. Can Multilinguality benefit Non-autoregressive Machine Translation?](#2021-12-17-4)
+  - [5. KAT: A Knowledge Augmented Transformer for Vision-and-Language](#2021-12-17-5)
+  - [6. Amortized Noisy Channel Neural Machine Translation](#2021-12-17-6)
+  - [7. IsometricMT: Neural Machine Translation for Automatic Dubbing](#2021-12-17-7)
+  - [8. DOCmT5: Document-Level Pretraining of Multilingual Language Models](#2021-12-17-8)
+  - [9. Distilled Dual-Encoder Model for Vision-Language Understanding](#2021-12-17-9)
+  - [10. NeuroLogic A*esque Decoding: Constrained Text Generation with Lookahead Heuristics](#2021-12-17-10)
 - [2021-12-16](#2021-12-16)
 
   - [1. Est-ce que vous compute? Code-switching, cultural identity, and AI](#2021-12-16-1)
@@ -12,7 +34,6 @@
   - [5. Improving both domain robustness and domain adaptability in machine translation](#2021-12-16-5)
   - [6. Measure and Improve Robustness in NLP Models: A Survey](#2021-12-16-6)
   - [7. Textless Speech-to-Speech Translation on Real Data](#2021-12-16-7)
-  
 - [2021-12-15](#2021-12-15)
 
   - [1. Improving Hybrid CTC/Attention End-to-end Speech Recognition with Pretrained Acoustic and Language Model](#2021-12-15-1)
@@ -22,7 +43,6 @@
   - [5. Model Uncertainty-Aware Knowledge Amalgamation for Pre-Trained Language Models](#2021-12-15-5)
   - [6. VALSE: A Task-Independent Benchmark for Vision and Language Models Centered on Linguistic Phenomena](#2021-12-15-6)
   - [7. Massive-scale Decoding for Text Generation using Lattices](#2021-12-15-7)
-
 - [2021-12-14](#2021-12-14)
 
   - [1. VL-Adapter: Parameter-Efficient Transfer Learning for Vision-and-Language Tasks](#2021-12-14-1)
@@ -32,7 +52,6 @@
   - [5. Do Data-based Curricula Work?](#2021-12-14-5)
   - [6. WECHSEL: Effective initialization of subword embeddings for cross-lingual transfer of monolingual language models](#2021-12-14-6)
   - [7. GLaM: Efficient Scaling of Language Models with Mixture-of-Experts](#2021-12-14-7)
-
 - [2021-12-13](#2021-12-13)
 
   - [1. Injecting Semantic Concepts into End-to-End Image Captioning](#2021-12-13-1)
@@ -42,7 +61,6 @@
   - [5. Shennong: a Python toolbox for audio speech features extraction](#2021-12-13-5)
   - [6. Analysis and Prediction of NLP Models Via Task Embeddings](#2021-12-13-6)
   - [7. Pruning Pretrained Encoders with a Multitask Objective](#2021-12-13-7)
-
 - [2021-12-10](#2021-12-10)
   - [1. Self-Supervised Image-to-Text and Text-to-Image Synthesis](#2021-12-10-1)
 - [2021-12-9](#2021-12-9)
@@ -88,6 +106,346 @@
   - [2. Improvement in Machine Translation with Generative Adversarial Networks](#2021-12-1-2)
   - [3. Pureformer: Do We Even Need Attention?](#2021-12-1-3)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2021-12-21
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-12-21-1">1. English-to-Chinese Transliteration with Phonetic Back-transliteration
+</h2>
+
+Title: [English-to-Chinese Transliteration with Phonetic Back-transliteration](https://arxiv.org/abs/2112.10321)
+
+Authors: [Shi Cheng](https://arxiv.org/search/cs?searchtype=author&query=Cheng%2C+S), [Zhuofei Ding](https://arxiv.org/search/cs?searchtype=author&query=Ding%2C+Z), [Songpeng Yan](https://arxiv.org/search/cs?searchtype=author&query=Yan%2C+S)
+
+> Transliteration is a task of translating named entities from a language to another, based on phonetic similarity. The task has embraced deep learning approaches in recent years, yet, most ignore the phonetic features of the involved languages. In this work, we incorporate phonetic information into neural networks in two ways: we synthesize extra data using forward and back-translation but in a phonetic manner; and we pre-train models on a phonetic task before learning transliteration. Our experiments include three language pairs and six directions, namely English to and from Chinese, Hebrew and Thai. Results indicate that our proposed approach brings benefits to the model and achieves better or similar performance when compared to state of the art.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2112.10321](https://arxiv.org/abs/2112.10321) [cs.CL]** |
+|           | (or **[arXiv:2112.10321v1](https://arxiv.org/abs/2112.10321v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-21-2">2. Between words and characters: A Brief History of Open-Vocabulary Modeling and Tokenization in NLP
+</h2>
+
+Title: [Between words and characters: A Brief History of Open-Vocabulary Modeling and Tokenization in NLP](https://arxiv.org/abs/2112.10508)
+
+Authors: [Sabrina J. Mielke](https://arxiv.org/search/cs?searchtype=author&query=Mielke%2C+S+J), [Zaid Alyafeai](https://arxiv.org/search/cs?searchtype=author&query=Alyafeai%2C+Z), [Elizabeth Salesky](https://arxiv.org/search/cs?searchtype=author&query=Salesky%2C+E), [Colin Raffel](https://arxiv.org/search/cs?searchtype=author&query=Raffel%2C+C), [Manan Dey](https://arxiv.org/search/cs?searchtype=author&query=Dey%2C+M), [Matthias Gallé](https://arxiv.org/search/cs?searchtype=author&query=Gallé%2C+M), [Arun Raja](https://arxiv.org/search/cs?searchtype=author&query=Raja%2C+A), [Chenglei Si](https://arxiv.org/search/cs?searchtype=author&query=Si%2C+C), [Wilson Y. Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+W+Y), [Benoît Sagot](https://arxiv.org/search/cs?searchtype=author&query=Sagot%2C+B), [Samson Tan](https://arxiv.org/search/cs?searchtype=author&query=Tan%2C+S)
+
+> What are the units of text that we want to model? From bytes to multi-word expressions, text can be analyzed and generated at many granularities. Until recently, most natural language processing (NLP) models operated over words, treating those as discrete and atomic tokens, but starting with byte-pair encoding (BPE), subword-based approaches have become dominant in many areas, enabling small vocabularies while still allowing for fast inference. Is the end of the road character-level model or byte-level processing? In this survey, we connect several lines of work from the pre-neural and neural era, by showing how hybrid approaches of words and characters as well as subword-based approaches based on learned segmentation have been proposed and evaluated. We conclude that there is and likely will never be a silver bullet singular solution for all applications and that thinking seriously about tokenization remains important for many applications.
+
+| Comments: | 15 page preprint                                             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2112.10508](https://arxiv.org/abs/2112.10508) [cs.CL]** |
+|           | (or **[arXiv:2112.10508v1](https://arxiv.org/abs/2112.10508v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-21-3">3. Few-shot Learning with Multilingual Language Models
+</h2>
+
+Title: [Few-shot Learning with Multilingual Language Models](https://arxiv.org/abs/2112.10668)
+
+Authors: [Xi Victoria Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+X+V), [Todor Mihaylov](https://arxiv.org/search/cs?searchtype=author&query=Mihaylov%2C+T), [Mikel Artetxe](https://arxiv.org/search/cs?searchtype=author&query=Artetxe%2C+M), [Tianlu Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+T), [Shuohui Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+S), [Daniel Simig](https://arxiv.org/search/cs?searchtype=author&query=Simig%2C+D), [Myle Ott](https://arxiv.org/search/cs?searchtype=author&query=Ott%2C+M), [Naman Goyal](https://arxiv.org/search/cs?searchtype=author&query=Goyal%2C+N), [Shruti Bhosale](https://arxiv.org/search/cs?searchtype=author&query=Bhosale%2C+S), [Jingfei Du](https://arxiv.org/search/cs?searchtype=author&query=Du%2C+J), [Ramakanth Pasunuru](https://arxiv.org/search/cs?searchtype=author&query=Pasunuru%2C+R), [Sam Shleifer](https://arxiv.org/search/cs?searchtype=author&query=Shleifer%2C+S), [Punit Singh Koura](https://arxiv.org/search/cs?searchtype=author&query=Koura%2C+P+S), [Vishrav Chaudhary](https://arxiv.org/search/cs?searchtype=author&query=Chaudhary%2C+V), [Brian O'Horo](https://arxiv.org/search/cs?searchtype=author&query=O'Horo%2C+B), [Jeff Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+J), [Luke Zettlemoyer](https://arxiv.org/search/cs?searchtype=author&query=Zettlemoyer%2C+L), [Zornitsa Kozareva](https://arxiv.org/search/cs?searchtype=author&query=Kozareva%2C+Z), [Mona Diab](https://arxiv.org/search/cs?searchtype=author&query=Diab%2C+M), [Veselin Stoyanov](https://arxiv.org/search/cs?searchtype=author&query=Stoyanov%2C+V), [Xian Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+X)
+
+> Large-scale autoregressive language models such as GPT-3 are few-shot learners that can perform a wide range of language tasks without fine-tuning. While these models are known to be able to jointly represent many different languages, their training data is dominated by English, potentially limiting their cross-lingual generalization. In this work, we train multilingual autoregressive language models on a balanced corpus covering a diverse set of languages, and study their few- and zero-shot learning capabilities in a wide range of tasks. Our largest model with 7.5 billion parameters sets new state of the art in few-shot learning in more than 20 representative languages, outperforming GPT-3 of comparable size in multilingual commonsense reasoning (with +7.4% absolute accuracy improvement in 0-shot settings and +9.4% in 4-shot settings) and natural language inference (+5.4% in each of 0-shot and 4-shot settings). On the FLORES-101 machine translation benchmark, our model outperforms GPT-3 on 171 out of 182 translation directions with 32 training examples, while surpassing the official supervised baseline in 45 directions. We present a detailed analysis of where the model succeeds and fails, showing in particular that it enables cross-lingual in-context learning on some tasks, while there is still room for improvement on surface form robustness and adaptation to tasks that do not have a natural cloze form. Finally, we evaluate our models in social value tasks such as hate speech detection in five languages and find it has limitations similar to comparable sized GPT-3 models.
+
+| Comments: | 36 pages                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2112.10668](https://arxiv.org/abs/2112.10668) [cs.CL]** |
+|           | (or **[arXiv:2112.10668v1](https://arxiv.org/abs/2112.10668v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-21-4">4. Efficient Large Scale Language Modeling with Mixtures of Experts
+</h2>
+
+Title: [Efficient Large Scale Language Modeling with Mixtures of Experts](https://arxiv.org/abs/2112.10684)
+
+Authors: [Mikel Artetxe](https://arxiv.org/search/cs?searchtype=author&query=Artetxe%2C+M), [Shruti Bhosale](https://arxiv.org/search/cs?searchtype=author&query=Bhosale%2C+S), [Naman Goyal](https://arxiv.org/search/cs?searchtype=author&query=Goyal%2C+N), [Todor Mihaylov](https://arxiv.org/search/cs?searchtype=author&query=Mihaylov%2C+T), [Myle Ott](https://arxiv.org/search/cs?searchtype=author&query=Ott%2C+M), [Sam Shleifer](https://arxiv.org/search/cs?searchtype=author&query=Shleifer%2C+S), [Xi Victoria Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+X+V), [Jingfei Du](https://arxiv.org/search/cs?searchtype=author&query=Du%2C+J), [Srinivasan Iyer](https://arxiv.org/search/cs?searchtype=author&query=Iyer%2C+S), [Ramakanth Pasunuru](https://arxiv.org/search/cs?searchtype=author&query=Pasunuru%2C+R), [Giri Anantharaman](https://arxiv.org/search/cs?searchtype=author&query=Anantharaman%2C+G), [Xian Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+X), [Shuohui Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+S), [Halil Akin](https://arxiv.org/search/cs?searchtype=author&query=Akin%2C+H), [Mandeep Baines](https://arxiv.org/search/cs?searchtype=author&query=Baines%2C+M), [Louis Martin](https://arxiv.org/search/cs?searchtype=author&query=Martin%2C+L), [Xing Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+X), [Punit Singh Koura](https://arxiv.org/search/cs?searchtype=author&query=Koura%2C+P+S), [Brian O'Horo](https://arxiv.org/search/cs?searchtype=author&query=O'Horo%2C+B), [Jeff Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+J), [Luke Zettlemoyer](https://arxiv.org/search/cs?searchtype=author&query=Zettlemoyer%2C+L), [Mona Diab](https://arxiv.org/search/cs?searchtype=author&query=Diab%2C+M), [Zornitsa Kozareva](https://arxiv.org/search/cs?searchtype=author&query=Kozareva%2C+Z), [Ves Stoyanov](https://arxiv.org/search/cs?searchtype=author&query=Stoyanov%2C+V)
+
+> Mixture of Experts layers (MoEs) enable efficient scaling of language models through conditional computation. This paper presents a detailed empirical study of how autoregressive MoE language models scale in comparison with dense models in a wide range of settings: in- and out-of-domain language modeling, zero- and few-shot priming, and full fine-tuning. With the exception of fine-tuning, we find MoEs to be substantially more compute efficient. At more modest training budgets, MoEs can match the performance of dense models using ∼4 times less compute. This gap narrows at scale, but our largest MoE model (1.1T parameters) consistently outperforms a compute-equivalent dense model (6.7B parameters). Overall, this performance gap varies greatly across tasks and domains, suggesting that MoE and dense models generalize differently in ways that are worthy of future study. We make our code and models publicly available for research use.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2112.10684](https://arxiv.org/abs/2112.10684) [cs.CL]** |
+|           | (or **[arXiv:2112.10684v1](https://arxiv.org/abs/2112.10684v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+# 2021-12-20
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-12-20-1">1. An Empirical Investigation of the Role of Pre-training in Lifelong Learning
+</h2>
+
+Title: [An Empirical Investigation of the Role of Pre-training in Lifelong Learning](https://arxiv.org/abs/2112.09153)
+
+Authors: [Sanket Vaibhav Mehta](https://arxiv.org/search/cs?searchtype=author&query=Mehta%2C+S+V), [Darshan Patil](https://arxiv.org/search/cs?searchtype=author&query=Patil%2C+D), [Sarath Chandar](https://arxiv.org/search/cs?searchtype=author&query=Chandar%2C+S), [Emma Strubell](https://arxiv.org/search/cs?searchtype=author&query=Strubell%2C+E)
+
+> The lifelong learning paradigm in machine learning is an attractive alternative to the more prominent isolated learning scheme not only due to its resemblance to biological learning, but also its potential to reduce energy waste by obviating excessive model re-training. A key challenge to this paradigm is the phenomenon of catastrophic forgetting. With the increasing popularity and success of pre-trained models in machine learning, we pose the question: What role does pre-training play in lifelong learning, specifically with respect to catastrophic forgetting? We investigate existing methods in the context of large, pre-trained models and evaluate their performance on a variety of text and image classification tasks, including a large-scale study using a novel dataset of 15 diverse NLP tasks. Across all settings, we observe that generic pre-training implicitly alleviates the effects of catastrophic forgetting when learning multiple tasks sequentially compared to randomly initialized models. We then further investigate why pre-training alleviates forgetting in this setting. We study this phenomenon by analyzing the loss landscape, finding that pre-trained weights appear to ease forgetting by leading to wider minima. Based on this insight, we propose jointly optimizing for current task loss and loss basin sharpness in order to explicitly encourage wider basins during sequential fine-tuning. We show that this optimization approach leads to performance comparable to the state-of-the-art in task-sequential continual learning across multiple settings, without retaining a memory that scales in size with the number of tasks.
+
+| Comments: | 30 pages                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Machine Learning (cs.LG)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL); Computer Vision and Pattern Recognition (cs.CV) |
+| Cite as:  | **[arXiv:2112.09153](https://arxiv.org/abs/2112.09153) [cs.LG]** |
+|           | (or **[arXiv:2112.09153v1](https://arxiv.org/abs/2112.09153v1) [cs.LG]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-20-2">2. Continual Learning for Monolingual End-to-End Automatic Speech Recognition
+</h2>
+
+Title: [Continual Learning for Monolingual End-to-End Automatic Speech Recognition](https://arxiv.org/abs/2112.09427)
+
+Authors: [Steven Vander Eeckt](https://arxiv.org/search/eess?searchtype=author&query=Eeckt%2C+S+V), [Hugo Van hamme](https://arxiv.org/search/eess?searchtype=author&query=Van+hamme%2C+H)
+
+> Adapting Automatic Speech Recognition (ASR) models to new domains leads to a deterioration of performance on the original domain(s), a phenomenon called Catastrophic Forgetting (CF). Even monolingual ASR models cannot be extended to new accents, dialects, topics, etc. without suffering from CF, making them unable to be continually enhanced without storing all past data. Fortunately, Continual Learning (CL) methods, which aim to enable continual adaptation while overcoming CF, can be used. In this paper, we implement an extensive number of CL methods for End-to-End ASR and test and compare their ability to extend a monolingual Hybrid CTC-Transformer model across four new tasks. We find that the best performing CL method closes the gap between the fine-tuned model (lower bound) and the model trained jointly on all tasks (upper bound) by more than 40%, while requiring access to only 0.6% of the original data.
+
+| Comments: | Submitted to ICASSP 2021. 5 pages, 1 figure                  |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Audio and Speech Processing (eess.AS)**; Computation and Language (cs.CL); Machine Learning (cs.LG); Machine Learning (stat.ML) |
+| Cite as:  | **[arXiv:2112.09427](https://arxiv.org/abs/2112.09427) [eess.AS]** |
+|           | (or **[arXiv:2112.09427v1](https://arxiv.org/abs/2112.09427v1) [eess.AS]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-20-3">3. Explain, Edit, and Understand: Rethinking User Study Design for Evaluating Model Explanations
+</h2>
+
+Title: [Explain, Edit, and Understand: Rethinking User Study Design for Evaluating Model Explanations](https://arxiv.org/abs/2112.09669)
+
+Authors: [Siddhant Arora](https://arxiv.org/search/cs?searchtype=author&query=Arora%2C+S), [Danish Pruthi](https://arxiv.org/search/cs?searchtype=author&query=Pruthi%2C+D), [Norman Sadeh](https://arxiv.org/search/cs?searchtype=author&query=Sadeh%2C+N), [William W. Cohen](https://arxiv.org/search/cs?searchtype=author&query=Cohen%2C+W+W), [Zachary C. Lipton](https://arxiv.org/search/cs?searchtype=author&query=Lipton%2C+Z+C), [Graham Neubig](https://arxiv.org/search/cs?searchtype=author&query=Neubig%2C+G)
+
+> In attempts to "explain" predictions of machine learning models, researchers have proposed hundreds of techniques for attributing predictions to features that are deemed important. While these attributions are often claimed to hold the potential to improve human "understanding" of the models, surprisingly little work explicitly evaluates progress towards this aspiration. In this paper, we conduct a crowdsourcing study, where participants interact with deception detection models that have been trained to distinguish between genuine and fake hotel reviews. They are challenged both to simulate the model on fresh reviews, and to edit reviews with the goal of lowering the probability of the originally predicted class. Successful manipulations would lead to an adversarial example. During the training (but not the test) phase, input spans are highlighted to communicate salience. Through our evaluation, we observe that for a linear bag-of-words model, participants with access to the feature coefficients during training are able to cause a larger reduction in model confidence in the testing phase when compared to the no-explanation control. For the BERT-based classifier, popular local explanations do not improve their ability to reduce the model confidence over the no-explanation case. Remarkably, when the explanation for the BERT model is given by the (global) attributions of a linear model trained to imitate the BERT model, people can effectively manipulate the model.
+
+| Comments: | AAAI 2022                                                    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2112.09669](https://arxiv.org/abs/2112.09669) [cs.CL]** |
+|           | (or **[arXiv:2112.09669v1](https://arxiv.org/abs/2112.09669v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+
+# 2021-12-17
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-12-17-1">1. Lacuna Reconstruction: Self-supervised Pre-training for Low-Resource Historical Document Transcription
+</h2>
+
+Title: [Lacuna Reconstruction: Self-supervised Pre-training for Low-Resource Historical Document Transcription](https://arxiv.org/abs/2112.08692)
+
+Authors: [Nikolai Vogler](https://arxiv.org/search/cs?searchtype=author&query=Vogler%2C+N), [Jonathan Parkes Allen](https://arxiv.org/search/cs?searchtype=author&query=Allen%2C+J+P), [Matthew Thomas Miller](https://arxiv.org/search/cs?searchtype=author&query=Miller%2C+M+T), [Taylor Berg-Kirkpatrick](https://arxiv.org/search/cs?searchtype=author&query=Berg-Kirkpatrick%2C+T)
+
+> We present a self-supervised pre-training approach for learning rich visual language representations for both handwritten and printed historical document transcription. After supervised fine-tuning of our pre-trained encoder representations for low-resource document transcription on two languages, (1) a heterogeneous set of handwritten Islamicate manuscript images and (2) early modern English printed documents, we show a meaningful improvement in recognition accuracy over the same supervised model trained from scratch with as few as 30 line image transcriptions for training. Our masked language model-style pre-training strategy, where the model is trained to be able to identify the true masked visual representation from distractors sampled from within the same line, encourages learning robust contextualized language representations invariant to scribal writing style and printing noise present across documents.
+
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2112.08692](https://arxiv.org/abs/2112.08692) [cs.CV]** |
+|           | (or **[arXiv:2112.08692v1](https://arxiv.org/abs/2112.08692v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-17-2">2. Prosody-Aware Neural Machine Translation for Dubbing
+</h2>
+
+Title: [Prosody-Aware Neural Machine Translation for Dubbing](https://arxiv.org/abs/2112.08548)
+
+Authors: [Derek Tam](https://arxiv.org/search/cs?searchtype=author&query=Tam%2C+D), [Surafel M. Lakew](https://arxiv.org/search/cs?searchtype=author&query=Lakew%2C+S+M), [Yogesh Virkar](https://arxiv.org/search/cs?searchtype=author&query=Virkar%2C+Y), [Prashant Mathur](https://arxiv.org/search/cs?searchtype=author&query=Mathur%2C+P), [Marcello Federico](https://arxiv.org/search/cs?searchtype=author&query=Federico%2C+M)
+
+> We introduce the task of prosody-aware machine translation which aims at generating translations suitable for dubbing. Dubbing of a spoken sentence requires transferring the content as well as the prosodic structure of the source into the target language to preserve timing information. Practically, this implies correctly projecting pauses from the source to the target and ensuring that target speech segments have roughly the same duration of the corresponding source segments. In this work, we propose an implicit and explicit modeling approaches to integrate prosody information into neural machine translation. Experiments on English-German/French with automatic metrics show that the simplest of the considered approaches works best. Results are confirmed by human evaluations of translations and dubbed videos.
+
+| Comments: | Submitted to IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP) 2022 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2112.08548](https://arxiv.org/abs/2112.08548) [cs.CL]** |
+|           | (or **[arXiv:2112.08548v1](https://arxiv.org/abs/2112.08548v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-17-3">3. Neural Content Extraction for Poster Generation of Scientific Papers
+</h2>
+
+Title: [Neural Content Extraction for Poster Generation of Scientific Papers](https://arxiv.org/abs/2112.08550)
+
+Authors: [Sheng Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+S), [Xiaojun Wan](https://arxiv.org/search/cs?searchtype=author&query=Wan%2C+X)
+
+> The problem of poster generation for scientific papers is under-investigated. Posters often present the most important information of papers, and the task can be considered as a special form of document summarization. Previous studies focus mainly on poster layout and panel composition, while neglecting the importance of content extraction. Besides, their datasets are not publicly available, which hinders further research. In this paper, we construct a benchmark dataset from scratch for this task. Then we propose a three-step framework to tackle this task and focus on the content extraction step in this study. To get both textual and visual elements of a poster panel, a neural extractive model is proposed to extract text, figures and tables of a paper section simultaneously. We conduct experiments on the dataset and also perform ablation study. Results demonstrate the efficacy of our proposed model. The dataset and code will be released.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2112.08550](https://arxiv.org/abs/2112.08550) [cs.CL]** |
+|           | (or **[arXiv:2112.08550v1](https://arxiv.org/abs/2112.08550v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-17-4">4. Can Multilinguality benefit Non-autoregressive Machine Translation?
+</h2>
+
+Title: [Can Multilinguality benefit Non-autoregressive Machine Translation?](https://arxiv.org/abs/2112.08570)
+
+Authors: [Sweta Agrawal](https://arxiv.org/search/cs?searchtype=author&query=Agrawal%2C+S), [Julia Kreutzer](https://arxiv.org/search/cs?searchtype=author&query=Kreutzer%2C+J), [Colin Cherry](https://arxiv.org/search/cs?searchtype=author&query=Cherry%2C+C)
+
+> Non-autoregressive (NAR) machine translation has recently achieved significant improvements, and now outperforms autoregressive (AR) models on some benchmarks, providing an efficient alternative to AR inference. However, while AR translation is often implemented using multilingual models that benefit from transfer between languages and from improved serving efficiency, multilingual NAR models remain relatively unexplored. Taking Connectionist Temporal Classification (CTC) as an example NAR model and Imputer as a semi-NAR model, we present a comprehensive empirical study of multilingual NAR. We test its capabilities with respect to positive transfer between related languages and negative transfer under capacity constraints. As NAR models require distilled training sets, we carefully study the impact of bilingual versus multilingual teachers. Finally, we fit a scaling law for multilingual NAR, which quantifies its performance relative to the AR model as model scale increases.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2112.08570](https://arxiv.org/abs/2112.08570) [cs.CL]** |
+|           | (or **[arXiv:2112.08570v1](https://arxiv.org/abs/2112.08570v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-17-5">5. KAT: A Knowledge Augmented Transformer for Vision-and-Language
+</h2>
+
+Title: [KAT: A Knowledge Augmented Transformer for Vision-and-Language](https://arxiv.org/abs/2112.08614)
+
+Authors: [Liangke Gui](https://arxiv.org/search/cs?searchtype=author&query=Gui%2C+L), [Borui Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+B), [Qiuyuan Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+Q), [Alex Hauptmann](https://arxiv.org/search/cs?searchtype=author&query=Hauptmann%2C+A), [Yonatan Bisk](https://arxiv.org/search/cs?searchtype=author&query=Bisk%2C+Y), [Jianfeng Gao](https://arxiv.org/search/cs?searchtype=author&query=Gao%2C+J)
+
+> The primary focus of recent work with largescale transformers has been on optimizing the amount of information packed into the model's parameters. In this work, we ask a different question: Can multimodal transformers leverage explicit knowledge in their reasoning? Existing, primarily unimodal, methods have explored approaches under the paradigm of knowledge retrieval followed by answer prediction, but leave open questions about the quality and relevance of the retrieved knowledge used, and how the reasoning processes over implicit and explicit knowledge should be integrated. To address these challenges, we propose a novel model - Knowledge Augmented Transformer (KAT) - which achieves a strong state-of-the-art result (+6 points absolute) on the open-domain multimodal task of OK-VQA. Our approach integrates implicit and explicit knowledge in an end to end encoder-decoder architecture, while still jointly reasoning over both knowledge sources during answer generation. An additional benefit of explicit knowledge integration is seen in improved interpretability of model predictions in our analysis.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2112.08614](https://arxiv.org/abs/2112.08614) [cs.CL]** |
+|           | (or **[arXiv:2112.08614v1](https://arxiv.org/abs/2112.08614v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-17-6">6. Amortized Noisy Channel Neural Machine Translation
+</h2>
+
+Title: [Amortized Noisy Channel Neural Machine Translation](https://arxiv.org/abs/2112.08670)
+
+Authors: [Richard Yuanzhe Pang](https://arxiv.org/search/cs?searchtype=author&query=Pang%2C+R+Y), [He He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+H), [Kyunghyun Cho](https://arxiv.org/search/cs?searchtype=author&query=Cho%2C+K)
+
+> Noisy channel models have been especially effective in neural machine translation (NMT). However, recent approaches like "beam search and rerank" (BSR) incur significant computation overhead during inference, making real-world application infeasible. We aim to build an amortized noisy channel NMT model such that greedily decoding from it would generate translations that maximize the same reward as translations generated using BSR. We attempt three approaches: knowledge distillation, 1-step-deviation imitation learning, and Q learning. The first approach obtains the noisy channel signal from a pseudo-corpus, and the latter two approaches aim to optimize toward a noisy-channel MT reward directly. All three approaches speed up inference by 1-2 orders of magnitude. For all three approaches, the generated translations fail to achieve rewards comparable to BSR, but the translation quality approximated by BLEU is similar to the quality of BSR-produced translations.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2112.08670](https://arxiv.org/abs/2112.08670) [cs.CL]** |
+|           | (or **[arXiv:2112.08670v1](https://arxiv.org/abs/2112.08670v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-17-7">7. IsometricMT: Neural Machine Translation for Automatic Dubbing
+</h2>
+
+Title: [IsometricMT: Neural Machine Translation for Automatic Dubbing](https://arxiv.org/abs/2112.08682)
+
+Authors: [Surafel M. Lakew](https://arxiv.org/search/cs?searchtype=author&query=Lakew%2C+S+M), [Yogesh Virkar](https://arxiv.org/search/cs?searchtype=author&query=Virkar%2C+Y), [Prashant Mathur](https://arxiv.org/search/cs?searchtype=author&query=Mathur%2C+P), [Marcello Federico](https://arxiv.org/search/cs?searchtype=author&query=Federico%2C+M)
+
+> Automatic dubbing (AD) is among the use cases where translations should fit a given length template in order to achieve synchronicity between source and target speech. For neural machine translation (MT), generating translations of length close to the source length (e.g. within +-10% in character count), while preserving quality is a challenging task. Controlling NMT output length comes at a cost to translation quality which is usually mitigated with a two step approach of generation of n-best hypotheses and then re-ranking them based on length and quality. This work, introduces a self-learning approach that allows a transformer model to directly learn to generate outputs that closely match the source length, in short isometric MT. In particular, our approach for isometric MT does not require to generate multiple hypotheses nor any auxiliary scoring function. We report results on four language pairs (English - French, Italian, German, Spanish) with a publicly available benchmark based on TED Talk data. Both automatic and manual evaluations show that our self-learning approach to performs on par with more complex isometric MT approaches.
+
+| Comments: | Submitted to IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP) 2022 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2112.08682](https://arxiv.org/abs/2112.08682) [cs.CL]** |
+|           | (or **[arXiv:2112.08682v1](https://arxiv.org/abs/2112.08682v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-17-8">8. DOCmT5: Document-Level Pretraining of Multilingual Language Models
+</h2>
+
+Title: [DOCmT5: Document-Level Pretraining of Multilingual Language Models](https://arxiv.org/abs/2112.08709)
+
+Authors: [Chia-Hsuan Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+C), [Aditya Siddhant](https://arxiv.org/search/cs?searchtype=author&query=Siddhant%2C+A), [Viresh Ratnakar](https://arxiv.org/search/cs?searchtype=author&query=Ratnakar%2C+V), [Melvin Johnson](https://arxiv.org/search/cs?searchtype=author&query=Johnson%2C+M)
+
+> In this paper, we introduce DOCmT5, a multilingual sequence-to-sequence language model pre-trained with large scale parallel documents. While previous approaches have focused on leveraging sentence-level parallel data, we try to build a general-purpose pre-trained model that can understand and generate long documents. We propose a simple and effective pre-training objective - Document Reordering Machine Translation (DrMT), in which the input documents that are shuffled and masked need to be translated. DrMT brings consistent improvements over strong baselines on a variety of document-level generation tasks, including over 12 BLEU points for seen-language-pair document-level MT, over 7 BLEU points for unseen-language-pair document-level MT and over 3 ROUGE-1 points for seen-language-pair cross-lingual summarization. We achieve state-of-the-art (SOTA) on WMT20 De-En and IWSLT15 Zh-En document translation tasks. We also conduct extensive analysis on various factors for document pre-training, including (1) the effects of pre-training data quality and (2) The effects of combining mono-lingual and cross-lingual pre-training. We plan to make our model checkpoints publicly available.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2112.08709](https://arxiv.org/abs/2112.08709) [cs.CL]** |
+|           | (or **[arXiv:2112.08709v1](https://arxiv.org/abs/2112.08709v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-17-9">9. Distilled Dual-Encoder Model for Vision-Language Understanding
+</h2>
+
+Title: [Distilled Dual-Encoder Model for Vision-Language Understanding](https://arxiv.org/abs/2112.08723)
+
+Authors: [Zekun Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Z), [Wenhui Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+W), [Haichao Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+H), [Ming Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+M), [Bing Qin](https://arxiv.org/search/cs?searchtype=author&query=Qin%2C+B), [Furu Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+F)
+
+> We propose a cross-modal attention distillation framework to train a dual-encoder model for vision-language understanding tasks, such as visual reasoning and visual question answering. Dual-encoder models have a faster inference speed than fusion-encoder models and enable the pre-computation of images and text during inference. However, the shallow interaction module used in dual-encoder models is insufficient to handle complex vision-language understanding tasks. In order to learn deep interactions of images and text, we introduce cross-modal attention distillation, which uses the image-to-text and text-to-image attention distributions of a fusion-encoder model to guide the training of our dual-encoder model. In addition, we show that applying the cross-modal attention distillation for both pre-training and fine-tuning stages achieves further improvements. Experimental results demonstrate that the distilled dual-encoder model achieves competitive performance for visual reasoning, visual entailment and visual question answering tasks while enjoying a much faster inference speed than fusion-encoder models. Our code and models will be publicly available at [this https URL](https://github.com/kugwzk/Distilled-DualEncoder).
+
+| Comments: | Work in progress                                             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Computer Vision and Pattern Recognition (cs.CV) |
+| Cite as:  | **[arXiv:2112.08723](https://arxiv.org/abs/2112.08723) [cs.CL]** |
+|           | (or **[arXiv:2112.08723v1](https://arxiv.org/abs/2112.08723v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-17-10">10. NeuroLogic A*esque Decoding: Constrained Text Generation with Lookahead Heuristics
+</h2>
+
+Title: [NeuroLogic A*esque Decoding: Constrained Text Generation with Lookahead Heuristics](https://arxiv.org/abs/2112.08726)
+
+Authors: [Ximing Lu](https://arxiv.org/search/cs?searchtype=author&query=Lu%2C+X), [Sean Welleck](https://arxiv.org/search/cs?searchtype=author&query=Welleck%2C+S), [Peter West](https://arxiv.org/search/cs?searchtype=author&query=West%2C+P), [Liwei Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+L), [Jungo Kasai](https://arxiv.org/search/cs?searchtype=author&query=Kasai%2C+J), [Daniel Khashabi](https://arxiv.org/search/cs?searchtype=author&query=Khashabi%2C+D), [Ronan Le Bras](https://arxiv.org/search/cs?searchtype=author&query=Bras%2C+R+L), [Lianhui Qin](https://arxiv.org/search/cs?searchtype=author&query=Qin%2C+L), [Youngjae Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+Y), [Rowan Zellers](https://arxiv.org/search/cs?searchtype=author&query=Zellers%2C+R), [Noah A. Smith](https://arxiv.org/search/cs?searchtype=author&query=Smith%2C+N+A), [Yejin Choi](https://arxiv.org/search/cs?searchtype=author&query=Choi%2C+Y)
+
+> The dominant paradigm for neural text generation is left-to-right decoding from autoregressive language models. Constrained or controllable generation under complex lexical constraints, however, requires foresight to plan ahead feasible future paths. 
+> Drawing inspiration from the A* search algorithm, we propose NeuroLogic A*esque, a decoding algorithm that incorporates heuristic estimates of future cost. We develop efficient lookahead heuristics that are efficient for large-scale language models, making our method a drop-in replacement for common techniques such as beam search and top-k sampling. To enable constrained generation, we build on NeuroLogic decoding (Lu et al., 2021), combining its flexibility in incorporating logical constraints with A*esque estimates of future constraint satisfaction. 
+> Our approach outperforms competitive baselines on five generation tasks, and achieves new state-of-the-art performance on table-to-text generation, constrained machine translation, and keyword-constrained generation. The improvements are particularly notable on tasks that require complex constraint satisfaction or in few-shot or zero-shot settings. NeuroLogic A*esque illustrates the power of decoding for improving and enabling new capabilities of large-scale language models.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2112.08726](https://arxiv.org/abs/2112.08726) [cs.CL]** |
+|           | (or **[arXiv:2112.08726v1](https://arxiv.org/abs/2112.08726v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
@@ -291,20 +649,17 @@ Authors: [Csaba Veres](https://arxiv.org/search/cs?searchtype=author&query=Veres
 
 <h2 id="2021-12-15-4">4. From Dense to Sparse: Contrastive Pruning for Better Pre-trained Language Model Compression
 </h2>
-
 Title: [From Dense to Sparse: Contrastive Pruning for Better Pre-trained Language Model Compression](https://arxiv.org/abs/2112.07198)
 
-Authors: Pre-trained Language Models (PLMs) have achieved great success in various Natural Language Processing (NLP) tasks under the pre-training and fine-tuning paradigm. With large quantities of parameters, PLMs are computation-intensive and resource-hungry. Hence, model pruning has been introduced to compress large-scale PLMs. However, most prior approaches only consider task-specific knowledge towards downstream tasks, but ignore the essential task-agnostic knowledge during pruning, which may cause catastrophic forgetting problem and lead to poor generalization ability. To maintain both task-agnostic and task-specific knowledge in our pruned model, we propose ContrAstive Pruning (CAP) under the paradigm of pre-training and fine-tuning. It is designed as a general framework, compatible with both structured and unstructured pruning. Unified in contrastive learning, CAP enables the pruned model to learn from the pre-trained model for task-agnostic knowledge, and fine-tuned model for task-specific knowledge. Besides, to better retain the performance of the pruned model, the snapshots (i.e., the intermediate models at each pruning iteration) also serve as effective supervisions for pruning. Our extensive experiments show that adopting CAP consistently yields significant improvements, especially in extremely high sparsity scenarios. With only 3% model parameters reserved (i.e., 97% sparsity), CAP successfully achieves 99.2% and 96.3% of the original BERT performance in QQP and MNLI tasks. In addition, our probing experiments demonstrate that the model pruned by CAP tends to achieve better generalization ability.
+Authors: [Runxin Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+R), [Fuli Luo](https://arxiv.org/search/cs?searchtype=author&query=Luo%2C+F), [Chengyu Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+C), [Baobao Chang](https://arxiv.org/search/cs?searchtype=author&query=Chang%2C+B), [Jun Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+J), [Songfang Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+S), [Fei Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+F)
+
+> Pre-trained Language Models (PLMs) have achieved great success in various Natural Language Processing (NLP) tasks under the pre-training and fine-tuning paradigm. With large quantities of parameters, PLMs are computation-intensive and resource-hungry. Hence, model pruning has been introduced to compress large-scale PLMs. However, most prior approaches only consider task-specific knowledge towards downstream tasks, but ignore the essential task-agnostic knowledge during pruning, which may cause catastrophic forgetting problem and lead to poor generalization ability. To maintain both task-agnostic and task-specific knowledge in our pruned model, we propose ContrAstive Pruning (CAP) under the paradigm of pre-training and fine-tuning. It is designed as a general framework, compatible with both structured and unstructured pruning. Unified in contrastive learning, CAP enables the pruned model to learn from the pre-trained model for task-agnostic knowledge, and fine-tuned model for task-specific knowledge. Besides, to better retain the performance of the pruned model, the snapshots (i.e., the intermediate models at each pruning iteration) also serve as effective supervisions for pruning. Our extensive experiments show that adopting CAP consistently yields significant improvements, especially in extremely high sparsity scenarios. With only 3% model parameters reserved (i.e., 97% sparsity), CAP successfully achieves 99.2% and 96.3% of the original BERT performance in QQP and MNLI tasks. In addition, our probing experiments demonstrate that the model pruned by CAP tends to achieve better generalization ability.
 
 | Comments: | Accepted to AAAI 2022                                        |
 | --------- | ------------------------------------------------------------ |
 | Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
 | Cite as:  | **[arXiv:2112.07198](https://arxiv.org/abs/2112.07198) [cs.CL]** |
 |           | (or **[arXiv:2112.07198v1](https://arxiv.org/abs/2112.07198v1) [cs.CL]** for this version) |
-
-
-
-
 
 <h2 id="2021-12-15-5">5. Model Uncertainty-Aware Knowledge Amalgamation for Pre-Trained Language Models
 </h2>
