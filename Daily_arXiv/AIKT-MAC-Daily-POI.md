@@ -3,13 +3,18 @@
 # Index
 
 
+- [2021-12-22](#2021-12-22)
+
+  - [1. Regularizing End-to-End Speech Translation with Triangular Decomposition Agreement](#2021-12-22-1)
+  - [2. Scaling Language Models: Methods, Analysis & Insights from Training Gopher](#2021-12-22-2)
+  
 - [2021-12-21](#2021-12-21)
 
   - [1. English-to-Chinese Transliteration with Phonetic Back-transliteration](#2021-12-21-1)
   - [2. Between words and characters: A Brief History of Open-Vocabulary Modeling and Tokenization in NLP](#2021-12-21-2)
   - [3. Few-shot Learning with Multilingual Language Models](#2021-12-21-3)
   - [4. Efficient Large Scale Language Modeling with Mixtures of Experts](#2021-12-21-4)
-  
+
 - [2021-12-20](#2021-12-20)
   - [1. An Empirical Investigation of the Role of Pre-training in Lifelong Learning](#2021-12-20-1)
   - [2. Continual Learning for Monolingual End-to-End Automatic Speech Recognition](#2021-12-20-2)
@@ -106,6 +111,50 @@
   - [2. Improvement in Machine Translation with Generative Adversarial Networks](#2021-12-1-2)
   - [3. Pureformer: Do We Even Need Attention?](#2021-12-1-3)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2021-12-22
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-12-22-1">1. Regularizing End-to-End Speech Translation with Triangular Decomposition Agreement
+</h2>
+
+Title: [Regularizing End-to-End Speech Translation with Triangular Decomposition Agreement](https://arxiv.org/abs/2112.10991)
+
+Authors: [Yichao Du](https://arxiv.org/search/cs?searchtype=author&query=Du%2C+Y), [Zhirui Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Z), [Weizhi Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+W), [Boxing Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+B), [Jun Xie](https://arxiv.org/search/cs?searchtype=author&query=Xie%2C+J), [Tong Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+T)
+
+> End-to-end speech-to-text translation~(E2E-ST) is becoming increasingly popular due to the potential of its less error propagation, lower latency, and fewer parameters. Given the triplet training corpus ⟨speech,transcription,translation⟩, the conventional high-quality E2E-ST system leverages the ⟨speech,transcription⟩ pair to pre-train the model and then utilizes the ⟨speech,translation⟩ pair to optimize it further. However, this process only involves two-tuple data at each stage, and this loose coupling fails to fully exploit the association between triplet data. In this paper, we attempt to model the joint probability of transcription and translation based on the speech input to directly leverage such triplet data. Based on that, we propose a novel regularization method for model training to improve the agreement of dual-path decomposition within triplet data, which should be equal in theory. To achieve this goal, we introduce two Kullback-Leibler divergence regularization terms into the model training objective to reduce the mismatch between output probabilities of dual-path. Then the well-trained model can be naturally transformed as the E2E-ST models by the pre-defined early stop tag. Experiments on the MuST-C benchmark demonstrate that our proposed approach significantly outperforms state-of-the-art E2E-ST baselines on all 8 language pairs, while achieving better performance in the automatic speech recognition task. Our code is open-sourced at [this https URL](https://github.com/duyichao/E2E-ST-TDA).
+
+| Comments: | AAAI 2022                                                    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2112.10991](https://arxiv.org/abs/2112.10991) [cs.CL]** |
+|           | (or **[arXiv:2112.10991v1](https://arxiv.org/abs/2112.10991v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-22-2">2. Scaling Language Models: Methods, Analysis & Insights from Training Gopher
+</h2>
+
+Title: [Scaling Language Models: Methods, Analysis & Insights from Training Gopher](https://arxiv.org/abs/2112.11446)
+
+Authors: [Jack W. Rae](https://arxiv.org/search/cs?searchtype=author&query=Rae%2C+J+W), [Sebastian Borgeaud](https://arxiv.org/search/cs?searchtype=author&query=Borgeaud%2C+S), [Trevor Cai](https://arxiv.org/search/cs?searchtype=author&query=Cai%2C+T), [Katie Millican](https://arxiv.org/search/cs?searchtype=author&query=Millican%2C+K), [Jordan Hoffmann](https://arxiv.org/search/cs?searchtype=author&query=Hoffmann%2C+J), [Francis Song](https://arxiv.org/search/cs?searchtype=author&query=Song%2C+F), [John Aslanides](https://arxiv.org/search/cs?searchtype=author&query=Aslanides%2C+J), [Sarah Henderson](https://arxiv.org/search/cs?searchtype=author&query=Henderson%2C+S), [Roman Ring](https://arxiv.org/search/cs?searchtype=author&query=Ring%2C+R), [Susannah Young](https://arxiv.org/search/cs?searchtype=author&query=Young%2C+S), [Eliza Rutherford](https://arxiv.org/search/cs?searchtype=author&query=Rutherford%2C+E), [Tom Hennigan](https://arxiv.org/search/cs?searchtype=author&query=Hennigan%2C+T), [Jacob Menick](https://arxiv.org/search/cs?searchtype=author&query=Menick%2C+J), [Albin Cassirer](https://arxiv.org/search/cs?searchtype=author&query=Cassirer%2C+A), [Richard Powell](https://arxiv.org/search/cs?searchtype=author&query=Powell%2C+R), [George van den Driessche](https://arxiv.org/search/cs?searchtype=author&query=van+den+Driessche%2C+G), [Lisa Anne Hendricks](https://arxiv.org/search/cs?searchtype=author&query=Hendricks%2C+L+A), [Maribeth Rauh](https://arxiv.org/search/cs?searchtype=author&query=Rauh%2C+M), [Po-Sen Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+P), [Amelia Glaese](https://arxiv.org/search/cs?searchtype=author&query=Glaese%2C+A), [Johannes Welbl](https://arxiv.org/search/cs?searchtype=author&query=Welbl%2C+J), [Sumanth Dathathri](https://arxiv.org/search/cs?searchtype=author&query=Dathathri%2C+S), [Saffron Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+S), [Jonathan Uesato](https://arxiv.org/search/cs?searchtype=author&query=Uesato%2C+J), [John Mellor](https://arxiv.org/search/cs?searchtype=author&query=Mellor%2C+J), [Irina Higgins](https://arxiv.org/search/cs?searchtype=author&query=Higgins%2C+I), [Antonia Creswell](https://arxiv.org/search/cs?searchtype=author&query=Creswell%2C+A), [Nat McAleese](https://arxiv.org/search/cs?searchtype=author&query=McAleese%2C+N), [Amy Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+A), [Erich Elsen](https://arxiv.org/search/cs?searchtype=author&query=Elsen%2C+E), [Siddhant Jayakumar](https://arxiv.org/search/cs?searchtype=author&query=Jayakumar%2C+S), [Elena Buchatskaya](https://arxiv.org/search/cs?searchtype=author&query=Buchatskaya%2C+E), [David Budden](https://arxiv.org/search/cs?searchtype=author&query=Budden%2C+D), [Esme Sutherland](https://arxiv.org/search/cs?searchtype=author&query=Sutherland%2C+E), [Karen Simonyan](https://arxiv.org/search/cs?searchtype=author&query=Simonyan%2C+K), [Michela Paganini](https://arxiv.org/search/cs?searchtype=author&query=Paganini%2C+M), [Laurent Sifre](https://arxiv.org/search/cs?searchtype=author&query=Sifre%2C+L), [Lena Martens](https://arxiv.org/search/cs?searchtype=author&query=Martens%2C+L), [Xiang Lorraine Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+X+L), [Adhiguna Kuncoro](https://arxiv.org/search/cs?searchtype=author&query=Kuncoro%2C+A), [Aida Nematzadeh](https://arxiv.org/search/cs?searchtype=author&query=Nematzadeh%2C+A), [Elena Gribovskaya](https://arxiv.org/search/cs?searchtype=author&query=Gribovskaya%2C+E), [Domenic Donato](https://arxiv.org/search/cs?searchtype=author&query=Donato%2C+D), [Angeliki Lazaridou](https://arxiv.org/search/cs?searchtype=author&query=Lazaridou%2C+A), [Arthur Mensch](https://arxiv.org/search/cs?searchtype=author&query=Mensch%2C+A), [Jean-Baptiste Lespiau](https://arxiv.org/search/cs?searchtype=author&query=Lespiau%2C+J), [Maria Tsimpoukelli](https://arxiv.org/search/cs?searchtype=author&query=Tsimpoukelli%2C+M), [Nikolai Grigorev](https://arxiv.org/search/cs?searchtype=author&query=Grigorev%2C+N), [Doug Fritz](https://arxiv.org/search/cs?searchtype=author&query=Fritz%2C+D), [Thibault Sottiaux](https://arxiv.org/search/cs?searchtype=author&query=Sottiaux%2C+T), [Mantas Pajarskas](https://arxiv.org/search/cs?searchtype=author&query=Pajarskas%2C+M), [Toby Pohlen](https://arxiv.org/search/cs?searchtype=author&query=Pohlen%2C+T), [Zhitao Gong](https://arxiv.org/search/cs?searchtype=author&query=Gong%2C+Z), [Daniel Toyama](https://arxiv.org/search/cs?searchtype=author&query=Toyama%2C+D), [Cyprien de Masson d'Autume](https://arxiv.org/search/cs?searchtype=author&query=de+Masson+d'Autume%2C+C), [Yujia Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Y), [Tayfun Terzi](https://arxiv.org/search/cs?searchtype=author&query=Terzi%2C+T), [Vladimir Mikulik](https://arxiv.org/search/cs?searchtype=author&query=Mikulik%2C+V), [Igor Babuschkin](https://arxiv.org/search/cs?searchtype=author&query=Babuschkin%2C+I), [Aidan Clark](https://arxiv.org/search/cs?searchtype=author&query=Clark%2C+A), [Diego de Las Casas](https://arxiv.org/search/cs?searchtype=author&query=de+Las+Casas%2C+D), [Aurelia Guy](https://arxiv.org/search/cs?searchtype=author&query=Guy%2C+A), [Chris Jones](https://arxiv.org/search/cs?searchtype=author&query=Jones%2C+C), [James Bradbury](https://arxiv.org/search/cs?searchtype=author&query=Bradbury%2C+J), [Matthew Johnson](https://arxiv.org/search/cs?searchtype=author&query=Johnson%2C+M), [Blake Hechtman](https://arxiv.org/search/cs?searchtype=author&query=Hechtman%2C+B), [Laura Weidinger](https://arxiv.org/search/cs?searchtype=author&query=Weidinger%2C+L), [Iason Gabriel](https://arxiv.org/search/cs?searchtype=author&query=Gabriel%2C+I), [William Isaac](https://arxiv.org/search/cs?searchtype=author&query=Isaac%2C+W), [Ed Lockhart](https://arxiv.org/search/cs?searchtype=author&query=Lockhart%2C+E), [Simon Osindero](https://arxiv.org/search/cs?searchtype=author&query=Osindero%2C+S), [Laura Rimell](https://arxiv.org/search/cs?searchtype=author&query=Rimell%2C+L), [Chris Dyer](https://arxiv.org/search/cs?searchtype=author&query=Dyer%2C+C), [Oriol Vinyals](https://arxiv.org/search/cs?searchtype=author&query=Vinyals%2C+O), [Kareem Ayoub](https://arxiv.org/search/cs?searchtype=author&query=Ayoub%2C+K), [Jeff Stanway](https://arxiv.org/search/cs?searchtype=author&query=Stanway%2C+J), [Lorrayne Bennett](https://arxiv.org/search/cs?searchtype=author&query=Bennett%2C+L), [Demis Hassabis](https://arxiv.org/search/cs?searchtype=author&query=Hassabis%2C+D), [Koray Kavukcuoglu](https://arxiv.org/search/cs?searchtype=author&query=Kavukcuoglu%2C+K), [Geoffrey Irving](https://arxiv.org/search/cs?searchtype=author&query=Irving%2C+G)
+
+> Language modelling provides a step towards intelligent communication systems by harnessing large repositories of written human knowledge to better predict and understand the world. In this paper, we present an analysis of Transformer-based language model performance across a wide range of model scales -- from models with tens of millions of parameters up to a 280 billion parameter model called Gopher. These models are evaluated on 152 diverse tasks, achieving state-of-the-art performance across the majority. Gains from scale are largest in areas such as reading comprehension, fact-checking, and the identification of toxic language, but logical and mathematical reasoning see less benefit. We provide a holistic analysis of the training dataset and model's behaviour, covering the intersection of model scale with bias and toxicity. Finally we discuss the application of language models to AI safety and the mitigation of downstream harms.
+
+| Comments: | 118 pages                                                    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2112.11446](https://arxiv.org/abs/2112.11446) [cs.CL]** |
+|           | (or **[arXiv:2112.11446v1](https://arxiv.org/abs/2112.11446v1) [cs.CL]** for this version) |
+
+
 
 
 
