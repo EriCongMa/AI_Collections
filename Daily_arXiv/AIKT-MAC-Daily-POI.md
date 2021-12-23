@@ -3,18 +3,28 @@
 # Index
 
 
-- [2021-12-22](#2021-12-22)
+- [2021-12-23](#2021-12-23)
 
+  - [1. On the Compression of Natural Language Models](#2021-12-23-1)
+  - [2. English2Gbe: A multilingual machine translation model for {Fon/Ewe}Gbe](#2021-12-23-2)
+  - [3. Diformer: Directional Transformer for Neural Machine Translation](#2021-12-23-3)
+  - [4. Self-Distillation Mixup Training for Non-autoregressive Neural Machine Translation](#2021-12-23-4)
+  - [5. Joint-training on Symbiosis Networks for Deep Nueral Machine Translation models](#2021-12-23-5)
+  - [6. How Should Pre-Trained Language Models Be Fine-Tuned Towards Adversarial Robustness?](#2021-12-23-6)
+  - [7. A Survey of Natural Language Generation](#2021-12-23-7)
+  - [8. Towards Interactive Language Modeling](#2021-12-23-8)
+  - [9. Text is no more Enough! A Benchmark for Profile-based Spoken Language Understanding](#2021-12-23-9)
+  - [10. Toward Educator-focused Automated Scoring Systems for Reading and Writing](#2021-12-23-10)
+  
+- [2021-12-22](#2021-12-22)
   - [1. Regularizing End-to-End Speech Translation with Triangular Decomposition Agreement](#2021-12-22-1)
   - [2. Scaling Language Models: Methods, Analysis & Insights from Training Gopher](#2021-12-22-2)
-  
 - [2021-12-21](#2021-12-21)
 
   - [1. English-to-Chinese Transliteration with Phonetic Back-transliteration](#2021-12-21-1)
   - [2. Between words and characters: A Brief History of Open-Vocabulary Modeling and Tokenization in NLP](#2021-12-21-2)
   - [3. Few-shot Learning with Multilingual Language Models](#2021-12-21-3)
   - [4. Efficient Large Scale Language Modeling with Mixtures of Experts](#2021-12-21-4)
-
 - [2021-12-20](#2021-12-20)
   - [1. An Empirical Investigation of the Role of Pre-training in Lifelong Learning](#2021-12-20-1)
   - [2. Continual Learning for Monolingual End-to-End Automatic Speech Recognition](#2021-12-20-2)
@@ -111,6 +121,200 @@
   - [2. Improvement in Machine Translation with Generative Adversarial Networks](#2021-12-1-2)
   - [3. Pureformer: Do We Even Need Attention?](#2021-12-1-3)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2021-12-23
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-12-23-1">1. On the Compression of Natural Language Models
+</h2>
+
+Title: [On the Compression of Natural Language Models](https://arxiv.org/abs/2112.11480)
+
+Authors: [Saeed Damadi](https://arxiv.org/search/cs?searchtype=author&query=Damadi%2C+S)
+
+> Deep neural networks are effective feature extractors but they are prohibitively large for deployment scenarios. Due to the huge number of parameters, interpretability of parameters in different layers is not straight-forward. This is why neural networks are sometimes considered black boxes. Although simpler models are easier to explain, finding them is not easy. If found, a sparse network that can fit to a data from scratch would help to interpret parameters of a neural network. To this end, lottery ticket hypothesis states that typical dense neural networks contain a small sparse sub-network that can be trained to a reach similar test accuracy in an equal number of steps. The goal of this work is to assess whether such a trainable subnetwork exists for natural language models (NLM)s. To achieve this goal we will review state-of-the-art compression techniques such as quantization, knowledge distillation, and pruning.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2112.11480](https://arxiv.org/abs/2112.11480) [cs.CL]** |
+|           | (or **[arXiv:2112.11480v1](https://arxiv.org/abs/2112.11480v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-23-2">2. English2Gbe: A multilingual machine translation model for {Fon/Ewe}Gbe
+</h2>
+
+Title: [English2Gbe: A multilingual machine translation model for {Fon/Ewe}Gbe](https://arxiv.org/abs/2112.11482)
+
+Authors: [Gilles Hacheme](https://arxiv.org/search/cs?searchtype=author&query=Hacheme%2C+G)
+
+> Language is an essential factor of emancipation. Unfortunately, most of the more than 2,000 African languages are low-resourced. The community has recently used machine translation to revive and strengthen several African languages. However, the trained models are often bilingual, resulting in a potentially exponential number of models to train and maintain to cover all possible translation directions. Additionally, bilingual models do not leverage the similarity between some of the languages. Consequently, multilingual neural machine translation (NMT) is gaining considerable interest, especially for low-resourced languages. Nevertheless, its adoption by the community is still limited. This paper introduces English2Gbe, a multilingual NMT model capable of translating from English to Ewe or Fon. Using the BLEU, CHRF, and TER scores computed with the Sacrebleu (Post, 2018) package for reproducibility, we show that English2Gbe outperforms bilingual models (English to Ewe and English to Fon) and gives state-of-the-art results on the JW300 benchmark for Fon established by Nekoto et al. (2020). We hope this work will contribute to the massive adoption of Multilingual models inside the community. Our code is made accessible from Github.
+
+| Subjects:          | **Computation and Language (cs.CL)**                         |
+| ------------------ | ------------------------------------------------------------ |
+| ACM classes:       | I.2.7                                                        |
+| Journal reference: | ML4D, 35th Conference on Neural Information Processing Systems (NeurIPS 2021), Sydney, Australia |
+| Cite as:           | **[arXiv:2112.11482](https://arxiv.org/abs/2112.11482) [cs.CL]** |
+|                    | (or **[arXiv:2112.11482v1](https://arxiv.org/abs/2112.11482v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-23-3">3. Diformer: Directional Transformer for Neural Machine Translation
+</h2>
+
+Title: [Diformer: Directional Transformer for Neural Machine Translation](Diformer: Directional Transformer for Neural Machine Translation)
+
+Authors: [Minghan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+M), [Jiaxin Guo](https://arxiv.org/search/cs?searchtype=author&query=Guo%2C+J), [Yuxia Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Y), [Daimeng Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+D), [Hengchao Shang](https://arxiv.org/search/cs?searchtype=author&query=Shang%2C+H), [Chang Su](https://arxiv.org/search/cs?searchtype=author&query=Su%2C+C), [Yimeng Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+Y), [Yinglu Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Y), [Min Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+M), [Shimin Tao](https://arxiv.org/search/cs?searchtype=author&query=Tao%2C+S), [Hao Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+H)
+
+> Autoregressive (AR) and Non-autoregressive (NAR) models have their own superiority on the performance and latency, combining them into one model may take advantage of both. Current combination frameworks focus more on the integration of multiple decoding paradigms with a unified generative model, e.g. Masked Language Model. However, the generalization can be harmful to the performance due to the gap between training objective and inference. In this paper, we aim to close the gap by preserving the original objective of AR and NAR under a unified framework. Specifically, we propose the Directional Transformer (Diformer) by jointly modelling AR and NAR into three generation directions (left-to-right, right-to-left and straight) with a newly introduced direction variable, which works by controlling the prediction of each token to have specific dependencies under that direction. The unification achieved by direction successfully preserves the original dependency assumption used in AR and NAR, retaining both generalization and performance. Experiments on 4 WMT benchmarks demonstrate that Diformer outperforms current united-modelling works with more than 1.5 BLEU points for both AR and NAR decoding, and is also competitive to the state-of-the-art independent AR and NAR models.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2112.11632](https://arxiv.org/abs/2112.11632) [cs.CL]** |
+|           | (or **[arXiv:2112.11632v1](https://arxiv.org/abs/2112.11632v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-23-4">4. Self-Distillation Mixup Training for Non-autoregressive Neural Machine Translation
+</h2>
+
+Title: [Self-Distillation Mixup Training for Non-autoregressive Neural Machine Translation](https://arxiv.org/abs/2112.11640)
+
+Authors: [Jiaxin Guo](https://arxiv.org/search/cs?searchtype=author&query=Guo%2C+J), [Minghan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+M), [Daimeng Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+D), [Hengchao Shang](https://arxiv.org/search/cs?searchtype=author&query=Shang%2C+H), [Yuxia Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Y), [Zongyao Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Z), [Zhengzhe Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+Z), [Zhanglin Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+Z), [Yimeng Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+Y), [Chang Su](https://arxiv.org/search/cs?searchtype=author&query=Su%2C+C), [Min Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+M), [Lizhi Lei](https://arxiv.org/search/cs?searchtype=author&query=Lei%2C+L), [shimin tao](https://arxiv.org/search/cs?searchtype=author&query=tao%2C+s), [Hao Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+H)
+
+> Recently, non-autoregressive (NAT) models predict outputs in parallel, achieving substantial improvements in generation speed compared to autoregressive (AT) models. While performing worse on raw data, most NAT models are trained as student models on distilled data generated by AT teacher models, which is known as sequence-level Knowledge Distillation. An effective training strategy to improve the performance of AT models is Self-Distillation Mixup (SDM) Training, which pre-trains a model on raw data, generates distilled data by the pre-trained model itself and finally re-trains a model on the combination of raw data and distilled data. In this work, we aim to view SDM for NAT models, but find directly adopting SDM to NAT models gains no improvements in terms of translation quality. Through careful analysis, we observe the invalidation is correlated to Modeling Diversity and Confirmation Bias between the AT teacher model and the NAT student models. Based on these findings, we propose an enhanced strategy named SDMRT by adding two stages to classic SDM: one is Pre-Rerank on self-distilled data, the other is Fine-Tune on Filtered teacher-distilled data. Our results outperform baselines by 0.6 to 1.2 BLEU on multiple NAT models. As another bonus, for Iterative Refinement NAT models, our methods can outperform baselines within half iteration number, which means 2X acceleration.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2112.11640](https://arxiv.org/abs/2112.11640) [cs.CL]** |
+|           | (or **[arXiv:2112.11640v1](https://arxiv.org/abs/2112.11640v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+<h2 id="2021-12-23-5">5. Joint-training on Symbiosis Networks for Deep Nueral Machine Translation models
+</h2>
+
+Title: [Joint-training on Symbiosis Networks for Deep Nueral Machine Translation models](https://arxiv.org/abs/2112.11642)
+
+Authors: [Zhengzhe Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+Z), [Jiaxin Guo](https://arxiv.org/search/cs?searchtype=author&query=Guo%2C+J), [Minghan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+M), [Daimeng Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+D), [Hengchao Shang](https://arxiv.org/search/cs?searchtype=author&query=Shang%2C+H), [Zongyao Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Z), [Zhanglin Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+Z), [Yuxia Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Y), [Yimeng Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+Y), [Chang Su](https://arxiv.org/search/cs?searchtype=author&query=Su%2C+C), [Min Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+M), [Lizhi Lei](https://arxiv.org/search/cs?searchtype=author&query=Lei%2C+L), [shimin tao](https://arxiv.org/search/cs?searchtype=author&query=tao%2C+s), [Hao Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+H)
+
+> Deep encoders have been proven to be effective in improving neural machine translation (NMT) systems, but it reaches the upper bound of translation quality when the number of encoder layers exceeds 18. Worse still, deeper networks consume a lot of memory, making it impossible to train efficiently. In this paper, we present Symbiosis Networks, which include a full network as the Symbiosis Main Network (M-Net) and another shared sub-network with the same structure but less layers as the Symbiotic Sub Network (S-Net). We adopt Symbiosis Networks on Transformer-deep (m-n) architecture and define a particular regularization loss τbetween the M-Net and S-Net in NMT. We apply joint-training on the Symbiosis Networks and aim to improve the M-Net performance. Our proposed training strategy improves Transformer-deep (12-6) by 0.61, 0.49 and 0.69 BLEU over the baselines under classic training on WMT'14 EN->DE, DE->EN and EN->FR tasks. Furthermore, our Transformer-deep (12-6) even outperforms classic Transformer-deep (18-6).
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2112.11642](https://arxiv.org/abs/2112.11642) [cs.CL]** |
+|           | (or **[arXiv:2112.11642v1](https://arxiv.org/abs/2112.11642v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-23-6">6. How Should Pre-Trained Language Models Be Fine-Tuned Towards Adversarial Robustness?
+</h2>
+
+Title: [How Should Pre-Trained Language Models Be Fine-Tuned Towards Adversarial Robustness?](https://arxiv.org/abs/2112.11668)
+
+Authors: [Xinhsuai Dong](https://arxiv.org/search/cs?searchtype=author&query=Dong%2C+X), [Luu Anh Tuan](https://arxiv.org/search/cs?searchtype=author&query=Tuan%2C+L+A), [Min Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+M), [Shuicheng Yan](https://arxiv.org/search/cs?searchtype=author&query=Yan%2C+S), [Hanwang Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+H)
+
+> The fine-tuning of pre-trained language models has a great success in many NLP fields. Yet, it is strikingly vulnerable to adversarial examples, e.g., word substitution attacks using only synonyms can easily fool a BERT-based sentiment analysis model. In this paper, we demonstrate that adversarial training, the prevalent defense technique, does not directly fit a conventional fine-tuning scenario, because it suffers severely from catastrophic forgetting: failing to retain the generic and robust linguistic features that have already been captured by the pre-trained model. In this light, we propose Robust Informative Fine-Tuning (RIFT), a novel adversarial fine-tuning method from an information-theoretical perspective. In particular, RIFT encourages an objective model to retain the features learned from the pre-trained model throughout the entire fine-tuning process, whereas a conventional one only uses the pre-trained weights for initialization. Experimental results show that RIFT consistently outperforms the state-of-the-arts on two popular NLP tasks: sentiment analysis and natural language inference, under different attacks across various pre-trained language models.
+
+| Comments: | Accepted by NeurIPS-2021                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2112.11668](https://arxiv.org/abs/2112.11668) [cs.CL]** |
+|           | (or **[arXiv:2112.11668v1](https://arxiv.org/abs/2112.11668v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-23-7">7. A Survey of Natural Language Generation
+</h2>
+
+Title: [A Survey of Natural Language Generation](https://arxiv.org/abs/2112.11739)
+
+Authors: [Chenhe Dong](https://arxiv.org/search/cs?searchtype=author&query=Dong%2C+C), [Yinghui Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Y), [Haifan Gong](https://arxiv.org/search/cs?searchtype=author&query=Gong%2C+H), [Miaoxin Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+M), [Junxin Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+J), [Ying Shen](https://arxiv.org/search/cs?searchtype=author&query=Shen%2C+Y), [Min Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+M)
+
+> This paper offers a comprehensive review of the research on Natural Language Generation (NLG) over the past two decades, especially in relation to data-to-text generation and text-to-text generation deep learning methods, as well as new applications of NLG technology. This survey aims to (a) give the latest synthesis of deep learning research on the NLG core tasks, as well as the architectures adopted in the field; (b) detail meticulously and comprehensively various NLG tasks and datasets, and draw attention to the challenges in NLG evaluation, focusing on different evaluation methods and their relationships; (c) highlight some future emphasis and relatively recent research issues that arise due to the increasing synergy between NLG and other artificial intelligence areas, such as computer vision, text and computational creativity.
+
+| Comments: | 36 pages, 4 tables; Under review                             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2112.11739](https://arxiv.org/abs/2112.11739) [cs.CL]** |
+|           | (or **[arXiv:2112.11739v1](https://arxiv.org/abs/2112.11739v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-23-8">8. Towards Interactive Language Modeling
+</h2>
+
+Title: [Towards Interactive Language Modeling](https://arxiv.org/abs/2112.11911)
+
+Authors: [Maartje ter Hoeve](https://arxiv.org/search/cs?searchtype=author&query=ter+Hoeve%2C+M), [Evgeny Kharitonov](https://arxiv.org/search/cs?searchtype=author&query=Kharitonov%2C+E), [Dieuwke Hupkes](https://arxiv.org/search/cs?searchtype=author&query=Hupkes%2C+D), [Emmanuel Dupoux](https://arxiv.org/search/cs?searchtype=author&query=Dupoux%2C+E)
+
+> Interaction between caregivers and children plays a critical role in human language acquisition and development. Given this observation, it is remarkable that explicit interaction plays little to no role in artificial language modeling -- which also targets the acquisition of human language, yet by artificial models. Moreover, an interactive approach to language modeling has the potential to make language models substantially more versatile and to considerably impact downstream applications. Motivated by these considerations, we pioneer the space of interactive language modeling. As a first contribution we present a road map in which we detail the steps that need to be taken towards interactive language modeling. We then lead by example and take the first steps on this road map, showing the initial feasibility of our approach. As such, this work aims to be the start of a larger research agenda on interactive language modeling.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2112.11911](https://arxiv.org/abs/2112.11911) [cs.CL]** |
+|           | (or **[arXiv:2112.11911v1](https://arxiv.org/abs/2112.11911v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-23-9">9. Text is no more Enough! A Benchmark for Profile-based Spoken Language Understanding
+</h2>
+
+Title: [Text is no more Enough! A Benchmark for Profile-based Spoken Language Understanding](https://arxiv.org/abs/2112.11953)
+
+Authors: [Xiao Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+X), [Libo Qin](https://arxiv.org/search/cs?searchtype=author&query=Qin%2C+L), [Kaiji Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+K), [Guoxing Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+G), [Linlin Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L), [Wanxiang Che](https://arxiv.org/search/cs?searchtype=author&query=Che%2C+W)
+
+> Current researches on spoken language understanding (SLU) heavily are limited to a simple setting: the plain text-based SLU that takes the user utterance as input and generates its corresponding semantic frames (e.g., intent and slots). Unfortunately, such a simple setting may fail to work in complex real-world scenarios when an utterance is semantically ambiguous, which cannot be achieved by the text-based SLU models. In this paper, we first introduce a new and important task, Profile-based Spoken Language Understanding (ProSLU), which requires the model that not only relies on the plain text but also the supporting profile information to predict the correct intents and slots. To this end, we further introduce a large-scale human-annotated Chinese dataset with over 5K utterances and their corresponding supporting profile information (Knowledge Graph (KG), User Profile (UP), Context Awareness (CA)). In addition, we evaluate several state-of-the-art baseline models and explore a multi-level knowledge adapter to effectively incorporate profile information. Experimental results reveal that all existing text-based SLU models fail to work when the utterances are semantically ambiguous and our proposed framework can effectively fuse the supporting information for sentence-level intent detection and token-level slot filling. Finally, we summarize key challenges and provide new points for future directions, which hopes to facilitate the research.
+
+| Comments: | Accepted by AAAI 2022                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2112.11953](https://arxiv.org/abs/2112.11953) [cs.CL]** |
+|           | (or **[arXiv:2112.11953v1](https://arxiv.org/abs/2112.11953v1) [cs.CL]** for this version) |
+
+
+
+<h2 id="2021-12-23-10">10. Toward Educator-focused Automated Scoring Systems for Reading and Writing
+</h2>
+
+Title: [Toward Educator-focused Automated Scoring Systems for Reading and Writing](https://arxiv.org/abs/2112.11973)
+
+Authors: [Mike Hardy](https://arxiv.org/search/cs?searchtype=author&query=Hardy%2C+M)
+
+> This paper presents methods for improving automated essay scoring with techniques that address the computational trade-offs of self-attention and document length. To make Automated Essay Scoring (AES) more useful to practitioners, researchers must overcome the challenges of data and label availability, authentic and extended writing, domain scoring, prompt and source variety, and transfer learning. This paper addresses these challenges using neural network models by employing techniques that preserve essay length as an important feature without increasing model training costs. It introduces techniques for minimizing classification loss on ordinal labels using multi-objective learning, capturing semantic information across the entire essay using sentence embeddings to use transformer architecture across arbitrarily long documents, the use of such models for transfer learning, automated hyperparameter generation based on prompt-corpus metadata, and, most importantly, the use of semantic information to provide meaningful insights into student reading through analysis of passage-dependent writing resulting in state-of-the-art results for various essay tasks.
+
+| Comments:    | 10 pages, 8 figures                                          |
+| ------------ | ------------------------------------------------------------ |
+| Subjects:    | **Computation and Language (cs.CL)**                         |
+| ACM classes: | I.2.7; K.3.1                                                 |
+| Cite as:     | **[arXiv:2112.11973](https://arxiv.org/abs/2112.11973) [cs.CL]** |
+|              | (or **[arXiv:2112.11973v1](https://arxiv.org/abs/2112.11973v1) [cs.CL]** for this version) |
+
+
+
 
 
 
