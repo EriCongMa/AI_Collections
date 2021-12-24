@@ -3,6 +3,13 @@
 # Index
 
 
+- [2021-12-24](#2021-12-24)
+
+  - [1. Are E2E ASR models ready for an industrial usage?](#2021-12-24-1)
+  - [2. Do Multi-Lingual Pre-trained Language Models Reveal Consistent Token Attributions in Different Languages?](#2021-12-24-2)
+  - [3. Distilling the Knowledge of Romanian BERTs Using Multiple Teachers](#2021-12-24-3)
+  - [4. ERNIE 3.0 Titan: Exploring Larger-scale Knowledge Enhanced Pre-training for Language Understanding and Generation](#2021-12-24-4)
+  
 - [2021-12-23](#2021-12-23)
 
   - [1. On the Compression of Natural Language Models](#2021-12-23-1)
@@ -15,7 +22,7 @@
   - [8. Towards Interactive Language Modeling](#2021-12-23-8)
   - [9. Text is no more Enough! A Benchmark for Profile-based Spoken Language Understanding](#2021-12-23-9)
   - [10. Toward Educator-focused Automated Scoring Systems for Reading and Writing](#2021-12-23-10)
-  
+
 - [2021-12-22](#2021-12-22)
   - [1. Regularizing End-to-End Speech Translation with Triangular Decomposition Agreement](#2021-12-22-1)
   - [2. Scaling Language Models: Methods, Analysis & Insights from Training Gopher](#2021-12-22-2)
@@ -121,6 +128,85 @@
   - [2. Improvement in Machine Translation with Generative Adversarial Networks](#2021-12-1-2)
   - [3. Pureformer: Do We Even Need Attention?](#2021-12-1-3)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2021-12-24
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-12-24-1">1. Are E2E ASR models ready for an industrial usage?
+</h2>
+
+Title: [Are E2E ASR models ready for an industrial usage?](https://arxiv.org/abs/2112.12572)
+
+Authors: [Valentin Vielzeuf](https://arxiv.org/search/eess?searchtype=author&query=Vielzeuf%2C+V), [Grigory Antipov](https://arxiv.org/search/eess?searchtype=author&query=Antipov%2C+G)
+
+> The Automated Speech Recognition (ASR) community experiences a major turning point with the rise of the fully-neural (End-to-End, E2E) approaches. At the same time, the conventional hybrid model remains the standard choice for the practical usage of ASR. According to previous studies, the adoption of E2E ASR in real-world applications was hindered by two main limitations: their ability to generalize on unseen domains and their high operational cost. In this paper, we investigate both above-mentioned drawbacks by performing a comprehensive multi-domain benchmark of several contemporary E2E models and a hybrid baseline. Our experiments demonstrate that E2E models are viable alternatives for the hybrid approach, and even outperform the baseline both in accuracy and in operational efficiency. As a result, our study shows that the generalization and complexity issues are no longer the major obstacle for industrial integration, and draws the community's attention to other potential limitations of the E2E approaches in some specific use-cases.
+
+| Subjects: | **Audio and Speech Processing (eess.AS)**; Computation and Language (cs.CL); Sound (cs.SD) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2112.12572](https://arxiv.org/abs/2112.12572) [eess.AS]** |
+|           | (or **[arXiv:2112.12572v1](https://arxiv.org/abs/2112.12572v1) [eess.AS]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-24-2">2. Do Multi-Lingual Pre-trained Language Models Reveal Consistent Token Attributions in Different Languages?
+</h2>
+
+Title: [Do Multi-Lingual Pre-trained Language Models Reveal Consistent Token Attributions in Different Languages?](https://arxiv.org/abs/2112.12356)
+
+Authors: [Junxiang Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+J), [Xuchao Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+X), [Bo Zong](https://arxiv.org/search/cs?searchtype=author&query=Zong%2C+B), [Yanchi Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Y), [Wei Cheng](https://arxiv.org/search/cs?searchtype=author&query=Cheng%2C+W), [Jingchao Ni](https://arxiv.org/search/cs?searchtype=author&query=Ni%2C+J), [Haifeng Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+H), [Liang Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+L)
+
+> During the past several years, a surge of multi-lingual Pre-trained Language Models (PLMs) has been proposed to achieve state-of-the-art performance in many cross-lingual downstream tasks. However, the understanding of why multi-lingual PLMs perform well is still an open domain. For example, it is unclear whether multi-Lingual PLMs reveal consistent token attributions in different languages. To address this, in this paper, we propose a Cross-lingual Consistency of Token Attributions (CCTA) evaluation framework. Extensive experiments in three downstream tasks demonstrate that multi-lingual PLMs assign significantly different attributions to multi-lingual synonyms. Moreover, we have the following observations: 1) the Spanish achieves the most consistent token attributions in different languages when it is used for training PLMs; 2) the consistency of token attributions strongly correlates with performance in downstream tasks.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2112.12356](https://arxiv.org/abs/2112.12356) [cs.CL]** |
+|           | (or **[arXiv:2112.12356v1](https://arxiv.org/abs/2112.12356v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-24-3">3. Distilling the Knowledge of Romanian BERTs Using Multiple Teachers
+</h2>
+
+Title: [Distilling the Knowledge of Romanian BERTs Using Multiple Teachers](https://arxiv.org/abs/2112.12650)
+
+Authors: [Andrei-Marius Avram](https://arxiv.org/search/cs?searchtype=author&query=Avram%2C+A), [Darius Catrina](https://arxiv.org/search/cs?searchtype=author&query=Catrina%2C+D), [Dumitru-Clementin Cercel](https://arxiv.org/search/cs?searchtype=author&query=Cercel%2C+D), [Mihai Dascălu](https://arxiv.org/search/cs?searchtype=author&query=Dascălu%2C+M), [Traian Rebedea](https://arxiv.org/search/cs?searchtype=author&query=Rebedea%2C+T), [Vasile Păiş](https://arxiv.org/search/cs?searchtype=author&query=Păiş%2C+V), [Dan Tufiş](https://arxiv.org/search/cs?searchtype=author&query=Tufiş%2C+D)
+
+> As transfer learning from large-scale pre-trained language models has become prevalent in Natural Language Processing, running these models in computationally constrained environments remains a challenging problem yet to address. Several solutions including knowledge distillation, network quantization or network pruning have been proposed; however, these approaches focus mostly on the English language, thus widening the gap when considering low-resource languages. In this work, we introduce three light and fast versions of distilled BERT models for the Romanian language: Distil-BERT-base-ro, Distil-RoBERT-base and DistilMulti-BERT-base-ro. The first two models resulted from individually distilling the knowledge of the two base versions of Romanian BERTs available in literature, while the last one was obtained by distilling their ensemble. To our knowledge, this is the first attempt to create publicly available Romanian distilled BERT models, which were thoroughly evaluated on five tasks: part-of-speech tagging, named entity recognition, sentiment analysis, semantic textual similarity and dialect identification. The experimental results on these benchmarks proved that our three distilled models maintain most performance in terms of accuracy with their teachers, while being twice as fast on a GPU and ~35\% smaller. In addition, we further test the similarity between our students and their teachers prediction by measuring their label and probability loyalty, together with regression loyalty - a new metric introduced in this work.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2112.12650](https://arxiv.org/abs/2112.12650) [cs.CL]** |
+|           | (or **[arXiv:2112.12650v1](https://arxiv.org/abs/2112.12650v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-24-4">4. ERNIE 3.0 Titan: Exploring Larger-scale Knowledge Enhanced Pre-training for Language Understanding and Generation
+</h2>
+
+Title: [ERNIE 3.0 Titan: Exploring Larger-scale Knowledge Enhanced Pre-training for Language Understanding and Generation](https://arxiv.org/abs/2112.12731)
+
+Authors: [Shuohuan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+S), [Yu Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+Y), [Yang Xiang](https://arxiv.org/search/cs?searchtype=author&query=Xiang%2C+Y), [Zhihua Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+Z), [Siyu Ding](https://arxiv.org/search/cs?searchtype=author&query=Ding%2C+S), [Weibao Gong](https://arxiv.org/search/cs?searchtype=author&query=Gong%2C+W), [Shikun Feng](https://arxiv.org/search/cs?searchtype=author&query=Feng%2C+S), [Junyuan Shang](https://arxiv.org/search/cs?searchtype=author&query=Shang%2C+J), [Yanbin Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+Y), [Chao Pang](https://arxiv.org/search/cs?searchtype=author&query=Pang%2C+C), [Jiaxiang Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+J), [Xuyi Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+X), [Yuxiang Lu](https://arxiv.org/search/cs?searchtype=author&query=Lu%2C+Y), [Weixin Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+W), [Xi Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+X), [Yangfan Bai](https://arxiv.org/search/cs?searchtype=author&query=Bai%2C+Y), [Qiuliang Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+Q), [Li Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+L), [Shiyong Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+S), [Peng Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+P), [Dianhai Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+D), [Yanjun Ma](https://arxiv.org/search/cs?searchtype=author&query=Ma%2C+Y), [Hao Tian](https://arxiv.org/search/cs?searchtype=author&query=Tian%2C+H), [Hua Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+H), [Tian Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+T), [Wei Zeng](https://arxiv.org/search/cs?searchtype=author&query=Zeng%2C+W), [Ge Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+G), [Wen Gao](https://arxiv.org/search/cs?searchtype=author&query=Gao%2C+W), [Haifeng Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+H)
+
+> Pre-trained language models have achieved state-of-the-art results in various Natural Language Processing (NLP) tasks. GPT-3 has shown that scaling up pre-trained language models can further exploit their enormous potential. A unified framework named ERNIE 3.0 was recently proposed for pre-training large-scale knowledge enhanced models and trained a model with 10 billion parameters. ERNIE 3.0 outperformed the state-of-the-art models on various NLP tasks. In order to explore the performance of scaling up ERNIE 3.0, we train a hundred-billion-parameter model called ERNIE 3.0 Titan with up to 260 billion parameters on the PaddlePaddle platform. Furthermore, we design a self-supervised adversarial loss and a controllable language modeling loss to make ERNIE 3.0 Titan generate credible and controllable texts. To reduce the computation overhead and carbon emission, we propose an online distillation framework for ERNIE 3.0 Titan, where the teacher model will teach students and train itself simultaneously. ERNIE 3.0 Titan is the largest Chinese dense pre-trained model so far. Empirical results show that the ERNIE 3.0 Titan outperforms the state-of-the-art models on 68 NLP datasets.
+
+| Comments: | arXiv admin note: text overlap with [arXiv:2107.02137](https://arxiv.org/abs/2107.02137) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2112.12731](https://arxiv.org/abs/2112.12731) [cs.CL]** |
+|           | (or **[arXiv:2112.12731v1](https://arxiv.org/abs/2112.12731v1) [cs.CL]** for this version) |
+
+
 
 
 
