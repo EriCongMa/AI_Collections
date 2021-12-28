@@ -3,13 +3,19 @@
 # Index
 
 
-- [2021-12-24](#2021-12-24)
+- [2021-12-28](#2021-12-28)
 
+  - [1. CUGE: A Chinese Language Understanding and Generation Evaluation Benchmark](#2021-12-28-1)
+  - [2. Parameter Differentiation based Multilingual Neural Machine Translation](#2021-12-28-2)
+  - [3. Transformer Uncertainty Estimation with Hierarchical Stochastic Attention](#2021-12-28-3)
+  - [4. Understanding RoBERTa's Mood: The Role of Contextual-Embeddings as User-Representations for Depression Prediction](#2021-12-28-4)
+  - [5. HOPE: A Task-Oriented and Human-Centric Evaluation Framework Using Professional Post-Editing Towards More Effective MT Evaluation](#2021-12-28-5)
+  
+- [2021-12-24](#2021-12-24)
   - [1. Are E2E ASR models ready for an industrial usage?](#2021-12-24-1)
   - [2. Do Multi-Lingual Pre-trained Language Models Reveal Consistent Token Attributions in Different Languages?](#2021-12-24-2)
   - [3. Distilling the Knowledge of Romanian BERTs Using Multiple Teachers](#2021-12-24-3)
   - [4. ERNIE 3.0 Titan: Exploring Larger-scale Knowledge Enhanced Pre-training for Language Understanding and Generation](#2021-12-24-4)
-  
 - [2021-12-23](#2021-12-23)
 
   - [1. On the Compression of Natural Language Models](#2021-12-23-1)
@@ -22,7 +28,6 @@
   - [8. Towards Interactive Language Modeling](#2021-12-23-8)
   - [9. Text is no more Enough! A Benchmark for Profile-based Spoken Language Understanding](#2021-12-23-9)
   - [10. Toward Educator-focused Automated Scoring Systems for Reading and Writing](#2021-12-23-10)
-
 - [2021-12-22](#2021-12-22)
   - [1. Regularizing End-to-End Speech Translation with Triangular Decomposition Agreement](#2021-12-22-1)
   - [2. Scaling Language Models: Methods, Analysis & Insights from Training Gopher](#2021-12-22-2)
@@ -128,6 +133,104 @@
   - [2. Improvement in Machine Translation with Generative Adversarial Networks](#2021-12-1-2)
   - [3. Pureformer: Do We Even Need Attention?](#2021-12-1-3)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2021-12-28
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-12-28-1">1. CUGE: A Chinese Language Understanding and Generation Evaluation Benchmark
+</h2>
+
+Title: [CUGE: A Chinese Language Understanding and Generation Evaluation Benchmark](https://arxiv.org/abs/2112.13610)
+
+Authors: [Yuan Yao](https://arxiv.org/search/cs?searchtype=author&query=Yao%2C+Y), [Qingxiu Dong](https://arxiv.org/search/cs?searchtype=author&query=Dong%2C+Q), [Jian Guan](https://arxiv.org/search/cs?searchtype=author&query=Guan%2C+J), [Boxi Cao](https://arxiv.org/search/cs?searchtype=author&query=Cao%2C+B), [Zhengyan Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Z), [Chaojun Xiao](https://arxiv.org/search/cs?searchtype=author&query=Xiao%2C+C), [Xiaozhi Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+X), [Fanchao Qi](https://arxiv.org/search/cs?searchtype=author&query=Qi%2C+F), [Junwei Bao](https://arxiv.org/search/cs?searchtype=author&query=Bao%2C+J), [Jinran Nie](https://arxiv.org/search/cs?searchtype=author&query=Nie%2C+J), [Zheni Zeng](https://arxiv.org/search/cs?searchtype=author&query=Zeng%2C+Z), [Yuxian Gu](https://arxiv.org/search/cs?searchtype=author&query=Gu%2C+Y), [Kun Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+K), [Xuancheng Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+X), [Wenhao Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+W), [Shuhuai Ren](https://arxiv.org/search/cs?searchtype=author&query=Ren%2C+S), [Jinliang Lu](https://arxiv.org/search/cs?searchtype=author&query=Lu%2C+J), [Chengqiang Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+C), [Huadong Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+H), [Guoyang Zeng](https://arxiv.org/search/cs?searchtype=author&query=Zeng%2C+G), [Zile Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+Z), [Jiajun Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+J), [Juanzi Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+J), [Minlie Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+M), [Rui Yan](https://arxiv.org/search/cs?searchtype=author&query=Yan%2C+R), [Xiaodong He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+X), [Xiaojun Wan](https://arxiv.org/search/cs?searchtype=author&query=Wan%2C+X), [Xin Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+X), [Xu Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+X), [Yang Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Y), [Zhiyuan Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Z), [Xianpei Han](https://arxiv.org/search/cs?searchtype=author&query=Han%2C+X), [Erhong Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+E), [Zhifang Sui](https://arxiv.org/search/cs?searchtype=author&query=Sui%2C+Z), [Maosong Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+M)
+
+> Realizing general-purpose language intelligence has been a longstanding goal for natural language processing, where standard evaluation benchmarks play a fundamental and guiding role. We argue that for general-purpose language intelligence evaluation, the benchmark itself needs to be comprehensive and systematic. To this end, we propose CUGE, a Chinese Language Understanding and Generation Evaluation benchmark with the following features: (1) Hierarchical benchmark framework, where datasets are principally selected and organized with a language capability-task-dataset hierarchy. (2) Multi-level scoring strategy, where different levels of model performance are provided based on the hierarchical framework. To facilitate CUGE, we provide a public leaderboard that can be customized to support flexible model judging criteria. Evaluation results on representative pre-trained language models indicate ample room for improvement towards general-purpose language intelligence. CUGE is publicly available at [this http URL](http://cuge.baai.ac.cn/).
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2112.13610](https://arxiv.org/abs/2112.13610) [cs.CL]** |
+|           | (or **[arXiv:2112.13610v1](https://arxiv.org/abs/2112.13610v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-28-2">2. Parameter Differentiation based Multilingual Neural Machine Translation
+</h2>
+
+Title: [Parameter Differentiation based Multilingual Neural Machine Translation](https://arxiv.org/abs/2112.13619)
+
+Authors: [Qian Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Q), [Jiajun Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+J)
+
+> Multilingual neural machine translation (MNMT) aims to translate multiple languages with a single model and has been proved successful thanks to effective knowledge transfer among different languages with shared parameters. However, it is still an open question which parameters should be shared and which ones need to be task-specific. Currently, the common practice is to heuristically design or search language-specific modules, which is difficult to find the optimal configuration. In this paper, we propose a novel parameter differentiation based method that allows the model to determine which parameters should be language-specific during training. Inspired by cellular differentiation, each shared parameter in our method can dynamically differentiate into more specialized types. We further define the differentiation criterion as inter-task gradient similarity. Therefore, parameters with conflicting inter-task gradients are more likely to be language-specific. Extensive experiments on multilingual datasets have demonstrated that our method significantly outperforms various strong baselines with different parameter sharing configurations. Further analyses reveal that the parameter sharing configuration obtained by our method correlates well with the linguistic proximities.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2112.13619](https://arxiv.org/abs/2112.13619) [cs.CL]** |
+|           | (or **[arXiv:2112.13619v1](https://arxiv.org/abs/2112.13619v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-28-3">3. Transformer Uncertainty Estimation with Hierarchical Stochastic Attention
+</h2>
+
+Title: [Transformer Uncertainty Estimation with Hierarchical Stochastic Attention](https://arxiv.org/abs/2112.13776)
+
+Authors: [Jiahuan Pei](https://arxiv.org/search/cs?searchtype=author&query=Pei%2C+J), [Cheng Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+C), [György Szarvas](https://arxiv.org/search/cs?searchtype=author&query=Szarvas%2C+G)
+
+> Transformers are state-of-the-art in a wide range of NLP tasks and have also been applied to many real-world products. Understanding the reliability and certainty of transformer model predictions is crucial for building trustable machine learning applications, e.g., medical diagnosis. Although many recent transformer extensions have been proposed, the study of the uncertainty estimation of transformer models is under-explored. In this work, we propose a novel way to enable transformers to have the capability of uncertainty estimation and, meanwhile, retain the original predictive performance. This is achieved by learning a hierarchical stochastic self-attention that attends to values and a set of learnable centroids, respectively. Then new attention heads are formed with a mixture of sampled centroids using the Gumbel-Softmax trick. We theoretically show that the self-attention approximation by sampling from a Gumbel distribution is upper bounded. We empirically evaluate our model on two text classification tasks with both in-domain (ID) and out-of-domain (OOD) datasets. The experimental results demonstrate that our approach: (1) achieves the best predictive performance and uncertainty trade-off among compared methods; (2) exhibits very competitive (in most cases, improved) predictive performance on ID datasets; (3) is on par with Monte Carlo dropout and ensemble methods in uncertainty estimation on OOD datasets.
+
+| Comments: | AAAI 2022                                                    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2112.13776](https://arxiv.org/abs/2112.13776) [cs.CL]** |
+|           | (or **[arXiv:2112.13776v1](https://arxiv.org/abs/2112.13776v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-28-4">4. Understanding RoBERTa's Mood: The Role of Contextual-Embeddings as User-Representations for Depression Prediction
+</h2>
+
+Title: [Understanding RoBERTa's Mood: The Role of Contextual-Embeddings as User-Representations for Depression Prediction](https://arxiv.org/abs/2112.13795)
+
+Authors: [Matthew Matero](https://arxiv.org/search/cs?searchtype=author&query=Matero%2C+M), [Albert Hung](https://arxiv.org/search/cs?searchtype=author&query=Hung%2C+A), [H. Andrew Schwartz](https://arxiv.org/search/cs?searchtype=author&query=Schwartz%2C+H+A)
+
+> Many works in natural language processing have shown connections between a person's personal discourse and their personality, demographics, and mental health states. However, many of the machine learning models that predict such human traits have yet to fully consider the role of pre-trained language models and contextual embeddings. Using a person's degree of depression as a case study, we do an empirical analysis on which off-the-shelf language model, individual layers, and combinations of layers seem most promising when applied to human-level NLP tasks. Notably, despite the standard in past work of suggesting use of either the second-to-last or the last 4 layers, we find layer 19 (sixth-to last) is the most ideal by itself, while when using multiple layers, distributing them across the second half(i.e. Layers 12+) of the 24 layers is best.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2112.13795](https://arxiv.org/abs/2112.13795) [cs.CL]** |
+|           | (or **[arXiv:2112.13795v1](https://arxiv.org/abs/2112.13795v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-28-5">5. HOPE: A Task-Oriented and Human-Centric Evaluation Framework Using Professional Post-Editing Towards More Effective MT Evaluation
+</h2>
+
+Title: [HOPE: A Task-Oriented and Human-Centric Evaluation Framework Using Professional Post-Editing Towards More Effective MT Evaluation](https://arxiv.org/abs/2112.13833)
+
+Authors: [Serge Gladkoff](https://arxiv.org/search/cs?searchtype=author&query=Gladkoff%2C+S), [Lifeng Han](https://arxiv.org/search/cs?searchtype=author&query=Han%2C+L)
+
+> Traditional automatic evaluation metrics for machine translation have been widely criticized by linguists due to their low accuracy, lack of transparency, focus on language mechanics rather than semantics, and low agreement with human quality evaluation. Human evaluations in the form of MQM-like scorecards have always been carried out in real industry setting by both clients and translation service providers (TSPs). However, traditional human translation quality evaluations are costly to perform and go into great linguistic detail, raise issues as to inter-rater reliability (IRR) and are not designed to measure quality of worse than premium quality translations. In this work, we introduce HOPE, a task-oriented and human-centric evaluation framework for machine translation output based on professional post-editing annotations. It contains only a limited number of commonly occurring error types, and use a scoring model with geometric progression of error penalty points (EPPs) reflecting error severity level to each translation unit. The initial experimental work carried out on English-Russian language pair MT outputs on marketing content type of text from highly technical domain reveals that our evaluation framework is quite effective in reflecting the MT output quality regarding both overall system-level performance and segment-level transparency, and it increases the IRR for error type interpretation. The approach has several key advantages, such as ability to measure and compare less than perfect MT output from different systems, ability to indicate human perception of quality, immediate estimation of the labor effort required to bring MT output to premium quality, low-cost and faster application, as well as higher IRR. Our experimental data is available at \url{[this https URL](https://github.com/lHan87/HOPE)}.
+
+| Comments: | 5 figures, 9 pages                                           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2112.13833](https://arxiv.org/abs/2112.13833) [cs.CL]** |
+|           | (or **[arXiv:2112.13833v1](https://arxiv.org/abs/2112.13833v1) [cs.CL]** for this version) |
+
+
 
 
 
