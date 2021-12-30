@@ -3,6 +3,13 @@
 # Index
 
 
+- [2021-12-30](#2021-12-30)
+
+  - [1. A Preordered RNN Layer Boosts Neural Machine Translation in Low Resource Settings](#2021-12-30-1)
+  - [2. Processing M.A. Castrén's Materials: Multilingual Typed and Handwritten Manuscripts](#2021-12-30-2)
+  - [3. Frequency-Aware Contrastive Learning for Neural Machine Translation](#2021-12-30-3)
+  - [4. Fine-Tuning Transformers: Vocabulary Transfer](#2021-12-30-4)
+  
 - [2021-12-28](#2021-12-28)
 
   - [1. CUGE: A Chinese Language Understanding and Generation Evaluation Benchmark](#2021-12-28-1)
@@ -10,7 +17,7 @@
   - [3. Transformer Uncertainty Estimation with Hierarchical Stochastic Attention](#2021-12-28-3)
   - [4. Understanding RoBERTa's Mood: The Role of Contextual-Embeddings as User-Representations for Depression Prediction](#2021-12-28-4)
   - [5. HOPE: A Task-Oriented and Human-Centric Evaluation Framework Using Professional Post-Editing Towards More Effective MT Evaluation](#2021-12-28-5)
-  
+
 - [2021-12-24](#2021-12-24)
   - [1. Are E2E ASR models ready for an industrial usage?](#2021-12-24-1)
   - [2. Do Multi-Lingual Pre-trained Language Models Reveal Consistent Token Attributions in Different Languages?](#2021-12-24-2)
@@ -133,6 +140,90 @@
   - [2. Improvement in Machine Translation with Generative Adversarial Networks](#2021-12-1-2)
   - [3. Pureformer: Do We Even Need Attention?](#2021-12-1-3)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+
+
+# 2021-12-30
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2021-12-30-1">1. A Preordered RNN Layer Boosts Neural Machine Translation in Low Resource Settings
+</h2>
+
+Title: [A Preordered RNN Layer Boosts Neural Machine Translation in Low Resource Settings](https://arxiv.org/abs/2112.13960)
+
+Authors: [Mohaddeseh Bastan](https://arxiv.org/search/cs?searchtype=author&query=Bastan%2C+M), [Shahram Khadivi](https://arxiv.org/search/cs?searchtype=author&query=Khadivi%2C+S)
+
+> Neural Machine Translation (NMT) models are strong enough to convey semantic and syntactic information from the source language to the target language. However, these models are suffering from the need for a large amount of data to learn the parameters. As a result, for languages with scarce data, these models are at risk of underperforming. We propose to augment attention based neural network with reordering information to alleviate the lack of data. This augmentation improves the translation quality for both English to Persian and Persian to English by up to 6% BLEU absolute over the baseline models.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2112.13960](https://arxiv.org/abs/2112.13960) [cs.CL]** |
+|           | (or **[arXiv:2112.13960v1](https://arxiv.org/abs/2112.13960v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-30-2">2. Processing M.A. Castrén's Materials: Multilingual Typed and Handwritten Manuscripts
+</h2>
+
+Title: [Processing M.A. Castrén's Materials: Multilingual Typed and Handwritten Manuscripts](https://arxiv.org/abs/2112.14153)
+
+Authors: [Niko Partanen](https://arxiv.org/search/cs?searchtype=author&query=Partanen%2C+N), [Jack Rueter](https://arxiv.org/search/cs?searchtype=author&query=Rueter%2C+J), [Mika Hämäläinen](https://arxiv.org/search/cs?searchtype=author&query=Hämäläinen%2C+M), [Khalid Alnajjar](https://arxiv.org/search/cs?searchtype=author&query=Alnajjar%2C+K)
+
+> The study forms a technical report of various tasks that have been performed on the materials collected and published by Finnish ethnographer and linguist, Matthias Alexander Castrén (1813-1852). The Finno-Ugrian Society is publishing Castrén's manuscripts as new critical and digital editions, and at the same time different research groups have also paid attention to these materials. We discuss the workflows and technical infrastructure used, and consider how datasets that benefit different computational tasks could be created to further improve the usability of these materials, and also to aid the further processing of similar archived collections. We specifically focus on the parts of the collections that are processed in a way that improves their usability in more technical applications, complementing the earlier work on the cultural and linguistic aspects of these materials. Most of these datasets are openly available in Zenodo. The study points to specific areas where further research is needed, and provides benchmarks for text recognition tasks.
+
+| Comments: | Proceedings of the Workshop on Natural Language Processing for Digital Humanities |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2112.14153](https://arxiv.org/abs/2112.14153) [cs.CL]** |
+|           | (or **[arXiv:2112.14153v1](https://arxiv.org/abs/2112.14153v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-30-3">3. Frequency-Aware Contrastive Learning for Neural Machine Translation
+</h2>
+
+Title: [Frequency-Aware Contrastive Learning for Neural Machine Translation](https://arxiv.org/abs/2112.14484)
+
+Authors: [Tong Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+T), [Wei Ye](https://arxiv.org/search/cs?searchtype=author&query=Ye%2C+W), [Baosong Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+B), [Long Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+L), [Xingzhang Ren](https://arxiv.org/search/cs?searchtype=author&query=Ren%2C+X), [Dayiheng Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+D), [Jinan Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+J), [Shikun Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+S), [Haibo Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+H), [Wen Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+W)
+
+> Low-frequency word prediction remains a challenge in modern neural machine translation (NMT) systems. Recent adaptive training methods promote the output of infrequent words by emphasizing their weights in the overall training objectives. Despite the improved recall of low-frequency words, their prediction precision is unexpectedly hindered by the adaptive objectives. Inspired by the observation that low-frequency words form a more compact embedding space, we tackle this challenge from a representation learning perspective. Specifically, we propose a frequency-aware token-level contrastive learning method, in which the hidden state of each decoding step is pushed away from the counterparts of other target words, in a soft contrastive way based on the corresponding word frequencies. We conduct experiments on widely used NIST Chinese-English and WMT14 English-German translation tasks. Empirical results show that our proposed methods can not only significantly improve the translation quality but also enhance lexical diversity and optimize word representation space. Further investigation reveals that, comparing with related adaptive training strategies, the superiority of our method on low-frequency word prediction lies in the robustness of token-level recall across different frequencies without sacrificing precision.
+
+| Comments: | Published at AAAI 2022                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2112.14484](https://arxiv.org/abs/2112.14484) [cs.CL]** |
+|           | (or **[arXiv:2112.14484v1](https://arxiv.org/abs/2112.14484v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2021-12-30-4">4. Fine-Tuning Transformers: Vocabulary Transfer
+</h2>
+
+Title: [Fine-Tuning Transformers: Vocabulary Transfer](https://arxiv.org/abs/2112.14569)
+
+Authors: [Igor Samenko](https://arxiv.org/search/cs?searchtype=author&query=Samenko%2C+I), [Alexey Tikhonov](https://arxiv.org/search/cs?searchtype=author&query=Tikhonov%2C+A), [Borislav Kozlovskii](https://arxiv.org/search/cs?searchtype=author&query=Kozlovskii%2C+B), [Ivan P. Yamshchikov](https://arxiv.org/search/cs?searchtype=author&query=Yamshchikov%2C+I+P)
+
+> Transformers are responsible for the vast majority of recent advances in natural language processing. The majority of practical natural language processing applications of these models is typically enabled through transfer learning. This paper studies if corpus-specific tokenization used for fine-tuning improves the resulting performance of the model. Through a series of experiments, we demonstrate that such tokenization combined with the initialization and fine-tuning strategy for the vocabulary tokens speeds up the transfer and boosts the performance of the fine-tuned model. We call this aspect of transfer facilitation vocabulary transfer.
+
+| Subjects:    | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| ------------ | ------------------------------------------------------------ |
+| MSC classes: | 68T50, 91F20                                                 |
+| ACM classes: | I.2.7                                                        |
+| Cite as:     | **[arXiv:2112.14569](https://arxiv.org/abs/2112.14569) [cs.CL]** |
+|              | (or **[arXiv:2112.14569v1](https://arxiv.org/abs/2112.14569v1) [cs.CL]** for this version) |
+
+
 
 
 
