@@ -3,6 +3,12 @@
 # Index
 
 
+- [2022-01-04](#2022-01-04)
+
+  - [1. How do lexical semantics affect translation? An empirical study](#2022-01-04-1)
+  - [2. Which Student is Best? A Comprehensive Knowledge Distillation Exam for Task-Specific BERT Models](#2022-01-04-2)
+  - [3. Robust Natural Language Processing: Recent Advances, Challenges, and Future Directions](#2022-01-04-3)
+
 - [2022-01-03](#2022-01-03)
 
   - [1. ERNIE-ViLG: Unified Generative Pre-training for Bidirectional Vision-Language Generation](#2022-01-03-1)
@@ -13,6 +19,41 @@
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
 
 
+
+# 2022-01-04
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-01-04-1">1. ERNIE-ViLG: Unified Generative Pre-training for Bidirectional Vision-Language Generation
+</h2>
+
+Title: []()
+
+Authors:
+
+
+
+
+
+<h2 id="2022-01-04-1">1. ERNIE-ViLG: Unified Generative Pre-training for Bidirectional Vision-Language Generation
+</h2>
+
+Title: []()
+
+Authors:
+
+
+
+
+
+<h2 id="2022-01-04-1">1. ERNIE-ViLG: Unified Generative Pre-training for Bidirectional Vision-Language Generation
+</h2>
+
+Title: []()
+
+Authors:
 
 
 
