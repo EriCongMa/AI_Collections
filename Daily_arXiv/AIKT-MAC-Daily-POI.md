@@ -3,6 +3,11 @@
 # Index
 
 
+- [2022-01-06](#2022-01-06)
+
+  - [1. All You Need In Sign Language Production](#2022-01-06-1)
+  - [2. SMDT: Selective Memory-Augmented Neural Document Translation](#2022-01-06-2)
+
 - [2022-01-05](#2022-01-05)
 
   - [1. Interactive Attention AI to translate low light photos to captions for night scene understanding in women safety](#2022-01-05-1)
@@ -22,6 +27,49 @@
   - [4. ViNMT: Neural Machine Translation Tookit](#2022-01-03-4)
 
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2022-01-06
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-01-06-1">1. All You Need In Sign Language Production
+</h2>
+
+Title: [All You Need In Sign Language Production](https://arxiv.org/abs/2201.01609)
+
+Authors: [Razieh Rastgoo](https://arxiv.org/search/cs?searchtype=author&query=Rastgoo%2C+R), [Kourosh Kiani](https://arxiv.org/search/cs?searchtype=author&query=Kiani%2C+K), [Sergio Escalera](https://arxiv.org/search/cs?searchtype=author&query=Escalera%2C+S), [Vassilis Athitsos](https://arxiv.org/search/cs?searchtype=author&query=Athitsos%2C+V), [Mohammad Sabokrou](https://arxiv.org/search/cs?searchtype=author&query=Sabokrou%2C+M)
+
+> Sign Language is the dominant form of communication language used in the deaf and hearing-impaired community. To make an easy and mutual communication between the hearing-impaired and the hearing communities, building a robust system capable of translating the spoken language into sign language and vice versa is fundamental. To this end, sign language recognition and production are two necessary parts for making such a two-way system. Sign language recognition and production need to cope with some critical challenges. In this survey, we review recent advances in Sign Language Production (SLP) and related areas using deep learning. To have more realistic perspectives to sign language, we present an introduction to the Deaf culture, Deaf centers, psychological perspective of sign language, the main differences between spoken language and sign language. Furthermore, we present the fundamental components of a bi-directional sign language translation system, discussing the main challenges in this area. Also, the backbone architectures and methods in SLP are briefly introduced and the proposed taxonomy on SLP is presented. Finally, a general framework for SLP and performance evaluation, and also a discussion on the recent developments, advantages, and limitations in SLP, commenting on possible lines for future research are presented.
+
+| Comments: | arXiv admin note: substantial text overlap with [arXiv:2103.15910](https://arxiv.org/abs/2103.15910) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2201.01609](https://arxiv.org/abs/2201.01609) [cs.CV]** |
+|           | (or **[arXiv:2201.01609v1](https://arxiv.org/abs/2201.01609v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2022-01-06-2">2. SMDT: Selective Memory-Augmented Neural Document Translation
+</h2>
+
+Title: [SMDT: Selective Memory-Augmented Neural Document Translation](https://arxiv.org/abs/2201.01631)
+
+Authors: [Xu Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+X), [Jian Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+J), [Haoyang Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+H), [Shuming Ma](https://arxiv.org/search/cs?searchtype=author&query=Ma%2C+S), [Dongdong Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+D), [Jinlong Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+J), [Furu Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+F)
+
+> Existing document-level neural machine translation (NMT) models have sufficiently explored different context settings to provide guidance for target generation. However, little attention is paid to inaugurate more diverse context for abundant context information. In this paper, we propose a Selective Memory-augmented Neural Document Translation model to deal with documents containing large hypothesis space of the context. Specifically, we retrieve similar bilingual sentence pairs from the training corpus to augment global context and then extend the two-stream attention model with selective mechanism to capture local context and diverse global contexts. This unified approach allows our model to be trained elegantly on three publicly document-level machine translation datasets and significantly outperforms previous document-level NMT models.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2201.01631](https://arxiv.org/abs/2201.01631) [cs.CL]** |
+|           | (or **[arXiv:2201.01631v1](https://arxiv.org/abs/2201.01631v1) [cs.CL]** for this version) |
+
+
 
 
 
