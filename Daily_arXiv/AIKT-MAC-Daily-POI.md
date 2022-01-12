@@ -3,6 +3,12 @@
 # Index
 
 
+- [2022-01-12](#2022-01-12)
+
+  - [1. Uni-EDEN: Universal Encoder-Decoder Network by Multi-Granular Vision-Language Pre-training](#2022-01-12-1)
+  - [2. CVSS Corpus and Massively Multilingual Speech-to-Speech Translation](#2022-01-12-2)
+  - [3. Quantifying Robustness to Adversarial Word Substitutions](#2022-01-12-3)
+
 - [2022-01-11](#2022-01-11)
 
   - [1. Towards the Next 1000 Languages in Multilingual Machine Translation: Exploring the Synergy Between Supervised and Self-Supervised Learning](#2022-01-11-1)
@@ -40,6 +46,68 @@
   - [3. Materialized Knowledge Bases from Commonsense Transformers](#2022-01-03-3)
   - [4. ViNMT: Neural Machine Translation Tookit](#2022-01-03-4)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2022-01-12
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-01-12-1">1. Uni-EDEN: Universal Encoder-Decoder Network by Multi-Granular Vision-Language Pre-training
+</h2>
+
+Title:  [Uni-EDEN: Universal Encoder-Decoder Network by Multi-Granular Vision-Language Pre-training](https://arxiv.org/abs/2201.04026)
+
+Authors: [Yehao Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Y), [Jiahao Fan](https://arxiv.org/search/cs?searchtype=author&query=Fan%2C+J), [Yingwei Pan](https://arxiv.org/search/cs?searchtype=author&query=Pan%2C+Y), [Ting Yao](https://arxiv.org/search/cs?searchtype=author&query=Yao%2C+T), [Weiyao Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+W), [Tao Mei](https://arxiv.org/search/cs?searchtype=author&query=Mei%2C+T)
+
+> Vision-language pre-training has been an emerging and fast-developing research topic, which transfers multi-modal knowledge from rich-resource pre-training task to limited-resource downstream tasks. Unlike existing works that predominantly learn a single generic encoder, we present a pre-trainable Universal Encoder-DEcoder Network (Uni-EDEN) to facilitate both vision-language perception (e.g., visual question answering) and generation (e.g., image captioning). Uni-EDEN is a two-stream Transformer based structure, consisting of three modules: object and sentence encoders that separately learns the representations of each modality, and sentence decoder that enables both multi-modal reasoning and sentence generation via inter-modal interaction. Considering that the linguistic representations of each image can span different granularities in this hierarchy including, from simple to comprehensive, individual label, a phrase, and a natural sentence, we pre-train Uni-EDEN through multi-granular vision-language proxy tasks: Masked Object Classification (MOC), Masked Region Phrase Generation (MRPG), Image-Sentence Matching (ISM), and Masked Sentence Generation (MSG). In this way, Uni-EDEN is endowed with the power of both multi-modal representation extraction and language modeling. Extensive experiments demonstrate the compelling generalizability of Uni-EDEN by fine-tuning it to four vision-language perception and generation downstream tasks.
+
+| Comments: | ACM Transactions on Multimedia Computing, Communications, and Applications (TOMM) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL); Multimedia (cs.MM) |
+| Cite as:  | **[arXiv:2201.04026](https://arxiv.org/abs/2201.04026) [cs.CV]** |
+|           | (or **[arXiv:2201.04026v1](https://arxiv.org/abs/2201.04026v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2022-01-12-2">2. CVSS Corpus and Massively Multilingual Speech-to-Speech Translation
+</h2>
+
+Title:  [CVSS Corpus and Massively Multilingual Speech-to-Speech Translation](https://arxiv.org/abs/2201.03713)
+
+Authors: [Ye Jia](https://arxiv.org/search/cs?searchtype=author&query=Jia%2C+Y), [Michelle Tadmor Ramanovich](https://arxiv.org/search/cs?searchtype=author&query=Ramanovich%2C+M+T), [Quan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Q), [Heiga Zen](https://arxiv.org/search/cs?searchtype=author&query=Zen%2C+H)
+
+> We introduce CVSS, a massively multilingual-to-English speech-to-speech translation (S2ST) corpus, covering sentence-level parallel S2ST pairs from 21 languages into English. CVSS is derived from the Common Voice speech corpus and the CoVoST 2 speech-to-text translation (ST) corpus, by synthesizing the translation text from CoVoST 2 into speech using state-of-the-art TTS systems. Two versions of translation speeches are provided: 1) CVSS-C: All the translation speeches are in a single high-quality canonical voice; 2) CVSS-T: The translation speeches are in voices transferred from the corresponding source speeches. In addition, CVSS provides normalized translation text which matches the pronunciation in the translation speech. On each version of CVSS, we built baseline multilingual direct S2ST models and cascade S2ST models, verifying the effectiveness of the corpus. To build strong cascade S2ST baselines, we trained an ST model on CoVoST 2, which outperforms the previous state-of-the-art trained on the corpus without extra data by 5.8 BLEU. Nevertheless, the performance of the direct S2ST models approaches the strong cascade baselines when trained from scratch, and with only 0.1 or 0.7 BLEU difference on ASR transcribed translation when initialized from matching ST models.
+
+| Comments: | Submitted to LREC 2022                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2201.03713](https://arxiv.org/abs/2201.03713) [cs.CL]** |
+|           | (or **[arXiv:2201.03713v1](https://arxiv.org/abs/2201.03713v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-01-12-3">3. Quantifying Robustness to Adversarial Word Substitutions
+</h2>
+
+Title:  [Quantifying Robustness to Adversarial Word Substitutions](https://arxiv.org/abs/2201.03829)
+
+Authors: [Yuting Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+Y), [Pei Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+P), [FeiFei Ma](https://arxiv.org/search/cs?searchtype=author&query=Ma%2C+F), [Juan Cao](https://arxiv.org/search/cs?searchtype=author&query=Cao%2C+J), [Meishan Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+M), [Jian Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+J), [Jintao Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+J)
+
+> Deep-learning-based NLP models are found to be vulnerable to word substitution perturbations. Before they are widely adopted, the fundamental issues of robustness need to be addressed. Along this line, we propose a formal framework to evaluate word-level robustness. First, to study safe regions for a model, we introduce robustness radius which is the boundary where the model can resist any perturbation. As calculating the maximum robustness radius is computationally hard, we estimate its upper and lower bound. We repurpose attack methods as ways of seeking upper bound and design a pseudo-dynamic programming algorithm for a tighter upper bound. Then verification method is utilized for a lower bound. Further, for evaluating the robustness of regions outside a safe radius, we reexamine robustness from another view: quantification. A robustness metric with a rigorous statistical guarantee is introduced to measure the quantification of adversarial examples, which indicates the model's susceptibility to perturbations outside the safe radius. The metric helps us figure out why state-of-the-art models like BERT can be easily fooled by a few word substitutions, but generalize well in the presence of real-world noises.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2201.03829](https://arxiv.org/abs/2201.03829) [cs.CL]** |
+|           | (or **[arXiv:2201.03829v1](https://arxiv.org/abs/2201.03829v1) [cs.CL]** for this version) |
+
+
 
 
 
