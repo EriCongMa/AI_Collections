@@ -3,6 +3,11 @@
 # Index
 
 
+- [2022-01-13](#2022-01-13)
+
+  - [1. PromptBERT: Improving BERT Sentence Embeddings with Prompts](#2022-01-13-1)
+  - [2. How Does Data Corruption Affect Natural Language Understanding Models? A Study on GLUE datasets](#2022-01-13-2)
+
 - [2022-01-12](#2022-01-12)
 
   - [1. Uni-EDEN: Universal Encoder-Decoder Network by Multi-Granular Vision-Language Pre-training](#2022-01-12-1)
@@ -46,6 +51,48 @@
   - [3. Materialized Knowledge Bases from Commonsense Transformers](#2022-01-03-3)
   - [4. ViNMT: Neural Machine Translation Tookit](#2022-01-03-4)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2022-01-13
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-01-13-1">1. PromptBERT: Improving BERT Sentence Embeddings with Prompts
+</h2>
+
+Title: [PromptBERT: Improving BERT Sentence Embeddings with Prompts](https://arxiv.org/abs/2201.04337)
+
+Authors: [Ting Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+T), [Shaohan Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+S), [Zihan Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Z), [Deqing Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+D), [Fuzhen Zhuang](https://arxiv.org/search/cs?searchtype=author&query=Zhuang%2C+F), [Furu Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+F), [Haizhen Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+H), [Liangjie Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+L), [Qi Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Q)
+
+> The poor performance of the original BERT for sentence semantic similarity has been widely discussed in previous works. We find that unsatisfactory performance is mainly due to the static token embeddings biases and the ineffective BERT layers, rather than the high cosine similarity of the sentence embeddings. To this end, we propose a prompt based sentence embeddings method which can reduce token embeddings biases and make the original BERT layers more effective. By reformulating the sentence embeddings task as the fillin-the-blanks problem, our method significantly improves the performance of original BERT. We discuss two prompt representing methods and three prompt searching methods for prompt based sentence embeddings. Moreover, we propose a novel unsupervised training objective by the technology of template denoising, which substantially shortens the performance gap between the supervised and unsupervised setting. For experiments, we evaluate our method on both non fine-tuned and fine-tuned settings. Even a non fine-tuned method can outperform the fine-tuned methods like unsupervised ConSERT on STS tasks. Our fine-tuned method outperforms the state-of-the-art method SimCSE in both unsupervised and supervised settings. Compared to SimCSE, we achieve 2.29 and 2.58 points improvements on BERT and RoBERTa respectively under the unsupervised setting.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2201.04337](https://arxiv.org/abs/2201.04337) [cs.CL]** |
+|           | (or **[arXiv:2201.04337v1](https://arxiv.org/abs/2201.04337v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-01-13-2">2. How Does Data Corruption Affect Natural Language Understanding Models? A Study on GLUE datasets
+</h2>
+
+Title: [How Does Data Corruption Affect Natural Language Understanding Models? A Study on GLUE datasets](https://arxiv.org/abs/2201.04467)
+
+Authors: [Aarne Talman](https://arxiv.org/search/cs?searchtype=author&query=Talman%2C+A), [Marianna Apidianaki](https://arxiv.org/search/cs?searchtype=author&query=Apidianaki%2C+M), [Stergios Chatzikyriakidis](https://arxiv.org/search/cs?searchtype=author&query=Chatzikyriakidis%2C+S), [Jörg Tiedemann](https://arxiv.org/search/cs?searchtype=author&query=Tiedemann%2C+J)
+
+> A central question in natural language understanding (NLU) research is whether high performance demonstrates the models' strong reasoning capabilities. We present an extensive series of controlled experiments where pre-trained language models are exposed to data that have undergone specific corruption transformations. The transformations involve removing instances of specific word classes and often lead to non-sensical sentences. Our results show that performance remains high for most GLUE tasks when the models are fine-tuned or tested on corrupted data, suggesting that the models leverage other cues for prediction even in non-sensical contexts. Our proposed data transformations can be used as a diagnostic tool for assessing the extent to which a specific dataset constitutes a proper testbed for evaluating models' language understanding capabilities.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2201.04467](https://arxiv.org/abs/2201.04467) [cs.CL]** |
+|           | (or **[arXiv:2201.04467v1](https://arxiv.org/abs/2201.04467v1) [cs.CL]** for this version) |
+
+
 
 
 
