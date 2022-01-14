@@ -3,6 +3,10 @@
 # Index
 
 
+- [2022-01-14](#2022-01-14)
+
+  - [1. Towards Automated Error Analysis: Learning to Characterize Errors](#2022-01-14)
+
 - [2022-01-13](#2022-01-13)
 
   - [1. PromptBERT: Improving BERT Sentence Embeddings with Prompts](#2022-01-13-1)
@@ -51,6 +55,35 @@
   - [3. Materialized Knowledge Bases from Commonsense Transformers](#2022-01-03-3)
   - [4. ViNMT: Neural Machine Translation Tookit](#2022-01-03-4)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2022-01-14
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-01-14-1">1. Towards Automated Error Analysis: Learning to Characterize Errors
+</h2>
+
+Title: [Towards Automated Error Analysis: Learning to Characterize Errors](https://arxiv.org/abs/2201.05017)
+
+Authors: [Tong Gao](https://arxiv.org/search/cs?searchtype=author&query=Gao%2C+T), [Shivang Singh](https://arxiv.org/search/cs?searchtype=author&query=Singh%2C+S), [Raymond J. Mooney](https://arxiv.org/search/cs?searchtype=author&query=Mooney%2C+R+J)
+
+> Characterizing the patterns of errors that a system makes helps researchers focus future development on increasing its accuracy and robustness. We propose a novel form of "meta learning" that automatically learns interpretable rules that characterize the types of errors that a system makes, and demonstrate these rules' ability to help understand and improve two NLP systems. Our approach works by collecting error cases on validation data, extracting meta-features describing these samples, and finally learning rules that characterize errors using these features. We apply our approach to VilBERT, for Visual Question Answering, and RoBERTa, for Common Sense Question Answering. Our system learns interpretable rules that provide insights into systemic errors these systems make on the given tasks. Using these insights, we are also able to "close the loop" and modestly improve performance of these systems.
+
+| Comments: | 12 pages, 11 figures                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2201.05017](https://arxiv.org/abs/2201.05017) [cs.CL]** |
+|           | (or **[arXiv:2201.05017v1](https://arxiv.org/abs/2201.05017v1) [cs.CL]** for this version) |
+
+
+
+
+
+
 
 
 
