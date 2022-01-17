@@ -3,34 +3,38 @@
 # Index
 
 
+- [2022-01-17](#2022-01-17)
+
+  - [1. A Thousand Words Are Worth More Than a Picture: Natural Language-Centric Outside-Knowledge Visual Question Answering](#2022-01-17-1)
+  - [2. A Survey of Pretrained Language Models Based Text Generation](#2022-01-17-2)
+  - [3. CommonsenseQA 2.0: Exposing the Limits of AI through Gamification](#2022-01-17-3)
+  - [4. A Survey of Controllable Text Generation using Transformer-based Pre-trained Language Models](#2022-01-17-4)
+  - [5. Eliciting Knowledge from Pretrained Language Models for Prototypical Prompt Verbalizer](#2022-01-17-5)
+  - [6. Czech Grammar Error Correction with a Large and Diverse Corpus](#2022-01-17-6)
+  - [7. Multilingual Open Text 1.0: Public Domain News in 44 Languages](#2022-01-17-7)
+
 - [2022-01-14](#2022-01-14)
-
   - [1. Towards Automated Error Analysis: Learning to Characterize Errors](#2022-01-14)
-
 - [2022-01-13](#2022-01-13)
 
   - [1. PromptBERT: Improving BERT Sentence Embeddings with Prompts](#2022-01-13-1)
   - [2. How Does Data Corruption Affect Natural Language Understanding Models? A Study on GLUE datasets](#2022-01-13-2)
-
 - [2022-01-12](#2022-01-12)
 
   - [1. Uni-EDEN: Universal Encoder-Decoder Network by Multi-Granular Vision-Language Pre-training](#2022-01-12-1)
   - [2. CVSS Corpus and Massively Multilingual Speech-to-Speech Translation](#2022-01-12-2)
   - [3. Quantifying Robustness to Adversarial Word Substitutions](#2022-01-12-3)
-
 - [2022-01-11](#2022-01-11)
 
   - [1. Towards the Next 1000 Languages in Multilingual Machine Translation: Exploring the Synergy Between Supervised and Self-Supervised Learning](#2022-01-11-1)
   - [2. Black-Box Tuning for Language-Model-as-a-Service](#2022-01-11-2)
   - [3. SCROLLS: Standardized CompaRison Over Long Language Sequences](#2022-01-11-3)
-
 - [2022-01-10](#2022-01-10)
 
   - [1. Automatic Speech Recognition Datasets in Cantonese Language: A Survey and a New Dataset](#2022-01-10-1)
   - [2. Semantic-based Data Augmentation for Math Word Problems](#2022-01-10-2)
   - [3. Repairing Adversarial Texts through Perturbation](#2022-01-10-3)
   - [4. Code-Switching Text Augmentation for Multilingual Speech Processing](#2022-01-10-4)
-
 - [2022-01-07](#2022-01-07)
   - [1. Compact Bidirectional Transformer for Image Captioning](#2022-01-07-1)
   - [2. Self-Training Vision Language BERTs with a Unified Conditional Model](#2022-01-07-2)
@@ -55,6 +59,145 @@
   - [3. Materialized Knowledge Bases from Commonsense Transformers](#2022-01-03-3)
   - [4. ViNMT: Neural Machine Translation Tookit](#2022-01-03-4)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+
+
+# 2022-01-17
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-01-17-1">1. A Thousand Words Are Worth More Than a Picture: Natural Language-Centric Outside-Knowledge Visual Question Answering
+</h2>
+
+Title: [A Thousand Words Are Worth More Than a Picture: Natural Language-Centric Outside-Knowledge Visual Question Answering](https://arxiv.org/abs/2201.05299)
+
+Authors: [Feng Gao](https://arxiv.org/search/cs?searchtype=author&query=Gao%2C+F), [Qing Ping](https://arxiv.org/search/cs?searchtype=author&query=Ping%2C+Q), [Govind Thattai](https://arxiv.org/search/cs?searchtype=author&query=Thattai%2C+G), [Aishwarya Reganti](https://arxiv.org/search/cs?searchtype=author&query=Reganti%2C+A), [Ying Nian Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+Y+N), [Prem Natarajan](https://arxiv.org/search/cs?searchtype=author&query=Natarajan%2C+P)
+
+> Outside-knowledge visual question answering (OK-VQA) requires the agent to comprehend the image, make use of relevant knowledge from the entire web, and digest all the information to answer the question. Most previous works address the problem by first fusing the image and question in the multi-modal space, which is inflexible for further fusion with a vast amount of external knowledge. In this paper, we call for a paradigm shift for the OK-VQA task, which transforms the image into plain text, so that we can enable knowledge passage retrieval, and generative question-answering in the natural language space. This paradigm takes advantage of the sheer volume of gigantic knowledge bases and the richness of pre-trained language models. A Transform-Retrieve-Generate framework (TRiG) framework is proposed, which can be plug-and-played with alternative image-to-text models and textual knowledge bases. Experimental results show that our TRiG framework outperforms all state-of-the-art supervised methods by at least 11.1% absolute margin.
+
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL); Information Retrieval (cs.IR) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2201.05299](https://arxiv.org/abs/2201.05299) [cs.CV]** |
+|           | (or **[arXiv:2201.05299v1](https://arxiv.org/abs/2201.05299v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2022-01-17-2">2. A Survey of Pretrained Language Models Based Text Generation
+</h2>
+
+Title: [A Survey of Pretrained Language Models Based Text Generation](https://arxiv.org/abs/2201.05273)
+
+Authors: [Junyi Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+J), [Tianyi Tang](https://arxiv.org/search/cs?searchtype=author&query=Tang%2C+T), [Wayne Xin Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+W+X), [Jian-Yun Nie](https://arxiv.org/search/cs?searchtype=author&query=Nie%2C+J), [Ji-Rong Wen](https://arxiv.org/search/cs?searchtype=author&query=Wen%2C+J)
+
+> Text Generation aims to produce plausible and readable text in human language from input data. The resurgence of deep learning has greatly advanced this field by neural generation models, especially the paradigm of pretrained language models (PLMs). Grounding text generation on PLMs is seen as a promising direction in both academia and industry. In this survey, we present the recent advances achieved in the topic of PLMs for text generation. In detail, we begin with introducing three key points of applying PLMs to text generation: 1) how to encode the input data as representations preserving input semantics which can be fused into PLMs; 2) how to design a universal and performant architecture of PLMs served as generation models; and 3) how to optimize PLMs given the reference text and ensure the generated text satisfying special text properties. Then, we figure out several challenges and future directions within each key point. Next, we present a summary of various useful resources and typical text generation applications to work with PLMs. Finally, we conclude and summarize the contribution of this survey.
+
+| Comments: | 37 pages, 2 figures, 2 tables                                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2201.05273](https://arxiv.org/abs/2201.05273) [cs.CL]** |
+|           | (or **[arXiv:2201.05273v1](https://arxiv.org/abs/2201.05273v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-01-17-3">3. CommonsenseQA 2.0: Exposing the Limits of AI through Gamification
+</h2>
+
+Title: [CommonsenseQA 2.0: Exposing the Limits of AI through Gamification](https://arxiv.org/abs/2201.05320)
+
+Authors: [Alon Talmor](https://arxiv.org/search/cs?searchtype=author&query=Talmor%2C+A), [Ori Yoran](https://arxiv.org/search/cs?searchtype=author&query=Yoran%2C+O), [Ronan Le Bras](https://arxiv.org/search/cs?searchtype=author&query=Bras%2C+R+L), [Chandra Bhagavatula](https://arxiv.org/search/cs?searchtype=author&query=Bhagavatula%2C+C), [Yoav Goldberg](https://arxiv.org/search/cs?searchtype=author&query=Goldberg%2C+Y), [Yejin Choi](https://arxiv.org/search/cs?searchtype=author&query=Choi%2C+Y), [Jonathan Berant](https://arxiv.org/search/cs?searchtype=author&query=Berant%2C+J)
+
+> Constructing benchmarks that test the abilities of modern natural language understanding models is difficult - pre-trained language models exploit artifacts in benchmarks to achieve human parity, but still fail on adversarial examples and make errors that demonstrate a lack of common sense. In this work, we propose gamification as a framework for data construction. The goal of players in the game is to compose questions that mislead a rival AI while using specific phrases for extra points. The game environment leads to enhanced user engagement and simultaneously gives the game designer control over the collected data, allowing us to collect high-quality data at scale. Using our method we create CommonsenseQA 2.0, which includes 14,343 yes/no questions, and demonstrate its difficulty for models that are orders-of-magnitude larger than the AI used in the game itself. Our best baseline, the T5-based Unicorn with 11B parameters achieves an accuracy of 70.2%, substantially higher than GPT-3 (52.9%) in a few-shot inference setup. Both score well below human performance which is at 94.1%.
+
+| Comments: | Presented as Oral at NeurIPS 2021                            |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2201.05320](https://arxiv.org/abs/2201.05320) [cs.CL]** |
+|           | (or **[arXiv:2201.05320v1](https://arxiv.org/abs/2201.05320v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-01-17-4">4. A Survey of Controllable Text Generation using Transformer-based Pre-trained Language Models
+</h2>
+
+Title: [A Survey of Controllable Text Generation using Transformer-based Pre-trained Language Models](https://arxiv.org/abs/2201.05337)
+
+Authors: [Hanqing Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+H), [Haolin Song](https://arxiv.org/search/cs?searchtype=author&query=Song%2C+H), [Shaoyu Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+S), [Ming Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+M), [Dawei Song](https://arxiv.org/search/cs?searchtype=author&query=Song%2C+D)
+
+> Controllable Text Generation (CTG) is emerging area in the field of natural language generation (NLG). It is regarded as crucial for the development of advanced text generation technologies that are more natural and better meet the specific constraints in practical applications. In recent years, methods using large-scale pre-trained language models (PLMs), in particular the widely used transformer-based PLMs, have become a new paradigm of NLG, allowing generation of more diverse and fluent text. However, due to the lower level of interpretability of deep neural networks, the controllability of these methods need to be guaranteed. To this end, controllable text generation using transformer-based PLMs has become a rapidly growing yet challenging new research hotspot. A diverse range of approaches have emerged in the recent 3-4 years, targeting different CTG tasks which may require different types of controlled constraints. In this paper, we present a systematic critical review on the common tasks, main approaches and evaluation methods in this area. Finally, we discuss the challenges that the field is facing, and put forward various promising future directions. To the best of our knowledge, this is the first survey paper to summarize CTG techniques from the perspective of PLMs. We hope it can help researchers in related fields to quickly track the academic frontier, providing them with a landscape of the area and a roadmap for future research.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2201.05337](https://arxiv.org/abs/2201.05337) [cs.CL]** |
+|           | (or **[arXiv:2201.05337v1](https://arxiv.org/abs/2201.05337v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-01-17-5">5. Eliciting Knowledge from Pretrained Language Models for Prototypical Prompt Verbalizer
+</h2>
+
+Title: [Eliciting Knowledge from Pretrained Language Models for Prototypical Prompt Verbalizer](https://arxiv.org/abs/2201.05411)
+
+Authors: [Yinyi Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+Y), [Tong Mo](https://arxiv.org/search/cs?searchtype=author&query=Mo%2C+T), [Yongtao Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+Y), [Weiping Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+W), [Wen Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+W)
+
+> Recent advances on prompt-tuning cast few-shot classification tasks as a masked language modeling problem. By wrapping input into a template and using a verbalizer which constructs a mapping between label space and label word space, prompt-tuning can achieve excellent results in zero-shot and few-shot scenarios. However, typical prompt-tuning needs a manually designed verbalizer which requires domain expertise and human efforts. And the insufficient label space may introduce considerable bias into the results. In this paper, we focus on eliciting knowledge from pretrained language models and propose a prototypical prompt verbalizer for prompt-tuning. Labels are represented by prototypical embeddings in the feature space rather than by discrete words. The distances between the embedding at the masked position of input and prototypical embeddings are used as classification criterion. For zero-shot settings, knowledge is elicited from pretrained language models by a manually designed template to form initial prototypical embeddings. For few-shot settings, models are tuned to learn meaningful and interpretable prototypical embeddings. Our method optimizes models by contrastive learning. Extensive experimental results on several many-class text classification datasets with low-resource settings demonstrate the effectiveness of our approach compared with other verbalizer construction methods. Our implementation is available at [this https URL](https://github.com/Ydongd/prototypical-prompt-verbalizer).
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2201.05411](https://arxiv.org/abs/2201.05411) [cs.CL]** |
+|           | (or **[arXiv:2201.05411v1](https://arxiv.org/abs/2201.05411v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-01-17-6">6. Czech Grammar Error Correction with a Large and Diverse Corpus
+</h2>
+
+Title: [Czech Grammar Error Correction with a Large and Diverse Corpus](https://arxiv.org/abs/2201.05590)
+
+Authors: [Jakub Náplava](https://arxiv.org/search/cs?searchtype=author&query=Náplava%2C+J), [Milan Straka](https://arxiv.org/search/cs?searchtype=author&query=Straka%2C+M), [Jana Straková](https://arxiv.org/search/cs?searchtype=author&query=Straková%2C+J), [Alexandr Rosen](https://arxiv.org/search/cs?searchtype=author&query=Rosen%2C+A)
+
+> We introduce a large and diverse Czech corpus annotated for grammatical error correction (GEC) with the aim to contribute to the still scarce data resources in this domain for languages other than English. The Grammar Error Correction Corpus for Czech (GECCC) offers a variety of four domains, covering error distributions ranging from high error density essays written by non-native speakers, to website texts, where errors are expected to be much less common. We compare several Czech GEC systems, including several Transformer-based ones, setting a strong baseline to future research. Finally, we meta-evaluate common GEC metrics against human judgements on our data. We make the new Czech GEC corpus publicly available under the CC BY-SA 4.0 license at [this http URL](http://hdl.handle.net/11234/1-4639) .
+
+| Comments: | Accepted to TACL, MIT Press                                  |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2201.05590](https://arxiv.org/abs/2201.05590) [cs.CL]** |
+|           | (or **[arXiv:2201.05590v1](https://arxiv.org/abs/2201.05590v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-01-17-7">7. Multilingual Open Text 1.0: Public Domain News in 44 Languages
+</h2>
+
+Title: [Multilingual Open Text 1.0: Public Domain News in 44 Languages](https://arxiv.org/abs/2201.05609)
+
+Authors: [Chester Palen-Michel](https://arxiv.org/search/cs?searchtype=author&query=Palen-Michel%2C+C), [June Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%2C+J), [Constantine Lignos](https://arxiv.org/search/cs?searchtype=author&query=Lignos%2C+C)
+
+> We present a new multilingual corpus containing text in 44 languages, many of which have relatively few existing resources for natural language processing. The first release of the corpus contains over 2.7 million news articles and 1 million shorter passages published between 2001--2021, collected from Voice of America news websites. We describe our process for collecting, filtering, and processing the data. The source material is in the public domain, our collection is licensed using a creative commons license (CC BY 4.0), and all software used to create the corpus is released under the MIT License. The corpus will be regularly updated as additional documents are published.
+
+| Comments: | Submitted to LREC 2022                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2201.05609](https://arxiv.org/abs/2201.05609) [cs.CL]** |
+|           | (or **[arXiv:2201.05609v1](https://arxiv.org/abs/2201.05609v1) [cs.CL]** for this version) |
+
+
+
 
 
 
