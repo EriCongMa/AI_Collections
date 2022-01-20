@@ -3,8 +3,26 @@
 # Index
 
 
-- [2022-01-17](#2022-01-17)
+- [2022-01-20](#2022-01-20)
 
+  - [1. Improving Neural Machine Translation by Denoising Training](#2022-01-20-1)
+  - [2. Neural Language Models are Effective Plagiarists](#2022-01-20-2)
+  - [3. Interpreting Arabic Transformer Models](#2022-01-20-3)
+  - [4. CM3: A Causal Masked Multimodal Model of the Internet](#2022-01-20-4)
+
+- [2022-01-19](#2022-01-19)
+
+  - [1. Multi-Staged Cross-Lingual Acoustic Model Adaption for Robust Speech Recognition in Real-World Applications -- A Case Study on German Oral History Interviews](2022-01-19-1)
+  - [2. CLIP-TD: CLIP Targeted Distillation for Vision-Language Tasks](2022-01-19-2)
+  - [3. The Dark Side of the Language: Pre-trained Transformers in the DarkNet](2022-01-19-3)
+  - [4. Cost-Effective Training in Low-Resource Neural Machine Translation](2022-01-19-4)
+  - [5. WANLI: Worker and AI Collaboration for Natural Language Inference Dataset Creation](2022-01-19-5)
+  - [6. SNCSE: Contrastive Learning for Unsupervised Sentence Embedding with Soft Negative Samples](2022-01-19-6)
+  - [7. Memory-assisted prompt editing to improve GPT-3 after deployment](2022-01-19-7)
+  - [8. Syntax-based data augmentation for Hungarian-English machine translation](2022-01-19-8)
+  - [9. Instance-aware Prompt Learning for Language Understanding and Generation](2022-01-19-9)
+
+- [2022-01-17](#2022-01-17)
   - [1. A Thousand Words Are Worth More Than a Picture: Natural Language-Centric Outside-Knowledge Visual Question Answering](#2022-01-17-1)
   - [2. A Survey of Pretrained Language Models Based Text Generation](#2022-01-17-2)
   - [3. CommonsenseQA 2.0: Exposing the Limits of AI through Gamification](#2022-01-17-3)
@@ -12,7 +30,6 @@
   - [5. Eliciting Knowledge from Pretrained Language Models for Prototypical Prompt Verbalizer](#2022-01-17-5)
   - [6. Czech Grammar Error Correction with a Large and Diverse Corpus](#2022-01-17-6)
   - [7. Multilingual Open Text 1.0: Public Domain News in 44 Languages](#2022-01-17-7)
-
 - [2022-01-14](#2022-01-14)
   - [1. Towards Automated Error Analysis: Learning to Characterize Errors](#2022-01-14)
 - [2022-01-13](#2022-01-13)
@@ -59,6 +76,259 @@
   - [3. Materialized Knowledge Bases from Commonsense Transformers](#2022-01-03-3)
   - [4. ViNMT: Neural Machine Translation Tookit](#2022-01-03-4)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2022-01-20
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-01-20-1">1. Improving Neural Machine Translation by Denoising Training
+</h2>
+
+Title: [Improving Neural Machine Translation by Denoising Training](https://arxiv.org/abs/2201.07365)
+
+Authors: [Liang Ding](https://arxiv.org/search/cs?searchtype=author&query=Ding%2C+L), [Keqin Peng](https://arxiv.org/search/cs?searchtype=author&query=Peng%2C+K), [Dacheng Tao](https://arxiv.org/search/cs?searchtype=author&query=Tao%2C+D)
+
+> We present a simple and effective pretraining strategy {D}en{o}ising {T}raining DoT for neural machine translation. Specifically, we update the model parameters with source- and target-side denoising tasks at the early stage and then tune the model normally. Notably, our approach does not increase any parameters or training steps, requiring the parallel data merely. Experiments show that DoT consistently improves the neural machine translation performance across 12 bilingual and 16 multilingual directions (data size ranges from 80K to 20M). In addition, we show that DoT can complement existing data manipulation strategies, i.e. curriculum learning, knowledge distillation, data diversification, bidirectional training, and back-translation. Encouragingly, we found that DoT outperforms costly pretrained model mBART in high-resource settings. Analyses show DoT is a novel in-domain cross-lingual pretraining strategy and could offer further improvements with task-relevant self-supervisions.
+
+| Comments: | arXiv admin note: text overlap with [arXiv:2109.07780](https://arxiv.org/abs/2109.07780) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2201.07365](https://arxiv.org/abs/2201.07365) [cs.CL]** |
+|           | (or **[arXiv:2201.07365v1](https://arxiv.org/abs/2201.07365v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-01-20-2">2. Neural Language Models are Effective Plagiarists
+</h2>
+
+Title: [Neural Language Models are Effective Plagiarists](https://arxiv.org/abs/2201.07406)
+
+Authors: [Stella Biderman](https://arxiv.org/search/cs?searchtype=author&query=Biderman%2C+S), [Edward Raff](https://arxiv.org/search/cs?searchtype=author&query=Raff%2C+E)
+
+> As artificial intelligence (AI) technologies become increasingly powerful and prominent in society, their misuse is a growing concern. In educational settings, AI technologies could be used by students to cheat on assignments and exams. In this paper we explore whether transformers can be used to solve introductory level programming assignments while bypassing commonly used AI tools to detect plagiarism. We find that a student using GPT-J [Wang and Komatsuzaki, 2021] can complete introductory level programming assignments without triggering suspicion from MOSS [Aiken, 2000], a widely used plagiarism detection tool. This holds despite the fact that GPT-J was not trained on the problems in question and is not provided with any examples to work from. We further find that the code written by GPT-J is diverse in structure, lacking any particular tells that future plagiarism detection techniques may use to try to identify algorithmically generated code. We conclude with a discussion of the ethical and educational implications of large language models and directions for future research.
+
+| Comments: | 6 pages of main text, 2 pages of references, 86 pages of appendices |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2201.07406](https://arxiv.org/abs/2201.07406) [cs.CL]** |
+|           | (or **[arXiv:2201.07406v1](https://arxiv.org/abs/2201.07406v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-01-20-3">3. Interpreting Arabic Transformer Models
+</h2>
+
+Title: [Interpreting Arabic Transformer Models](https://arxiv.org/abs/2201.07434)
+
+Authors: [Ahmed Abdelali](https://arxiv.org/search/cs?searchtype=author&query=Abdelali%2C+A), [Nadir Durrani](https://arxiv.org/search/cs?searchtype=author&query=Durrani%2C+N), [Fahim Dalvi](https://arxiv.org/search/cs?searchtype=author&query=Dalvi%2C+F), [Hassan Sajjad](https://arxiv.org/search/cs?searchtype=author&query=Sajjad%2C+H)
+
+> Arabic is a Semitic language which is widely spoken with many dialects. Given the success of pre-trained language models, many transformer models trained on Arabic and its dialects have surfaced. While these models have been compared with respect to downstream NLP tasks, no evaluation has been carried out to directly compare the internal representations. We probe how linguistic information is encoded in Arabic pretrained models, trained on different varieties of Arabic language. We perform a layer and neuron analysis on the models using three intrinsic tasks: two morphological tagging tasks based on MSA (modern standard Arabic) and dialectal POS-tagging and a dialectal identification task. Our analysis enlightens interesting findings such as: i) word morphology is learned at the lower and middle layers ii) dialectal identification necessitate more knowledge and hence preserved even in the final layers, iii) despite a large overlap in their vocabulary, the MSA-based models fail to capture the nuances of Arabic dialects, iv) we found that neurons in embedding layers are polysemous in nature, while the neurons in middle layers are exclusive to specific properties.
+
+| Comments: | 11 pages, 6 figures, 4 tables                                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2201.07434](https://arxiv.org/abs/2201.07434) [cs.CL]** |
+|           | (or **[arXiv:2201.07434v1](https://arxiv.org/abs/2201.07434v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-01-20-4">4. CM3: A Causal Masked Multimodal Model of the Internet
+</h2>
+
+Title: [CM3: A Causal Masked Multimodal Model of the Internet](https://arxiv.org/abs/2201.07520)
+
+Authors: [Armen Aghajanyan](https://arxiv.org/search/cs?searchtype=author&query=Aghajanyan%2C+A), [Bernie Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+B), [Candace Ross](https://arxiv.org/search/cs?searchtype=author&query=Ross%2C+C), [Vladimir Karpukhin](https://arxiv.org/search/cs?searchtype=author&query=Karpukhin%2C+V), [Hu Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+H), [Naman Goyal](https://arxiv.org/search/cs?searchtype=author&query=Goyal%2C+N), [Dmytro Okhonko](https://arxiv.org/search/cs?searchtype=author&query=Okhonko%2C+D), [Mandar Joshi](https://arxiv.org/search/cs?searchtype=author&query=Joshi%2C+M), [Gargi Ghosh](https://arxiv.org/search/cs?searchtype=author&query=Ghosh%2C+G), [Mike Lewis](https://arxiv.org/search/cs?searchtype=author&query=Lewis%2C+M), [Luke Zettlemoyer](https://arxiv.org/search/cs?searchtype=author&query=Zettlemoyer%2C+L)
+
+> We introduce CM3, a family of causally masked generative models trained over a large corpus of structured multi-modal documents that can contain both text and image tokens. Our new causally masked approach generates tokens left to right while also masking out a small number of long token spans that are generated at the end of the string, instead of their original positions. The casual masking object provides a type of hybrid of the more common causal and masked language models, by enabling full generative modeling while also providing bidirectional context when generating the masked spans. We train causally masked language-image models on large-scale web and Wikipedia articles, where each document contains all of the text, hypertext markup, hyperlinks, and image tokens (from a VQVAE-GAN), provided in the order they appear in the original HTML source (before masking). The resulting CM3 models can generate rich structured, multi-modal outputs while conditioning on arbitrary masked document contexts, and thereby implicitly learn a wide range of text, image, and cross modal tasks. They can be prompted to recover, in a zero-shot fashion, the functionality of models such as DALL-E, GENRE, and HTLM. We set the new state-of-the-art in zero-shot summarization, entity linking, and entity disambiguation while maintaining competitive performance in the fine-tuning setting. We can generate images unconditionally, conditioned on text (like DALL-E) and do captioning all in a zero-shot setting with a single model.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2201.07520](https://arxiv.org/abs/2201.07520) [cs.CL]** |
+|           | (or **[arXiv:2201.07520v1](https://arxiv.org/abs/2201.07520v1) [cs.CL]** for this version) |
+
+
+
+
+
+# 2022-01-19
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-01-19-1">1. Multi-Staged Cross-Lingual Acoustic Model Adaption for Robust Speech Recognition in Real-World Applications -- A Case Study on German Oral History Interviews
+</h2>
+
+Title: [Multi-Staged Cross-Lingual Acoustic Model Adaption for Robust Speech Recognition in Real-World Applications -- A Case Study on German Oral History Interviews](https://arxiv.org/abs/2005.12562)
+
+Authors: [Michael Gref](https://arxiv.org/search/eess?searchtype=author&query=Gref%2C+M), [Oliver Walter](https://arxiv.org/search/eess?searchtype=author&query=Walter%2C+O), [Christoph Schmidt](https://arxiv.org/search/eess?searchtype=author&query=Schmidt%2C+C), [Sven Behnke](https://arxiv.org/search/eess?searchtype=author&query=Behnke%2C+S), [Joachim Köhler](https://arxiv.org/search/eess?searchtype=author&query=Köhler%2C+J)
+
+> While recent automatic speech recognition systems achieve remarkable performance when large amounts of adequate, high quality annotated speech data is used for training, the same systems often only achieve an unsatisfactory result for tasks in domains that greatly deviate from the conditions represented by the training data. For many real-world applications, there is a lack of sufficient data that can be directly used for training robust speech recognition systems. To address this issue, we propose and investigate an approach that performs a robust acoustic model adaption to a target domain in a cross-lingual, multi-staged manner. Our approach enables the exploitation of large-scale training data from other domains in both the same and other languages. We evaluate our approach using the challenging task of German oral history interviews, where we achieve a relative reduction of the word error rate by more than 30% compared to a model trained from scratch only on the target domain, and 6-7% relative compared to a model trained robustly on 1000 hours of same-language out-of-domain training data.
+
+| Comments:          | Published version of the paper can be accessed via [this https URL](https://www.aclweb.org/anthology/2020.lrec-1.780) |
+| ------------------ | ------------------------------------------------------------ |
+| Subjects:          | **Audio and Speech Processing (eess.AS)**; Computation and Language (cs.CL) |
+| Journal reference: | 12th International Conference on Language Resources and Evaluation (LREC 2020), pages 6354-6362 |
+| Cite as:           | **[arXiv:2005.12562](https://arxiv.org/abs/2005.12562) [eess.AS]** |
+|                    | (or **[arXiv:2005.12562v1](https://arxiv.org/abs/2005.12562v1) [eess.AS]** for this version) |
+
+
+
+
+
+<h2 id="2022-01-19-2">2. CLIP-TD: CLIP Targeted Distillation for Vision-Language Tasks
+</h2>
+
+Title: [CLIP-TD: CLIP Targeted Distillation for Vision-Language Tasks](https://arxiv.org/abs/2201.05729)
+
+Authors: [Zhecan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Z), [Noel Codella](https://arxiv.org/search/cs?searchtype=author&query=Codella%2C+N), [Yen-Chun Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+Y), [Luowei Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+L), [Jianwei Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+J), [Xiyang Dai](https://arxiv.org/search/cs?searchtype=author&query=Dai%2C+X), [Bin Xiao](https://arxiv.org/search/cs?searchtype=author&query=Xiao%2C+B), [Haoxuan You](https://arxiv.org/search/cs?searchtype=author&query=You%2C+H), [Shih-Fu Chang](https://arxiv.org/search/cs?searchtype=author&query=Chang%2C+S), [Lu Yuan](https://arxiv.org/search/cs?searchtype=author&query=Yuan%2C+L)
+
+> Contrastive language-image pretraining (CLIP) links vision and language modalities into a unified embedding space, yielding the tremendous potential for vision-language (VL) tasks. While early concurrent works have begun to study this potential on a subset of tasks, important questions remain: 1) What is the benefit of CLIP on unstudied VL tasks? 2) Does CLIP provide benefit in low-shot or domain-shifted scenarios? 3) Can CLIP improve existing approaches without impacting inference or pretraining complexity? In this work, we seek to answer these questions through two key contributions. First, we introduce an evaluation protocol that includes Visual Commonsense Reasoning (VCR), Visual Entailment (SNLI-VE), and Visual Question Answering (VQA), across a variety of data availability constraints and conditions of domain shift. Second, we propose an approach, named CLIP Targeted Distillation (CLIP-TD), to intelligently distill knowledge from CLIP into existing architectures using a dynamically weighted objective applied to adaptively selected tokens per instance. Experiments demonstrate that our proposed CLIP-TD leads to exceptional gains in the low-shot (up to 51.9%) and domain-shifted (up to 71.3%) conditions of VCR, while simultaneously improving performance under standard fully-supervised conditions (up to 2%), achieving state-of-art performance on VCR compared to other single models that are pretrained with image-text data only. On SNLI-VE, CLIP-TD produces significant gains in low-shot conditions (up to 6.6%) as well as fully supervised (up to 3%). On VQA, CLIP-TD provides improvement in low-shot (up to 9%), and in fully-supervised (up to 1.3%). Finally, CLIP-TD outperforms concurrent works utilizing CLIP for finetuning, as well as baseline naive distillation approaches. Code will be made available.
+
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL); Machine Learning (cs.LG); Multimedia (cs.MM) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2201.05729](https://arxiv.org/abs/2201.05729) [cs.CV]** |
+|           | (or **[arXiv:2201.05729v1](https://arxiv.org/abs/2201.05729v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2022-01-19-3">3. The Dark Side of the Language: Pre-trained Transformers in the DarkNet
+</h2>
+
+Title: [The Dark Side of the Language: Pre-trained Transformers in the DarkNet](https://arxiv.org/abs/2201.05613)
+
+Authors: [Leonardo Ranaldi](https://arxiv.org/search/cs?searchtype=author&query=Ranaldi%2C+L), [Aria Nourbakhsh](https://arxiv.org/search/cs?searchtype=author&query=Nourbakhsh%2C+A), [Arianna Patrizi](https://arxiv.org/search/cs?searchtype=author&query=Patrizi%2C+A), [Elena Sofia Ruzzetti](https://arxiv.org/search/cs?searchtype=author&query=Ruzzetti%2C+E+S), [Dario Onorati](https://arxiv.org/search/cs?searchtype=author&query=Onorati%2C+D), [Francesca Fallucchi Fabio Massimo Zanzotto](https://arxiv.org/search/cs?searchtype=author&query=Zanzotto%2C+F+F+F+M)
+
+> Pre-trained Transformers are challenging human performances in many natural language processing tasks. The gigantic datasets used for pre-training seem to be the key for their success on existing tasks. In this paper, we explore how a range of pre-trained natural language understanding models perform on truly novel and unexplored data, provided by classification tasks over a DarkNet corpus. Surprisingly, results show that syntactic and lexical neural networks largely outperform pre-trained Transformers. This seems to suggest that pre-trained Transformers have serious difficulties in adapting to radically novel texts.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2201.05613](https://arxiv.org/abs/2201.05613) [cs.CL]** |
+|           | (or **[arXiv:2201.05613v1](https://arxiv.org/abs/2201.05613v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-01-19-4">4. Cost-Effective Training in Low-Resource Neural Machine Translation
+</h2>
+
+Title: [Cost-Effective Training in Low-Resource Neural Machine Translation](https://arxiv.org/abs/2201.05700)
+
+Authors: [Sai Koneru](https://arxiv.org/search/cs?searchtype=author&query=Koneru%2C+S), [Danni Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+D), [Jan Niehues](https://arxiv.org/search/cs?searchtype=author&query=Niehues%2C+J)
+
+> While Active Learning (AL) techniques are explored in Neural Machine Translation (NMT), only a few works focus on tackling low annotation budgets where a limited number of sentences can get translated. Such situations are especially challenging and can occur for endangered languages with few human annotators or having cost constraints to label large amounts of data. Although AL is shown to be helpful with large budgets, it is not enough to build high-quality translation systems in these low-resource conditions. In this work, we propose a cost-effective training procedure to increase the performance of NMT models utilizing a small number of annotated sentences and dictionary entries. Our method leverages monolingual data with self-supervised objectives and a small-scale, inexpensive dictionary for additional supervision to initialize the NMT model before applying AL. We show that improving the model using a combination of these knowledge sources is essential to exploit AL strategies and increase gains in low-resource conditions. We also present a novel AL strategy inspired by domain adaptation for NMT and show that it is effective for low budgets. We propose a new hybrid data-driven approach, which samples sentences that are diverse from the labelled data and also most similar to unlabelled data. Finally, we show that initializing the NMT model and further using our AL strategy can achieve gains of up to 13 BLEU compared to conventional AL methods.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2201.05700](https://arxiv.org/abs/2201.05700) [cs.CL]** |
+|           | (or **[arXiv:2201.05700v1](https://arxiv.org/abs/2201.05700v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-01-19-5">5. WANLI: Worker and AI Collaboration for Natural Language Inference Dataset Creation
+</h2>
+
+Title: [WANLI: Worker and AI Collaboration for Natural Language Inference Dataset Creation](https://arxiv.org/abs/2201.05955)
+
+Authors: [Alisa Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+A), [Swabha Swayamdipta](https://arxiv.org/search/cs?searchtype=author&query=Swayamdipta%2C+S), [Noah A. Smith](https://arxiv.org/search/cs?searchtype=author&query=Smith%2C+N+A), [Yejin Choi](https://arxiv.org/search/cs?searchtype=author&query=Choi%2C+Y)
+
+> A recurring challenge of crowdsourcing NLP datasets at scale is that human writers often rely on repetitive patterns when crafting examples, leading to a lack of linguistic diversity. We introduce a novel paradigm for dataset creation based on human and machine collaboration, which brings together the generative strength of language models and the evaluative strength of humans. Starting with an existing dataset, MultiNLI, our approach uses dataset cartography to automatically identify examples that demonstrate challenging reasoning patterns, and instructs GPT-3 to compose new examples with similar patterns. Machine generated examples are then automatically filtered, and finally revised and labeled by human crowdworkers to ensure quality. The resulting dataset, WANLI, consists of 108,357 natural language inference (NLI) examples that present unique empirical strengths over existing NLI datasets. Remarkably, training a model on WANLI instead of MNLI (which is 4 times larger) improves performance on seven out-of-domain test sets we consider, including by 11% on HANS and 9% on Adversarial NLI. Moreover, combining MNLI with WANLI is more effective than combining with other augmentation sets that have been introduced. Our results demonstrate the potential of natural language generation techniques to curate NLP datasets of enhanced quality and diversity.
+
+| Comments: | preprint                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2201.05955](https://arxiv.org/abs/2201.05955) [cs.CL]** |
+|           | (or **[arXiv:2201.05955v1](https://arxiv.org/abs/2201.05955v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-01-19-6">6. SNCSE: Contrastive Learning for Unsupervised Sentence Embedding with Soft Negative Samples
+</h2>
+
+Title: [SNCSE: Contrastive Learning for Unsupervised Sentence Embedding with Soft Negative Samples](https://arxiv.org/abs/2201.05979)
+
+Authors: [Hao Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+H), [Yangguang Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Y), [Zhen Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+Z), [Yong Dou](https://arxiv.org/search/cs?searchtype=author&query=Dou%2C+Y), [Lingpeng Kong](https://arxiv.org/search/cs?searchtype=author&query=Kong%2C+L), [Jing Shao](https://arxiv.org/search/cs?searchtype=author&query=Shao%2C+J)
+
+> Unsupervised sentence embedding aims to obtain the most appropriate embedding for a sentence to reflect its semantic. Contrastive learning has been attracting developing attention. For a sentence, current models utilize diverse data augmentation methods to generate positive samples, while consider other independent sentences as negative samples. Then they adopt InfoNCE loss to pull the embeddings of positive pairs gathered, and push those of negative pairs scattered. Although these models have made great progress on sentence embedding, we argue that they may suffer from feature suppression. The models fail to distinguish and decouple textual similarity and semantic similarity. And they may overestimate the semantic similarity of any pairs with similar textual regardless of the actual semantic difference between them. This is because positive pairs in unsupervised contrastive learning come with similar and even the same textual through data augmentation. To alleviate feature suppression, we propose contrastive learning for unsupervised sentence embedding with soft negative samples (SNCSE). Soft negative samples share highly similar textual but have surely and apparently different semantic with the original samples. Specifically, we take the negation of original sentences as soft negative samples, and propose Bidirectional Margin Loss (BML) to introduce them into traditional contrastive learning framework, which merely involves positive and negative samples. Our experimental results show that SNCSE can obtain state-of-the-art performance on semantic textual similarity (STS) task with average Spearman's correlation coefficient of 78.97% on BERTbase and 79.23% on RoBERTabase. Besides, we adopt rank-based error analysis method to detect the weakness of SNCSE for future study.
+
+| Comments: | 7 pages, 4 figures                                           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2201.05979](https://arxiv.org/abs/2201.05979) [cs.CL]** |
+|           | (or **[arXiv:2201.05979v2](https://arxiv.org/abs/2201.05979v2) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-01-19-7">7. Memory-assisted prompt editing to improve GPT-3 after deployment
+</h2>
+
+Title: [Memory-assisted prompt editing to improve GPT-3 after deployment](https://arxiv.org/abs/2201.06009)
+
+Authors: [Aman Madaan](https://arxiv.org/search/cs?searchtype=author&query=Madaan%2C+A), [Niket Tandon](https://arxiv.org/search/cs?searchtype=author&query=Tandon%2C+N), [Peter Clark](https://arxiv.org/search/cs?searchtype=author&query=Clark%2C+P), [Yiming Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+Y)
+
+> Large LMs such as GPT-3, while powerful, are not immune to mistakes, but are prohibitively costly to retrain. One failure mode is misinterpreting a user's instruction (e.g., GPT-3 interpreting "What word is similar to good?" to mean a homonym, while the user intended a synonym). Our goal is to allow users to correct such errors directly through interaction -- without retraining. Our approach pairs GPT-3 with a growing memory of cases where the model misunderstood the user's intent and was provided with feedback, clarifying the instruction. Given a new query, our memory-enhanced GPT-3 uses feedback from similar, prior queries to enrich the prompt. Through simple proof-of-concept experiments, we show how a (simulated) user can interactively teach a deployed GPT-3, doubling its accuracy on basic lexical tasks (e.g., generate a synonym) where users query in different, novel (often misunderstood) ways. In such scenarios, memory helps avoid repeating similar past mistakes. Our simple idea is a first step towards strengthening deployed models, potentially broadening their utility. All the code and data is available at [this https URL](https://github.com/madaan/memprompt).
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2201.06009](https://arxiv.org/abs/2201.06009) [cs.CL]** |
+|           | (or **[arXiv:2201.06009v1](https://arxiv.org/abs/2201.06009v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-01-19-8">8. Syntax-based data augmentation for Hungarian-English machine translation
+</h2>
+
+Title: [Syntax-based data augmentation for Hungarian-English machine translation](https://arxiv.org/abs/2201.06876)
+
+Authors: [Attila Nagy](https://arxiv.org/search/cs?searchtype=author&query=Nagy%2C+A), [Patrick Nanys](https://arxiv.org/search/cs?searchtype=author&query=Nanys%2C+P), [Balázs Frey Konrád](https://arxiv.org/search/cs?searchtype=author&query=Konrád%2C+B+F), [Bence Bial](https://arxiv.org/search/cs?searchtype=author&query=Bial%2C+B), [Judit Ács](https://arxiv.org/search/cs?searchtype=author&query=Ács%2C+J)
+
+> We train Transformer-based neural machine translation models for Hungarian-English and English-Hungarian using the Hunglish2 corpus. Our best models achieve a BLEU score of 40.0 on HungarianEnglish and 33.4 on English-Hungarian. Furthermore, we present results on an ongoing work about syntax-based augmentation for neural machine translation. Both our code and models are publicly available.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2201.06876](https://arxiv.org/abs/2201.06876) [cs.CL]** |
+|           | (or **[arXiv:2201.06876v1](https://arxiv.org/abs/2201.06876v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-01-19-9">9. Instance-aware Prompt Learning for Language Understanding and Generation
+</h2>
+
+Title: [Instance-aware Prompt Learning for Language Understanding and Generation](https://arxiv.org/abs/2201.07126)
+
+Authors: [Feihu Jin](https://arxiv.org/search/cs?searchtype=author&query=Jin%2C+F), [Jinliang Lu](https://arxiv.org/search/cs?searchtype=author&query=Lu%2C+J), [Jiajun Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+J), [Chengqing Zong](https://arxiv.org/search/cs?searchtype=author&query=Zong%2C+C)
+
+> Recently, prompt learning has become a new paradigm to utilize pre-trained language models (PLMs) and achieves promising results in downstream tasks with a negligible increase of parameters. The current usage of discrete and continuous prompts assumes that the prompt is fixed for a specific task and all samples in the task share the same prompt. However, a task may contain quite diverse samples in which some are easy and others are difficult, and diverse prompts are desirable. In this paper, we propose an instance-aware prompt learning method that learns a different prompt for each instance. Specifically, we suppose that each learnable prompt token has a different contribution to different instances, and we learn the contribution by calculating the relevance score between an instance and each prompt token. The contribution weighted prompt would be instance aware. We apply our method to both unidirectional and bidirectional PLMs on both language understanding and generation tasks. Extensive experiments demonstrate that our method obtains considerable improvements compared to strong baselines. Especially, our method achieves the state-of-the-art on the SuperGLUE few-shot learning benchmark.
+
+| Comments: | 7 pages, 5 figures                                           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2201.07126](https://arxiv.org/abs/2201.07126) [cs.CL]** |
+|           | (or **[arXiv:2201.07126v1](https://arxiv.org/abs/2201.07126v1) [cs.CL]** for this version) |
+
 
 
 
