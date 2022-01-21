@@ -3,6 +3,12 @@
 # Index
 
 
+- [2022-01-21](#2022-01-21)
+
+  - [1. Construction of a Quality Estimation Dataset for Automatic Evaluation of Japanese Grammatical Error Correction](#2022-01-21-1)
+  - [2. VISA: An Ambiguous Subtitles Dataset for Visual Scene-Aware Machine Translation](#2022-01-21-2)
+  - [3. Linguistically-driven Multi-task Pre-training for Low-resource Neural Machine Translation](#2022-01-21-3)
+
 - [2022-01-20](#2022-01-20)
 
   - [1. Improving Neural Machine Translation by Denoising Training](#2022-01-20-1)
@@ -76,6 +82,71 @@
   - [3. Materialized Knowledge Bases from Commonsense Transformers](#2022-01-03-3)
   - [4. ViNMT: Neural Machine Translation Tookit](#2022-01-03-4)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2022-01-21
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-01-21-1">1. Construction of a Quality Estimation Dataset for Automatic Evaluation of Japanese Grammatical Error Correction
+</h2>
+
+Title: [Construction of a Quality Estimation Dataset for Automatic Evaluation of Japanese Grammatical Error Correction](https://arxiv.org/abs/2201.08038)
+
+Authors: [Daisuke Suzuki](https://arxiv.org/search/cs?searchtype=author&query=Suzuki%2C+D), [Yujin Takahashi](https://arxiv.org/search/cs?searchtype=author&query=Takahashi%2C+Y), [Ikumi Yamashita](https://arxiv.org/search/cs?searchtype=author&query=Yamashita%2C+I), [Taichi Aida](https://arxiv.org/search/cs?searchtype=author&query=Aida%2C+T), [Tosho Hirasawa](https://arxiv.org/search/cs?searchtype=author&query=Hirasawa%2C+T), [Michitaka Nakatsuji](https://arxiv.org/search/cs?searchtype=author&query=Nakatsuji%2C+M), [Masato Mita](https://arxiv.org/search/cs?searchtype=author&query=Mita%2C+M), [Mamoru Komachi](https://arxiv.org/search/cs?searchtype=author&query=Komachi%2C+M)
+
+> In grammatical error correction (GEC), automatic evaluation is an important factor for research and development of GEC systems. Previous studies on automatic evaluation have demonstrated that quality estimation models built from datasets with manual evaluation can achieve high performance in automatic evaluation of English GEC without using reference sentences.. However, quality estimation models have not yet been studied in Japanese, because there are no datasets for constructing quality estimation models. Therefore, in this study, we created a quality estimation dataset with manual evaluation to build an automatic evaluation model for Japanese GEC. Moreover, we conducted a meta-evaluation to verify the dataset's usefulness in building the Japanese quality estimation model.
+
+| Comments: | 8 pages (6pages + references)                                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2201.08038](https://arxiv.org/abs/2201.08038) [cs.CL]** |
+|           | (or **[arXiv:2201.08038v1](https://arxiv.org/abs/2201.08038v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-01-21-2">2. VISA: An Ambiguous Subtitles Dataset for Visual Scene-Aware Machine Translation
+</h2>
+
+Title: [VISA: An Ambiguous Subtitles Dataset for Visual Scene-Aware Machine Translation](https://arxiv.org/abs/2201.08054)
+
+Authors: [Yihang Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Y), [Shuichiro Shimizu](https://arxiv.org/search/cs?searchtype=author&query=Shimizu%2C+S), [Weiqi Gu](https://arxiv.org/search/cs?searchtype=author&query=Gu%2C+W), [Chenhui Chu](https://arxiv.org/search/cs?searchtype=author&query=Chu%2C+C), [Sadao Kurohashi](https://arxiv.org/search/cs?searchtype=author&query=Kurohashi%2C+S)
+
+> Existing multimodal machine translation (MMT) datasets consist of images and video captions or general subtitles, which rarely contain linguistic ambiguity, making visual information not so effective to generate appropriate translations. We introduce VISA, a new dataset that consists of 40k Japanese-English parallel sentence pairs and corresponding video clips with the following key features: (1) the parallel sentences are subtitles from movies and TV episodes; (2) the source subtitles are ambiguous, which means they have multiple possible translations with different meanings; (3) we divide the dataset into Polysemy and Omission according to the cause of ambiguity. We show that VISA is challenging for the latest MMT system, and we hope that the dataset can facilitate MMT research.
+
+| Comments: | 9 pages, 6 figures, submitted to LREC2022                    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2201.08054](https://arxiv.org/abs/2201.08054) [cs.CL]** |
+|           | (or **[arXiv:2201.08054v1](https://arxiv.org/abs/2201.08054v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-01-21-3">3. Linguistically-driven Multi-task Pre-training for Low-resource Neural Machine Translation
+</h2>
+
+Title: [Linguistically-driven Multi-task Pre-training for Low-resource Neural Machine Translation](https://arxiv.org/abs/2201.08070)
+
+Authors: [Zhuoyuan Mao](https://arxiv.org/search/cs?searchtype=author&query=Mao%2C+Z), [Chenhui Chu](https://arxiv.org/search/cs?searchtype=author&query=Chu%2C+C), [Sadao Kurohashi](https://arxiv.org/search/cs?searchtype=author&query=Kurohashi%2C+S)
+
+> In the present study, we propose novel sequence-to-sequence pre-training objectives for low-resource machine translation (NMT): Japanese-specific sequence to sequence (JASS) for language pairs involving Japanese as the source or target language, and English-specific sequence to sequence (ENSS) for language pairs involving English. JASS focuses on masking and reordering Japanese linguistic units known as bunsetsu, whereas ENSS is proposed based on phrase structure masking and reordering tasks. Experiments on ASPEC Japanese--English & Japanese--Chinese, Wikipedia Japanese--Chinese, News English--Korean corpora demonstrate that JASS and ENSS outperform MASS and other existing language-agnostic pre-training methods by up to +2.9 BLEU points for the Japanese--English tasks, up to +7.0 BLEU points for the Japanese--Chinese tasks and up to +1.3 BLEU points for English--Korean tasks. Empirical analysis, which focuses on the relationship between individual parts in JASS and ENSS, reveals the complementary nature of the subtasks of JASS and ENSS. Adequacy evaluation using LASER, human evaluation, and case studies reveals that our proposed methods significantly outperform pre-training methods without injected linguistic knowledge and they have a larger positive impact on the adequacy as compared to the fluency. We release codes here: [this https URL](https://github.com/Mao-KU/JASS/tree/master/linguistically-driven-pretraining).
+
+| Comments:          | An extension of work [arXiv:2005.03361](https://arxiv.org/abs/2005.03361) |
+| ------------------ | ------------------------------------------------------------ |
+| Subjects:          | **Computation and Language (cs.CL)**                         |
+| Journal reference: | TALLIP Volume 21, Issue 4, July 2022                         |
+| DOI:               | [10.1145/3491065](https://arxiv.org/ct?url=https%3A%2F%2Fdx.doi.org%2F10.1145%2F3491065&v=ede59a3a) |
+| Cite as:           | **[arXiv:2201.08070](https://arxiv.org/abs/2201.08070) [cs.CL]** |
+|                    | (or **[arXiv:2201.08070v1](https://arxiv.org/abs/2201.08070v1) [cs.CL]** for this version) |
+
+
 
 
 
