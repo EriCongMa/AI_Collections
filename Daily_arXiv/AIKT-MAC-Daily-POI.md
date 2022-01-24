@@ -3,19 +3,21 @@
 # Index
 
 
-- [2022-01-21](#2022-01-21)
+- [2022-01-24](#2022-01-24)
 
+  - [1. Black-box Prompt Learning for Pre-trained Language Models](#2022-01-24-1)
+  - [2. Context-Tuning: Learning Contextualized Prompts for Natural Language Generation](#2022-01-24-2)
+  
+- [2022-01-21](#2022-01-21)
   - [1. Construction of a Quality Estimation Dataset for Automatic Evaluation of Japanese Grammatical Error Correction](#2022-01-21-1)
   - [2. VISA: An Ambiguous Subtitles Dataset for Visual Scene-Aware Machine Translation](#2022-01-21-2)
   - [3. Linguistically-driven Multi-task Pre-training for Low-resource Neural Machine Translation](#2022-01-21-3)
-
 - [2022-01-20](#2022-01-20)
 
   - [1. Improving Neural Machine Translation by Denoising Training](#2022-01-20-1)
   - [2. Neural Language Models are Effective Plagiarists](#2022-01-20-2)
   - [3. Interpreting Arabic Transformer Models](#2022-01-20-3)
   - [4. CM3: A Causal Masked Multimodal Model of the Internet](#2022-01-20-4)
-
 - [2022-01-19](#2022-01-19)
 
   - [1. Multi-Staged Cross-Lingual Acoustic Model Adaption for Robust Speech Recognition in Real-World Applications -- A Case Study on German Oral History Interviews](2022-01-19-1)
@@ -27,7 +29,6 @@
   - [7. Memory-assisted prompt editing to improve GPT-3 after deployment](2022-01-19-7)
   - [8. Syntax-based data augmentation for Hungarian-English machine translation](2022-01-19-8)
   - [9. Instance-aware Prompt Learning for Language Understanding and Generation](2022-01-19-9)
-
 - [2022-01-17](#2022-01-17)
   - [1. A Thousand Words Are Worth More Than a Picture: Natural Language-Centric Outside-Knowledge Visual Question Answering](#2022-01-17-1)
   - [2. A Survey of Pretrained Language Models Based Text Generation](#2022-01-17-2)
@@ -82,6 +83,53 @@
   - [3. Materialized Knowledge Bases from Commonsense Transformers](#2022-01-03-3)
   - [4. ViNMT: Neural Machine Translation Tookit](#2022-01-03-4)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+
+
+# 2022-01-24
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-01-24-1">1. Black-box Prompt Learning for Pre-trained Language Models
+</h2>
+
+Title: [Black-box Prompt Learning for Pre-trained Language Models](https://arxiv.org/abs/2201.08531)
+
+Authors: [Shizhe Diao](https://arxiv.org/search/cs?searchtype=author&query=Diao%2C+S), [Xuechun Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+X), [Yong Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+Y), [Zhichao Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+Z), [Tong Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+T)
+
+> Domain-specific fine-tuning strategies for large pre-trained models received vast attention in recent years. In previously studied settings, the model architectures and parameters are tunable or at least visible, which we refer to as white-box settings. This work considers a new scenario, where we do not have access to a pre-trained model, except for its outputs given inputs, and we call this problem black-box fine-tuning. To illustrate our approach, we first introduce the black-box setting formally on text classification, where the pre-trained model is not only frozen but also invisible. We then propose our solution black-box prompt, a new technique in the prompt-learning family, which can leverage the knowledge learned by pre-trained models from the pre-training corpus. Our experiments demonstrate that the proposed method achieved the state-of-the-art performance on eight datasets. Further analyses on different human-designed objectives, prompt lengths, and intuitive explanations demonstrate the robustness and flexibility of our method.
+
+| Comments: | 10 pages, 5 figures                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2201.08531](https://arxiv.org/abs/2201.08531) [cs.CL]** |
+|           | (or **[arXiv:2201.08531v1](https://arxiv.org/abs/2201.08531v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-01-24-2">2. Context-Tuning: Learning Contextualized Prompts for Natural Language Generation
+</h2>
+
+Title: [Context-Tuning: Learning Contextualized Prompts for Natural Language Generation](https://arxiv.org/abs/2201.08670)
+
+Authors: [Tianyi Tang](https://arxiv.org/search/cs?searchtype=author&query=Tang%2C+T), [Junyi Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+J), [Wayne Xin Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+W+X)
+
+> Recently, pretrained language models (PLMs) have made exceptional success in language generation. To leverage the rich knowledge encoded by PLMs, a simple yet powerful mechanism is to use prompts, in the form of either discrete tokens or continuous embeddings. In existing studies, manual prompts are time-consuming and require domain expertise, while continuous prompts are typically independent of the inputs. To address this issue, we propose a novel continuous prompting approach, called Context-Tuning, to fine-tuning PLMs for natural language generation. Firstly, the prompts are derived based on the input text, so that they can elicit useful knowledge from PLMs for generation. We refer to such prompts as contextualized prompts. Secondly, to further enhance the relevance of the generated text to the inputs, we utilize continuous inverse prompting to refine the process of natural language generation by modeling an inverse generation process from output to input. Moreover, we propose a lightweight contexttuning, fine-tuning only 0.4% of parameters while retaining well performance.
+
+| Comments: | 13 pages, 6 figures, 6 tables                                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2201.08670](https://arxiv.org/abs/2201.08670) [cs.CL]** |
+|           | (or **[arXiv:2201.08670v1](https://arxiv.org/abs/2201.08670v1) [cs.CL]** for this version) |
+
+
+
 
 
 
