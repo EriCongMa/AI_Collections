@@ -3,11 +3,16 @@
 # Index
 
 
+- [2022-01-25](#2022-01-25)
+
+  - [1. Supervised Visual Attention for Simultaneous Multimodal Machine Translation](#2022-01-25-1)
+  - [2. Table Pretraining: A Survey on Model Architectures, Pretraining Objectives, and Downstream Tasks](#2022-01-25-2)
+  
 - [2022-01-24](#2022-01-24)
 
   - [1. Black-box Prompt Learning for Pre-trained Language Models](#2022-01-24-1)
   - [2. Context-Tuning: Learning Contextualized Prompts for Natural Language Generation](#2022-01-24-2)
-  
+
 - [2022-01-21](#2022-01-21)
   - [1. Construction of a Quality Estimation Dataset for Automatic Evaluation of Japanese Grammatical Error Correction](#2022-01-21-1)
   - [2. VISA: An Ambiguous Subtitles Dataset for Visual Scene-Aware Machine Translation](#2022-01-21-2)
@@ -83,6 +88,48 @@
   - [3. Materialized Knowledge Bases from Commonsense Transformers](#2022-01-03-3)
   - [4. ViNMT: Neural Machine Translation Tookit](#2022-01-03-4)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2022-01-25
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-01-25-1">1. Supervised Visual Attention for Simultaneous Multimodal Machine Translation
+</h2>
+
+Title: [Supervised Visual Attention for Simultaneous Multimodal Machine Translation](https://arxiv.org/abs/2201.09324)
+
+Authors: [Veneta Haralampieva](https://arxiv.org/search/cs?searchtype=author&query=Haralampieva%2C+V), [Ozan Caglayan](https://arxiv.org/search/cs?searchtype=author&query=Caglayan%2C+O), [Lucia Specia](https://arxiv.org/search/cs?searchtype=author&query=Specia%2C+L)
+
+> Recently, there has been a surge in research in multimodal machine translation (MMT), where additional modalities such as images are used to improve translation quality of textual systems. A particular use for such multimodal systems is the task of simultaneous machine translation, where visual context has been shown to complement the partial information provided by the source sentence, especially in the early phases of translation (Caglayanet al., 2020a; Imankulova et al., 2020). In this paper, we propose the first Transformer-based simultaneous MMT architecture, which has not been previously explored in the field. Additionally, we extend this model with an auxiliary supervision signal that guides its visual attention mechanism using labelled phrase-region alignments. We perform comprehensive experiments on three language directions and conduct thorough quantitative and qualitative analyses using both automatic metrics and manual inspection. Our results show that (i) supervised visual attention consistently improves the translation quality of the MMT models, and (ii) fine-tuning the MMT with supervision loss enabled leads to better performance than training the MMT from scratch. Compared to the state-of-the-art, our proposed model achieves improvements of up to 2.3 BLEU and 3.5 METEOR points.
+
+| Comments: | Journal article under review                                 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2201.09324](https://arxiv.org/abs/2201.09324) [cs.CL]** |
+|           | (or **[arXiv:2201.09324v1](https://arxiv.org/abs/2201.09324v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-01-25-2">2. Table Pretraining: A Survey on Model Architectures, Pretraining Objectives, and Downstream Tasks
+</h2>
+
+Title: [Table Pretraining: A Survey on Model Architectures, Pretraining Objectives, and Downstream Tasks](https://arxiv.org/abs/2201.09745)
+
+Authors: [Haoyu Dong](https://arxiv.org/search/cs?searchtype=author&query=Dong%2C+H), [Zhoujun Cheng](https://arxiv.org/search/cs?searchtype=author&query=Cheng%2C+Z), [Xinyi He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+X), [Mengyu Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+M), [Anda Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+A), [Fan Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+F), [Ao Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+A), [Shi Han](https://arxiv.org/search/cs?searchtype=author&query=Han%2C+S), [Dongmei Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+D)
+
+> Since a vast number of tables can be easily collected from web pages, spreadsheets, PDFs, and various other document types, a flurry of table pretraining frameworks have been proposed following the success of text and images, and they have achieved new state-of-the-arts on various tasks such as table question answering, table type recognition, column relation classification, table search, formula prediction, etc. To fully use the supervision signals in unlabeled tables, a variety of pretraining objectives have been designed and evaluated, for example, denoising cell values, predicting numerical relationships, and implicitly executing SQLs. And to best leverage the characteristics of (semi-)structured tables, various tabular language models, particularly with specially-designed attention mechanisms, have been explored. Since tables usually appear and interact with free-form text, table pretraining usually takes the form of table-text joint pretraining, which attracts significant research interests from multiple domains. This survey aims to provide a comprehensive review of different model designs, pretraining objectives, and downstream tasks for table pretraining, and we share our thoughts and vision on existing challenges and future opportunities.
+
+| Comments: | Work in progress                                             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Information Retrieval (cs.IR) |
+| Cite as:  | **[arXiv:2201.09745](https://arxiv.org/abs/2201.09745) [cs.CL]** |
+|           | (or **[arXiv:2201.09745v1](https://arxiv.org/abs/2201.09745v1) [cs.CL]** for this version) |
 
 
 
