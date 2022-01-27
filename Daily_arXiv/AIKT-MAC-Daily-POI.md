@@ -3,11 +3,25 @@
 # Index
 
 
+- [2022-01-27](#2022-01-27)
+
+  - [1. One Student Knows All Experts Know: From Sparse to Dense](#2022-01-27-1)
+  - [2. Natural Language Descriptions of Deep Visual Features](#2022-01-27-2)
+  - [3. A Unified Strategy for Multilingual Grammatical Error Correction with Pre-trained Cross-Lingual Language Model](#2022-01-27-3)
+  - [4. Dual-Decoder Transformer For end-to-end Mandarin Chinese Speech Recognition with Pinyin and Character](#2022-01-27-4)
+  - [5. CodeRetriever: Unimodal and Bimodal Contrastive Learning](#2022-01-27-5)
+
+- [2022-01-26](#2022-01-26)
+
+  - [1. SPIRAL: Self-supervised Perturbation-Invariant Representation Learning for Speech Pre-Training](#2022-01-26-1)
+  - [2. Improving the fusion of acoustic and text representations in RNN-T](#2022-01-26-2)
+  - [3. Text and Code Embeddings by Contrastive Pre-Training](#2022-01-26-3)
+
 - [2022-01-25](#2022-01-25)
 
   - [1. Supervised Visual Attention for Simultaneous Multimodal Machine Translation](#2022-01-25-1)
   - [2. Table Pretraining: A Survey on Model Architectures, Pretraining Objectives, and Downstream Tasks](#2022-01-25-2)
-  
+
 - [2022-01-24](#2022-01-24)
 
   - [1. Black-box Prompt Learning for Pre-trained Language Models](#2022-01-24-1)
@@ -88,6 +102,164 @@
   - [3. Materialized Knowledge Bases from Commonsense Transformers](#2022-01-03-3)
   - [4. ViNMT: Neural Machine Translation Tookit](#2022-01-03-4)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2022-01-27
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-01-27-1">1. One Student Knows All Experts Know: From Sparse to Dense
+</h2>
+
+Title: [One Student Knows All Experts Know: From Sparse to Dense](https://arxiv.org/abs/2201.10890)
+
+Authors: [Fuzhao Xue](https://arxiv.org/search/cs?searchtype=author&query=Xue%2C+F), [Xiaoxin He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+X), [Xiaozhe Ren](https://arxiv.org/search/cs?searchtype=author&query=Ren%2C+X), [Yuxuan Lou](https://arxiv.org/search/cs?searchtype=author&query=Lou%2C+Y), [Yang You](https://arxiv.org/search/cs?searchtype=author&query=You%2C+Y)
+
+> Human education system trains one student by multiple experts. Mixture-of-experts (MoE) is a powerful sparse architecture including multiple experts. However, sparse MoE model is hard to implement, easy to overfit, and not hardware-friendly. In this work, inspired by human education model, we propose a novel task, knowledge integration, to obtain a dense student model (OneS) as knowledgeable as one sparse MoE. We investigate this task by proposing a general training framework including knowledge gathering and knowledge distillation. Specifically, we first propose Singular Value Decomposition Knowledge Gathering (SVD-KG) to gather key knowledge from different pretrained experts. We then refine the dense student model by knowledge distillation to offset the noise from gathering. On ImageNet, our OneS preserves 61.7% benefits from MoE. OneS can achieve 78.4% top-1 accuracy with only 15M parameters. On four natural language processing datasets, OneS obtains 88.2% MoE benefits and outperforms SoTA by 51.7% using the same architecture and training data. In addition, compared with the MoE counterpart, OneS can achieve 3.7× inference speedup due to the hardware-friendly architecture.
+
+| Subjects: | **Machine Learning (cs.LG)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL); Computer Vision and Pattern Recognition (cs.CV) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2201.10890](https://arxiv.org/abs/2201.10890) [cs.LG]** |
+|           | (or **[arXiv:2201.10890v1](https://arxiv.org/abs/2201.10890v1) [cs.LG]** for this version) |
+
+
+
+
+
+<h2 id="2022-01-27-2">2. Natural Language Descriptions of Deep Visual Features
+</h2>
+
+Title: [Natural Language Descriptions of Deep Visual Features](https://arxiv.org/abs/2201.11114)
+
+Authors: [Evan Hernandez](https://arxiv.org/search/cs?searchtype=author&query=Hernandez%2C+E), [Sarah Schwettmann](https://arxiv.org/search/cs?searchtype=author&query=Schwettmann%2C+S), [David Bau](https://arxiv.org/search/cs?searchtype=author&query=Bau%2C+D), [Teona Bagashvili](https://arxiv.org/search/cs?searchtype=author&query=Bagashvili%2C+T), [Antonio Torralba](https://arxiv.org/search/cs?searchtype=author&query=Torralba%2C+A), [Jacob Andreas](https://arxiv.org/search/cs?searchtype=author&query=Andreas%2C+J)
+
+> Some neurons in deep networks specialize in recognizing highly specific perceptual, structural, or semantic features of inputs. In computer vision, techniques exist for identifying neurons that respond to individual concept categories like colors, textures, and object classes. But these techniques are limited in scope, labeling only a small subset of neurons and behaviors in any network. Is a richer characterization of neuron-level computation possible? We introduce a procedure (called MILAN, for mutual-information-guided linguistic annotation of neurons) that automatically labels neurons with open-ended, compositional, natural language descriptions. Given a neuron, MILAN generates a description by searching for a natural language string that maximizes pointwise mutual information with the image regions in which the neuron is active. MILAN produces fine-grained descriptions that capture categorical, relational, and logical structure in learned features. These descriptions obtain high agreement with human-generated feature descriptions across a diverse set of model architectures and tasks, and can aid in understanding and controlling learned models. We highlight three applications of natural language neuron descriptions. First, we use MILAN for analysis, characterizing the distribution and importance of neurons selective for attribute, category, and relational information in vision models. Second, we use MILAN for auditing, surfacing neurons sensitive to protected categories like race and gender in models trained on datasets intended to obscure these features. Finally, we use MILAN for editing, improving robustness in an image classifier by deleting neurons sensitive to text features spuriously correlated with class labels.
+
+| Comments: | To be published as a conference paper at ICLR 2022           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2201.11114](https://arxiv.org/abs/2201.11114) [cs.CV]** |
+|           | (or **[arXiv:2201.11114v1](https://arxiv.org/abs/2201.11114v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2022-01-27-3">3. A Unified Strategy for Multilingual Grammatical Error Correction with Pre-trained Cross-Lingual Language Model
+</h2>
+
+Title: [A Unified Strategy for Multilingual Grammatical Error Correction with Pre-trained Cross-Lingual Language Model](https://arxiv.org/abs/2201.10707)
+
+Authors: [Xin Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+X), [Tao Ge](https://arxiv.org/search/cs?searchtype=author&query=Ge%2C+T), [Shuming Ma](https://arxiv.org/search/cs?searchtype=author&query=Ma%2C+S), [Jingjing Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+J), [Furu Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+F), [Houfeng Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+H)
+
+> Synthetic data construction of Grammatical Error Correction (GEC) for non-English languages relies heavily on human-designed and language-specific rules, which produce limited error-corrected patterns. In this paper, we propose a generic and language-independent strategy for multilingual GEC, which can train a GEC system effectively for a new non-English language with only two easy-to-access resources: 1) a pretrained cross-lingual language model (PXLM) and 2) parallel translation data between English and the language. Our approach creates diverse parallel GEC data without any language-specific operations by taking the non-autoregressive translation generated by PXLM and the gold translation as error-corrected sentence pairs. Then, we reuse PXLM to initialize the GEC model and pretrain it with the synthetic data generated by itself, which yields further improvement. We evaluate our approach on three public benchmarks of GEC in different languages. It achieves the state-of-the-art results on the NLPCC 2018 Task 2 dataset (Chinese) and obtains competitive performance on Falko-Merlin (German) and RULEC-GEC (Russian). Further analysis demonstrates that our data construction method is complementary to rule-based approaches.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2201.10707](https://arxiv.org/abs/2201.10707) [cs.CL]** |
+|           | (or **[arXiv:2201.10707v1](https://arxiv.org/abs/2201.10707v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-01-27-4">4. Dual-Decoder Transformer For end-to-end Mandarin Chinese Speech Recognition with Pinyin and Character
+</h2>
+
+Title: [Dual-Decoder Transformer For end-to-end Mandarin Chinese Speech Recognition with Pinyin and Character](https://arxiv.org/abs/2201.10792)
+
+Authors: [Zhao Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+Z), [Wei Xi](https://arxiv.org/search/cs?searchtype=author&query=Xi%2C+W), [Rui Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+R), [Rui Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+R), [Jizhong Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+J)
+
+> End-to-end automatic speech recognition (ASR) has achieved promising results. However, most existing end-to-end ASR methods neglect the use of specific language characteristics. For Mandarin Chinese ASR tasks, pinyin and character as writing and spelling systems respectively are mutual promotion in the Mandarin Chinese language. Based on the above intuition, we investigate types of related models that are suitable but not for joint pinyin-character ASR and propose a novel Mandarin Chinese ASR model with dual-decoder Transformer according to the characteristics of the pinyin transcripts and character transcripts. Specifically, the joint pinyin-character layer-wise linear interactive (LWLI) module and phonetic posteriorgrams adapter (PPGA) are proposed to achieve inter-layer multi-level interaction by adaptively fusing pinyin and character information. Furthermore, a two-stage training strategy is proposed to make training more stable and faster convergence. The results on the test sets of AISHELL-1 dataset show that the proposed Speech-Pinyin-Character-Interaction (SPCI) model without a language model achieves 9.85% character error rate (CER) on the test set, which is 17.71% relative reduction compared to baseline models based on Transformer.
+
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2201.10792](https://arxiv.org/abs/2201.10792) [cs.CL]** |
+|           | (or **[arXiv:2201.10792v1](https://arxiv.org/abs/2201.10792v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-01-27-5">5. CodeRetriever: Unimodal and Bimodal Contrastive Learning
+</h2>
+
+Title: [CodeRetriever: Unimodal and Bimodal Contrastive Learning](https://arxiv.org/abs/2201.10866)
+
+Authors: [Xiaonan Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+X), [Yeyun Gong](https://arxiv.org/search/cs?searchtype=author&query=Gong%2C+Y), [Yelong Shen](https://arxiv.org/search/cs?searchtype=author&query=Shen%2C+Y), [Xipeng Qiu](https://arxiv.org/search/cs?searchtype=author&query=Qiu%2C+X), [Hang Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+H), [Bolun Yao](https://arxiv.org/search/cs?searchtype=author&query=Yao%2C+B), [Weizhen Qi](https://arxiv.org/search/cs?searchtype=author&query=Qi%2C+W), [Daxin Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+D), [Weizhu Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+W), [Nan Duan](https://arxiv.org/search/cs?searchtype=author&query=Duan%2C+N)
+
+> In this paper, we propose the CodeRetriever model, which combines the unimodal and bimodal contrastive learning to train function-level code semantic representations, specifically for the code search task. For unimodal contrastive learning, we design a semantic-guided method to build positive code pairs based on the documentation and function name. For bimodal contrastive learning, we leverage the documentation and in-line comments of code to build text-code pairs. Both contrastive objectives can fully leverage the large-scale code corpus for pre-training. Experimental results on several public benchmarks, (i.e., CodeSearch, CoSQA, etc.) demonstrate the effectiveness of CodeRetriever in the zero-shot setting. By fine-tuning with domain/language specified downstream data, CodeRetriever achieves the new state-of-the-art performance with significant improvement over existing code pre-trained models. We will make the code, model checkpoint, and constructed datasets publicly available.
+
+| Subjects: | **Computation and Language (cs.CL)**; Software Engineering (cs.SE) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2201.10866](https://arxiv.org/abs/2201.10866) [cs.CL]** |
+|           | (or **[arXiv:2201.10866v1](https://arxiv.org/abs/2201.10866v1) [cs.CL]** for this version) |
+
+
+
+
+
+# 2022-01-26
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-01-26-1">1. SPIRAL: Self-supervised Perturbation-Invariant Representation Learning for Speech Pre-Training
+</h2>
+
+Title: [SPIRAL: Self-supervised Perturbation-Invariant Representation Learning for Speech Pre-Training](https://arxiv.org/abs/2201.10207)
+
+Authors: [Wenyong Huang](https://arxiv.org/search/eess?searchtype=author&query=Huang%2C+W), [Zhenhe Zhang](https://arxiv.org/search/eess?searchtype=author&query=Zhang%2C+Z), [Yu Ting Yeung](https://arxiv.org/search/eess?searchtype=author&query=Yeung%2C+Y+T), [Xin Jiang](https://arxiv.org/search/eess?searchtype=author&query=Jiang%2C+X), [Qun Liu](https://arxiv.org/search/eess?searchtype=author&query=Liu%2C+Q)
+
+> We introduce a new approach for speech pre-training named SPIRAL which works by learning denoising representation of perturbed data in a teacher-student framework. Specifically, given a speech utterance, we first feed the utterance to a teacher network to obtain corresponding representation. Then the same utterance is perturbed and fed to a student network. The student network is trained to output representation resembling that of the teacher. At the same time, the teacher network is updated as moving average of student's weights over training steps. In order to prevent representation collapse, we apply an in-utterance contrastive loss as pre-training objective and impose position randomization on the input to the teacher. SPIRAL achieves competitive or better results compared to state-of-the-art speech pre-training method wav2vec 2.0, with significant reduction of training cost (80% for Base model, 65% for Large model). Furthermore, we address the problem of noise-robustness that is critical to real-world speech applications. We propose multi-condition pre-training by perturbing the student's input with various types of additive noise. We demonstrate that multi-condition pre-trained SPIRAL models are more robust to noisy speech (9.0% - 13.3% relative word error rate reduction on real noisy test data), compared to applying multi-condition training solely in the fine-tuning stage. The code will be released after publication.
+
+| Subjects: | **Audio and Speech Processing (eess.AS)**; Computation and Language (cs.CL); Machine Learning (cs.LG); Sound (cs.SD) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2201.10207](https://arxiv.org/abs/2201.10207) [eess.AS]** |
+|           | (or **[arXiv:2201.10207v1](https://arxiv.org/abs/2201.10207v1) [eess.AS]** for this version) |
+
+
+
+
+
+<h2 id="2022-01-26-2">2. Improving the fusion of acoustic and text representations in RNN-T
+</h2>
+
+Title: [Improving the fusion of acoustic and text representations in RNN-T](https://arxiv.org/abs/2201.10240)
+
+Authors: [Chao Zhang](https://arxiv.org/search/eess?searchtype=author&query=Zhang%2C+C), [Bo Li](https://arxiv.org/search/eess?searchtype=author&query=Li%2C+B), [Zhiyun Lu](https://arxiv.org/search/eess?searchtype=author&query=Lu%2C+Z), [Tara N. Sainath](https://arxiv.org/search/eess?searchtype=author&query=Sainath%2C+T+N), [Shuo-yiin Chang](https://arxiv.org/search/eess?searchtype=author&query=Chang%2C+S)
+
+> The recurrent neural network transducer (RNN-T) has recently become the mainstream end-to-end approach for streaming automatic speech recognition (ASR). To estimate the output distributions over subword units, RNN-T uses a fully connected layer as the joint network to fuse the acoustic representations extracted using the acoustic encoder with the text representations obtained using the prediction network based on the previous subword units. In this paper, we propose to use gating, bilinear pooling, and a combination of them in the joint network to produce more expressive representations to feed into the output layer. A regularisation method is also proposed to enable better acoustic encoder training by reducing the gradients back-propagated into the prediction network at the beginning of RNN-T training. Experimental results on a multilingual ASR setting for voice search over nine languages show that the joint use of the proposed methods can result in 4%--5% relative word error rate reductions with only a few million extra parameters.
+
+| Comments: | Paper to appear at ICASSP 2022                               |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Audio and Speech Processing (eess.AS)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL); Sound (cs.SD) |
+| Cite as:  | **[arXiv:2201.10240](https://arxiv.org/abs/2201.10240) [eess.AS]** |
+|           | (or **[arXiv:2201.10240v1](https://arxiv.org/abs/2201.10240v1) [eess.AS]** for this version) |
+
+
+
+
+
+<h2 id="2022-01-26-3">3. Text and Code Embeddings by Contrastive Pre-Training
+</h2>
+
+Title: [Text and Code Embeddings by Contrastive Pre-Training](https://arxiv.org/abs/2201.10005)
+
+Authors: [Arvind Neelakantan](https://arxiv.org/search/cs?searchtype=author&query=Neelakantan%2C+A), [Tao Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+T), [Raul Puri](https://arxiv.org/search/cs?searchtype=author&query=Puri%2C+R), [Alec Radford](https://arxiv.org/search/cs?searchtype=author&query=Radford%2C+A), [Jesse Michael Han](https://arxiv.org/search/cs?searchtype=author&query=Han%2C+J+M), [Jerry Tworek](https://arxiv.org/search/cs?searchtype=author&query=Tworek%2C+J), [Qiming Yuan](https://arxiv.org/search/cs?searchtype=author&query=Yuan%2C+Q), [Nikolas Tezak](https://arxiv.org/search/cs?searchtype=author&query=Tezak%2C+N), [Jong Wook Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%2C+J+W), [Chris Hallacy](https://arxiv.org/search/cs?searchtype=author&query=Hallacy%2C+C), [Johannes Heidecke](https://arxiv.org/search/cs?searchtype=author&query=Heidecke%2C+J), [Pranav Shyam](https://arxiv.org/search/cs?searchtype=author&query=Shyam%2C+P), [Boris Power](https://arxiv.org/search/cs?searchtype=author&query=Power%2C+B), [Tyna Eloundou Nekoul](https://arxiv.org/search/cs?searchtype=author&query=Nekoul%2C+T+E), [Girish Sastry](https://arxiv.org/search/cs?searchtype=author&query=Sastry%2C+G), [Gretchen Krueger](https://arxiv.org/search/cs?searchtype=author&query=Krueger%2C+G), [David Schnurr](https://arxiv.org/search/cs?searchtype=author&query=Schnurr%2C+D), [Felipe Petroski Such](https://arxiv.org/search/cs?searchtype=author&query=Such%2C+F+P), [Kenny Hsu](https://arxiv.org/search/cs?searchtype=author&query=Hsu%2C+K), [Madeleine Thompson](https://arxiv.org/search/cs?searchtype=author&query=Thompson%2C+M), [Tabarak Khan](https://arxiv.org/search/cs?searchtype=author&query=Khan%2C+T), [Toki Sherbakov](https://arxiv.org/search/cs?searchtype=author&query=Sherbakov%2C+T), [Joanne Jang](https://arxiv.org/search/cs?searchtype=author&query=Jang%2C+J), [Peter Welinder](https://arxiv.org/search/cs?searchtype=author&query=Welinder%2C+P), [Lilian Weng](https://arxiv.org/search/cs?searchtype=author&query=Weng%2C+L)
+
+> Text embeddings are useful features in many applications such as semantic search and computing text similarity. Previous work typically trains models customized for different use cases, varying in dataset choice, training objective and model architecture. In this work, we show that contrastive pre-training on unsupervised data at scale leads to high quality vector representations of text and code. The same unsupervised text embeddings that achieve new state-of-the-art results in linear-probe classification also display impressive semantic search capabilities and sometimes even perform competitively with fine-tuned models. On linear-probe classification accuracy averaging over 7 tasks, our best unsupervised model achieves a relative improvement of 4% and 1.8% over previous best unsupervised and supervised text embedding models respectively. The same text embeddings when evaluated on large-scale semantic search attains a relative improvement of 23.4%, 14.7%, and 10.6% over previous best unsupervised methods on MSMARCO, Natural Questions and TriviaQA benchmarks, respectively. Similarly to text embeddings, we train code embedding models on (text, code) pairs, obtaining a 20.8% relative improvement over prior best work on code search.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2201.10005](https://arxiv.org/abs/2201.10005) [cs.CL]** |
+|           | (or **[arXiv:2201.10005v1](https://arxiv.org/abs/2201.10005v1) [cs.CL]** for this version) |
+
+
 
 
 
