@@ -3,6 +3,14 @@
 # Index
 
 
+- [2022-01-28](#2022-01-28)
+
+  - [1. Tackling data scarcity in speech translation using zero-shot multilingual machine translation techniques](#2022-01-28-1)
+  - [2. DiscoScore: Evaluating Text Generation with BERT and Discourse Coherence](#2022-01-28-2)
+  - [3. Learning How to Translate North Korean through South Korean](#2022-01-28-3)
+  - [4. Prabhupadavani: A Code-mixed Speech Translation Data for 25 Languages](#2022-01-28-4)
+  - [5. IGLUE: A Benchmark for Transfer Learning across Modalities, Tasks, and Languages](#2022-01-28-5)
+
 - [2022-01-27](#2022-01-27)
 
   - [1. One Student Knows All Experts Know: From Sparse to Dense](#2022-01-27-1)
@@ -102,6 +110,106 @@
   - [3. Materialized Knowledge Bases from Commonsense Transformers](#2022-01-03-3)
   - [4. ViNMT: Neural Machine Translation Tookit](#2022-01-03-4)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2022-01-28
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-01-28-1">1. Tackling data scarcity in speech translation using zero-shot multilingual machine translation techniques
+</h2>
+
+Title: [Tackling data scarcity in speech translation using zero-shot multilingual machine translation techniques](https://arxiv.org/abs/2201.11172)
+
+Authors: [Tu Anh Dinh](https://arxiv.org/search/cs?searchtype=author&query=Dinh%2C+T+A), [Danni Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+D), [Jan Niehues](https://arxiv.org/search/cs?searchtype=author&query=Niehues%2C+J)
+
+> Recently, end-to-end speech translation (ST) has gained significant attention as it avoids error propagation. However, the approach suffers from data scarcity. It heavily depends on direct ST data and is less efficient in making use of speech transcription and text translation data, which is often more easily available. In the related field of multilingual text translation, several techniques have been proposed for zero-shot translation. A main idea is to increase the similarity of semantically similar sentences in different languages. We investigate whether these ideas can be applied to speech translation, by building ST models trained on speech transcription and text translation data. We investigate the effects of data augmentation and auxiliary loss function. The techniques were successfully applied to few-shot ST using limited ST data, with improvements of up to +12.9 BLEU points compared to direct end-to-end ST and +3.1 BLEU points compared to ST models fine-tuned from ASR model.
+
+| Comments:    | 6 pages, 5 figures, accepted to IEEE ICASSP 2022. arXiv admin note: text overlap with [arXiv:2107.06010](https://arxiv.org/abs/2107.06010) |
+| ------------ | ------------------------------------------------------------ |
+| Subjects:    | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| ACM classes: | I.2.7                                                        |
+| Cite as:     | **[arXiv:2201.11172](https://arxiv.org/abs/2201.11172) [cs.CL]** |
+|              | (or **[arXiv:2201.11172v1](https://arxiv.org/abs/2201.11172v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-01-28-2">2. DiscoScore: Evaluating Text Generation with BERT and Discourse Coherence
+</h2>
+
+Title: [DiscoScore: Evaluating Text Generation with BERT and Discourse Coherence](https://arxiv.org/abs/2201.11176)
+
+Authors: [Wei Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+W), [Michael Strube](https://arxiv.org/search/cs?searchtype=author&query=Strube%2C+M), [Steffen Eger](https://arxiv.org/search/cs?searchtype=author&query=Eger%2C+S)
+
+> Recently has there been a growing interest in the creation of text generation systems from a discourse coherence perspective, e.g., modeling the interdependence between sentences. Still, recent BERT-based evaluation metrics cannot recognize coherence and fail to punish incoherent elements in system outputs. In this work, we introduce DiscoScore, a discourse metric with multiple variants, which uses BERT to model discourse coherence from different perspectives, driven by Centering theory. Our experiments encompass 16 non-discourse and discourse metrics, including DiscoScore and popular coherence models, evaluated on summarization and document-level machine translation (MT). We find that (i) the majority of BERT-based metrics correlate much worse with human rated coherence than early discourse metrics, invented a decade ago; (ii) the recent state-of-the-art BARTScore is weak when operated at system level -- which is particularly problematic as systems are typically compared in this manner. DiscoScore, in contrast, achieves strong system-level correlation with human ratings, not only in coherence but also in factual consistency and other aspects, and surpasses BARTScore by over 10 correlation points on average. Further, aiming to understand DiscoScore, we provide justifications to the importance of discourse coherence for evaluation metrics, and explain the superiority of one variant over another. Our code is available at \url{[this https URL](https://github.com/AIPHES/DiscoScore)}.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2201.11176](https://arxiv.org/abs/2201.11176) [cs.CL]** |
+|           | (or **[arXiv:2201.11176v1](https://arxiv.org/abs/2201.11176v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-01-28-3">3. Learning How to Translate North Korean through South Korean
+</h2>
+
+Title: [Learning How to Translate North Korean through South Korean](https://arxiv.org/abs/2201.11258)
+
+Authors: [Hwichan Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%2C+H), [Sangwhan Moon](https://arxiv.org/search/cs?searchtype=author&query=Moon%2C+S), [Naoaki Okazaki](https://arxiv.org/search/cs?searchtype=author&query=Okazaki%2C+N), [Mamoru Komachi](https://arxiv.org/search/cs?searchtype=author&query=Komachi%2C+M)
+
+> South and North Korea both use the Korean language. However, Korean NLP research has focused on South Korean only, and existing NLP systems of the Korean language, such as neural machine translation (NMT) models, cannot properly handle North Korean inputs. Training a model using North Korean data is the most straightforward approach to solving this problem, but there is insufficient data to train NMT models. In this study, we create data for North Korean NMT models using a comparable corpus. First, we manually create evaluation data for automatic alignment and machine translation. Then, we investigate automatic alignment methods suitable for North Korean. Finally, we verify that a model trained by North Korean bilingual data without human annotation can significantly boost North Korean translation accuracy compared to existing South Korean models in zero-shot settings.
+
+| Comments: | 8 pages, 1 figures, 8 tables                                 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2201.11258](https://arxiv.org/abs/2201.11258) [cs.CL]** |
+|           | (or **[arXiv:2201.11258v1](https://arxiv.org/abs/2201.11258v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-01-28-4">4. Prabhupadavani: A Code-mixed Speech Translation Data for 25 Languages
+</h2>
+
+Title: [Prabhupadavani: A Code-mixed Speech Translation Data for 25 Languages](https://arxiv.org/abs/2201.11391)
+
+Authors: [Jivnesh Sandhan](https://arxiv.org/search/cs?searchtype=author&query=Sandhan%2C+J), [Ayush Daksh](https://arxiv.org/search/cs?searchtype=author&query=Daksh%2C+A), [Om Adideva Paranjay](https://arxiv.org/search/cs?searchtype=author&query=Paranjay%2C+O+A), [Laxmidhar Behera](https://arxiv.org/search/cs?searchtype=author&query=Behera%2C+L), [Pawan Goyal](https://arxiv.org/search/cs?searchtype=author&query=Goyal%2C+P)
+
+> Nowadays, code-mixing has become ubiquitous in Natural Language Processing (NLP); however, no efforts have been made to address this phenomenon for Speech Translation (ST) task. This can be solely attributed to the lack of code-mixed ST task labelled data. Thus, we introduce Prabhupadavani, a multilingual code-mixed ST dataset for 25 languages, covering ten language families, containing 94 hours of speech by 130+ speakers, manually aligned with corresponding text in the target language. Prabhupadvani is the first code-mixed ST dataset available in the ST literature to the best of our knowledge. This data also can be used for a code-mixed machine translation task. All the dataset and code can be accessed at: \url{[this https URL](https://github.com/frozentoad9/CMST)}
+
+| Comments: | 5 pages, The work is submitted at LREC22                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2201.11391](https://arxiv.org/abs/2201.11391) [cs.CL]** |
+|           | (or **[arXiv:2201.11391v1](https://arxiv.org/abs/2201.11391v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-01-28-5">5. IGLUE: A Benchmark for Transfer Learning across Modalities, Tasks, and Languages
+</h2>
+
+Title: [IGLUE: A Benchmark for Transfer Learning across Modalities, Tasks, and Languages](https://arxiv.org/abs/2201.11732)
+
+Authors: [Emanuele Bugliarello](https://arxiv.org/search/cs?searchtype=author&query=Bugliarello%2C+E), [Fangyu Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+F), [Jonas Pfeiffer](https://arxiv.org/search/cs?searchtype=author&query=Pfeiffer%2C+J), [Siva Reddy](https://arxiv.org/search/cs?searchtype=author&query=Reddy%2C+S), [Desmond Elliott](https://arxiv.org/search/cs?searchtype=author&query=Elliott%2C+D), [Edoardo Maria Ponti](https://arxiv.org/search/cs?searchtype=author&query=Ponti%2C+E+M), [Ivan Vulić](https://arxiv.org/search/cs?searchtype=author&query=Vulić%2C+I)
+
+> Reliable evaluation benchmarks designed for replicability and comprehensiveness have driven progress in machine learning. Due to the lack of a multilingual benchmark, however, vision-and-language research has mostly focused on English language tasks. To fill this gap, we introduce the Image-Grounded Language Understanding Evaluation benchmark. IGLUE brings together - by both aggregating pre-existing datasets and creating new ones - visual question answering, cross-modal retrieval, grounded reasoning, and grounded entailment tasks across 20 diverse languages. Our benchmark enables the evaluation of multilingual multimodal models for transfer learning, not only in a zero-shot setting, but also in newly defined few-shot learning setups. Based on the evaluation of the available state-of-the-art models, we find that translate-test transfer is superior to zero-shot transfer and that few-shot learning is hard to harness for many tasks. Moreover, downstream performance is partially explained by the amount of available unlabelled textual data for pretraining, and only weakly by the typological distance of target-source languages. We hope to encourage future research efforts in this area by releasing the benchmark to the community.
+
+| Subjects: | **Computation and Language (cs.CL)**; Computer Vision and Pattern Recognition (cs.CV) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2201.11732](https://arxiv.org/abs/2201.11732) [cs.CL]** |
+|           | (or **[arXiv:2201.11732v1](https://arxiv.org/abs/2201.11732v1) [cs.CL]** for this version) |
+
+
 
 
 
