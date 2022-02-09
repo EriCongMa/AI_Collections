@@ -3,12 +3,16 @@
 # Index
 
 
+- [2022-02-09](#2022-02-09)
+
+  - [1. DALL-Eval: Probing the Reasoning Skills and Social Biases of Text-to-Image Generative Transformers](#2022-02-09-1)
+  
 - [2022-02-08](#2022-02-08)
 
   - [1. Machine Translation from Signed to Spoken Languages: State of the Art and Challenges](#2022-02-08-1)
   - [2. Efficient Adapter Transfer of Self-Supervised Speech Models for Automatic Speech Recognition](#2022-02-08-2)
   - [3. Red Teaming Language Models with Language Models](#2022-02-08-3)
-  
+
 - [2022-02-07](#2022-02-07)
 
   - [1. Data Scaling Laws in NMT: The Effect of Noise and Architecture](#2022-02-07-1)
@@ -18,6 +22,33 @@
 - [2022-01-28](#2022-01-28)
   - [1. Tackling data scarcity in speech translation using zero-shot multilingual machine translation techniques](#2022-01-28-1)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2022-02-09
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-02-08-1">1. DALL-Eval: Probing the Reasoning Skills and Social Biases of Text-to-Image Generative Transformers
+</h2>
+
+Title: [DALL-Eval: Probing the Reasoning Skills and Social Biases of Text-to-Image Generative Transformers](https://arxiv.org/abs/2202.04053)
+
+Authors: [Jaemin Cho](https://arxiv.org/search/cs?searchtype=author&query=Cho%2C+J), [Abhay Zala](https://arxiv.org/search/cs?searchtype=author&query=Zala%2C+A), [Mohit Bansal](https://arxiv.org/search/cs?searchtype=author&query=Bansal%2C+M)
+
+> Generating images from textual descriptions has gained a lot of attention. Recently, DALL-E, a multimodal transformer language model, and its variants have shown high-quality text-to-image generation capabilities with a simple architecture and training objective, powered by large-scale training data and computation. However, despite the interesting image generation results, there has not been a detailed analysis on how to evaluate such models. In this work, we investigate the reasoning capabilities and social biases of such text-to-image generative transformers in detail. First, we measure four visual reasoning skills: object recognition, object counting, color recognition, and spatial relation understanding. For this, we propose PaintSkills, a diagnostic dataset and evaluation toolkit that measures these four visual reasoning skills. Second, we measure the text alignment and quality of the generated images based on pretrained image captioning, image-text retrieval, and image classification models. Third, we assess social biases in the models. For this, we suggest evaluation of gender and racial biases of text-to-image generation models based on a pretrained image-text retrieval model and human evaluation. In our experiments, we show that recent text-to-image models perform better in recognizing and counting objects than recognizing colors and understanding spatial relations, while there exists a large gap between model performances and oracle accuracy on all skills. Next, we demonstrate that recent text-to-image models learn specific gender/racial biases from web image-text pairs. We also show that our automatic evaluations of visual reasoning skills and gender bias are highly correlated with human judgments. We hope our work will help guide future progress in improving text-to-image models on visual reasoning skills and social biases. Code and data at: [this https URL](https://github.com/j-min/DallEval)
+
+| Comments: | 20 pages, 10 figures, 13 tables                              |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2202.04053](https://arxiv.org/abs/2202.04053) [cs.CV]** |
+|           | (or **[arXiv:2202.04053v1](https://arxiv.org/abs/2202.04053v1) [cs.CV]** for this version) |
+
+
+
+
 
 
 
