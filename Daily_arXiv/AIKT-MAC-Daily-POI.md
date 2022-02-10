@@ -3,10 +3,18 @@
 # Index
 
 
+- [2022-02-10](#2022-02-10)
+
+  - [1. Machine Explanations and Human Understanding](#2022-02-10-1)
+  - [2. Image Difference Captioning with Pre-training and Contrastive Learning](#2022-02-10-2)
+  - [3. Exploring the Limits of Domain-Adaptive Training for Detoxifying Large-Scale Language Models](#2022-02-10-3)
+  - [4. pNLP-Mixer: an Efficient all-MLP Architecture for Language](#2022-02-10-4)
+  - [5. Generating Training Data with Language Models: Towards Zero-Shot Language Understanding](#2022-02-10-5)
+  
 - [2022-02-09](#2022-02-09)
 
   - [1. DALL-Eval: Probing the Reasoning Skills and Social Biases of Text-to-Image Generative Transformers](#2022-02-09-1)
-  
+
 - [2022-02-08](#2022-02-08)
 
   - [1. Machine Translation from Signed to Spoken Languages: State of the Art and Challenges](#2022-02-08-1)
@@ -22,6 +30,106 @@
 - [2022-01-28](#2022-01-28)
   - [1. Tackling data scarcity in speech translation using zero-shot multilingual machine translation techniques](#2022-01-28-1)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2022-02-10
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-02-10-1">1. Machine Explanations and Human Understanding
+</h2>
+
+Title: [Machine Explanations and Human Understanding](https://arxiv.org/abs/2202.04092)
+
+Authors: [Chacha Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+C), [Shi Feng](https://arxiv.org/search/cs?searchtype=author&query=Feng%2C+S), [Amit Sharma](https://arxiv.org/search/cs?searchtype=author&query=Sharma%2C+A), [Chenhao Tan](https://arxiv.org/search/cs?searchtype=author&query=Tan%2C+C)
+
+> Explanations are hypothesized to improve human understanding of machine learning models and achieve a variety of desirable outcomes, ranging from model debugging to enhancing human decision making. However, empirical studies have found mixed and even negative results. An open question, therefore, is under what conditions explanations can improve human understanding and in what way. Using adapted causal diagrams, we provide a formal characterization of the interplay between machine explanations and human understanding, and show how human intuitions play a central role in enabling human understanding. Specifically, we identify three core concepts of interest that cover all existing quantitative measures of understanding in the context of human-AI decision making: task decision boundary, model decision boundary, and model error. Our key result is that without assumptions about task-specific intuitions, explanations may potentially improve human understanding of model decision boundary, but they cannot improve human understanding of task decision boundary or model error. To achieve complementary human-AI performance, we articulate possible ways on how explanations need to work with human intuitions. For instance, human intuitions about the relevance of features (e.g., education is more important than age in predicting a person's income) can be critical in detecting model error. We validate the importance of human intuitions in shaping the outcome of machine explanations with empirical human-subject studies. Overall, our work provides a general framework along with actionable implications for future algorithmic development and empirical experiments of machine explanations.
+
+| Comments: | 26 pages, 13 figures                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Artificial Intelligence (cs.AI)**; Computation and Language (cs.CL); Computers and Society (cs.CY); Human-Computer Interaction (cs.HC) |
+| Cite as:  | **[arXiv:2202.04092](https://arxiv.org/abs/2202.04092) [cs.AI]** |
+|           | (or **[arXiv:2202.04092v1](https://arxiv.org/abs/2202.04092v1) [cs.AI]** for this version) |
+
+
+
+
+
+<h2 id="2022-02-10-2">2. Image Difference Captioning with Pre-training and Contrastive Learning
+</h2>
+
+Title: [Image Difference Captioning with Pre-training and Contrastive Learning](https://arxiv.org/abs/2202.04298)
+
+Authors: [Linli Yao](https://arxiv.org/search/cs?searchtype=author&query=Yao%2C+L), [Weiying Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+W), [Qin Jin](https://arxiv.org/search/cs?searchtype=author&query=Jin%2C+Q)
+
+> The Image Difference Captioning (IDC) task aims to describe the visual differences between two similar images with natural language. The major challenges of this task lie in two aspects: 1) fine-grained visual differences that require learning stronger vision and language association and 2) high-cost of manual annotations that leads to limited supervised data. To address these challenges, we propose a new modeling framework following the pre-training-finetuning paradigm. Specifically, we design three self-supervised tasks and contrastive learning strategies to align visual differences and text descriptions at a fine-grained level. Moreover, we propose a data expansion strategy to utilize extra cross-task supervision information, such as data for fine-grained image classification, to alleviate the limitation of available supervised IDC data. Extensive experiments on two IDC benchmark datasets, CLEVR-Change and Birds-to-Words, demonstrate the effectiveness of the proposed modeling framework. The codes and models will be released at [this https URL](https://github.com/yaolinli/IDC).
+
+| Comments: | Accepted to AAAI2022                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Multimedia (cs.MM)**; Computation and Language (cs.CL); Computer Vision and Pattern Recognition (cs.CV) |
+| Cite as:  | **[arXiv:2202.04298](https://arxiv.org/abs/2202.04298) [cs.MM]** |
+|           | (or **[arXiv:2202.04298v1](https://arxiv.org/abs/2202.04298v1) [cs.MM]** for this version) |
+
+
+
+
+
+<h2 id="2022-02-10-3">3. Exploring the Limits of Domain-Adaptive Training for Detoxifying Large-Scale Language Models
+</h2>
+
+Title: [Exploring the Limits of Domain-Adaptive Training for Detoxifying Large-Scale Language Models](https://arxiv.org/abs/2202.04173)
+
+Authors: [Boxin Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+B), [Wei Ping](https://arxiv.org/search/cs?searchtype=author&query=Ping%2C+W), [Chaowei Xiao](https://arxiv.org/search/cs?searchtype=author&query=Xiao%2C+C), [Peng Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+P), [Mostofa Patwary](https://arxiv.org/search/cs?searchtype=author&query=Patwary%2C+M), [Mohammad Shoeybi](https://arxiv.org/search/cs?searchtype=author&query=Shoeybi%2C+M), [Bo Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+B), [Anima Anandkumar](https://arxiv.org/search/cs?searchtype=author&query=Anandkumar%2C+A), [Bryan Catanzaro](https://arxiv.org/search/cs?searchtype=author&query=Catanzaro%2C+B)
+
+> Pre-trained language models (LMs) are shown to easily generate toxic language. In this work, we systematically explore domain-adaptive training to reduce the toxicity of language models. We conduct this study on three dimensions: training corpus, model size, and parameter efficiency. For the training corpus, we propose to leverage the generative power of LMs and generate nontoxic datasets for domain-adaptive training, which mitigates the exposure bias and is shown to be more data-efficient than using a curated pre-training corpus. We demonstrate that the self-generation method consistently outperforms the existing baselines across various model sizes on both automatic and human evaluations, even when it uses a 1/3 smaller training corpus. We then comprehensively study detoxifying LMs with parameter sizes ranging from 126M up to 530B (3x larger than GPT-3), a scale that has never been studied before. We find that i) large LMs have similar toxicity levels as smaller ones given the same pre-training corpus, and ii) large LMs require more endeavor to detoxify. We also explore parameter-efficient training methods for detoxification. We demonstrate that adding and training adapter-only layers in LMs not only saves a lot of parameters but also achieves a better trade-off between toxicity and perplexity than whole model adaptation for the large-scale models.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Computers and Society (cs.CY); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2202.04173](https://arxiv.org/abs/2202.04173) [cs.CL]** |
+|           | (or **[arXiv:2202.04173v1](https://arxiv.org/abs/2202.04173v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-02-10-4">4. pNLP-Mixer: an Efficient all-MLP Architecture for Language
+</h2>
+
+Title: [pNLP-Mixer: an Efficient all-MLP Architecture for Language](https://arxiv.org/abs/2202.04350)
+
+Authors: [Francesco Fusco](https://arxiv.org/search/cs?searchtype=author&query=Fusco%2C+F), [Damian Pascual](https://arxiv.org/search/cs?searchtype=author&query=Pascual%2C+D), [Peter Staar](https://arxiv.org/search/cs?searchtype=author&query=Staar%2C+P)
+
+> Large pre-trained language models drastically changed the natural language processing(NLP) landscape. Nowadays, they represent the go-to framework to tackle diverse NLP tasks, even with a limited number of annotations. However, using those models in production, either in the cloud or at the edge, remains a challenge due to the memory footprint and/or inference costs. As an alternative, recent work on efficient NLP has shown that small weight-efficient models can reach competitive performance at a fraction of the costs. Here, we introduce pNLP-Mixer, an embbedding-free model based on the MLP-Mixer architecture that achieves high weight-efficiency thanks to a novel linguistically informed projection layer. We evaluate our model on two multi-lingual semantic parsing datasets, MTOP and multiATIS. On MTOP our pNLP-Mixer almost matches the performance of mBERT, which has 38 times more parameters, and outperforms the state-of-the-art of tiny models (pQRNN) with 3 times fewer parameters. On a long-sequence classification task (Hyperpartisan) our pNLP-Mixer without pretraining outperforms RoBERTa, which has 100 times more parameters, demonstrating the potential of this architecture.
+
+| Comments: | Preprint                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2202.04350](https://arxiv.org/abs/2202.04350) [cs.CL]** |
+|           | (or **[arXiv:2202.04350v1](https://arxiv.org/abs/2202.04350v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-02-10-5">5. Generating Training Data with Language Models: Towards Zero-Shot Language Understanding
+</h2>
+
+Title: [Generating Training Data with Language Models: Towards Zero-Shot Language Understanding](https://arxiv.org/abs/2202.04538)
+
+Authors: [Yu Meng](https://arxiv.org/search/cs?searchtype=author&query=Meng%2C+Y), [Jiaxin Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+J), [Yu Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Y), [Jiawei Han](https://arxiv.org/search/cs?searchtype=author&query=Han%2C+J)
+
+> Pretrained language models (PLMs) have demonstrated remarkable performance in various natural language processing tasks: Unidirectional PLMs (e.g., GPT) are well known for their superior text generation capabilities; bidirectional PLMs (e.g., BERT) have been the prominent choice for natural language understanding (NLU) tasks. While both types of models have achieved promising few-shot learning performance, their potential for zero-shot learning has been underexplored. In this paper, we present a simple approach that uses both types of PLMs for fully zero-shot learning of NLU tasks without requiring any task-specific data: A unidirectional PLM generates class-conditioned texts guided by prompts, which are used as the training data for fine-tuning a bidirectional PLM. With quality training data selected based on the generation probability and regularization techniques (label smoothing and temporal ensembling) applied to the fine-tuning stage for better generalization and stability, our approach demonstrates strong performance across seven classification tasks of the GLUE benchmark (e.g., 72.3/73.8 on MNLI-m/mm and 92.8 on SST-2), significantly outperforming zero-shot prompting methods and achieving even comparable results to strong few-shot approaches using 32 training samples per class.
+
+| Comments: | Code: [this https URL](https://github.com/yumeng5/SuperGen)  |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2202.04538](https://arxiv.org/abs/2202.04538) [cs.CL]** |
+|           | (or **[arXiv:2202.04538v1](https://arxiv.org/abs/2202.04538v1) [cs.CL]** for this version) |
+
+
 
 
 
