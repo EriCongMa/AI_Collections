@@ -3,6 +3,13 @@
 # Index
 
 
+- [2022-02-11](#2022-02-11)
+
+  - [1. SHAS: Approaching optimal Segmentation for End-to-End Speech Translation](#2022-02-11-1)
+  - [2. AdaPrompt: Adaptive Model Training for Prompt-based NLP](#2022-02-11-2)
+  - [3. Slovene SuperGLUE Benchmark: Translation and Evaluation](#2022-02-11-3)
+  - [4. Improving Automatic Speech Recognition for Non-Native English with Transfer Learning and Language Model Decoding](#2022-02-11-4)
+  
 - [2022-02-10](#2022-02-10)
 
   - [1. Machine Explanations and Human Understanding](#2022-02-10-1)
@@ -10,7 +17,7 @@
   - [3. Exploring the Limits of Domain-Adaptive Training for Detoxifying Large-Scale Language Models](#2022-02-10-3)
   - [4. pNLP-Mixer: an Efficient all-MLP Architecture for Language](#2022-02-10-4)
   - [5. Generating Training Data with Language Models: Towards Zero-Shot Language Understanding](#2022-02-10-5)
-  
+
 - [2022-02-09](#2022-02-09)
 
   - [1. DALL-Eval: Probing the Reasoning Skills and Social Biases of Text-to-Image Generative Transformers](#2022-02-09-1)
@@ -30,6 +37,87 @@
 - [2022-01-28](#2022-01-28)
   - [1. Tackling data scarcity in speech translation using zero-shot multilingual machine translation techniques](#2022-01-28-1)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2022-02-11
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-02-11-1">1. SHAS: Approaching optimal Segmentation for End-to-End Speech Translation
+</h2>
+
+Title: [SHAS: Approaching optimal Segmentation for End-to-End Speech Translation](https://arxiv.org/abs/2202.04774)
+
+Authors: [Ioannis Tsiamas](https://arxiv.org/search/cs?searchtype=author&query=Tsiamas%2C+I), [Gerard I. Gállego](https://arxiv.org/search/cs?searchtype=author&query=Gállego%2C+G+I), [José A. R. Fonollosa](https://arxiv.org/search/cs?searchtype=author&query=Fonollosa%2C+J+A+R), [Marta R. Costa-jussà](https://arxiv.org/search/cs?searchtype=author&query=Costa-jussà%2C+M+R)
+
+> Speech translation models are unable to directly process long audios, like TED talks, which have to be split into shorter segments. Speech translation datasets provide manual segmentations of the audios, which are not available in real-world scenarios, and existing segmentation methods usually significantly reduce translation quality at inference time. To bridge the gap between the manual segmentation of training and the automatic one at inference, we propose Supervised Hybrid Audio Segmentation (SHAS), a method that can effectively learn the optimal segmentation from any manually segmented speech corpus. First, we train a classifier to identify the included frames in a segmentation, using speech representations from a pre-trained wav2vec 2.0. The optimal splitting points are then found by a probabilistic Divide-and-Conquer algorithm that progressively splits at the frame of lowest probability until all segments are below a pre-specified length. Experiments on MuST-C and mTEDx show that the translation of the segments produced by our method approaches the quality of the manual segmentation on 5 languages pairs. Namely, SHAS retains 95-98% of the manual segmentation's BLEU score, compared to the 87-93% of the best existing methods. Our method is additionally generalizable to different domains and achieves high zero-shot performance in unseen languages.
+
+| Comments: | 7 pages including appendix                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Sound (cs.SD)**; Computation and Language (cs.CL); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2202.04774](https://arxiv.org/abs/2202.04774) [cs.SD]** |
+|           | (or **[arXiv:2202.04774v1](https://arxiv.org/abs/2202.04774v1) [cs.SD]** for this version) |
+
+
+
+
+
+<h2 id="2022-02-11-2">2. AdaPrompt: Adaptive Model Training for Prompt-based NLP
+</h2>
+
+Title: [AdaPrompt: Adaptive Model Training for Prompt-based NLP](https://arxiv.org/abs/2202.04824)
+
+Authors: [Yulong Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+Y), [Yang Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Y), [Li Dong](https://arxiv.org/search/cs?searchtype=author&query=Dong%2C+L), [Shuohang Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+S), [Chenguang Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+C), [Michael Zeng](https://arxiv.org/search/cs?searchtype=author&query=Zeng%2C+M), [Yue Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Y)
+
+> Prompt-based learning, with its capability to tackle zero-shot and few-shot NLP tasks, has gained much attention in community. The main idea is to bridge the gap between NLP downstream tasks and language modeling (LM), by mapping these tasks into natural language prompts, which are then filled by pre-trained language models (PLMs). However, for prompt learning, there are still two salient gaps between NLP tasks and pretraining. First, prompt information is not necessarily sufficiently present during LM pretraining. Second, task-specific data are not necessarily well represented during pretraining. We address these two issues by proposing AdaPrompt, adaptively retrieving external data for continual pretraining of PLMs by making use of both task and prompt characteristics. In addition, we make use of knowledge in Natural Language Inference models for deriving adaptive verbalizers. Experimental results on five NLP benchmarks show that AdaPrompt can improve over standard PLMs in few-shot settings. In addition, in zero-shot settings, our method outperforms standard prompt-based methods by up to 26.35\% relative error reduction.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2202.04824](https://arxiv.org/abs/2202.04824) [cs.CL]** |
+|           | (or **[arXiv:2202.04824v1](https://arxiv.org/abs/2202.04824v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-02-11-3">3. Slovene SuperGLUE Benchmark: Translation and Evaluation
+</h2>
+
+Title: [Slovene SuperGLUE Benchmark: Translation and Evaluation](https://arxiv.org/abs/2202.04994)
+
+Authors: [Aleš Žagar](https://arxiv.org/search/cs?searchtype=author&query=Žagar%2C+A), [Marko Robnik-Šikonja](https://arxiv.org/search/cs?searchtype=author&query=Robnik-Šikonja%2C+M)
+
+> We present a Slovene combined machine-human translated SuperGLUE benchmark. We describe the translation process and problems arising due to differences in morphology and grammar. We evaluate the translated datasets in several modes: monolingual, cross-lingual, and multilingual, taking into account differences between machine and human translated training sets. The results show that the monolingual Slovene SloBERTa model is superior to massively multilingual and trilingual BERT models, but these also show a good cross-lingual performance on certain tasks. The performance of Slovene models still lags behind the best English models.
+
+| Comments: | arXiv admin note: text overlap with [arXiv:2107.10614](https://arxiv.org/abs/2107.10614) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2202.04994](https://arxiv.org/abs/2202.04994) [cs.CL]** |
+|           | (or **[arXiv:2202.04994v1](https://arxiv.org/abs/2202.04994v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-02-11-4">4. Improving Automatic Speech Recognition for Non-Native English with Transfer Learning and Language Model Decoding
+</h2>
+
+Title: [Improving Automatic Speech Recognition for Non-Native English with Transfer Learning and Language Model Decoding](https://arxiv.org/abs/2202.05209)
+
+Authors: [Peter Sullivan](https://arxiv.org/search/cs?searchtype=author&query=Sullivan%2C+P), [Toshiko Shibano](https://arxiv.org/search/cs?searchtype=author&query=Shibano%2C+T), [Muhammad Abdul-Mageed](https://arxiv.org/search/cs?searchtype=author&query=Abdul-Mageed%2C+M)
+
+> ASR systems designed for native English (L1) usually underperform on non-native English (L2). To address this performance gap, \textbf{(i)} we extend our previous work to investigate fine-tuning of a pre-trained wav2vec 2.0 model \cite{baevski2020wav2vec,xu2021self} under a rich set of L1 and L2 training conditions. We further \textbf{(ii)} incorporate language model decoding in the ASR system, along with the fine-tuning method. Quantifying gains acquired from each of these two approaches separately and an error analysis allows us to identify different sources of improvement within our models. We find that while the large self-trained wav2vec 2.0 may be internalizing sufficient decoding knowledge for clean L1 speech \cite{xu2021self}, this does not hold for L2 speech and accounts for the utility of employing language model decoding on L2 data.
+
+| Comments: | arXiv admin note: substantial text overlap with [arXiv:2110.00678](https://arxiv.org/abs/2110.00678) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2202.05209](https://arxiv.org/abs/2202.05209) [cs.CL]** |
+|           | (or **[arXiv:2202.05209v1](https://arxiv.org/abs/2202.05209v1) [cs.CL]** for this version) |
+
+
 
 
 
