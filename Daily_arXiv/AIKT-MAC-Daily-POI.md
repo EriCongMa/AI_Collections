@@ -3,13 +3,16 @@
 # Index
 
 
-- [2022-02-11](#2022-02-11)
+- [2022-02-14](#2022-02-14)
 
+  - [1. Including Facial Expressions in Contextual Embeddings for Sign Language Generation](#2022-02-14-1)
+  - [2. Evaluating MT Systems: A Theoretical Framework](#2022-02-14-2)
+  
+- [2022-02-11](#2022-02-11)
   - [1. SHAS: Approaching optimal Segmentation for End-to-End Speech Translation](#2022-02-11-1)
   - [2. AdaPrompt: Adaptive Model Training for Prompt-based NLP](#2022-02-11-2)
   - [3. Slovene SuperGLUE Benchmark: Translation and Evaluation](#2022-02-11-3)
   - [4. Improving Automatic Speech Recognition for Non-Native English with Transfer Learning and Language Model Decoding](#2022-02-11-4)
-  
 - [2022-02-10](#2022-02-10)
 
   - [1. Machine Explanations and Human Understanding](#2022-02-10-1)
@@ -17,26 +20,64 @@
   - [3. Exploring the Limits of Domain-Adaptive Training for Detoxifying Large-Scale Language Models](#2022-02-10-3)
   - [4. pNLP-Mixer: an Efficient all-MLP Architecture for Language](#2022-02-10-4)
   - [5. Generating Training Data with Language Models: Towards Zero-Shot Language Understanding](#2022-02-10-5)
-
 - [2022-02-09](#2022-02-09)
 
   - [1. DALL-Eval: Probing the Reasoning Skills and Social Biases of Text-to-Image Generative Transformers](#2022-02-09-1)
-
 - [2022-02-08](#2022-02-08)
 
   - [1. Machine Translation from Signed to Spoken Languages: State of the Art and Challenges](#2022-02-08-1)
   - [2. Efficient Adapter Transfer of Self-Supervised Speech Models for Automatic Speech Recognition](#2022-02-08-2)
   - [3. Red Teaming Language Models with Language Models](#2022-02-08-3)
-
 - [2022-02-07](#2022-02-07)
 
   - [1. Data Scaling Laws in NMT: The Effect of Noise and Architecture](#2022-02-07-1)
   - [2. Temporal Attention for Language Models](#2022-02-07-2)
   - [3. The Ecological Footprint of Neural Machine Translation Systems](#2022-02-07-3)
-
 - [2022-01-28](#2022-01-28)
   - [1. Tackling data scarcity in speech translation using zero-shot multilingual machine translation techniques](#2022-01-28-1)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2022-02-14
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-02-14-1">1. Including Facial Expressions in Contextual Embeddings for Sign Language Generation
+</h2>
+
+Title: [Including Facial Expressions in Contextual Embeddings for Sign Language Generation](https://arxiv.org/abs/2202.05383)
+
+Authors: [Carla Viegas](https://arxiv.org/search/cs?searchtype=author&query=Viegas%2C+C), [Mert İnan](https://arxiv.org/search/cs?searchtype=author&query=İnan%2C+M), [Lorna Quandt](https://arxiv.org/search/cs?searchtype=author&query=Quandt%2C+L), [Malihe Alikhani](https://arxiv.org/search/cs?searchtype=author&query=Alikhani%2C+M)
+
+> State-of-the-art sign language generation frameworks lack expressivity and naturalness which is the result of only focusing manual signs, neglecting the affective, grammatical and semantic functions of facial expressions. The purpose of this work is to augment semantic representation of sign language through grounding facial expressions. We study the effect of modeling the relationship between text, gloss, and facial expressions on the performance of the sign generation systems. In particular, we propose a Dual Encoder Transformer able to generate manual signs as well as facial expressions by capturing the similarities and differences found in text and sign gloss annotation. We take into consideration the role of facial muscle activity to express intensities of manual signs by being the first to employ facial action units in sign language generation. We perform a series of experiments showing that our proposed model improves the quality of automatically generated sign language.
+
+| Subjects: | **Computation and Language (cs.CL)**; Computer Vision and Pattern Recognition (cs.CV); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2202.05383](https://arxiv.org/abs/2202.05383) [cs.CL]** |
+|           | (or **[arXiv:2202.05383v1](https://arxiv.org/abs/2202.05383v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-02-14-2">2. Evaluating MT Systems: A Theoretical Framework
+</h2>
+
+Title: [Evaluating MT Systems: A Theoretical Framework](https://arxiv.org/abs/2202.05806)
+
+Authors: [Rajeev Sangal](https://arxiv.org/search/cs?searchtype=author&query=Sangal%2C+R)
+
+> This paper outlines a theoretical framework using which different automatic metrics can be designed for evaluation of Machine Translation systems. It introduces the concept of {\em cognitive ease} which depends on {\em adequacy} and {\em lack of fluency}. Thus, cognitive ease becomes the main parameter to be measured rather than comprehensibility. The framework allows the components of cognitive ease to be broken up and computed based on different linguistic levels etc. Independence of dimensions and linearly combining them provides for a highly modular approach. 
+> The paper places the existing automatic methods in an overall framework, to understand them better and to improve upon them in future. It can also be used to evaluate the newer types of MT systems, such as speech to speech translation and discourse translation.
+
+| Comments: | 18 pages                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2202.05806](https://arxiv.org/abs/2202.05806) [cs.CL]** |
+|           | (or **[arXiv:2202.05806v1](https://arxiv.org/abs/2202.05806v1) [cs.CL]** for this version) |
 
 
 
