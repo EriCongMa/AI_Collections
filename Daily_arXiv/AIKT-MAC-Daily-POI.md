@@ -3,11 +3,17 @@
 # Index
 
 
+- [2022-02-15](#2022-02-15)
+
+  - [1. https://arxiv.org/abs/2202.06045](#2022-02-15-1)
+  - [2. A Contrastive Framework for Neural Text Generation](#2022-02-15-2)
+  - [3. I-Tuning: Tuning Language Models with Image for Caption Generation](#2022-02-15-3)
+  
 - [2022-02-14](#2022-02-14)
 
   - [1. Including Facial Expressions in Contextual Embeddings for Sign Language Generation](#2022-02-14-1)
   - [2. Evaluating MT Systems: A Theoretical Framework](#2022-02-14-2)
-  
+
 - [2022-02-11](#2022-02-11)
   - [1. SHAS: Approaching optimal Segmentation for End-to-End Speech Translation](#2022-02-11-1)
   - [2. AdaPrompt: Adaptive Model Training for Prompt-based NLP](#2022-02-11-2)
@@ -36,6 +42,69 @@
 - [2022-01-28](#2022-01-28)
   - [1. Tackling data scarcity in speech translation using zero-shot multilingual machine translation techniques](#2022-01-28-1)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2022-02-15
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-02-15-1">1. USTED: Improving ASR with a Unified Speech and Text Encoder-Decoder
+</h2>
+
+Title: [USTED: Improving ASR with a Unified Speech and Text Encoder-Decoder](https://arxiv.org/abs/2202.06045)
+
+Authors:[Bolaji Yusuf](https://arxiv.org/search/cs?searchtype=author&query=Yusuf%2C+B), [Ankur Gandhe](https://arxiv.org/search/cs?searchtype=author&query=Gandhe%2C+A), [Alex Sokolov](https://arxiv.org/search/cs?searchtype=author&query=Sokolov%2C+A)
+
+> Improving end-to-end speech recognition by incorporating external text data has been a longstanding research topic. There has been a recent focus on training E2E ASR models that get the performance benefits of external text data without incurring the extra cost of evaluating an external language model at inference time. In this work, we propose training ASR model jointly with a set of text-to-text auxiliary tasks with which it shares a decoder and parts of the encoder. When we jointly train ASR and masked language model with the 960-hour Librispeech and Opensubtitles data respectively, we observe WER reductions of 16% and 20% on test-other and test-clean respectively over an ASR-only baseline without any extra cost at inference time, and reductions of 6% and 8% compared to a stronger MUTE-L baseline which trains the decoder with the same text data as our model. We achieve further improvements when we train masked language model on Librispeech data or when we use machine translation as the auxiliary task, without significantly sacrificing performance on the task itself.
+
+| Comments: | 2022 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP 2022) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2202.06045](https://arxiv.org/abs/2202.06045) [cs.CL]** |
+|           | (or **[arXiv:2202.06045v1](https://arxiv.org/abs/2202.06045v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-02-15-2">2. A Contrastive Framework for Neural Text Generation
+</h2>
+
+Title: [A Contrastive Framework for Neural Text Generation](https://arxiv.org/abs/2202.06417)
+
+Authors:[Yixuan Su](https://arxiv.org/search/cs?searchtype=author&query=Su%2C+Y), [Tian Lan](https://arxiv.org/search/cs?searchtype=author&query=Lan%2C+T), [Yan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Y), [Dani Yogatama](https://arxiv.org/search/cs?searchtype=author&query=Yogatama%2C+D), [Lingpeng Kong](https://arxiv.org/search/cs?searchtype=author&query=Kong%2C+L), [Nigel Collier](https://arxiv.org/search/cs?searchtype=author&query=Collier%2C+N)
+
+> Text generation is of great importance to many natural language processing applications. However, maximization-based decoding methods (e.g. beam search) of neural language models often lead to degenerate solutions -- the generated text is unnatural and contains undesirable repetitions. Existing approaches introduce stochasticity via sampling or modify training objectives to decrease probabilities of certain tokens (e.g., unlikelihood training). However, they often lead to solutions that lack coherence. In this work, we show that an underlying reason for model degeneration is the anisotropic distribution of token representations. We present a contrastive solution: (i) SimCTG, a contrastive training objective to calibrate the model's representation space, and (ii) a decoding method -- contrastive search -- to encourage diversity while maintaining coherence in the generated text. Extensive experiments and analyses on three benchmarks from two languages demonstrate that our proposed approach outperforms state-of-the-art text generation methods as evaluated by both human and automatic metrics.
+
+| Comments: | 22 pages, 8 figures, and 8 tables                            |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2202.06417](https://arxiv.org/abs/2202.06417) [cs.CL]** |
+|           | (or **[arXiv:2202.06417v1](https://arxiv.org/abs/2202.06417v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-02-15-3">3. I-Tuning: Tuning Language Models with Image for Caption Generation
+</h2>
+
+Title: [I-Tuning: Tuning Language Models with Image for Caption Generation](https://arxiv.org/abs/2202.06574)
+
+Authors:[Ziyang Luo](https://arxiv.org/search/cs?searchtype=author&query=Luo%2C+Z), [Yadong Xi](https://arxiv.org/search/cs?searchtype=author&query=Xi%2C+Y), [Rongsheng Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+R), [Jing Ma](https://arxiv.org/search/cs?searchtype=author&query=Ma%2C+J)
+
+> Recently, tuning the pre-trained language model (PLM) in a parameter-efficient manner becomes a popular topic in the natural language processing area. However, most of them focus on tuning the PLM with the text-only information. In this work, we propose a new perspective to tune the frozen PLM with images for caption generation. We denote our method as I-Tuning, which can automatically filter the vision information from images to adjust the output hidden states of PLM. Evaluating on the image captioning tasks (MSCOCO and Flickr30k Captioning), our method achieves comparable or even better performance than the previous models which have 2-4 times more trainable parameters and/or consume a large amount of cross-modal pre-training data.
+
+| Comments: | Work in progress                                             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Computer Vision and Pattern Recognition (cs.CV) |
+| Cite as:  | **[arXiv:2202.06574](https://arxiv.org/abs/2202.06574) [cs.CL]** |
+|           | (or **[arXiv:2202.06574v1](https://arxiv.org/abs/2202.06574v1) [cs.CL]** for this version) |
+
+
 
 
 
