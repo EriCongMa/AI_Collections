@@ -3,12 +3,20 @@
 # Index
 
 
+- [2022-02-16](#2022-02-16)
+
+  - [1. A Survey on Dynamic Neural Networks for Natural Language Processing](#2022-02-16-1)
+  - [2. A Survey on Model Compression for Natural Language Processing](#2022-02-16-2)
+  - [3. MuLD: The Multitask Long Document Benchmark](#2022-02-16-3)
+  - [4. BLUE at Memotion 2.0 2022: You have my Image, my Text and my Transformer](#2022-02-16-4)
+  - [5. Delving Deeper into Cross-lingual Visual Question Answering](#2022-02-16-5)
+  
 - [2022-02-15](#2022-02-15)
 
   - [1. https://arxiv.org/abs/2202.06045](#2022-02-15-1)
   - [2. A Contrastive Framework for Neural Text Generation](#2022-02-15-2)
   - [3. I-Tuning: Tuning Language Models with Image for Caption Generation](#2022-02-15-3)
-  
+
 - [2022-02-14](#2022-02-14)
 
   - [1. Including Facial Expressions in Contextual Embeddings for Sign Language Generation](#2022-02-14-1)
@@ -42,6 +50,102 @@
 - [2022-01-28](#2022-01-28)
   - [1. Tackling data scarcity in speech translation using zero-shot multilingual machine translation techniques](#2022-01-28-1)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2022-02-16
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-02-16-1">1. A Survey on Dynamic Neural Networks for Natural Language Processing
+</h2>
+
+Title: [A Survey on Dynamic Neural Networks for Natural Language Processing](https://arxiv.org/abs/2202.07101)
+
+Authors: [Canwen Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+C), [Julian McAuley](https://arxiv.org/search/cs?searchtype=author&query=McAuley%2C+J)
+
+> Effectively scaling large Transformer models is a main driver of recent advances in natural language processing. Dynamic neural networks, as an emerging research direction, are capable of scaling up neural networks with sub-linear increases in computation and time by dynamically adjusting their computational path based on the input. Dynamic neural networks could be a promising solution to the growing parameter numbers of pretrained language models, allowing both model pretraining with trillions of parameters and faster inference on mobile devices. In this survey, we summarize progress of three types of dynamic neural networks in NLP: skimming, mixture of experts, and early exit. We also highlight current challenges in dynamic neural networks and directions for future research.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2202.07101](https://arxiv.org/abs/2202.07101) [cs.CL]** |
+|           | (or **[arXiv:2202.07101v1](https://arxiv.org/abs/2202.07101v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-02-16-2">2. A Survey on Model Compression for Natural Language Processing
+</h2>
+
+Title: [A Survey on Model Compression for Natural Language Processing](https://arxiv.org/abs/2202.07105)
+
+Authors: [Canwen Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+C), [Julian McAuley](https://arxiv.org/search/cs?searchtype=author&query=McAuley%2C+J)
+
+> With recent developments in new architectures like Transformer and pretraining techniques, significant progress has been made in applications of natural language processing (NLP). However, the high energy cost and long inference delay of Transformer is preventing NLP from entering broader scenarios including edge and mobile computing. Efficient NLP research aims to comprehensively consider computation, time and carbon emission for the entire life-cycle of NLP, including data preparation, model training and inference. In this survey, we focus on the inference stage and review the current state of model compression for NLP, including the benchmarks, metrics and methodology. We outline the current obstacles and future research directions.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2202.07105](https://arxiv.org/abs/2202.07105) [cs.CL]** |
+|           | (or **[arXiv:2202.07105v1](https://arxiv.org/abs/2202.07105v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-02-16-3">3. MuLD: The Multitask Long Document Benchmark
+</h2>
+
+Title: [MuLD: The Multitask Long Document Benchmark](https://arxiv.org/abs/2202.07362)
+
+Authors: [G Thomas Hudson](https://arxiv.org/search/cs?searchtype=author&query=Hudson%2C+G+T), [Noura Al Moubayed](https://arxiv.org/search/cs?searchtype=author&query=Moubayed%2C+N+A)
+
+> The impressive progress in NLP techniques has been driven by the development of multi-task benchmarks such as GLUE and SuperGLUE. While these benchmarks focus on tasks for one or two input sentences, there has been exciting work in designing efficient techniques for processing much longer inputs. In this paper, we present MuLD: a new long document benchmark consisting of only documents over 10,000 tokens. By modifying existing NLP tasks, we create a diverse benchmark which requires models to successfully model long-term dependencies in the text. We evaluate how existing models perform, and find that our benchmark is much more challenging than their `short document' equivalents. Furthermore, by evaluating both regular and efficient transformers, we show that models with increased context length are better able to solve the tasks presented, suggesting that future improvements in these models are vital for solving similar long document problems. We release the data and code for baselines to encourage further research on efficient NLP models.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2202.07362](https://arxiv.org/abs/2202.07362) [cs.CL]** |
+|           | (or **[arXiv:2202.07362v1](https://arxiv.org/abs/2202.07362v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-02-16-4">4. BLUE at Memotion 2.0 2022: You have my Image, my Text and my Transformer
+</h2>
+
+Title: [BLUE at Memotion 2.0 2022: You have my Image, my Text and my Transformer](https://arxiv.org/abs/2202.07543)
+
+Authors: [Ana-Maria Bucur](https://arxiv.org/search/cs?searchtype=author&query=Bucur%2C+A), [Adrian Cosma](https://arxiv.org/search/cs?searchtype=author&query=Cosma%2C+A), [Ioan-Bogdan Iordache](https://arxiv.org/search/cs?searchtype=author&query=Iordache%2C+I)
+
+> Memes are prevalent on the internet and continue to grow and evolve alongside our culture. An automatic understanding of memes propagating on the internet can shed light on the general sentiment and cultural attitudes of people. In this work, we present team BLUE's solution for the second edition of the MEMOTION competition. We showcase two approaches for meme classification (i.e. sentiment, humour, offensive, sarcasm and motivation levels) using a text-only method using BERT, and a Multi-Modal-Multi-Task transformer network that operates on both the meme image and its caption to output the final scores. In both approaches, we leverage state-of-the-art pretrained models for text (BERT, Sentence Transformer) and image processing (EfficientNetV4, CLIP). Through our efforts, we obtain first place in task A, second place in task B and third place in task C. In addition, our team obtained the highest average score for all three tasks.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2202.07543](https://arxiv.org/abs/2202.07543) [cs.CL]** |
+|           | (or **[arXiv:2202.07543v1](https://arxiv.org/abs/2202.07543v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-02-16-5">5. Delving Deeper into Cross-lingual Visual Question Answering
+</h2>
+
+Title: [Delving Deeper into Cross-lingual Visual Question Answering](https://arxiv.org/abs/2202.07630)
+
+Authors: [Chen Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+C), [Jonas Pfeiffer](https://arxiv.org/search/cs?searchtype=author&query=Pfeiffer%2C+J), [Anna Korhonen](https://arxiv.org/search/cs?searchtype=author&query=Korhonen%2C+A), [Ivan Vulic](https://arxiv.org/search/cs?searchtype=author&query=Vulic%2C+I), [Iryna Gurevych](https://arxiv.org/search/cs?searchtype=author&query=Gurevych%2C+I)
+
+> Visual question answering (VQA) is one of the crucial vision-and-language tasks. Yet, the bulk of research until recently has focused only on the English language due to the lack of appropriate evaluation resources. Previous work on cross-lingual VQA has reported poor zero-shot transfer performance of current multilingual multimodal Transformers and large gaps to monolingual performance, attributed mostly to misalignment of text embeddings between the source and target languages, without providing any additional deeper analyses. In this work, we delve deeper and address different aspects of cross-lingual VQA holistically, aiming to understand the impact of input data, fine-tuning and evaluation regimes, and interactions between the two modalities in cross-lingual setups. 1) We tackle low transfer performance via novel methods that substantially reduce the gap to monolingual English performance, yielding +10 accuracy points over existing transfer methods. 2) We study and dissect cross-lingual VQA across different question types of varying complexity, across different multilingual multi-modal Transformers, and in zero-shot and few-shot scenarios. 3) We further conduct extensive analyses on modality biases in training data and models, aimed to further understand why zero-shot performance gaps remain for some question types and languages. We hope that the novel methods and detailed analyses will guide further progress in multilingual VQA.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2202.07630](https://arxiv.org/abs/2202.07630) [cs.CL]** |
+|           | (or **[arXiv:2202.07630v1](https://arxiv.org/abs/2202.07630v1) [cs.CL]** for this version) |
+
+
 
 
 
