@@ -2,7 +2,21 @@
 
 # Index
 
+- [2022-02-21](#2022-02-21)
+  - [1. Improving English to Sinhala Neural Machine Translation using Part-of-Speech Tag](#2022-02-21-1)
+  - [2. VLP: A Survey on Vision-Language Pre-training](#2022-02-21-2)
+  
+- [2022-02-18](#2022-02-18)
+  - [1. End-to-End Training of Both Translation Models in the Back-Translation Framework](#2022-02-18-1)
+  - [2. cosFormer: Rethinking Softmax in Attention](#2022-02-18-2)
 
+
+- [2022-02-17](#2022-02-17)
+
+  - [1. On the Self Shuffle Language](#2022-02-17-1)
+  - [2. ZeroGen: Efficient Zero-shot Learning via Dataset Generation](#2022-02-17-2)
+  - [3. Revisiting Parameter-Efficient Tuning: Are We Really There Yet?](#2022-02-17-3)
+  - [4. Should You Mask 15% in Masked Language Modeling?](#2022-02-17-4)
 - [2022-02-16](#2022-02-16)
 
   - [1. A Survey on Dynamic Neural Networks for Natural Language Processing](#2022-02-16-1)
@@ -10,7 +24,7 @@
   - [3. MuLD: The Multitask Long Document Benchmark](#2022-02-16-3)
   - [4. BLUE at Memotion 2.0 2022: You have my Image, my Text and my Transformer](#2022-02-16-4)
   - [5. Delving Deeper into Cross-lingual Visual Question Answering](#2022-02-16-5)
-  
+
 - [2022-02-15](#2022-02-15)
 
   - [1. https://arxiv.org/abs/2202.06045](#2022-02-15-1)
@@ -50,6 +64,185 @@
 - [2022-01-28](#2022-01-28)
   - [1. Tackling data scarcity in speech translation using zero-shot multilingual machine translation techniques](#2022-01-28-1)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2022-02-21
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-02-21-1">1. Improving English to Sinhala Neural Machine Translation using Part-of-Speech Tag
+</h2>
+
+Title: [Improving English to Sinhala Neural Machine Translation using Part-of-Speech Tag](https://arxiv.org/abs/2202.08882)
+
+Authors: [Ravinga Perera](https://arxiv.org/search/cs?searchtype=author&query=Perera%2C+R), [Thilakshi Fonseka](https://arxiv.org/search/cs?searchtype=author&query=Fonseka%2C+T), [Rashmini Naranpanawa](https://arxiv.org/search/cs?searchtype=author&query=Naranpanawa%2C+R), [Uthayasanker Thayasivam](https://arxiv.org/search/cs?searchtype=author&query=Thayasivam%2C+U)
+
+> The performance of Neural Machine Translation (NMT) depends significantly on the size of the available parallel corpus. Due to this fact, low resource language pairs demonstrate low translation performance compared to high resource language pairs. The translation quality further degrades when NMT is performed for morphologically rich languages. Even though the web contains a large amount of information, most people in Sri Lanka are unable to read and understand English properly. Therefore, there is a huge requirement of translating English content to local languages to share information among locals. Sinhala language is the primary language in Sri Lanka and building an NMT system that can produce quality English to Sinhala translations is difficult due to the syntactic divergence between these two languages under low resource constraints. Thus, in this research, we explore effective methods of incorporating Part of Speech (POS) tags to the Transformer input embedding and positional encoding to further enhance the performance of the baseline English to Sinhala neural machine translation model.
+
+| Subjects:    | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| ------------ | ------------------------------------------------------------ |
+| ACM classes: | I.2.7                                                        |
+| Cite as:     | **[arXiv:2202.08882](https://arxiv.org/abs/2202.08882) [cs.CL]** |
+|              | (or **[arXiv:2202.08882v1](https://arxiv.org/abs/2202.08882v1) [cs.CL]** for this version) |
+|              | https://doi.org/10.48550/arXiv.2202.08882Focus to learn more |
+
+
+
+
+
+
+
+<h2 id="2022-02-21-2">2. VLP: A Survey on Vision-Language Pre-training
+</h2>
+
+Title: [VLP: A Survey on Vision-Language Pre-training](https://arxiv.org/abs/2202.09061)
+
+Authors: [Feilong Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+F), [Duzhan Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+D), [Minglun Han](https://arxiv.org/search/cs?searchtype=author&query=Han%2C+M), [Xiuyi Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+X), [Jing Shi](https://arxiv.org/search/cs?searchtype=author&query=Shi%2C+J), [Shuang Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+S), [Bo Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+B)
+
+> In the past few years, the emergence of pre-training models has brought uni-modal fields such as computer vision (CV) and natural language processing (NLP) to a new era. Substantial works have shown they are beneficial for downstream uni-modal tasks and avoid training a new model from scratch. So can such pre-trained models be applied to multi-modal tasks? Researchers have explored this problem and made significant progress. This paper surveys recent advances and new frontiers in vision-language pre-training (VLP), including image-text and video-text pre-training. To give readers a better overall grasp of VLP, we first review its recent advances from five aspects: feature extraction, model architecture, pre-training objectives, pre-training datasets, and downstream tasks. Then, we summarize the specific VLP models in detail. Finally, we discuss the new frontiers in VLP. To the best of our knowledge, this is the first survey on VLP. We hope that this survey can shed light on future research in the VLP field.
+
+| Comments: | A Survey on Vision-Language Pre-training                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2202.09061](https://arxiv.org/abs/2202.09061) [cs.CV]** |
+|           | (or **[arXiv:2202.09061v1](https://arxiv.org/abs/2202.09061v1) [cs.CV]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2202.09061Focus to learn more |
+
+
+
+
+
+
+
+# 2022-02-18
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-02-18-1">1. End-to-End Training of Both Translation Models in the Back-Translation Framework
+</h2>
+
+Title: [End-to-End Training of Both Translation Models in the Back-Translation Framework](https://arxiv.org/abs/2202.08465)
+
+Authors: [DongNyeong Heo](https://arxiv.org/search/cs?searchtype=author&query=Heo%2C+D), [Heeyoul Choi](https://arxiv.org/search/cs?searchtype=author&query=Choi%2C+H)
+
+> Semi-supervised learning algorithms in neural machine translation (NMT) have significantly improved translation quality compared to the supervised learning algorithms by using additional monolingual corpora. Among them, back-translation is a theoretically well-structured and cutting-edge method. Given two pre-trained NMT models between source and target languages, one translates a monolingual sentence as a latent sentence, and the other reconstructs the monolingual input sentence given the latent sentence. Therefore, previous works tried to apply the variational auto-encoder's (VAE) training framework to the back-translation framework. However, the discrete property of the latent sentence made it impossible to use backpropagation in the framework. This paper proposes a categorical reparameterization trick that generates a differentiable sentence, with which we practically implement the VAE's training framework for the back-translation and train it by end-to-end backpropagation. In addition, we propose several regularization techniques that are especially advantageous to this framework. In our experiments, we demonstrate that our method makes backpropagation available through the latent sentences and improves the BLEU scores on the datasets of the WMT18 translation task.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2202.08465](https://arxiv.org/abs/2202.08465) [cs.CL]** |
+|           | (or **[arXiv:2202.08465v1](https://arxiv.org/abs/2202.08465v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-02-18-2">2. cosFormer: Rethinking Softmax in Attention
+</h2>
+
+Title: [cosFormer: Rethinking Softmax in Attention](https://arxiv.org/abs/2202.08791)
+
+Authors: [Zhen Qin](https://arxiv.org/search/cs?searchtype=author&query=Qin%2C+Z), [Weixuan Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+W), [Hui Deng](https://arxiv.org/search/cs?searchtype=author&query=Deng%2C+H), [Dongxu Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+D), [Yunshen Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+Y), [Baohong Lv](https://arxiv.org/search/cs?searchtype=author&query=Lv%2C+B), [Junjie Yan](https://arxiv.org/search/cs?searchtype=author&query=Yan%2C+J), [Lingpeng Kong](https://arxiv.org/search/cs?searchtype=author&query=Kong%2C+L), [Yiran Zhong](https://arxiv.org/search/cs?searchtype=author&query=Zhong%2C+Y)
+
+> Transformer has shown great successes in natural language processing, computer vision, and audio processing. As one of its core components, the softmax attention helps to capture long-range dependencies yet prohibits its scale-up due to the quadratic space and time complexity to the sequence length. Kernel methods are often adopted to reduce the complexity by approximating the softmax operator. Nevertheless, due to the approximation errors, their performances vary in different tasks/corpus and suffer crucial performance drops when compared with the vanilla softmax attention. In this paper, we propose a linear transformer called cosFormer that can achieve comparable or better accuracy to the vanilla transformer in both casual and cross attentions. cosFormer is based on two key properties of softmax attention: i). non-negativeness of the attention matrix; ii). a non-linear re-weighting scheme that can concentrate the distribution of the attention matrix. As its linear substitute, cosFormer fulfills these properties with a linear operator and a cosine-based distance re-weighting mechanism. Extensive experiments on language modeling and text understanding tasks demonstrate the effectiveness of our method. We further examine our method on long sequences and achieve state-of-the-art performance on the Long-Range Arena benchmark. The source code is available at [this https URL](https://github.com/OpenNLPLab/cosFormer).
+
+| Comments: | Accepted to ICLR2022. Yiran Zhong is the corresponding author. Zhen Qin, Weixuan Sun, Hui Deng contributed equally to this work |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2202.08791](https://arxiv.org/abs/2202.08791) [cs.CL]** |
+|           | (or **[arXiv:2202.08791v1](https://arxiv.org/abs/2202.08791v1) [cs.CL]** for this version) |
+
+
+
+# 2022-02-17
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-02-17-1">1. On the Self Shuffle Language
+</h2>
+
+Title: [On the Self Shuffle Language](https://arxiv.org/abs/2202.07988)
+
+Authors: [Pamela Fleischmann](https://arxiv.org/search/math?searchtype=author&query=Fleischmann%2C+P), [Tero Harju](https://arxiv.org/search/math?searchtype=author&query=Harju%2C+T), [Lukas Haschke](https://arxiv.org/search/math?searchtype=author&query=Haschke%2C+L), [Jonas Höfer](https://arxiv.org/search/math?searchtype=author&query=Höfer%2C+J), [Dirk Nowotka](https://arxiv.org/search/math?searchtype=author&query=Nowotka%2C+D)
+
+> The shuffle product \(u\shuffle v\) of two words \(u\) and \(v\) is the set of all words which can be obtained by interleaving \(u\) and \(v\). Motivated by the paper \emph{The Shuffle Product: New Research Directions} by Restivo (2015) we investigate a special case of the shuffle product. In this work we consider the shuffle of a word with itself called the \emph{self shuffle} or \emph{shuffle square}, showing first that the self shuffle language and the shuffle of the language are in general different sets. We prove that the language of all words arising as a self shuffle of some word is context sensitive but not context free. Furthermore, we show that the self shuffle \(w \shuffle w\) uniquely determines \(w\).
+
+| Subjects:    | **Combinatorics (math.CO)**; Computation and Language (cs.CL) |
+| ------------ | ------------------------------------------------------------ |
+| MSC classes: | 14J60                                                        |
+| ACM classes: | F.2.2; I.2.7                                                 |
+| Cite as:     | **[arXiv:2202.07988](https://arxiv.org/abs/2202.07988) [math.CO]** |
+|              | (or **[arXiv:2202.07988v1](https://arxiv.org/abs/2202.07988v1) [math.CO]** for this version) |
+|              | https://doi.org/10.48550/arXiv.2202.07988Focus to learn more |
+
+
+
+
+
+<h2 id="2022-02-17-2">2. ZeroGen: Efficient Zero-shot Learning via Dataset Generation
+</h2>
+
+Title: [ZeroGen: Efficient Zero-shot Learning via Dataset Generation](https://arxiv.org/abs/2202.07922)
+
+Authors: [Jiacheng Ye](https://arxiv.org/search/cs?searchtype=author&query=Ye%2C+J), [Jiahui Gao](https://arxiv.org/search/cs?searchtype=author&query=Gao%2C+J), [Qintong Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Q), [Hang Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+H), [Jiangtao Feng](https://arxiv.org/search/cs?searchtype=author&query=Feng%2C+J), [Zhiyong Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+Z), [Tao Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+T), [Lingpeng Kong](https://arxiv.org/search/cs?searchtype=author&query=Kong%2C+L)
+
+> There is a growing interest in dataset generation recently due to the superior generative capacity of large pre-trained language models (PLMs). In this paper, we study a flexible and efficient zero-short learning method, ZeroGen. Given a zero-shot task, we first generate a dataset from scratch using PLMs in an unsupervised manner. Then, we train a tiny task model (e.g., LSTM) under the supervision of the synthesized dataset. This approach allows highly efficient inference as the final task model only has orders of magnitude fewer parameters comparing to PLMs (e.g., GPT2-XL). Apart from being annotation-free and efficient, we argue that ZeroGen can also provide useful insights from the perspective of data-free model-agnostic knowledge distillation, and unreferenced text generation evaluation. Experiments and analysis on different NLP tasks, namely, text classification, question answering, and natural language inference), show the effectiveness of ZeroGen.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2202.07922](https://arxiv.org/abs/2202.07922) [cs.CL]** |
+|           | (or **[arXiv:2202.07922v1](https://arxiv.org/abs/2202.07922v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2202.07922Focus to learn more |
+
+
+
+
+
+<h2 id="2022-02-17-3">3. Revisiting Parameter-Efficient Tuning: Are We Really There Yet?
+</h2>
+
+Title: [Revisiting Parameter-Efficient Tuning: Are We Really There Yet?](https://arxiv.org/abs/2202.07962)
+
+Authors: [Guanzheng Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+G), [Fangyu Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+F), [Zaiqiao Meng](https://arxiv.org/search/cs?searchtype=author&query=Meng%2C+Z), [Shangsong Liang](https://arxiv.org/search/cs?searchtype=author&query=Liang%2C+S)
+
+> Parameter-efficient tuning (PETuning) methods have been deemed by many as the new paradigm for using pretrained language models (PLMs). By tuning just a fraction amount of parameters comparing to full model finetuning, PETuning methods claim to have achieved performance on par with or even better than finetuning. In this work, we take a step back and re-examine these PETuning methods by conducting the first comprehensive investigation into the training and evaluation of PETuning methods. We found the problematic validation and testing practice in current studies, when accompanied by the instability nature of PETuning methods, has led to unreliable conclusions. When being compared under a truly fair evaluation protocol, PETuning cannot yield consistently competitive performance while finetuning remains to be the best-performing method in medium- and high-resource settings. We delve deeper into the cause of the instability and observed that model size does not explain the phenomenon but training iteration positively correlates with the stability.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2202.07962](https://arxiv.org/abs/2202.07962) [cs.CL]** |
+|           | (or **[arXiv:2202.07962v1](https://arxiv.org/abs/2202.07962v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2202.07962Focus to learn more |
+
+
+
+
+
+<h2 id="2022-02-17-4">4. Should You Mask 15% in Masked Language Modeling?
+</h2>
+
+Title: [Should You Mask 15% in Masked Language Modeling?](https://arxiv.org/abs/2202.08005)
+
+Authors: [Alexander Wettig](https://arxiv.org/search/cs?searchtype=author&query=Wettig%2C+A), [Tianyu Gao](https://arxiv.org/search/cs?searchtype=author&query=Gao%2C+T), [Zexuan Zhong](https://arxiv.org/search/cs?searchtype=author&query=Zhong%2C+Z), [Danqi Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+D)
+
+> Masked language models conventionally use a masking rate of 15% due to the belief that more masking would provide insufficient context to learn good representations, and less masking would make training too expensive. Surprisingly, we find that masking up to 40% of input tokens can outperform the 15% baseline, and even masking 80% can preserve most of the performance, as measured by fine-tuning on downstream tasks. Increasing the masking rates has two distinct effects, which we investigate through careful ablations: (1) A larger proportion of input tokens are corrupted, reducing the context size and creating a harder task, and (2) models perform more predictions, which benefits training. We observe that larger models in particular favor higher masking rates, as they have more capacity to perform the harder task. We also connect our findings to sophisticated masking schemes such as span masking and PMI masking, as well as BERT's curious 80-10-10 corruption strategy, and find that simple uniform masking with [MASK] replacements can be competitive at higher masking rates. Our results contribute to a better understanding of masked language modeling and point to new avenues for efficient pre-training.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2202.08005](https://arxiv.org/abs/2202.08005) [cs.CL]** |
+|           | (or **[arXiv:2202.08005v1](https://arxiv.org/abs/2202.08005v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2202.08005Focus to learn more |
+
+
+
+
+
+
 
 
 
