@@ -2,10 +2,19 @@
 
 # Index
 
+- [2022-02-22](#2022-02-22)
+  - [1. PETCI: A Parallel English Translation Dataset of Chinese Idioms](#2022-02-22-1)
+  - [2. CALCS 2021 Shared Task: Machine Translation for Code-Switched Data](#2022-02-22-2)
+  - [3. Punctuation Restoration](#2022-02-22-3)
+  - [4. -Tuning: An Efficient Tuning Paradigm for Large-Scale Pre-Trained Models via Label Representation Learning](#2022-02-22-4)
+  - [5. USCORE: An Effective Approach to Fully Unsupervised Evaluation Metrics for Machine Translation](#2022-02-22-5)
+  - [6. BERT WEAVER: Using WEight AVERaging to Enable Lifelong Learning for Transformer-based Models](#2022-02-22-6)
+  - [7. Domain Adaptation in Neural Machine Translation using a Qualia-Enriched FrameNet](#2022-02-22-7)
+  - [8. Interpreting Language Models with Contrastive Explanations](#2022-02-22-8)
+  
 - [2022-02-21](#2022-02-21)
   - [1. Improving English to Sinhala Neural Machine Translation using Part-of-Speech Tag](#2022-02-21-1)
   - [2. VLP: A Survey on Vision-Language Pre-training](#2022-02-21-2)
-  
 - [2022-02-18](#2022-02-18)
   - [1. End-to-End Training of Both Translation Models in the Back-Translation Framework](#2022-02-18-1)
   - [2. cosFormer: Rethinking Softmax in Attention](#2022-02-18-2)
@@ -64,6 +73,168 @@
 - [2022-01-28](#2022-01-28)
   - [1. Tackling data scarcity in speech translation using zero-shot multilingual machine translation techniques](#2022-01-28-1)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2022-02-22
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-02-22-1">1. PETCI: A Parallel English Translation Dataset of Chinese Idioms
+</h2>
+
+Title: [PETCI: A Parallel English Translation Dataset of Chinese Idioms](https://arxiv.org/abs/2202.09509)
+
+Authors: [Kenan Tang](https://arxiv.org/search/cs?searchtype=author&query=Tang%2C+K) (The University of Chicago)
+
+> Idioms are an important language phenomenon in Chinese, but idiom translation is notoriously hard. Current machine translation models perform poorly on idiom translation, while idioms are sparse in many translation datasets. We present PETCI, a parallel English translation dataset of Chinese idioms, aiming to improve idiom translation by both human and machine. The dataset is built by leveraging human and machine effort. Baseline generation models show unsatisfactory abilities to improve translation, but structure-aware classification models show good performance on distinguishing good translations. Furthermore, the size of PETCI can be easily increased without expertise. Overall, PETCI can be helpful to language learners and machine translation systems.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2202.09509](https://arxiv.org/abs/2202.09509) [cs.CL]** |
+|           | (or **[arXiv:2202.09509v1](https://arxiv.org/abs/2202.09509v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2202.09509Focus to learn more |
+
+
+
+
+
+<h2 id="2022-02-22-2">2. CALCS 2021 Shared Task: Machine Translation for Code-Switched Data
+</h2>
+
+Title: [CALCS 2021 Shared Task: Machine Translation for Code-Switched Data](https://arxiv.org/abs/2202.09625)
+
+Authors: [Shuguang Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+S), [Gustavo Aguilar](https://arxiv.org/search/cs?searchtype=author&query=Aguilar%2C+G), [Anirudh Srinivasan](https://arxiv.org/search/cs?searchtype=author&query=Srinivasan%2C+A), [Mona Diab](https://arxiv.org/search/cs?searchtype=author&query=Diab%2C+M), [Thamar Solorio](https://arxiv.org/search/cs?searchtype=author&query=Solorio%2C+T)
+
+> To date, efforts in the code-switching literature have focused for the most part on language identification, POS, NER, and syntactic parsing. In this paper, we address machine translation for code-switched social media data. We create a community shared task. We provide two modalities for participation: supervised and unsupervised. For the supervised setting, participants are challenged to translate English into Hindi-English (Eng-Hinglish) in a single direction. For the unsupervised setting, we provide the following language pairs: English and Spanish-English (Eng-Spanglish), and English and Modern Standard Arabic-Egyptian Arabic (Eng-MSAEA) in both directions. We share insights and challenges in curating the "into" code-switching language evaluation data. Further, we provide baselines for all language pairs in the shared task. The leaderboard for the shared task comprises 12 individual system submissions corresponding to 5 different teams. The best performance achieved is 12.67% BLEU score for English to Hinglish and 25.72% BLEU score for MSAEA to English.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2202.09625](https://arxiv.org/abs/2202.09625) [cs.CL]** |
+|           | (or **[arXiv:2202.09625v1](https://arxiv.org/abs/2202.09625v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2202.09625Focus to learn more |
+
+
+
+
+
+<h2 id="2022-02-22-3">3. Punctuation Restoration
+</h2>
+
+Title: [Punctuation Restoration](https://arxiv.org/abs/2202.09695)
+
+Authors: [Viet Dac Lai](https://arxiv.org/search/cs?searchtype=author&query=Lai%2C+V+D), [Amir Pouran Ben Veyseh](https://arxiv.org/search/cs?searchtype=author&query=Veyseh%2C+A+P+B), [Franck Dernoncourt](https://arxiv.org/search/cs?searchtype=author&query=Dernoncourt%2C+F), [Thien Huu Nguyen](https://arxiv.org/search/cs?searchtype=author&query=Nguyen%2C+T+H)
+
+> Given the increasing number of livestreaming videos, automatic speech recognition and post-processing for livestreaming video transcripts are crucial for efficient data management as well as knowledge mining. A key step in this process is punctuation restoration which restores fundamental text structures such as phrase and sentence boundaries from the video transcripts. This work presents a new human-annotated corpus, called BehancePR, for punctuation restoration in livestreaming video transcripts. Our experiments on BehancePR demonstrate the challenges of punctuation restoration for this domain. Furthermore, we show that popular natural language processing toolkits are incapable of detecting sentence boundary on non-punctuated transcripts of livestreaming videos, calling for more research effort to develop robust models for this area.
+
+| Subjects: | **Computation and Language (cs.CL)**; Computer Vision and Pattern Recognition (cs.CV) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2202.09695](https://arxiv.org/abs/2202.09695) [cs.CL]** |
+|           | (or **[arXiv:2202.09695v1](https://arxiv.org/abs/2202.09695v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2202.09695Focus to learn more |
+
+
+
+
+
+<h2 id="2022-02-22-4">4. -Tuning: An Efficient Tuning Paradigm for Large-Scale Pre-Trained Models via Label Representation Learning
+</h2>
+
+Title: [-Tuning: An Efficient Tuning Paradigm for Large-Scale Pre-Trained Models via Label Representation Learning](https://arxiv.org/abs/2202.09817)
+
+Authors: [Yitao Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Y), [Chenxin An](https://arxiv.org/search/cs?searchtype=author&query=An%2C+C), [Xipeng Qiu](https://arxiv.org/search/cs?searchtype=author&query=Qiu%2C+X)
+
+> With the success of large-scale pre-trained models (PTMs), how efficiently adapting PTMs to downstream tasks has attracted tremendous attention, especially for PTMs with billions of parameters. Although some parameter-efficient tuning paradigms have been proposed to address this problem, they still require large resources to compute the gradients in the training phase. In this paper, we propose -Tuning, an efficient yet effective paradigm to adapt frozen large-scale PTMs to specific downstream tasks. -tuning learns dense representations for labels  defined in a given task and aligns them to fixed feature representation. Without tuning the features of input text and model parameters, -tuning is both parameter-efficient and training-efficient. For DeBERTaXXL with 1.6 billion parameters, -tuning achieves performance more than 96% of full fine-tuning on GLUE Benchmark with only 2% tunable parameters and much fewer training costs.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2202.09817](https://arxiv.org/abs/2202.09817) [cs.CL]** |
+|           | (or **[arXiv:2202.09817v1](https://arxiv.org/abs/2202.09817v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2202.09817Focus to learn more |
+
+
+
+
+
+<h2 id="2022-02-22-5">5. USCORE: An Effective Approach to Fully Unsupervised Evaluation Metrics for Machine Translation
+</h2>
+
+Title: [USCORE: An Effective Approach to Fully Unsupervised Evaluation Metrics for Machine Translation](https://arxiv.org/abs/2202.10062)
+
+Authors: [Jonas Belouadi](https://arxiv.org/search/cs?searchtype=author&query=Belouadi%2C+J), [Steffen Eger](https://arxiv.org/search/cs?searchtype=author&query=Eger%2C+S)
+
+> The vast majority of evaluation metrics for machine translation are supervised, i.e., (i) assume the existence of reference translations, (ii) are trained on human scores, or (iii) leverage parallel data. This hinders their applicability to cases where such supervision signals are not available. In this work, we develop fully unsupervised evaluation metrics. To do so, we leverage similarities and synergies between evaluation metric induction, parallel corpus mining, and MT systems. In particular, we use an unsupervised evaluation metric to mine pseudo-parallel data, which we use to remap deficient underlying vector spaces (in an iterative manner) and to induce an unsupervised MT system, which then provides pseudo-references as an additional component in the metric. Finally, we also induce unsupervised multilingual sentence embeddings from pseudo-parallel data. We show that our fully unsupervised metrics are effective, i.e., they beat supervised competitors on 4 out of our 5 evaluation datasets.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2202.10062](https://arxiv.org/abs/2202.10062) [cs.CL]** |
+|           | (or **[arXiv:2202.10062v1](https://arxiv.org/abs/2202.10062v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2202.10062Focus to learn more |
+
+
+
+
+
+<h2 id="2022-02-22-6">6. BERT WEAVER: Using WEight AVERaging to Enable Lifelong Learning for Transformer-based Models
+</h2>
+
+Title: [BERT WEAVER: Using WEight AVERaging to Enable Lifelong Learning for Transformer-based Models](https://arxiv.org/abs/2202.10101)
+
+Authors: [Lisa Langnickel](https://arxiv.org/search/cs?searchtype=author&query=Langnickel%2C+L), [Alexander Schulz](https://arxiv.org/search/cs?searchtype=author&query=Schulz%2C+A), [Barbara Hammer](https://arxiv.org/search/cs?searchtype=author&query=Hammer%2C+B), [Juliane Fluck](https://arxiv.org/search/cs?searchtype=author&query=Fluck%2C+J)
+
+> Recent developments in transfer learning have boosted the advancements in natural language processing tasks. The performance is, however, dependent on high-quality, manually annotated training data. Especially in the biomedical domain, it has been shown that one training corpus is not enough to learn generic models that are able to efficiently predict on new data. Therefore, state-of-the-art models need the ability of lifelong learning in order to improve performance as soon as new data are available - without the need of retraining the whole model from scratch. We present WEAVER, a simple, yet efficient post-processing method that infuses old knowledge into the new model, thereby reducing catastrophic forgetting. We show that applying WEAVER in a sequential manner results in similar word embedding distributions as doing a combined training on all data at once, while being computationally more efficient. Because there is no need of data sharing, the presented method is also easily applicable to federated learning settings and can for example be beneficial for the mining of electronic health records from different clinics.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2202.10101](https://arxiv.org/abs/2202.10101) [cs.CL]** |
+|           | (or **[arXiv:2202.10101v1](https://arxiv.org/abs/2202.10101v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2202.10101Focus to learn more |
+
+
+
+
+
+<h2 id="2022-02-22-7">7. Domain Adaptation in Neural Machine Translation using a Qualia-Enriched FrameNet
+</h2>
+
+Title: [Domain Adaptation in Neural Machine Translation using a Qualia-Enriched FrameNet](https://arxiv.org/abs/2202.10287)
+
+Authors: [Alexandre Diniz Costa](https://arxiv.org/search/cs?searchtype=author&query=Costa%2C+A+D), [Mateus Coutinho Marim](https://arxiv.org/search/cs?searchtype=author&query=Marim%2C+M+C), [Ely Edison da Silva Matos](https://arxiv.org/search/cs?searchtype=author&query=da+Silva+Matos%2C+E+E), [Tiago Timponi Torrent](https://arxiv.org/search/cs?searchtype=author&query=Torrent%2C+T+T)
+
+> In this paper we present Scylla, a methodology for domain adaptation of Neural Machine Translation (NMT) systems that make use of a multilingual FrameNet enriched with qualia relations as an external knowledge base. Domain adaptation techniques used in NMT usually require fine-tuning and in-domain training data, which may pose difficulties for those working with lesser-resourced languages and may also lead to performance decay of the NMT system for out-of-domain sentences. Scylla does not require fine-tuning of the NMT model, avoiding the risk of model over-fitting and consequent decrease in performance for out-of-domain translations. Two versions of Scylla are presented: one using the source sentence as input, and another one using the target sentence. We evaluate Scylla in comparison to a state-of-the-art commercial NMT system in an experiment in which 50 sentences from the Sports domain are translated from Brazilian Portuguese to English. The two versions of Scylla significantly outperform the baseline commercial system in HTER.
+
+| Comments:    | Paper submitted to LREC 2022                                 |
+| ------------ | ------------------------------------------------------------ |
+| Subjects:    | **Computation and Language (cs.CL)**                         |
+| ACM classes: | E.1                                                          |
+| Cite as:     | **[arXiv:2202.10287](https://arxiv.org/abs/2202.10287) [cs.CL]** |
+|              | (or **[arXiv:2202.10287v1](https://arxiv.org/abs/2202.10287v1) [cs.CL]** for this version) |
+|              | https://doi.org/10.48550/arXiv.2202.10287Focus to learn more |
+
+
+
+
+
+<h2 id="2022-02-22-8">8. Interpreting Language Models with Contrastive Explanations
+</h2>
+
+Title: [Interpreting Language Models with Contrastive Explanations](https://arxiv.org/abs/2202.10419)
+
+Authors: [Kayo Yin](https://arxiv.org/search/cs?searchtype=author&query=Yin%2C+K), [Graham Neubig](https://arxiv.org/search/cs?searchtype=author&query=Neubig%2C+G)
+
+> Model interpretability methods are often used to explain NLP model decisions on tasks such as text classification, where the output space is relatively small. However, when applied to language generation, where the output space often consists of tens of thousands of tokens, these methods are unable to provide informative explanations. Language models must consider various features to predict a token, such as its part of speech, number, tense, or semantics. Existing explanation methods conflate evidence for all these features into a single explanation, which is less interpretable for human understanding. 
+> To disentangle the different decisions in language modeling, we focus on explaining language models contrastively: we look for salient input tokens that explain why the model predicted one token instead of another. We demonstrate that contrastive explanations are quantifiably better than non-contrastive explanations in verifying major grammatical phenomena, and that they significantly improve contrastive model simulatability for human observers. We also identify groups of contrastive decisions where the model uses similar evidence, and we are able to characterize what input tokens models use during various language generation decisions.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2202.10419](https://arxiv.org/abs/2202.10419) [cs.CL]** |
+|           | (or **[arXiv:2202.10419v1](https://arxiv.org/abs/2202.10419v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2202.10419Focus to learn more |
+
+
+
 
 
 
