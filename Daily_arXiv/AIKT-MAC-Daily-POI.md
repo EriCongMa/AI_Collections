@@ -2,6 +2,11 @@
 
 # Index
 
+- [2022-02-23](#2022-02-23)
+  - [1. CaMEL: Mean Teacher Learning for Image Captioning](#2022-02-23-1)
+  - [2. A Survey of Vision-Language Pre-Trained Models](#2022-02-23-2)
+  - [3. An Overview on Machine Translation Evaluation](#2022-02-23-3)
+  
 - [2022-02-22](#2022-02-22)
   - [1. PETCI: A Parallel English Translation Dataset of Chinese Idioms](#2022-02-22-1)
   - [2. CALCS 2021 Shared Task: Machine Translation for Code-Switched Data](#2022-02-22-2)
@@ -11,7 +16,7 @@
   - [6. BERT WEAVER: Using WEight AVERaging to Enable Lifelong Learning for Transformer-based Models](#2022-02-22-6)
   - [7. Domain Adaptation in Neural Machine Translation using a Qualia-Enriched FrameNet](#2022-02-22-7)
   - [8. Interpreting Language Models with Contrastive Explanations](#2022-02-22-8)
-  
+
 - [2022-02-21](#2022-02-21)
   - [1. Improving English to Sinhala Neural Machine Translation using Part-of-Speech Tag](#2022-02-21-1)
   - [2. VLP: A Survey on Vision-Language Pre-training](#2022-02-21-2)
@@ -73,6 +78,69 @@
 - [2022-01-28](#2022-01-28)
   - [1. Tackling data scarcity in speech translation using zero-shot multilingual machine translation techniques](#2022-01-28-1)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2022-02-23
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-02-23-1">1. CaMEL: Mean Teacher Learning for Image Captioning
+</h2>
+
+Title: [CaMEL: Mean Teacher Learning for Image Captioning](https://arxiv.org/abs/2202.10492)
+
+Authors: [Manuele Barraco](https://arxiv.org/search/cs?searchtype=author&query=Barraco%2C+M), [Matteo Stefanini](https://arxiv.org/search/cs?searchtype=author&query=Stefanini%2C+M), [Marcella Cornia](https://arxiv.org/search/cs?searchtype=author&query=Cornia%2C+M), [Silvia Cascianelli](https://arxiv.org/search/cs?searchtype=author&query=Cascianelli%2C+S), [Lorenzo Baraldi](https://arxiv.org/search/cs?searchtype=author&query=Baraldi%2C+L), [Rita Cucchiara](https://arxiv.org/search/cs?searchtype=author&query=Cucchiara%2C+R)
+
+> Describing images in natural language is a fundamental step towards the automatic modeling of connections between the visual and textual modalities. In this paper we present CaMEL, a novel Transformer-based architecture for image captioning. Our proposed approach leverages the interaction of two interconnected language models that learn from each other during the training phase. The interplay between the two language models follows a mean teacher learning paradigm with knowledge distillation. Experimentally, we assess the effectiveness of the proposed solution on the COCO dataset and in conjunction with different visual feature extractors. When comparing with existing proposals, we demonstrate that our model provides state-of-the-art caption quality with a significantly reduced number of parameters. According to the CIDEr metric, we obtain a new state of the art on COCO when training without using external data. The source code and trained models are publicly available at: [this https URL](https://github.com/aimagelab/camel).
+
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL); Multimedia (cs.MM) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2202.10492](https://arxiv.org/abs/2202.10492) [cs.CV]** |
+|           | (or **[arXiv:2202.10492v1](https://arxiv.org/abs/2202.10492v1) [cs.CV]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2202.10492Focus to learn more |
+
+
+
+
+
+<h2 id="2022-02-23-2">2. A Survey of Vision-Language Pre-Trained Models
+</h2>
+
+Title: [A Survey of Vision-Language Pre-Trained Models](https://arxiv.org/abs/2202.10936)
+
+Authors: [Yifan Du](https://arxiv.org/search/cs?searchtype=author&query=Du%2C+Y), [Zikang Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Z), [Junyi Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+J), [Wayne Xin Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+W+X)
+
+> As Transformer evolved, pre-trained models have advanced at a breakneck pace in recent years. They have dominated the mainstream techniques in natural language processing (NLP) and computer vision (CV). How to adapt pre-training to the field of Vision-and-Language (V-L) learning and improve the performance on downstream tasks becomes a focus of multimodal learning. In this paper, we review the recent progress in Vision-Language Pre-Trained Models (VL-PTMs). As the core content, we first briefly introduce several ways to encode raw images and texts to single-modal embeddings before pre-training. Then, we dive into the mainstream architectures of VL-PTMs in modeling the interaction between text and image representations. We further present widely-used pre-training tasks, after which we introduce some common downstream tasks. We finally conclude this paper and present some promising research directions. Our survey aims to provide multimodal researchers a synthesis and pointer to related research.
+
+| Comments: | Under review                                                 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2202.10936](https://arxiv.org/abs/2202.10936) [cs.CV]** |
+|           | (or **[arXiv:2202.10936v1](https://arxiv.org/abs/2202.10936v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2022-02-23-3">3. An Overview on Machine Translation Evaluation
+</h2>
+
+Title: [An Overview on Machine Translation Evaluation](https://arxiv.org/abs/2202.11027)
+
+Authors: [Lifeng Han](https://arxiv.org/search/cs?searchtype=author&query=Han%2C+L)
+
+> Since the 1950s, machine translation (MT) has become one of the important tasks of AI and development, and has experienced several different periods and stages of development, including rule-based methods, statistical methods, and recently proposed neural network-based learning methods. Accompanying these staged leaps is the evaluation research and development of MT, especially the important role of evaluation methods in statistical translation and neural translation research. The evaluation task of MT is not only to evaluate the quality of machine translation, but also to give timely feedback to machine translation researchers on the problems existing in machine translation itself, how to improve and how to optimise. In some practical application fields, such as in the absence of reference translations, the quality estimation of machine translation plays an important role as an indicator to reveal the credibility of automatically translated target languages. This report mainly includes the following contents: a brief history of machine translation evaluation (MTE), the classification of research methods on MTE, and the the cutting-edge progress, including human evaluation, automatic evaluation, and evaluation of evaluation methods (meta-evaluation). Manual evaluation and automatic evaluation include reference-translation based and reference-translation independent participation; automatic evaluation methods include traditional n-gram string matching, models applying syntax and semantics, and deep learning models; evaluation of evaluation methods includes estimating the credibility of human evaluations, the reliability of the automatic evaluation, the reliability of the test set, etc. Advances in cutting-edge evaluation methods include task-based evaluation, using pre-trained language models based on big data, and lightweight optimisation models using distillation techniques.
+
+| Comments: | 35 pages, in Chinese                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2202.11027](https://arxiv.org/abs/2202.11027) [cs.CL]** |
+|           | (or **[arXiv:2202.11027v1](https://arxiv.org/abs/2202.11027v1) [cs.CL]** for this version) |
+
+
 
 
 
