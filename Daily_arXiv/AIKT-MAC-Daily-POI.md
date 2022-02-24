@@ -2,11 +2,14 @@
 
 # Index
 
+- [2022-02-24](#2022-02-24)
+  - [1. Zero-shot Cross-lingual Transfer of Prompt-based Tuning with a Unified Multilingual Prompt](#2022-02-24-1)
+  - [2. Refining the state-of-the-art in Machine Translation, optimizing NMT for the JA <-> EN language pair by leveraging personal domain expertise](#2022-02-24-2)
+  
 - [2022-02-23](#2022-02-23)
   - [1. CaMEL: Mean Teacher Learning for Image Captioning](#2022-02-23-1)
   - [2. A Survey of Vision-Language Pre-Trained Models](#2022-02-23-2)
   - [3. An Overview on Machine Translation Evaluation](#2022-02-23-3)
-  
 - [2022-02-22](#2022-02-22)
   - [1. PETCI: A Parallel English Translation Dataset of Chinese Idioms](#2022-02-22-1)
   - [2. CALCS 2021 Shared Task: Machine Translation for Code-Switched Data](#2022-02-22-2)
@@ -16,7 +19,6 @@
   - [6. BERT WEAVER: Using WEight AVERaging to Enable Lifelong Learning for Transformer-based Models](#2022-02-22-6)
   - [7. Domain Adaptation in Neural Machine Translation using a Qualia-Enriched FrameNet](#2022-02-22-7)
   - [8. Interpreting Language Models with Contrastive Explanations](#2022-02-22-8)
-
 - [2022-02-21](#2022-02-21)
   - [1. Improving English to Sinhala Neural Machine Translation using Part-of-Speech Tag](#2022-02-21-1)
   - [2. VLP: A Survey on Vision-Language Pre-training](#2022-02-21-2)
@@ -78,6 +80,52 @@
 - [2022-01-28](#2022-01-28)
   - [1. Tackling data scarcity in speech translation using zero-shot multilingual machine translation techniques](#2022-01-28-1)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2022-02-24
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-02-24-1">1. Zero-shot Cross-lingual Transfer of Prompt-based Tuning with a Unified Multilingual Prompt
+</h2>
+
+Title: [Zero-shot Cross-lingual Transfer of Prompt-based Tuning with a Unified Multilingual Prompt](https://arxiv.org/abs/2202.11451)
+
+Authors: [Lianzhe Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+L), [Shuming Ma](https://arxiv.org/search/cs?searchtype=author&query=Ma%2C+S), [Dongdong Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+D), [Furu Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+F), [Houfeng Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+H)
+
+> Prompt-based tuning has been proven effective for pretrained language models (PLMs). While most of the existing work focuses on the monolingual prompts, we study the multilingual prompts for multilingual PLMs, especially in the zero-shot cross-lingual setting. To alleviate the effort of designing different prompts for multiple languages, we propose a novel model that uses a unified prompt for all languages, called UniPrompt. Different from the discrete prompts and soft prompts, the unified prompt is model-based and language-agnostic. Specifically, the unified prompt is initialized by a multilingual PLM to produce language-independent representation, after which is fused with the text input. During inference, the prompts can be pre-computed so that no extra computation cost is needed. To collocate with the unified prompt, we propose a new initialization method for the target label word to further improve the model's transferability across languages. Extensive experiments show that our proposed methods can significantly outperform the strong baselines across different languages. We will release data and code to facilitate future research.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2202.11451](https://arxiv.org/abs/2202.11451) [cs.CL]** |
+|           | (or **[arXiv:2202.11451v1](https://arxiv.org/abs/2202.11451v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2202.11451Focus to learn more |
+
+
+
+
+
+<h2 id="2022-02-24-2">2. Refining the state-of-the-art in Machine Translation, optimizing NMT for the JA <-> EN language pair by leveraging personal domain expertise
+</h2>
+
+Title: [Refining the state-of-the-art in Machine Translation, optimizing NMT for the JA <-> EN language pair by leveraging personal domain expertise](https://arxiv.org/abs/2202.11669)
+
+Authors: [Matthew Bieda](https://arxiv.org/search/cs?searchtype=author&query=Bieda%2C+M)
+
+> Documenting the construction of an NMT (Neural Machine Translation) system for En/Ja based on the Transformer architecture leveraging the OpenNMT framework. A systematic exploration of corpora pre-processing, hyperparameter tuning and model architecture is carried out to obtain optimal performance. The system is evaluated using standard auto-evaluation metrics such as BLEU, and my subjective opinion as a Japanese linguist.
+
+| Comments: | 11 pages, 13 figures                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2202.11669](https://arxiv.org/abs/2202.11669) [cs.CL]** |
+|           | (or **[arXiv:2202.11669v1](https://arxiv.org/abs/2202.11669v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2202.11669Focus to learn more |
+
+
+
 
 
 
