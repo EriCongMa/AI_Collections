@@ -2,10 +2,20 @@
 
 # Index
 
+- [2022-02-28](#2022-02-28)
+  - [1. Screening Gender Transfer in Neural Machine Translation](#2022-02-28-1)
+  - [2. A Survey of Multilingual Models for Automatic Speech Recognition](#2022-02-28-2)
+  - [3. The Reality of Multi-Lingual Machine Translation](#2022-02-28-3)
+  
+- [2022-02-25](#2022-02-25)
+  - [1. Overcoming a Theoretical Limitation of Self-Attention](#2022-02-25-1)
+  - [2. Using natural language prompts for machine translation](#2022-02-25-2)
+  - [3. Pretraining without Wordpieces: Learning Over a Vocabulary of Millions of Words](#2022-02-25-3)
+
 - [2022-02-24](#2022-02-24)
   - [1. Zero-shot Cross-lingual Transfer of Prompt-based Tuning with a Unified Multilingual Prompt](#2022-02-24-1)
   - [2. Refining the state-of-the-art in Machine Translation, optimizing NMT for the JA <-> EN language pair by leveraging personal domain expertise](#2022-02-24-2)
-  
+
 - [2022-02-23](#2022-02-23)
   - [1. CaMEL: Mean Teacher Learning for Image Captioning](#2022-02-23-1)
   - [2. A Survey of Vision-Language Pre-Trained Models](#2022-02-23-2)
@@ -80,6 +90,138 @@
 - [2022-01-28](#2022-01-28)
   - [1. Tackling data scarcity in speech translation using zero-shot multilingual machine translation techniques](#2022-01-28-1)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2022-02-28
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-02-28-1">1. Screening Gender Transfer in Neural Machine Translation
+</h2>
+
+Title: [Screening Gender Transfer in Neural Machine Translation](https://arxiv.org/abs/2202.12568)
+
+Authors: [Guillaume Wisniewski](https://arxiv.org/search/cs?searchtype=author&query=Wisniewski%2C+G), [Lichao Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+L), [Nicolas Ballier](https://arxiv.org/search/cs?searchtype=author&query=Ballier%2C+N), [François Yvon](https://arxiv.org/search/cs?searchtype=author&query=Yvon%2C+F)
+
+> This paper aims at identifying the information flow in state-of-the-art machine translation systems, taking as example the transfer of gender when translating from French into English. Using a controlled set of examples, we experiment several ways to investigate how gender information circulates in a encoder-decoder architecture considering both probing techniques as well as interventions on the internal representations used in the MT system. Our results show that gender information can be found in all token representations built by the encoder and the decoder and lead us to conclude that there are multiple pathways for gender transfer.
+
+| Comments:    | Accepted at BlackBoxNLP'2021                                 |
+| ------------ | ------------------------------------------------------------ |
+| Subjects:    | **Computation and Language (cs.CL)**                         |
+| Cite as:     | **[arXiv:2202.12568](https://arxiv.org/abs/2202.12568) [cs.CL]** |
+|              | (or **[arXiv:2202.12568v1](https://arxiv.org/abs/2202.12568v1) [cs.CL]** for this version) |
+| Related DOI: | https://doi.org/10.18653/v1/2021.blackboxnlp-1.24Focus to learn more |
+
+
+
+
+
+<h2 id="2022-02-28-2">2. A Survey of Multilingual Models for Automatic Speech Recognition
+</h2>
+
+Title: [A Survey of Multilingual Models for Automatic Speech Recognition](https://arxiv.org/abs/2202.12576)
+
+Authors: [Hemant Yadav](https://arxiv.org/search/cs?searchtype=author&query=Yadav%2C+H), [Sunayana Sitaram](https://arxiv.org/search/cs?searchtype=author&query=Sitaram%2C+S)
+
+> Although Automatic Speech Recognition (ASR) systems have achieved human-like performance for a few languages, the majority of the world's languages do not have usable systems due to the lack of large speech datasets to train these models. Cross-lingual transfer is an attractive solution to this problem, because low-resource languages can potentially benefit from higher-resource languages either through transfer learning, or being jointly trained in the same multilingual model. The problem of cross-lingual transfer has been well studied in ASR, however, recent advances in Self Supervised Learning are opening up avenues for unlabeled speech data to be used in multilingual ASR models, which can pave the way for improved performance on low-resource languages. In this paper, we survey the state of the art in multilingual ASR models that are built with cross-lingual transfer in mind. We present best practices for building multilingual models from research across diverse languages and techniques, discuss open questions and provide recommendations for future work.
+
+| Comments: | 9 pages. Submitted to LREC 2022                              |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2202.12576](https://arxiv.org/abs/2202.12576) [cs.CL]** |
+|           | (or **[arXiv:2202.12576v1](https://arxiv.org/abs/2202.12576v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-02-28-3">3. The Reality of Multi-Lingual Machine Translation
+</h2>
+
+Title: [The Reality of Multi-Lingual Machine Translation](https://arxiv.org/abs/2202.12814)
+
+Authors: [Tom Kocmi](https://arxiv.org/search/cs?searchtype=author&query=Kocmi%2C+T), [Dominik Macháček](https://arxiv.org/search/cs?searchtype=author&query=Macháček%2C+D), [Ondřej Bojar](https://arxiv.org/search/cs?searchtype=author&query=Bojar%2C+O)
+
+> Our book "The Reality of Multi-Lingual Machine Translation" discusses the benefits and perils of using more than two languages in machine translation systems. While focused on the particular task of sequence-to-sequence processing and multi-task learning, the book targets somewhat beyond the area of natural language processing. Machine translation is for us a prime example of deep learning applications where human skills and learning capabilities are taken as a benchmark that many try to match and surpass. We document that some of the gains observed in multi-lingual translation may result from simpler effects than the assumed cross-lingual transfer of knowledge. 
+> In the first, rather general part, the book will lead you through the motivation for multi-linguality, the versatility of deep neural networks especially in sequence-to-sequence tasks to complications of this learning. We conclude the general part with warnings against too optimistic and unjustified explanations of the gains that neural networks demonstrate. 
+> In the second part, we fully delve into multi-lingual models, with a particularly careful examination of transfer learning as one of the more straightforward approaches utilizing additional languages. The recent multi-lingual techniques, including massive models, are surveyed and practical aspects of deploying systems for many languages are discussed. The conclusion highlights the open problem of machine understanding and reminds of two ethical aspects of building large-scale models: the inclusivity of research and its ecological trace.
+
+| Comments: | ISBN 978-80-88132-11-0. arXiv admin note: substantial text overlap with [arXiv:2001.01622](https://arxiv.org/abs/2001.01622) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2202.12814](https://arxiv.org/abs/2202.12814) [cs.CL]** |
+|           | (or **[arXiv:2202.12814v1](https://arxiv.org/abs/2202.12814v1) [cs.CL]** for this version) |
+
+
+
+
+
+# 2022-02-25
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-02-25-1">1. Overcoming a Theoretical Limitation of Self-Attention
+</h2>
+
+Title: [Overcoming a Theoretical Limitation of Self-Attention](https://arxiv.org/abs/2202.12172)
+
+Authors: [David Chiang](https://arxiv.org/search/cs?searchtype=author&query=Chiang%2C+D), [Peter Cholak](https://arxiv.org/search/cs?searchtype=author&query=Cholak%2C+P)
+
+> Although transformers are remarkably effective for many tasks, there are some surprisingly easy-looking regular languages that they struggle with. Hahn shows that for languages where acceptance depends on a single input symbol, a transformer's classification decisions become less and less confident (that is, with cross-entropy approaching 1 bit per string) as input strings get longer and longer. We examine this limitation using two languages: PARITY, the language of bit strings with an odd number of 1s, and FIRST, the language of bit strings starting with a 1. We demonstrate three ways of overcoming the limitation suggested by Hahn's lemma. First, we settle an open question by constructing a transformer that recognizes PARITY with perfect accuracy, and similarly for FIRST. Second, we use layer normalization to bring the cross-entropy of both models arbitrarily close to zero. Third, when transformers need to focus on a single position, as for FIRST, we find that they can fail to generalize to longer strings; we offer a simple remedy to this problem that also improves length generalization in machine translation.
+
+| Comments: | Accepted at ACL 2022                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2202.12172](https://arxiv.org/abs/2202.12172) [cs.LG]** |
+|           | (or **[arXiv:2202.12172v1](https://arxiv.org/abs/2202.12172v1) [cs.LG]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2202.12172Focus to learn more |
+
+
+
+
+
+<h2 id="2022-02-25-2">2. Using natural language prompts for machine translation
+</h2>
+
+Title: [Using natural language prompts for machine translation](https://arxiv.org/abs/2202.11822)
+
+Authors: [Xavier Garcia](https://arxiv.org/search/cs?searchtype=author&query=Garcia%2C+X), [Orhan Firat](https://arxiv.org/search/cs?searchtype=author&query=Firat%2C+O)
+
+> We explore the use of natural language prompts for controlling various aspects of the outputs generated by machine translation models. We demonstrate that natural language prompts allow us to influence properties like formality or specific dialect of the output. We show that using language names to control the output language of multilingual translation models enables positive transfer for unseen language pairs. This unlocks the ability to translate into languages not seen during fine-tuning by using their English names. We investigate how scale, number of pre-training steps, number of languages in fine-tuning, and language similarity affect this phenomenon.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2202.11822](https://arxiv.org/abs/2202.11822) [cs.CL]** |
+|           | (or **[arXiv:2202.11822v1](https://arxiv.org/abs/2202.11822v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2202.11822Focus to learn more |
+
+
+
+
+
+<h2 id="2022-02-25-3">3. Pretraining without Wordpieces: Learning Over a Vocabulary of Millions of Words
+</h2>
+
+Title: [Pretraining without Wordpieces: Learning Over a Vocabulary of Millions of Words](https://arxiv.org/abs/2202.12142)
+
+Authors: [Zhangyin Feng](https://arxiv.org/search/cs?searchtype=author&query=Feng%2C+Z), [Duyu Tang](https://arxiv.org/search/cs?searchtype=author&query=Tang%2C+D), [Cong Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+C), [Junwei Liao](https://arxiv.org/search/cs?searchtype=author&query=Liao%2C+J), [Shuangzhi Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+S), [Xiaocheng Feng](https://arxiv.org/search/cs?searchtype=author&query=Feng%2C+X), [Bing Qin](https://arxiv.org/search/cs?searchtype=author&query=Qin%2C+B), [Yunbo Cao](https://arxiv.org/search/cs?searchtype=author&query=Cao%2C+Y), [Shuming Shi](https://arxiv.org/search/cs?searchtype=author&query=Shi%2C+S)
+
+> The standard BERT adopts subword-based tokenization, which may break a word into two or more wordpieces (e.g., converting "lossless" to "loss" and "less"). This will bring inconvenience in following situations: (1) what is the best way to obtain the contextual vector of a word that is divided into multiple wordpieces? (2) how to predict a word via cloze test without knowing the number of wordpieces in advance? In this work, we explore the possibility of developing BERT-style pretrained model over a vocabulary of words instead of wordpieces. We call such word-level BERT model as WordBERT. We train models with different vocabulary sizes, initialization configurations and languages. Results show that, compared to standard wordpiece-based BERT, WordBERT makes significant improvements on cloze test and machine reading comprehension. On many other natural language understanding tasks, including POS tagging, chunking and NER, WordBERT consistently performs better than BERT. Model analysis indicates that the major advantage of WordBERT over BERT lies in the understanding for low-frequency words and rare words. Furthermore, since the pipeline is language-independent, we train WordBERT for Chinese language and obtain significant gains on five natural language understanding datasets. Lastly, the analyse on inference speed illustrates WordBERT has comparable time cost to BERT in natural language understanding tasks.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2202.12142](https://arxiv.org/abs/2202.12142) [cs.CL]** |
+|           | (or **[arXiv:2202.12142v1](https://arxiv.org/abs/2202.12142v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2202.12142Focus to learn more |
+
+
+
+
 
 
 
