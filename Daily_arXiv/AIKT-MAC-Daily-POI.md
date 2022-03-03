@@ -2,11 +2,18 @@
 
 # Index
 
+- [2022-03-03](#2022-03-03)
+  - [1. HighMMT: Towards Modality and Task Generalization for High-Modality Representation Learning](#2022-03-03-1)
+  - [2. Attend, Memorize and Generate: Towards Faithful Table-to-Text Generation in Few Shots](#2022-03-03-2)
+  - [3. HyperPrompt: Prompt-based Task-Conditioning of Transformers](#2022-03-03-3)
+  - [4. Do Prompts Solve NLP Tasks Using Natural Language?](#2022-03-03-4)
+  - [5. Parameter-Efficient Mixture-of-Experts Architecture for Pre-trained Language Models](#2022-03-03-5)
+  
 - [2022-03-02](#2022-03-02)
   - [1. Exploring and Adapting Chinese GPT to Pinyin Input Method](#2022-03-02-1)
   - [2. TableFormer: Robust Transformer Modeling for Table-Text Encoding](#2022-03-02-2)
   - [3. DeepNet: Scaling Transformers to 1,000 Layers](#2022-03-02-3)
-  
+
 - [2022-03-01](#2022-03-01)
   - [1. Interactive Machine Learning for Image Captioning](#2022-03-01-1)
   - [2. Multi-Level Contrastive Learning for Cross-Lingual Alignment](#2022-03-01-2)
@@ -19,9 +26,109 @@
 - [2022-02-28](#2022-02-28)
   - [1. Screening Gender Transfer in Neural Machine Translation](#2022-02-28-1)
 
-
-
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2022-03-03
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-03-03-1">1. HighMMT: Towards Modality and Task Generalization for High-Modality Representation Learning
+</h2>
+
+Title: [HighMMT: Towards Modality and Task Generalization for High-Modality Representation Learning](https://arxiv.org/abs/2203.01311)
+
+Authors: [Paul Pu Liang](https://arxiv.org/search/cs?searchtype=author&query=Liang%2C+P+P), [Yiwei Lyu](https://arxiv.org/search/cs?searchtype=author&query=Lyu%2C+Y), [Xiang Fan](https://arxiv.org/search/cs?searchtype=author&query=Fan%2C+X), [Shengtong Mo](https://arxiv.org/search/cs?searchtype=author&query=Mo%2C+S), [Dani Yogatama](https://arxiv.org/search/cs?searchtype=author&query=Yogatama%2C+D), [Louis-Philippe Morency](https://arxiv.org/search/cs?searchtype=author&query=Morency%2C+L), [Ruslan Salakhutdinov](https://arxiv.org/search/cs?searchtype=author&query=Salakhutdinov%2C+R)
+
+> Learning multimodal representations involves discovering correspondences and integrating information from multiple heterogeneous sources of data. While recent research has begun to explore the design of more general-purpose multimodal models (contrary to prior focus on domain and modality-specific architectures), these methods are still largely focused on a small set of modalities in the language, vision, and audio space. In order to accelerate generalization towards diverse and understudied modalities, we investigate methods for high-modality (a large set of diverse modalities) and partially-observable (each task only defined on a small subset of modalities) scenarios. To tackle these challenges, we design a general multimodal model that enables multitask and transfer learning: multitask learning with shared parameters enables stable parameter counts (addressing scalability), and cross-modal transfer learning enables information sharing across modalities and tasks (addressing partial observability). Our resulting model generalizes across text, image, video, audio, time-series, sensors, tables, and set modalities from different research areas, improves the tradeoff between performance and efficiency, transfers to new modalities and tasks, and reveals surprising insights on the nature of information sharing in multitask models. We release our code and benchmarks which we hope will present a unified platform for subsequent theoretical and empirical analysis: [this https URL](https://github.com/pliang279/HighMMT).
+
+| Comments: | Code available at [this https URL](https://github.com/pliang279/HighMMT) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Machine Learning (cs.LG)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL); Computer Vision and Pattern Recognition (cs.CV); Multimedia (cs.MM) |
+| Cite as:  | **[arXiv:2203.01311](https://arxiv.org/abs/2203.01311) [cs.LG]** |
+|           | (or **[arXiv:2203.01311v1](https://arxiv.org/abs/2203.01311v1) [cs.LG]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.01311Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-03-2">2. Attend, Memorize and Generate: Towards Faithful Table-to-Text Generation in Few Shots
+</h2>
+
+Title: [Attend, Memorize and Generate: Towards Faithful Table-to-Text Generation in Few Shots](https://arxiv.org/abs/2203.00732)
+
+Authors: [Wenting Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+W), [Ye Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Y), [Yao Wan](https://arxiv.org/search/cs?searchtype=author&query=Wan%2C+Y), [Philip S. Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+P+S)
+
+> Few-shot table-to-text generation is a task of composing fluent and faithful sentences to convey table content using limited data. Despite many efforts having been made towards generating impressive fluent sentences by fine-tuning powerful pre-trained language models, the faithfulness of generated content still needs to be improved. To this end, this paper proposes a novel approach Attend, Memorize and Generate (called AMG), inspired by the text generation process of humans. In particular, AMG (1) attends over the multi-granularity of context using a novel strategy based on table slot level and traditional token-by-token level attention to exploit both the table structure and natural linguistic information; (2) dynamically memorizes the table slot allocation states; and (3) generates faithful sentences according to both the context and memory allocation states. Comprehensive experiments with human evaluation on three domains (i.e., humans, songs, and books) of the Wiki dataset show that our model can generate higher qualified texts when compared with several state-of-the-art baselines, in both fluency and faithfulness.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2203.00732](https://arxiv.org/abs/2203.00732) [cs.CL]** |
+|           | (or **[arXiv:2203.00732v1](https://arxiv.org/abs/2203.00732v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.00732Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-03-3">3. HyperPrompt: Prompt-based Task-Conditioning of Transformers
+</h2>
+
+Title: [HyperPrompt: Prompt-based Task-Conditioning of Transformers](https://arxiv.org/abs/2203.00759)
+
+Authors: [Yun He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+Y), [Huaixiu Steven Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng%2C+H+S), [Yi Tay](https://arxiv.org/search/cs?searchtype=author&query=Tay%2C+Y), [Jai Gupta](https://arxiv.org/search/cs?searchtype=author&query=Gupta%2C+J), [Yu Du](https://arxiv.org/search/cs?searchtype=author&query=Du%2C+Y), [Vamsi Aribandi](https://arxiv.org/search/cs?searchtype=author&query=Aribandi%2C+V), [Zhe Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+Z), [YaGuang Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Y), [Zhao Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+Z), [Donald Metzler](https://arxiv.org/search/cs?searchtype=author&query=Metzler%2C+D), [Heng-Tze Cheng](https://arxiv.org/search/cs?searchtype=author&query=Cheng%2C+H), [Ed H. Chi](https://arxiv.org/search/cs?searchtype=author&query=Chi%2C+E+H)
+
+> Prompt-Tuning is a new paradigm for finetuning pre-trained language models in a parameter-efficient way. Here, we explore the use of HyperNetworks to generate hyper-prompts: we propose HyperPrompt, a novel architecture for prompt-based task-conditioning of self-attention in Transformers. The hyper-prompts are end-to-end learnable via generation by a HyperNetwork. HyperPrompt allows the network to learn task-specific feature maps where the hyper-prompts serve as task global memories for the queries to attend to, at the same time enabling flexible information sharing among tasks. We show that HyperPrompt is competitive against strong multi-task learning baselines with as few as 0.14% of additional task-conditioning parameters, achieving great parameter and computational efficiency. Through extensive empirical experiments, we demonstrate that HyperPrompt can achieve superior performances over strong T5 multi-task learning baselines and parameter-efficient adapter variants including Prompt-Tuning and HyperFormer++ on Natural Language Understanding benchmarks of GLUE and SuperGLUE across many model sizes.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2203.00759](https://arxiv.org/abs/2203.00759) [cs.CL]** |
+|           | (or **[arXiv:2203.00759v1](https://arxiv.org/abs/2203.00759v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.00759Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-03-4">4. Do Prompts Solve NLP Tasks Using Natural Language?
+</h2>
+
+Title: [Do Prompts Solve NLP Tasks Using Natural Language?](https://arxiv.org/abs/2203.00902)
+
+Authors: [Sen Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+S), [Yunchen Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Y), [Leyang Cui](https://arxiv.org/search/cs?searchtype=author&query=Cui%2C+L), [Yue Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Y)
+
+> Thanks to the advanced improvement of large pre-trained language models, prompt-based fine-tuning is shown to be effective on a variety of downstream tasks. Though many prompting methods have been investigated, it remains unknown which type of prompts are the most effective among three types of prompts (i.e., human-designed prompts, schema prompts and null prompts). In this work, we empirically compare the three types of prompts under both few-shot and fully-supervised settings. Our experimental results show that schema prompts are the most effective in general. Besides, the performance gaps tend to diminish when the scale of training data grows large.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2203.00902](https://arxiv.org/abs/2203.00902) [cs.CL]** |
+|           | (or **[arXiv:2203.00902v1](https://arxiv.org/abs/2203.00902v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.00902Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-03-5">5. Parameter-Efficient Mixture-of-Experts Architecture for Pre-trained Language Models
+</h2>
+
+Title: [Parameter-Efficient Mixture-of-Experts Architecture for Pre-trained Language Models](https://arxiv.org/abs/2203.01104)
+
+Authors: [Ze-Feng Gao](https://arxiv.org/search/cs?searchtype=author&query=Gao%2C+Z), [Peiyu Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+P), [Wayne Xin Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+W+X), [Zhong-Yi Lu](https://arxiv.org/search/cs?searchtype=author&query=Lu%2C+Z), [Ji-Rong Wen](https://arxiv.org/search/cs?searchtype=author&query=Wen%2C+J)
+
+> The state-of-the-art Mixture-of-Experts (short as MoE) architecture has achieved several remarkable successes in terms of increasing model capacity. However, MoE has been hindered widespread adoption due to complexity, communication costs, and training instability. Here we present a novel MoE architecture based on matrix product operators (MPO) from quantum many-body physics. It can decompose an original matrix into central tensors (containing the core information) and auxiliary tensors (with only a small proportion of parameters). With the decomposed MPO structure, we can reduce the parameters of the original MoE architecture by sharing a global central tensor across experts and keeping expert-specific auxiliary tensors. We also design the gradient mask strategy for the tensor structure of MPO to alleviate the overfitting problem. Experiments on the three well-known downstream natural language datasets based on GPT2 show improved performance and efficiency in increasing model capacity (7.26x fewer parameters with the same amount of experts). We additionally demonstrate an improvement in the positive transfer effects of our approach for multi-task learning.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG); Quantum Physics (quant-ph) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2203.01104](https://arxiv.org/abs/2203.01104) [cs.CL]** |
+|           | (or **[arXiv:2203.01104v1](https://arxiv.org/abs/2203.01104v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.01104Focus to learn more |
+
+
 
 
 
