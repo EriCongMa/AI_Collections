@@ -2,18 +2,27 @@
 
 # Index
 
+- [2022-03-07](#2022-03-07)
+  - [1. Overlap-based Vocabulary Generation Improves Cross-lingual Transfer Among Related Languages](#2022-03-07-1)
+  - [2. Mind the Gap: Understanding the Modality Gap in Multi-modal Contrastive Representation Learning](#2022-03-07-2)
+  - [3. EAG: Extract and Generate Multi-way Aligned Corpus for Complete Multi-lingual Neural Machine Translation](#2022-03-07-3)
+  - [4. Comprehension of Subtitles from Re-Translating Simultaneous Speech Translation](#2022-03-07-4)
+  - [5. From Simultaneous to Streaming Machine Translation by Leveraging Streaming History](#2022-03-07-5)
+  
+- [2022-03-04](#2022-03-04)
+  - [1. Recent, rapid advancement in visual question answering architecture](#2022-03-04-1)
+  - [2. Vision-Language Intelligence: Tasks, Representation Learning, and Large Models](#2022-03-04-2)
+  - [3. UDAAN - Machine Learning based Post-Editing tool for Document Translation](#2022-03-04-3)
 - [2022-03-03](#2022-03-03)
   - [1. HighMMT: Towards Modality and Task Generalization for High-Modality Representation Learning](#2022-03-03-1)
   - [2. Attend, Memorize and Generate: Towards Faithful Table-to-Text Generation in Few Shots](#2022-03-03-2)
   - [3. HyperPrompt: Prompt-based Task-Conditioning of Transformers](#2022-03-03-3)
   - [4. Do Prompts Solve NLP Tasks Using Natural Language?](#2022-03-03-4)
   - [5. Parameter-Efficient Mixture-of-Experts Architecture for Pre-trained Language Models](#2022-03-03-5)
-  
 - [2022-03-02](#2022-03-02)
   - [1. Exploring and Adapting Chinese GPT to Pinyin Input Method](#2022-03-02-1)
   - [2. TableFormer: Robust Transformer Modeling for Table-Text Encoding](#2022-03-02-2)
   - [3. DeepNet: Scaling Transformers to 1,000 Layers](#2022-03-02-3)
-
 - [2022-03-01](#2022-03-01)
   - [1. Interactive Machine Learning for Image Captioning](#2022-03-01-1)
   - [2. Multi-Level Contrastive Learning for Cross-Lingual Alignment](#2022-03-01-2)
@@ -25,8 +34,178 @@
   - [8. LiLT: A Simple yet Effective Language-Independent Layout Transformer for Structured Document Understanding](#2022-03-01-8)
 - [2022-02-28](#2022-02-28)
   - [1. Screening Gender Transfer in Neural Machine Translation](#2022-02-28-1)
-
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2022-03-07
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-03-07-1">1. Overlap-based Vocabulary Generation Improves Cross-lingual Transfer Among Related Languages
+</h2>
+
+Title: [Overlap-based Vocabulary Generation Improves Cross-lingual Transfer Among Related Languages](https://arxiv.org/abs/2203.01976)
+
+Authors: [Vaidehi Patil](https://arxiv.org/search/cs?searchtype=author&query=Patil%2C+V), [Partha Talukdar](https://arxiv.org/search/cs?searchtype=author&query=Talukdar%2C+P), [Sunita Sarawagi](https://arxiv.org/search/cs?searchtype=author&query=Sarawagi%2C+S)
+
+> Pre-trained multilingual language models such as mBERT and XLM-R have demonstrated great potential for zero-shot cross-lingual transfer to low web-resource languages (LRL). However, due to limited model capacity, the large difference in the sizes of available monolingual corpora between high web-resource languages (HRL) and LRLs does not provide enough scope of co-embedding the LRL with the HRL, thereby affecting downstream task performance of LRLs. In this paper, we argue that relatedness among languages in a language family along the dimension of lexical overlap may be leveraged to overcome some of the corpora limitations of LRLs. We propose Overlap BPE (OBPE), a simple yet effective modification to the BPE vocabulary generation algorithm which enhances overlap across related languages. Through extensive experiments on multiple NLP tasks and datasets, we observe that OBPE generates a vocabulary that increases the representation of LRLs via tokens shared with HRLs. This results in improved zero-shot transfer from related HRLs to LRLs without reducing HRL representation and accuracy. Unlike previous studies that dismissed the importance of token-overlap, we show that in the low-resource related language setting, token overlap matters. Synthetically reducing the overlap to zero can cause as much as a four-fold drop in zero-shot transfer accuracy.
+
+| Comments: | Accepted to appear at the ACL 2022 Main conference           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2203.01976](https://arxiv.org/abs/2203.01976) [cs.CL]** |
+|           | (or **[arXiv:2203.01976v1](https://arxiv.org/abs/2203.01976v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.01976Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-07-2">2. Mind the Gap: Understanding the Modality Gap in Multi-modal Contrastive Representation Learning
+</h2>
+
+Title: [Mind the Gap: Understanding the Modality Gap in Multi-modal Contrastive Representation Learning](https://arxiv.org/abs/2203.02053)
+
+Authors: [Weixin Liang](https://arxiv.org/search/cs?searchtype=author&query=Liang%2C+W), [Yuhui Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Y), [Yongchan Kwon](https://arxiv.org/search/cs?searchtype=author&query=Kwon%2C+Y), [Serena Yeung](https://arxiv.org/search/cs?searchtype=author&query=Yeung%2C+S), [James Zou](https://arxiv.org/search/cs?searchtype=author&query=Zou%2C+J)
+
+> We present modality gap, an intriguing geometric phenomenon of the representation space of multi-modal models. Specifically, we show that different data modalities (e.g. images and text) are embedded at arm's length in their shared representation in multi-modal models such as CLIP. Our systematic analysis demonstrates that this gap is caused by a combination of model initialization and contrastive learning optimization. In model initialization, we show empirically and theoretically that the representation of a common deep neural network is restricted to a narrow cone. As a consequence, in a multi-modal model with two encoders, the representations of the two modalities are clearly apart when the model is initialized. During optimization, contrastive learning keeps the different modalities separate by a certain distance, which is influenced by the temperature parameter in the loss function. Our experiments further demonstrate that varying the modality gap distance has a significant impact in improving the model's downstream zero-shot classification performance and fairness. Our code and data are available at [this https URL](https://modalitygap.readthedocs.io/)
+
+| Comments: | Our code and data are available at [this https URL](https://modalitygap.readthedocs.io/) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Computer Vision and Pattern Recognition (cs.CV); Machine Learning (cs.LG); Multimedia (cs.MM) |
+| Cite as:  | **[arXiv:2203.02053](https://arxiv.org/abs/2203.02053) [cs.CL]** |
+|           | (or **[arXiv:2203.02053v1](https://arxiv.org/abs/2203.02053v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.02053Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-07-3">3. EAG: Extract and Generate Multi-way Aligned Corpus for Complete Multi-lingual Neural Machine Translation
+</h2>
+
+Title: [EAG: Extract and Generate Multi-way Aligned Corpus for Complete Multi-lingual Neural Machine Translation](https://arxiv.org/abs/2203.02180)
+
+Authors: [Yulin Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+Y), [Zhen Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+Z), [Fandong Meng](https://arxiv.org/search/cs?searchtype=author&query=Meng%2C+F), [JieZhou](https://arxiv.org/search/cs?searchtype=author&query=JieZhou)
+
+> Complete Multi-lingual Neural Machine Translation (C-MNMT) achieves superior performance against the conventional MNMT by constructing multi-way aligned corpus, i.e., aligning bilingual training examples from different language pairs when either their source or target sides are identical. However, since exactly identical sentences from different language pairs are scarce, the power of the multi-way aligned corpus is limited by its scale. To handle this problem, this paper proposes "Extract and Generate" (EAG), a two-step approach to construct large-scale and high-quality multi-way aligned corpus from bilingual data. Specifically, we first extract candidate aligned examples by pairing the bilingual examples from different language pairs with highly similar source or target sentences; and then generate the final aligned examples from the candidates with a well-trained generation model. With this two-step pipeline, EAG can construct a large-scale and multi-way aligned corpus whose diversity is almost identical to the original bilingual corpus. Experiments on two publicly available datasets i.e., WMT-5 and OPUS-100, show that the proposed method achieves significant improvements over strong baselines, with +1.1 and +1.4 BLEU points improvements on the two datasets respectively.
+
+| Comments: | Accepted as a long paper at ACL 2022                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2203.02180](https://arxiv.org/abs/2203.02180) [cs.CL]** |
+|           | (or **[arXiv:2203.02180v1](https://arxiv.org/abs/2203.02180v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.02180Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-07-4">4. Comprehension of Subtitles from Re-Translating Simultaneous Speech Translation
+</h2>
+
+Title: [Comprehension of Subtitles from Re-Translating Simultaneous Speech Translation](https://arxiv.org/abs/2203.02458)
+
+Authors: [Dávid Javorský](https://arxiv.org/search/cs?searchtype=author&query=Javorský%2C+D), [Dominik Macháček](https://arxiv.org/search/cs?searchtype=author&query=Macháček%2C+D), [Ondřej Bojar](https://arxiv.org/search/cs?searchtype=author&query=Bojar%2C+O)
+
+> In simultaneous speech translation, one can vary the size of the output window, system latency and sometimes the allowed level of rewriting. The effect of these properties on readability and comprehensibility has not been tested with modern neural translation systems. In this work, we propose an evaluation method and investigate the effects on comprehension and user preferences. It is a pilot study with 14 users on 2 hours of German documentaries or speeches with online translations into Czech. We collect continuous feedback and answers on factual questions. Our results show that the subtitling layout or flicker have a little effect on comprehension, in contrast to machine translation itself and individual competence. Other results show that users with a limited knowledge of the source language have different preferences to stability and latency than the users with zero knowledge. The results are statistically insignificant, however, we show that our method works and can be reproduced in larger volume.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2203.02458](https://arxiv.org/abs/2203.02458) [cs.CL]** |
+|           | (or **[arXiv:2203.02458v1](https://arxiv.org/abs/2203.02458v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-03-07-5">5. From Simultaneous to Streaming Machine Translation by Leveraging Streaming History
+</h2>
+
+Title: [From Simultaneous to Streaming Machine Translation by Leveraging Streaming History](https://arxiv.org/abs/2203.02459)
+
+Authors: [Javier Iranzo-Sánchez](https://arxiv.org/search/cs?searchtype=author&query=Iranzo-Sánchez%2C+J), [Jorge Civera](https://arxiv.org/search/cs?searchtype=author&query=Civera%2C+J), [Alfons Juan](https://arxiv.org/search/cs?searchtype=author&query=Juan%2C+A)
+
+> Simultaneous Machine Translation is the task of incrementally translating an input sentence before it is fully available. Currently, simultaneous translation is carried out by translating each sentence independently of the previously translated text. More generally, Streaming MT can be understood as an extension of Simultaneous MT to the incremental translation of a continuous input text stream. In this work, a state-of-the-art simultaneous sentence-level MT system is extended to the streaming setup by leveraging the streaming history. Extensive empirical results are reported on IWSLT Translation Tasks, showing that leveraging the streaming history leads to significant quality gains. In particular, the proposed system proves to compare favorably to the best performing systems.
+
+| Comments: | ACL 2022 - Camera ready                                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2203.02459](https://arxiv.org/abs/2203.02459) [cs.CL]** |
+|           | (or **[arXiv:2203.02459v1](https://arxiv.org/abs/2203.02459v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+
+# 2022-03-04
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-03-04-1">1. Recent, rapid advancement in visual question answering architecture
+</h2>
+
+Title: [Recent, rapid advancement in visual question answering architecture](https://arxiv.org/abs/2203.01322)
+
+Authors: [Venkat Kodali](https://arxiv.org/search/cs?searchtype=author&query=Kodali%2C+V), [Daniel Berleant](https://arxiv.org/search/cs?searchtype=author&query=Berleant%2C+D)
+
+> Understanding visual question answering is going to be crucial for numerous human activities. However, it presents major challenges at the heart of the artificial intelligence endeavor. This paper presents an update on the rapid advancements in visual question answering using images that have occurred in the last couple of years. Tremendous growth in research on improving visual question answering system architecture has been published recently, showing the importance of multimodal architectures. Several points on the benefits of visual question answering are mentioned in the review paper by Manmadhan et al. (2020), on which the present article builds, including subsequent updates in the field.
+
+| Comments: | 11 pages                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL); Multimedia (cs.MM) |
+| Cite as:  | **[arXiv:2203.01322](https://arxiv.org/abs/2203.01322) [cs.CV]** |
+|           | (or **[arXiv:2203.01322v1](https://arxiv.org/abs/2203.01322v1) [cs.CV]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.01322Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-04-2">2. Vision-Language Intelligence: Tasks, Representation Learning, and Large Models
+</h2>
+
+Title: [Vision-Language Intelligence: Tasks, Representation Learning, and Large Models](https://arxiv.org/abs/2203.01922)
+
+Authors: [Feng Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+F), [Hao Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+H), [Yi-Fan Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Y), [Shilong Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+S), [Jian Guo](https://arxiv.org/search/cs?searchtype=author&query=Guo%2C+J), [Lionel M. Ni](https://arxiv.org/search/cs?searchtype=author&query=Ni%2C+L+M), [PengChuan Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+P), [Lei Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+L)
+
+> This paper presents a comprehensive survey of vision-language (VL) intelligence from the perspective of time. This survey is inspired by the remarkable progress in both computer vision and natural language processing, and recent trends shifting from single modality processing to multiple modality comprehension. We summarize the development in this field into three time periods, namely task-specific methods, vision-language pre-training (VLP) methods, and larger models empowered by large-scale weakly-labeled data. We first take some common VL tasks as examples to introduce the development of task-specific methods. Then we focus on VLP methods and comprehensively review key components of the model structures and training methods. After that, we show how recent work utilizes large-scale raw image-text data to learn language-aligned visual representations that generalize better on zero or few shot learning tasks. Finally, we discuss some potential future trends towards modality cooperation, unified representation, and knowledge incorporation. We believe that this review will be of help for researchers and practitioners of AI and ML, especially those interested in computer vision and natural language processing.
+
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2203.01922](https://arxiv.org/abs/2203.01922) [cs.CV]** |
+|           | (or **[arXiv:2203.01922v1](https://arxiv.org/abs/2203.01922v1) [cs.CV]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.01922Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-04-3">3. UDAAN - Machine Learning based Post-Editing tool for Document Translation
+</h2>
+
+Title: [UDAAN - Machine Learning based Post-Editing tool for Document Translation](https://arxiv.org/abs/2203.01644)
+
+Authors: [Ayush Maheshwari](https://arxiv.org/search/cs?searchtype=author&query=Maheshwari%2C+A), [Ajay Ravindran](https://arxiv.org/search/cs?searchtype=author&query=Ravindran%2C+A), [Venkatapathy Subramanian](https://arxiv.org/search/cs?searchtype=author&query=Subramanian%2C+V), [Akshay Jalan](https://arxiv.org/search/cs?searchtype=author&query=Jalan%2C+A), [Ganesh Ramakrishnan](https://arxiv.org/search/cs?searchtype=author&query=Ramakrishnan%2C+G)
+
+> We introduce UDAAN, an open-source post-editing tool that can reduce manual editing efforts to quickly produce publishable-standard documents in different languages. UDAAN has an end-to-end Machine Translation (MT) plus post-editing pipeline wherein users can upload a document to obtain raw MT output. Further, users can edit the raw translations using our tool. UDAAN offers several advantages: a) Domain-aware, vocabulary-based lexical constrained MT. b) source-target and target-target lexicon suggestions for users. Replacements are based on the source and target texts lexicon alignment. c) Suggestions for translations are based on logs created during user interaction. d) Source-target sentence alignment visualisation that reduces the cognitive load of users during editing. e) Translated outputs from our tool are available in multiple formats: docs, latex, and PDF. Although we limit our experiments to English-to-Hindi translation for the current study, our tool is independent of the source and target languages. Experimental results based on the usage of the tools and users feedback show that our tool speeds up the translation time approximately by a factor of three compared to the baseline method of translating documents from scratch.
+
+| Comments: | system demonstration paper                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2203.01644](https://arxiv.org/abs/2203.01644) [cs.CL]** |
+|           | (or **[arXiv:2203.01644v1](https://arxiv.org/abs/2203.01644v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.01644Focus to learn more |
+
+
 
 
 
