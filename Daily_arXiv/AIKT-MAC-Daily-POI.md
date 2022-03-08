@@ -2,13 +2,21 @@
 
 # Index
 
+- [2022-03-08](#2022-03-08)
+  - [1. OCR quality affects perceived usefulness of historical newspaper clippings -- a user study](#2022-03-08-1)
+  - [2. Focus on the Target's Vocabulary: Masked Label Smoothing for Machine Translation](#2022-03-08-2)
+  - [3. Conditional Bilingual Mutual Information Based Adaptive Training for Neural Machine Translation](#2022-03-08-3)
+  - [4. Recent Advances in Neural Text Generation: A Task-Agnostic Survey](#2022-03-08-4)
+  - [5. Input-Tuning: Adapting Unfamiliar Inputs to Frozen Pretrained Models](#2022-03-08-5)
+  - [6. One Model, Multiple Tasks: Pathways for Natural Language Understanding](#2022-03-08-6)
+  
 - [2022-03-07](#2022-03-07)
   - [1. Overlap-based Vocabulary Generation Improves Cross-lingual Transfer Among Related Languages](#2022-03-07-1)
   - [2. Mind the Gap: Understanding the Modality Gap in Multi-modal Contrastive Representation Learning](#2022-03-07-2)
   - [3. EAG: Extract and Generate Multi-way Aligned Corpus for Complete Multi-lingual Neural Machine Translation](#2022-03-07-3)
   - [4. Comprehension of Subtitles from Re-Translating Simultaneous Speech Translation](#2022-03-07-4)
   - [5. From Simultaneous to Streaming Machine Translation by Leveraging Streaming History](#2022-03-07-5)
-  
+
 - [2022-03-04](#2022-03-04)
   - [1. Recent, rapid advancement in visual question answering architecture](#2022-03-04-1)
   - [2. Vision-Language Intelligence: Tasks, Representation Learning, and Large Models](#2022-03-04-2)
@@ -35,6 +43,129 @@
 - [2022-02-28](#2022-02-28)
   - [1. Screening Gender Transfer in Neural Machine Translation](#2022-02-28-1)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+
+
+# 2022-03-08
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-03-08-1">1. OCR quality affects perceived usefulness of historical newspaper clippings -- a user study
+</h2>
+
+Title: [OCR quality affects perceived usefulness of historical newspaper clippings -- a user study](https://arxiv.org/abs/2203.03557)
+Authors: [Kimmo Kettunen](https://arxiv.org/search/cs?searchtype=author&query=Kettunen%2C+K), [Heikki Keskustalo](https://arxiv.org/search/cs?searchtype=author&query=Keskustalo%2C+H), [Sanna Kumpulainen](https://arxiv.org/search/cs?searchtype=author&query=Kumpulainen%2C+S), [Tuula Pääkkönen](https://arxiv.org/search/cs?searchtype=author&query=Pääkkönen%2C+T), [Juha Rautiainen](https://arxiv.org/search/cs?searchtype=author&query=Rautiainen%2C+J)
+
+> Effects of Optical Character Recognition (OCR) quality on historical information retrieval have so far been studied in data-oriented scenarios regarding the effectiveness of retrieval results. Such studies have either focused on the effects of artificially degraded OCR quality (see, e.g., [1-2]) or utilized test collections containing texts based on authentic low quality OCR data (see, e.g., [3]). In this paper the effects of OCR quality are studied in a user-oriented information retrieval setting. Thirty-two users evaluated subjectively query results of six topics each (out of 30 topics) based on pre-formulated queries using a simulated work task setting. To the best of our knowledge our simulated work task experiment is the first one showing empirically that users' subjective relevance assessments of retrieved documents are affected by a change in the quality of optically read text. Users of historical newspaper collections have so far commented effects of OCR'ed data quality mainly in impressionistic ways, and controlled user environments for studying effects of OCR quality on users' relevance assessments of the retrieval results have so far been missing. To remedy this The National Library of Finland (NLF) set up an experimental query environment for the contents of one Finnish historical newspaper, Uusi Suometar 1869-1918, to be able to compare users' evaluation of search results of two different OCR qualities for digitized newspaper articles. The query interface was able to present the same underlying document for the user based on two alternatives: either based on the lower OCR quality, or based on the higher OCR quality, and the choice was randomized. The users did not know about quality differences in the article texts they evaluated. The main result of the study is that improved optical character recognition quality affects perceived usefulness of historical newspaper articles significantly. The mean average evaluation score for the improved OCR results was 7.94% higher than the mean average evaluation score of the old OCR results.
+
+| Comments: | IRCDL2022                                                    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Information Retrieval (cs.IR)**; Computation and Language (cs.CL); Digital Libraries (cs.DL) |
+| Cite as:  | **[arXiv:2203.03557](https://arxiv.org/abs/2203.03557) [cs.IR]** |
+|           | (or **[arXiv:2203.03557v1](https://arxiv.org/abs/2203.03557v1) [cs.IR]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.03557Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-08-2">2. Focus on the Target's Vocabulary: Masked Label Smoothing for Machine Translation
+</h2>
+
+Title: [Focus on the Target's Vocabulary: Masked Label Smoothing for Machine Translation](https://arxiv.org/abs/2203.02889)
+Authors: [Liang Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+L), [Runxin Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+R), [Baobao Chang](https://arxiv.org/search/cs?searchtype=author&query=Chang%2C+B)
+
+> Label smoothing and vocabulary sharing are two widely used techniques in neural machine translation models. However, we argue that simply applying both techniques can be conflicting and even leads to sub-optimal performance. When allocating smoothed probability, original label smoothing treats the source-side words that would never appear in the target language equally to the real target-side words, which could bias the translation model. To address this issue, we propose Masked Label Smoothing (MLS), a new mechanism that masks the soft label probability of source-side words to zero. Simple yet effective, MLS manages to better integrate label smoothing with vocabulary sharing. Our extensive experiments show that MLS consistently yields improvement over original label smoothing on different datasets, including bilingual and multilingual translation from both translation quality and model's calibration. Our code is released at [this https URL](https://github.com/PKUnlp-icler/MLS)
+
+| Comments: | ACL 2022 Main Conference, released at [this https URL](https://github.com/PKUnlp-icler/MLS) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2203.02889](https://arxiv.org/abs/2203.02889) [cs.CL]** |
+|           | (or **[arXiv:2203.02889v1](https://arxiv.org/abs/2203.02889v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.02889Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-08-3">3. Conditional Bilingual Mutual Information Based Adaptive Training for Neural Machine Translation
+</h2>
+
+Title: [Conditional Bilingual Mutual Information Based Adaptive Training for Neural Machine Translation](https://arxiv.org/abs/2203.02951)
+Authors: [Songming Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+S), [Yijin Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Y), [Fandong Meng](https://arxiv.org/search/cs?searchtype=author&query=Meng%2C+F), [Yufeng Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+Y), [Jinan Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+J), [Jian Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+J), [Jie Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+J)
+
+> Token-level adaptive training approaches can alleviate the token imbalance problem and thus improve neural machine translation, through re-weighting the losses of different target tokens based on specific statistical metrics (e.g., token frequency or mutual information). Given that standard translation models make predictions on the condition of previous target contexts, we argue that the above statistical metrics ignore target context information and may assign inappropriate weights to target tokens. While one possible solution is to directly take target contexts into these statistical metrics, the target-context-aware statistical computing is extremely expensive, and the corresponding storage overhead is unrealistic. To solve the above issues, we propose a target-context-aware metric, named conditional bilingual mutual information (CBMI), which makes it feasible to supplement target context information for statistical metrics. Particularly, our CBMI can be formalized as the log quotient of the translation model probability and language model probability by decomposing the conditional joint distribution. Thus CBMI can be efficiently calculated during model training without any pre-specific statistical calculations and large storage overhead. Furthermore, we propose an effective adaptive training approach based on both the token- and sentence-level CBMI. Experimental results on WMT14 English-German and WMT19 Chinese-English tasks show our approach can significantly outperform the Transformer baseline and other related methods.
+
+| Comments: | Accepted at ACL 2022 as a long paper of main conference. The code is available at: [this https URL](https://github.com/songmzhang/CBMI) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2203.02951](https://arxiv.org/abs/2203.02951) [cs.CL]** |
+|           | (or **[arXiv:2203.02951v1](https://arxiv.org/abs/2203.02951v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.02951Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-08-4">4. Recent Advances in Neural Text Generation: A Task-Agnostic Survey
+</h2>
+
+Title: [Recent Advances in Neural Text Generation: A Task-Agnostic Survey](https://arxiv.org/abs/2203.03047)
+Authors: [Chen Tang](https://arxiv.org/search/cs?searchtype=author&query=Tang%2C+C), [Frank Guerin](https://arxiv.org/search/cs?searchtype=author&query=Guerin%2C+F), [Yucheng Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Y), [Chenghua Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+C)
+
+> In recent years much effort has been devoted to applying neural models to the task of natural language generation. The challenge is to generate natural human-like text, and to control the generation process. This paper presents a task-agnostic survey of recent advances in neural text generation. These advances have been achieved by numerous developments, which we group under the following four headings: data construction, neural frameworks, training and inference strategies, and evaluation metrics. Finally we discuss the future directions for the development of neural text generation including neural pipelines and exploiting back-ground knowledge.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2203.03047](https://arxiv.org/abs/2203.03047) [cs.CL]** |
+|           | (or **[arXiv:2203.03047v1](https://arxiv.org/abs/2203.03047v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.03047Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-08-5">5. Input-Tuning: Adapting Unfamiliar Inputs to Frozen Pretrained Models
+</h2>
+
+Title: [Input-Tuning: Adapting Unfamiliar Inputs to Frozen Pretrained Models](https://arxiv.org/abs/2203.03131)
+Authors: [Shengnan An](https://arxiv.org/search/cs?searchtype=author&query=An%2C+S), [Yifei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Y), [Zeqi Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+Z), [Qian Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Q), [Bei Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+B), [Qiang Fu](https://arxiv.org/search/cs?searchtype=author&query=Fu%2C+Q), [Weizhu Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+W), [Nanning Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng%2C+N), [Jian-Guang Lou](https://arxiv.org/search/cs?searchtype=author&query=Lou%2C+J)
+
+> Recently the prompt-tuning paradigm has attracted significant attention. By only tuning continuous prompts with a frozen pre-trained language model (PLM), prompt-tuning takes a step towards deploying a shared frozen PLM to serve numerous downstream tasks. Although prompt-tuning shows good performance on certain natural language understanding (NLU) tasks, its effectiveness on natural language generation (NLG) tasks is still under-explored. In this paper, we argue that one of the factors hindering the development of prompt-tuning on NLG tasks is the unfamiliar inputs (i.e., inputs are linguistically different from the pretraining corpus). For example, our preliminary exploration reveals a large performance gap between prompt-tuning and fine-tuning when unfamiliar inputs occur frequently in NLG tasks. This motivates us to propose input-tuning, which fine-tunes both the continuous prompts and the input representations, leading to a more effective way to adapt unfamiliar inputs to frozen PLMs. Our proposed input-tuning is conceptually simple and empirically powerful. Experimental results on seven NLG tasks demonstrate that input-tuning is significantly and consistently better than prompt-tuning. Furthermore, on three of these tasks, input-tuning can achieve a comparable or even better performance than fine-tuning.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2203.03131](https://arxiv.org/abs/2203.03131) [cs.CL]** |
+|           | (or **[arXiv:2203.03131v1](https://arxiv.org/abs/2203.03131v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.03131Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-08-6">6. One Model, Multiple Tasks: Pathways for Natural Language Understanding
+</h2>
+
+Title: [One Model, Multiple Tasks: Pathways for Natural Language Understanding](https://arxiv.org/abs/2203.03312)
+Authors: [Duyu Tang](https://arxiv.org/search/cs?searchtype=author&query=Tang%2C+D), [Fan Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+F), [Yong Dai](https://arxiv.org/search/cs?searchtype=author&query=Dai%2C+Y), [Cong Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+C), [Shuangzhi Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+S), [Shuming Shi](https://arxiv.org/search/cs?searchtype=author&query=Shi%2C+S)
+
+> This paper presents a Pathways approach to handle many tasks at once. Our approach is general-purpose and sparse. Unlike prevailing single-purpose models that overspecialize at individual tasks and learn from scratch when being extended to new tasks, our approach is general-purpose with the ability of stitching together existing skills to learn new tasks more effectively. Different from traditional dense models that always activate all the model parameters, our approach is sparsely activated: only relevant parts of the model (like pathways through the network) are activated. 
+> We take natural language understanding as a case study and define a set of skills like \textit{the skill of understanding the sentiment of text} and \textit{the skill of understanding natural language questions}. These skills can be reused and combined to support many different tasks and situations. We develop our system using Transformer as the backbone. For each skill, we implement skill-specific feed-forward networks, which are activated only if the skill is relevant to the task. An appealing feature of our model is that it not only supports sparsely activated fine-tuning, but also allows us to pretrain skills in the same sparse way with masked language modeling and next sentence prediction. We call this model \textbf{SkillNet}. 
+> We have three major findings. First, with only one model checkpoint, SkillNet performs better than task-specific fine-tuning and two multi-task learning baselines (i.e., dense model and Mixture-of-Experts model) on six tasks. Second, sparsely activated pre-training further improves the overall performance. Third, SkillNet significantly outperforms baseline systems when being extended to new tasks.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2203.03312](https://arxiv.org/abs/2203.03312) [cs.CL]** |
+|           | (or **[arXiv:2203.03312v1](https://arxiv.org/abs/2203.03312v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.03312Focus to learn more |
+
+
+
+
 
 
 
