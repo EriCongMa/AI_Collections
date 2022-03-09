@@ -2,6 +2,14 @@
 
 # Index
 
+- [2022-03-09](#2022-03-09)
+  - [1. Multi-Modal Mixup for Robust Fine-tuning](#2022-03-09-1)
+  - [2. IT5: Large-scale Text-to-text Pretraining for Italian Language Understanding and Generation](#2022-03-09-2)
+  - [3. UniXcoder: Unified Cross-Modal Pre-training for Code Representation](#2022-03-09-3)
+  - [4. HyperPELT: Unified Parameter-Efficient Language Model Tuning for Both Language and Vision-and-Language Tasks](#2022-03-09-4)
+  - [5. Overcoming Catastrophic Forgetting beyond Continual Learning: Balanced Training for Neural Machine Translation](#2022-03-09-5)
+  - [6. Adaptr: Objective-Centric Adaptation Framework for Language Models](#2022-03-09-6)
+  
 - [2022-03-08](#2022-03-08)
   - [1. OCR quality affects perceived usefulness of historical newspaper clippings -- a user study](#2022-03-08-1)
   - [2. Focus on the Target's Vocabulary: Masked Label Smoothing for Machine Translation](#2022-03-08-2)
@@ -9,7 +17,7 @@
   - [4. Recent Advances in Neural Text Generation: A Task-Agnostic Survey](#2022-03-08-4)
   - [5. Input-Tuning: Adapting Unfamiliar Inputs to Frozen Pretrained Models](#2022-03-08-5)
   - [6. One Model, Multiple Tasks: Pathways for Natural Language Understanding](#2022-03-08-6)
-  
+
 - [2022-03-07](#2022-03-07)
   - [1. Overlap-based Vocabulary Generation Improves Cross-lingual Transfer Among Related Languages](#2022-03-07-1)
   - [2. Mind the Gap: Understanding the Modality Gap in Multi-modal Contrastive Representation Learning](#2022-03-07-2)
@@ -45,6 +53,126 @@
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
 
 
+
+# 2022-03-09
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-03-09-1">1. Multi-Modal Mixup for Robust Fine-tuning
+</h2>
+
+Title: [Multi-Modal Mixup for Robust Fine-tuning](https://arxiv.org/abs/2203.03897)
+
+Authors: [Junhyuk So](https://arxiv.org/search/cs?searchtype=author&query=So%2C+J), [Changdae Oh](https://arxiv.org/search/cs?searchtype=author&query=Oh%2C+C), [Minchul Shin](https://arxiv.org/search/cs?searchtype=author&query=Shin%2C+M), [Kyungwoo Song](https://arxiv.org/search/cs?searchtype=author&query=Song%2C+K)
+
+> Pre-trained large-scale models provide a transferable embedding, and they show comparable performance on the diverse downstream task. However, the transferability of multi-modal learning is restricted, and the analysis of learned embedding has not been explored well. This paper provides a perspective to understand the multi-modal embedding in terms of uniformity and alignment. We newly find that the representation learned by multi-modal learning models such as CLIP has a two separated representation space for each heterogeneous dataset with less alignment. Besides, there are unexplored large intermediate areas between two modalities with less uniformity. Less robust embedding might restrict the transferability of the representation for the downstream task. This paper provides a new end-to-end fine-tuning method for robust representation that encourages better uniformity and alignment score. First, we propose a multi-modal Mixup, m2-Mix that mixes the representation of image and text to generate the hard negative samples. Second, we fine-tune the multi-modal model on a hard negative sample as well as normal negative and positive samples with contrastive learning. Our multi-modal Mixup provides a robust representation, and we validate our methods on classification, retrieval, and structure-awareness task.
+
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL); Information Retrieval (cs.IR); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2203.03897](https://arxiv.org/abs/2203.03897) [cs.CV]** |
+|           | (or **[arXiv:2203.03897v1](https://arxiv.org/abs/2203.03897v1) [cs.CV]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.03897Focus to learn more |
+
+
+
+
+
+
+
+<h2 id="2022-03-09-2">2. IT5: Large-scale Text-to-text Pretraining for Italian Language Understanding and Generation
+</h2>
+
+Title: [IT5: Large-scale Text-to-text Pretraining for Italian Language Understanding and Generation](https://arxiv.org/abs/2203.03759)
+
+Authors: [Gabriele Sarti](https://arxiv.org/search/cs?searchtype=author&query=Sarti%2C+G), [Malvina Nissim](https://arxiv.org/search/cs?searchtype=author&query=Nissim%2C+M)
+
+> The T5 model and its unified text-to-text paradigm contributed in advancing the state-of-the-art for many natural language processing tasks. While some multilingual variants of the T5 model have recently been introduced, their performances were found to provide suboptimal performances for languages other than English if compared to monolingual variants. We are motivated by these findings to introduce IT5, the first family of encoder-decoder transformer models pretrained specifically on Italian. We perform a thorough cleaning of a web-crawled Italian corpus including more than 40 billion words and use it to pretrain three IT5 models of different sizes. The performance of IT5 models and their multilingual counterparts is then evaluated on a broad range of natural language understanding and generation benchmarks for Italian. We find the monolingual IT5 models to provide the best scale-to-performance ratio across tested models, consistently outperforming their multilingual counterparts and setting a new state-of-the-art for most Italian conditional language generation tasks.
+
+| Comments: | 13 pages, 7 tables, 1 figure. Code and checkpoints available: [this https URL](https://github.com/gsarti/it5) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2203.03759](https://arxiv.org/abs/2203.03759) [cs.CL]** |
+|           | (or **[arXiv:2203.03759v1](https://arxiv.org/abs/2203.03759v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.03759Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-09-3">3. UniXcoder: Unified Cross-Modal Pre-training for Code Representation
+</h2>
+
+Title: [UniXcoder: Unified Cross-Modal Pre-training for Code Representation](https://arxiv.org/abs/2203.03850)
+
+Authors: [Daya Guo](https://arxiv.org/search/cs?searchtype=author&query=Guo%2C+D), [Shuai Lu](https://arxiv.org/search/cs?searchtype=author&query=Lu%2C+S), [Nan Duan](https://arxiv.org/search/cs?searchtype=author&query=Duan%2C+N), [Yanlin Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Y), [Ming Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+M), [Jian Yin](https://arxiv.org/search/cs?searchtype=author&query=Yin%2C+J)
+
+> Pre-trained models for programming languages have recently demonstrated great success on code intelligence. To support both code-related understanding and generation tasks, recent works attempt to pre-train unified encoder-decoder models. However, such encoder-decoder framework is sub-optimal for auto-regressive tasks, especially code completion that requires a decoder-only manner for efficient inference. In this paper, we present UniXcoder, a unified cross-modal pre-trained model for programming language. The model utilizes mask attention matrices with prefix adapters to control the behavior of the model and leverages cross-modal contents like AST and code comment to enhance code representation. To encode AST that is represented as a tree in parallel, we propose a one-to-one mapping method to transform AST in a sequence structure that retains all structural information from the tree. Furthermore, we propose to utilize multi-modal contents to learn representation of code fragment with contrastive learning, and then align representations among programming languages using a cross-modal generation task. We evaluate UniXcoder on five code-related tasks over nine datasets. To further evaluate the performance of code fragment representation, we also construct a dataset for a new task, called zero-shot code-to-code search. Results show that our model achieves state-of-the-art performance on most tasks and analysis reveals that comment and AST can both enhance UniXcoder.
+
+| Comments: | Published in ACL 2022                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Programming Languages (cs.PL); Software Engineering (cs.SE) |
+| Cite as:  | **[arXiv:2203.03850](https://arxiv.org/abs/2203.03850) [cs.CL]** |
+|           | (or **[arXiv:2203.03850v1](https://arxiv.org/abs/2203.03850v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.03850Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-09-4">4. HyperPELT: Unified Parameter-Efficient Language Model Tuning for Both Language and Vision-and-Language Tasks
+</h2>
+
+Title: [HyperPELT: Unified Parameter-Efficient Language Model Tuning for Both Language and Vision-and-Language Tasks](https://arxiv.org/abs/2203.03878)
+
+Authors: [Zhengkun Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Z), [Wenya Guo](https://arxiv.org/search/cs?searchtype=author&query=Guo%2C+W), [Xiaojun Meng](https://arxiv.org/search/cs?searchtype=author&query=Meng%2C+X), [Yasheng Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Y), [Yadao Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Y), [Xin Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+X), [Qun Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Q), [Zhenglu Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+Z)
+
+> The workflow of pretraining and fine-tuning has emerged as a popular paradigm for solving various NLP and V&L (Vision-and-Language) downstream tasks. With the capacity of pretrained models growing rapidly, how to perform parameter-efficient fine-tuning has become fairly important for quick transfer learning and deployment. In this paper, we design a novel unified parameter-efficient transfer learning framework that works effectively on both pure language and V&L tasks. In particular, we use a shared hypernetwork that takes trainable hyper-embeddings as input, and outputs weights for fine-tuning different small modules in a pretrained language model, such as tuning the parameters inserted into multi-head attention blocks (i.e., prefix-tuning) and feed-forward blocks (i.e., adapter-tuning). We define a set of embeddings (e.g., layer, block, task and visual embeddings) as the key components to calculate hyper-embeddings, which thus can support both pure language and V&L tasks. Our proposed framework adds fewer trainable parameters in multi-task learning while achieving superior performances and transfer ability compared to state-of-the-art methods. Empirical results on the GLUE benchmark and multiple V&L tasks confirm the effectiveness of our framework on both textual and visual modalities.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2203.03878](https://arxiv.org/abs/2203.03878) [cs.CL]** |
+|           | (or **[arXiv:2203.03878v1](https://arxiv.org/abs/2203.03878v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-03-09-5">5. Overcoming Catastrophic Forgetting beyond Continual Learning: Balanced Training for Neural Machine Translation
+</h2>
+
+Title: [Overcoming Catastrophic Forgetting beyond Continual Learning: Balanced Training for Neural Machine Translation](https://arxiv.org/abs/2203.03910)
+
+Authors: [Chenze Shao](https://arxiv.org/search/cs?searchtype=author&query=Shao%2C+C), [Yang Feng](https://arxiv.org/search/cs?searchtype=author&query=Feng%2C+Y)
+
+> Neural networks tend to gradually forget the previously learned knowledge when learning multiple tasks sequentially from dynamic data distributions. This problem is called \textit{catastrophic forgetting}, which is a fundamental challenge in the continual learning of neural networks. In this work, we observe that catastrophic forgetting not only occurs in continual learning but also affects the traditional static training. Neural networks, especially neural machine translation models, suffer from catastrophic forgetting even if they learn from a static training set. To be specific, the final model pays imbalanced attention to training samples, where recently exposed samples attract more attention than earlier samples. The underlying cause is that training samples do not get balanced training in each model update, so we name this problem \textit{imbalanced training}. To alleviate this problem, we propose Complementary Online Knowledge Distillation (COKD), which uses dynamically updated teacher models trained on specific data orders to iteratively provide complementary knowledge to the student model. Experimental results on multiple machine translation tasks show that our method successfully alleviates the problem of imbalanced training and achieves substantial improvements over strong baseline systems.
+
+| Comments:    | ACL 2022 main conference                                     |
+| ------------ | ------------------------------------------------------------ |
+| Subjects:    | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| ACM classes: | I.2.7                                                        |
+| Cite as:     | **[arXiv:2203.03910](https://arxiv.org/abs/2203.03910) [cs.CL]** |
+|              | (or **[arXiv:2203.03910v1](https://arxiv.org/abs/2203.03910v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-03-09-6">6. Adaptr: Objective-Centric Adaptation Framework for Language Models
+</h2>
+
+Title: [Adaptr: Objective-Centric Adaptation Framework for Language Models](https://arxiv.org/abs/2203.03989)
+
+Authors: [Michal Štefánik](https://arxiv.org/search/cs?searchtype=author&query=Štefánik%2C+M), [Vít Novotný](https://arxiv.org/search/cs?searchtype=author&query=Novotný%2C+V), [Nikola Groverová](https://arxiv.org/search/cs?searchtype=author&query=Groverová%2C+N), [Petr Sojka](https://arxiv.org/search/cs?searchtype=author&query=Sojka%2C+P)
+
+> Progress in natural language processing research is catalyzed by the possibilities given by the widespread software frameworks. This paper introduces Adaptor library that transposes the traditional model-centric approach composed of pre-training + fine-tuning steps to objective-centric approach, composing the training process by applications of selected objectives. We survey research directions that can benefit from enhanced objective-centric experimentation in multitask training, custom objectives development, dynamic training curricula, or domain adaptation. Adaptor aims to ease reproducibility of these research directions in practice. Finally, we demonstrate the practical applicability of Adaptor in selected unsupervised domain adaptation scenarios.
+
+| Comments: | 60th Annual Meeting of the ACL (ACL 2022): System Demonstrations paper |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2203.03989](https://arxiv.org/abs/2203.03989) [cs.CL]** |
+|           | (or **[arXiv:2203.03989v1](https://arxiv.org/abs/2203.03989v1) [cs.CL]** for this version) |
 
 
 
