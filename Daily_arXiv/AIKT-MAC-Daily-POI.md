@@ -2,6 +2,18 @@
 
 # Index
 
+- [2022-03-11](#2022-03-11)
+  - [1. NLX-GPT: A Model for Natural Language Explanations in Vision and Vision-Language Tasks](#2022-03-11-1)
+  - [2. Conditional Prompt Learning for Vision-Language Models](#2022-03-11-2)
+  - [3. Faithfulness in Natural Language Generation: A Systematic Survey of Analysis, Evaluation and Optimization Methods](#2022-03-11-3)
+  - [4. Look Backward and Forward: Self-Knowledge Distillation with Bidirectional Decoder for Neural Machine Translation](#2022-03-11-4)
+  
+- [2022-03-10](#2022-03-10)
+  - [1. Efficient Sub-structured Knowledge Distillation](#2022-03-10-1)
+  - [2. Model-Agnostic Multitask Fine-tuning for Few-shot Vision-Language Transfer Learning](#2022-03-10-2)
+  - [3. Pose Guided Multi-person Image Generation From Text](#2022-03-10-3)
+  - [4. Onception: Active Learning with Expert Advice for Real World Machine Translation](#2022-03-10-4)
+
 - [2022-03-09](#2022-03-09)
   - [1. Multi-Modal Mixup for Robust Fine-tuning](#2022-03-09-1)
   - [2. IT5: Large-scale Text-to-text Pretraining for Italian Language Understanding and Generation](#2022-03-09-2)
@@ -9,7 +21,6 @@
   - [4. HyperPELT: Unified Parameter-Efficient Language Model Tuning for Both Language and Vision-and-Language Tasks](#2022-03-09-4)
   - [5. Overcoming Catastrophic Forgetting beyond Continual Learning: Balanced Training for Neural Machine Translation](#2022-03-09-5)
   - [6. Adaptr: Objective-Centric Adaptation Framework for Language Models](#2022-03-09-6)
-  
 - [2022-03-08](#2022-03-08)
   - [1. OCR quality affects perceived usefulness of historical newspaper clippings -- a user study](#2022-03-08-1)
   - [2. Focus on the Target's Vocabulary: Masked Label Smoothing for Machine Translation](#2022-03-08-2)
@@ -17,14 +28,12 @@
   - [4. Recent Advances in Neural Text Generation: A Task-Agnostic Survey](#2022-03-08-4)
   - [5. Input-Tuning: Adapting Unfamiliar Inputs to Frozen Pretrained Models](#2022-03-08-5)
   - [6. One Model, Multiple Tasks: Pathways for Natural Language Understanding](#2022-03-08-6)
-
 - [2022-03-07](#2022-03-07)
   - [1. Overlap-based Vocabulary Generation Improves Cross-lingual Transfer Among Related Languages](#2022-03-07-1)
   - [2. Mind the Gap: Understanding the Modality Gap in Multi-modal Contrastive Representation Learning](#2022-03-07-2)
   - [3. EAG: Extract and Generate Multi-way Aligned Corpus for Complete Multi-lingual Neural Machine Translation](#2022-03-07-3)
   - [4. Comprehension of Subtitles from Re-Translating Simultaneous Speech Translation](#2022-03-07-4)
   - [5. From Simultaneous to Streaming Machine Translation by Leveraging Streaming History](#2022-03-07-5)
-
 - [2022-03-04](#2022-03-04)
   - [1. Recent, rapid advancement in visual question answering architecture](#2022-03-04-1)
   - [2. Vision-Language Intelligence: Tasks, Representation Learning, and Large Models](#2022-03-04-2)
@@ -51,6 +60,182 @@
 - [2022-02-28](#2022-02-28)
   - [1. Screening Gender Transfer in Neural Machine Translation](#2022-02-28-1)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2022-03-11
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-03-11-1">1. NLX-GPT: A Model for Natural Language Explanations in Vision and Vision-Language Tasks
+</h2>
+
+Title: [NLX-GPT: A Model for Natural Language Explanations in Vision and Vision-Language Tasks](https://arxiv.org/abs/2203.05081)
+
+Authors: [Fawaz Sammani](https://arxiv.org/search/cs?searchtype=author&query=Sammani%2C+F), [Tanmoy Mukherjee](https://arxiv.org/search/cs?searchtype=author&query=Mukherjee%2C+T), [Nikos Deligiannis](https://arxiv.org/search/cs?searchtype=author&query=Deligiannis%2C+N)
+
+> Natural language explanation (NLE) models aim at explaining the decision-making process of a black box system via generating natural language sentences which are human-friendly, high-level and fine-grained. Current NLE models explain the decision-making process of a vision or vision-language model (a.k.a., task model), e.g., a VQA model, via a language model (a.k.a., explanation model), e.g., GPT. Other than the additional memory resources and inference time required by the task model, the task and explanation models are completely independent, which disassociates the explanation from the reasoning process made to predict the answer. We introduce NLX-GPT, a general, compact and faithful language model that can simultaneously predict an answer and explain it. We first conduct pre-training on large scale data of image-caption pairs for general understanding of images, and then formulate the answer as a text prediction task along with the explanation. Without region proposals nor a task model, our resulting overall framework attains better evaluation scores, contains much less parameters and is 15× faster than the current SoA model. We then address the problem of evaluating the explanations which can be in many times generic, data-biased and can come in several forms. We therefore design 2 new evaluation measures: (1) explain-predict and (2) retrieval-based attack, a self-evaluation framework that requires no labels. Code is at: [this https URL](https://github.com/fawazsammani/nlxgpt).
+
+| Comments: | Accepted to CVPR 2022                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2203.05081](https://arxiv.org/abs/2203.05081) [cs.CV]** |
+|           | (or **[arXiv:2203.05081v1](https://arxiv.org/abs/2203.05081v1) [cs.CV]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.05081Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-11-2">2. Conditional Prompt Learning for Vision-Language Models
+</h2>
+
+Title: [Conditional Prompt Learning for Vision-Language Models](https://arxiv.org/abs/2203.05557)
+
+Authors: [Kaiyang Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+K), [Jingkang Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+J), [Chen Change Loy](https://arxiv.org/search/cs?searchtype=author&query=Loy%2C+C+C), [Ziwei Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Z)
+
+> With the rise of powerful pre-trained vision-language models like CLIP, it becomes essential to investigate ways to adapt these models to downstream datasets. A recently proposed method named Context Optimization (CoOp) introduces the concept of prompt learning -- a recent trend in NLP -- to the vision domain for adapting pre-trained vision-language models. Specifically, CoOp turns context words in a prompt into a set of learnable vectors and, with only a few labeled images for learning, can achieve huge improvements over intensively-tuned manual prompts. In our study we identify a critical problem of CoOp: the learned context is not generalizable to wider unseen classes within the same dataset, suggesting that CoOp overfits base classes observed during training. To address the problem, we propose Conditional Context Optimization (CoCoOp), which extends CoOp by further learning a lightweight neural network to generate for each image an input-conditional token (vector). Compared to CoOp's static prompts, our dynamic prompts adapt to each instance and are thus less sensitive to class shift. Extensive experiments show that CoCoOp generalizes much better than CoOp to unseen classes, even showing promising transferability beyond a single dataset; and yields stronger domain generalization performance as well. Code is available at [this https URL](https://github.com/KaiyangZhou/CoOp).
+
+| Comments: | CVPR 2022. TL;DR: We propose a conditional prompt learning approach to solve the generalizability issue of static prompts |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2203.05557](https://arxiv.org/abs/2203.05557) [cs.CV]** |
+|           | (or **[arXiv:2203.05557v1](https://arxiv.org/abs/2203.05557v1) [cs.CV]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.05557Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-11-3">3. Faithfulness in Natural Language Generation: A Systematic Survey of Analysis, Evaluation and Optimization Methods
+</h2>
+
+Title: [Faithfulness in Natural Language Generation: A Systematic Survey of Analysis, Evaluation and Optimization Methods](https://arxiv.org/abs/2203.05227)
+
+Authors: [Wei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+W), [Wenhao Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+W), [Moye Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+M), [Jiachen Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+J), [Xinyan Xiao](https://arxiv.org/search/cs?searchtype=author&query=Xiao%2C+X), [Hua Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+H)
+
+> Natural Language Generation (NLG) has made great progress in recent years due to the development of deep learning techniques such as pre-trained language models. This advancement has resulted in more fluent, coherent and even properties controllable (e.g. stylistic, sentiment, length etc.) generation, naturally leading to development in downstream tasks such as abstractive summarization, dialogue generation, machine translation, and data-to-text generation. However, the faithfulness problem that the generated text usually contains unfaithful or non-factual information has become the biggest challenge, which makes the performance of text generation unsatisfactory for practical applications in many real-world scenarios. Many studies on analysis, evaluation, and optimization methods for faithfulness problems have been proposed for various tasks, but have not been organized, compared and discussed in a combined manner. In this survey, we provide a systematic overview of the research progress on the faithfulness problem of NLG, including problem analysis, evaluation metrics and optimization methods. We organize the evaluation and optimization methods for different tasks into a unified taxonomy to facilitate comparison and learning across tasks. Several research trends are discussed further.
+
+| Comments: | The first version                                            |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2203.05227](https://arxiv.org/abs/2203.05227) [cs.CL]** |
+|           | (or **[arXiv:2203.05227v1](https://arxiv.org/abs/2203.05227v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.05227Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-11-4">4. Look Backward and Forward: Self-Knowledge Distillation with Bidirectional Decoder for Neural Machine Translation
+</h2>
+
+Title: [Look Backward and Forward: Self-Knowledge Distillation with Bidirectional Decoder for Neural Machine Translation](https://arxiv.org/abs/2203.05248)
+
+Authors: [Xuanwei Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+X), [Libin Shen](https://arxiv.org/search/cs?searchtype=author&query=Shen%2C+L), [Disheng Pan](https://arxiv.org/search/cs?searchtype=author&query=Pan%2C+D), [Liang Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+L), [Yanjun Miao](https://arxiv.org/search/cs?searchtype=author&query=Miao%2C+Y)
+
+> Neural Machine Translation(NMT) models are usually trained via unidirectional decoder which corresponds to optimizing one-step-ahead prediction. However, this kind of unidirectional decoding framework may incline to focus on local structure rather than global coherence. To alleviate this problem, we propose a novel method, Self-Knowledge Distillation with Bidirectional Decoder for Neural Machine Translation(SBD-NMT). We deploy a backward decoder which can act as an effective regularization method to the forward decoder. By leveraging the backward decoder's information about the longer-term future, distilling knowledge learned in the backward decoder can encourage auto-regressive NMT models to plan ahead. Experiments show that our method is significantly better than the strong Transformer baselines on multiple machine translation data sets. Our codes will be released on github soon.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2203.05248](https://arxiv.org/abs/2203.05248) [cs.CL]** |
+|           | (or **[arXiv:2203.05248v1](https://arxiv.org/abs/2203.05248v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.05248Focus to learn more |
+
+
+
+
+
+
+
+# 2022-03-10
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-03-10-1">1. Efficient Sub-structured Knowledge Distillation
+</h2>
+
+Title: [Efficient Sub-structured Knowledge Distillation](https://arxiv.org/abs/2203.04825)
+
+Authors: [Wenye Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+W), [Yangming Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Y), [Lemao Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+L), [Shuming Shi](https://arxiv.org/search/cs?searchtype=author&query=Shi%2C+S), [Hai-tao Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng%2C+H)
+
+> Structured prediction models aim at solving a type of problem where the output is a complex structure, rather than a single variable. Performing knowledge distillation for such models is not trivial due to their exponentially large output space. In this work, we propose an approach that is much simpler in its formulation and far more efficient for training than existing approaches. Specifically, we transfer the knowledge from a teacher model to its student model by locally matching their predictions on all sub-structures, instead of the whole output space. In this manner, we avoid adopting some time-consuming techniques like dynamic programming (DP) for decoding output structures, which permits parallel computation and makes the training process even faster in practice. Besides, it encourages the student model to better mimic the internal behavior of the teacher model. Experiments on two structured prediction tasks demonstrate that our approach outperforms previous methods and halves the time cost for one training epoch.
+
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2203.04825](https://arxiv.org/abs/2203.04825) [cs.LG]** |
+|           | (or **[arXiv:2203.04825v1](https://arxiv.org/abs/2203.04825v1) [cs.LG]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.04825Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-10-2">2. Model-Agnostic Multitask Fine-tuning for Few-shot Vision-Language Transfer Learning
+</h2>
+
+Title: [Model-Agnostic Multitask Fine-tuning for Few-shot Vision-Language Transfer Learning](https://arxiv.org/abs/2203.04904)
+
+Authors: [Zhenhailong Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Z), [Hang Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+H), [Manling Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+M), [Han Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+H), [Heng Ji](https://arxiv.org/search/cs?searchtype=author&query=Ji%2C+H)
+
+> Despite achieving state-of-the-art zero-shot performance, existing vision-language models, e.g., CLIP, still fall short of domain-specific classification tasks, e.g., Fungi Classification. In the context of few-shot transfer learning, traditional fine-tuning fails to prevent highly expressive model from exploiting spurious correlations in the training data. On the other hand, although model-agnostic meta-learning (MAML) presents as a natural alternative for transfer learning, the expensive computation due to implicit second-order optimization limits its use in large-scale models and datasets. In this work we aim to further improve the generalization of existing vision-language models on unseen tasks via a simple yet efficient fine-tuning strategy based on uniform task sampling. We term our method as Model-Agnostic Multitask Fine-tuning (MAMF). Compared with MAML, MAMF discards the bi-level optimization and uses only first-order gradients, which makes it easily scalable and computationally efficient. Due to the uniform task sampling procedure, MAMF consistently outperforms the classical fine-tuning method for few-shot transfer learning on five benchmark datasets. Empirically, we further discover that the effectiveness of first-order MAML is highly dependent on the zero-shot performance of the pretrained model, and our simple algorithm can outperform first-order MAML on more challenging datasets with low zero-shot performance.
+
+| Comments: | 7 pages, 6 figures, under review                             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Multimedia (cs.MM)**; Computation and Language (cs.CL); Computer Vision and Pattern Recognition (cs.CV) |
+| Cite as:  | **[arXiv:2203.04904](https://arxiv.org/abs/2203.04904) [cs.MM]** |
+|           | (or **[arXiv:2203.04904v1](https://arxiv.org/abs/2203.04904v1) [cs.MM]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.04904Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-10-3">3. Pose Guided Multi-person Image Generation From Text
+</h2>
+
+Title: [Pose Guided Multi-person Image Generation From Text](https://arxiv.org/abs/2203.04907)
+
+Authors: [Soon Yau Cheong](https://arxiv.org/search/cs?searchtype=author&query=Cheong%2C+S+Y), [Armin Mustafa](https://arxiv.org/search/cs?searchtype=author&query=Mustafa%2C+A), [Andrew Gilbert](https://arxiv.org/search/cs?searchtype=author&query=Gilbert%2C+A)
+
+> Transformers have recently been shown to generate high quality images from texts. However, existing methods struggle to create high fidelity full-body images, especially multiple people. A person's pose has a high degree of freedom that is difficult to describe using words only; this creates errors in the generated image, such as incorrect body proportions and pose. We propose a pose-guided text-to-image model, using pose as an additional input constraint. Using the proposed Keypoint Pose Encoding (KPE) to encode human pose into low dimensional representation, our model can generate novel multi-person images accurately representing the pose and text descriptions provided, with minimal errors. We demonstrate that KPE is invariant to changes in the target image domain and image resolution; we show results on the Deepfashion dataset and create a new multi-person Deepfashion dataset to demonstrate the multi-capabilities of our approach.
+
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2203.04907](https://arxiv.org/abs/2203.04907) [cs.CV]** |
+|           | (or **[arXiv:2203.04907v1](https://arxiv.org/abs/2203.04907v1) [cs.CV]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.04907Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-10-4">4. Onception: Active Learning with Expert Advice for Real World Machine Translation
+</h2>
+
+Title: [Onception: Active Learning with Expert Advice for Real World Machine Translation](https://arxiv.org/abs/2203.04507)
+
+Authors: [Vânia Mendonça](https://arxiv.org/search/cs?searchtype=author&query=Mendonça%2C+V) (1 and 2), [Ricardo Rei](https://arxiv.org/search/cs?searchtype=author&query=Rei%2C+R) (1 and 2 and 3), [Luisa Coheur](https://arxiv.org/search/cs?searchtype=author&query=Coheur%2C+L) (1 and 2), [Alberto Sardinha](https://arxiv.org/search/cs?searchtype=author&query=Sardinha%2C+A) (1 and 2) ((1) INESC-ID Lisboa, (2) Instituto Superior Técnico, (3) Unbabel AI)
+
+> Active learning can play an important role in low-resource settings (i.e., where annotated data is scarce), by selecting which instances may be more worthy to annotate. Most active learning approaches for Machine Translation assume the existence of a pool of sentences in a source language, and rely on human annotators to provide translations or post-edits, which can still be costly. In this paper, we assume a real world human-in-the-loop scenario in which: (i) the source sentences may not be readily available, but instead arrive in a stream; (ii) the automatic translations receive feedback in the form of a rating, instead of a correct/edited translation, since the human-in-the-loop might be a user looking for a translation, but not be able to provide one. To tackle the challenge of deciding whether each incoming pair source-translations is worthy to query for human feedback, we resort to a number of stream-based active learning query strategies. Moreover, since we not know in advance which query strategy will be the most adequate for a certain language pair and set of Machine Translation models, we propose to dynamically combine multiple strategies using prediction with expert advice. Our experiments show that using active learning allows to converge to the best Machine Translation systems with fewer human interactions. Furthermore, combining multiple strategies using prediction with expert advice often outperforms several individual active learning strategies with even fewer interactions.
+
+| Comments: | Submitted to Machine Translation                             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2203.04507](https://arxiv.org/abs/2203.04507) [cs.CL]** |
+|           | (or **[arXiv:2203.04507v1](https://arxiv.org/abs/2203.04507v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.04507Focus to learn more |
+
+
+
+
+
+
+
 
 
 
