@@ -2,18 +2,19 @@
 
 # Index
 
+- [2022-03-14](#2022-03-14)
+  - [1. A new approach to calculating BERTScore for automatic assessment of translation quality](#2022-03-14-1)
+  
 - [2022-03-11](#2022-03-11)
   - [1. NLX-GPT: A Model for Natural Language Explanations in Vision and Vision-Language Tasks](#2022-03-11-1)
   - [2. Conditional Prompt Learning for Vision-Language Models](#2022-03-11-2)
   - [3. Faithfulness in Natural Language Generation: A Systematic Survey of Analysis, Evaluation and Optimization Methods](#2022-03-11-3)
   - [4. Look Backward and Forward: Self-Knowledge Distillation with Bidirectional Decoder for Neural Machine Translation](#2022-03-11-4)
-  
 - [2022-03-10](#2022-03-10)
   - [1. Efficient Sub-structured Knowledge Distillation](#2022-03-10-1)
   - [2. Model-Agnostic Multitask Fine-tuning for Few-shot Vision-Language Transfer Learning](#2022-03-10-2)
   - [3. Pose Guided Multi-person Image Generation From Text](#2022-03-10-3)
   - [4. Onception: Active Learning with Expert Advice for Real World Machine Translation](#2022-03-10-4)
-
 - [2022-03-09](#2022-03-09)
   - [1. Multi-Modal Mixup for Robust Fine-tuning](#2022-03-09-1)
   - [2. IT5: Large-scale Text-to-text Pretraining for Italian Language Understanding and Generation](#2022-03-09-2)
@@ -60,6 +61,38 @@
 - [2022-02-28](#2022-02-28)
   - [1. Screening Gender Transfer in Neural Machine Translation](#2022-02-28-1)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2022-03-14
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-03-14-1">1. A new approach to calculating BERTScore for automatic assessment of translation quality
+</h2>
+
+Title: [A new approach to calculating BERTScore for automatic assessment of translation quality](https://arxiv.org/abs/2203.05598)
+
+Authors: [A.A. Vetrov](https://arxiv.org/search/cs?searchtype=author&query=Vetrov%2C+A), [E.A. Gorn](https://arxiv.org/search/cs?searchtype=author&query=Gorn%2C+E)
+
+> The study of the applicability of the BERTScore metric was conducted to translation quality assessment at the sentence level for English -> Russian direction. Experiments were performed with a pre-trained multilingual BERT as well as with a pair of monolingual BERT models. To align the monolingual embeddings, an orthogonal transformation based on anchor tokens was used. It was demonstrated that such transformation helps to prevent mismatching issue and shown that this approach gives better results than using embeddings of the multilingual model. To improve the token matching process it is proposed to combine all incomplete WorkPiece tokens into meaningful words and use simple averaging of corresponding vectors and to calculate BERTScore based on anchor tokens only. Such modifications allowed us to achieve a better correlation of the model predictions with human estimates. In addition to evaluating machine translation, several versions of human translation were evaluated as well, the problems of this approach were listed.
+
+| Comments:    | 8 pages, 4 figures                                           |
+| ------------ | ------------------------------------------------------------ |
+| Subjects:    | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| ACM classes: | I.2.7                                                        |
+| Cite as:     | **[arXiv:2203.05598](https://arxiv.org/abs/2203.05598) [cs.CL]** |
+|              | (or **[arXiv:2203.05598v1](https://arxiv.org/abs/2203.05598v1) [cs.CL]** for this version) |
+|              | https://doi.org/10.48550/arXiv.2203.05598Focus to learn more |
+
+
+
+
+
+
+
 
 
 
