@@ -2,9 +2,20 @@
 
 # Index
 
+- [2022-03-15](#2022-03-15)
+  - [1. XYLayoutLM: Towards Layout-Aware Multimodal Networks For Visually-Rich Document Understanding](#2022-03-15-1)
+  - [2. ELLE: Efficient Lifelong Pre-training for Emerging Data](#2022-03-15-2)
+  - [3. Enabling Multimodal Generation on CLIP via Vision-Language Knowledge Distillation](#2022-03-15-3)
+  - [4. Delta Tuning: A Comprehensive Study of Parameter Efficient Methods for Pre-trained Language Models](#2022-03-15-4)
+  - [5. PERT: Pre-training BERT with Permuted Language Model](#2022-03-15-5)
+  - [6. Modelling word learning and recognition using visually grounded speech](#2022-03-15-6)
+  - [7. Interpretability for Language Learners Using Example-Based Grammatical Error Correction](#2022-03-15-7)
+  - [8. Interpretable Dysarthric Speaker Adaptation based on Optimal-Transport](#2022-03-15-8)
+  - [9. RED-ACE: Robust Error Detection for ASR using Confidence Embeddings](#2022-03-15-9)
+  
 - [2022-03-14](#2022-03-14)
   - [1. A new approach to calculating BERTScore for automatic assessment of translation quality](#2022-03-14-1)
-  
+
 - [2022-03-11](#2022-03-11)
   - [1. NLX-GPT: A Model for Natural Language Explanations in Vision and Vision-Language Tasks](#2022-03-11-1)
   - [2. Conditional Prompt Learning for Vision-Language Models](#2022-03-11-2)
@@ -61,6 +72,185 @@
 - [2022-02-28](#2022-02-28)
   - [1. Screening Gender Transfer in Neural Machine Translation](#2022-02-28-1)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2022-03-15
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-03-15-1">1. XYLayoutLM: Towards Layout-Aware Multimodal Networks For Visually-Rich Document Understanding
+</h2>
+
+Title: [XYLayoutLM: Towards Layout-Aware Multimodal Networks For Visually-Rich Document Understanding](https://arxiv.org/abs/2203.06947)
+
+Authors: [Zhangxuan Gu](https://arxiv.org/search/cs?searchtype=author&query=Gu%2C+Z), [Changhua Meng](https://arxiv.org/search/cs?searchtype=author&query=Meng%2C+C), [Ke Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+K), [Jun Lan](https://arxiv.org/search/cs?searchtype=author&query=Lan%2C+J), [Weiqiang Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+W), [Ming Gu](https://arxiv.org/search/cs?searchtype=author&query=Gu%2C+M), [Liqing Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+L)
+
+> Recently, various multimodal networks for Visually-Rich Document Understanding(VRDU) have been proposed, showing the promotion of transformers by integrating visual and layout information with the text embeddings. However, most existing approaches utilize the position embeddings to incorporate the sequence information, neglecting the noisy improper reading order obtained by OCR tools. In this paper, we propose a robust layout-aware multimodal network named XYLayoutLM to capture and leverage rich layout information from proper reading orders produced by our Augmented XY Cut. Moreover, a Dilated Conditional Position Encoding module is proposed to deal with the input sequence of variable lengths, and it additionally extracts local layout information from both textual and visual modalities while generating position embeddings. Experiment results show that our XYLayoutLM achieves competitive results on document understanding tasks.
+
+| Comments: | Accepted by CVPR2022                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2203.06947](https://arxiv.org/abs/2203.06947) [cs.CV]** |
+|           | (or **[arXiv:2203.06947v1](https://arxiv.org/abs/2203.06947v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2022-03-15-2">2. ELLE: Efficient Lifelong Pre-training for Emerging Data
+</h2>
+
+Title: [ELLE: Efficient Lifelong Pre-training for Emerging Data](https://arxiv.org/abs/2203.06311)
+
+Authors: [Yujia Qin](https://arxiv.org/search/cs?searchtype=author&query=Qin%2C+Y), [Jiajie Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+J), [Yankai Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+Y), [Zhiyuan Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Z), [Peng Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+P), [Maosong Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+M), [Jie Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+J)
+
+> Current pre-trained language models (PLM) are typically trained with static data, ignoring that in real-world scenarios, streaming data of various sources may continuously grow. This requires PLMs to integrate the information from all the sources in a lifelong manner. Although this goal could be achieved by exhaustive pre-training on all the existing data, such a process is known to be computationally expensive. To this end, we propose ELLE, aiming at efficient lifelong pre-training for emerging data. Specifically, ELLE consists of (1) function preserved model expansion, which flexibly expands an existing PLM's width and depth to improve the efficiency of knowledge acquisition; and (2) pre-trained domain prompts, which disentangle the versatile knowledge learned during pre-training and stimulate the proper knowledge for downstream tasks. We experiment ELLE with streaming data from 5 domains on BERT and GPT. The results show the superiority of ELLE over various lifelong learning baselines in both pre-training efficiency and downstream performances. The codes are publicly available at [this https URL](https://github.com/thunlp/ELLE).
+
+| Comments: | Findings of ACL 2022                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2203.06311](https://arxiv.org/abs/2203.06311) [cs.CL]** |
+|           | (or **[arXiv:2203.06311v1](https://arxiv.org/abs/2203.06311v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.06311Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-15-3">3. Enabling Multimodal Generation on CLIP via Vision-Language Knowledge Distillation
+</h2>
+
+Title: [Enabling Multimodal Generation on CLIP via Vision-Language Knowledge Distillation](https://arxiv.org/abs/2203.06386)
+
+Authors: [Wenliang Dai](https://arxiv.org/search/cs?searchtype=author&query=Dai%2C+W), [Lu Hou](https://arxiv.org/search/cs?searchtype=author&query=Hou%2C+L), [Lifeng Shang](https://arxiv.org/search/cs?searchtype=author&query=Shang%2C+L), [Xin Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+X), [Qun Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Q), [Pascale Fung](https://arxiv.org/search/cs?searchtype=author&query=Fung%2C+P)
+
+> The recent large-scale vision-language pre-training (VLP) of dual-stream architectures (e.g., CLIP) with a tremendous amount of image-text pair data, has shown its superiority on various multimodal alignment tasks. Despite its success, the resulting models are not capable of multimodal generative tasks due to the weak text encoder. To tackle this problem, we propose to augment the dual-stream VLP model with a textual pre-trained language model (PLM) via vision-language knowledge distillation (VLKD), enabling the capability for multimodal generation. VLKD is pretty data- and computation-efficient compared to the pre-training from scratch. Experimental results show that the resulting model has strong zero-shot performance on multimodal generation tasks, such as open-ended visual question answering and image captioning. For example, it achieves 44.5% zero-shot accuracy on the VQAv2 dataset, surpassing the previous state-of-the-art zero-shot model with 7× fewer parameters. Furthermore, the original textual language understanding and generation ability of the PLM is maintained after VLKD, which makes our model versatile for both multimodal and unimodal tasks.
+
+| Comments: | Accepted to ACL 2022                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Computer Vision and Pattern Recognition (cs.CV) |
+| Cite as:  | **[arXiv:2203.06386](https://arxiv.org/abs/2203.06386) [cs.CL]** |
+|           | (or **[arXiv:2203.06386v1](https://arxiv.org/abs/2203.06386v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.06386Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-15-4">4. Delta Tuning: A Comprehensive Study of Parameter Efficient Methods for Pre-trained Language Models
+</h2>
+
+Title: [Delta Tuning: A Comprehensive Study of Parameter Efficient Methods for Pre-trained Language Models](https://arxiv.org/abs/2203.06904)
+
+Authors: [Ning Ding](https://arxiv.org/search/cs?searchtype=author&query=Ding%2C+N), [Yujia Qin](https://arxiv.org/search/cs?searchtype=author&query=Qin%2C+Y), [Guang Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+G), [Fuchao Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+F), [Zonghan Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+Z), [Yusheng Su](https://arxiv.org/search/cs?searchtype=author&query=Su%2C+Y), [Shengding Hu](https://arxiv.org/search/cs?searchtype=author&query=Hu%2C+S), [Yulin Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+Y), [Chi-Min Chan](https://arxiv.org/search/cs?searchtype=author&query=Chan%2C+C), [Weize Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+W), [Jing Yi](https://arxiv.org/search/cs?searchtype=author&query=Yi%2C+J), [Weilin Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+W), [Xiaozhi Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+X), [Zhiyuan Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Z), [Hai-Tao Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng%2C+H), [Jianfei Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+J), [Yang Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Y), [Jie Tang](https://arxiv.org/search/cs?searchtype=author&query=Tang%2C+J), [Juanzi Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+J), [Maosong Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+M)
+
+> Despite the success, the process of fine-tuning large-scale PLMs brings prohibitive adaptation costs. In fact, fine-tuning all the parameters of a colossal model and retaining separate instances for different tasks are practically infeasible. This necessitates a new branch of research focusing on the parameter-efficient adaptation of PLMs, dubbed as delta tuning in this paper. In contrast with the standard fine-tuning, delta tuning only fine-tunes a small portion of the model parameters while keeping the rest untouched, largely reducing both the computation and storage costs. Recent studies have demonstrated that a series of delta tuning methods with distinct tuned parameter selection could achieve performance on a par with full-parameter fine-tuning, suggesting a new promising way of stimulating large-scale PLMs. In this paper, we first formally describe the problem of delta tuning and then comprehensively review recent delta tuning approaches. We also propose a unified categorization criterion that divide existing delta tuning methods into three groups: addition-based, specification-based, and reparameterization-based methods. Though initially proposed as an efficient method to steer large models, we believe that some of the fascinating evidence discovered along with delta tuning could help further reveal the mechanisms of PLMs and even deep neural networks. To this end, we discuss the theoretical principles underlying the effectiveness of delta tuning and propose frameworks to interpret delta tuning from the perspective of optimization and optimal control, respectively. Furthermore, we provide a holistic empirical study of representative methods, where results on over 100 NLP tasks demonstrate a comprehensive performance comparison of different approaches. The experimental results also cover the analysis of combinatorial, scaling and transferable properties of delta tuning.
+
+| Comments: | 49 pages                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2203.06904](https://arxiv.org/abs/2203.06904) [cs.CL]** |
+|           | (or **[arXiv:2203.06904v1](https://arxiv.org/abs/2203.06904v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-03-15-5">5. PERT: Pre-training BERT with Permuted Language Model
+</h2>
+
+Title: [PERT: Pre-training BERT with Permuted Language Model](https://arxiv.org/abs/2203.06906)
+
+Authors: [Yiming Cui](https://arxiv.org/search/cs?searchtype=author&query=Cui%2C+Y), [Ziqing Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+Z), [Ting Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+T)
+
+> Pre-trained Language Models (PLMs) have been widely used in various natural language processing (NLP) tasks, owing to their powerful text representations trained on large-scale corpora. In this paper, we propose a new PLM called PERT for natural language understanding (NLU). PERT is an auto-encoding model (like BERT) trained with Permuted Language Model (PerLM). The formulation of the proposed PerLM is straightforward. We permute a proportion of the input text, and the training objective is to predict the position of the original token. Moreover, we also apply whole word masking and N-gram masking to improve the performance of PERT. We carried out extensive experiments on both Chinese and English NLU benchmarks. The experimental results show that PERT can bring improvements over various comparable baselines on some of the tasks, while others are not. These results indicate that developing more diverse pre-training tasks is possible instead of masked language model variants. Several quantitative studies are carried out to better understand PERT, which might help design PLMs in the future. Resources are available: [this https URL](https://github.com/ymcui/PERT)
+
+| Comments: | 14 pages                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2203.06906](https://arxiv.org/abs/2203.06906) [cs.CL]** |
+|           | (or **[arXiv:2203.06906v1](https://arxiv.org/abs/2203.06906v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-03-15-6">6. Modelling word learning and recognition using visually grounded speech
+</h2>
+
+Title: [Modelling word learning and recognition using visually grounded speech](https://arxiv.org/abs/2203.06937)
+
+Authors: [Danny Merkx](https://arxiv.org/search/cs?searchtype=author&query=Merkx%2C+D), [Sebastiaan Scholten](https://arxiv.org/search/cs?searchtype=author&query=Scholten%2C+S), [Stefan L. Frank](https://arxiv.org/search/cs?searchtype=author&query=Frank%2C+S+L), [Mirjam Ernestus](https://arxiv.org/search/cs?searchtype=author&query=Ernestus%2C+M), [Odette Scharenborg](https://arxiv.org/search/cs?searchtype=author&query=Scharenborg%2C+O)
+
+> Background: Computational models of speech recognition often assume that the set of target words is already given. This implies that these models do not learn to recognise speech from scratch without prior knowledge and explicit supervision. Visually grounded speech models learn to recognise speech without prior knowledge by exploiting statistical dependencies between spoken and visual input. While it has previously been shown that visually grounded speech models learn to recognise the presence of words in the input, we explicitly investigate such a model as a model of human speech recognition. 
+> Methods: We investigate the time-course of word recognition as simulated by the model using a gating paradigm to test whether its recognition is affected by well-known word-competition effects in human speech processing. We furthermore investigate whether vector quantisation, a technique for discrete representation learning, aids the model in the discovery and recognition of words. 
+> Results/Conclusion: Our experiments show that the model is able to recognise nouns in isolation and even learns to properly differentiate between plural and singular nouns. We also find that recognition is influenced by word competition from the word-initial cohort and neighbourhood density, mirroring word competition effects in human speech comprehension. Lastly, we find no evidence that vector quantisation is helpful in discovering and recognising words. Our gating experiments even show that the vector quantised model requires more of the input sequence for correct recognition.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2203.06937](https://arxiv.org/abs/2203.06937) [cs.CL]** |
+|           | (or **[arXiv:2203.06937v1](https://arxiv.org/abs/2203.06937v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-03-15-7">7. Interpretability for Language Learners Using Example-Based Grammatical Error Correction
+</h2>
+
+Title: [Interpretability for Language Learners Using Example-Based Grammatical Error Correction](https://arxiv.org/abs/2203.07085)
+
+Authors: [Masahiro Kaneko](https://arxiv.org/search/cs?searchtype=author&query=Kaneko%2C+M), [Sho Takase](https://arxiv.org/search/cs?searchtype=author&query=Takase%2C+S), [Ayana Niwa](https://arxiv.org/search/cs?searchtype=author&query=Niwa%2C+A), [Naoaki Okazaki](https://arxiv.org/search/cs?searchtype=author&query=Okazaki%2C+N)
+
+> Grammatical Error Correction (GEC) should not focus only on high accuracy of corrections but also on interpretability for language learning. However, existing neural-based GEC models mainly aim at improving accuracy, and their interpretability has not been explored. A promising approach for improving interpretability is an example-based method, which uses similar retrieved examples to generate corrections. In addition, examples are beneficial in language learning, helping learners understand the basis of grammatically incorrect/correct texts and improve their confidence in writing. Therefore, we hypothesize that incorporating an example-based method into GEC can improve interpretability as well as support language learners. In this study, we introduce an Example-Based GEC (EB-GEC) that presents examples to language learners as a basis for a correction result. The examples consist of pairs of correct and incorrect sentences similar to a given input and its predicted correction. Experiments demonstrate that the examples presented by EB-GEC help language learners decide to accept or refuse suggestions from the GEC output. Furthermore, the experiments also show that retrieved examples improve the accuracy of corrections.
+
+| Comments: | ACL 2022                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2203.07085](https://arxiv.org/abs/2203.07085) [cs.CL]** |
+|           | (or **[arXiv:2203.07085v1](https://arxiv.org/abs/2203.07085v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-03-15-8">8. Interpretable Dysarthric Speaker Adaptation based on Optimal-Transport
+</h2>
+
+Title: [Interpretable Dysarthric Speaker Adaptation based on Optimal-Transport](https://arxiv.org/abs/2203.07143)
+
+Authors: [Rosanna Turrisi](https://arxiv.org/search/cs?searchtype=author&query=Turrisi%2C+R), [Leonardo Badino](https://arxiv.org/search/cs?searchtype=author&query=Badino%2C+L)
+
+> This work addresses the mismatch problem between the distribution of training data (source) and testing data (target), in the challenging context of dysarthric speech recognition. We focus on Speaker Adaptation (SA) in command speech recognition, where data from multiple sources (i.e., multiple speakers) are available. Specifically, we propose an unsupervised Multi-Source Domain Adaptation (MSDA) algorithm based on optimal-transport, called MSDA via Weighted Joint Optimal Transport (MSDA-WJDOT). We achieve a Command Error Rate relative reduction of 16% and 7% over the speaker-independent model and the best competitor method, respectively. The strength of the proposed approach is that, differently from any other existing SA method, it offers an interpretable model that can also be exploited, in this context, to diagnose dysarthria without any specific training. Indeed, it provides a closeness measure between the target and the source speakers, reflecting their similarity in terms of speech characteristics. Based on the similarity between the target speaker and the healthy/dysarthric source speakers, we then define the healthy/dysarthric score of the target speaker that we leverage to perform dysarthria detection. This approach does not require any additional training and achieves a 95% accuracy in the dysarthria diagnosis.
+
+| Comments: | submitted to interspeech 2022                                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2203.07143](https://arxiv.org/abs/2203.07143) [cs.CL]** |
+|           | (or **[arXiv:2203.07143v1](https://arxiv.org/abs/2203.07143v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-03-15-9">9. RED-ACE: Robust Error Detection for ASR using Confidence Embeddings
+</h2>
+
+Title: [RED-ACE: Robust Error Detection for ASR using Confidence Embeddings](https://arxiv.org/abs/2203.07172)
+
+Authors: [Zorik Gekhman](https://arxiv.org/search/cs?searchtype=author&query=Gekhman%2C+Z), [Dina Zverinski](https://arxiv.org/search/cs?searchtype=author&query=Zverinski%2C+D), [Jonathan Mallinson](https://arxiv.org/search/cs?searchtype=author&query=Mallinson%2C+J), [Genady Beryozkin](https://arxiv.org/search/cs?searchtype=author&query=Beryozkin%2C+G)
+
+> ASR Error Detection (AED) models aim to post-process the output of Automatic Speech Recognition (ASR) systems, in order to detect transcription errors. Modern approaches usually use text-based input, comprised solely of the ASR transcription hypothesis, disregarding additional signals from the ASR model. Instead, we propose to utilize the ASR system's word-level confidence scores for improving AED performance. Specifically, we add an ASR Confidence Embedding (ACE) layer to the AED model's encoder, allowing us to jointly encode the confidence scores and the transcribed text into a contextualized representation. Our experiments show the benefits of ASR confidence scores for AED, their complementary effect over the textual signal, as well as the effectiveness and robustness of ACE for combining these signals. To foster further research, we publish a novel AED dataset consisting of ASR outputs on the LibriSpeech corpus with annotated transcription errors.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2203.07172](https://arxiv.org/abs/2203.07172) [cs.CL]** |
+|           | (or **[arXiv:2203.07172v1](https://arxiv.org/abs/2203.07172v1) [cs.CL]** for this version) |
+
+
 
 
 
