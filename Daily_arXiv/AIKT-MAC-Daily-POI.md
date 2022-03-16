@@ -2,6 +2,13 @@
 
 # Index
 
+- [2022-03-16](#2022-03-16)
+  - [1. Leveraging Uni-Modal Self-Supervised Learning for Multimodal Audio-Visual Speech Recognition](#2022-03-16-1)
+  - [2. Leveraging Visual Knowledge in Language Tasks: An Empirical Study on Intermediate Pre-training for Cross-modal Knowledge Transfer](#2022-03-16-2)
+  - [3. Multilingual Mix: Example Interpolation Improves Multilingual Neural Machine Translation](#2022-03-16-3)
+  - [4. Modular and Parameter-Efficient Multimodal Fusion with Prompting](#2022-03-16-4)
+  - [5. Does Corpus Quality Really Matter for Low-Resource Languages?](#2022-03-16-5)
+  
 - [2022-03-15](#2022-03-15)
   - [1. XYLayoutLM: Towards Layout-Aware Multimodal Networks For Visually-Rich Document Understanding](#2022-03-15-1)
   - [2. ELLE: Efficient Lifelong Pre-training for Emerging Data](#2022-03-15-2)
@@ -12,7 +19,7 @@
   - [7. Interpretability for Language Learners Using Example-Based Grammatical Error Correction](#2022-03-15-7)
   - [8. Interpretable Dysarthric Speaker Adaptation based on Optimal-Transport](#2022-03-15-8)
   - [9. RED-ACE: Robust Error Detection for ASR using Confidence Embeddings](#2022-03-15-9)
-  
+
 - [2022-03-14](#2022-03-14)
   - [1. A new approach to calculating BERTScore for automatic assessment of translation quality](#2022-03-14-1)
 
@@ -72,6 +79,113 @@
 - [2022-02-28](#2022-02-28)
   - [1. Screening Gender Transfer in Neural Machine Translation](#2022-02-28-1)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2022-03-16
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-03-16-1">1. Leveraging Uni-Modal Self-Supervised Learning for Multimodal Audio-Visual Speech Recognition
+</h2>
+
+Ttile: [Leveraging Uni-Modal Self-Supervised Learning for Multimodal Audio-Visual Speech Recognition](https://arxiv.org/abs/2203.07996)
+
+Authors: [Xichen Pan](https://arxiv.org/search/cs?searchtype=author&query=Pan%2C+X), [Peiyu Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+P), [Yichen Gong](https://arxiv.org/search/cs?searchtype=author&query=Gong%2C+Y), [Helong Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+H), [Xinbing Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+X), [Zhouhan Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+Z)
+
+> Training Transformer-based models demands a large amount of data, while obtaining parallel aligned and labelled data in multimodality is rather cost-demanding, especially for audio-visual speech recognition (AVSR). Thus it makes a lot of sense to make use of unlabelled uni-modal data. On the other side, although the effectiveness of large-scale self-supervised learning is well established in both audio and visual modalities, how to integrate those pre-trained models into a multimodal scenario remains underexplored. In this work, we successfully leverage uni-modal self-supervised learning to promote the multimodal AVSR. In particular, we first train audio and visual encoders on a large-scale uni-modal dataset, then we integrate components of both encoders into a larger multimodal framework which learns to recognize paired audio-visual data into characters through a combination of CTC and seq2seq decoding. We show that both components inherited from uni-modal self-supervised learning cooperate well, resulting in that the multimodal framework yields competitive results through fine-tuning. Our model is experimentally validated on both word-level and sentence-level AVSR tasks. Especially, even without an external language model, our proposed model raises the state-of-the-art performances on the widely accepted Lip Reading Sentences 2 (LRS2) dataset by a large margin, with a relative improvement of 30%.
+
+| Comments: | 8 pages (main), 2 pages (appendix) and to be appeared in ACL2022 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Sound (cs.SD)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL); Computer Vision and Pattern Recognition (cs.CV); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2203.07996](https://arxiv.org/abs/2203.07996) [cs.SD]** |
+|           | (or **[arXiv:2203.07996v1](https://arxiv.org/abs/2203.07996v1) [cs.SD]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.07996Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-16-2">2. Leveraging Visual Knowledge in Language Tasks: An Empirical Study on Intermediate Pre-training for Cross-modal Knowledge Transfer
+</h2>
+
+Ttile: [Leveraging Visual Knowledge in Language Tasks: An Empirical Study on Intermediate Pre-training for Cross-modal Knowledge Transfer](https://arxiv.org/abs/2203.07519)
+
+Authors: [Woojeong Jin](https://arxiv.org/search/cs?searchtype=author&query=Jin%2C+W), [Dong-Ho Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+D), [Chenguang Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+C), [Jay Pujara](https://arxiv.org/search/cs?searchtype=author&query=Pujara%2C+J), [Xiang Ren](https://arxiv.org/search/cs?searchtype=author&query=Ren%2C+X)
+
+> Pre-trained language models are still far from human performance in tasks that need understanding of properties (e.g. appearance, measurable quantity) and affordances of everyday objects in the real world since the text lacks such information due to reporting bias. In this work, we study whether integrating visual knowledge into a language model can fill the gap. We investigate two types of knowledge transfer: (1) text knowledge transfer using image captions that may contain enriched visual knowledge and (2) cross-modal knowledge transfer using both images and captions with vision-language training objectives. On 5 downstream tasks that may need visual knowledge to solve the problem, we perform extensive empirical comparisons over the presented objectives. Our experiments show that visual knowledge transfer can improve performance in both low-resource and fully supervised settings.
+
+| Comments: | Accepted to ACL 2022, 13 pages, 4 figures                    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2203.07519](https://arxiv.org/abs/2203.07519) [cs.CL]** |
+|           | (or **[arXiv:2203.07519v1](https://arxiv.org/abs/2203.07519v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.07519Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-16-3">3. Multilingual Mix: Example Interpolation Improves Multilingual Neural Machine Translation
+</h2>
+
+Ttile: [Multilingual Mix: Example Interpolation Improves Multilingual Neural Machine Translation](https://arxiv.org/abs/2203.07627)
+
+Authors: [Yong Cheng](https://arxiv.org/search/cs?searchtype=author&query=Cheng%2C+Y), [Ankur Bapna](https://arxiv.org/search/cs?searchtype=author&query=Bapna%2C+A), [Orhan Firat](https://arxiv.org/search/cs?searchtype=author&query=Firat%2C+O), [Yuan Cao](https://arxiv.org/search/cs?searchtype=author&query=Cao%2C+Y), [Pidong Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+P), [Wolfgang Macherey](https://arxiv.org/search/cs?searchtype=author&query=Macherey%2C+W)
+
+> Multilingual neural machine translation models are trained to maximize the likelihood of a mix of examples drawn from multiple language pairs. The dominant inductive bias applied to these models is a shared vocabulary and a shared set of parameters across languages; the inputs and labels corresponding to examples drawn from different language pairs might still reside in distinct sub-spaces. In this paper, we introduce multilingual crossover encoder-decoder (mXEncDec) to fuse language pairs at an instance level. Our approach interpolates instances from different language pairs into joint `crossover examples' in order to encourage sharing input and output spaces across languages. To ensure better fusion of examples in multilingual settings, we propose several techniques to improve example interpolation across dissimilar languages under heavy data imbalance. Experiments on a large-scale WMT multilingual dataset demonstrate that our approach significantly improves quality on English-to-Many, Many-to-English and zero-shot translation tasks (from +0.5 BLEU up to +5.5 BLEU points). Results on code-switching sets demonstrate the capability of our approach to improve model generalization to out-of-distribution multilingual examples. We also conduct qualitative and quantitative representation comparisons to analyze the advantages of our approach at the representation level.
+
+| Comments: | ACL 2022                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2203.07627](https://arxiv.org/abs/2203.07627) [cs.CL]** |
+|           | (or **[arXiv:2203.07627v1](https://arxiv.org/abs/2203.07627v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.07627Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-16-4">4. Modular and Parameter-Efficient Multimodal Fusion with Prompting
+</h2>
+
+Ttile: [Modular and Parameter-Efficient Multimodal Fusion with Prompting](https://arxiv.org/abs/2203.08055)
+
+Authors: [Sheng Liang](https://arxiv.org/search/cs?searchtype=author&query=Liang%2C+S), [Mengjie Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+M), [Hinrich Schütze](https://arxiv.org/search/cs?searchtype=author&query=Schütze%2C+H)
+
+> Recent research has made impressive progress in large-scale multimodal pre-training. In the context of the rapid growth of model size, it is necessary to seek efficient and flexible methods other than finetuning. In this paper, we propose to use prompt vectors to align the modalities. Our method achieves comparable performance to several other multimodal fusion methods in low-resource settings. We further show that our method is modular and parameter-efficient for processing tasks involving two or more data modalities.
+
+| Comments: | Accepted to Findings of ACL 2022                             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2203.08055](https://arxiv.org/abs/2203.08055) [cs.CL]** |
+|           | (or **[arXiv:2203.08055v1](https://arxiv.org/abs/2203.08055v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.08055Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-16-5">5. Does Corpus Quality Really Matter for Low-Resource Languages?
+</h2>
+
+Ttile: [Does Corpus Quality Really Matter for Low-Resource Languages?](https://arxiv.org/abs/2203.08111)
+
+Authors: [Mikel Artetxe](https://arxiv.org/search/cs?searchtype=author&query=Artetxe%2C+M), [Itziar Aldabe](https://arxiv.org/search/cs?searchtype=author&query=Aldabe%2C+I), [Rodrigo Agerri](https://arxiv.org/search/cs?searchtype=author&query=Agerri%2C+R), [Olatz Perez-de-Viñaspre](https://arxiv.org/search/cs?searchtype=author&query=Perez-de-Viñaspre%2C+O), [Aitor Soroa](https://arxiv.org/search/cs?searchtype=author&query=Soroa%2C+A)
+
+> The vast majority of non-English corpora are derived from automatically filtered versions of CommonCrawl. While prior work has identified major issues on the quality of these datasets (Kreutzer et al., 2021), it is not clear how this impacts downstream performance. Taking Basque as a case study, we explore tailored crawling (manually identifying and scraping websites with high-quality content) as an alternative to filtering CommonCrawl. Our new corpus, called EusCrawl, is similar in size to the Basque portion of popular multilingual corpora like CC100 and mC4, yet it has a much higher quality according to native annotators. For instance, 66% of documents are rated as high-quality for EusCrawl, in contrast with <33% for both mC4 and CC100. Nevertheless, we obtain similar results on downstream tasks regardless of the corpus used for pre-training. Our work suggests that NLU performance in low-resource languages is primarily constrained by the quantity rather than the quality of the data, prompting for methods to exploit more diverse data sources.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2203.08111](https://arxiv.org/abs/2203.08111) [cs.CL]** |
+|           | (or **[arXiv:2203.08111v1](https://arxiv.org/abs/2203.08111v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.08111Focus to learn more |
+
+
+
+
 
 
 
