@@ -2,13 +2,23 @@
 
 # Index
 
+- [2022-03-17](#2022-03-17)
+  - [1. Hyperdecoders: Instance-specific decoders for multi-task NLP](#2022-03-17-1)
+  - [2. Improving Word Translation via Two-Stage Contrastive Learning](#2022-03-17-2)
+  - [3. Bridging the Data Gap between Training and Inference for Unsupervised Neural Machine Translation](#2022-03-17-3)
+  - [4. Understanding and Improving Sequence-to-Sequence Pretraining for Neural Machine Translation](#2022-03-17-4)
+  - [5. ConTinTin: Continual Learning from Task Instructions](#2022-03-17-5)
+  - [6. Multilingual Pre-training with Language and Task Adaptation for Multilingual Text Style Transfer](#2022-03-17-6)
+  - [7. Geographic Adaptation of Pretrained Language Models](#2022-03-17-7)
+  - [8. Sample, Translate, Recombine: Leveraging Audio Alignments for Data Augmentation in End-to-end Speech Translation](#2022-03-17-8)
+  - [9. ](#2022-03-17-9)
+  
 - [2022-03-16](#2022-03-16)
   - [1. Leveraging Uni-Modal Self-Supervised Learning for Multimodal Audio-Visual Speech Recognition](#2022-03-16-1)
   - [2. Leveraging Visual Knowledge in Language Tasks: An Empirical Study on Intermediate Pre-training for Cross-modal Knowledge Transfer](#2022-03-16-2)
   - [3. Multilingual Mix: Example Interpolation Improves Multilingual Neural Machine Translation](#2022-03-16-3)
   - [4. Modular and Parameter-Efficient Multimodal Fusion with Prompting](#2022-03-16-4)
   - [5. Does Corpus Quality Really Matter for Low-Resource Languages?](#2022-03-16-5)
-  
 - [2022-03-15](#2022-03-15)
   - [1. XYLayoutLM: Towards Layout-Aware Multimodal Networks For Visually-Rich Document Understanding](#2022-03-15-1)
   - [2. ELLE: Efficient Lifelong Pre-training for Emerging Data](#2022-03-15-2)
@@ -19,10 +29,8 @@
   - [7. Interpretability for Language Learners Using Example-Based Grammatical Error Correction](#2022-03-15-7)
   - [8. Interpretable Dysarthric Speaker Adaptation based on Optimal-Transport](#2022-03-15-8)
   - [9. RED-ACE: Robust Error Detection for ASR using Confidence Embeddings](#2022-03-15-9)
-
 - [2022-03-14](#2022-03-14)
   - [1. A new approach to calculating BERTScore for automatic assessment of translation quality](#2022-03-14-1)
-
 - [2022-03-11](#2022-03-11)
   - [1. NLX-GPT: A Model for Natural Language Explanations in Vision and Vision-Language Tasks](#2022-03-11-1)
   - [2. Conditional Prompt Learning for Vision-Language Models](#2022-03-11-2)
@@ -79,6 +87,193 @@
 - [2022-02-28](#2022-02-28)
   - [1. Screening Gender Transfer in Neural Machine Translation](#2022-02-28-1)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2022-03-17
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-03-17-1">1. Hyperdecoders: Instance-specific decoders for multi-task NLP
+</h2>
+
+Title: [Hyperdecoders: Instance-specific decoders for multi-task NLP](https://arxiv.org/abs/2203.08304)
+
+Authors: [Hamish Ivison](https://arxiv.org/search/cs?searchtype=author&query=Ivison%2C+H), [Matthew E. Peters](https://arxiv.org/search/cs?searchtype=author&query=Peters%2C+M+E)
+
+> We investigate input-conditioned hypernetworks for multi-tasking in NLP, generating parameter-efficient adaptations for a decoder using a hypernetwork conditioned on the output of an encoder. This approach produces a unique decoder for every input instance, allowing the network a larger degree of flexibility than prior work that specializes the decoder for each task. We apply our method to sequence classification tasks, extractive QA, and summarisation and find that it often outperforms fully finetuning the underlying model and surpasses previous parameter efficient fine-tuning methods. Gains are particularly large when evaluated out-of-domain on the MRQA benchmark. In addition, as the pretrained model is frozen, our method eliminates negative interference among unrelated tasks, a common failure mode in fully fine-tuned approaches. An analysis of the embeddings produced by our model suggests that a large benefit of our approach is allowing the encoder more effective control over the decoder, allowing mapping from hidden representations to a final text-based label without interference from other tasks' output formats or labels.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2203.08304](https://arxiv.org/abs/2203.08304) [cs.CL]** |
+|           | (or **[arXiv:2203.08304v1](https://arxiv.org/abs/2203.08304v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.08304Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-17-2">2. Improving Word Translation via Two-Stage Contrastive Learning
+</h2>
+
+Title: [Improving Word Translation via Two-Stage Contrastive Learning](https://arxiv.org/abs/2203.08307)
+
+Authors: [Yaoyiran Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Y), [Fangyu Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+F), [Nigel Collier](https://arxiv.org/search/cs?searchtype=author&query=Collier%2C+N), [Anna Korhonen](https://arxiv.org/search/cs?searchtype=author&query=Korhonen%2C+A), [Ivan Vulić](https://arxiv.org/search/cs?searchtype=author&query=Vulić%2C+I)
+
+> Word translation or bilingual lexicon induction (BLI) is a key cross-lingual task, aiming to bridge the lexical gap between different languages. In this work, we propose a robust and effective two-stage contrastive learning framework for the BLI task. At Stage C1, we propose to refine standard cross-lingual linear maps between static word embeddings (WEs) via a contrastive learning objective; we also show how to integrate it into the self-learning procedure for even more refined cross-lingual maps. In Stage C2, we conduct BLI-oriented contrastive fine-tuning of mBERT, unlocking its word translation capability. We also show that static WEs induced from the `C2-tuned' mBERT complement static WEs from Stage C1. Comprehensive experiments on standard BLI datasets for diverse languages and different experimental setups demonstrate substantial gains achieved by our framework. While the BLI method from Stage C1 already yields substantial gains over all state-of-the-art BLI methods in our comparison, even stronger improvements are met with the full two-stage framework: e.g., we report gains for 112/112 BLI setups, spanning 28 language pairs.
+
+| Comments: | ACL 2022 Main                                                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Information Retrieval (cs.IR); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2203.08307](https://arxiv.org/abs/2203.08307) [cs.CL]** |
+|           | (or **[arXiv:2203.08307v1](https://arxiv.org/abs/2203.08307v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.08307Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-17-3">3. Bridging the Data Gap between Training and Inference for Unsupervised Neural Machine Translation
+</h2>
+
+Title: [Bridging the Data Gap between Training and Inference for Unsupervised Neural Machine Translation](https://arxiv.org/abs/2203.08394)
+
+Authors: [Zhiwei He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+Z), [Xing Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+X), [Rui Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+R), [Shuming Shi](https://arxiv.org/search/cs?searchtype=author&query=Shi%2C+S), [Zhaopeng Tu](https://arxiv.org/search/cs?searchtype=author&query=Tu%2C+Z)
+
+> Back-translation is a critical component of Unsupervised Neural Machine Translation (UNMT), which generates pseudo parallel data from target monolingual data. A UNMT model is trained on the pseudo parallel data with translated source, and translates natural source sentences in inference. The source discrepancy between training and inference hinders the translation performance of UNMT models. By carefully designing experiments, we identify two representative characteristics of the data gap in source: (1) style gap (i.e., translated vs. natural text style) that leads to poor generalization capability; (2) content gap that induces the model to produce hallucination content biased towards the target language. To narrow the data gap, we propose an online self-training approach, which simultaneously uses the pseudo parallel data {natural source, translated target} to mimic the inference scenario. Experimental results on several widely-used language pairs show that our approach outperforms two strong baselines (XLM and MASS) by remedying the style and content gaps.
+
+| Comments: | ACL 2022 (long paper, main conference)                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2203.08394](https://arxiv.org/abs/2203.08394) [cs.CL]** |
+|           | (or **[arXiv:2203.08394v1](https://arxiv.org/abs/2203.08394v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.08394Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-17-4">4. Understanding and Improving Sequence-to-Sequence Pretraining for Neural Machine Translation
+</h2>
+
+Title: [Understanding and Improving Sequence-to-Sequence Pretraining for Neural Machine Translation](https://arxiv.org/abs/2203.08442)
+
+Authors: [Wenxuan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+W), [Wenxiang Jiao](https://arxiv.org/search/cs?searchtype=author&query=Jiao%2C+W), [Yongchang Hao](https://arxiv.org/search/cs?searchtype=author&query=Hao%2C+Y), [Xing Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+X), [Shuming Shi](https://arxiv.org/search/cs?searchtype=author&query=Shi%2C+S), [Zhaopeng Tu](https://arxiv.org/search/cs?searchtype=author&query=Tu%2C+Z), [Michael Lyu](https://arxiv.org/search/cs?searchtype=author&query=Lyu%2C+M)
+
+> In this paper, we present a substantial step in better understanding the SOTA sequence-to-sequence (Seq2Seq) pretraining for neural machine translation~(NMT). We focus on studying the impact of the jointly pretrained decoder, which is the main difference between Seq2Seq pretraining and previous encoder-based pretraining approaches for NMT. By carefully designing experiments on three language pairs, we find that Seq2Seq pretraining is a double-edged sword: On one hand, it helps NMT models to produce more diverse translations and reduce adequacy-related translation errors. On the other hand, the discrepancies between Seq2Seq pretraining and NMT finetuning limit the translation quality (i.e., domain discrepancy) and induce the over-estimation issue (i.e., objective discrepancy). Based on these observations, we further propose simple and effective strategies, named in-domain pretraining and input adaptation to remedy the domain and objective discrepancies, respectively. Experimental results on several language pairs show that our approach can consistently improve both translation performance and model robustness upon Seq2Seq pretraining.
+
+| Comments: | Accepted by ACL 2022 main conference                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2203.08442](https://arxiv.org/abs/2203.08442) [cs.CL]** |
+|           | (or **[arXiv:2203.08442v1](https://arxiv.org/abs/2203.08442v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.08442Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-17-5">5. ConTinTin: Continual Learning from Task Instructions
+</h2>
+
+Title: [ConTinTin: Continual Learning from Task Instructions](https://arxiv.org/abs/2203.08512)
+
+Authors: [Wenpeng Yin](https://arxiv.org/search/cs?searchtype=author&query=Yin%2C+W), [Jia Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+J), [Caiming Xiong](https://arxiv.org/search/cs?searchtype=author&query=Xiong%2C+C)
+
+> The mainstream machine learning paradigms for NLP often work with two underlying presumptions. First, the target task is predefined and static, a system just needs to learn to solve it exclusively. Second, the supervision of a task mainly comes from a set of labeled examples. A question arises: how to build a system that can keep learning new tasks from their instructions? This work defines a new learning paradigm ConTinTin (Continual Learning from Task Instructions), in which a system should learn a sequence of new tasks one by one, each task is explained by a piece of textual instruction. The system is required to (i) generate the expected outputs of a new task by learning from its instruction, (ii) transfer the knowledge acquired from upstream tasks to help solve downstream tasks (i.e, forward-transfer), and (iii) retain or even improve the performance on earlier tasks after learning new tasks (i.e., backward-transfer). This new problem is studied on a stream of more than 60 tasks, each equipped with an instruction. Technically, our method InstructionSpeak contains two strategies that make full use of task instructions to improve forward-transfer and backward-transfer: one is to learn from the negative output, the other is to re-visit instructions of prior tasks. To our knowledge, this is the first time to study ConTinTin in NLP. In addition to the problem formulation and our promising approach, this work also contributes to providing rich analyses for the community to better understand this novel learning problem.
+
+| Comments: | ACL'2022 camera-ready                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2203.08512](https://arxiv.org/abs/2203.08512) [cs.CL]** |
+|           | (or **[arXiv:2203.08512v1](https://arxiv.org/abs/2203.08512v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.08512Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-17-6">6. Multilingual Pre-training with Language and Task Adaptation for Multilingual Text Style Transfer
+</h2>
+
+Title: [Multilingual Pre-training with Language and Task Adaptation for Multilingual Text Style Transfer](https://arxiv.org/abs/2203.08552)
+
+Authors: [Huiyuan Lai](https://arxiv.org/search/cs?searchtype=author&query=Lai%2C+H), [Antonio Toral](https://arxiv.org/search/cs?searchtype=author&query=Toral%2C+A), [Malvina Nissim](https://arxiv.org/search/cs?searchtype=author&query=Nissim%2C+M)
+
+> We exploit the pre-trained seq2seq model mBART for multilingual text style transfer. Using machine translated data as well as gold aligned English sentences yields state-of-the-art results in the three target languages we consider. Besides, in view of the general scarcity of parallel data, we propose a modular approach for multilingual formality transfer, which consists of two training strategies that target adaptation to both language and task. Our approach achieves competitive performance without monolingual task-specific parallel data and can be applied to other style transfer tasks as well as to other languages.
+
+| Comments: | Accepted to ACL 2022                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2203.08552](https://arxiv.org/abs/2203.08552) [cs.CL]** |
+|           | (or **[arXiv:2203.08552v1](https://arxiv.org/abs/2203.08552v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.08552Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-17-7">7. Geographic Adaptation of Pretrained Language Models
+</h2>
+
+Title: [Geographic Adaptation of Pretrained Language Models](https://arxiv.org/abs/2203.08565)
+
+Authors: [Valentin Hofmann](https://arxiv.org/search/cs?searchtype=author&query=Hofmann%2C+V), [Goran Glavaš](https://arxiv.org/search/cs?searchtype=author&query=Glavaš%2C+G), [Nikola Ljubešić](https://arxiv.org/search/cs?searchtype=author&query=Ljubešić%2C+N), [Janet B. Pierrehumbert](https://arxiv.org/search/cs?searchtype=author&query=Pierrehumbert%2C+J+B), [Hinrich Schütze](https://arxiv.org/search/cs?searchtype=author&query=Schütze%2C+H)
+
+> Geographic linguistic features are commonly used to improve the performance of pretrained language models (PLMs) on NLP tasks where geographic knowledge is intuitively beneficial (e.g., geolocation prediction and dialect feature prediction). Existing work, however, leverages such geographic information in task-specific fine-tuning, failing to incorporate it into PLMs' geo-linguistic knowledge, which would make it transferable across different tasks. In this work, we introduce an approach to task-agnostic geoadaptation of PLMs that forces the PLM to learn associations between linguistic phenomena and geographic locations. More specifically, geoadaptation is an intermediate training step that couples masked language modeling and geolocation prediction in a dynamic multitask learning setup. In our experiments, we geoadapt BERTić -- a PLM for Bosnian, Croatian, Montenegrin, and Serbian (BCMS) -- using a corpus of geotagged BCMS tweets. Evaluation on three different tasks, namely unsupervised (zero-shot) and supervised geolocation prediction and (unsupervised) prediction of dialect features, shows that our geoadaptation approach is very effective: e.g., we obtain new state-of-the-art performance in supervised geolocation prediction and report massive gains over geographically uninformed PLMs on zero-shot geolocation prediction.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2203.08565](https://arxiv.org/abs/2203.08565) [cs.CL]** |
+|           | (or **[arXiv:2203.08565v1](https://arxiv.org/abs/2203.08565v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.08565Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-17-8">8. Sample, Translate, Recombine: Leveraging Audio Alignments for Data Augmentation in End-to-end Speech Translation
+</h2>
+
+Title: [Sample, Translate, Recombine: Leveraging Audio Alignments for Data Augmentation in End-to-end Speech Translation](https://arxiv.org/abs/2203.08757)
+
+Authors: [Tsz Kin Lam](https://arxiv.org/search/cs?searchtype=author&query=Lam%2C+T+K), [Shigehiko Schamoni](https://arxiv.org/search/cs?searchtype=author&query=Schamoni%2C+S), [Stefan Riezler](https://arxiv.org/search/cs?searchtype=author&query=Riezler%2C+S)
+
+> End-to-end speech translation relies on data that pair source-language speech inputs with corresponding translations into a target language. Such data are notoriously scarce, making synthetic data augmentation by back-translation or knowledge distillation a necessary ingredient of end-to-end training. In this paper, we present a novel approach to data augmentation that leverages audio alignments, linguistic properties, and translation. First, we augment a transcription by sampling from a suffix memory that stores text and audio data. Second, we translate the augmented transcript. Finally, we recombine concatenated audio segments and the generated translation. Besides training an MT-system, we only use basic off-the-shelf components without fine-tuning. While having similar resource demands as knowledge distillation, adding our method delivers consistent improvements of up to 0.9 and 1.1 BLEU points on five language pairs on CoVoST 2 and on two language pairs on Europarl-ST, respectively.
+
+| Comments: | Accepted at ACL 2022                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2203.08757](https://arxiv.org/abs/2203.08757) [cs.CL]** |
+|           | (or **[arXiv:2203.08757v1](https://arxiv.org/abs/2203.08757v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-03-17-9">9. Training Data is More Valuable than You Think: A Simple and Effective Method by Retrieving from Training Data
+</h2>
+
+Title: [Training Data is More Valuable than You Think: A Simple and Effective Method by Retrieving from Training Data](https://arxiv.org/abs/2203.08773)
+
+Authors: [Shuohang Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+S), [Yichong Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+Y), [Yuwei Fang](https://arxiv.org/search/cs?searchtype=author&query=Fang%2C+Y), [Yang Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Y), [Siqi Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+S), [Ruochen Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+R), [Chenguang Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+C), [Michael Zeng](https://arxiv.org/search/cs?searchtype=author&query=Zeng%2C+M)
+
+> Retrieval-based methods have been shown to be effective in NLP tasks via introducing external knowledge. However, the indexing and retrieving of large-scale corpora bring considerable computational cost. Surprisingly, we found that REtrieving from the traINing datA (REINA) only can lead to significant gains on multiple NLG and NLU tasks. We retrieve the labeled training instances most similar to the input text and then concatenate them with the input to feed into the model to generate the output. Experimental results show that this simple method can achieve significantly better performance on a variety of NLU and NLG tasks, including summarization, machine translation, language modeling, and question answering tasks. For instance, our proposed method achieved state-of-the-art results on XSum, BigPatent, and CommonsenseQA. Our code is released, [this https URL](https://github.com/microsoft/REINA) .
+
+| Comments: | Accept to ACL 2022 main conference                           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Information Retrieval (cs.IR) |
+| Cite as:  | **[arXiv:2203.08773](https://arxiv.org/abs/2203.08773) [cs.CL]** |
+|           | (or **[arXiv:2203.08773v1](https://arxiv.org/abs/2203.08773v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
 
 
 
