@@ -2,6 +2,20 @@
 
 # Index
 
+- [2022-03-18](#2022-03-18)
+  - [1. DU-VLG: Unifying Vision-and-Language Generation via Dual Sequence-to-Sequence Pre-training](#2022-03-18-1)
+  - [2. UNIMO-2: End-to-End Unified Vision-Language Grounded Learning](#2022-03-18-2)
+  - [3. Pre-Trained Multilingual Sequence-to-Sequence Models: A Hope for Low-Resource Language Translation?](#2022-03-18-3)
+  - [4. Triangular Transfer: Freezing the Pivot for Triangular Machine Translation](#2022-03-18-4)
+  - [5. Reducing Position Bias in Simultaneous Machine Translation with Length-Aware Framework](#2022-03-18-5)
+  - [6. Gaussian Multi-head Attention for Simultaneous Machine Translation](#2022-03-18-6)
+  - [7. Type-Driven Multi-Turn Corrections for Grammatical Error Correction](#2022-03-18-7)
+  - [8. Modeling Dual Read/Write Paths for Simultaneous Machine Translation](#2022-03-18-8)
+  - [9. On Vision Features in Multimodal Machine Translation](#2022-03-18-9)
+  - [10. Universal Conditional Masked Language Pre-training for Neural Machine Translation](#2022-03-18-10)
+  - [11. Finding Structural Knowledge in Multimodal-BERT](#2022-03-18-11)
+  - [12. Combining Static and Contextualised Multilingual Embeddings](#2022-03-18-12)
+  
 - [2022-03-17](#2022-03-17)
   - [1. Hyperdecoders: Instance-specific decoders for multi-task NLP](#2022-03-17-1)
   - [2. Improving Word Translation via Two-Stage Contrastive Learning](#2022-03-17-2)
@@ -12,7 +26,6 @@
   - [7. Geographic Adaptation of Pretrained Language Models](#2022-03-17-7)
   - [8. Sample, Translate, Recombine: Leveraging Audio Alignments for Data Augmentation in End-to-end Speech Translation](#2022-03-17-8)
   - [9. ](#2022-03-17-9)
-  
 - [2022-03-16](#2022-03-16)
   - [1. Leveraging Uni-Modal Self-Supervised Learning for Multimodal Audio-Visual Speech Recognition](#2022-03-16-1)
   - [2. Leveraging Visual Knowledge in Language Tasks: An Empirical Study on Intermediate Pre-training for Cross-modal Knowledge Transfer](#2022-03-16-2)
@@ -87,6 +100,252 @@
 - [2022-02-28](#2022-02-28)
   - [1. Screening Gender Transfer in Neural Machine Translation](#2022-02-28-1)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2022-03-18
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-03-18-1">1. DU-VLG: Unifying Vision-and-Language Generation via Dual Sequence-to-Sequence Pre-training
+</h2>
+
+Title: [DU-VLG: Unifying Vision-and-Language Generation via Dual Sequence-to-Sequence Pre-training](https://arxiv.org/abs/2203.09052)
+
+Authors: [Luyang Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+L), [Guocheng Niu](https://arxiv.org/search/cs?searchtype=author&query=Niu%2C+G), [Jiachen Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+J), [Xinyan Xiao](https://arxiv.org/search/cs?searchtype=author&query=Xiao%2C+X), [Hua Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+H)
+
+> Due to the limitations of the model structure and pre-training objectives, existing vision-and-language generation models cannot utilize pair-wise images and text through bi-directional generation. In this paper, we propose DU-VLG, a framework which unifies vision-and-language generation as sequence generation problems. DU-VLG is trained with novel dual pre-training tasks: multi-modal denoising autoencoder tasks and modality translation tasks. To bridge the gap between image understanding and generation, we further design a novel commitment loss. We compare pre-training objectives on image captioning and text-to-image generation datasets. Results show that DU-VLG yields better performance than variants trained with uni-directional generation objectives or the variant without the commitment loss. We also obtain higher scores compared to previous state-of-the-art systems on three vision-and-language generation tasks. In addition, human judges further confirm that our model generates real and relevant images as well as faithful and informative captions.
+
+| Comments: | To appear at Findings of ACL 2022                            |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2203.09052](https://arxiv.org/abs/2203.09052) [cs.CV]** |
+|           | (or **[arXiv:2203.09052v1](https://arxiv.org/abs/2203.09052v1) [cs.CV]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.09052Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-18-2">2. UNIMO-2: End-to-End Unified Vision-Language Grounded Learning
+</h2>
+
+Title: [UNIMO-2: End-to-End Unified Vision-Language Grounded Learning](https://arxiv.org/abs/2203.09067)
+
+Authors: [Wei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+W), [Can Gao](https://arxiv.org/search/cs?searchtype=author&query=Gao%2C+C), [Guocheng Niu](https://arxiv.org/search/cs?searchtype=author&query=Niu%2C+G), [Xinyan Xiao](https://arxiv.org/search/cs?searchtype=author&query=Xiao%2C+X), [Hao Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+H), [Jiachen Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+J), [Hua Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+H), [Haifeng Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+H)
+
+> Vision-Language Pre-training (VLP) has achieved impressive performance on various cross-modal downstream tasks. However, most existing methods can only learn from aligned image-caption data and rely heavily on expensive regional features, which greatly limits their scalability and performance. In this paper, we propose an end-to-end unified-modal pre-training framework, namely UNIMO-2, for joint learning on both aligned image-caption data and unaligned image-only and text-only corpus. We build a unified Transformer model to jointly learn visual representations, textual representations and semantic alignment between images and texts. In particular, we propose to conduct grounded learning on both images and texts via a sharing grounded space, which helps bridge unaligned images and texts, and align the visual and textual semantic spaces on different types of corpora. The experiments show that our grounded learning method can improve textual and visual semantic alignment for improving performance on various cross-modal tasks. Moreover, benefiting from effective joint modeling of different types of corpora, our model also achieves impressive performance on single-modal visual and textual tasks. Our code and models are public at the UNIMO project page [this https URL](https://unimo-ptm.github.io/).
+
+| Comments: | Accepted by ACL2022                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2203.09067](https://arxiv.org/abs/2203.09067) [cs.CV]** |
+|           | (or **[arXiv:2203.09067v1](https://arxiv.org/abs/2203.09067v1) [cs.CV]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.09067Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-18-3">3. Pre-Trained Multilingual Sequence-to-Sequence Models: A Hope for Low-Resource Language Translation?
+</h2>
+
+Title: [Pre-Trained Multilingual Sequence-to-Sequence Models: A Hope for Low-Resource Language Translation?](https://arxiv.org/abs/2203.08850)
+
+Authors: [En-Shiun Annie Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+E+A), [Sarubi Thillainathan](https://arxiv.org/search/cs?searchtype=author&query=Thillainathan%2C+S), [Shravan Nayak](https://arxiv.org/search/cs?searchtype=author&query=Nayak%2C+S), [Surangika Ranathunga](https://arxiv.org/search/cs?searchtype=author&query=Ranathunga%2C+S), [David Ifeoluwa Adelani](https://arxiv.org/search/cs?searchtype=author&query=Adelani%2C+D+I), [Ruisi Su](https://arxiv.org/search/cs?searchtype=author&query=Su%2C+R), [Arya D. McCarthy](https://arxiv.org/search/cs?searchtype=author&query=McCarthy%2C+A+D)
+
+> What can pre-trained multilingual sequence-to-sequence models like mBART contribute to translating low-resource languages? We conduct a thorough empirical experiment in 10 languages to ascertain this, considering five factors: (1) the amount of fine-tuning data, (2) the noise in the fine-tuning data, (3) the amount of pre-training data in the model, (4) the impact of domain mismatch, and (5) language typology. In addition to yielding several heuristics, the experiments form a framework for evaluating the data sensitivities of machine translation systems. While mBART is robust to domain differences, its translations for unseen and typologically distant languages remain below 3.0 BLEU. In answer to our title's question, mBART is not a low-resource panacea; we therefore encourage shifting the emphasis from new models to new data.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2203.08850](https://arxiv.org/abs/2203.08850) [cs.CL]** |
+|           | (or **[arXiv:2203.08850v1](https://arxiv.org/abs/2203.08850v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.08850Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-18-4">4. Triangular Transfer: Freezing the Pivot for Triangular Machine Translation
+</h2>
+
+Title: [Triangular Transfer: Freezing the Pivot for Triangular Machine Translation](https://arxiv.org/abs/2203.09027)
+
+Authors: [Meng Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+M), [Liangyou Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L), [Qun Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Q)
+
+> Triangular machine translation is a special case of low-resource machine translation where the language pair of interest has limited parallel data, but both languages have abundant parallel data with a pivot language. Naturally, the key to triangular machine translation is the successful exploitation of such auxiliary data. In this work, we propose a transfer-learning-based approach that utilizes all types of auxiliary data. As we train auxiliary source-pivot and pivot-target translation models, we initialize some parameters of the pivot side with a pre-trained language model and freeze them to encourage both translation models to work in the same pivot language space, so that they can be smoothly transferred to the source-target translation model. Experiments show that our approach can outperform previous ones.
+
+| Comments: | ACL 2022                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2203.09027](https://arxiv.org/abs/2203.09027) [cs.CL]** |
+|           | (or **[arXiv:2203.09027v1](https://arxiv.org/abs/2203.09027v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.09027Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-18-5">5. Reducing Position Bias in Simultaneous Machine Translation with Length-Aware Framework
+</h2>
+
+Title: [Reducing Position Bias in Simultaneous Machine Translation with Length-Aware Framework](https://arxiv.org/abs/2203.09053)
+
+Authors: [Shaolei Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+S), [Yang Feng](https://arxiv.org/search/cs?searchtype=author&query=Feng%2C+Y)
+
+> Simultaneous machine translation (SiMT) starts translating while receiving the streaming source inputs, and hence the source sentence is always incomplete during translating. Different from the full-sentence MT using the conventional seq-to-seq architecture, SiMT often applies prefix-to-prefix architecture, which forces each target word to only align with a partial source prefix to adapt to the incomplete source in streaming inputs. However, the source words in the front positions are always illusoryly considered more important since they appear in more prefixes, resulting in position bias, which makes the model pay more attention on the front source positions in testing. In this paper, we first analyze the phenomenon of position bias in SiMT, and develop a Length-Aware Framework to reduce the position bias by bridging the structural gap between SiMT and full-sentence MT. Specifically, given the streaming inputs, we first predict the full-sentence length and then fill the future source position with positional encoding, thereby turning the streaming inputs into a pseudo full-sentence. The proposed framework can be integrated into most existing SiMT methods to further improve performance. Experiments on two representative SiMT methods, including the state-of-the-art adaptive policy, show that our method successfully reduces the position bias and achieves better SiMT performance.
+
+| Comments: | Accept to ACL 2022 main conference. 14 pages, 11 figures     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2203.09053](https://arxiv.org/abs/2203.09053) [cs.CL]** |
+|           | (or **[arXiv:2203.09053v1](https://arxiv.org/abs/2203.09053v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.09053Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-18-6">6. Gaussian Multi-head Attention for Simultaneous Machine Translation
+</h2>
+
+Title: [Gaussian Multi-head Attention for Simultaneous Machine Translation](https://arxiv.org/abs/2203.09072)
+
+Authors: [Shaolei Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+S), [Yang Feng](https://arxiv.org/search/cs?searchtype=author&query=Feng%2C+Y)
+
+> Simultaneous machine translation (SiMT) outputs translation while receiving the streaming source inputs, and hence needs a policy to determine where to start translating. The alignment between target and source words often implies the most informative source word for each target word, and hence provides the unified control over translation quality and latency, but unfortunately the existing SiMT methods do not explicitly model the alignment to perform the control. In this paper, we propose Gaussian Multi-head Attention (GMA) to develop a new SiMT policy by modeling alignment and translation in a unified manner. For SiMT policy, GMA models the aligned source position of each target word, and accordingly waits until its aligned position to start translating. To integrate the learning of alignment into the translation model, a Gaussian distribution centered on predicted aligned position is introduced as an alignment-related prior, which cooperates with translation-related soft attention to determine the final attention. Experiments on En-Vi and De-En tasks show that our method outperforms strong baselines on the trade-off between translation and latency.
+
+| Comments: | Accept to ACL 2022 findings. 12 pages, 8 figures             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2203.09072](https://arxiv.org/abs/2203.09072) [cs.CL]** |
+|           | (or **[arXiv:2203.09072v1](https://arxiv.org/abs/2203.09072v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.09072Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-18-7">7. Type-Driven Multi-Turn Corrections for Grammatical Error Correction
+</h2>
+
+Title: [Type-Driven Multi-Turn Corrections for Grammatical Error Correction](https://arxiv.org/abs/2203.09136)
+
+Authors: [Shaopeng Lai](https://arxiv.org/search/cs?searchtype=author&query=Lai%2C+S), [Qingyu Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+Q), [Jiali Zeng](https://arxiv.org/search/cs?searchtype=author&query=Zeng%2C+J), [Zhongli Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Z), [Chao Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+C), [Yunbo Cao](https://arxiv.org/search/cs?searchtype=author&query=Cao%2C+Y), [Jinsong Su](https://arxiv.org/search/cs?searchtype=author&query=Su%2C+J)
+
+> Grammatical Error Correction (GEC) aims to automatically detect and correct grammatical errors. In this aspect, dominant models are trained by one-iteration learning while performing multiple iterations of corrections during inference. Previous studies mainly focus on the data augmentation approach to combat the exposure bias, which suffers from two drawbacks. First, they simply mix additionally-constructed training instances and original ones to train models, which fails to help models be explicitly aware of the procedure of gradual corrections. Second, they ignore the interdependence between different types of corrections. In this paper, we propose a Type-Driven Multi-Turn Corrections approach for GEC. Using this approach, from each training instance, we additionally construct multiple training instances, each of which involves the correction of a specific type of errors. Then, we use these additionally-constructed training instances and the original one to train the model in turn. Experimental results and in-depth analysis show that our approach significantly benefits the model training. Particularly, our enhanced model achieves state-of-the-art single-model performance on English GEC benchmarks. We release our code at Github.
+
+| Comments: | Findings of ACL2022                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2203.09136](https://arxiv.org/abs/2203.09136) [cs.CL]** |
+|           | (or **[arXiv:2203.09136v1](https://arxiv.org/abs/2203.09136v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.09136Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-18-8">8. Modeling Dual Read/Write Paths for Simultaneous Machine Translation
+</h2>
+
+Title: [Modeling Dual Read/Write Paths for Simultaneous Machine Translation](https://arxiv.org/abs/2203.09163)
+
+Authors: [Shaolei Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+S), [Yang Feng](https://arxiv.org/search/cs?searchtype=author&query=Feng%2C+Y)
+
+> Simultaneous machine translation (SiMT) outputs the translation while reading the source sentence and hence requires a policy to determine whether to wait for the next source word (READ) or generate a target word (WRITE), the actions of which form a read/write path. Although the read/write path is essential to SiMT performance, there is no direct supervision given to the path in the existing methods. In this paper, we propose a method of Dual Path SiMT which introduces duality constraints to guide the read/write path. According to duality constraints, the read/write paths in source-to-target and target-to-source SiMT models can be mapped to each other. Therefore, the SiMT models in two directions are jointly optimized by forcing their read/write paths to satisfy the mapping relation. Experiments on En-Vi and De-En SiMT tasks show that our method can outperform strong baselines under all latency.
+
+| Comments: | Accept to ACL 2022 main conference. 18 pages, 12 figures     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2203.09163](https://arxiv.org/abs/2203.09163) [cs.CL]** |
+|           | (or **[arXiv:2203.09163v1](https://arxiv.org/abs/2203.09163v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.09163Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-18-9">9. On Vision Features in Multimodal Machine Translation
+</h2>
+
+Title: [On Vision Features in Multimodal Machine Translation](https://arxiv.org/abs/2203.09173)
+
+Authors: [Bei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+B), [Chuanhao Lv](https://arxiv.org/search/cs?searchtype=author&query=Lv%2C+C), [Zefan Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+Z), [Tao Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+T), [Tong Xiao](https://arxiv.org/search/cs?searchtype=author&query=Xiao%2C+T), [Anxiang Ma](https://arxiv.org/search/cs?searchtype=author&query=Ma%2C+A), [JingBo Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+J)
+
+> Previous work on multimodal machine translation (MMT) has focused on the way of incorporating vision features into translation but little attention is on the quality of vision models. In this work, we investigate the impact of vision models on MMT. Given the fact that Transformer is becoming popular in computer vision, we experiment with various strong models (such as Vision Transformer) and enhanced features (such as object-detection and image captioning). We develop a selective attention model to study the patch-level contribution of an image in MMT. On detailed probing tasks, we find that stronger vision models are helpful for learning translation from the visual modality. Our results also suggest the need of carefully examining MMT models, especially when current benchmarks are small-scale and biased. Our code could be found at \url{[this https URL](https://github.com/libeineu/fairseq_mmt)}.
+
+| Comments: | Long paper accepted by ACL2022 main conference               |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2203.09173](https://arxiv.org/abs/2203.09173) [cs.CL]** |
+|           | (or **[arXiv:2203.09173v1](https://arxiv.org/abs/2203.09173v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.09173Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-18-10">10. Universal Conditional Masked Language Pre-training for Neural Machine Translation
+</h2>
+
+Title: [Universal Conditional Masked Language Pre-training for Neural Machine Translation](https://arxiv.org/abs/2203.09210)
+
+Authors: [Pengfei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+P), [Liangyou Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L), [Meng Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+M), [Minghao Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+M), [Qun Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Q)
+
+> Pre-trained sequence-to-sequence models have significantly improved Neural Machine Translation (NMT). Different from prior works where pre-trained models usually adopt an unidirectional decoder, this paper demonstrates that pre-training a sequence-to-sequence model but with a bidirectional decoder can produce notable performance gains for both Autoregressive and Non-autoregressive NMT. Specifically, we propose CeMAT, a conditional masked language model pre-trained on large-scale bilingual and monolingual corpora in many languages. We also introduce two simple but effective methods to enhance the CeMAT, aligned code-switching & masking and dynamic dual-masking. We conduct extensive experiments and show that our CeMAT can achieve significant performance improvement for all scenarios from low to extremely high resource, i.e., up to 14.4 BLEU on low resource and 7.9 BLEU improvements on average for Autoregressive NMT. For Non-autoregressive NMT, we demonstrate it can also produce consistent performance gains, i.e., up to 5.3 BLEU. As far as we know, this is the first work to pre-train a unified model for fine-tuning on both NMT tasks. Code, data, and pre-trained models are available at [this https URL](https://github.com/huawei-noah/Pretrained-Language-Model/CeMAT)
+
+| Comments: | Accepted to ACL 2022 Main conference                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2203.09210](https://arxiv.org/abs/2203.09210) [cs.CL]** |
+|           | (or **[arXiv:2203.09210v1](https://arxiv.org/abs/2203.09210v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.09210Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-18-11">11. Finding Structural Knowledge in Multimodal-BERT
+</h2>
+
+Title: [Finding Structural Knowledge in Multimodal-BERT](https://arxiv.org/abs/2203.09306)
+
+Authors: [Victor Milewski](https://arxiv.org/search/cs?searchtype=author&query=Milewski%2C+V), [Miryam de Lhoneux](https://arxiv.org/search/cs?searchtype=author&query=de+Lhoneux%2C+M), [Marie-Francine Moens](https://arxiv.org/search/cs?searchtype=author&query=Moens%2C+M)
+
+> In this work, we investigate the knowledge learned in the embeddings of multimodal-BERT models. More specifically, we probe their capabilities of storing the grammatical structure of linguistic data and the structure learned over objects in visual data. To reach that goal, we first make the inherent structure of language and visuals explicit by a dependency parse of the sentences that describe the image and by the dependencies between the object regions in the image, respectively. We call this explicit visual structure the \textit{scene tree}, that is based on the dependency tree of the language description. Extensive probing experiments show that the multimodal-BERT models do not encode these scene trees.Code available at \url{[this https URL](https://github.com/VSJMilewski/multimodal-probes)}.
+
+| Comments: | Accepted at ACL 2022                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Computer Vision and Pattern Recognition (cs.CV) |
+| Cite as:  | **[arXiv:2203.09306](https://arxiv.org/abs/2203.09306) [cs.CL]** |
+|           | (or **[arXiv:2203.09306v1](https://arxiv.org/abs/2203.09306v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.09306Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-18-12">12. Combining Static and Contextualised Multilingual Embeddings
+</h2>
+
+Title: [Combining Static and Contextualised Multilingual Embeddings](https://arxiv.org/abs/2203.09326)
+
+Authors: [Katharina Hämmerl](https://arxiv.org/search/cs?searchtype=author&query=Hämmerl%2C+K), [Jindřich Libovický](https://arxiv.org/search/cs?searchtype=author&query=Libovický%2C+J), [Alexander Fraser](https://arxiv.org/search/cs?searchtype=author&query=Fraser%2C+A)
+
+> Static and contextual multilingual embeddings have complementary strengths. Static embeddings, while less expressive than contextual language models, can be more straightforwardly aligned across multiple languages. We combine the strengths of static and contextual models to improve multilingual representations. We extract static embeddings for 40 languages from XLM-R, validate those embeddings with cross-lingual word retrieval, and then align them using VecMap. This results in high-quality, highly multilingual static embeddings. Then we apply a novel continued pre-training approach to XLM-R, leveraging the high quality alignment of our static embeddings to better align the representation space of XLM-R. We show positive results for multiple complex semantic tasks. We release the static embeddings and the continued pre-training code. Unlike most previous work, our continued pre-training approach does not require parallel text.
+
+| Comments: | Accepted to Findings of ACL 2022                             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2203.09326](https://arxiv.org/abs/2203.09326) [cs.CL]** |
+|           | (or **[arXiv:2203.09326v1](https://arxiv.org/abs/2203.09326v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.09326Focus to learn more |
+
+
+
 
 
 
