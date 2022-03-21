@@ -2,6 +2,13 @@
 
 # Index
 
+- [2022-03-21](#2022-03-21)
+  - [1. A3T: Alignment-Aware Acoustic and Text Pretraining for Speech Synthesis and Editing](#2022-03-21-1)
+  - [2. Prototypical Verbalizer for Prompt-based Few-shot Tuning](#2022-03-21-2)
+  - [3. Under the Morphosyntactic Lens: A Multifaceted Evaluation of Gender Bias in Speech Translation](#2022-03-21-3)
+  - [4. Do Multilingual Language Models Capture Differing Moral Norms?](#2022-03-21-4)
+  - [5. Towards Lithuanian grammatical error correction](#2022-03-21-5)
+  
 - [2022-03-18](#2022-03-18)
   - [1. DU-VLG: Unifying Vision-and-Language Generation via Dual Sequence-to-Sequence Pre-training](#2022-03-18-1)
   - [2. UNIMO-2: End-to-End Unified Vision-Language Grounded Learning](#2022-03-18-2)
@@ -15,7 +22,6 @@
   - [10. Universal Conditional Masked Language Pre-training for Neural Machine Translation](#2022-03-18-10)
   - [11. Finding Structural Knowledge in Multimodal-BERT](#2022-03-18-11)
   - [12. Combining Static and Contextualised Multilingual Embeddings](#2022-03-18-12)
-  
 - [2022-03-17](#2022-03-17)
   - [1. Hyperdecoders: Instance-specific decoders for multi-task NLP](#2022-03-17-1)
   - [2. Improving Word Translation via Two-Stage Contrastive Learning](#2022-03-17-2)
@@ -100,6 +106,113 @@
 - [2022-02-28](#2022-02-28)
   - [1. Screening Gender Transfer in Neural Machine Translation](#2022-02-28-1)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2022-03-21
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-03-21-1">1. A3T: Alignment-Aware Acoustic and Text Pretraining for Speech Synthesis and Editing
+</h2>
+
+Title: [A3T: Alignment-Aware Acoustic and Text Pretraining for Speech Synthesis and Editing](https://arxiv.org/abs/2203.09690)
+
+Authors: [He Bai](https://arxiv.org/search/cs?searchtype=author&query=Bai%2C+H), [Renjie Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng%2C+R), [Junkun Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+J), [Xintong Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+X), [Mingbo Ma](https://arxiv.org/search/cs?searchtype=author&query=Ma%2C+M), [Liang Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+L)
+
+> Recently, speech representation learning has improved many speech-related tasks such as speech recognition, speech classification, and speech-to-text translation. However, all the above tasks are in the direction of speech understanding, but for the inverse direction, speech synthesis, the potential of representation learning is yet to be realized, due to the challenging nature of generating high-quality speech. To address this problem, we propose our framework, Alignment-Aware Acoustic-Text Pretraining (A3T), which reconstructs masked acoustic signals with text input and acoustic-text alignment during training. In this way, the pretrained model can generate high quality of reconstructed spectrogram, which can be applied to the speech editing and unseen speaker TTS directly. Experiments show A3T outperforms SOTA models on speech editing, and improves multi-speaker speech synthesis without the external speaker verification model.
+
+| Comments: | under review, 12 pages, 10 figures                           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2203.09690](https://arxiv.org/abs/2203.09690) [cs.CL]** |
+|           | (or **[arXiv:2203.09690v1](https://arxiv.org/abs/2203.09690v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.09690Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-21-2">2. Prototypical Verbalizer for Prompt-based Few-shot Tuning
+</h2>
+
+Title: [Prototypical Verbalizer for Prompt-based Few-shot Tuning](https://arxiv.org/abs/2203.09770)
+
+Authors: [Ganqu Cui](https://arxiv.org/search/cs?searchtype=author&query=Cui%2C+G), [Shengding Hu](https://arxiv.org/search/cs?searchtype=author&query=Hu%2C+S), [Ning Ding](https://arxiv.org/search/cs?searchtype=author&query=Ding%2C+N), [Longtao Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+L), [Zhiyuan Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Z)
+
+> Prompt-based tuning for pre-trained language models (PLMs) has shown its effectiveness in few-shot learning. Typically, prompt-based tuning wraps the input text into a cloze question. To make predictions, the model maps the output words to labels via a verbalizer, which is either manually designed or automatically built. However, manual verbalizers heavily depend on domain-specific prior knowledge and human efforts, while finding appropriate label words automatically still remains [this http URL](http://challenging.in/) this work, we propose the prototypical verbalizer (ProtoVerb) which is built directly from training data. Specifically, ProtoVerb learns prototype vectors as verbalizers by contrastive learning. In this way, the prototypes summarize training instances and are able to enclose rich class-level semantics. We conduct experiments on both topic classification and entity typing tasks, and the results demonstrate that ProtoVerb significantly outperforms current automatic verbalizers, especially when training data is extremely scarce. More surprisingly, ProtoVerb consistently boosts prompt-based tuning even on untuned PLMs, indicating an elegant non-tuning way to utilize PLMs. Our codes are avaliable at [this https URL](https://github.com/thunlp/OpenPrompt).
+
+| Comments: | 11 pages. ACL 2022 main conference                           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2203.09770](https://arxiv.org/abs/2203.09770) [cs.CL]** |
+|           | (or **[arXiv:2203.09770v1](https://arxiv.org/abs/2203.09770v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.09770Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-21-3">3. Under the Morphosyntactic Lens: A Multifaceted Evaluation of Gender Bias in Speech Translation
+</h2>
+
+Title: [Under the Morphosyntactic Lens: A Multifaceted Evaluation of Gender Bias in Speech Translation](https://arxiv.org/abs/2203.09866)
+
+Authors: [Beatrice Savoldi](https://arxiv.org/search/cs?searchtype=author&query=Savoldi%2C+B), [Marco Gaido](https://arxiv.org/search/cs?searchtype=author&query=Gaido%2C+M), [Luisa Bentivogli](https://arxiv.org/search/cs?searchtype=author&query=Bentivogli%2C+L), [Matteo Negri](https://arxiv.org/search/cs?searchtype=author&query=Negri%2C+M), [Marco Turchi](https://arxiv.org/search/cs?searchtype=author&query=Turchi%2C+M)
+
+> Gender bias is largely recognized as a problematic phenomenon affecting language technologies, with recent studies underscoring that it might surface differently across languages. However, most of current evaluation practices adopt a word-level focus on a narrow set of occupational nouns under synthetic conditions. Such protocols overlook key features of grammatical gender languages, which are characterized by morphosyntactic chains of gender agreement, marked on a variety of lexical items and parts-of-speech (POS). To overcome this limitation, we enrich the natural, gender-sensitive MuST-SHE corpus (Bentivogli et al., 2020) with two new linguistic annotation layers (POS and agreement chains), and explore to what extent different lexical categories and agreement phenomena are impacted by gender skews. Focusing on speech translation, we conduct a multifaceted evaluation on three language directions (English-French/Italian/Spanish), with models trained on varying amounts of data and different word segmentation techniques. By shedding light on model behaviours, gender bias, and its detection at several levels of granularity, our findings emphasize the value of dedicated analyses beyond aggregated overall results.
+
+| Comments: | Accepted at ACL 2022                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2203.09866](https://arxiv.org/abs/2203.09866) [cs.CL]** |
+|           | (or **[arXiv:2203.09866v1](https://arxiv.org/abs/2203.09866v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.09866Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-21-4">4. Do Multilingual Language Models Capture Differing Moral Norms?
+</h2>
+
+Title: [Do Multilingual Language Models Capture Differing Moral Norms?](https://arxiv.org/abs/2203.09904)
+
+Authors: [Katharina Hämmerl](https://arxiv.org/search/cs?searchtype=author&query=Hämmerl%2C+K), [Björn Deiseroth](https://arxiv.org/search/cs?searchtype=author&query=Deiseroth%2C+B), [Patrick Schramowski](https://arxiv.org/search/cs?searchtype=author&query=Schramowski%2C+P), [Jindřich Libovický](https://arxiv.org/search/cs?searchtype=author&query=Libovický%2C+J), [Alexander Fraser](https://arxiv.org/search/cs?searchtype=author&query=Fraser%2C+A), [Kristian Kersting](https://arxiv.org/search/cs?searchtype=author&query=Kersting%2C+K)
+
+> Massively multilingual sentence representations are trained on large corpora of uncurated data, with a very imbalanced proportion of languages included in the training. This may cause the models to grasp cultural values including moral judgments from the high-resource languages and impose them on the low-resource languages. The lack of data in certain languages can also lead to developing random and thus potentially harmful beliefs. Both these issues can negatively influence zero-shot cross-lingual model transfer and potentially lead to harmful outcomes. Therefore, we aim to (1) detect and quantify these issues by comparing different models in different languages, (2) develop methods for improving undesirable properties of the models. Our initial experiments using the multilingual model XLM-R show that indeed multilingual LMs capture moral norms, even with potentially higher human-agreement than monolingual ones. However, it is not yet clear to what extent these moral norms differ between languages.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2203.09904](https://arxiv.org/abs/2203.09904) [cs.CL]** |
+|           | (or **[arXiv:2203.09904v1](https://arxiv.org/abs/2203.09904v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.09904Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-21-5">5. Towards Lithuanian grammatical error correction
+</h2>
+
+Title: [Towards Lithuanian grammatical error correction](https://arxiv.org/abs/2203.09963)
+
+Authors: [Lukas Stankevičius](https://arxiv.org/search/cs?searchtype=author&query=Stankevičius%2C+L), [Mantas Lukoševičius](https://arxiv.org/search/cs?searchtype=author&query=Lukoševičius%2C+M)
+
+> Everyone wants to write beautiful and correct text, yet the lack of language skills, experience, or hasty typing can result in errors. By employing the recent advances in transformer architectures, we construct a grammatical error correction model for Lithuanian, the language rich in archaic features. We compare subword and byte-level approaches and share our best trained model, achieving F0.5=0.92, and accompanying code, in an online open-source repository.
+
+| Subjects:    | **Computation and Language (cs.CL)**; Information Retrieval (cs.IR); Machine Learning (cs.LG); Machine Learning (stat.ML) |
+| ------------ | ------------------------------------------------------------ |
+| MSC classes: | 68T07, 68T50, 68T05                                          |
+| ACM classes: | I.2.6; I.2.7                                                 |
+| Cite as:     | **[arXiv:2203.09963](https://arxiv.org/abs/2203.09963) [cs.CL]** |
+|              | (or **[arXiv:2203.09963v1](https://arxiv.org/abs/2203.09963v1) [cs.CL]** for this version) |
+|              | https://doi.org/10.48550/arXiv.2203.09963Focus to learn more |
+
+
+
 
 
 
