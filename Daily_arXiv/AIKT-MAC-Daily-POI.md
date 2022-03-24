@@ -2,13 +2,35 @@
 
 # Index
 
+- [2022-03-24](#2022-03-24)
+  - [1. Text Transformations in Contrastive Self-Supervised Learning: A Review](#2022-03-24-1)
+  - [2. An Empirical Study of Memorization in NLP](#2022-03-24-2)
+  - [3. Integrating Vectorized Lexical Constraints for Neural Machine Translation](#2022-03-24-3)
+  - [4. A Context-Aware Feature Fusion Framework for Punctuation Restoration](#2022-03-24-4)
+  
+- [2022-03-23](#2022-03-23)
+  - [1. WuDaoMM: A large-scale Multi-Modal Dataset for Pre-training models](#2022-03-23-1)
+  - [2. DQ-BART: Efficient Sequence-to-Sequence Model via Joint Distillation and Quantization](#2022-03-23-2)
+  - [3. Enhancing Speech Recognition Decoding via Layer Aggregation](#2022-03-23-3)
+  - [4. Learning Confidence for Transformer-based Neural Machine Translation](#2022-03-23-4)
+  - [5. Modeling speech recognition and synthesis simultaneously: Encoding and decoding lexical and sublexical semantic information into speech with no direct access to speech data](#2022-03-23-5)
+  - [6. Factual Consistency of Multilingual Pretrained Language Models](#2022-03-23-6)
+
+- [2022-03-22](#2022-03-22)
+  - [1. Transformer-based HTR for Historical Documents](#2022-03-22-1)
+  - [2. Neural Machine Translation with Phrase-Level Universal Visual Representations](#2022-03-22-2)
+  - [3. STEMM: Self-learning with Speech-text Manifold Mixup for Speech Translation](#2022-03-22-3)
+  - [4. Small Batch Sizes Improve Training of Low-Resource Neural MT](#2022-03-22-4)
+  - [5. Mitigating Gender Bias in Machine Translation through Adversarial Learning](#2022-03-22-5)
+  - [6. Compression of Generative Pre-trained Language Models via Quantization](#2022-03-22-6)
+  - [7. Match the Script, Adapt if Multilingual: Analyzing the Effect of Multilingual Pretraining on Cross-lingual Transferability](#2022-03-22-7)
+
 - [2022-03-21](#2022-03-21)
   - [1. A3T: Alignment-Aware Acoustic and Text Pretraining for Speech Synthesis and Editing](#2022-03-21-1)
   - [2. Prototypical Verbalizer for Prompt-based Few-shot Tuning](#2022-03-21-2)
   - [3. Under the Morphosyntactic Lens: A Multifaceted Evaluation of Gender Bias in Speech Translation](#2022-03-21-3)
   - [4. Do Multilingual Language Models Capture Differing Moral Norms?](#2022-03-21-4)
   - [5. Towards Lithuanian grammatical error correction](#2022-03-21-5)
-  
 - [2022-03-18](#2022-03-18)
   - [1. DU-VLG: Unifying Vision-and-Language Generation via Dual Sequence-to-Sequence Pre-training](#2022-03-18-1)
   - [2. UNIMO-2: End-to-End Unified Vision-Language Grounded Learning](#2022-03-18-2)
@@ -106,6 +128,364 @@
 - [2022-02-28](#2022-02-28)
   - [1. Screening Gender Transfer in Neural Machine Translation](#2022-02-28-1)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+
+
+# 2022-03-24
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-03-24-1">1. Text Transformations in Contrastive Self-Supervised Learning: A Review
+</h2>
+
+Title: [Text Transformations in Contrastive Self-Supervised Learning: A Review](https://arxiv.org/abs/2203.12000)
+
+Authors: [Amrita Bhattacharjee](https://arxiv.org/search/cs?searchtype=author&query=Bhattacharjee%2C+A), [Mansooreh Karami](https://arxiv.org/search/cs?searchtype=author&query=Karami%2C+M), [Huan Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+H)
+
+> Contrastive self-supervised learning has become a prominent technique in representation learning. The main step in these methods is to contrast semantically similar and dissimilar pairs of samples. However, in the domain of Natural Language, the augmentation methods used in creating similar pairs with regard to contrastive learning assumptions are challenging. This is because, even simply modifying a word in the input might change the semantic meaning of the sentence, and hence, would violate the distributional hypothesis. In this review paper, we formalize the contrastive learning framework in the domain of natural language processing. We emphasize the considerations that need to be addressed in the data transformation step and review the state-of-the-art methods and evaluations for contrastive representation learning in NLP. Finally, we describe some challenges and potential directions for learning better text representations using contrastive methods.
+
+| Comments: | under review at IJCAI'22 Survey Track                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2203.12000](https://arxiv.org/abs/2203.12000) [cs.CL]** |
+|           | (or **[arXiv:2203.12000v1](https://arxiv.org/abs/2203.12000v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.12000Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-24-2">2. An Empirical Study of Memorization in NLP
+</h2>
+
+Title: [An Empirical Study of Memorization in NLP](https://arxiv.org/abs/2203.12171)
+
+Authors: [Xiaosen Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng%2C+X), [Jing Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+J)
+
+> A recent study by Feldman (2020) proposed a long-tail theory to explain the memorization behavior of deep learning models. However, memorization has not been empirically verified in the context of NLP, a gap addressed by this work. In this paper, we use three different NLP tasks to check if the long-tail theory holds. Our experiments demonstrate that top-ranked memorized training instances are likely atypical, and removing the top-memorized training instances leads to a more serious drop in test accuracy compared with removing training instances randomly. Furthermore, we develop an attribution method to better understand why a training instance is memorized. We empirically show that our memorization attribution method is faithful, and share our interesting finding that the top-memorized parts of a training instance tend to be features negatively correlated with the class label.
+
+| Comments: | ACL 2022. Code & data available at [this https URL](https://github.com/xszheng2020/memorization) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2203.12171](https://arxiv.org/abs/2203.12171) [cs.CL]** |
+|           | (or **[arXiv:2203.12171v1](https://arxiv.org/abs/2203.12171v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.12171Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-24-3">3. Integrating Vectorized Lexical Constraints for Neural Machine Translation
+</h2>
+
+Title: [Integrating Vectorized Lexical Constraints for Neural Machine Translation](https://arxiv.org/abs/2203.12210)
+
+Authors: [Shuo Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+S), [Zhixing Tan](https://arxiv.org/search/cs?searchtype=author&query=Tan%2C+Z), [Yang Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Y)
+
+> Lexically constrained neural machine translation (NMT), which controls the generation of NMT models with pre-specified constraints, is important in many practical scenarios. Due to the representation gap between discrete constraints and continuous vectors in NMT models, most existing works choose to construct synthetic data or modify the decoding algorithm to impose lexical constraints, treating the NMT model as a black box. In this work, we propose to open this black box by directly integrating the constraints into NMT models. Specifically, we vectorize source and target constraints into continuous keys and values, which can be utilized by the attention modules of NMT models. The proposed integration method is based on the assumption that the correspondence between keys and values in attention modules is naturally suitable for modeling constraint pairs. Experimental results show that our method consistently outperforms several representative baselines on four language pairs, demonstrating the superiority of integrating vectorized lexical constraints.
+
+| Comments: | Accepted by ACL 2022 (main conference)                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2203.12210](https://arxiv.org/abs/2203.12210) [cs.CL]** |
+|           | (or **[arXiv:2203.12210v1](https://arxiv.org/abs/2203.12210v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.12210Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-24-4">4. A Context-Aware Feature Fusion Framework for Punctuation Restoration
+</h2>
+
+Title: [A Context-Aware Feature Fusion Framework for Punctuation Restoration](https://arxiv.org/abs/2203.12487)
+
+Authors: [Yangjun Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+Y), [Kebin Fang](https://arxiv.org/search/cs?searchtype=author&query=Fang%2C+K), [Yao Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+Y)
+
+> To accomplish the punctuation restoration task, most existing approaches focused on leveraging extra information (e.g., part-of-speech tags) or addressing the class imbalance problem. Recent works have widely applied the transformer-based language models and significantly improved their effectiveness. To the best of our knowledge, an inherent issue has remained neglected: the attention of individual heads in the transformer will be diluted or powerless while feeding the long non-punctuation utterances. Since those previous contexts, not the followings, are comparatively more valuable to the current position, it's hard to achieve a good balance by independent attention. In this paper, we propose a novel Feature Fusion framework based on two-type Attentions (FFA) to alleviate the shortage. It introduces a two-stream architecture. One module involves interaction between attention heads to encourage the communication, and another masked attention module captures the dependent feature representation. Then, it aggregates two feature embeddings to fuse information and enhances context-awareness. The experiments on the popular benchmark dataset IWSLT demonstrate that our approach is effective. Without additional data, it obtains comparable performance to the current state-of-the-art models.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2203.12487](https://arxiv.org/abs/2203.12487) [cs.CL]** |
+|           | (or **[arXiv:2203.12487v1](https://arxiv.org/abs/2203.12487v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.12487Focus to learn more |
+
+
+
+
+
+# 2022-03-23
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-03-23-1">1. WuDaoMM: A large-scale Multi-Modal Dataset for Pre-training models
+</h2>
+
+Title: [WuDaoMM: A large-scale Multi-Modal Dataset for Pre-training models](https://arxiv.org/abs/2203.11480)
+
+Authors: [Sha Yuan](https://arxiv.org/search/cs?searchtype=author&query=Yuan%2C+S), [Zhao Shuai](https://arxiv.org/search/cs?searchtype=author&query=Shuai%2C+Z), [Leng Jiahong](https://arxiv.org/search/cs?searchtype=author&query=Jiahong%2C+L), [Xue Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+X), [Zhao Hanyu](https://arxiv.org/search/cs?searchtype=author&query=Hanyu%2C+Z), [Tang Jie](https://arxiv.org/search/cs?searchtype=author&query=Jie%2C+T)
+
+> Compared with the domain-specific model, the vision-language pre-training models (VLPMs) have shown superior performance on downstream tasks with fast fine-tuning process. For example, ERNIE-ViL, Oscar and UNIMO trained VLPMs with a uniform transformers stack architecture and large amounts of image-text paired data, achieving remarkable results on downstream tasks such as image-text reference(IR and TR), vision question answering (VQA) and image captioning (IC) etc. During the training phase, VLPMs are always fed with a combination of multiple public datasets to meet the demand of large-scare training data. However, due to the unevenness of data distribution including size, task type and quality, using the mixture of multiple datasets for model training can be problematic. In this work, we introduce a large-scale multi-modal corpora named WuDaoMM, totally containing more than 650M image-text pairs. Specifically, about 600 million pairs of data are collected from multiple webpages in which image and caption present weak correlation, and the other 50 million strong-related image-text pairs are collected from some high-quality graphic websites. We also release a base version of WuDaoMM with 5 million strong-correlated image-text pairs, which is sufficient to support the common cross-modal model pre-training. Besides, we trained both an understanding and a generation vision-language (VL) model to test the dataset effectiveness. The results show that WuDaoMM can be applied as an efficient dataset for VLPMs, especially for the model in text-to-image generation task. The data is released at [this https URL](https://data.wudaoai.cn/)
+
+| Comments: | 7 pages, 2 tables, 4 figures                                 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2203.11480](https://arxiv.org/abs/2203.11480) [cs.CV]** |
+|           | (or **[arXiv:2203.11480v1](https://arxiv.org/abs/2203.11480v1) [cs.CV]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.11480Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-23-2">2. DQ-BART: Efficient Sequence-to-Sequence Model via Joint Distillation and Quantization
+</h2>
+
+Title: [DQ-BART: Efficient Sequence-to-Sequence Model via Joint Distillation and Quantization](https://arxiv.org/abs/2203.11239)
+
+Authors: [Zheng Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Z), [Zijian Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Z), [Ming Tan](https://arxiv.org/search/cs?searchtype=author&query=Tan%2C+M), [Ramesh Nallapati](https://arxiv.org/search/cs?searchtype=author&query=Nallapati%2C+R), [Parminder Bhatia](https://arxiv.org/search/cs?searchtype=author&query=Bhatia%2C+P), [Andrew Arnold](https://arxiv.org/search/cs?searchtype=author&query=Arnold%2C+A), [Bing Xiang](https://arxiv.org/search/cs?searchtype=author&query=Xiang%2C+B), [Dan Roth](https://arxiv.org/search/cs?searchtype=author&query=Roth%2C+D)
+
+> Large-scale pre-trained sequence-to-sequence models like BART and T5 achieve state-of-the-art performance on many generative NLP tasks. However, such models pose a great challenge in resource-constrained scenarios owing to their large memory requirements and high latency. To alleviate this issue, we propose to jointly distill and quantize the model, where knowledge is transferred from the full-precision teacher model to the quantized and distilled low-precision student model. Empirical analyses show that, despite the challenging nature of generative tasks, we were able to achieve a 16.5x model footprint compression ratio with little performance drop relative to the full-precision counterparts on multiple summarization and QA datasets. We further pushed the limit of compression ratio to 27.7x and presented the performance-efficiency trade-off for generative tasks using pre-trained models. To the best of our knowledge, this is the first work aiming to effectively distill and quantize sequence-to-sequence pre-trained models for language generation tasks.
+
+| Comments: | ACL 2022                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2203.11239](https://arxiv.org/abs/2203.11239) [cs.CL]** |
+|           | (or **[arXiv:2203.11239v1](https://arxiv.org/abs/2203.11239v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.11239Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-23-3">3. Enhancing Speech Recognition Decoding via Layer Aggregation
+</h2>
+
+Title: [Enhancing Speech Recognition Decoding via Layer Aggregation](https://arxiv.org/abs/2203.11325)
+
+Authors: [Tomer Wullach](https://arxiv.org/search/cs?searchtype=author&query=Wullach%2C+T), [Shlomo E. Chazan](https://arxiv.org/search/cs?searchtype=author&query=Chazan%2C+S+E)
+
+> Recently proposed speech recognition systems are designed to predict using representations generated by their top layers, employing greedy decoding which isolates each timestep from the rest of the sequence. Aiming for improved performance, a beam search algorithm is frequently utilized and a language model is incorporated to assist with ranking the top candidates. In this work, we experiment with several speech recognition models and find that logits predicted using the top layers may hamper beam search from achieving optimal results. Specifically, we show that fined-tuned Wav2Vec 2.0 and HuBERT yield highly confident predictions, and hypothesize that the predictions are based on local information and may not take full advantage of the information encoded in intermediate layers. To this end, we perform a layer analysis to reveal and visualize how predictions evolve throughout the inference flow. We then propose a prediction method that aggregates the top M layers, potentially leveraging useful information encoded in intermediate layers and relaxing model confidence. We showcase the effectiveness of our approach via beam search decoding, conducting our experiments on Librispeech test and dev sets and achieving WER, and CER reduction of up to 10% and 22%, respectively.
+
+| Comments: | Submitted to Interspeech 2022                                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2203.11325](https://arxiv.org/abs/2203.11325) [cs.CL]** |
+|           | (or **[arXiv:2203.11325v1](https://arxiv.org/abs/2203.11325v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.11325Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-23-4">4. Learning Confidence for Transformer-based Neural Machine Translation
+</h2>
+
+Title: [Learning Confidence for Transformer-based Neural Machine Translation](https://arxiv.org/abs/2203.11413)
+
+Authors: [Yu Lu](https://arxiv.org/search/cs?searchtype=author&query=Lu%2C+Y), [Jiali Zeng](https://arxiv.org/search/cs?searchtype=author&query=Zeng%2C+J), [Jiajun Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+J), [Shuangzhi Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+S), [Mu Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+M)
+
+> Confidence estimation aims to quantify the confidence of the model prediction, providing an expectation of success. A well-calibrated confidence estimate enables accurate failure prediction and proper risk measurement when given noisy samples and out-of-distribution data in real-world settings. However, this task remains a severe challenge for neural machine translation (NMT), where probabilities from softmax distribution fail to describe when the model is probably mistaken. To address this problem, we propose an unsupervised confidence estimate learning jointly with the training of the NMT model. We explain confidence as how many hints the NMT model needs to make a correct prediction, and more hints indicate low confidence. Specifically, the NMT model is given the option to ask for hints to improve translation accuracy at the cost of some slight penalty. Then, we approximate their level of confidence by counting the number of hints the model uses. We demonstrate that our learned confidence estimate achieves high accuracy on extensive sentence/word-level quality estimation tasks. Analytical results verify that our confidence estimate can correctly assess underlying risk in two real-world scenarios: (1) discovering noisy samples and (2) detecting out-of-domain data. We further propose a novel confidence-based instance-specific label smoothing approach based on our learned confidence estimate, which outperforms standard label smoothing.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2203.11413](https://arxiv.org/abs/2203.11413) [cs.CL]** |
+|           | (or **[arXiv:2203.11413v1](https://arxiv.org/abs/2203.11413v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.11413Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-23-5">5. Modeling speech recognition and synthesis simultaneously: Encoding and decoding lexical and sublexical semantic information into speech with no direct access to speech data
+</h2>
+
+Title: [Modeling speech recognition and synthesis simultaneously: Encoding and decoding lexical and sublexical semantic information into speech with no direct access to speech data](https://arxiv.org/abs/2203.11476)
+
+Authors: [Gašper Beguš](https://arxiv.org/search/cs?searchtype=author&query=Beguš%2C+G), [Alan Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+A)
+
+> Human speakers encode information into raw speech which is then decoded by the listeners. This complex relationship between encoding (production) and decoding (perception) is often modeled separately. Here, we test how decoding of lexical and sublexical semantic information can emerge automatically from raw speech in unsupervised generative deep convolutional networks that combine both the production and perception principle. We introduce, to our knowledge, the most challenging objective in unsupervised lexical learning: an unsupervised network that must learn to assign unique representations for lexical items with no direct access to training data. We train several models (ciwGAN and fiwGAN by [1]) and test how the networks classify raw acoustic lexical items in the unobserved test data. Strong evidence in favor of lexical learning emerges. The architecture that combines the production and perception principles is thus able to learn to decode unique information from raw acoustic data in an unsupervised manner without ever accessing real training data. We propose a technique to explore lexical and sublexical learned representations in the classifier network. The results bear implications for both unsupervised speech synthesis and recognition as well as for unsupervised semantic modeling as language models increasingly bypass text and operate from raw acoustics.
+
+| Comments: | Submitted to Interspeech 2022                                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2203.11476](https://arxiv.org/abs/2203.11476) [cs.CL]** |
+|           | (or **[arXiv:2203.11476v1](https://arxiv.org/abs/2203.11476v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.11476Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-23-6">6. Factual Consistency of Multilingual Pretrained Language Models
+</h2>
+
+Title: [Factual Consistency of Multilingual Pretrained Language Models](https://arxiv.org/abs/2203.11552)
+
+Authors: [Constanza Fierro](https://arxiv.org/search/cs?searchtype=author&query=Fierro%2C+C), [Anders Søgaard](https://arxiv.org/search/cs?searchtype=author&query=Søgaard%2C+A)
+
+> Pretrained language models can be queried for factual knowledge, with potential applications in knowledge base acquisition and tasks that require inference. However, for that, we need to know how reliable this knowledge is, and recent work has shown that monolingual English language models lack consistency when predicting factual knowledge, that is, they fill-in-the-blank differently for paraphrases describing the same fact. In this paper, we extend the analysis of consistency to a multilingual setting. We introduce a resource, mParaRel, and investigate (i) whether multilingual language models such as mBERT and XLM-R are more consistent than their monolingual counterparts; and (ii) if such models are equally consistent across languages. We find that mBERT is as inconsistent as English BERT in English paraphrases, but that both mBERT and XLM-R exhibit a high degree of inconsistency in English and even more so for all the other 45 languages.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2203.11552](https://arxiv.org/abs/2203.11552) [cs.CL]** |
+|           | (or **[arXiv:2203.11552v1](https://arxiv.org/abs/2203.11552v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.11552Focus to learn more |
+
+
+
+# 2022-03-22
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-03-22-1">1. Transformer-based HTR for Historical Documents
+</h2>
+
+Title: [Transformer-based HTR for Historical Documents](https://arxiv.org/abs/2203.11008)
+
+Authors: [Phillip Benjamin Ströbel](https://arxiv.org/search/cs?searchtype=author&query=Ströbel%2C+P+B), [Simon Clematide](https://arxiv.org/search/cs?searchtype=author&query=Clematide%2C+S), [Martin Volk](https://arxiv.org/search/cs?searchtype=author&query=Volk%2C+M), [Tobias Hodel](https://arxiv.org/search/cs?searchtype=author&query=Hodel%2C+T)
+
+> We apply the TrOCR framework to real-world, historical manuscripts and show that TrOCR per se is a strong model, ideal for transfer learning. TrOCR has been trained on English only, but it can adapt to other languages that use the Latin alphabet fairly easily and with little training material. We compare TrOCR against a SOTA HTR framework (Transkribus) and show that it can beat such systems. This finding is essential since Transkribus performs best when it has access to baseline information, which is not needed at all to fine-tune TrOCR.
+
+| Comments: | This is an abstract submitted and accepted at ComHum 2022 in Lausanne. We will be elaborating on these initial findings in the paper that we will submit after the conference |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2203.11008](https://arxiv.org/abs/2203.11008) [cs.CV]** |
+|           | (or **[arXiv:2203.11008v1](https://arxiv.org/abs/2203.11008v1) [cs.CV]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.11008Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-22-2">2. Neural Machine Translation with Phrase-Level Universal Visual Representations
+</h2>
+
+Title: [Neural Machine Translation with Phrase-Level Universal Visual Representations](https://arxiv.org/abs/2203.10299)
+
+Authors: [Qingkai Fang](https://arxiv.org/search/cs?searchtype=author&query=Fang%2C+Q), [Yang Feng](https://arxiv.org/search/cs?searchtype=author&query=Feng%2C+Y)
+
+> Multimodal machine translation (MMT) aims to improve neural machine translation (NMT) with additional visual information, but most existing MMT methods require paired input of source sentence and image, which makes them suffer from shortage of sentence-image pairs. In this paper, we propose a phrase-level retrieval-based method for MMT to get visual information for the source input from existing sentence-image data sets so that MMT can break the limitation of paired sentence-image input. Our method performs retrieval at the phrase level and hence learns visual information from pairs of source phrase and grounded region, which can mitigate data sparsity. Furthermore, our method employs the conditional variational auto-encoder to learn visual representations which can filter redundant visual information and only retain visual information related to the phrase. Experiments show that the proposed method significantly outperforms strong baselines on multiple MMT datasets, especially when the textual context is limited.
+
+| Comments:    | ACL 2022 main conference                                     |
+| ------------ | ------------------------------------------------------------ |
+| Subjects:    | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| ACM classes: | I.2.7                                                        |
+| Cite as:     | **[arXiv:2203.10299](https://arxiv.org/abs/2203.10299) [cs.CL]** |
+|              | (or **[arXiv:2203.10299v1](https://arxiv.org/abs/2203.10299v1) [cs.CL]** for this version) |
+|              | https://doi.org/10.48550/arXiv.2203.10299Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-22-3">3. STEMM: Self-learning with Speech-text Manifold Mixup for Speech Translation
+</h2>
+
+Title: [STEMM: Self-learning with Speech-text Manifold Mixup for Speech Translation](https://arxiv.org/abs/2203.10426)
+
+Authors: [Qingkai Fang](https://arxiv.org/search/cs?searchtype=author&query=Fang%2C+Q), [Rong Ye](https://arxiv.org/search/cs?searchtype=author&query=Ye%2C+R), [Lei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L), [Yang Feng](https://arxiv.org/search/cs?searchtype=author&query=Feng%2C+Y), [Mingxuan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+M)
+
+> How to learn a better speech representation for end-to-end speech-to-text translation (ST) with limited labeled data? Existing techniques often attempt to transfer powerful machine translation (MT) capabilities to ST, but neglect the representation discrepancy across modalities. In this paper, we propose the Speech-TExt Manifold Mixup (STEMM) method to calibrate such discrepancy. Specifically, we mix up the representation sequences of different modalities, and take both unimodal speech sequences and multimodal mixed sequences as input to the translation model in parallel, and regularize their output predictions with a self-learning framework. Experiments on MuST-C speech translation benchmark and further analysis show that our method effectively alleviates the cross-modal representation discrepancy, and achieves significant improvements over a strong baseline on eight translation directions.
+
+| Comments:    | ACL 2022 main conference                                     |
+| ------------ | ------------------------------------------------------------ |
+| Subjects:    | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| ACM classes: | I.2.7                                                        |
+| Cite as:     | **[arXiv:2203.10426](https://arxiv.org/abs/2203.10426) [cs.CL]** |
+|              | (or **[arXiv:2203.10426v1](https://arxiv.org/abs/2203.10426v1) [cs.CL]** for this version) |
+|              | https://doi.org/10.48550/arXiv.2203.10426Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-22-4">4. Small Batch Sizes Improve Training of Low-Resource Neural MT
+</h2>
+
+Title: [Small Batch Sizes Improve Training of Low-Resource Neural MT](https://arxiv.org/abs/2203.10579)
+
+Authors: [Àlex R. Atrio](https://arxiv.org/search/cs?searchtype=author&query=Atrio%2C+À+R), [Andrei Popescu-Belis](https://arxiv.org/search/cs?searchtype=author&query=Popescu-Belis%2C+A)
+
+> We study the role of an essential hyper-parameter that governs the training of Transformers for neural machine translation in a low-resource setting: the batch size. Using theoretical insights and experimental evidence, we argue against the widespread belief that batch size should be set as large as allowed by the memory of the GPUs. We show that in a low-resource setting, a smaller batch size leads to higher scores in a shorter training time, and argue that this is due to better regularization of the gradients during training.
+
+| Comments: | To be published in 18th International Conference on Natural Language Processing (ICON 2021) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2203.10579](https://arxiv.org/abs/2203.10579) [cs.CL]** |
+|           | (or **[arXiv:2203.10579v1](https://arxiv.org/abs/2203.10579v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.10579Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-22-5">5. Mitigating Gender Bias in Machine Translation through Adversarial Learning
+</h2>
+
+Title: [Mitigating Gender Bias in Machine Translation through Adversarial Learning](https://arxiv.org/abs/2203.10675)
+
+Authors: [Eve Fleisig](https://arxiv.org/search/cs?searchtype=author&query=Fleisig%2C+E), [Christiane Fellbaum](https://arxiv.org/search/cs?searchtype=author&query=Fellbaum%2C+C)
+
+> Machine translation and other NLP systems often contain significant biases regarding sensitive attributes, such as gender or race, that worsen system performance and perpetuate harmful stereotypes. Recent preliminary research suggests that adversarial learning can be used as part of a model-agnostic bias mitigation method that requires no data modifications. However, adapting this strategy for machine translation and other modern NLP domains requires (1) restructuring training objectives in the context of fine-tuning pretrained large language models and (2) developing measures for gender or other protected variables for tasks in which these attributes must be deduced from the data itself. 
+> We present an adversarial learning framework that addresses these challenges to mitigate gender bias in seq2seq machine translation. Our framework improves the disparity in translation quality for sentences with male vs. female entities by 86% for English-German translation and 91% for English-French translation, with minimal effect on translation quality. The results suggest that adversarial learning is a promising technique for mitigating gender bias in machine translation.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2203.10675](https://arxiv.org/abs/2203.10675) [cs.CL]** |
+|           | (or **[arXiv:2203.10675v1](https://arxiv.org/abs/2203.10675v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.10675Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-22-6">6. Compression of Generative Pre-trained Language Models via Quantization
+</h2>
+
+Title: [Compression of Generative Pre-trained Language Models via Quantization](https://arxiv.org/abs/2203.10705)
+
+Authors: [Chaofan Tao](https://arxiv.org/search/cs?searchtype=author&query=Tao%2C+C), [Lu Hou](https://arxiv.org/search/cs?searchtype=author&query=Hou%2C+L), [Wei Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+W), [Lifeng Shang](https://arxiv.org/search/cs?searchtype=author&query=Shang%2C+L), [Xin Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+X), [Qun Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Q), [Ping Luo](https://arxiv.org/search/cs?searchtype=author&query=Luo%2C+P), [Ngai Wong](https://arxiv.org/search/cs?searchtype=author&query=Wong%2C+N)
+
+> The increasing size of generative Pre-trained Language Models (PLMs) has greatly increased the demand for model compression. Despite various methods to compress BERT or its variants, there are few attempts to compress generative PLMs, and the underlying difficulty remains unclear. In this paper, we compress generative PLMs by quantization. We find that previous quantization methods fail on generative tasks due to the \textit{homogeneous word embeddings} caused by reduced capacity, and \textit{varied distribution of weights}. Correspondingly, we propose a token-level contrastive distillation to learn distinguishable word embeddings, and a module-wise dynamic scaling to make quantizers adaptive to different modules. Empirical results on various tasks show that our proposed method outperforms the state-of-the-art compression methods on generative PLMs by a clear margin. With comparable performance with the full-precision models, we achieve 14.4x and 13.4x compression rates on GPT-2 and BART, respectively.
+
+| Comments: | ACL 2022                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Computer Vision and Pattern Recognition (cs.CV) |
+| Cite as:  | **[arXiv:2203.10705](https://arxiv.org/abs/2203.10705) [cs.CL]** |
+|           | (or **[arXiv:2203.10705v1](https://arxiv.org/abs/2203.10705v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.10705Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-22-7">7. Match the Script, Adapt if Multilingual: Analyzing the Effect of Multilingual Pretraining on Cross-lingual Transferability
+</h2>
+
+Title: [Match the Script, Adapt if Multilingual: Analyzing the Effect of Multilingual Pretraining on Cross-lingual Transferability](https://arxiv.org/abs/2203.10753)
+
+Authors: [Yoshinari Fujinuma](https://arxiv.org/search/cs?searchtype=author&query=Fujinuma%2C+Y), [Jordan Boyd-Graber](https://arxiv.org/search/cs?searchtype=author&query=Boyd-Graber%2C+J), [Katharina Kann](https://arxiv.org/search/cs?searchtype=author&query=Kann%2C+K)
+
+> Pretrained multilingual models enable zero-shot learning even for unseen languages, and that performance can be further improved via adaptation prior to finetuning. However, it is unclear how the number of pretraining languages influences a model's zero-shot learning for languages unseen during pretraining. To fill this gap, we ask the following research questions: (1) How does the number of pretraining languages influence zero-shot performance on unseen target languages? (2) Does the answer to that question change with model adaptation? (3) Do the findings for our first question change if the languages used for pretraining are all related? Our experiments on pretraining with related languages indicate that choosing a diverse set of languages is crucial. Without model adaptation, surprisingly, increasing the number of pretraining languages yields better results up to adding related languages, after which performance plateaus. In contrast, with model adaptation via continued pretraining, pretraining on a larger number of languages often gives further improvement, suggesting that model adaptation is crucial to exploit additional pretraining languages.
+
+| Comments: | ACL 2022 camera ready                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2203.10753](https://arxiv.org/abs/2203.10753) [cs.CL]** |
+|           | (or **[arXiv:2203.10753v1](https://arxiv.org/abs/2203.10753v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.10753Focus to learn more |
+
+
+
 
 
 
