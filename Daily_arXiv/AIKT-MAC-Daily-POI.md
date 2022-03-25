@@ -2,12 +2,25 @@
 
 # Index
 
+- [2022-03-25](#2022-03-25)
+  - [1. Vision-and-Language Navigation: A Survey of Tasks, Methods, and Future Directions](#2022-03-25-1)
+  
+  - [2. Make-A-Scene: Scene-Based Text-to-Image Generation with Human Priors](#2022-03-25-2)
+  
+  - [3. Multilingual CheckList: Generation and Evaluation](#2022-03-25-3)
+  
+  - [4. Ensembling and Knowledge Distilling of Large Sequence Taggers for Grammatical Error Correction](#2022-03-25-4)
+  
+  - [5. Multi-armed bandits for online optimization of language model pre-training: the use case of dynamic masking](#2022-03-25-5)
+  
+  - [6. Token Dropping for Efficient BERT Pretraining](#2022-03-25-6)
+  
 - [2022-03-24](#2022-03-24)
   - [1. Text Transformations in Contrastive Self-Supervised Learning: A Review](#2022-03-24-1)
   - [2. An Empirical Study of Memorization in NLP](#2022-03-24-2)
   - [3. Integrating Vectorized Lexical Constraints for Neural Machine Translation](#2022-03-24-3)
   - [4. A Context-Aware Feature Fusion Framework for Punctuation Restoration](#2022-03-24-4)
-  
+
 - [2022-03-23](#2022-03-23)
   - [1. WuDaoMM: A large-scale Multi-Modal Dataset for Pre-training models](#2022-03-23-1)
   - [2. DQ-BART: Efficient Sequence-to-Sequence Model via Joint Distillation and Quantization](#2022-03-23-2)
@@ -128,6 +141,127 @@
 - [2022-02-28](#2022-02-28)
   - [1. Screening Gender Transfer in Neural Machine Translation](#2022-02-28-1)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2022-03-25
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-03-25-1">1. Vision-and-Language Navigation: A Survey of Tasks, Methods, and Future Directions
+</h2>
+
+Title: [Vision-and-Language Navigation: A Survey of Tasks, Methods, and Future Directions](https://arxiv.org/abs/2203.12667)
+
+Authors: [Jing Gu](https://arxiv.org/search/cs?searchtype=author&query=Gu%2C+J), [Eliana Stefani](https://arxiv.org/search/cs?searchtype=author&query=Stefani%2C+E), [Qi Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+Q), [Jesse Thomason](https://arxiv.org/search/cs?searchtype=author&query=Thomason%2C+J), [Xin Eric Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+X+E)
+
+> A long-term goal of AI research is to build intelligent agents that can communicate with humans in natural language, perceive the environment, and perform real-world tasks. Vision-and-Language Navigation (VLN) is a fundamental and interdisciplinary research topic towards this goal, and receives increasing attention from natural language processing, computer vision, robotics, and machine learning communities. In this paper, we review contemporary studies in the emerging field of VLN, covering tasks, evaluation metrics, methods, etc. Through structured analysis of current progress and challenges, we highlight the limitations of current VLN and opportunities for future work. This paper serves as a thorough reference for the VLN research community.
+
+| Comments: | 18 pages. Accepted to ACL 2022                               |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2203.12667](https://arxiv.org/abs/2203.12667) [cs.CV]** |
+|           | (or **[arXiv:2203.12667v1](https://arxiv.org/abs/2203.12667v1) [cs.CV]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.12667Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-25-2">2. Make-A-Scene: Scene-Based Text-to-Image Generation with Human Priors
+</h2>
+
+Title: [Make-A-Scene: Scene-Based Text-to-Image Generation with Human Priors](https://arxiv.org/abs/2203.13131)
+
+Authors: [Oran Gafni](https://arxiv.org/search/cs?searchtype=author&query=Gafni%2C+O), [Adam Polyak](https://arxiv.org/search/cs?searchtype=author&query=Polyak%2C+A), [Oron Ashual](https://arxiv.org/search/cs?searchtype=author&query=Ashual%2C+O), [Shelly Sheynin](https://arxiv.org/search/cs?searchtype=author&query=Sheynin%2C+S), [Devi Parikh](https://arxiv.org/search/cs?searchtype=author&query=Parikh%2C+D), [Yaniv Taigman](https://arxiv.org/search/cs?searchtype=author&query=Taigman%2C+Y)
+
+> Recent text-to-image generation methods provide a simple yet exciting conversion capability between text and image domains. While these methods have incrementally improved the generated image fidelity and text relevancy, several pivotal gaps remain unanswered, limiting applicability and quality. We propose a novel text-to-image method that addresses these gaps by (i) enabling a simple control mechanism complementary to text in the form of a scene, (ii) introducing elements that substantially improve the tokenization process by employing domain-specific knowledge over key image regions (faces and salient objects), and (iii) adapting classifier-free guidance for the transformer use case. Our model achieves state-of-the-art FID and human evaluation results, unlocking the ability to generate high fidelity images in a resolution of 512x512 pixels, significantly improving visual quality. Through scene controllability, we introduce several new capabilities: (i) Scene editing, (ii) text editing with anchor scenes, (iii) overcoming out-of-distribution text prompts, and (iv) story illustration generation, as demonstrated in the story we wrote.
+
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL); Graphics (cs.GR); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2203.13131](https://arxiv.org/abs/2203.13131) [cs.CV]** |
+|           | (or **[arXiv:2203.13131v1](https://arxiv.org/abs/2203.13131v1) [cs.CV]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.13131Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-25-3">3. Multilingual CheckList: Generation and Evaluation
+</h2>
+
+Title: [Multilingual CheckList: Generation and Evaluation](https://arxiv.org/abs/2203.12865)
+
+Authors: [Karthikeyan K](https://arxiv.org/search/cs?searchtype=author&query=K%2C+K), [Shaily Bhatt](https://arxiv.org/search/cs?searchtype=author&query=Bhatt%2C+S), [Pankaj Singh](https://arxiv.org/search/cs?searchtype=author&query=Singh%2C+P), [Somak Aditya](https://arxiv.org/search/cs?searchtype=author&query=Aditya%2C+S), [Sandipan Dandapat](https://arxiv.org/search/cs?searchtype=author&query=Dandapat%2C+S), [Sunayana Sitaram](https://arxiv.org/search/cs?searchtype=author&query=Sitaram%2C+S), [Monojit Choudhary](https://arxiv.org/search/cs?searchtype=author&query=Choudhary%2C+M)
+
+> The recently proposed CheckList (Riberio et al,. 2020) approach to evaluation of NLP systems has revealed high failure rates for basic capabilities for multiple state-of-the-art and commercial models. However, the CheckList creation process is manual which creates a bottleneck towards creation of multilingual CheckLists catering 100s of languages. In this work, we explore multiple approaches to generate and evaluate the quality of Multilingual CheckList. We device an algorithm -- Automated Multilingual Checklist Generation (AMCG) for automatically transferring a CheckList from a source to a target language that relies on a reasonable machine translation system. We then compare the CheckList generated by AMCG with CheckLists generated with different levels of human intervention. Through in-depth crosslingual experiments between English and Hindi, and broad multilingual experiments spanning 11 languages, we show that the automatic approach can provide accurate estimates of failure rates of a model across capabilities, as would a human-verified CheckList, and better than CheckLists generated by humans from scratch.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2203.12865](https://arxiv.org/abs/2203.12865) [cs.CL]** |
+|           | (or **[arXiv:2203.12865v1](https://arxiv.org/abs/2203.12865v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.12865Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-25-4">4. Ensembling and Knowledge Distilling of Large Sequence Taggers for Grammatical Error Correction
+</h2>
+
+Title: [Ensembling and Knowledge Distilling of Large Sequence Taggers for Grammatical Error Correction](https://arxiv.org/abs/2203.13064)
+
+Authors: [Maksym Tarnavskyi](https://arxiv.org/search/cs?searchtype=author&query=Tarnavskyi%2C+M), [Artem Chernodub](https://arxiv.org/search/cs?searchtype=author&query=Chernodub%2C+A), [Kostiantyn Omelianchuk](https://arxiv.org/search/cs?searchtype=author&query=Omelianchuk%2C+K)
+
+> In this paper, we investigate improvements to the GEC sequence tagging architecture with a focus on ensembling of recent cutting-edge Transformer-based encoders in Large configurations. We encourage ensembling models by majority votes on span-level edits because this approach is tolerant to the model architecture and vocabulary size. Our best ensemble achieves a new SOTA result with an F0.5 score of 76.05 on BEA-2019 (test), even without pre-training on synthetic datasets. In addition, we perform knowledge distillation with a trained ensemble to generate new synthetic training datasets, "Troy-Blogs" and "Troy-1BW". Our best single sequence tagging model that is pretrained on the generated Troy-datasets in combination with the publicly available synthetic PIE dataset achieves a near-SOTA (To the best of our knowledge, our best single model gives way only to much heavier T5 model result with an F0.5 score of 73.21 on BEA-2019 (test). The code, datasets, and trained models are publicly available).
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2203.13064](https://arxiv.org/abs/2203.13064) [cs.CL]** |
+|           | (or **[arXiv:2203.13064v1](https://arxiv.org/abs/2203.13064v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.13064Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-25-5">5. Multi-armed bandits for online optimization of language model pre-training: the use case of dynamic masking
+</h2>
+
+Title: [Multi-armed bandits for online optimization of language model pre-training: the use case of dynamic masking](https://arxiv.org/abs/2203.13151)
+
+Authors: [Iñigo Urteaga](https://arxiv.org/search/cs?searchtype=author&query=Urteaga%2C+I), [Moulay-Zaïdane Draïdia](https://arxiv.org/search/cs?searchtype=author&query=Draïdia%2C+M), [Tomer Lancewicki](https://arxiv.org/search/cs?searchtype=author&query=Lancewicki%2C+T), [Shahram Khadivi](https://arxiv.org/search/cs?searchtype=author&query=Khadivi%2C+S)
+
+> Transformer-based language models (TLMs) provide state-of-the-art performance in many modern natural language processing applications. TLM training is conducted in two phases. First, the model is pre-trained over large volumes of text to minimize a generic objective function, such as the Masked Language Model (MLM). Second, the model is fine-tuned in specific downstream tasks. Pre-training requires large volumes of data and high computational resources, while introducing many still unresolved design choices. For instance, selecting hyperparameters for language model pre-training is often carried out based on heuristics or grid-based searches. In this work, we propose a multi-armed bandit-based online optimization framework for the sequential selection of pre-training hyperparameters to optimize language model performance. We pose the pre-training procedure as a sequential decision-making task, where at each pre-training step, an agent must determine what hyperparameters to use towards optimizing the pre-training objective. We propose a Thompson sampling bandit algorithm, based on a surrogate Gaussian process reward model of the MLM pre-training objective, for its sequential minimization. We empirically show how the proposed Gaussian process based Thompson sampling pre-trains robust and well-performing language models. Namely, by sequentially selecting masking hyperparameters of the TLM, we achieve satisfactory performance in less epochs, not only in terms of the pre-training MLM objective, but in diverse downstream fine-tuning tasks. The proposed bandit-based technique provides an automated hyperparameter selection method for pre-training TLMs of interest to practitioners. In addition, our results indicate that, instead of MLM pre-training with fixed masking probabilities, sequentially adapting the masking hyperparameters improves both pre-training loss and downstream task metrics.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG); Machine Learning (stat.ML) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2203.13151](https://arxiv.org/abs/2203.13151) [cs.CL]** |
+|           | (or **[arXiv:2203.13151v1](https://arxiv.org/abs/2203.13151v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.13151Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-25-6">6. Token Dropping for Efficient BERT Pretraining
+</h2>
+
+Title: [Token Dropping for Efficient BERT Pretraining](https://arxiv.org/abs/2203.13240)
+
+Authors: [Le Hou](https://arxiv.org/search/cs?searchtype=author&query=Hou%2C+L), [Richard Yuanzhe Pang](https://arxiv.org/search/cs?searchtype=author&query=Pang%2C+R+Y), [Tianyi Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+T), [Yuexin Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+Y), [Xinying Song](https://arxiv.org/search/cs?searchtype=author&query=Song%2C+X), [Xiaodan Song](https://arxiv.org/search/cs?searchtype=author&query=Song%2C+X), [Denny Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+D)
+
+> Transformer-based models generally allocate the same amount of computation for each token in a given sequence. We develop a simple but effective "token dropping" method to accelerate the pretraining of transformer models, such as BERT, without degrading its performance on downstream tasks. In short, we drop unimportant tokens starting from an intermediate layer in the model to make the model focus on important tokens; the dropped tokens are later picked up by the last layer of the model so that the model still produces full-length sequences. We leverage the already built-in masked language modeling (MLM) loss to identify unimportant tokens with practically no computational overhead. In our experiments, this simple approach reduces the pretraining cost of BERT by 25% while achieving similar overall fine-tuning performance on standard downstream tasks.
+
+| Comments: | ACL 2022                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2203.13240](https://arxiv.org/abs/2203.13240) [cs.CL]** |
+|           | (or **[arXiv:2203.13240v1](https://arxiv.org/abs/2203.13240v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.13240Focus to learn more |
+
 
 
 
