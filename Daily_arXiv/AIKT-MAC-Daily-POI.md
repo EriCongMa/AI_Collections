@@ -2,19 +2,36 @@
 
 # Index
 
+- [2022-03-28](#2022-03-28)
+  - [1. Searching for fingerspelled content in American Sign Language](#2022-03-28-1)
+  
+  - [2. Impact of Dataset on Acoustic Models for Automatic Speech Recognition](#2022-03-28-2)
+  
+  - [3. DeLoRes: Decorrelating Latent Spaces for Low-Resource Audio Representation Learning](#2022-03-28-3)
+  
+  - [4. Chain-based Discriminative Autoencoders for Speech Recognition](#2022-03-28-4)
+  
+  - [5. Leveraging unsupervised and weakly-supervised data to improve direct speech-to-speech translation](#2022-03-28-5)
+  
+  - [6. Automatic Song Translation for Tonal Languages](#2022-03-28-6)
+  
+  - [7. Single Model Ensemble for Subword Regularized Models in Low-Resource Machine Translation](#2022-03-28-7)
+  
+  - [8. Modeling Target-Side Morphology in Neural Machine Translation: A Comparison of Strategies](#2022-03-28-8)
+  
 - [2022-03-25](#2022-03-25)
   - [1. Vision-and-Language Navigation: A Survey of Tasks, Methods, and Future Directions](#2022-03-25-1)
-  
+
   - [2. Make-A-Scene: Scene-Based Text-to-Image Generation with Human Priors](#2022-03-25-2)
-  
+
   - [3. Multilingual CheckList: Generation and Evaluation](#2022-03-25-3)
-  
+
   - [4. Ensembling and Knowledge Distilling of Large Sequence Taggers for Grammatical Error Correction](#2022-03-25-4)
-  
+
   - [5. Multi-armed bandits for online optimization of language model pre-training: the use case of dynamic masking](#2022-03-25-5)
-  
+
   - [6. Token Dropping for Efficient BERT Pretraining](#2022-03-25-6)
-  
+
 - [2022-03-24](#2022-03-24)
   - [1. Text Transformations in Contrastive Self-Supervised Learning: A Review](#2022-03-24-1)
   - [2. An Empirical Study of Memorization in NLP](#2022-03-24-2)
@@ -141,6 +158,172 @@
 - [2022-02-28](#2022-02-28)
   - [1. Screening Gender Transfer in Neural Machine Translation](#2022-02-28-1)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2022-03-28
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-03-28-1">1. Searching for fingerspelled content in American Sign Language
+</h2>
+
+Title: [Searching for fingerspelled content in American Sign Language](https://arxiv.org/abs/2203.13291)
+
+Authors: [Bowen Shi](https://arxiv.org/search/cs?searchtype=author&query=Shi%2C+B), [Diane Brentari](https://arxiv.org/search/cs?searchtype=author&query=Brentari%2C+D), [Greg Shakhnarovich](https://arxiv.org/search/cs?searchtype=author&query=Shakhnarovich%2C+G), [Karen Livescu](https://arxiv.org/search/cs?searchtype=author&query=Livescu%2C+K)
+
+> Natural language processing for sign language video - including tasks like recognition, translation, and search - is crucial for making artificial intelligence technologies accessible to deaf individuals, and is gaining research interest in recent years. In this paper, we address the problem of searching for fingerspelled key-words or key phrases in raw sign language videos. This is an important task since significant content in sign language is often conveyed via fingerspelling, and to our knowledge the task has not been studied before. We propose an end-to-end model for this task, FSS-Net, that jointly detects fingerspelling and matches it to a text sequence. Our experiments, done on a large public dataset of ASL fingerspelling in the wild, show the importance of fingerspelling detection as a component of a search and retrieval model. Our model significantly outperforms baseline methods adapted from prior work on related tasks
+
+| Comments: | ACL 2022                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2203.13291](https://arxiv.org/abs/2203.13291) [cs.CV]** |
+|           | (or **[arXiv:2203.13291v1](https://arxiv.org/abs/2203.13291v1) [cs.CV]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.13291Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-28-2">2. Impact of Dataset on Acoustic Models for Automatic Speech Recognition
+</h2>
+
+Title: [Impact of Dataset on Acoustic Models for Automatic Speech Recognition](https://arxiv.org/abs/2203.13590)
+
+Authors: [Siddhesh Singh](https://arxiv.org/search/cs?searchtype=author&query=Singh%2C+S)
+
+> In Automatic Speech Recognition, GMM-HMM had been widely used for acoustic modelling. With the current advancement of deep learning, the Gaussian Mixture Model (GMM) from acoustic models has been replaced with Deep Neural Network, namely DNN-HMM Acoustic Models. The GMM models are widely used to create the alignments of the training data for the hybrid deep neural network model, thus making it an important task to create accurate alignments. Many factors such as training dataset size, training data augmentation, model hyperparameters, etc., affect the model learning. Traditionally in machine learning, larger datasets tend to have better performance, while smaller datasets tend to trigger over-fitting. The collection of speech data and their accurate transcriptions is a significant challenge that varies over different languages, and in most cases, it might be limited to big organizations. Moreover, in the case of available large datasets, training a model using such data requires additional time and computing resources, which may not be available. While the data about the accuracy of state-of-the-art ASR models on open-source datasets are published, the study about the impact of the size of a dataset on acoustic models is not readily available. This work aims to investigate the impact of dataset size variations on the performance of various GMM-HMM Acoustic Models and their respective computational costs.
+
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL); Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2203.13590](https://arxiv.org/abs/2203.13590) [cs.LG]** |
+|           | (or **[arXiv:2203.13590v1](https://arxiv.org/abs/2203.13590v1) [cs.LG]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.13590Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-28-3">3. DeLoRes: Decorrelating Latent Spaces for Low-Resource Audio Representation Learning
+</h2>
+
+Title: [DeLoRes: Decorrelating Latent Spaces for Low-Resource Audio Representation Learning](https://arxiv.org/abs/2203.13628)
+
+Authors: [Sreyan Ghosh](https://arxiv.org/search/cs?searchtype=author&query=Ghosh%2C+S), [Ashish Seth](https://arxiv.org/search/cs?searchtype=author&query=Seth%2C+A), [S Umesh](https://arxiv.org/search/cs?searchtype=author&query=Umesh%2C+S)
+
+> Inspired by the recent progress in self-supervised learning for computer vision, in this paper, through the DeLoRes learning framework, we introduce two new general-purpose audio representation learning approaches, the DeLoRes-S and DeLoRes-M. Our main objective is to make our network learn representations in a resource-constrained setting (both data and compute), that can generalize well across a diverse set of downstream tasks. Inspired from the Barlow Twins objective function, we propose to learn embeddings that are invariant to distortions of an input audio sample, while making sure that they contain non-redundant information about the sample. To achieve this, we measure the cross-correlation matrix between the outputs of two identical networks fed with distorted versions of an audio segment sampled from an audio file and make it as close to the identity matrix as possible. We call this the DeLoRes learning framework, which we employ in different fashions with the DeLoRes-S and DeLoRes-M. We use a combination of a small subset of the large-scale AudioSet dataset and FSD50K for self-supervised learning and are able to learn with less than half the parameters compared to state-of-the-art algorithms. For evaluation, we transfer these learned representations to 11 downstream classification tasks, including speech, music, and animal sounds, and achieve state-of-the-art results on 7 out of 11 tasks on linear evaluation with DeLoRes-M and show competitive results with DeLoRes-S, even when pre-trained using only a fraction of the total data when compared to prior art. Our transfer learning evaluation setup also shows extremely competitive results for both DeLoRes-S and DeLoRes-M, with DeLoRes-M achieving state-of-the-art in 4 tasks.
+
+| Comments: | Submitted to IEEE JSTSP Special Issue on Self-Supervised Learning for Speech and Audio Processing |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Sound (cs.SD)**; Computation and Language (cs.CL); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2203.13628](https://arxiv.org/abs/2203.13628) [cs.SD]** |
+|           | (or **[arXiv:2203.13628v1](https://arxiv.org/abs/2203.13628v1) [cs.SD]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.13628Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-28-4">4. Chain-based Discriminative Autoencoders for Speech Recognition
+</h2>
+
+Title: [Chain-based Discriminative Autoencoders for Speech Recognition](https://arxiv.org/abs/2203.13687)
+
+Authors: [Hung-Shin Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+H), [Pin-Tuan Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+P), [Yao-Fei Cheng](https://arxiv.org/search/cs?searchtype=author&query=Cheng%2C+Y), [Hsin-Min Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+H)
+
+> In our previous work, we proposed a discriminative autoencoder (DcAE) for speech recognition. DcAE combines two training schemes into one. First, since DcAE aims to learn encoder-decoder mappings, the squared error between the reconstructed speech and the input speech is minimized. Second, in the code layer, frame-based phonetic embeddings are obtained by minimizing the categorical cross-entropy between ground truth labels and predicted triphone-state scores. DcAE is developed based on the Kaldi toolkit by treating various TDNN models as encoders. In this paper, we further propose three new versions of DcAE. First, a new objective function that considers both categorical cross-entropy and mutual information between ground truth and predicted triphone-state sequences is used. The resulting DcAE is called a chain-based DcAE (c-DcAE). For application to robust speech recognition, we further extend c-DcAE to hierarchical and parallel structures, resulting in hc-DcAE and pc-DcAE. In these two models, both the error between the reconstructed noisy speech and the input noisy speech and the error between the enhanced speech and the reference clean speech are taken into the objective function. Experimental results on the WSJ and Aurora-4 corpora show that our DcAE models outperform baseline systems.
+
+| Comments: | submitted to Interspeech 2022                                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Sound (cs.SD)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL); Machine Learning (cs.LG); Multimedia (cs.MM); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2203.13687](https://arxiv.org/abs/2203.13687) [cs.SD]** |
+|           | (or **[arXiv:2203.13687v1](https://arxiv.org/abs/2203.13687v1) [cs.SD]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.13687Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-28-5">5. Leveraging unsupervised and weakly-supervised data to improve direct speech-to-speech translation
+</h2>
+
+Title: [Leveraging unsupervised and weakly-supervised data to improve direct speech-to-speech translation](https://arxiv.org/abs/2203.13339)
+
+Authors: [Ye Jia](https://arxiv.org/search/cs?searchtype=author&query=Jia%2C+Y), [Yifan Ding](https://arxiv.org/search/cs?searchtype=author&query=Ding%2C+Y), [Ankur Bapna](https://arxiv.org/search/cs?searchtype=author&query=Bapna%2C+A), [Colin Cherry](https://arxiv.org/search/cs?searchtype=author&query=Cherry%2C+C), [Yu Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Y), [Alexis Conneau](https://arxiv.org/search/cs?searchtype=author&query=Conneau%2C+A), [Nobuyuki Morioka](https://arxiv.org/search/cs?searchtype=author&query=Morioka%2C+N)
+
+> End-to-end speech-to-speech translation (S2ST) without relying on intermediate text representations is a rapidly emerging frontier of research. Recent works have demonstrated that the performance of such direct S2ST systems is approaching that of conventional cascade S2ST when trained on comparable datasets. However, in practice, the performance of direct S2ST is bounded by the availability of paired S2ST training data. In this work, we explore multiple approaches for leveraging much more widely available unsupervised and weakly-supervised speech and text data to improve the performance of direct S2ST based on Translatotron 2. With our most effective approaches, the average translation quality of direct S2ST on 21 language pairs on the CVSS-C corpus is improved by +13.6 BLEU (or +113% relatively), as compared to the previous state-of-the-art trained without additional data. The improvements on low-resource language are even more significant (+398% relatively on average). Our comparative studies suggest future research directions for S2ST and speech representation learning.
+
+| Comments: | Submitted to Interspeech 2022                                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG); Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2203.13339](https://arxiv.org/abs/2203.13339) [cs.CL]** |
+|           | (or **[arXiv:2203.13339v1](https://arxiv.org/abs/2203.13339v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.13339Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-28-6">6. Automatic Song Translation for Tonal Languages
+</h2>
+
+Title: [Automatic Song Translation for Tonal Languages](https://arxiv.org/abs/2203.13420)
+
+Authors: [Fenfei Guo](https://arxiv.org/search/cs?searchtype=author&query=Guo%2C+F), [Chen Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+C), [Zhirui Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Z), [Qixin He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+Q), [Kejun Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+K), [Jun Xie](https://arxiv.org/search/cs?searchtype=author&query=Xie%2C+J), [Jordan Boyd-Graber](https://arxiv.org/search/cs?searchtype=author&query=Boyd-Graber%2C+J)
+
+> This paper develops automatic song translation (AST) for tonal languages and addresses the unique challenge of aligning words' tones with melody of a song in addition to conveying the original meaning. We propose three criteria for effective AST -- preserving meaning, singability and intelligibility -- and design metrics for these criteria. We develop a new benchmark for English--Mandarin song translation and develop an unsupervised AST system, Guided AliGnment for Automatic Song Translation (GagaST), which combines pre-training with three decoding constraints. Both automatic and human evaluations show GagaST successfully balances semantics and singability.
+
+| Comments: | Accepted at Findings of ACL 2022, 15 pages, 4 Tables and 10 Figures |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2203.13420](https://arxiv.org/abs/2203.13420) [cs.CL]** |
+|           | (or **[arXiv:2203.13420v1](https://arxiv.org/abs/2203.13420v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.13420Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-28-7">7. Single Model Ensemble for Subword Regularized Models in Low-Resource Machine Translation
+</h2>
+
+Title: [Single Model Ensemble for Subword Regularized Models in Low-Resource Machine Translation](https://arxiv.org/abs/2203.13528)
+
+Authors: [Sho Takase](https://arxiv.org/search/cs?searchtype=author&query=Takase%2C+S), [Tatsuya Hiraoka](https://arxiv.org/search/cs?searchtype=author&query=Hiraoka%2C+T), [Naoaki Okazaki](https://arxiv.org/search/cs?searchtype=author&query=Okazaki%2C+N)
+
+> Subword regularizations use multiple subword segmentations during training to improve the robustness of neural machine translation models. In previous subword regularizations, we use multiple segmentations in the training process but use only one segmentation in the inference. In this study, we propose an inference strategy to address this discrepancy. The proposed strategy approximates the marginalized likelihood by using multiple segmentations including the most plausible segmentation and several sampled segmentations. Because the proposed strategy aggregates predictions from several segmentations, we can regard it as a single model ensemble that does not require any additional cost for training. Experimental results show that the proposed strategy improves the performance of models trained with subword regularization in low-resource machine translation tasks.
+
+| Comments: | Findings of ACL 2022                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2203.13528](https://arxiv.org/abs/2203.13528) [cs.CL]** |
+|           | (or **[arXiv:2203.13528v1](https://arxiv.org/abs/2203.13528v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.13528Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-28-8">8. Modeling Target-Side Morphology in Neural Machine Translation: A Comparison of Strategies
+</h2>
+
+Title: [Modeling Target-Side Morphology in Neural Machine Translation: A Comparison of Strategies](https://arxiv.org/abs/2203.13550)
+
+Authors: [Marion Weller-Di Marco](https://arxiv.org/search/cs?searchtype=author&query=Marco%2C+M+W), [Matthias Huck](https://arxiv.org/search/cs?searchtype=author&query=Huck%2C+M), [Alexander Fraser](https://arxiv.org/search/cs?searchtype=author&query=Fraser%2C+A)
+
+> Morphologically rich languages pose difficulties to machine translation. Machine translation engines that rely on statistical learning from parallel training data, such as state-of-the-art neural systems, face challenges especially with rich morphology on the output language side. Key challenges of rich target-side morphology in data-driven machine translation include: (1) A large amount of differently inflected word surface forms entails a larger vocabulary and thus data sparsity. (2) Some inflected forms of infrequent terms typically do not appear in the training corpus, which makes closed-vocabulary systems unable to generate these unobserved variants. (3) Linguistic agreement requires the system to correctly match the grammatical categories between inflected word forms in the output sentence, both in terms of target-side morpho-syntactic wellformedness and semantic adequacy with respect to the input. 
+> In this paper, we re-investigate two target-side linguistic processing techniques: a lemma-tag strategy and a linguistically informed word segmentation strategy. Our experiments are conducted on a English-German translation task under three training corpus conditions of different magnitudes. We find that a stronger Transformer baseline leaves less room for improvement than a shallow-RNN encoder-decoder model when translating in-domain. However, we find that linguistic modeling of target-side morphology does benefit the Transformer model when the same system is applied to out-of-domain input text. We also successfully apply our approach to English to Czech translation.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2203.13550](https://arxiv.org/abs/2203.13550) [cs.CL]** |
+|           | (or **[arXiv:2203.13550v1](https://arxiv.org/abs/2203.13550v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.13550Focus to learn more |
+
+
+
 
 
 
