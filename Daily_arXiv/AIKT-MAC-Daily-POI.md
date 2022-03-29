@@ -2,23 +2,38 @@
 
 # Index
 
+- [2022-03-29](#2022-03-29)
+  - [1. A Roadmap for Big Model](#2022-03-29-1)
+  
+  - [2. Listen, Adapt, Better WER: Source-free Single-utterance Test-time Adaptation for Automatic Speech Recognition](#2022-03-29-2)
+  
+  - [3. Large-scale Bilingual Language-Image Contrastive Learning](#2022-03-29-3)
+  
+  - [4. Specialized Document Embeddings for Aspect-based Similarity of Research Papers](#2022-03-29-4)
+  
+  - [5. Data Selection Curriculum for Neural Machine Translation](#2022-03-29-5)
+  
+  - [6. Metaphors in Pre-Trained Language Models: Probing and Generalization Across Datasets and Languages](#2022-03-29-6)
+  
+  - [7. Multilingual Simultaneous Speech Translation](#2022-03-29-7)
+  
 - [2022-03-28](#2022-03-28)
   - [1. Searching for fingerspelled content in American Sign Language](#2022-03-28-1)
-  
+
   - [2. Impact of Dataset on Acoustic Models for Automatic Speech Recognition](#2022-03-28-2)
-  
+
   - [3. DeLoRes: Decorrelating Latent Spaces for Low-Resource Audio Representation Learning](#2022-03-28-3)
-  
+
   - [4. Chain-based Discriminative Autoencoders for Speech Recognition](#2022-03-28-4)
-  
+
   - [5. Leveraging unsupervised and weakly-supervised data to improve direct speech-to-speech translation](#2022-03-28-5)
-  
+
   - [6. Automatic Song Translation for Tonal Languages](#2022-03-28-6)
-  
+
   - [7. Single Model Ensemble for Subword Regularized Models in Low-Resource Machine Translation](#2022-03-28-7)
-  
+
   - [8. Modeling Target-Side Morphology in Neural Machine Translation: A Comparison of Strategies](#2022-03-28-8)
-  
+
 - [2022-03-25](#2022-03-25)
   - [1. Vision-and-Language Navigation: A Survey of Tasks, Methods, and Future Directions](#2022-03-25-1)
 
@@ -158,6 +173,144 @@
 - [2022-02-28](#2022-02-28)
   - [1. Screening Gender Transfer in Neural Machine Translation](#2022-02-28-1)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2022-03-29
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-03-29-1">1. A Roadmap for Big Model
+</h2>
+
+Title: [A Roadmap for Big Model](https://arxiv.org/abs/2203.14101)
+
+Authors: [Sha Yuan](https://arxiv.org/search/cs?searchtype=author&query=Yuan%2C+S), [Hanyu Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+H), [Shuai Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+S), [Jiahong Leng](https://arxiv.org/search/cs?searchtype=author&query=Leng%2C+J), [Yangxiao Liang](https://arxiv.org/search/cs?searchtype=author&query=Liang%2C+Y), [Xiaozhi Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+X), [Jifan Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+J), [Xin Lv](https://arxiv.org/search/cs?searchtype=author&query=Lv%2C+X), [Zhou Shao](https://arxiv.org/search/cs?searchtype=author&query=Shao%2C+Z), [Jiaao He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+J), [Yankai Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+Y), [Xu Han](https://arxiv.org/search/cs?searchtype=author&query=Han%2C+X), [Zhenghao Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Z), [Ning Ding](https://arxiv.org/search/cs?searchtype=author&query=Ding%2C+N), [Yongming Rao](https://arxiv.org/search/cs?searchtype=author&query=Rao%2C+Y), [Yizhao Gao](https://arxiv.org/search/cs?searchtype=author&query=Gao%2C+Y), [Liang Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+L), [Ming Ding](https://arxiv.org/search/cs?searchtype=author&query=Ding%2C+M), [Cong Fang](https://arxiv.org/search/cs?searchtype=author&query=Fang%2C+C), [Yisen Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Y), [Mingsheng Long](https://arxiv.org/search/cs?searchtype=author&query=Long%2C+M), [Jing Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+J), [Yinpeng Dong](https://arxiv.org/search/cs?searchtype=author&query=Dong%2C+Y), [Tianyu Pang](https://arxiv.org/search/cs?searchtype=author&query=Pang%2C+T), [Peng Cui](https://arxiv.org/search/cs?searchtype=author&query=Cui%2C+P), [Lingxiao Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+L), [Zheng Liang](https://arxiv.org/search/cs?searchtype=author&query=Liang%2C+Z), [Huawei Shen](https://arxiv.org/search/cs?searchtype=author&query=Shen%2C+H), [Hui Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+H), [Quanshi Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Q), [Qingxiu Dong](https://arxiv.org/search/cs?searchtype=author&query=Dong%2C+Q), [Zhixing Tan](https://arxiv.org/search/cs?searchtype=author&query=Tan%2C+Z), [Mingxuan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+M), [Shuo Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+S), [Long Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+L), [Haoran Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+H), [Junwei Bao](https://arxiv.org/search/cs?searchtype=author&query=Bao%2C+J), [Yingwei Pan](https://arxiv.org/search/cs?searchtype=author&query=Pan%2C+Y), [Weinan Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+W), [Zhou Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+Z), [Rui Yan](https://arxiv.org/search/cs?searchtype=author&query=Yan%2C+R), [Chence Shi](https://arxiv.org/search/cs?searchtype=author&query=Shi%2C+C), [Minghao Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+M), [Zuobai Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Z), [Guoqiang Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+G), [Xiang Pan](https://arxiv.org/search/cs?searchtype=author&query=Pan%2C+X), [Mengjie Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+M), [Xiaoyu Chu](https://arxiv.org/search/cs?searchtype=author&query=Chu%2C+X), [Zijun Yao](https://arxiv.org/search/cs?searchtype=author&query=Yao%2C+Z), [Fangwei Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+F), [Shulin Cao](https://arxiv.org/search/cs?searchtype=author&query=Cao%2C+S), [Weicheng Xue](https://arxiv.org/search/cs?searchtype=author&query=Xue%2C+W), [Zixuan Ma](https://arxiv.org/search/cs?searchtype=author&query=Ma%2C+Z), [Zhengyan Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Z), [Shengding Hu](https://arxiv.org/search/cs?searchtype=author&query=Hu%2C+S), [Yujia Qin](https://arxiv.org/search/cs?searchtype=author&query=Qin%2C+Y), [Chaojun Xiao](https://arxiv.org/search/cs?searchtype=author&query=Xiao%2C+C), [Zheni Zeng](https://arxiv.org/search/cs?searchtype=author&query=Zeng%2C+Z), [Ganqu Cui](https://arxiv.org/search/cs?searchtype=author&query=Cui%2C+G), [Weize Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+W), [Weilin Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+W), [Yuan Yao](https://arxiv.org/search/cs?searchtype=author&query=Yao%2C+Y), [Peng Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+P), [Wenzhao Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng%2C+W), [Wenliang Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+W), [Ziyi Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Z), [Borui Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+B), [Nanyi Fei](https://arxiv.org/search/cs?searchtype=author&query=Fei%2C+N), [Anwen Hu](https://arxiv.org/search/cs?searchtype=author&query=Hu%2C+A), [Zenan Ling](https://arxiv.org/search/cs?searchtype=author&query=Ling%2C+Z), [Haoyang Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+H), [Boxi Cao](https://arxiv.org/search/cs?searchtype=author&query=Cao%2C+B), [Xianpei Han](https://arxiv.org/search/cs?searchtype=author&query=Han%2C+X), [Weidong Zhan](https://arxiv.org/search/cs?searchtype=author&query=Zhan%2C+W), [Baobao Chang](https://arxiv.org/search/cs?searchtype=author&query=Chang%2C+B), [Hao Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+H), [Jiawen Deng](https://arxiv.org/search/cs?searchtype=author&query=Deng%2C+J), [Juanzi Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+J), [Lei Hou](https://arxiv.org/search/cs?searchtype=author&query=Hou%2C+L), [Xigang Cao](https://arxiv.org/search/cs?searchtype=author&query=Cao%2C+X), [Jidong Zhai](https://arxiv.org/search/cs?searchtype=author&query=Zhai%2C+J), [Zhiyuan Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Z), [Maosong Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+M), [Jiwen Lu](https://arxiv.org/search/cs?searchtype=author&query=Lu%2C+J), [Zhiwu Lu](https://arxiv.org/search/cs?searchtype=author&query=Lu%2C+Z), [Qin Jin](https://arxiv.org/search/cs?searchtype=author&query=Jin%2C+Q), [Ruihua Song](https://arxiv.org/search/cs?searchtype=author&query=Song%2C+R), [Ji-Rong Wen](https://arxiv.org/search/cs?searchtype=author&query=Wen%2C+J), [Zhouchen Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+Z), [Liwei Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+L), [Hang Su](https://arxiv.org/search/cs?searchtype=author&query=Su%2C+H), [Jun Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+J), [Zhifang Sui](https://arxiv.org/search/cs?searchtype=author&query=Sui%2C+Z), [Jiajun Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+J), [Yang Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Y), [Xiaodong He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+X), [Minlie Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+M), [Jian Tang](https://arxiv.org/search/cs?searchtype=author&query=Tang%2C+J), [Jie Tang](https://arxiv.org/search/cs?searchtype=author&query=Tang%2C+J)
+
+> With the rapid development of deep learning, training Big Models (BMs) for multiple downstream tasks becomes a popular paradigm. Researchers have achieved various outcomes in the construction of BMs and the BM application in many fields. At present, there is a lack of research work that sorts out the overall progress of BMs and guides the follow-up research. In this paper, we cover not only the BM technologies themselves but also the prerequisites for BM training and applications with BMs, dividing the BM review into four parts: Resource, Models, Key Technologies and Application. We introduce 16 specific BM-related topics in those four parts, they are Data, Knowledge, Computing System, Parallel Training System, Language Model, Vision Model, Multi-modal Model, Theory&Interpretability, Commonsense Reasoning, Reliability&Security, Governance, Evaluation, Machine Translation, Text Generation, Dialogue and Protein Research. In each topic, we summarize clearly the current studies and propose some future research directions. At the end of this paper, we conclude the further development of BMs in a more general view.
+
+| Subjects: | **Machine Learning (cs.LG)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2203.14101](https://arxiv.org/abs/2203.14101) [cs.LG]** |
+|           | (or **[arXiv:2203.14101v1](https://arxiv.org/abs/2203.14101v1) [cs.LG]** for this version) |
+
+
+
+
+
+<h2 id="2022-03-29-2">2. Listen, Adapt, Better WER: Source-free Single-utterance Test-time Adaptation for Automatic Speech Recognition
+</h2>
+
+Title: [Listen, Adapt, Better WER: Source-free Single-utterance Test-time Adaptation for Automatic Speech Recognition](https://arxiv.org/abs/2203.14222)
+
+Authors: [Guan-Ting Lin](https://arxiv.org/search/eess?searchtype=author&query=Lin%2C+G), [Shang-Wen Li](https://arxiv.org/search/eess?searchtype=author&query=Li%2C+S), [Hung-yi Lee](https://arxiv.org/search/eess?searchtype=author&query=Lee%2C+H)
+
+> Although deep learning-based end-to-end Automatic Speech Recognition (ASR) has shown remarkable performance in recent years, it suffers severe performance regression on test samples drawn from different data distributions. Test-time Adaptation (TTA), previously explored in the computer vision area, aims to adapt the model trained on source domains to yield better predictions for test samples, often out-of-domain, without accessing the source data. Here, we propose the Single-Utterance Test-time Adaptation (SUTA) framework for ASR, which is the first TTA study in speech area to our best knowledge. The single-utterance TTA is a more realistic setting that does not assume test data are sampled from identical distribution and does not delay on-demand inference due to pre-collection for the batch of adaptation data. SUTA consists of unsupervised objectives with an efficient adaptation strategy. The empirical results demonstrate that SUTA effectively improves the performance of the source ASR model evaluated on multiple out-of-domain target corpora and in-domain test samples.
+
+| Comments: | Submitted to Interspeech 2022                                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Audio and Speech Processing (eess.AS)**; Computation and Language (cs.CL); Sound (cs.SD) |
+| Cite as:  | **[arXiv:2203.14222](https://arxiv.org/abs/2203.14222) [eess.AS]** |
+|           | (or **[arXiv:2203.14222v1](https://arxiv.org/abs/2203.14222v1) [eess.AS]** for this version) |
+
+
+
+
+
+<h2 id="2022-03-29-3">3. Large-scale Bilingual Language-Image Contrastive Learning
+</h2>
+
+Title: [Large-scale Bilingual Language-Image Contrastive Learning](https://arxiv.org/abs/2203.14463)
+
+Authors: [Byungsoo Ko](https://arxiv.org/search/cs?searchtype=author&query=Ko%2C+B), [Geonmo Gu](https://arxiv.org/search/cs?searchtype=author&query=Gu%2C+G)
+
+> This paper is a technical report to share our experience and findings building a Korean and English bilingual multimodal model. While many of the multimodal datasets focus on English and multilingual multimodal research uses machine-translated texts, employing such machine-translated texts is limited to describing unique expressions, cultural information, and proper noun in languages other than English. In this work, we collect 1.1 billion image-text pairs (708 million Korean and 476 million English) and train a bilingual multimodal model named KELIP. We introduce simple yet effective training schemes, including MAE pre-training and multi-crop augmentation. Extensive experiments demonstrate that a model trained with such training schemes shows competitive performance in both languages. Moreover, we discuss multimodal-related research questions: 1) strong augmentation-based methods can distract the model from learning proper multimodal relations; 2) training multimodal model without cross-lingual relation can learn the relation via visual semantics; 3) our bilingual KELIP can capture cultural differences of visual semantics for the same meaning of words; 4) a large-scale multimodal model can be used for multimodal feature analogy. We hope that this work will provide helpful experience and findings for future research. We provide an open-source pre-trained KELIP.
+
+| Comments: | Accepted by ICLRW2022                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2203.14463](https://arxiv.org/abs/2203.14463) [cs.CV]** |
+|           | (or **[arXiv:2203.14463v1](https://arxiv.org/abs/2203.14463v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2022-03-29-4">4. Specialized Document Embeddings for Aspect-based Similarity of Research Papers
+</h2>
+
+Title: [Specialized Document Embeddings for Aspect-based Similarity of Research Papers](https://arxiv.org/abs/2203.14541)
+
+Authors: [Malte Ostendorff](https://arxiv.org/search/cs?searchtype=author&query=Ostendorff%2C+M), [Till Blume](https://arxiv.org/search/cs?searchtype=author&query=Blume%2C+T), [Terry Ruas](https://arxiv.org/search/cs?searchtype=author&query=Ruas%2C+T), [Bela Gipp](https://arxiv.org/search/cs?searchtype=author&query=Gipp%2C+B), [Georg Rehm](https://arxiv.org/search/cs?searchtype=author&query=Rehm%2C+G)
+
+> Document embeddings and similarity measures underpin content-based recommender systems, whereby a document is commonly represented as a single generic embedding. However, similarity computed on single vector representations provides only one perspective on document similarity that ignores which aspects make two documents alike. To address this limitation, aspect-based similarity measures have been developed using document segmentation or pairwise multi-class document classification. While segmentation harms the document coherence, the pairwise classification approach scales poorly to large scale corpora. In this paper, we treat aspect-based similarity as a classical vector similarity problem in aspect-specific embedding spaces. We represent a document not as a single generic embedding but as multiple specialized embeddings. Our approach avoids document segmentation and scales linearly w.r.t.the corpus size. In an empirical study, we use the Papers with Code corpus containing 157,606 research papers and consider the task, method, and dataset of the respective research papers as their aspects. We compare and analyze three generic document embeddings, six specialized document embeddings and a pairwise classification baseline in the context of research paper recommendations. As generic document embeddings, we consider FastText, SciBERT, and SPECTER. To compute the specialized document embeddings, we compare three alternative methods inspired by retrofitting, fine-tuning, and Siamese networks. In our experiments, Siamese SciBERT achieved the highest scores. Additional analyses indicate an implicit bias of the generic document embeddings towards the dataset aspect and against the method aspect of each research paper. Our approach of aspect-based document embeddings mitigates potential risks arising from implicit biases by making them explicit.
+
+| Comments: | Accepted for publication at JCDL 2022                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Information Retrieval (cs.IR)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2203.14541](https://arxiv.org/abs/2203.14541) [cs.IR]** |
+|           | (or **[arXiv:2203.14541v1](https://arxiv.org/abs/2203.14541v1) [cs.IR]** for this version) |
+
+
+
+
+
+<h2 id="2022-03-29-5">5. Data Selection Curriculum for Neural Machine Translation
+</h2>
+
+Title: [Data Selection Curriculum for Neural Machine Translation](https://arxiv.org/abs/2203.13867)
+
+Authors: [Tasnim Mohiuddin](https://arxiv.org/search/cs?searchtype=author&query=Mohiuddin%2C+T), [Philipp Koehn](https://arxiv.org/search/cs?searchtype=author&query=Koehn%2C+P), [Vishrav Chaudhary](https://arxiv.org/search/cs?searchtype=author&query=Chaudhary%2C+V), [James Cross](https://arxiv.org/search/cs?searchtype=author&query=Cross%2C+J), [Shruti Bhosale](https://arxiv.org/search/cs?searchtype=author&query=Bhosale%2C+S), [Shafiq Joty](https://arxiv.org/search/cs?searchtype=author&query=Joty%2C+S)
+
+> Neural Machine Translation (NMT) models are typically trained on heterogeneous data that are concatenated and randomly shuffled. However, not all of the training data are equally useful to the model. Curriculum training aims to present the data to the NMT models in a meaningful order. In this work, we introduce a two-stage curriculum training framework for NMT where we fine-tune a base NMT model on subsets of data, selected by both deterministic scoring using pre-trained methods and online scoring that considers prediction scores of the emerging NMT model. Through comprehensive experiments on six language pairs comprising low- and high-resource languages from WMT'21, we have shown that our curriculum strategies consistently demonstrate better quality (up to +2.2 BLEU improvement) and faster convergence (approximately 50% fewer updates).
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2203.13867](https://arxiv.org/abs/2203.13867) [cs.CL]** |
+|           | (or **[arXiv:2203.13867v1](https://arxiv.org/abs/2203.13867v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.13867Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-29-6">6. Metaphors in Pre-Trained Language Models: Probing and Generalization Across Datasets and Languages
+</h2>
+
+Title: [Metaphors in Pre-Trained Language Models: Probing and Generalization Across Datasets and Languages](https://arxiv.org/abs/2203.14139)
+
+Authors: [Ehsan Aghazadeh](https://arxiv.org/search/cs?searchtype=author&query=Aghazadeh%2C+E), [Mohsen Fayyaz](https://arxiv.org/search/cs?searchtype=author&query=Fayyaz%2C+M), [Yadollah Yaghoobzadeh](https://arxiv.org/search/cs?searchtype=author&query=Yaghoobzadeh%2C+Y)
+
+> Human languages are full of metaphorical expressions. Metaphors help people understand the world by connecting new concepts and domains to more familiar ones. Large pre-trained language models (PLMs) are therefore assumed to encode metaphorical knowledge useful for NLP systems. In this paper, we investigate this hypothesis for PLMs, by probing metaphoricity information in their encodings, and by measuring the cross-lingual and cross-dataset generalization of this information. We present studies in multiple metaphor detection datasets and in four languages (i.e., English, Spanish, Russian, and Farsi). Our extensive experiments suggest that contextual representations in PLMs do encode metaphorical knowledge, and mostly in their middle layers. The knowledge is transferable between languages and datasets, especially when the annotation is consistent across training and testing sets. Our findings give helpful insights for both cognitive and NLP scientists.
+
+| Comments: | Accepted to ACL 2022 (main conference)                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2203.14139](https://arxiv.org/abs/2203.14139) [cs.CL]** |
+|           | (or **[arXiv:2203.14139v1](https://arxiv.org/abs/2203.14139v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-03-29-7">7. Multilingual Simultaneous Speech Translation
+</h2>
+
+Title: [Multilingual Simultaneous Speech Translation](https://arxiv.org/abs/2203.14835)
+
+Authors: [Shashank Subramanya](https://arxiv.org/search/cs?searchtype=author&query=Subramanya%2C+S), [Jan Niehues](https://arxiv.org/search/cs?searchtype=author&query=Niehues%2C+J)
+
+> Applications designed for simultaneous speech translation during events such as conferences or meetings need to balance quality and lag while displaying translated text to deliver a good user experience. One common approach to building online spoken language translation systems is by leveraging models built for offline speech translation. Based on a technique to adapt end-to-end monolingual models, we investigate multilingual models and different architectures (end-to-end and cascade) on the ability to perform online speech translation. On the multilingual TEDx corpus, we show that the approach generalizes to different architectures. We see similar gains in latency reduction (40% relative) across languages and architectures. However, the end-to-end architecture leads to smaller translation quality losses after adapting to the online model. Furthermore, the approach even scales to zero-shot directions.
+
+| Comments: | Interspeech 2022                                             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2203.14835](https://arxiv.org/abs/2203.14835) [cs.CL]** |
+|           | (or **[arXiv:2203.14835v1](https://arxiv.org/abs/2203.14835v1) [cs.CL]** for this version) |
+
+
 
 
 
