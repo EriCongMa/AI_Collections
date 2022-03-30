@@ -2,21 +2,40 @@
 
 # Index
 
+- [2022-03-30](#2022-03-30)
+  - [1. Word Discovery in Visually Grounded, Self-Supervised Speech Models](#2022-03-30-1)
+  
+  - [2. Shifted Chunk Encoder for Transformer Based Streaming End-to-End ASR](#2022-03-30-2)
+  
+  - [3. Interactive Audio-text Representation for Automated Audio Captioning with Contrastive Learning](#2022-03-30-3)
+  
+  - [4. LightHuBERT: Lightweight and Configurable Speech Representation Learning with Once-for-All Hidden-Unit BERT](#2022-03-30-4)
+  
+  - [5. Can NMT Understand Me? Towards Perturbation-based Evaluation of NMT Models for Code Generation](#2022-03-30-5)
+  
+  - [6. Speech Segmentation Optimization using Segmented Bilingual Speech Corpus for End-to-end Speech Translation](#2022-03-30-6)
+  
+  - [7. Integrate Lattice-Free MMI into End-to-End Speech Recognition](#2022-03-30-7)
+  
+  - [8. On Decoding Strategies for Neural Text Generators](#2022-03-30-8)
+  
+  - [9. Streaming parallel transducer beam search with fast-slow cascaded encoders](#2022-03-30-9)
+  
 - [2022-03-29](#2022-03-29)
   - [1. A Roadmap for Big Model](#2022-03-29-1)
-  
+
   - [2. Listen, Adapt, Better WER: Source-free Single-utterance Test-time Adaptation for Automatic Speech Recognition](#2022-03-29-2)
-  
+
   - [3. Large-scale Bilingual Language-Image Contrastive Learning](#2022-03-29-3)
-  
+
   - [4. Specialized Document Embeddings for Aspect-based Similarity of Research Papers](#2022-03-29-4)
-  
+
   - [5. Data Selection Curriculum for Neural Machine Translation](#2022-03-29-5)
-  
+
   - [6. Metaphors in Pre-Trained Language Models: Probing and Generalization Across Datasets and Languages](#2022-03-29-6)
-  
+
   - [7. Multilingual Simultaneous Speech Translation](#2022-03-29-7)
-  
+
 - [2022-03-28](#2022-03-28)
   - [1. Searching for fingerspelled content in American Sign Language](#2022-03-28-1)
 
@@ -173,6 +192,188 @@
 - [2022-02-28](#2022-02-28)
   - [1. Screening Gender Transfer in Neural Machine Translation](#2022-02-28-1)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2022-03-30
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-03-30-1">1. Word Discovery in Visually Grounded, Self-Supervised Speech Models
+</h2>
+
+Title: [Word Discovery in Visually Grounded, Self-Supervised Speech Models](https://arxiv.org/abs/2203.15081)
+
+Authors: [Puyuan Peng](https://arxiv.org/search/eess?searchtype=author&query=Peng%2C+P), [David Harwath](https://arxiv.org/search/eess?searchtype=author&query=Harwath%2C+D)
+
+> We present a method for visually-grounded spoken term discovery. After training either a HuBERT or wav2vec2.0 model to associate spoken captions with natural images, we show that powerful word segmentation and clustering capability emerges within the model's self-attention heads. Our experiments reveal that this ability is not present to nearly the same extent in the base HuBERT and wav2vec2.0 models, suggesting that the visual grounding task is a crucial component of the word discovery capability we observe. We also evaluate our method on the Buckeye word segmentation and ZeroSpeech spoken term discovery tasks, where we outperform all currently published methods on several metrics.
+
+| Comments: | submitted to Interspeech 2022                                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Audio and Speech Processing (eess.AS)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL); Sound (cs.SD) |
+| Cite as:  | **[arXiv:2203.15081](https://arxiv.org/abs/2203.15081) [eess.AS]** |
+|           | (or **[arXiv:2203.15081v1](https://arxiv.org/abs/2203.15081v1) [eess.AS]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.15081Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-30-2">2. Shifted Chunk Encoder for Transformer Based Streaming End-to-End ASR
+</h2>
+
+Title: [Shifted Chunk Encoder for Transformer Based Streaming End-to-End ASR](https://arxiv.org/abs/2203.15206)
+
+Authors: [Fangyuan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+F), [Bo Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+B)
+
+> Currently, there are mainly three Transformer encoder based streaming End to End (E2E) Automatic Speech Recognition (ASR) approaches, namely time-restricted methods, chunk-wise methods, and memory based methods. However, all of them have some limitations in aspects of global context modeling, linear computational complexity, and model parallelism. In this work, we aim to build a single model to achieve the benefits of all the three aspects for streaming E2E ASR. Particularly, we propose to use a shifted chunk mechanism instead of the conventional chunk mechanism for streaming Transformer and Conformer. This shifted chunk mechanism can significantly enhance modeling power through allowing chunk self-attention to capture global context across local chunks, while keeping linear computational complexity and parallel trainable. We name the Shifted Chunk Transformer and Conformer as SChunk-Transofromer and SChunk-Conformer, respectively. And we verify their performance on the widely used AISHELL-1 benckmark. Experiments show that the SChunk-Transformer and SChunk-Conformer achieve CER 6.43% and 5.77%, respectively. That surpasses the existing chunk-wise and memory based methods by a large margin, and is competitive even compared with the state-of-the-art time-restricted methods which have quadratic computational complexity.
+
+| Subjects: | **Sound (cs.SD)**; Computation and Language (cs.CL); Audio and Speech Processing (eess.AS) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2203.15206](https://arxiv.org/abs/2203.15206) [cs.SD]** |
+|           | (or **[arXiv:2203.15206v1](https://arxiv.org/abs/2203.15206v1) [cs.SD]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.15206Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-30-3">3. Interactive Audio-text Representation for Automated Audio Captioning with Contrastive Learning
+</h2>
+
+Title: [Interactive Audio-text Representation for Automated Audio Captioning with Contrastive Learning](https://arxiv.org/abs/2203.15526)
+
+Authors: [Chen Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+C), [Nana Hou](https://arxiv.org/search/cs?searchtype=author&query=Hou%2C+N), [Yuchen Hu](https://arxiv.org/search/cs?searchtype=author&query=Hu%2C+Y), [Heqing Zou](https://arxiv.org/search/cs?searchtype=author&query=Zou%2C+H), [Xiaofeng Qi](https://arxiv.org/search/cs?searchtype=author&query=Qi%2C+X), [Eng Siong Chng](https://arxiv.org/search/cs?searchtype=author&query=Chng%2C+E+S)
+
+> Automated Audio captioning (AAC) is a cross-modal task that generates natural language to describe the content of input audio. Most prior works usually extract single-modality acoustic features and are therefore sub-optimal for the cross-modal decoding task. In this work, we propose a novel AAC system called CLIP-AAC to learn interactive cross-modality representation with both acoustic and textual information. Specifically, the proposed CLIP-AAC introduces an audio-head and a text-head in the pre-trained encoder to extract audio-text information. Furthermore, we also apply contrastive learning to narrow the domain difference by learning the correspondence between the audio signal and its paired captions. Experimental results show that the proposed CLIP-AAC approach surpasses the best baseline by a significant margin on the Clotho dataset in terms of NLP evaluation metrics. The ablation study indicates that both the pre-trained model and contrastive learning contribute to the performance gain of the AAC model.
+
+| Comments: | Submitted to Interspeech 2022                                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Sound (cs.SD)**; Computation and Language (cs.CL); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2203.15526](https://arxiv.org/abs/2203.15526) [cs.SD]** |
+|           | (or **[arXiv:2203.15526v1](https://arxiv.org/abs/2203.15526v1) [cs.SD]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.15526Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-30-4">4. LightHuBERT: Lightweight and Configurable Speech Representation Learning with Once-for-All Hidden-Unit BERT
+</h2>
+
+Title: [LightHuBERT: Lightweight and Configurable Speech Representation Learning with Once-for-All Hidden-Unit BERT](https://arxiv.org/abs/2203.15610)
+
+Authors: [Rui Wang](https://arxiv.org/search/eess?searchtype=author&query=Wang%2C+R), [Qibing Bai](https://arxiv.org/search/eess?searchtype=author&query=Bai%2C+Q), [Junyi Ao](https://arxiv.org/search/eess?searchtype=author&query=Ao%2C+J), [Long Zhou](https://arxiv.org/search/eess?searchtype=author&query=Zhou%2C+L), [Zhixiang Xiong](https://arxiv.org/search/eess?searchtype=author&query=Xiong%2C+Z), [Zhihua Wei](https://arxiv.org/search/eess?searchtype=author&query=Wei%2C+Z), [Yu Zhang](https://arxiv.org/search/eess?searchtype=author&query=Zhang%2C+Y), [Tom Ko](https://arxiv.org/search/eess?searchtype=author&query=Ko%2C+T), [Haizhou Li](https://arxiv.org/search/eess?searchtype=author&query=Li%2C+H)
+
+> Self-supervised speech representation learning has shown promising results in various speech processing tasks. However, the pre-trained models, e.g., HuBERT, are storage-intensive Transformers, limiting their scope of applications under low-resource settings. To this end, we propose LightHuBERT, a once-for-all Transformer compression framework, to find the desired architectures automatically by pruning structured parameters. More precisely, we create a Transformer-based supernet that is nested with thousands of weight-sharing subnets and design a two-stage distillation strategy to leverage the contextualized latent representations from HuBERT. Experiments on automatic speech recognition (ASR) and the SUPERB benchmark show the proposed LightHuBERT enables over 109 architectures concerning the embedding dimension, attention dimension, head number, feed-forward network ratio, and network depth. LightHuBERT outperforms the original HuBERT on ASR and five SUPERB tasks with the HuBERT size, achieves comparable performance to the teacher model in most tasks with a reduction of 29% parameters, and obtains a 3.5× compression ratio in three SUPERB tasks, e.g., automatic speaker verification, keyword spotting, and intent classification, with a slight accuracy loss. The code and pre-trained models are available at [this https URL](https://github.com/mechanicalsea/lighthubert).
+
+| Comments: | 5 pages, 2 figures, submitted to Insterspeech 2022           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Audio and Speech Processing (eess.AS)**; Computation and Language (cs.CL); Machine Learning (cs.LG); Sound (cs.SD) |
+| Cite as:  | **[arXiv:2203.15610](https://arxiv.org/abs/2203.15610) [eess.AS]** |
+|           | (or **[arXiv:2203.15610v1](https://arxiv.org/abs/2203.15610v1) [eess.AS]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.15610Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-30-5">5. Can NMT Understand Me? Towards Perturbation-based Evaluation of NMT Models for Code Generation
+</h2>
+
+Title: [Can NMT Understand Me? Towards Perturbation-based Evaluation of NMT Models for Code Generation](https://arxiv.org/abs/2203.15319)
+
+Authors: [Pietro Liguori](https://arxiv.org/search/cs?searchtype=author&query=Liguori%2C+P), [Cristina Improta](https://arxiv.org/search/cs?searchtype=author&query=Improta%2C+C), [Simona De Vivo](https://arxiv.org/search/cs?searchtype=author&query=De+Vivo%2C+S), [Roberto Natella](https://arxiv.org/search/cs?searchtype=author&query=Natella%2C+R), [Bojan Cukic](https://arxiv.org/search/cs?searchtype=author&query=Cukic%2C+B), [Domenico Cotroneo](https://arxiv.org/search/cs?searchtype=author&query=Cotroneo%2C+D)
+
+> Neural Machine Translation (NMT) has reached a level of maturity to be recognized as the premier method for the translation between different languages and aroused interest in different research areas, including software engineering. A key step to validate the robustness of the NMT models consists in evaluating the performance of the models on adversarial inputs, i.e., inputs obtained from the original ones by adding small amounts of perturbation. However, when dealing with the specific task of the code generation (i.e., the generation of code starting from a description in natural language), it has not yet been defined an approach to validate the robustness of the NMT models. In this work, we address the problem by identifying a set of perturbations and metrics tailored for the robustness assessment of such models. We present a preliminary experimental evaluation, showing what type of perturbations affect the model the most and deriving useful insights for future directions.
+
+| Comments:    | Paper accepted for publication in the proceedings of The 1st Intl. Workshop on Natural Language-based Software Engineering (NLBSE) to be held with ICSE 2022 |
+| ------------ | ------------------------------------------------------------ |
+| Subjects:    | **Computation and Language (cs.CL)**; Machine Learning (cs.LG); Software Engineering (cs.SE) |
+| Cite as:     | **[arXiv:2203.15319](https://arxiv.org/abs/2203.15319) [cs.CL]** |
+|              | (or **[arXiv:2203.15319v1](https://arxiv.org/abs/2203.15319v1) [cs.CL]** for this version) |
+|              | https://doi.org/10.48550/arXiv.2203.15319Focus to learn more |
+| Related DOI: | https://doi.org/10.1145/3528588.3528653Focus to learn more   |
+
+
+
+
+
+<h2 id="2022-03-30-6">6. Speech Segmentation Optimization using Segmented Bilingual Speech Corpus for End-to-end Speech Translation
+</h2>
+
+Title: [Speech Segmentation Optimization using Segmented Bilingual Speech Corpus for End-to-end Speech Translation](https://arxiv.org/abs/2203.15479)
+
+Authors: [Ryo Fukuda](https://arxiv.org/search/cs?searchtype=author&query=Fukuda%2C+R), [Katsuhito Sudoh](https://arxiv.org/search/cs?searchtype=author&query=Sudoh%2C+K), [Satoshi Nakamura](https://arxiv.org/search/cs?searchtype=author&query=Nakamura%2C+S)
+
+> Speech segmentation, which splits long speech into short segments, is essential for speech translation (ST). Popular VAD tools like WebRTC VAD have generally relied on pause-based segmentation. Unfortunately, pauses in speech do not necessarily match sentence boundaries, and sentences can be connected by a very short pause that is difficult to detect by VAD. In this study, we propose a speech segmentation method using a binary classification model trained using a segmented bilingual speech corpus. We also propose a hybrid method that combines VAD and the above speech segmentation method. Experimental results revealed that the proposed method is more suitable for cascade and end-to-end ST systems than conventional segmentation methods. The hybrid approach further improved the translation performance.
+
+| Comments: | Submitted to INTERSPEECH 2022                                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2203.15479](https://arxiv.org/abs/2203.15479) [cs.CL]** |
+|           | (or **[arXiv:2203.15479v1](https://arxiv.org/abs/2203.15479v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.15479Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-30-7">7. Integrate Lattice-Free MMI into End-to-End Speech Recognition
+</h2>
+
+Title: [Integrate Lattice-Free MMI into End-to-End Speech Recognition](https://arxiv.org/abs/2203.15614)
+
+Authors: [Jinchuan Tian](https://arxiv.org/search/cs?searchtype=author&query=Tian%2C+J), [Jianwei Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+J), [Chao Weng](https://arxiv.org/search/cs?searchtype=author&query=Weng%2C+C), [Yuexian Zou](https://arxiv.org/search/cs?searchtype=author&query=Zou%2C+Y), [Dong Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+D)
+
+> In automatic speech recognition (ASR) research, discriminative criteria have achieved superior performance in DNN-HMM systems. Given this success, the adoption of discriminative criteria is promising to boost the performance of end-to-end (E2E) ASR systems. With this motivation, previous works have introduced the minimum Bayesian risk (MBR, one of the discriminative criteria) into E2E ASR systems. However, the effectiveness and efficiency of the MBR-based methods are compromised: the MBR criterion is only used in system training, which creates a mismatch between training and decoding; the on-the-fly decoding process in MBR-based methods results in the need for pre-trained models and slow training speeds. To this end, novel algorithms are proposed in this work to integrate another widely used discriminative criterion, lattice-free maximum mutual information (LF-MMI), into E2E ASR systems not only in the training stage but also in the decoding process. The proposed LF-MMI training and decoding methods show their effectiveness on two widely used E2E frameworks: Attention-Based Encoder-Decoders (AEDs) and Neural Transducers (NTs). Compared with MBR-based methods, the proposed LF-MMI method: maintains the consistency between training and decoding; eschews the on-the-fly decoding process; trains from randomly initialized models with superior training efficiency. Experiments suggest that the LF-MMI method outperforms its MBR counterparts and consistently leads to statistically significant performance improvements on various frameworks and datasets from 30 hours to 14.3k hours. The proposed method achieves state-of-the-art (SOTA) results on Aishell-1 (CER 4.10%) and Aishell-2 (CER 5.02%) datasets. Code is released.
+
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2203.15614](https://arxiv.org/abs/2203.15614) [cs.CL]** |
+|           | (or **[arXiv:2203.15614v1](https://arxiv.org/abs/2203.15614v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.15614Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-30-8">8. On Decoding Strategies for Neural Text Generators
+</h2>
+
+Title: [On Decoding Strategies for Neural Text Generators](https://arxiv.org/abs/2203.15721)
+
+Authors: [Gian Wiher](https://arxiv.org/search/cs?searchtype=author&query=Wiher%2C+G), [Clara Meister](https://arxiv.org/search/cs?searchtype=author&query=Meister%2C+C), [Ryan Cotterell](https://arxiv.org/search/cs?searchtype=author&query=Cotterell%2C+R)
+
+> When generating text from probabilistic models, the chosen decoding strategy has a profound effect on the resulting text. Yet the properties elicited by various decoding strategies do not always transfer across natural language generation tasks. For example, while mode-seeking methods like beam search perform remarkably well for machine translation, they have been observed to lead to incoherent and repetitive text in story generation. Despite such observations, the effectiveness of decoding strategies is often assessed with respect to only a single task. This work -- in contrast -- provides a comprehensive analysis of the interaction between language generation tasks and decoding strategies. Specifically, we measure changes in attributes of generated text as a function of both decoding strategy and task using human and automatic evaluation. Our results reveal both previously-observed and surprising findings. For example, the nature of the diversity-quality trade-off in language generation is very task-specific; the length bias often attributed to beam search is not constant across tasks.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2203.15721](https://arxiv.org/abs/2203.15721) [cs.CL]** |
+|           | (or **[arXiv:2203.15721v1](https://arxiv.org/abs/2203.15721v1) [cs.CL]** for this version) |
+
+
+
+<h2 id="2022-03-29-9">9. Streaming parallel transducer beam search with fast-slow cascaded encoders
+</h2>
+
+Title: [Streaming parallel transducer beam search with fast-slow cascaded encoders](https://arxiv.org/abs/2203.15773)
+
+Authors: [Jay Mahadeokar](https://arxiv.org/search/cs?searchtype=author&query=Mahadeokar%2C+J), [Yangyang Shi](https://arxiv.org/search/cs?searchtype=author&query=Shi%2C+Y), [Ke Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+K), [Duc Le](https://arxiv.org/search/cs?searchtype=author&query=Le%2C+D), [Jiedan Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+J), [Vikas Chandra](https://arxiv.org/search/cs?searchtype=author&query=Chandra%2C+V), [Ozlem Kalinli](https://arxiv.org/search/cs?searchtype=author&query=Kalinli%2C+O), [Michael L Seltzer](https://arxiv.org/search/cs?searchtype=author&query=Seltzer%2C+M+L)
+
+> Streaming ASR with strict latency constraints is required in many speech recognition applications. In order to achieve the required latency, streaming ASR models sacrifice accuracy compared to non-streaming ASR models due to lack of future input context. Previous research has shown that streaming and non-streaming ASR for RNN Transducers can be unified by cascading causal and non-causal encoders. This work improves upon this cascaded encoders framework by leveraging two streaming non-causal encoders with variable input context sizes that can produce outputs at different audio intervals (e.g. fast and slow). We propose a novel parallel time-synchronous beam search algorithm for transducers that decodes from fast-slow encoders, where the slow encoder corrects the mistakes generated from the fast encoder. The proposed algorithm, achieves up to 20% WER reduction with a slight increase in token emission delays on the public Librispeech dataset and in-house datasets. We also explore techniques to reduce the computation by distributing processing between the fast and slow encoders. Lastly, we explore sharing the parameters in the fast encoder to reduce the memory footprint. This enables low latency processing on edge devices with low computation cost and a low memory footprint.
+
+| Comments: | 5 pages, 2 figures, Interspeech 2022 submission              |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2203.15773](https://arxiv.org/abs/2203.15773) [cs.CL]** |
+|           | (or **[arXiv:2203.15773v1](https://arxiv.org/abs/2203.15773v1) [cs.CL]** for this version) |
+
+
+
+
 
 
 
