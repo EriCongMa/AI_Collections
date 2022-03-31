@@ -2,25 +2,37 @@
 
 # Index
 
+- [2022-03-31](#2022-03-31)
+  - [1. WAVPROMPT: Towards Few-Shot Spoken Language Understanding with Frozen Language Models](#2022-03-31-1)
+  - [2. Image Retrieval from Contextual Descriptions](#2022-03-31-2)
+  - [3. LinkBERT: Pretraining Language Models with Document Links](#2022-03-31-3)
+  - [4. Autoregressive Co-Training for Learning Discrete Speech Representations](#2022-03-31-4)
+  - [5. Investigating Data Variance in Evaluations of Automatic Machine Translation Metrics](#2022-03-31-5)
+  - [6. Visualizing the Relationship Between Encoded Linguistic Information and Task Performance](#2022-03-31-6)
+  - [7. Auto-MLM: Improved Contrastive Learning for Self-supervised Multi-lingual Knowledge Retrieval](#2022-03-31-7)
+  - [8. Non-autoregressive Translation with Dependency-Aware Decoder](#2022-03-31-8)
+  - [9. Zero Shot Crosslingual Eye-Tracking Data Prediction using Multilingual Transformer Models](#2022-03-31-9)
+  - [10. Lossless Speedup of Autoregressive Translation with Generalized Aggressive Decoding](#2022-03-31-10)
+  
 - [2022-03-30](#2022-03-30)
   - [1. Word Discovery in Visually Grounded, Self-Supervised Speech Models](#2022-03-30-1)
-  
+
   - [2. Shifted Chunk Encoder for Transformer Based Streaming End-to-End ASR](#2022-03-30-2)
-  
+
   - [3. Interactive Audio-text Representation for Automated Audio Captioning with Contrastive Learning](#2022-03-30-3)
-  
+
   - [4. LightHuBERT: Lightweight and Configurable Speech Representation Learning with Once-for-All Hidden-Unit BERT](#2022-03-30-4)
-  
+
   - [5. Can NMT Understand Me? Towards Perturbation-based Evaluation of NMT Models for Code Generation](#2022-03-30-5)
-  
+
   - [6. Speech Segmentation Optimization using Segmented Bilingual Speech Corpus for End-to-end Speech Translation](#2022-03-30-6)
-  
+
   - [7. Integrate Lattice-Free MMI into End-to-End Speech Recognition](#2022-03-30-7)
-  
+
   - [8. On Decoding Strategies for Neural Text Generators](#2022-03-30-8)
-  
+
   - [9. Streaming parallel transducer beam search with fast-slow cascaded encoders](#2022-03-30-9)
-  
+
 - [2022-03-29](#2022-03-29)
   - [1. A Roadmap for Big Model](#2022-03-29-1)
 
@@ -65,13 +77,11 @@
   - [5. Multi-armed bandits for online optimization of language model pre-training: the use case of dynamic masking](#2022-03-25-5)
 
   - [6. Token Dropping for Efficient BERT Pretraining](#2022-03-25-6)
-
 - [2022-03-24](#2022-03-24)
   - [1. Text Transformations in Contrastive Self-Supervised Learning: A Review](#2022-03-24-1)
   - [2. An Empirical Study of Memorization in NLP](#2022-03-24-2)
   - [3. Integrating Vectorized Lexical Constraints for Neural Machine Translation](#2022-03-24-3)
   - [4. A Context-Aware Feature Fusion Framework for Punctuation Restoration](#2022-03-24-4)
-
 - [2022-03-23](#2022-03-23)
   - [1. WuDaoMM: A large-scale Multi-Modal Dataset for Pre-training models](#2022-03-23-1)
   - [2. DQ-BART: Efficient Sequence-to-Sequence Model via Joint Distillation and Quantization](#2022-03-23-2)
@@ -79,7 +89,6 @@
   - [4. Learning Confidence for Transformer-based Neural Machine Translation](#2022-03-23-4)
   - [5. Modeling speech recognition and synthesis simultaneously: Encoding and decoding lexical and sublexical semantic information into speech with no direct access to speech data](#2022-03-23-5)
   - [6. Factual Consistency of Multilingual Pretrained Language Models](#2022-03-23-6)
-
 - [2022-03-22](#2022-03-22)
   - [1. Transformer-based HTR for Historical Documents](#2022-03-22-1)
   - [2. Neural Machine Translation with Phrase-Level Universal Visual Representations](#2022-03-22-2)
@@ -88,7 +97,6 @@
   - [5. Mitigating Gender Bias in Machine Translation through Adversarial Learning](#2022-03-22-5)
   - [6. Compression of Generative Pre-trained Language Models via Quantization](#2022-03-22-6)
   - [7. Match the Script, Adapt if Multilingual: Analyzing the Effect of Multilingual Pretraining on Cross-lingual Transferability](#2022-03-22-7)
-
 - [2022-03-21](#2022-03-21)
   - [1. A3T: Alignment-Aware Acoustic and Text Pretraining for Speech Synthesis and Editing](#2022-03-21-1)
   - [2. Prototypical Verbalizer for Prompt-based Few-shot Tuning](#2022-03-21-2)
@@ -192,6 +200,211 @@
 - [2022-02-28](#2022-02-28)
   - [1. Screening Gender Transfer in Neural Machine Translation](#2022-02-28-1)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2022-03-31
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-03-31-1">1. WAVPROMPT: Towards Few-Shot Spoken Language Understanding with Frozen Language Models
+</h2>
+
+Title: [WAVPROMPT: Towards Few-Shot Spoken Language Understanding with Frozen Language Models](https://arxiv.org/abs/2203.15863)
+
+Authors: [Heting Gao](https://arxiv.org/search/eess?searchtype=author&query=Gao%2C+H), [Junrui Ni](https://arxiv.org/search/eess?searchtype=author&query=Ni%2C+J), [Kaizhi Qian](https://arxiv.org/search/eess?searchtype=author&query=Qian%2C+K), [Yang Zhang](https://arxiv.org/search/eess?searchtype=author&query=Zhang%2C+Y), [Shiyu Chang](https://arxiv.org/search/eess?searchtype=author&query=Chang%2C+S), [Mark Hasegawa-Johnson](https://arxiv.org/search/eess?searchtype=author&query=Hasegawa-Johnson%2C+M)
+
+> Large-scale auto-regressive language models pretrained on massive text have demonstrated their impressive ability to perform new natural language tasks with only a few text examples, without the need for fine-tuning. Recent studies further show that such a few-shot learning ability can be extended to the text-image setting by training an encoder to encode the images into embeddings functioning like the text embeddings of the language model. Interested in exploring the possibility of transferring the few-shot learning ability to the audio-text setting, we propose a novel speech understanding framework, WavPrompt, where we finetune a wav2vec model to generate a sequence of audio embeddings understood by the language model. We show that WavPrompt is a few-shot learner that can perform speech understanding tasks better than a naive text baseline. We conduct detailed ablation studies on different components and hyperparameters to empirically identify the best model configuration. In addition, we conduct a non-speech understanding experiment to show WavPrompt can extract more information than just the transcriptions.
+
+| Comments: | submitted to INTERSPEECH 2022                                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Audio and Speech Processing (eess.AS)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2203.15863](https://arxiv.org/abs/2203.15863) [eess.AS]** |
+|           | (or **[arXiv:2203.15863v1](https://arxiv.org/abs/2203.15863v1) [eess.AS]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.15863Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-31-2">2. Image Retrieval from Contextual Descriptions
+</h2>
+
+Title: [Image Retrieval from Contextual Descriptions](https://arxiv.org/abs/2203.15867)
+
+Authors: [Benno Krojer](https://arxiv.org/search/cs?searchtype=author&query=Krojer%2C+B), [Vaibhav Adlakha](https://arxiv.org/search/cs?searchtype=author&query=Adlakha%2C+V), [Vibhav Vineet](https://arxiv.org/search/cs?searchtype=author&query=Vineet%2C+V), [Yash Goyal](https://arxiv.org/search/cs?searchtype=author&query=Goyal%2C+Y), [Edoardo Ponti](https://arxiv.org/search/cs?searchtype=author&query=Ponti%2C+E), [Siva Reddy](https://arxiv.org/search/cs?searchtype=author&query=Reddy%2C+S)
+
+> The ability to integrate context, including perceptual and temporal cues, plays a pivotal role in grounding the meaning of a linguistic utterance. In order to measure to what extent current vision-and-language models master this ability, we devise a new multimodal challenge, Image Retrieval from Contextual Descriptions (ImageCoDe). In particular, models are tasked with retrieving the correct image from a set of 10 minimally contrastive candidates based on a contextual description. As such, each description contains only the details that help distinguish between images. Because of this, descriptions tend to be complex in terms of syntax and discourse and require drawing pragmatic inferences. Images are sourced from both static pictures and video frames. We benchmark several state-of-the-art models, including both cross-encoders such as ViLBERT and bi-encoders such as CLIP, on ImageCoDe. Our results reveal that these models dramatically lag behind human performance: the best variant achieves an accuracy of 20.9 on video frames and 59.4 on static pictures, compared with 90.8 in humans. Furthermore, we experiment with new model variants that are better equipped to incorporate visual and temporal context into their representations, which achieve modest gains. Our hope is that ImageCoDE will foster progress in grounded language understanding by encouraging models to focus on fine-grained visual differences.
+
+| Comments: | accepted to ACL 2022                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2203.15867](https://arxiv.org/abs/2203.15867) [cs.CV]** |
+|           | (or **[arXiv:2203.15867v1](https://arxiv.org/abs/2203.15867v1) [cs.CV]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.15867Focus to learn more |
+
+
+
+
+
+
+
+<h2 id="2022-03-31-3">3. LinkBERT: Pretraining Language Models with Document Links
+</h2>
+
+Title: [LinkBERT: Pretraining Language Models with Document Links](https://arxiv.org/abs/2203.15827)
+
+Authors: [Michihiro Yasunaga](https://arxiv.org/search/cs?searchtype=author&query=Yasunaga%2C+M), [Jure Leskovec](https://arxiv.org/search/cs?searchtype=author&query=Leskovec%2C+J), [Percy Liang](https://arxiv.org/search/cs?searchtype=author&query=Liang%2C+P)
+
+> Language model (LM) pretraining can learn various knowledge from text corpora, helping downstream tasks. However, existing methods such as BERT model a single document, and do not capture dependencies or knowledge that span across documents. In this work, we propose LinkBERT, an LM pretraining method that leverages links between documents, e.g., hyperlinks. Given a text corpus, we view it as a graph of documents and create LM inputs by placing linked documents in the same context. We then pretrain the LM with two joint self-supervised objectives: masked language modeling and our new proposal, document relation prediction. We show that LinkBERT outperforms BERT on various downstream tasks across two domains: the general domain (pretrained on Wikipedia with hyperlinks) and biomedical domain (pretrained on PubMed with citation links). LinkBERT is especially effective for multi-hop reasoning and few-shot QA (+5% absolute improvement on HotpotQA and TriviaQA), and our biomedical LinkBERT sets new states of the art on various BioNLP tasks (+7% on BioASQ and USMLE). We release our pretrained models, LinkBERT and BioLinkBERT, as well as code and data at [this https URL](https://github.com/michiyasunaga/LinkBERT).
+
+| Comments: | Published at ACL 2022. Code, data, and pretrained models are available at [this https URL](https://github.com/michiyasunaga/LinkBERT) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2203.15827](https://arxiv.org/abs/2203.15827) [cs.CL]** |
+|           | (or **[arXiv:2203.15827v1](https://arxiv.org/abs/2203.15827v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.15827Focus to learn more |
+
+
+
+<h2 id="2022-03-31-4">4. Autoregressive Co-Training for Learning Discrete Speech Representations
+</h2>
+
+Title: [Autoregressive Co-Training for Learning Discrete Speech Representations](https://arxiv.org/abs/2203.15840)
+
+Authors: [Sung-Lin Yeh](https://arxiv.org/search/cs?searchtype=author&query=Yeh%2C+S), [Hao Tang](https://arxiv.org/search/cs?searchtype=author&query=Tang%2C+H)
+
+> While several self-supervised approaches for learning discrete speech representation have been proposed, it is unclear how these seemingly similar approaches relate to each other. In this paper, we consider a generative model with discrete latent variables that learns a discrete representation for speech. The objective of learning the generative model is formulated as information-theoretic co-training. Besides the wide generality, the objective can be optimized with several approaches, subsuming HuBERT-like training and vector quantization for learning discrete representation. Empirically, we find that the proposed approach learns discrete representation that is highly correlated with phonetic units, more correlated than HuBERT-like training and vector quantization.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2203.15840](https://arxiv.org/abs/2203.15840) [cs.CL]** |
+|           | (or **[arXiv:2203.15840v1](https://arxiv.org/abs/2203.15840v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.15840Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-31-5">5. Investigating Data Variance in Evaluations of Automatic Machine Translation Metrics
+</h2>
+
+Title: [Investigating Data Variance in Evaluations of Automatic Machine Translation Metrics](https://arxiv.org/abs/2203.15858)
+
+Authors: [Jiannan Xiang](https://arxiv.org/search/cs?searchtype=author&query=Xiang%2C+J), [Huayang Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+H), [Yahui Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Y), [Lemao Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+L), [Guoping Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+G), [Defu Lian](https://arxiv.org/search/cs?searchtype=author&query=Lian%2C+D), [Shuming Shi](https://arxiv.org/search/cs?searchtype=author&query=Shi%2C+S)
+
+> Current practices in metric evaluation focus on one single dataset, e.g., Newstest dataset in each year's WMT Metrics Shared Task. However, in this paper, we qualitatively and quantitatively show that the performances of metrics are sensitive to data. The ranking of metrics varies when the evaluation is conducted on different datasets. Then this paper further investigates two potential hypotheses, i.e., insignificant data points and the deviation of Independent and Identically Distributed (i.i.d) assumption, which may take responsibility for the issue of data variance. In conclusion, our findings suggest that when evaluating automatic translation metrics, researchers should take data variance into account and be cautious to claim the result on a single dataset, because it may leads to inconsistent results with most of other datasets.
+
+| Comments: | Findings of ACL 2022                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2203.15858](https://arxiv.org/abs/2203.15858) [cs.CL]** |
+|           | (or **[arXiv:2203.15858v1](https://arxiv.org/abs/2203.15858v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.15858Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-31-6">6. Visualizing the Relationship Between Encoded Linguistic Information and Task Performance
+</h2>
+
+Title: [Visualizing the Relationship Between Encoded Linguistic Information and Task Performance](https://arxiv.org/abs/2203.15860)
+
+Authors: [Jiannan Xiang](https://arxiv.org/search/cs?searchtype=author&query=Xiang%2C+J), [Huayang Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+H), [Defu Lian](https://arxiv.org/search/cs?searchtype=author&query=Lian%2C+D), [Guoping Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+G), [Taro Watanabe](https://arxiv.org/search/cs?searchtype=author&query=Watanabe%2C+T), [Lemao Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+L)
+
+> Probing is popular to analyze whether linguistic information can be captured by a well-trained deep neural model, but it is hard to answer how the change of the encoded linguistic information will affect task performance. To this end, we study the dynamic relationship between the encoded linguistic information and task performance from the viewpoint of Pareto Optimality. Its key idea is to obtain a set of models which are Pareto-optimal in terms of both objectives. From this viewpoint, we propose a method to optimize the Pareto-optimal models by formalizing it as a multi-objective optimization problem. We conduct experiments on two popular NLP tasks, i.e., machine translation and language modeling, and investigate the relationship between several kinds of linguistic information and task performances. Experimental results demonstrate that the proposed method is better than a baseline method. Our empirical findings suggest that some syntactic information is helpful for NLP tasks whereas encoding more syntactic information does not necessarily lead to better performance, because the model architecture is also an important factor.
+
+| Comments: | Findings of ACL 2022                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2203.15860](https://arxiv.org/abs/2203.15860) [cs.CL]** |
+|           | (or **[arXiv:2203.15860v1](https://arxiv.org/abs/2203.15860v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.15860Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-31-7">7. Auto-MLM: Improved Contrastive Learning for Self-supervised Multi-lingual Knowledge Retrieval
+</h2>
+
+Title: [Auto-MLM: Improved Contrastive Learning for Self-supervised Multi-lingual Knowledge Retrieval](https://arxiv.org/abs/2203.16187)
+
+Authors: [Wenshen Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+W), [Mieradilijiang Maimaiti](https://arxiv.org/search/cs?searchtype=author&query=Maimaiti%2C+M), [Yuanhang Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng%2C+Y), [Xin Tang](https://arxiv.org/search/cs?searchtype=author&query=Tang%2C+X), [Ji Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+J)
+
+> Contrastive learning (CL) has become a ubiquitous approach for several natural language processing (NLP) downstream tasks, especially for question answering (QA). However, the major challenge, how to efficiently train the knowledge retrieval model in an unsupervised manner, is still unresolved. Recently the commonly used methods are composed of CL and masked language model (MLM). Unexpectedly, MLM ignores the sentence-level training, and CL also neglects extraction of the internal info from the query. To optimize the CL hardly obtain internal information from the original query, we introduce a joint training method by combining CL and Auto-MLM for self-supervised multi-lingual knowledge retrieval. First, we acquire the fixed dimensional sentence vector. Then, mask some words among the original sentences with random strategy. Finally, we generate a new token representation for predicting the masked tokens. Experimental results show that our proposed approach consistently outperforms all the previous SOTA methods on both AliExpress & LAZADA service corpus and openly available corpora in 8 languages.
+
+| Comments: | 9 pages, 5 figures, 3 tables                                 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2203.16187](https://arxiv.org/abs/2203.16187) [cs.CL]** |
+|           | (or **[arXiv:2203.16187v1](https://arxiv.org/abs/2203.16187v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.16187Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-31-8">8. Non-autoregressive Translation with Dependency-Aware Decoder
+</h2>
+
+Title: [Non-autoregressive Translation with Dependency-Aware Decoder](https://arxiv.org/abs/2203.16266)
+
+Authors: [Jiaao Zhan](https://arxiv.org/search/cs?searchtype=author&query=Zhan%2C+J), [Qian Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+Q), [Boxing Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+B), [Wen Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+W), [Yu Bai](https://arxiv.org/search/cs?searchtype=author&query=Bai%2C+Y), [Yang Gao](https://arxiv.org/search/cs?searchtype=author&query=Gao%2C+Y)
+
+> Non-autoregressive translation (NAT) models suffer from inferior translation quality due to removal of dependency on previous target tokens from inputs to the decoder. In this paper, we propose a novel and general approach to enhance the target dependency within the NAT decoder from two perspectives: decoder input and decoder self-attention. First, we transform the initial decoder input from the source language space to the target language space through a novel attentive transformation process. The transformation reassembles the decoder input based on target token embeddings and conditions the final output on the target-side information. Second, before NAT training, we introduce an effective forward-backward pre-training phase, implemented with different triangle attention masks. This pre-training phase enables the model to gradually learn bidirectional dependencies for the final NAT decoding process. Experimental results demonstrate that the proposed approaches consistently improve highly competitive NAT models on four WMT translation directions by up to 1.88 BLEU score, while overall maintaining inference latency comparable to other fully NAT models.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2203.16266](https://arxiv.org/abs/2203.16266) [cs.CL]** |
+|           | (or **[arXiv:2203.16266v1](https://arxiv.org/abs/2203.16266v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.16266Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-31-9">9. Zero Shot Crosslingual Eye-Tracking Data Prediction using Multilingual Transformer Models
+</h2>
+
+Title: [Zero Shot Crosslingual Eye-Tracking Data Prediction using Multilingual Transformer Models](https://arxiv.org/abs/2203.16474)
+
+Authors: [Harshvardhan Srivastava](https://arxiv.org/search/cs?searchtype=author&query=Srivastava%2C+H)
+
+> Eye tracking data during reading is a useful source of information to understand the cognitive processes that take place during language comprehension processes. Different languages account for different brain triggers , however there seems to be some uniform indicators. In this paper, we describe our submission to the CMCL 2022 shared task on predicting human reading patterns for multi-lingual dataset. Our model uses text representations from transformers and some hand engineered features with a regression layer on top to predict statistical measures of mean and standard deviation for 2 main eye-tracking features. We train an end to end model to extract meaningful information from different languages and test our model on two seperate datasets. We compare different transformer models and show ablation studies affecting model performance. Our final submission ranked 4th place for SubTask-1 and 1st place for SubTask-2 for the shared task.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2203.16474](https://arxiv.org/abs/2203.16474) [cs.CL]** |
+|           | (or **[arXiv:2203.16474v1](https://arxiv.org/abs/2203.16474v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.16474Focus to learn more |
+
+
+
+
+
+<h2 id="2022-03-31-10">10. Lossless Speedup of Autoregressive Translation with Generalized Aggressive Decoding
+</h2>
+
+Title: [Lossless Speedup of Autoregressive Translation with Generalized Aggressive Decoding](https://arxiv.org/abs/2203.16487)
+
+Authors: [Heming Xia](https://arxiv.org/search/cs?searchtype=author&query=Xia%2C+H), [Tao Ge](https://arxiv.org/search/cs?searchtype=author&query=Ge%2C+T), [Furu Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+F), [Zhifang Sui](https://arxiv.org/search/cs?searchtype=author&query=Sui%2C+Z)
+
+> In this paper, we propose Generalized Aggressive Decoding (GAD) -- a novel approach to accelerating autoregressive translation with no quality loss, through the collaboration of autoregressive and non-autoregressive translation (NAT) of the Transformer. At each decoding iteration, GAD aggressively decodes a number of tokens in parallel as a draft through NAT and then verifies them in the autoregressive manner, where only the tokens that pass the verification are kept as decoded tokens. GAD can achieve the same performance as autoregressive translation but perform much more efficiently because both NAT drafting and autoregressive verification are fast due to parallel computing. We conduct experiments in the WMT14 English-German translation task and confirm that the vanilla GAD yields exactly the same results as greedy decoding with about 3x speedup, and that its variant (GAD++) with an advanced verification strategy not only outperforms the greedy translation and even achieves the comparable translation quality with the beam search result, but also further improves the decoding speed, resulting in an around 5x speedup over autoregressive translation.
+
+| Comments: | Work in progress                                             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2203.16487](https://arxiv.org/abs/2203.16487) [cs.CL]** |
+|           | (or **[arXiv:2203.16487v1](https://arxiv.org/abs/2203.16487v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2203.16487Focus to learn more |
+
+
+
+
 
 
 
