@@ -2,6 +2,32 @@
 
 # Index
 
+- [2022-04-05](#2022-04-05)
+  - [1. Moment-based Adversarial Training for Embodied Language Comprehension](#2022-04-05-1)
+  
+  - [2. Do As I Can, Not As I Say: Grounding Language in Robotic Affordances](#2022-04-05-2)
+  
+  - [3. CipherDAug: Ciphertext based Data Augmentation for Neural Machine Translation](#2022-04-05-3)
+  
+  - [4. On Efficiently Acquiring Annotations for Multilingual Models](#2022-04-05-4)
+  
+  - [5. PERFECT: Prompt-free and Efficient Few-shot Learning with Language Models](#2022-04-05-5)
+  
+  - [6. Aligned Weight Regularizers for Pruning Pretrained Neural Networks](#2022-04-05-6)
+  
+  - [7. Estimating the Entropy of Linguistic Distributions](#2022-04-05-7)
+  
+- [2022-04-04](#2022-04-04)
+  - [1. AdaSpeech 4: Adaptive Text to Speech in Zero-Shot Scenarios](#2022-04-04-1)
+
+  - [2. Unified and Effective Ensemble Knowledge Distillation](#2022-04-04-2)
+
+  - [3. Better Intermediates Improve CTC Inference](#2022-04-04-3)
+
+  - [4. WavFT: Acoustic model finetuning with labelled and unlabelled data](#2022-04-04-4)
+
+  - [5. Uncertainty Determines the Adequacy of the Mode and the Tractability of Decoding in Sequence-to-Sequence Models](#2022-04-04-5)
+
 - [2022-04-01](#2022-04-01)
   - [1. MAE-AST: Masked Autoencoding Audio Spectrogram Transformer](#2022-04-01-1)
   - [2. Exploiting Single-Channel Speech for Multi-Channel End-to-End Speech Recognition: A Comparative Study](#2022-04-01-2)
@@ -14,10 +40,271 @@
   - [9. PADA: Pruning Assisted Domain Adaptation for Self-Supervised Speech Representations](#2022-04-01-9)
   - [10. Analyzing the factors affecting usefulness of Self-Supervised Pre-trained Representations for Speech Recognition](#2022-04-01-10)
   - [11. PANGUBOT: Efficient Generative Dialogue Pre-training from Pre-trained Language Model](#2022-04-01-11)
-  
+
 - [2022-03-31](#2022-03-31)
   - [1. WAVPROMPT: Towards Few-Shot Spoken Language Understanding with Frozen Language Models](#2022-03-31-1)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2022-04-05
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-04-05-1">1. Moment-based Adversarial Training for Embodied Language Comprehension
+</h2>
+
+Title: [Moment-based Adversarial Training for Embodied Language Comprehension](https://arxiv.org/abs/2204.00889)
+
+Authors: [Shintaro Ishikawa](https://arxiv.org/search/cs?searchtype=author&query=Ishikawa%2C+S), [Komei Sugiura](https://arxiv.org/search/cs?searchtype=author&query=Sugiura%2C+K)
+
+> In this paper, we focus on a vision-and-language task in which a robot is instructed to execute household tasks. Given an instruction such as "Rinse off a mug and place it in the coffee maker," the robot is required to locate the mug, wash it, and put it in the coffee maker. This is challenging because the robot needs to break down the instruction sentences into subgoals and execute them in the correct order. On the ALFRED benchmark, the performance of state-of-the-art methods is still far lower than that of humans. This is partially because existing methods sometimes fail to infer subgoals that are not explicitly specified in the instruction sentences. We propose Moment-based Adversarial Training (MAT), which uses two types of moments for perturbation updates in adversarial training. We introduce MAT to the embedding spaces of the instruction, subgoals, and state representations to handle their varieties. We validated our method on the ALFRED benchmark, and the results demonstrated that our method outperformed the baseline method for all the metrics on the benchmark.
+
+| Comments: | Accepted for presentation at ICPR2022                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Robotics (cs.RO)**; Computation and Language (cs.CL); Computer Vision and Pattern Recognition (cs.CV) |
+| Cite as:  | **[arXiv:2204.00889](https://arxiv.org/abs/2204.00889) [cs.RO]** |
+|           | (or **[arXiv:2204.00889v1](https://arxiv.org/abs/2204.00889v1) [cs.RO]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2204.00889Focus to learn more |
+
+
+
+
+
+<h2 id="2022-04-05-2">2. Do As I Can, Not As I Say: Grounding Language in Robotic Affordances
+</h2>
+
+Title: [Do As I Can, Not As I Say: Grounding Language in Robotic Affordances](https://arxiv.org/abs/2204.01691)
+
+Authors: [Michael Ahn](https://arxiv.org/search/cs?searchtype=author&query=Ahn%2C+M), [Anthony Brohan](https://arxiv.org/search/cs?searchtype=author&query=Brohan%2C+A), [Noah Brown](https://arxiv.org/search/cs?searchtype=author&query=Brown%2C+N), [Yevgen Chebotar](https://arxiv.org/search/cs?searchtype=author&query=Chebotar%2C+Y), [Omar Cortes](https://arxiv.org/search/cs?searchtype=author&query=Cortes%2C+O), [Byron David](https://arxiv.org/search/cs?searchtype=author&query=David%2C+B), [Chelsea Finn](https://arxiv.org/search/cs?searchtype=author&query=Finn%2C+C), [Keerthana Gopalakrishnan](https://arxiv.org/search/cs?searchtype=author&query=Gopalakrishnan%2C+K), [Karol Hausman](https://arxiv.org/search/cs?searchtype=author&query=Hausman%2C+K), [Alex Herzog](https://arxiv.org/search/cs?searchtype=author&query=Herzog%2C+A), [Daniel Ho](https://arxiv.org/search/cs?searchtype=author&query=Ho%2C+D), [Jasmine Hsu](https://arxiv.org/search/cs?searchtype=author&query=Hsu%2C+J), [Julian Ibarz](https://arxiv.org/search/cs?searchtype=author&query=Ibarz%2C+J), [Brian Ichter](https://arxiv.org/search/cs?searchtype=author&query=Ichter%2C+B), [Alex Irpan](https://arxiv.org/search/cs?searchtype=author&query=Irpan%2C+A), [Eric Jang](https://arxiv.org/search/cs?searchtype=author&query=Jang%2C+E), [Rosario Jauregui Ruano](https://arxiv.org/search/cs?searchtype=author&query=Ruano%2C+R+J), [Kyle Jeffrey](https://arxiv.org/search/cs?searchtype=author&query=Jeffrey%2C+K), [Sally Jesmonth](https://arxiv.org/search/cs?searchtype=author&query=Jesmonth%2C+S), [Nikhil J Joshi](https://arxiv.org/search/cs?searchtype=author&query=Joshi%2C+N+J), [Ryan Julian](https://arxiv.org/search/cs?searchtype=author&query=Julian%2C+R), [Dmitry Kalashnikov](https://arxiv.org/search/cs?searchtype=author&query=Kalashnikov%2C+D), [Yuheng Kuang](https://arxiv.org/search/cs?searchtype=author&query=Kuang%2C+Y), [Kuang-Huei Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+K), [Sergey Levine](https://arxiv.org/search/cs?searchtype=author&query=Levine%2C+S), [Yao Lu](https://arxiv.org/search/cs?searchtype=author&query=Lu%2C+Y), [Linda Luu](https://arxiv.org/search/cs?searchtype=author&query=Luu%2C+L), [Carolina Parada](https://arxiv.org/search/cs?searchtype=author&query=Parada%2C+C), [Peter Pastor](https://arxiv.org/search/cs?searchtype=author&query=Pastor%2C+P), [Jornell Quiambao](https://arxiv.org/search/cs?searchtype=author&query=Quiambao%2C+J), [Kanishka Rao](https://arxiv.org/search/cs?searchtype=author&query=Rao%2C+K), [Jarek Rettinghouse](https://arxiv.org/search/cs?searchtype=author&query=Rettinghouse%2C+J), [Diego Reyes](https://arxiv.org/search/cs?searchtype=author&query=Reyes%2C+D), [Pierre Sermanet](https://arxiv.org/search/cs?searchtype=author&query=Sermanet%2C+P), [Nicolas Sievers](https://arxiv.org/search/cs?searchtype=author&query=Sievers%2C+N), [Clayton Tan](https://arxiv.org/search/cs?searchtype=author&query=Tan%2C+C), [Alexander Toshev](https://arxiv.org/search/cs?searchtype=author&query=Toshev%2C+A), [Vincent Vanhoucke](https://arxiv.org/search/cs?searchtype=author&query=Vanhoucke%2C+V), [Fei Xia](https://arxiv.org/search/cs?searchtype=author&query=Xia%2C+F), [Ted Xiao](https://arxiv.org/search/cs?searchtype=author&query=Xiao%2C+T), [Peng Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+P), [Sichun Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+S), [Mengyuan Yan](https://arxiv.org/search/cs?searchtype=author&query=Yan%2C+M)
+
+> Large language models can encode a wealth of semantic knowledge about the world. Such knowledge could be extremely useful to robots aiming to act upon high-level, temporally extended instructions expressed in natural language. However, a significant weakness of language models is that they lack real-world experience, which makes it difficult to leverage them for decision making within a given embodiment. For example, asking a language model to describe how to clean a spill might result in a reasonable narrative, but it may not be applicable to a particular agent, such as a robot, that needs to perform this task in a particular environment. We propose to provide real-world grounding by means of pretrained skills, which are used to constrain the model to propose natural language actions that are both feasible and contextually appropriate. The robot can act as the language model's "hands and eyes," while the language model supplies high-level semantic knowledge about the task. We show how low-level skills can be combined with large language models so that the language model provides high-level knowledge about the procedures for performing complex and temporally-extended instructions, while value functions associated with these skills provide the grounding necessary to connect this knowledge to a particular physical environment. We evaluate our method on a number of real-world robotic tasks, where we show the need for real-world grounding and that this approach is capable of completing long-horizon, abstract, natural language instructions on a mobile manipulator. The project's website and the video can be found at [this https URL](https://say-can.github.io/)
+
+| Comments: | See website at [this https URL](https://say-can.github.io/)  |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Robotics (cs.RO)**; Computation and Language (cs.CL); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2204.01691](https://arxiv.org/abs/2204.01691) [cs.RO]** |
+|           | (or **[arXiv:2204.01691v1](https://arxiv.org/abs/2204.01691v1) [cs.RO]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2204.01691Focus to learn more |
+
+
+
+
+
+<h2 id="2022-04-05-3">3. CipherDAug: Ciphertext based Data Augmentation for Neural Machine Translation
+</h2>
+
+Title: [CipherDAug: Ciphertext based Data Augmentation for Neural Machine Translation](https://arxiv.org/abs/2204.00665)
+
+Authors: [Nishant Kambhatla](https://arxiv.org/search/cs?searchtype=author&query=Kambhatla%2C+N), [Logan Born](https://arxiv.org/search/cs?searchtype=author&query=Born%2C+L), [Anoop Sarkar](https://arxiv.org/search/cs?searchtype=author&query=Sarkar%2C+A)
+
+> We propose a novel data-augmentation technique for neural machine translation based on ROT-k ciphertexts. ROT-k is a simple letter substitution cipher that replaces a letter in the plaintext with the kth letter after it in the alphabet. We first generate multiple ROT-k ciphertexts using different values of k for the plaintext which is the source side of the parallel data. We then leverage this enciphered training data along with the original parallel data via multi-source training to improve neural machine translation. Our method, CipherDAug, uses a co-regularization-inspired training procedure, requires no external data sources other than the original training data, and uses a standard Transformer to outperform strong data augmentation techniques on several datasets by a significant margin. This technique combines easily with existing approaches to data augmentation, and yields particularly strong results in low-resource settings.
+
+| Comments: | ACL 2022 Main Conf. camera ready version                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2204.00665](https://arxiv.org/abs/2204.00665) [cs.CL]** |
+|           | (or **[arXiv:2204.00665v1](https://arxiv.org/abs/2204.00665v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2204.00665Focus to learn more |
+
+
+
+
+
+<h2 id="2022-04-05-4">4. On Efficiently Acquiring Annotations for Multilingual Models
+</h2>
+
+Title: [On Efficiently Acquiring Annotations for Multilingual Models](https://arxiv.org/abs/2204.01016)
+
+Authors: [Joel Ruben Antony Moniz](https://arxiv.org/search/cs?searchtype=author&query=Moniz%2C+J+R+A), [Barun Patra](https://arxiv.org/search/cs?searchtype=author&query=Patra%2C+B), [Matthew R. Gormley](https://arxiv.org/search/cs?searchtype=author&query=Gormley%2C+M+R)
+
+> When tasked with supporting multiple languages for a given problem, two approaches have arisen: training a model for each language with the annotation budget divided equally among them, and training on a high-resource language followed by zero-shot transfer to the remaining languages. In this work, we show that the strategy of joint learning across multiple languages using a single model performs substantially better than the aforementioned alternatives. We also demonstrate that active learning provides additional, complementary benefits. We show that this simple approach enables the model to be data efficient by allowing it to arbitrate its annotation budget to query languages it is less certain on. We illustrate the effectiveness of our proposed method on a diverse set of tasks: a classification task with 4 languages, a sequence tagging task with 4 languages and a dependency parsing task with 5 languages. Our proposed method, whilst simple, substantially outperforms the other viable alternatives for building a model in a multilingual setting under constrained budgets.
+
+| Comments: | ACL 2022 (Short Paper)                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2204.01016](https://arxiv.org/abs/2204.01016) [cs.CL]** |
+|           | (or **[arXiv:2204.01016v1](https://arxiv.org/abs/2204.01016v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2204.01016Focus to learn more |
+
+
+
+
+
+
+
+<h2 id="2022-04-05-5">5. PERFECT: Prompt-free and Efficient Few-shot Learning with Language Models
+</h2>
+
+Title: [PERFECT: Prompt-free and Efficient Few-shot Learning with Language Models](https://arxiv.org/abs/2204.01172)
+
+Authors: [Rabeeh Karimi Mahabadi](https://arxiv.org/search/cs?searchtype=author&query=Mahabadi%2C+R+K), [Luke Zettlemoyer](https://arxiv.org/search/cs?searchtype=author&query=Zettlemoyer%2C+L), [James Henderson](https://arxiv.org/search/cs?searchtype=author&query=Henderson%2C+J), [Marzieh Saeidi](https://arxiv.org/search/cs?searchtype=author&query=Saeidi%2C+M), [Lambert Mathias](https://arxiv.org/search/cs?searchtype=author&query=Mathias%2C+L), [Veselin Stoyanov](https://arxiv.org/search/cs?searchtype=author&query=Stoyanov%2C+V), [Majid Yazdani](https://arxiv.org/search/cs?searchtype=author&query=Yazdani%2C+M)
+
+> Current methods for few-shot fine-tuning of pretrained masked language models (PLMs) require carefully engineered prompts and verbalizers for each new task to convert examples into a cloze-format that the PLM can score. In this work, we propose PERFECT, a simple and efficient method for few-shot fine-tuning of PLMs without relying on any such handcrafting, which is highly effective given as few as 32 data points. PERFECT makes two key design choices: First, we show that manually engineered task prompts can be replaced with task-specific adapters that enable sample-efficient fine-tuning and reduce memory and storage costs by roughly factors of 5 and 100, respectively. Second, instead of using handcrafted verbalizers, we learn new multi-token label embeddings during fine-tuning, which are not tied to the model vocabulary and which allow us to avoid complex auto-regressive decoding. These embeddings are not only learnable from limited data but also enable nearly 100x faster training and inference. Experiments on a wide range of few-shot NLP tasks demonstrate that PERFECT, while being simple and efficient, also outperforms existing state-of-the-art few-shot learning methods. Our code is publicly available at [this https URL](https://github.com/rabeehk/perfect).
+
+| Comments: | ACL, 2022                                                    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2204.01172](https://arxiv.org/abs/2204.01172) [cs.CL]** |
+|           | (or **[arXiv:2204.01172v1](https://arxiv.org/abs/2204.01172v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2204.01172Focus to learn more |
+
+
+
+
+
+<h2 id="2022-04-05-6">6. Aligned Weight Regularizers for Pruning Pretrained Neural Networks
+</h2>
+
+Title: [Aligned Weight Regularizers for Pruning Pretrained Neural Networks](https://arxiv.org/abs/2204.01385)
+
+Authors: [James O' Neill](https://arxiv.org/search/cs?searchtype=author&query=Neill%2C+J+O), [Sourav Dutta](https://arxiv.org/search/cs?searchtype=author&query=Dutta%2C+S), [Haytham Assem](https://arxiv.org/search/cs?searchtype=author&query=Assem%2C+H)
+
+> While various avenues of research have been explored for iterative pruning, little is known what effect pruning has on zero-shot test performance and its potential implications on the choice of pruning criteria. This pruning setup is particularly important for cross-lingual models that implicitly learn alignment between language representations during pretraining, which if distorted via pruning, not only leads to poorer performance on language data used for retraining but also on zero-shot languages that are evaluated. 
+> In this work, we show that there is a clear performance discrepancy in magnitude-based pruning when comparing standard supervised learning to the zero-shot setting. From this finding, we propose two weight regularizers that aim to maximize the alignment between units of pruned and unpruned networks to mitigate alignment distortion in pruned cross-lingual models and perform well for both non zero-shot and zero-shot settings. 
+> We provide experimental results on cross-lingual tasks for the zero-shot setting using XLM-RoBERTaBase, where we also find that pruning has varying degrees of representational degradation depending on the language corresponding to the zero-shot test set. This is also the first study that focuses on cross-lingual language model compression.
+
+| Comments: | Accepted to ACL Findings 2022                                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2204.01385](https://arxiv.org/abs/2204.01385) [cs.CL]** |
+|           | (or **[arXiv:2204.01385v1](https://arxiv.org/abs/2204.01385v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2204.01385Focus to learn more |
+
+
+
+
+
+<h2 id="2022-04-05-7">7. Estimating the Entropy of Linguistic Distributions
+</h2>
+
+Title: [Estimating the Entropy of Linguistic Distributions](https://arxiv.org/abs/2204.01469)
+
+Authors: [Aryaman Arora](https://arxiv.org/search/cs?searchtype=author&query=Arora%2C+A), [Clara Meister](https://arxiv.org/search/cs?searchtype=author&query=Meister%2C+C), [Ryan Cotterell](https://arxiv.org/search/cs?searchtype=author&query=Cotterell%2C+R)
+
+> Shannon entropy is often a quantity of interest to linguists studying the communicative capacity of human language. However, entropy must typically be estimated from observed data because researchers do not have access to the underlying probability distribution that gives rise to these data. While entropy estimation is a well-studied problem in other fields, there is not yet a comprehensive exploration of the efficacy of entropy estimators for use with linguistic data. In this work, we fill this void, studying the empirical effectiveness of different entropy estimators for linguistic distributions. In a replication of two recent information-theoretic linguistic studies, we find evidence that the reported effect size is over-estimated due to over-reliance on poor entropy estimators. Finally, we end our paper with concrete recommendations for entropy estimation depending on distribution type and data availability.
+
+| Comments:    | 21 pages (5 pages main text). 4 figures. Accepted to ACL 2022 |
+| ------------ | ------------------------------------------------------------ |
+| Subjects:    | **Computation and Language (cs.CL)**                         |
+| MSC classes: | 94A17 (Primary) 62B10 (Secondary)                            |
+| ACM classes: | I.2.7; E.4                                                   |
+| Cite as:     | **[arXiv:2204.01469](https://arxiv.org/abs/2204.01469) [cs.CL]** |
+|              | (or **[arXiv:2204.01469v1](https://arxiv.org/abs/2204.01469v1) [cs.CL]** for this version) |
+|              | https://doi.org/10.48550/arXiv.2204.01469Focus to learn more |
+
+
+
+
+
+
+
+# 2022-04-04
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-04-04-1">1. AdaSpeech 4: Adaptive Text to Speech in Zero-Shot Scenarios
+</h2>
+
+Title: [AdaSpeech 4: Adaptive Text to Speech in Zero-Shot Scenarios](https://arxiv.org/abs/2204.00436)
+
+Authors: [Yihan Wu](https://arxiv.org/search/eess?searchtype=author&query=Wu%2C+Y), [Xu Tan](https://arxiv.org/search/eess?searchtype=author&query=Tan%2C+X), [Bohan Li](https://arxiv.org/search/eess?searchtype=author&query=Li%2C+B), [Lei He](https://arxiv.org/search/eess?searchtype=author&query=He%2C+L), [Sheng Zhao](https://arxiv.org/search/eess?searchtype=author&query=Zhao%2C+S), [Ruihua Song](https://arxiv.org/search/eess?searchtype=author&query=Song%2C+R), [Tao Qin](https://arxiv.org/search/eess?searchtype=author&query=Qin%2C+T), [Tie-Yan Liu](https://arxiv.org/search/eess?searchtype=author&query=Liu%2C+T)
+
+> Adaptive text to speech (TTS) can synthesize new voices in zero-shot scenarios efficiently, by using a well-trained source TTS model without adapting it on the speech data of new speakers. Considering seen and unseen speakers have diverse characteristics, zero-shot adaptive TTS requires strong generalization ability on speaker characteristics, which brings modeling challenges. In this paper, we develop AdaSpeech 4, a zero-shot adaptive TTS system for high-quality speech synthesis. We model the speaker characteristics systematically to improve the generalization on new speakers. Generally, the modeling of speaker characteristics can be categorized into three steps: extracting speaker representation, taking this speaker representation as condition, and synthesizing speech/mel-spectrogram given this speaker representation. Accordingly, we improve the modeling in three steps: 1) To extract speaker representation with better generalization, we factorize the speaker characteristics into basis vectors and extract speaker representation by weighted combining of these basis vectors through attention. 2) We leverage conditional layer normalization to integrate the extracted speaker representation to TTS model. 3) We propose a novel supervision loss based on the distribution of basis vectors to maintain the corresponding speaker characteristics in generated mel-spectrograms. Without any fine-tuning, AdaSpeech 4 achieves better voice quality and similarity than baselines in multiple datasets.
+
+| Comments: | 5 pages, 2 tables, 2 figure. Submitted to Interspeech 2022   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Audio and Speech Processing (eess.AS)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL); Sound (cs.SD) |
+| Cite as:  | **[arXiv:2204.00436](https://arxiv.org/abs/2204.00436) [eess.AS]** |
+|           | (or **[arXiv:2204.00436v1](https://arxiv.org/abs/2204.00436v1) [eess.AS]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2204.00436Focus to learn more |
+
+
+
+
+
+<h2 id="2022-04-04-2">2. Unified and Effective Ensemble Knowledge Distillation
+</h2>
+
+Title: [Unified and Effective Ensemble Knowledge Distillation](https://arxiv.org/abs/2204.00548)
+
+Authors: [Chuhan Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+C), [Fangzhao Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+F), [Tao Qi](https://arxiv.org/search/cs?searchtype=author&query=Qi%2C+T), [Yongfeng Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+Y)
+
+> Ensemble knowledge distillation can extract knowledge from multiple teacher models and encode it into a single student model. Many existing methods learn and distill the student model on labeled data only. However, the teacher models are usually learned on the same labeled data, and their predictions have high correlations with groudtruth labels. Thus, they cannot provide sufficient knowledge complementary to task labels for student teaching. Distilling on unseen unlabeled data has the potential to enhance the knowledge transfer from the teachers to the student. In this paper, we propose a unified and effective ensemble knowledge distillation method that distills a single student model from an ensemble of teacher models on both labeled and unlabeled data. Since different teachers may have diverse prediction correctness on the same sample, on labeled data we weight the predictions of different teachers according to their correctness. In addition, we weight the distillation loss based on the overall prediction correctness of the teacher ensemble to distill high-quality knowledge. On unlabeled data, there is no groundtruth to evaluate prediction correctness. Fortunately, the disagreement among teachers is an indication of sample hardness, and thereby we weight the distillation loss based on teachers' disagreement to emphasize knowledge distillation on important samples. Extensive experiments on four datasets show the effectiveness of our proposed ensemble distillation method.
+
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2204.00548](https://arxiv.org/abs/2204.00548) [cs.LG]** |
+|           | (or **[arXiv:2204.00548v1](https://arxiv.org/abs/2204.00548v1) [cs.LG]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2204.00548Focus to learn more |
+
+
+
+
+
+<h2 id="2022-04-04-3">3. Better Intermediates Improve CTC Inference
+</h2>
+
+Title: [Better Intermediates Improve CTC Inference](https://arxiv.org/abs/2204.00176)
+
+Authors: [Tatsuya Komatsu](https://arxiv.org/search/cs?searchtype=author&query=Komatsu%2C+T), [Yusuke Fujita](https://arxiv.org/search/cs?searchtype=author&query=Fujita%2C+Y), [Jaesong Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+J), [Lukas Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+L), [Shinji Watanabe](https://arxiv.org/search/cs?searchtype=author&query=Watanabe%2C+S), [Yusuke Kida](https://arxiv.org/search/cs?searchtype=author&query=Kida%2C+Y)
+
+> This paper proposes a method for improved CTC inference with searched intermediates and multi-pass conditioning. The paper first formulates self-conditioned CTC as a probabilistic model with an intermediate prediction as a latent representation and provides a tractable conditioning framework. We then propose two new conditioning methods based on the new formulation: (1) Searched intermediate conditioning that refines intermediate predictions with beam-search, (2) Multi-pass conditioning that uses predictions of previous inference for conditioning the next inference. These new approaches enable better conditioning than the original self-conditioned CTC during inference and improve the final performance. Experiments with the LibriSpeech dataset show relative 3%/12% performance improvement at the maximum in test clean/other sets compared to the original self-conditioned CTC.
+
+| Comments: | 5 pages, submitted INTERSPEECH2022                           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2204.00176](https://arxiv.org/abs/2204.00176) [cs.CL]** |
+|           | (or **[arXiv:2204.00176v1](https://arxiv.org/abs/2204.00176v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2204.00176Focus to learn more |
+
+
+
+
+
+<h2 id="2022-04-04-4">4. WavFT: Acoustic model finetuning with labelled and unlabelled data
+</h2>
+
+Title: [WavFT: Acoustic model finetuning with labelled and unlabelled data](https://arxiv.org/abs/2204.00348)
+
+Authors: [Utkarsh Chauhan](https://arxiv.org/search/cs?searchtype=author&query=Chauhan%2C+U), [Vikas Joshi](https://arxiv.org/search/cs?searchtype=author&query=Joshi%2C+V), [Rupesh R. Mehta](https://arxiv.org/search/cs?searchtype=author&query=Mehta%2C+R+R)
+
+> Unsupervised and self-supervised learning methods have leveraged unlabelled data to improve the pretrained models. However, these methods need significantly large amount of unlabelled data and the computational cost of training models with such large amount of data can be prohibitively high. We address this issue by using unlabelled data during finetuning, instead of pretraining. We propose acoustic model finetuning (FT) using labelled and unlabelled data. The model is jointly trained to learn representations to classify senones, as well as learn contextual acoustic representations. Our training objective is a combination of cross entropy loss, suitable for classification task, and contrastive loss, suitable to learn acoustic representations. The proposed approach outperforms conventional finetuning with 11.2% and 9.19% word error rate relative (WERR) reduction on Gujarati and Bengali languages respectively.
+
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2204.00348](https://arxiv.org/abs/2204.00348) [cs.CL]** |
+|           | (or **[arXiv:2204.00348v1](https://arxiv.org/abs/2204.00348v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2204.00348Focus to learn more |
+
+
+
+
+
+<h2 id="2022-04-04-5">5. Uncertainty Determines the Adequacy of the Mode and the Tractability of Decoding in Sequence-to-Sequence Models
+</h2>
+
+Title: [Uncertainty Determines the Adequacy of the Mode and the Tractability of Decoding in Sequence-to-Sequence Models](https://arxiv.org/abs/2204.00471)
+
+Authors: [Felix Stahlberg](https://arxiv.org/search/cs?searchtype=author&query=Stahlberg%2C+F), [Ilia Kulikov](https://arxiv.org/search/cs?searchtype=author&query=Kulikov%2C+I), [Shankar Kumar](https://arxiv.org/search/cs?searchtype=author&query=Kumar%2C+S)
+
+> In many natural language processing (NLP) tasks the same input (e.g. source sentence) can have multiple possible outputs (e.g. translations). To analyze how this ambiguity (also known as intrinsic uncertainty) shapes the distribution learned by neural sequence models we measure sentence-level uncertainty by computing the degree of overlap between references in multi-reference test sets from two different NLP tasks: machine translation (MT) and grammatical error correction (GEC). At both the sentence- and the task-level, intrinsic uncertainty has major implications for various aspects of search such as the inductive biases in beam search and the complexity of exact search. In particular, we show that well-known pathologies such as a high number of beam search errors, the inadequacy of the mode, and the drop in system performance with large beam sizes apply to tasks with high level of ambiguity such as MT but not to less uncertain tasks such as GEC. Furthermore, we propose a novel exact n-best search algorithm for neural sequence models, and show that intrinsic uncertainty affects model uncertainty as the model tends to overly spread out the probability mass for uncertain tasks and sentences.
+
+| Comments: | ACL 2022 paper                                               |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2204.00471](https://arxiv.org/abs/2204.00471) [cs.CL]** |
+|           | (or **[arXiv:2204.00471v1](https://arxiv.org/abs/2204.00471v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2204.00471Focus to learn more |
+
+
+
+
+
 
 
 
