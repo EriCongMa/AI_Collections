@@ -2,21 +2,28 @@
 
 # Index
 
+- [2022-04-06](#2022-04-06)
+  - [1. Multi-View Transformer for 3D Visual Grounding](#2022-04-06-1)
+  
+  - [2. latent-GLAT: Glancing at Latent Variables for Parallel Text Generation](#2022-04-06-2)
+  
+  - [3. PaLM: Scaling Language Modeling with Pathways](#2022-04-06-3)
+  
 - [2022-04-05](#2022-04-05)
   - [1. Moment-based Adversarial Training for Embodied Language Comprehension](#2022-04-05-1)
-  
+
   - [2. Do As I Can, Not As I Say: Grounding Language in Robotic Affordances](#2022-04-05-2)
-  
+
   - [3. CipherDAug: Ciphertext based Data Augmentation for Neural Machine Translation](#2022-04-05-3)
-  
+
   - [4. On Efficiently Acquiring Annotations for Multilingual Models](#2022-04-05-4)
-  
+
   - [5. PERFECT: Prompt-free and Efficient Few-shot Learning with Language Models](#2022-04-05-5)
-  
+
   - [6. Aligned Weight Regularizers for Pruning Pretrained Neural Networks](#2022-04-05-6)
-  
+
   - [7. Estimating the Entropy of Linguistic Distributions](#2022-04-05-7)
-  
+
 - [2022-04-04](#2022-04-04)
   - [1. AdaSpeech 4: Adaptive Text to Speech in Zero-Shot Scenarios](#2022-04-04-1)
 
@@ -44,6 +51,70 @@
 - [2022-03-31](#2022-03-31)
   - [1. WAVPROMPT: Towards Few-Shot Spoken Language Understanding with Frozen Language Models](#2022-03-31-1)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2022-04-06
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-04-06-1">1. Multi-View Transformer for 3D Visual Grounding
+</h2>
+
+Title: [Multi-View Transformer for 3D Visual Grounding](https://arxiv.org/abs/2204.02174)
+
+Authors: [Shijia Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+S), [Yilun Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+Y), [Jiaya Jia](https://arxiv.org/search/cs?searchtype=author&query=Jia%2C+J), [Liwei Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+L)
+
+> The 3D visual grounding task aims to ground a natural language description to the targeted object in a 3D scene, which is usually represented in 3D point clouds. Previous works studied visual grounding under specific views. The vision-language correspondence learned by this way can easily fail once the view changes. In this paper, we propose a Multi-View Transformer (MVT) for 3D visual grounding. We project the 3D scene to a multi-view space, in which the position information of the 3D scene under different views are modeled simultaneously and aggregated together. The multi-view space enables the network to learn a more robust multi-modal representation for 3D visual grounding and eliminates the dependence on specific views. Extensive experiments show that our approach significantly outperforms all state-of-the-art methods. Specifically, on Nr3D and Sr3D datasets, our method outperforms the best competitor by 11.2% and 7.1% and even surpasses recent work with extra 2D assistance by 5.9% and 6.6%. Our code is available at [this https URL](https://github.com/sega-hsj/MVT-3DVG).
+
+| Comments: | cvpr2022                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2204.02174](https://arxiv.org/abs/2204.02174) [cs.CV]** |
+|           | (or **[arXiv:2204.02174v1](https://arxiv.org/abs/2204.02174v1) [cs.CV]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2204.02174Focus to learn more |
+
+
+
+
+
+<h2 id="2022-04-06-2">2. latent-GLAT: Glancing at Latent Variables for Parallel Text Generation
+</h2>
+
+Title: [latent-GLAT: Glancing at Latent Variables for Parallel Text Generation](https://arxiv.org/abs/2204.02030)
+
+Authors: [Yu Bao](https://arxiv.org/search/cs?searchtype=author&query=Bao%2C+Y), [Hao Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+H), [Shujian Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+S), [Dongqi Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+D), [Lihua Qian](https://arxiv.org/search/cs?searchtype=author&query=Qian%2C+L), [Xinyu Dai](https://arxiv.org/search/cs?searchtype=author&query=Dai%2C+X), [Jiajun Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+J), [Lei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L)
+
+> Recently, parallel text generation has received widespread attention due to its success in generation efficiency. Although many advanced techniques are proposed to improve its generation quality, they still need the help of an autoregressive model for training to overcome the one-to-many multi-modal phenomenon in the dataset, limiting their applications. In this paper, we propose latent-GLAT, which employs the discrete latent variables to capture word categorical information and invoke an advanced curriculum learning technique, alleviating the multi-modality problem. Experiment results show that our method outperforms strong baselines without the help of an autoregressive model, which further broadens the application scenarios of the parallel decoding paradigm.
+
+| Comments: | 12 pages, 5 figures, 6 tables. Accepted as a long paper in the main conference of ACL-2022 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2204.02030](https://arxiv.org/abs/2204.02030) [cs.CL]** |
+|           | (or **[arXiv:2204.02030v1](https://arxiv.org/abs/2204.02030v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2204.02030Focus to learn more |
+
+
+
+
+
+<h2 id="2022-04-06-3">3. PaLM: Scaling Language Modeling with Pathways
+</h2>
+
+Title: [PaLM: Scaling Language Modeling with Pathways](https://arxiv.org/abs/2204.02311)
+
+Authors: [Aakanksha Chowdhery](https://arxiv.org/search/cs?searchtype=author&query=Chowdhery%2C+A), [Sharan Narang](https://arxiv.org/search/cs?searchtype=author&query=Narang%2C+S), [Jacob Devlin](https://arxiv.org/search/cs?searchtype=author&query=Devlin%2C+J), [Maarten Bosma](https://arxiv.org/search/cs?searchtype=author&query=Bosma%2C+M), [Gaurav Mishra](https://arxiv.org/search/cs?searchtype=author&query=Mishra%2C+G), [Adam Roberts](https://arxiv.org/search/cs?searchtype=author&query=Roberts%2C+A), [Paul Barham](https://arxiv.org/search/cs?searchtype=author&query=Barham%2C+P), [Hyung Won Chung](https://arxiv.org/search/cs?searchtype=author&query=Chung%2C+H+W), [Charles Sutton](https://arxiv.org/search/cs?searchtype=author&query=Sutton%2C+C), [Sebastian Gehrmann](https://arxiv.org/search/cs?searchtype=author&query=Gehrmann%2C+S), [Parker Schuh](https://arxiv.org/search/cs?searchtype=author&query=Schuh%2C+P), [Kensen Shi](https://arxiv.org/search/cs?searchtype=author&query=Shi%2C+K), [Sasha Tsvyashchenko](https://arxiv.org/search/cs?searchtype=author&query=Tsvyashchenko%2C+S), [Joshua Maynez](https://arxiv.org/search/cs?searchtype=author&query=Maynez%2C+J), [Abhishek Rao](https://arxiv.org/search/cs?searchtype=author&query=Rao%2C+A), [Parker Barnes](https://arxiv.org/search/cs?searchtype=author&query=Barnes%2C+P), [Yi Tay](https://arxiv.org/search/cs?searchtype=author&query=Tay%2C+Y), [Noam Shazeer](https://arxiv.org/search/cs?searchtype=author&query=Shazeer%2C+N), [Vinodkumar Prabhakaran](https://arxiv.org/search/cs?searchtype=author&query=Prabhakaran%2C+V), [Emily Reif](https://arxiv.org/search/cs?searchtype=author&query=Reif%2C+E), [Nan Du](https://arxiv.org/search/cs?searchtype=author&query=Du%2C+N), [Ben Hutchinson](https://arxiv.org/search/cs?searchtype=author&query=Hutchinson%2C+B), [Reiner Pope](https://arxiv.org/search/cs?searchtype=author&query=Pope%2C+R), [James Bradbury](https://arxiv.org/search/cs?searchtype=author&query=Bradbury%2C+J), [Jacob Austin](https://arxiv.org/search/cs?searchtype=author&query=Austin%2C+J), [Michael Isard](https://arxiv.org/search/cs?searchtype=author&query=Isard%2C+M), [Guy Gur-Ari](https://arxiv.org/search/cs?searchtype=author&query=Gur-Ari%2C+G), [Pengcheng Yin](https://arxiv.org/search/cs?searchtype=author&query=Yin%2C+P), [Toju Duke](https://arxiv.org/search/cs?searchtype=author&query=Duke%2C+T), [Anselm Levskaya](https://arxiv.org/search/cs?searchtype=author&query=Levskaya%2C+A), [Sanjay Ghemawat](https://arxiv.org/search/cs?searchtype=author&query=Ghemawat%2C+S), [Sunipa Dev](https://arxiv.org/search/cs?searchtype=author&query=Dev%2C+S), [Henryk Michalewski](https://arxiv.org/search/cs?searchtype=author&query=Michalewski%2C+H), [Xavier Garcia](https://arxiv.org/search/cs?searchtype=author&query=Garcia%2C+X), [Vedant Misra](https://arxiv.org/search/cs?searchtype=author&query=Misra%2C+V), [Kevin Robinson](https://arxiv.org/search/cs?searchtype=author&query=Robinson%2C+K), [Liam Fedus](https://arxiv.org/search/cs?searchtype=author&query=Fedus%2C+L), [Denny Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+D), [Daphne Ippolito](https://arxiv.org/search/cs?searchtype=author&query=Ippolito%2C+D), [David Luan](https://arxiv.org/search/cs?searchtype=author&query=Luan%2C+D), [Hyeontaek Lim](https://arxiv.org/search/cs?searchtype=author&query=Lim%2C+H), [Barret Zoph](https://arxiv.org/search/cs?searchtype=author&query=Zoph%2C+B), [Alexander Spiridonov](https://arxiv.org/search/cs?searchtype=author&query=Spiridonov%2C+A), [Ryan Sepassi](https://arxiv.org/search/cs?searchtype=author&query=Sepassi%2C+R), [David Dohan](https://arxiv.org/search/cs?searchtype=author&query=Dohan%2C+D), [Shivani Agrawal](https://arxiv.org/search/cs?searchtype=author&query=Agrawal%2C+S), [Mark Omernick](https://arxiv.org/search/cs?searchtype=author&query=Omernick%2C+M), [Andrew M. Dai](https://arxiv.org/search/cs?searchtype=author&query=Dai%2C+A+M), [Thanumalayan Sankaranarayana Pillai](https://arxiv.org/search/cs?searchtype=author&query=Pillai%2C+T+S), [Marie Pellat](https://arxiv.org/search/cs?searchtype=author&query=Pellat%2C+M), [Aitor Lewkowycz](https://arxiv.org/search/cs?searchtype=author&query=Lewkowycz%2C+A), [Erica Moreira](https://arxiv.org/search/cs?searchtype=author&query=Moreira%2C+E), [Rewon Child](https://arxiv.org/search/cs?searchtype=author&query=Child%2C+R), [Oleksandr Polozov](https://arxiv.org/search/cs?searchtype=author&query=Polozov%2C+O), [Katherine Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+K), [Zongwei Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+Z), [Xuezhi Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+X), [Brennan Saeta](https://arxiv.org/search/cs?searchtype=author&query=Saeta%2C+B), [Mark Diaz](https://arxiv.org/search/cs?searchtype=author&query=Diaz%2C+M), [Orhan Firat](https://arxiv.org/search/cs?searchtype=author&query=Firat%2C+O), [Michele Catasta](https://arxiv.org/search/cs?searchtype=author&query=Catasta%2C+M), [Jason Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+J), [Kathy Meier-Hellstern](https://arxiv.org/search/cs?searchtype=author&query=Meier-Hellstern%2C+K), [Douglas Eck](https://arxiv.org/search/cs?searchtype=author&query=Eck%2C+D), [Jeff Dean](https://arxiv.org/search/cs?searchtype=author&query=Dean%2C+J), [Slav Petrov](https://arxiv.org/search/cs?searchtype=author&query=Petrov%2C+S), [Noah Fiedel](https://arxiv.org/search/cs?searchtype=author&query=Fiedel%2C+N)
+
+> Large language models have been shown to achieve remarkable performance across a variety of natural language tasks using few-shot learning, which drastically reduces the number of task-specific training examples needed to adapt the model to a particular application. To further our understanding of the impact of scale on few-shot learning, we trained a 540-billion parameter, densely activated, Transformer language model, which we call Pathways Language Model PaLM. We trained PaLM on 6144 TPU v4 chips using Pathways, a new ML system which enables highly efficient training across multiple TPU Pods. We demonstrate continued benefits of scaling by achieving state-of-the-art few-shot learning results on hundreds of language understanding and generation benchmarks. On a number of these tasks, PaLM 540B achieves breakthrough performance, outperforming the finetuned state-of-the-art on a suite of multi-step reasoning tasks, and outperforming average human performance on the recently released BIG-bench benchmark. A significant number of BIG-bench tasks showed discontinuous improvements from model scale, meaning that performance steeply increased as we scaled to our largest model. PaLM also has strong capabilities in multilingual tasks and source code generation, which we demonstrate on a wide array of benchmarks. We additionally provide a comprehensive analysis on bias and toxicity, and study the extent of training data memorization with respect to model scale. Finally, we discuss the ethical considerations related to large language models and discuss potential mitigation strategies.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2204.02311](https://arxiv.org/abs/2204.02311) [cs.CL]** |
+|           | (or **[arXiv:2204.02311v1](https://arxiv.org/abs/2204.02311v1) [cs.CL]** for this version) |
+
+
 
 
 
