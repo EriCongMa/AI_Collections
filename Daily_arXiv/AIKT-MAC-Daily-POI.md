@@ -2,13 +2,24 @@
 
 # Index
 
+- [2022-04-07](#2022-04-07)
+  - [1. Combining Spectral and Self-Supervised Features for Low Resource Speech Recognition and Translation](#2022-04-07-1)
+  
+  - [2. Probing Structured Pruning on Multilingual Pre-trained Models: Settings, Algorithms, and Efficiency](#2022-04-07-2)
+  
+  - [3. EMMT: A simultaneous eye-tracking, 4-electrode EEG and audio corpus for multi-modal reading and translation scenarios](#2022-04-07-3)
+  
+  - [4. Paying More Attention to Self-attention: Improving Pre-trained Language Models via Attention Guiding](#2022-04-07-4)
+  
+  - [5. Enhanced Direct Speech-to-Speech Translation Using Self-supervised Pre-training and Data Augmentation](#2022-04-07-5)
+  
 - [2022-04-06](#2022-04-06)
   - [1. Multi-View Transformer for 3D Visual Grounding](#2022-04-06-1)
-  
+
   - [2. latent-GLAT: Glancing at Latent Variables for Parallel Text Generation](#2022-04-06-2)
-  
+
   - [3. PaLM: Scaling Language Modeling with Pathways](#2022-04-06-3)
-  
+
 - [2022-04-05](#2022-04-05)
   - [1. Moment-based Adversarial Training for Embodied Language Comprehension](#2022-04-05-1)
 
@@ -51,6 +62,113 @@
 - [2022-03-31](#2022-03-31)
   - [1. WAVPROMPT: Towards Few-Shot Spoken Language Understanding with Frozen Language Models](#2022-03-31-1)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2022-04-07
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-04-07-1">1. Combining Spectral and Self-Supervised Features for Low Resource Speech Recognition and Translation
+</h2>
+
+Title: [Combining Spectral and Self-Supervised Features for Low Resource Speech Recognition and Translation](https://arxiv.org/abs/2204.02470)
+
+Authors: [Dan Berrebbi](https://arxiv.org/search/cs?searchtype=author&query=Berrebbi%2C+D), [Jiatong Shi](https://arxiv.org/search/cs?searchtype=author&query=Shi%2C+J), [Brian Yan](https://arxiv.org/search/cs?searchtype=author&query=Yan%2C+B), [Osbel Lopez-Francisco](https://arxiv.org/search/cs?searchtype=author&query=Lopez-Francisco%2C+O), [Jonathan D. Amith](https://arxiv.org/search/cs?searchtype=author&query=Amith%2C+J+D), [Shinji Watanabe](https://arxiv.org/search/cs?searchtype=author&query=Watanabe%2C+S)
+
+> Self-Supervised Learning (SSL) models have been successfully applied in various deep learning-based speech tasks, particularly those with a limited amount of data. However, the quality of SSL representations depends highly on the relatedness between the SSL training domain(s) and the target data domain. On the contrary, spectral feature (SF) extractors such as log Mel-filterbanks are hand-crafted non-learnable components, and could be more robust to domain shifts. The present work examines the assumption that combining non-learnable SF extractors to SSL models is an effective approach to low resource speech tasks. We propose a learnable and interpretable framework to combine SF and SSL representations. The proposed framework outperforms significantly both baseline and SSL models on Automatic Speech Recognition (ASR) and Speech Translation (ST) tasks on three low resource datasets. We additionally design a mixture of experts based combination model. This last model reveals that the relative contribution of SSL models over conventional SF extractors is very small in case of domain mismatch between SSL training set and the target language data.
+
+| Comments: | 5 pages, 2 figures, submitted to Interspeech 2022            |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2204.02470](https://arxiv.org/abs/2204.02470) [cs.CL]** |
+|           | (or **[arXiv:2204.02470v1](https://arxiv.org/abs/2204.02470v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2204.02470Focus to learn more |
+
+
+
+
+
+<h2 id="2022-04-07-2">2. Probing Structured Pruning on Multilingual Pre-trained Models: Settings, Algorithms, and Efficiency
+</h2>
+
+Title: [Probing Structured Pruning on Multilingual Pre-trained Models: Settings, Algorithms, and Efficiency](https://arxiv.org/abs/2204.02601)
+
+Authors: [Yanyang Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Y), [Fuli Luo](https://arxiv.org/search/cs?searchtype=author&query=Luo%2C+F), [Runxin Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+R), [Songfang Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+S), [Fei Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+F), [Liwei Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+L)
+
+> Structured pruning has been extensively studied on monolingual pre-trained language models and is yet to be fully evaluated on their multilingual counterparts. This work investigates three aspects of structured pruning on multilingual pre-trained language models: settings, algorithms, and efficiency. Experiments on nine downstream tasks show several counter-intuitive phenomena: for settings, individually pruning for each language does not induce a better result; for algorithms, the simplest method performs the best; for efficiency, a fast model does not imply that it is also small. To facilitate the comparison on all sparsity levels, we present Dynamic Sparsification, a simple approach that allows training the model once and adapting to different model sizes at inference. We hope this work fills the gap in the study of structured pruning on multilingual pre-trained models and sheds light on future research.
+
+| Comments: | ACL 2022 Main Conference, Camera-ready version               |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2204.02601](https://arxiv.org/abs/2204.02601) [cs.CL]** |
+|           | (or **[arXiv:2204.02601v1](https://arxiv.org/abs/2204.02601v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2204.02601Focus to learn more |
+
+
+
+
+
+<h2 id="2022-04-07-3">3. EMMT: A simultaneous eye-tracking, 4-electrode EEG and audio corpus for multi-modal reading and translation scenarios
+</h2>
+
+Title: [EMMT: A simultaneous eye-tracking, 4-electrode EEG and audio corpus for multi-modal reading and translation scenarios](https://arxiv.org/abs/2204.02905)
+
+Authors: [Sunit Bhattacharya](https://arxiv.org/search/cs?searchtype=author&query=Bhattacharya%2C+S), [Věra Kloudová](https://arxiv.org/search/cs?searchtype=author&query=Kloudová%2C+V), [Vilém Zouhar](https://arxiv.org/search/cs?searchtype=author&query=Zouhar%2C+V), [Ondřej Bojar](https://arxiv.org/search/cs?searchtype=author&query=Bojar%2C+O)
+
+> We present the Eyetracked Multi-Modal Translation (EMMT) corpus, a dataset containing monocular eye movement recordings, audio and 4-electrode electroencephalogram (EEG) data of 43 participants. The objective was to collect cognitive signals as responses of participants engaged in a number of language intensive tasks involving different text-image stimuli settings when translating from English to Czech. 
+> Each participant was exposed to 32 text-image stimuli pairs and asked to (1) read the English sentence, (2) translate it into Czech, (3) consult the image, (4) translate again, either updating or repeating the previous translation. The text stimuli consisted of 200 unique sentences with 616 unique words coupled with 200 unique images as the visual stimuli. 
+> The recordings were collected over a two week period and all the participants included in the study were Czech natives with strong English skills. Due to the nature of the tasks involved in the study and the relatively large number of participants involved, the corpus is well suited for research in Translation Process Studies, Cognitive Sciences among other disciplines.
+
+| Comments: | Submitted to Nature Scientific Data                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Human-Computer Interaction (cs.HC) |
+| Cite as:  | **[arXiv:2204.02905](https://arxiv.org/abs/2204.02905) [cs.CL]** |
+|           | (or **[arXiv:2204.02905v1](https://arxiv.org/abs/2204.02905v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2204.02905Focus to learn more |
+
+
+
+
+
+<h2 id="2022-04-07-4">4. Paying More Attention to Self-attention: Improving Pre-trained Language Models via Attention Guiding
+</h2>
+
+Title: [Paying More Attention to Self-attention: Improving Pre-trained Language Models via Attention Guiding](https://arxiv.org/abs/2204.02922)
+
+Authors: [Shanshan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+S), [Zhumin Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+Z), [Zhaochun Ren](https://arxiv.org/search/cs?searchtype=author&query=Ren%2C+Z), [Huasheng Liang](https://arxiv.org/search/cs?searchtype=author&query=Liang%2C+H), [Qiang Yan](https://arxiv.org/search/cs?searchtype=author&query=Yan%2C+Q), [Pengjie Ren](https://arxiv.org/search/cs?searchtype=author&query=Ren%2C+P)
+
+> Pre-trained language models (PLM) have demonstrated their effectiveness for a broad range of information retrieval and natural language processing tasks. As the core part of PLM, multi-head self-attention is appealing for its ability to jointly attend to information from different positions. However, researchers have found that PLM always exhibits fixed attention patterns regardless of the input (e.g., excessively paying attention to [CLS] or [SEP]), which we argue might neglect important information in the other positions. In this work, we propose a simple yet effective attention guiding mechanism to improve the performance of PLM by encouraging attention towards the established goals. Specifically, we propose two kinds of attention guiding methods, i.e., map discrimination guiding (MDG) and attention pattern decorrelation guiding (PDG). The former definitely encourages the diversity among multiple self-attention heads to jointly attend to information from different representation subspaces, while the latter encourages self-attention to attend to as many different positions of the input as possible. We conduct experiments with multiple general pre-trained models (i.e., BERT, ALBERT, and Roberta) and domain-specific pre-trained models (i.e., BioBERT, ClinicalBERT, BlueBert, and SciBERT) on three benchmark datasets (i.e., MultiNLI, MedNLI, and Cross-genre-IR). Extensive experimental results demonstrate that our proposed MDG and PDG bring stable performance improvements on all datasets with high efficiency and low cost.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2204.02922](https://arxiv.org/abs/2204.02922) [cs.CL]** |
+|           | (or **[arXiv:2204.02922v1](https://arxiv.org/abs/2204.02922v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2204.02922Focus to learn more |
+
+
+
+
+
+<h2 id="2022-04-07-5">5. Enhanced Direct Speech-to-Speech Translation Using Self-supervised Pre-training and Data Augmentation
+</h2>
+
+Title: [Enhanced Direct Speech-to-Speech Translation Using Self-supervised Pre-training and Data Augmentation](https://arxiv.org/abs/2204.02967)
+
+Authors: [Sravya Popuri](https://arxiv.org/search/cs?searchtype=author&query=Popuri%2C+S), [Peng-Jen Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+P), [Changhan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+C), [Juan Pino](https://arxiv.org/search/cs?searchtype=author&query=Pino%2C+J), [Yossi Adi](https://arxiv.org/search/cs?searchtype=author&query=Adi%2C+Y), [Jiatao Gu](https://arxiv.org/search/cs?searchtype=author&query=Gu%2C+J), [Wei-Ning Hsu](https://arxiv.org/search/cs?searchtype=author&query=Hsu%2C+W), [Ann Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+A)
+
+> Direct speech-to-speech translation (S2ST) models suffer from data scarcity issues as there exists little parallel S2ST data, compared to the amount of data available for conventional cascaded systems that consist of automatic speech recognition (ASR), machine translation (MT), and text-to-speech (TTS) synthesis. In this work, we explore self-supervised pre-training with unlabeled speech data and data augmentation to tackle this issue. We take advantage of a recently proposed speech-to-unit translation (S2UT) framework that encodes target speech into discrete representations, and transfer pre-training and efficient partial finetuning techniques that work well for speech-to-text translation (S2T) to the S2UT domain by studying both speech encoder and discrete unit decoder pre-training. Our experiments show that self-supervised pre-training consistently improves model performance compared with multitask learning with a BLEU gain of 4.3-12.0 under various data setups, and it can be further combined with data augmentation techniques that apply MT to create weakly supervised training data. Audio samples are available at: [this https URL](https://facebookresearch.github.io/speech_translation/enhanced_direct_s2st_units/index.html) .
+
+| Comments: | Submitted to Interspeech 2022                                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2204.02967](https://arxiv.org/abs/2204.02967) [cs.CL]** |
+|           | (or **[arXiv:2204.02967v1](https://arxiv.org/abs/2204.02967v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2204.02967Focus to learn more |
+
+
 
 
 
