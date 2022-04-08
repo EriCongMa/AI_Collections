@@ -2,17 +2,28 @@
 
 # Index
 
+- [2022-04-08](#2022-04-08)
+  - [1. Winoground: Probing Vision and Language Models for Visio-Linguistic Compositionality](#2022-04-08-1)
+  
+  - [2. Fusing finetuned models for better pretraining](#2022-04-08-2)
+  
+  - [3. Knowledge Infused Decoding](#2022-04-08-3)
+  
+  - [4. MAESTRO: Matched Speech Text Representations through Modality Matching](#2022-04-08-4)
+  
+  - [5. A Survey of Multi-task Learning in Natural Language Processing: Regarding Task Relatedness and Training Methods](#2022-04-08-5)
+  
 - [2022-04-07](#2022-04-07)
   - [1. Combining Spectral and Self-Supervised Features for Low Resource Speech Recognition and Translation](#2022-04-07-1)
-  
+
   - [2. Probing Structured Pruning on Multilingual Pre-trained Models: Settings, Algorithms, and Efficiency](#2022-04-07-2)
-  
+
   - [3. EMMT: A simultaneous eye-tracking, 4-electrode EEG and audio corpus for multi-modal reading and translation scenarios](#2022-04-07-3)
-  
+
   - [4. Paying More Attention to Self-attention: Improving Pre-trained Language Models via Attention Guiding](#2022-04-07-4)
-  
+
   - [5. Enhanced Direct Speech-to-Speech Translation Using Self-supervised Pre-training and Data Augmentation](#2022-04-07-5)
-  
+
 - [2022-04-06](#2022-04-06)
   - [1. Multi-View Transformer for 3D Visual Grounding](#2022-04-06-1)
 
@@ -62,6 +73,116 @@
 - [2022-03-31](#2022-03-31)
   - [1. WAVPROMPT: Towards Few-Shot Spoken Language Understanding with Frozen Language Models](#2022-03-31-1)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2022-04-08
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-04-08-1">1. Winoground: Probing Vision and Language Models for Visio-Linguistic Compositionality
+</h2>
+
+Title: [Winoground: Probing Vision and Language Models for Visio-Linguistic Compositionality](https://arxiv.org/abs/2204.03162)
+
+Authors:[Tristan Thrush](https://arxiv.org/search/cs?searchtype=author&query=Thrush%2C+T), [Ryan Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+R), [Max Bartolo](https://arxiv.org/search/cs?searchtype=author&query=Bartolo%2C+M), [Amanpreet Singh](https://arxiv.org/search/cs?searchtype=author&query=Singh%2C+A), [Adina Williams](https://arxiv.org/search/cs?searchtype=author&query=Williams%2C+A), [Douwe Kiela](https://arxiv.org/search/cs?searchtype=author&query=Kiela%2C+D), [Candace Ross](https://arxiv.org/search/cs?searchtype=author&query=Ross%2C+C)
+
+> We present a novel task and dataset for evaluating the ability of vision and language models to conduct visio-linguistic compositional reasoning, which we call Winoground. Given two images and two captions, the goal is to match them correctly - but crucially, both captions contain a completely identical set of words, only in a different order. The dataset was carefully hand-curated by expert annotators and is labeled with a rich set of fine-grained tags to assist in analyzing model performance. We probe a diverse range of state-of-the-art vision and language models and find that, surprisingly, none of them do much better than chance. Evidently, these models are not as skilled at visio-linguistic compositional reasoning as we might have hoped. We perform an extensive analysis to obtain insights into how future work might try to mitigate these models' shortcomings. We aim for Winoground to serve as a useful evaluation set for advancing the state of the art and driving further progress in the field. The dataset is available at [this https URL](https://huggingface.co/datasets/facebook/winoground).
+
+| Comments: | CVPR 2022                                                    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2204.03162](https://arxiv.org/abs/2204.03162) [cs.CV]** |
+|           | (or **[arXiv:2204.03162v1](https://arxiv.org/abs/2204.03162v1) [cs.CV]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2204.03162Focus to learn more |
+
+
+
+
+
+<h2 id="2022-04-08-2">2. Fusing finetuned models for better pretraining
+</h2>
+
+Title: [Fusing finetuned models for better pretraining](https://arxiv.org/abs/2204.03044)
+
+Authors:[Leshem Choshen](https://arxiv.org/search/cs?searchtype=author&query=Choshen%2C+L), [Elad Venezian](https://arxiv.org/search/cs?searchtype=author&query=Venezian%2C+E), [Noam Slonim](https://arxiv.org/search/cs?searchtype=author&query=Slonim%2C+N), [Yoav Katz](https://arxiv.org/search/cs?searchtype=author&query=Katz%2C+Y)
+
+> Pretrained models are the standard starting point for training. This approach consistently outperforms the use of a random initialization. However, pretraining is a costly endeavour that few can undertake. 
+> In this paper, we create better base models at hardly any cost, by fusing multiple existing fine tuned models into one. Specifically, we fuse by averaging the weights of these models. We show that the fused model results surpass the pretrained model ones. We also show that fusing is often better than intertraining. 
+> We find that fusing is less dependent on the target task. Furthermore, weight decay nullifies intertraining effects but not those of fusing.
+
+| Subjects: | **Computation and Language (cs.CL)**; Computer Vision and Pattern Recognition (cs.CV); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2204.03044](https://arxiv.org/abs/2204.03044) [cs.CL]** |
+|           | (or **[arXiv:2204.03044v1](https://arxiv.org/abs/2204.03044v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2204.03044Focus to learn more |
+
+
+
+
+
+<h2 id="2022-04-08-3">3. Knowledge Infused Decoding
+</h2>
+
+Title: [Knowledge Infused Decoding](https://arxiv.org/abs/2204.03084)
+
+Authors:[Ruibo Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+R), [Guoqing Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng%2C+G), [Shashank Gupta](https://arxiv.org/search/cs?searchtype=author&query=Gupta%2C+S), [Radhika Gaonkar](https://arxiv.org/search/cs?searchtype=author&query=Gaonkar%2C+R), [Chongyang Gao](https://arxiv.org/search/cs?searchtype=author&query=Gao%2C+C), [Soroush Vosoughi](https://arxiv.org/search/cs?searchtype=author&query=Vosoughi%2C+S), [Milad Shokouhi](https://arxiv.org/search/cs?searchtype=author&query=Shokouhi%2C+M), [Ahmed Hassan Awadallah](https://arxiv.org/search/cs?searchtype=author&query=Awadallah%2C+A+H)
+
+> Pre-trained language models (LMs) have been shown to memorize a substantial amount of knowledge from the pre-training corpora; however, they are still limited in recalling factually correct knowledge given a certain context. Hence, they tend to suffer from counterfactual or hallucinatory generation when used in knowledge-intensive natural language generation (NLG) tasks. Recent remedies to this problem focus on modifying either the pre-training or task fine-tuning objectives to incorporate knowledge, which normally require additional costly training or architecture modification of LMs for practical applications. We present Knowledge Infused Decoding (KID) -- a novel decoding algorithm for generative LMs, which dynamically infuses external knowledge into each step of the LM decoding. Specifically, we maintain a local knowledge memory based on the current context, interacting with a dynamically created external knowledge trie, and continuously update the local memory as a knowledge-aware constraint to guide decoding via reinforcement learning. On six diverse knowledge-intensive NLG tasks, task-agnostic LMs (e.g., GPT-2 and BART) armed with KID outperform many task-optimized state-of-the-art models, and show particularly strong performance in few-shot scenarios over seven related knowledge-infusion techniques. Human evaluation confirms KID's ability to generate more relevant and factual language for the input context when compared with multiple baselines. Finally, KID also alleviates exposure bias and provides stable generation quality when generating longer sequences. Code for KID is available at [this https URL](https://github.com/microsoft/KID).
+
+| Comments: | In ICLR 2022                                                 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2204.03084](https://arxiv.org/abs/2204.03084) [cs.CL]** |
+|           | (or **[arXiv:2204.03084v1](https://arxiv.org/abs/2204.03084v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2204.03084Focus to learn more |
+
+
+
+
+
+<h2 id="2022-04-08-4">4. MAESTRO: Matched Speech Text Representations through Modality Matching
+</h2>
+
+Title: [MAESTRO: Matched Speech Text Representations through Modality Matching](https://arxiv.org/abs/2204.03409)
+
+Authors:[Zhehuai Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+Z), [Yu Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Y), [Andrew Rosenberg](https://arxiv.org/search/cs?searchtype=author&query=Rosenberg%2C+A), [Bhuvana Ramabhadran](https://arxiv.org/search/cs?searchtype=author&query=Ramabhadran%2C+B), [Pedro Moreno](https://arxiv.org/search/cs?searchtype=author&query=Moreno%2C+P), [Ankur Bapna](https://arxiv.org/search/cs?searchtype=author&query=Bapna%2C+A), [Heiga Zen](https://arxiv.org/search/cs?searchtype=author&query=Zen%2C+H)
+
+> We present Maestro, a self-supervised training method to unify representations learnt from speech and text modalities. Self-supervised learning from speech signals aims to learn the latent structure inherent in the signal, while self-supervised learning from text attempts to capture lexical information. Learning aligned representations from unpaired speech and text sequences is a challenging task. Previous work either implicitly enforced the representations learnt from these two modalities to be aligned in the latent space through multitasking and parameter sharing or explicitly through conversion of modalities via speech synthesis. While the former suffers from interference between the two modalities, the latter introduces additional complexity. In this paper, we propose Maestro, a novel algorithm to learn unified representations from both these modalities simultaneously that can transfer to diverse downstream tasks such as Automated Speech Recognition (ASR) and Speech Translation (ST). Maestro learns unified representations through sequence alignment, duration prediction and matching embeddings in the learned space through an aligned masked-language model loss. We establish a new state-of-the-art (SOTA) on VoxPopuli multilingual ASR with a 11% relative reduction in Word Error Rate (WER), multidomain SpeechStew ASR (3.7% relative) and 21 languages to English multilingual ST on CoVoST 2 with an improvement of 2.8 BLEU averaged over 21 languages.
+
+| Comments:    | Submitted to Interspeech 2022                                |
+| ------------ | ------------------------------------------------------------ |
+| Subjects:    | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| MSC classes: | 68T10                                                        |
+| ACM classes: | I.2.7                                                        |
+| Cite as:     | **[arXiv:2204.03409](https://arxiv.org/abs/2204.03409) [cs.CL]** |
+|              | (or **[arXiv:2204.03409v1](https://arxiv.org/abs/2204.03409v1) [cs.CL]** for this version) |
+|              | https://doi.org/10.48550/arXiv.2204.03409Focus to learn more |
+
+
+
+
+
+<h2 id="2022-04-08-5">5. A Survey of Multi-task Learning in Natural Language Processing: Regarding Task Relatedness and Training Methods
+</h2>
+
+Title: [A Survey of Multi-task Learning in Natural Language Processing: Regarding Task Relatedness and Training Methods](https://arxiv.org/abs/2204.03508)
+
+Authors:[Zhihan Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Z), [Wenhao Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+W), [Mengxia Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+M), [Zhichun Guo](https://arxiv.org/search/cs?searchtype=author&query=Guo%2C+Z), [Meng Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+M)
+
+> Multi-task learning (MTL) has become increasingly popular in natural language processing (NLP) because it improves the performance of related tasks by exploiting their commonalities and differences. Nevertheless, it is still not understood very well how multi-task learning can be implemented based on the relatedness of training tasks. In this survey, we review recent advances of multi-task learning methods in NLP, with the aim of summarizing them into two general multi-task training methods based on their task relatedness: (i) joint training and (ii) multi-step training. We present examples in various NLP downstream applications, summarize the task relationships and discuss future directions of this promising topic.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2204.03508](https://arxiv.org/abs/2204.03508) [cs.CL]** |
+|           | (or **[arXiv:2204.03508v1](https://arxiv.org/abs/2204.03508v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2204.03508 Focus to learn morearXiv-issued DOI via DataCite |
+
+
+
+
 
 
 
