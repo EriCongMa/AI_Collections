@@ -2,17 +2,34 @@
 
 # Index
 
+- [2022-04-11](#2022-04-11)
+  - [1. A Comprehensive Review of Sign Language Recognition: Different Types, Modalities, and Datasets](#2022-04-11-1)
+  
+  - [2. Hierarchical Softmax for End-to-End Low-resource Multilingual Speech Recognition](#2022-04-11-2)
+  
+  - [3. FashionCLIP: Connecting Language and Images for Product Representations](#2022-04-11-3)
+  
+  - [4. C-NMT: A Collaborative Inference Framework for Neural Machine Translation](#2022-04-11-4)
+  
+  - [5. Does Simultaneous Speech Translation need Simultaneous Models?](#2022-04-11-5)
+  
+  - [6. PharmMT: A Neural Machine Translation Approach to Simplify Prescription Directions](#2022-04-11-6)
+  
+  - [7. GigaST: A 10,000-hour Pseudo Speech Translation Corpus](#2022-04-11-7)
+  
+  - [8. Contextual Representation Learning beyond Masked Language Modeling](#2022-04-11-8)
+  
 - [2022-04-08](#2022-04-08)
   - [1. Winoground: Probing Vision and Language Models for Visio-Linguistic Compositionality](#2022-04-08-1)
-  
+
   - [2. Fusing finetuned models for better pretraining](#2022-04-08-2)
-  
+
   - [3. Knowledge Infused Decoding](#2022-04-08-3)
-  
+
   - [4. MAESTRO: Matched Speech Text Representations through Modality Matching](#2022-04-08-4)
-  
+
   - [5. A Survey of Multi-task Learning in Natural Language Processing: Regarding Task Relatedness and Training Methods](#2022-04-08-5)
-  
+
 - [2022-04-07](#2022-04-07)
   - [1. Combining Spectral and Self-Supervised Features for Low Resource Speech Recognition and Translation](#2022-04-07-1)
 
@@ -73,6 +90,159 @@
 - [2022-03-31](#2022-03-31)
   - [1. WAVPROMPT: Towards Few-Shot Spoken Language Understanding with Frozen Language Models](#2022-03-31-1)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2022-04-11
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-04-11-1">1. A Comprehensive Review of Sign Language Recognition: Different Types, Modalities, and Datasets
+</h2>
+
+Title: [A Comprehensive Review of Sign Language Recognition: Different Types, Modalities, and Datasets](https://arxiv.org/abs/2204.03328)
+
+Authors: [Dr. M. Madhiarasan](https://arxiv.org/search/cs?searchtype=author&query=Madhiarasan%2C+D+M), [Prof. Partha Pratim Roy](https://arxiv.org/search/cs?searchtype=author&query=Roy%2C+P+P+P)
+
+> A machine can understand human activities, and the meaning of signs can help overcome the communication barriers between the inaudible and ordinary people. Sign Language Recognition (SLR) is a fascinating research area and a crucial task concerning computer vision and pattern recognition. Recently, SLR usage has increased in many applications, but the environment, background image resolution, modalities, and datasets affect the performance a lot. Many researchers have been striving to carry out generic real-time SLR models. This review paper facilitates a comprehensive overview of SLR and discusses the needs, challenges, and problems associated with SLR. We study related works about manual and non-manual, various modalities, and datasets. Research progress and existing state-of-the-art SLR models over the past decade have been reviewed. Finally, we find the research gap and limitations in this domain and suggest future directions. This review paper will be helpful for readers and researchers to get complete guidance about SLR and the progressive design of the state-of-the-art SLR model
+
+| Comments: | communicated to the Computer Science Review (Elsevier) status With Editor |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2204.03328](https://arxiv.org/abs/2204.03328) [cs.CV]** |
+|           | (or **[arXiv:2204.03328v1](https://arxiv.org/abs/2204.03328v1) [cs.CV]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2204.03328Focus to learn more |
+
+
+
+<h2 id="2022-04-11-2">2. Hierarchical Softmax for End-to-End Low-resource Multilingual Speech Recognition
+</h2>
+
+Title: [Hierarchical Softmax for End-to-End Low-resource Multilingual Speech Recognition](https://arxiv.org/abs/2204.03855)
+
+Authors: [Qianying Liu](https://arxiv.org/search/eess?searchtype=author&query=Liu%2C+Q), [Yuhang Yang](https://arxiv.org/search/eess?searchtype=author&query=Yang%2C+Y), [Zhuo Gong](https://arxiv.org/search/eess?searchtype=author&query=Gong%2C+Z), [Sheng Li](https://arxiv.org/search/eess?searchtype=author&query=Li%2C+S), [Chenchen Ding](https://arxiv.org/search/eess?searchtype=author&query=Ding%2C+C), [Nobuaki Minematsu](https://arxiv.org/search/eess?searchtype=author&query=Minematsu%2C+N), [Hao Huang](https://arxiv.org/search/eess?searchtype=author&query=Huang%2C+H), [Fei Cheng](https://arxiv.org/search/eess?searchtype=author&query=Cheng%2C+F), [Sadao Kurohashi](https://arxiv.org/search/eess?searchtype=author&query=Kurohashi%2C+S)
+
+> Low resource speech recognition has been long-suffering from insufficient training data. While neighbour languages are often used as assistant training data, it would be difficult for the model to induct similar units (character, subword, etc.) across the languages. In this paper, we assume similar units in neighbour language share similar term frequency and form a Huffman tree to perform multi-lingual hierarchical Softmax decoding. During decoding, the hierarchical structure can benefit the training of low-resource languages. Experimental results show the effectiveness of our method.
+
+| Comments: | 5 pages, Interspeech submission                              |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Audio and Speech Processing (eess.AS)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2204.03855](https://arxiv.org/abs/2204.03855) [eess.AS]** |
+|           | (or **[arXiv:2204.03855v1](https://arxiv.org/abs/2204.03855v1) [eess.AS]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2204.03855Focus to learn more |
+
+
+
+<h2 id="2022-04-11-3">3. FashionCLIP: Connecting Language and Images for Product Representations
+</h2>
+
+Title: [FashionCLIP: Connecting Language and Images for Product Representations](https://arxiv.org/abs/2204.03972)
+
+Authors: [Patrick John Chia](https://arxiv.org/search/cs?searchtype=author&query=Chia%2C+P+J), [Giuseppe Attanasio](https://arxiv.org/search/cs?searchtype=author&query=Attanasio%2C+G), [Federico Bianchi](https://arxiv.org/search/cs?searchtype=author&query=Bianchi%2C+F), [Silvia Terragni](https://arxiv.org/search/cs?searchtype=author&query=Terragni%2C+S), [Ana Rita Magalhães](https://arxiv.org/search/cs?searchtype=author&query=Magalhães%2C+A+R), [Diogo Goncalves](https://arxiv.org/search/cs?searchtype=author&query=Goncalves%2C+D), [Ciro Greco](https://arxiv.org/search/cs?searchtype=author&query=Greco%2C+C), [Jacopo Tagliabue](https://arxiv.org/search/cs?searchtype=author&query=Tagliabue%2C+J)
+
+> The steady rise of online shopping goes hand in hand with the development of increasingly complex ML and NLP models. While most use cases are cast as specialized supervised learning problems, we argue that practitioners would greatly benefit from more transferable representations of products. In this work, we build on recent developments in contrastive learning to train FashionCLIP, a CLIP-like model for the fashion industry. We showcase its capabilities for retrieval, classification and grounding, and release our model and code to the community.
+
+| Comments: | Code soon available at [this https URL](https://github.com/patrickjohncyh) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Information Retrieval (cs.IR)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2204.03972](https://arxiv.org/abs/2204.03972) [cs.IR]** |
+|           | (or **[arXiv:2204.03972v1](https://arxiv.org/abs/2204.03972v1) [cs.IR]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2204.03972Focus to learn more |
+
+
+
+<h2 id="2022-04-11-4">4. C-NMT: A Collaborative Inference Framework for Neural Machine Translation
+</h2>
+
+Title: [C-NMT: A Collaborative Inference Framework for Neural Machine Translation](https://arxiv.org/abs/2204.04043)
+
+Authors: [Yukai Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+Y), [Roberta Chiaro](https://arxiv.org/search/cs?searchtype=author&query=Chiaro%2C+R), [Enrico Macii](https://arxiv.org/search/cs?searchtype=author&query=Macii%2C+E), [Massimo Poncino](https://arxiv.org/search/cs?searchtype=author&query=Poncino%2C+M), [Daniele Jahier Pagliari](https://arxiv.org/search/cs?searchtype=author&query=Pagliari%2C+D+J)
+
+> Collaborative Inference (CI) optimizes the latency and energy consumption of deep learning inference through the inter-operation of edge and cloud devices. Albeit beneficial for other tasks, CI has never been applied to the sequence- to-sequence mapping problem at the heart of Neural Machine Translation (NMT). In this work, we address the specific issues of collaborative NMT, such as estimating the latency required to generate the (unknown) output sequence, and show how existing CI methods can be adapted to these applications. Our experiments show that CI can reduce the latency of NMT by up to 44% compared to a non-collaborative approach.
+
+| Comments: | Accepted as a conference paper at the 2022 IEEE International Symposium on Circuits and Systems (ISCAS) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Machine Learning (cs.LG)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL); Systems and Control (eess.SY) |
+| Cite as:  | **[arXiv:2204.04043](https://arxiv.org/abs/2204.04043) [cs.LG]** |
+|           | (or **[arXiv:2204.04043v1](https://arxiv.org/abs/2204.04043v1) [cs.LG]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2204.04043Focus to learn more |
+
+
+
+<h2 id="2022-04-11-5">5. Does Simultaneous Speech Translation need Simultaneous Models?
+</h2>
+
+Title: [Does Simultaneous Speech Translation need Simultaneous Models?](https://arxiv.org/abs/2204.03783)
+
+Authors: [Sara Papi](https://arxiv.org/search/cs?searchtype=author&query=Papi%2C+S), [Marco Gaido](https://arxiv.org/search/cs?searchtype=author&query=Gaido%2C+M), [Matteo Negri](https://arxiv.org/search/cs?searchtype=author&query=Negri%2C+M), [Marco Turchi](https://arxiv.org/search/cs?searchtype=author&query=Turchi%2C+M)
+
+> In simultaneous speech translation (SimulST), finding the best trade-off between high translation quality and low latency is a challenging task. To meet the latency constraints posed by different application scenarios, multiple dedicated SimulST models are usually trained and maintained, causing high computational costs and increased environmental impact. In this paper, we show that a single model trained offline can effectively serve not only offline but also simultaneous tasks at different latency regimes, bypassing any training/adaptation procedures. This single-model solution does not only facilitate the adoption of well-established offline techniques and architectures without affecting latency but also yields similar or even better translation quality compared to the same model trained in the simultaneous setting. Experiments on En→\{De, Es\} indicate the effectiveness of our approach, showing competitive results with the SimulST state of the art.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2204.03783](https://arxiv.org/abs/2204.03783) [cs.CL]** |
+|           | (or **[arXiv:2204.03783v1](https://arxiv.org/abs/2204.03783v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2204.03783Focus to learn more |
+
+
+
+<h2 id="2022-04-11-6">6. PharmMT: A Neural Machine Translation Approach to Simplify Prescription Directions
+</h2>
+
+Title: [PharmMT: A Neural Machine Translation Approach to Simplify Prescription Directions](https://arxiv.org/abs/2204.03830)
+
+Authors: [Jiazhao Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+J), [Corey Lester](https://arxiv.org/search/cs?searchtype=author&query=Lester%2C+C), [Xinyan Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+X), [Yuting Ding](https://arxiv.org/search/cs?searchtype=author&query=Ding%2C+Y), [Yun Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+Y), [V.G.Vinod Vydiswaran](https://arxiv.org/search/cs?searchtype=author&query=Vydiswaran%2C+V)
+
+> The language used by physicians and health professionals in prescription directions includes medical jargon and implicit directives and causes much confusion among patients. Human intervention to simplify the language at the pharmacies may introduce additional errors that can lead to potentially severe health outcomes. We propose a novel machine translation-based approach, PharmMT, to automatically and reliably simplify prescription directions into patient-friendly language, thereby significantly reducing pharmacist workload. We evaluate the proposed approach over a dataset consisting of over 530K prescriptions obtained from a large mail-order pharmacy. The end-to-end system achieves a BLEU score of 60.27 against the reference directions generated by pharmacists, a 39.6% relative improvement over the rule-based normalization. Pharmacists judged 94.3% of the simplified directions as usable as-is or with minimal changes. This work demonstrates the feasibility of a machine translation-based tool for simplifying prescription directions in real-life.
+
+| Comments:          | Findings of EMNLP '20 Camera Ready                           |
+| ------------------ | ------------------------------------------------------------ |
+| Subjects:          | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:           | **[arXiv:2204.03830](https://arxiv.org/abs/2204.03830) [cs.CL]** |
+|                    | (or **[arXiv:2204.03830v1](https://arxiv.org/abs/2204.03830v1) [cs.CL]** for this version) |
+|                    | https://doi.org/10.48550/arXiv.2204.03830Focus to learn more |
+| Journal reference: | Findings of EMNLP (2020) 2785--2796                          |
+| Related DOI:       | https://doi.org/10.18653/v1/2020.findings-emnlp.251Focus to learn more |
+
+
+
+<h2 id="2022-04-11-7">7. GigaST: A 10,000-hour Pseudo Speech Translation Corpus
+</h2>
+
+Title: [GigaST: A 10,000-hour Pseudo Speech Translation Corpus](https://arxiv.org/abs/2204.03939)
+
+Authors: [Rong Ye](https://arxiv.org/search/cs?searchtype=author&query=Ye%2C+R), [Chengqi Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+C), [Tom Ko](https://arxiv.org/search/cs?searchtype=author&query=Ko%2C+T), [Chutong Meng](https://arxiv.org/search/cs?searchtype=author&query=Meng%2C+C), [Tao Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+T), [Mingxuan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+M), [Jun Cao](https://arxiv.org/search/cs?searchtype=author&query=Cao%2C+J)
+
+> This paper introduces GigaST, a large-scale pseudo speech translation (ST) corpus. We create the corpus by translating the text in GigaSpeech, an English ASR corpus, into German and Chinese. The training set is translated by a strong machine translation system and the test set is translated by human. ST models trained with an addition of our corpus obtain new state-of-the-art results on the MuST-C English-German benchmark test set. We provide a detailed description of the translation process and verify its quality. We make the translated text data public and hope to facilitate research in speech translation. Additionally, we also release the training scripts on NeurST to make it easy to replicate our systems. GigaST dataset is available at [this https URL](https://st-benchmark.github.io/resources/GigaST).
+
+| Comments: | Submitted to Interspeech 2022. GigaST dataset is available at [this https URL](https://st-benchmark.github.io/resources/GigaST) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2204.03939](https://arxiv.org/abs/2204.03939) [cs.CL]** |
+|           | (or **[arXiv:2204.03939v1](https://arxiv.org/abs/2204.03939v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2204.03939Focus to learn more |
+
+
+
+<h2 id="2022-04-11-8">8. Contextual Representation Learning beyond Masked Language Modeling
+</h2>
+
+Title: [Contextual Representation Learning beyond Masked Language Modeling](https://arxiv.org/abs/2204.04163)
+
+Authors: [Zhiyi Fu](https://arxiv.org/search/cs?searchtype=author&query=Fu%2C+Z), [Wangchunshu Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+W), [Jingjing Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+J), [Hao Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+H), [Lei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L)
+
+> How do masked language models (MLMs) such as BERT learn contextual representations? In this work, we analyze the learning dynamics of MLMs. We find that MLMs adopt sampled embeddings as anchors to estimate and inject contextual semantics to representations, which limits the efficiency and effectiveness of MLMs. To address these issues, we propose TACO, a simple yet effective representation learning approach to directly model global semantics. TACO extracts and aligns contextual semantics hidden in contextualized representations to encourage models to attend global semantics when generating contextualized representations. Experiments on the GLUE benchmark show that TACO achieves up to 5x speedup and up to 1.2 points average improvement over existing MLMs. The code is available at [this https URL](https://github.com/FUZHIYI/TACO).
+
+| Comments: | ACL 2022                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2204.04163](https://arxiv.org/abs/2204.04163) [cs.CL]** |
+|           | (or **[arXiv:2204.04163v1](https://arxiv.org/abs/2204.04163v1) [cs.CL]** for this version) |
+
+
+
 
 
 
