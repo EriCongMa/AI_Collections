@@ -2,23 +2,61 @@
 
 # Index
 
+- [2022-04-13](#2022-04-13)
+  - [1. Large-Scale Streaming End-to-End Speech Translation with Neural Transducers](#2022-04-13-1)
+  
+  - [2. Unified Speech-Text Pre-training for Speech Translation and Recognition](#2022-04-13-2)
+  
+  - [3. Beam Decoding with Controlled Patience](#2022-04-13-3)
+  
+  - [4. ProtoTEx: Explaining Model Decisions with Prototype Tensors](#2022-04-13-4)
+  
+  - [5. ASR in German: A Detailed Error Analysis](#2022-04-13-5)
+  
+  - [6. Do Not Fire the Linguist: Grammatical Profiles Help Language Models Detect Semantic Change](#2022-04-13-6)
+  
+  - [7. Explore More Guidance: A Task-aware Instruction Network for Sign Language Translation Enhanced with Data Augmentation](#2022-04-13-7)
+  
+- [2022-04-12](#2022-04-12)
+  - [1. Towards Understanding Large-Scale Discourse Structures in Pre-Trained and Fine-Tuned Language Models](#2022-04-12-1)
+
+  - [2. MMTAfrica: Multilingual Machine Translation for African Languages](#2022-04-12-2)
+
+  - [3. Towards Better Chinese-centric Neural Machine Translation for Low-resource Languages](#2022-04-12-3)
+
+  - [4. Contrastive Demonstration Tuning for Pre-trained Language Models](#2022-04-12-4)
+
+  - [5. FoundationLayerNorm: Scaling BERT and GPT to 1,000 Layers](#2022-04-12-5)
+
+  - [6. Breaking Character: Are Subwords Good Enough for MRLs After All?](#2022-04-12-6)
+
+  - [7. Explanation Graph Generation via Pre-trained Language Models: An Empirical Study with Contrastive Learning](#2022-04-12-7)
+
+  - [8. Adapting BigScience Multilingual Model to Unseen Languages](#2022-04-12-8)
+
+  - [9. ConSLT: A Token-level Contrastive Framework for Sign Language Translation](#2022-04-12-9)
+
+  - [10. End-to-End Speech Translation for Code Switched Speech](#2022-04-12-10)
+
+  - [11. Toward More Effective Human Evaluation for Machine Translation](#2022-04-12-11)
+
 - [2022-04-11](#2022-04-11)
   - [1. A Comprehensive Review of Sign Language Recognition: Different Types, Modalities, and Datasets](#2022-04-11-1)
-  
+
   - [2. Hierarchical Softmax for End-to-End Low-resource Multilingual Speech Recognition](#2022-04-11-2)
-  
+
   - [3. FashionCLIP: Connecting Language and Images for Product Representations](#2022-04-11-3)
-  
+
   - [4. C-NMT: A Collaborative Inference Framework for Neural Machine Translation](#2022-04-11-4)
-  
+
   - [5. Does Simultaneous Speech Translation need Simultaneous Models?](#2022-04-11-5)
-  
+
   - [6. PharmMT: A Neural Machine Translation Approach to Simplify Prescription Directions](#2022-04-11-6)
-  
+
   - [7. GigaST: A 10,000-hour Pseudo Speech Translation Corpus](#2022-04-11-7)
-  
+
   - [8. Contextual Representation Learning beyond Masked Language Modeling](#2022-04-11-8)
-  
+
 - [2022-04-08](#2022-04-08)
   - [1. Winoground: Probing Vision and Language Models for Visio-Linguistic Compositionality](#2022-04-08-1)
 
@@ -90,6 +128,370 @@
 - [2022-03-31](#2022-03-31)
   - [1. WAVPROMPT: Towards Few-Shot Spoken Language Understanding with Frozen Language Models](#2022-03-31-1)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2022-04-13
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-04-13-1">1. Large-Scale Streaming End-to-End Speech Translation with Neural Transducers
+</h2>
+
+Title: [Large-Scale Streaming End-to-End Speech Translation with Neural Transducers](https://arxiv.org/abs/2204.05352)
+
+Authors: [Jian Xue](https://arxiv.org/search/cs?searchtype=author&query=Xue%2C+J), [Peidong Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+P), [Jinyu Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+J), [Matt Post](https://arxiv.org/search/cs?searchtype=author&query=Post%2C+M), [Yashesh Gaur](https://arxiv.org/search/cs?searchtype=author&query=Gaur%2C+Y)
+
+> Neural transducers have been widely used in automatic speech recognition (ASR). In this paper, we introduce it to streaming end-to-end speech translation (ST), which aims to convert audio signals to texts in other languages directly. Compared with cascaded ST that performs ASR followed by text-based machine translation (MT), the proposed Transformer transducer (TT)-based ST model drastically reduces inference latency, exploits speech information, and avoids error propagation from ASR to MT. To improve the modeling capacity, we propose attention pooling for the joint network in TT. In addition, we extend TT-based ST to multilingual ST, which generates texts of multiple languages at the same time. Experimental results on a large-scale 50 thousand (K) hours pseudo-labeled training set show that TT-based ST not only significantly reduces inference time but also outperforms non-streaming cascaded ST for English-German translation.
+
+| Comments: | The paper was submitted to Interspeech 2022                  |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2204.05352](https://arxiv.org/abs/2204.05352) [cs.CL]** |
+|           | (or **[arXiv:2204.05352v1](https://arxiv.org/abs/2204.05352v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-04-13-2">2. Unified Speech-Text Pre-training for Speech Translation and Recognition
+</h2>
+
+Title: [Unified Speech-Text Pre-training for Speech Translation and Recognition](https://arxiv.org/abs/2204.05409)
+
+Authors: [Yun Tang](https://arxiv.org/search/cs?searchtype=author&query=Tang%2C+Y), [Hongyu Gong](https://arxiv.org/search/cs?searchtype=author&query=Gong%2C+H), [Ning Dong](https://arxiv.org/search/cs?searchtype=author&query=Dong%2C+N), [Changhan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+C), [Wei-Ning Hsu](https://arxiv.org/search/cs?searchtype=author&query=Hsu%2C+W), [Jiatao Gu](https://arxiv.org/search/cs?searchtype=author&query=Gu%2C+J), [Alexei Baevski](https://arxiv.org/search/cs?searchtype=author&query=Baevski%2C+A), [Xian Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+X), [Abdelrahman Mohamed](https://arxiv.org/search/cs?searchtype=author&query=Mohamed%2C+A), [Michael Auli](https://arxiv.org/search/cs?searchtype=author&query=Auli%2C+M), [Juan Pino](https://arxiv.org/search/cs?searchtype=author&query=Pino%2C+J)
+
+> We describe a method to jointly pre-train speech and text in an encoder-decoder modeling framework for speech translation and recognition. The proposed method incorporates four self-supervised and supervised subtasks for cross modality learning. A self-supervised speech subtask leverages unlabelled speech data, and a (self-)supervised text to text subtask makes use of abundant text training data. Two auxiliary supervised speech tasks are included to unify speech and text modeling space. Our contribution lies in integrating linguistic information from the text corpus into the speech pre-training. Detailed analysis reveals learning interference among subtasks. Two pre-training configurations for speech translation and recognition, respectively, are presented to alleviate subtask interference. Our experiments show the proposed method can effectively fuse speech and text information into one model. It achieves between 1.7 and 2.3 BLEU improvement above the state of the art on the MuST-C speech translation dataset and comparable WERs to wav2vec 2.0 on the Librispeech speech recognition task.
+
+| Comments: | ACL 2022 main conference                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2204.05409](https://arxiv.org/abs/2204.05409) [cs.CL]** |
+|           | (or **[arXiv:2204.05409v1](https://arxiv.org/abs/2204.05409v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-04-13-3">3. Beam Decoding with Controlled Patience
+</h2>
+
+Title: [Beam Decoding with Controlled Patience](https://arxiv.org/abs/2204.05424)
+
+Authors: [Jungo Kasai](https://arxiv.org/search/cs?searchtype=author&query=Kasai%2C+J), [Keisuke Sakaguchi](https://arxiv.org/search/cs?searchtype=author&query=Sakaguchi%2C+K), [Ronan Le Bras](https://arxiv.org/search/cs?searchtype=author&query=Bras%2C+R+L), [Dragomir Radev](https://arxiv.org/search/cs?searchtype=author&query=Radev%2C+D), [Yejin Choi](https://arxiv.org/search/cs?searchtype=author&query=Choi%2C+Y), [Noah A. Smith](https://arxiv.org/search/cs?searchtype=author&query=Smith%2C+N+A)
+
+> Text generation with beam search has proven successful in a wide range of applications. The commonly-used implementation of beam decoding follows a first come, first served heuristic: it keeps a set of already completed sequences over time steps and stops when the size of this set reaches the beam size. We introduce a patience factor, a simple modification to this decoding algorithm, that generalizes the stopping criterion and provides flexibility to the depth of search. Extensive empirical results demonstrate that the patience factor improves decoding performance of strong pretrained models on news text summarization and machine translation over diverse language pairs, with a negligible inference slowdown. Our approach only modifies one line of code and can be thus readily incorporated in any implementation.
+
+| Comments: | Code: [this https URL](https://github.com/jungokasai/beam_with_patience) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2204.05424](https://arxiv.org/abs/2204.05424) [cs.CL]** |
+|           | (or **[arXiv:2204.05424v1](https://arxiv.org/abs/2204.05424v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-04-13-4">4. ProtoTEx: Explaining Model Decisions with Prototype Tensors
+</h2>
+
+Title: [ProtoTEx: Explaining Model Decisions with Prototype Tensors](https://arxiv.org/abs/2204.05426)
+
+Authors: [Anubrata Das](https://arxiv.org/search/cs?searchtype=author&query=Das%2C+A), [Chitrank Gupta](https://arxiv.org/search/cs?searchtype=author&query=Gupta%2C+C), [Venelin Kovatchev](https://arxiv.org/search/cs?searchtype=author&query=Kovatchev%2C+V), [Matthew Lease](https://arxiv.org/search/cs?searchtype=author&query=Lease%2C+M), [Junyi Jessy Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+J+J)
+
+> We present ProtoTEx, a novel white-box NLP classification architecture based on prototype networks. ProtoTEx faithfully explains model decisions based on prototype tensors that encode latent clusters of training examples. At inference time, classification decisions are based on the distances between the input text and the prototype tensors, explained via the training examples most similar to the most influential prototypes. We also describe a novel interleaved training algorithm that effectively handles classes characterized by the absence of indicative features. On a propaganda detection task, ProtoTEx accuracy matches BART-large and exceeds BERT-large with the added benefit of providing faithful explanations. A user study also shows that prototype-based explanations help non-experts to better recognize propaganda in online news.
+
+| Comments: | Accepted in ACL Main 2022                                    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Computers and Society (cs.CY); Human-Computer Interaction (cs.HC) |
+| Cite as:  | **[arXiv:2204.05426](https://arxiv.org/abs/2204.05426) [cs.CL]** |
+|           | (or **[arXiv:2204.05426v1](https://arxiv.org/abs/2204.05426v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-04-13-5">5. ASR in German: A Detailed Error Analysis
+</h2>
+
+Title: [ASR in German: A Detailed Error Analysis](https://arxiv.org/abs/2204.05617)
+
+Authors: [Johannes Wirth](https://arxiv.org/search/cs?searchtype=author&query=Wirth%2C+J), [Rene Peinl](https://arxiv.org/search/cs?searchtype=author&query=Peinl%2C+R)
+
+> The amount of freely available systems for automatic speech recognition (ASR) based on neural networks is growing steadily, with equally increasingly reliable predictions. However, the evaluation of trained models is typically exclusively based on statistical metrics such as WER or CER, which do not provide any insight into the nature or impact of the errors produced when predicting transcripts from speech input. This work presents a selection of ASR model architectures that are pretrained on the German language and evaluates them on a benchmark of diverse test datasets. It identifies cross-architectural prediction errors, classifies those into categories and traces the sources of errors per category back into training data as well as other sources. Finally, it discusses solutions in order to create qualitatively better training datasets and more robust ASR systems.
+
+| Subjects:    | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| ------------ | ------------------------------------------------------------ |
+| ACM classes: | C.4; I.2.7                                                   |
+| Cite as:     | **[arXiv:2204.05617](https://arxiv.org/abs/2204.05617) [cs.CL]** |
+|              | (or **[arXiv:2204.05617v1](https://arxiv.org/abs/2204.05617v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-04-13-6">6. Do Not Fire the Linguist: Grammatical Profiles Help Language Models Detect Semantic Change
+</h2>
+
+Title: [Do Not Fire the Linguist: Grammatical Profiles Help Language Models Detect Semantic Change](https://arxiv.org/abs/2204.05717)
+
+Authors: [Mario Giulianelli](https://arxiv.org/search/cs?searchtype=author&query=Giulianelli%2C+M), [Andrey Kutuzov](https://arxiv.org/search/cs?searchtype=author&query=Kutuzov%2C+A), [Lidia Pivovarova](https://arxiv.org/search/cs?searchtype=author&query=Pivovarova%2C+L)
+
+> Morphological and syntactic changes in word usage (as captured, e.g., by grammatical profiles) have been shown to be good predictors of a word's meaning change. In this work, we explore whether large pre-trained contextualised language models, a common tool for lexical semantic change detection, are sensitive to such morphosyntactic changes. To this end, we first compare the performance of grammatical profiles against that of a multilingual neural language model (XLM-R) on 10 datasets, covering 7 languages, and then combine the two approaches in ensembles to assess their complementarity. Our results show that ensembling grammatical profiles with XLM-R improves semantic change detection performance for most datasets and languages. This indicates that language models do not fully cover the fine-grained morphological and syntactic signals that are explicitly represented in grammatical profiles. 
+> An interesting exception are the test sets where the time spans under analysis are much longer than the time gap between them (for example, century-long spans with a one-year gap between them). Morphosyntactic change is slow so grammatical profiles do not detect in such cases. In contrast, language models, thanks to their access to lexical information, are able to detect fast topical changes.
+
+| Comments: | 3rd International Workshop on Computational Approaches to Historical Language Change 2022 (LChange'22) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2204.05717](https://arxiv.org/abs/2204.05717) [cs.CL]** |
+|           | (or **[arXiv:2204.05717v1](https://arxiv.org/abs/2204.05717v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-04-13-7">7. Explore More Guidance: A Task-aware Instruction Network for Sign Language Translation Enhanced with Data Augmentation
+</h2>
+
+Title: [Explore More Guidance: A Task-aware Instruction Network for Sign Language Translation Enhanced with Data Augmentation](https://arxiv.org/abs/2204.05953)
+
+Authors: [Yong Cao](https://arxiv.org/search/cs?searchtype=author&query=Cao%2C+Y), [Wei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+W), [Xianzhi Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+X), [Min Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+M), [Guangyong Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+G), [Long Hu](https://arxiv.org/search/cs?searchtype=author&query=Hu%2C+L), [Zhengdao Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Z), [Hwang Kai](https://arxiv.org/search/cs?searchtype=author&query=Kai%2C+H)
+
+> Sign language recognition and translation first uses a recognition module to generate glosses from sign language videos and then employs a translation module to translate glosses into spoken sentences. Most existing works focus on the recognition step, while paying less attention to sign language translation. In this work, we propose a task-aware instruction network, namely TIN-SLT, for sign language translation, by introducing the instruction module and the learning-based feature fuse strategy into a Transformer network. In this way, the pre-trained model's language ability can be well explored and utilized to further boost the translation performance. Moreover, by exploring the representation space of sign language glosses and target spoken language, we propose a multi-level data augmentation scheme to adjust the data distribution of the training set. We conduct extensive experiments on two challenging benchmark datasets, PHOENIX-2014-T and ASLG-PC12, on which our method outperforms former best solutions by 1.65 and 1.42 in terms of BLEU-4. Our code is published at [this https URL](https://github.com/yongcaoplus/TIN-SLT).
+
+| Subjects:          | **Computation and Language (cs.CL)**                         |
+| ------------------ | ------------------------------------------------------------ |
+| Cite as:           | **[arXiv:2204.05953](https://arxiv.org/abs/2204.05953) [cs.CL]** |
+|                    | (or **[arXiv:2204.05953v1](https://arxiv.org/abs/2204.05953v1) [cs.CL]** for this version) |
+| Journal reference: | NAACL 2022 Findings                                          |
+
+
+
+
+
+# 2022-04-12
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-04-12-1">1. Towards Understanding Large-Scale Discourse Structures in Pre-Trained and Fine-Tuned Language Models
+</h2>
+
+Title: [Towards Understanding Large-Scale Discourse Structures in Pre-Trained and Fine-Tuned Language Models](https://arxiv.org/abs/2204.04289)
+
+Authors: [Patrick Huber](https://arxiv.org/search/cs?searchtype=author&query=Huber%2C+P), [Giuseppe Carenini](https://arxiv.org/search/cs?searchtype=author&query=Carenini%2C+G)
+
+> With a growing number of BERTology work analyzing different components of pre-trained language models, we extend this line of research through an in-depth analysis of discourse information in pre-trained and fine-tuned language models. We move beyond prior work along three dimensions: First, we describe a novel approach to infer discourse structures from arbitrarily long documents. Second, we propose a new type of analysis to explore where and how accurately intrinsic discourse is captured in the BERT and BART models. Finally, we assess how similar the generated structures are to a variety of baselines as well as their distribution within and between models.
+
+| Comments:          | 9 pages                                                      |
+| ------------------ | ------------------------------------------------------------ |
+| Subjects:          | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:           | **[arXiv:2204.04289](https://arxiv.org/abs/2204.04289) [cs.CL]** |
+|                    | (or **[arXiv:2204.04289v1](https://arxiv.org/abs/2204.04289v1) [cs.CL]** for this version) |
+|                    | https://doi.org/10.48550/arXiv.2204.04289Focus to learn more |
+| Journal reference: | In Proceedings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics (NAACL) |
+
+
+
+
+
+<h2 id="2022-04-12-2">2. MMTAfrica: Multilingual Machine Translation for African Languages
+</h2>
+
+Title: [MMTAfrica: Multilingual Machine Translation for African Languages](https://arxiv.org/abs/2204.04306)
+
+Authors: [Chris C. Emezue](https://arxiv.org/search/cs?searchtype=author&query=Emezue%2C+C+C), [Bonaventure F. P. Dossou](https://arxiv.org/search/cs?searchtype=author&query=Dossou%2C+B+F+P)
+
+> In this paper, we focus on the task of multilingual machine translation for African languages and describe our contribution in the 2021 WMT Shared Task: Large-Scale Multilingual Machine Translation. We introduce MMTAfrica, the first many-to-many multilingual translation system for six African languages: Fon (fon), Igbo (ibo), Kinyarwanda (kin), Swahili/Kiswahili (swa), Xhosa (xho), and Yoruba (yor) and two non-African languages: English (eng) and French (fra). For multilingual translation concerning African languages, we introduce a novel backtranslation and reconstruction objective, BT\&REC, inspired by the random online back translation and T5 modeling framework respectively, to effectively leverage monolingual data. Additionally, we report improvements from MMTAfrica over the FLORES 101 benchmarks (spBLEU gains ranging from +0.58 in Swahili to French to +19.46 in French to Xhosa). We release our dataset and code source at [this https URL](https://github.com/edaiofficial/mmtafrica).
+
+| Comments:          | WMT Shared Task, EMNLP 2021 (version 2)                      |
+| ------------------ | ------------------------------------------------------------ |
+| Subjects:          | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Computers and Society (cs.CY) |
+| Cite as:           | **[arXiv:2204.04306](https://arxiv.org/abs/2204.04306) [cs.CL]** |
+|                    | (or **[arXiv:2204.04306v1](https://arxiv.org/abs/2204.04306v1) [cs.CL]** for this version) |
+|                    | https://doi.org/10.48550/arXiv.2204.04306Focus to learn more |
+| Journal reference: | Proceedings of the Sixth Conference on Machine Translation (2021) 398-411, Association for Computational Linguistics |
+
+
+
+
+
+<h2 id="2022-04-12-3">3. Towards Better Chinese-centric Neural Machine Translation for Low-resource Languages
+</h2>
+
+Title: [Towards Better Chinese-centric Neural Machine Translation for Low-resource Languages](https://arxiv.org/abs/2204.04344)
+
+Authors: [Bin Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+B), [Yixuan Weng](https://arxiv.org/search/cs?searchtype=author&query=Weng%2C+Y), [Fei Xia](https://arxiv.org/search/cs?searchtype=author&query=Xia%2C+F), [Hanjun Deng](https://arxiv.org/search/cs?searchtype=author&query=Deng%2C+H)
+
+> The last decade has witnessed enormous improvements in science and technology, stimulating the growing demand for economic and cultural exchanges in various countries. Building a neural machine translation (NMT) system has become an urgent trend, especially in the low-resource setting. However, recent work tends to study NMT systems for low-resource languages centered on English, while few works focus on low-resource NMT systems centered on other languages such as Chinese. To achieve this, the low-resource multilingual translation challenge of the 2021 iFLYTEK AI Developer Competition provides the Chinese-centric multilingual low-resource NMT tasks, where participants are required to build NMT systems based on the provided low-resource samples. In this paper, we present the winner competition system that leverages monolingual word embeddings data enhancement, bilingual curriculum learning, and contrastive re-ranking. In addition, a new Incomplete-Trust (In-trust) loss function is proposed to replace the traditional cross-entropy loss when training. The experimental results demonstrate that the implementation of these ideas leads better performance than other state-of-the-art methods. All the experimental codes are released at: [this https URL](https://github.com/WENGSYX/Low-resource-text-translation).
+
+| Comments: | 7pages, 4 figures, 4 tables                                  |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2204.04344](https://arxiv.org/abs/2204.04344) [cs.CL]** |
+|           | (or **[arXiv:2204.04344v1](https://arxiv.org/abs/2204.04344v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2204.04344Focus to learn more |
+
+
+
+
+
+<h2 id="2022-04-12-4">4. Contrastive Demonstration Tuning for Pre-trained Language Models
+</h2>
+
+Title: [Contrastive Demonstration Tuning for Pre-trained Language Models](https://arxiv.org/abs/2204.04392)
+
+Authors: [Xiaozhuan Liang](https://arxiv.org/search/cs?searchtype=author&query=Liang%2C+X), [Ningyu Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+N), [Siyuan Cheng](https://arxiv.org/search/cs?searchtype=author&query=Cheng%2C+S), [Zhen Bi](https://arxiv.org/search/cs?searchtype=author&query=Bi%2C+Z), [Zhenru Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Z), [Chuanqi Tan](https://arxiv.org/search/cs?searchtype=author&query=Tan%2C+C), [Songfang Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+S), [Fei Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+F), [Huajun Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+H)
+
+> Pretrained language models can be effectively stimulated by textual prompts or demonstrations, especially in low-data scenarios. Recent works have focused on automatically searching discrete or continuous prompts or optimized verbalizers, yet studies for the demonstration are still limited. Concretely, the demonstration examples are crucial for an excellent final performance of prompt-tuning. In this paper, we propose a novel pluggable, extensible, and efficient approach named contrastive demonstration tuning, which is free of demonstration sampling. Furthermore, the proposed approach can be: (i) Plugged to any previous prompt-tuning approaches; (ii) Extended to widespread classification tasks with a large number of categories. Experimental results on 16 datasets illustrate that our method integrated with previous approaches LM-BFF and P-tuning can yield better performance. Code is available in [this https URL](https://github.com/zjunlp/PromptKG/tree/main/research/Demo-Tuning).
+
+| Comments: | Work in progress                                             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2204.04392](https://arxiv.org/abs/2204.04392) [cs.CL]** |
+|           | (or **[arXiv:2204.04392v1](https://arxiv.org/abs/2204.04392v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2204.04392Focus to learn more |
+
+
+
+
+
+<h2 id="2022-04-12-5">5. FoundationLayerNorm: Scaling BERT and GPT to 1,000 Layers
+</h2>
+
+Title: [FoundationLayerNorm: Scaling BERT and GPT to 1,000 Layers](https://arxiv.org/abs/2204.04477)
+
+Authors: [Dezhou Shen](https://arxiv.org/search/cs?searchtype=author&query=Shen%2C+D)
+
+> The mainstream BERT/GPT model contains only 10 to 20 layers, and there is little literature to discuss the training of deep BERT/GPT. This paper proposes a simple yet effective method to stabilize BERT and GPT training. We successfully scale up BERT and GPT to 1,000 layers, which is an order of magnitude deeper than previous BERT and GPT. The proposed method FoundationLayerNormalization enables efficient training of deep neural networks and is validated at the 1000-layer scale.
+
+| Comments:    | 7 pages, 5 tables                                            |
+| ------------ | ------------------------------------------------------------ |
+| Subjects:    | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| ACM classes: | I.2.7                                                        |
+| Cite as:     | **[arXiv:2204.04477](https://arxiv.org/abs/2204.04477) [cs.CL]** |
+|              | (or **[arXiv:2204.04477v1](https://arxiv.org/abs/2204.04477v1) [cs.CL]** for this version) |
+|              | https://doi.org/10.48550/arXiv.2204.04477Focus to learn more |
+
+
+
+
+
+<h2 id="2022-04-12-6">6. Breaking Character: Are Subwords Good Enough for MRLs After All?
+</h2>
+
+Title: [Breaking Character: Are Subwords Good Enough for MRLs After All?](https://arxiv.org/abs/2204.04748)
+
+Authors: [Omri Keren](https://arxiv.org/search/cs?searchtype=author&query=Keren%2C+O), [Tal Avinari](https://arxiv.org/search/cs?searchtype=author&query=Avinari%2C+T), [Reut Tsarfaty](https://arxiv.org/search/cs?searchtype=author&query=Tsarfaty%2C+R), [Omer Levy](https://arxiv.org/search/cs?searchtype=author&query=Levy%2C+O)
+
+> Large pretrained language models (PLMs) typically tokenize the input string into contiguous subwords before any pretraining or inference. However, previous studies have claimed that this form of subword tokenization is inadequate for processing morphologically-rich languages (MRLs). We revisit this hypothesis by pretraining a BERT-style masked language model over character sequences instead of word-pieces. We compare the resulting model, dubbed TavBERT, against contemporary PLMs based on subwords for three highly complex and ambiguous MRLs (Hebrew, Turkish, and Arabic), testing them on both morphological and semantic tasks. Our results show, for all tested languages, that while TavBERT obtains mild improvements on surface-level tasks à la POS tagging and full morphological disambiguation, subword-based PLMs achieve significantly higher performance on semantic tasks, such as named entity recognition and extractive question answering. These results showcase and (re)confirm the potential of subword tokenization as a reasonable modeling assumption for many languages, including MRLs.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2204.04748](https://arxiv.org/abs/2204.04748) [cs.CL]** |
+|           | (or **[arXiv:2204.04748v1](https://arxiv.org/abs/2204.04748v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2204.04748Focus to learn more |
+
+
+
+
+
+<h2 id="2022-04-12-7">7. Explanation Graph Generation via Pre-trained Language Models: An Empirical Study with Contrastive Learning
+</h2>
+
+Title: [Explanation Graph Generation via Pre-trained Language Models: An Empirical Study with Contrastive Learning](https://arxiv.org/abs/2204.04813)
+
+Authors: [Swarnadeep Saha](https://arxiv.org/search/cs?searchtype=author&query=Saha%2C+S), [Prateek Yadav](https://arxiv.org/search/cs?searchtype=author&query=Yadav%2C+P), [Mohit Bansal](https://arxiv.org/search/cs?searchtype=author&query=Bansal%2C+M)
+
+> Pre-trained sequence-to-sequence language models have led to widespread success in many natural language generation tasks. However, there has been relatively less work on analyzing their ability to generate structured outputs such as graphs. Unlike natural language, graphs have distinct structural and semantic properties in the context of a downstream NLP task, e.g., generating a graph that is connected and acyclic can be attributed to its structural constraints, while the semantics of a graph can refer to how meaningfully an edge represents the relation between two node concepts. In this work, we study pre-trained language models that generate explanation graphs in an end-to-end manner and analyze their ability to learn the structural constraints and semantics of such graphs. We first show that with limited supervision, pre-trained language models often generate graphs that either violate these constraints or are semantically incoherent. Since curating large amount of human-annotated graphs is expensive and tedious, we propose simple yet effective ways of graph perturbations via node and edge edit operations that lead to structurally and semantically positive and negative graphs. Next, we leverage these graphs in different contrastive learning models with Max-Margin and InfoNCE losses. Our methods lead to significant improvements in both structural and semantic accuracy of explanation graphs and also generalize to other similar graph generation tasks. Lastly, we show that human errors are the best negatives for contrastive learning and also that automatically generating more such human-like negative graphs can lead to further improvements. Our code and models are publicly available at [this https URL](https://github.com/swarnaHub/ExplagraphGen)
+
+| Comments: | ACL 2022 (19 pages)                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2204.04813](https://arxiv.org/abs/2204.04813) [cs.CL]** |
+|           | (or **[arXiv:2204.04813v1](https://arxiv.org/abs/2204.04813v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2204.04813Focus to learn more |
+
+
+
+
+
+<h2 id="2022-04-12-8">8. Adapting BigScience Multilingual Model to Unseen Languages
+</h2>
+
+Title: [Adapting BigScience Multilingual Model to Unseen Languages](https://arxiv.org/abs/2204.04873)
+
+Authors: [Zheng-Xin Yong](https://arxiv.org/search/cs?searchtype=author&query=Yong%2C+Z), [Vassilina Nikoulina](https://arxiv.org/search/cs?searchtype=author&query=Nikoulina%2C+V)
+
+> We benchmark different strategies of adding new languages (German and Korean) into the BigScience's pretrained multilingual language model with 1.3 billion parameters that currently supports 13 languages. We investigate the factors that affect the language adaptability of the model and the trade-offs between computational costs and expected performance.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2204.04873](https://arxiv.org/abs/2204.04873) [cs.CL]** |
+|           | (or **[arXiv:2204.04873v1](https://arxiv.org/abs/2204.04873v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2204.04873Focus to learn more |
+
+
+
+
+
+<h2 id="2022-04-12-9">9. ConSLT: A Token-level Contrastive Framework for Sign Language Translation
+</h2>
+
+Title: [ConSLT: A Token-level Contrastive Framework for Sign Language Translation](https://arxiv.org/abs/2204.04916)
+
+Authors: [Biao Fu](https://arxiv.org/search/cs?searchtype=author&query=Fu%2C+B), [Peigen Ye](https://arxiv.org/search/cs?searchtype=author&query=Ye%2C+P), [Liang Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+L), [Pei Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+P), [Cong Hu](https://arxiv.org/search/cs?searchtype=author&query=Hu%2C+C), [Yidong Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+Y), [Xiaodong Shi](https://arxiv.org/search/cs?searchtype=author&query=Shi%2C+X)
+
+> Sign language translation (SLT) is an important technology that can bridge the communication gap between the deaf and the hearing people. SLT task is essentially a low-resource problem due to the scarcity of publicly available parallel data. To this end, inspired by the success of neural machine translation methods based on contrastive learning, we propose ConSLT, a novel token-level \textbf{Con}trastive learning framework for \textbf{S}ign \textbf{L}anguage \textbf{T}ranslation. Unlike previous contrastive learning based works whose goal is to obtain better sentence representation, ConSLT aims to learn effective token representation by pushing apart tokens from different sentences. Concretely, our model follows the two-stage SLT method. First, in the recoginition stage, we use a state-of-the-art continuous sign language recognition model to recognize glosses from sign frames. Then, in the translation stage, we adopt the Transformer framework while introducing contrastive learning. Specifically, we pass each sign glosses to the Transformer model twice to obtain two different hidden layer representations for each token as "positive examples" and randomly sample K tokens that are not in the current sentence from the vocabulary as "negative examples" for each token. Experimental results demonstrate that ConSLT achieves new state-of-the-art performance on PHOENIX14T dataset, with +1.48 BLEU improvements.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2204.04916](https://arxiv.org/abs/2204.04916) [cs.CL]** |
+|           | (or **[arXiv:2204.04916v1](https://arxiv.org/abs/2204.04916v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2204.04916Focus to learn more |
+
+
+
+
+
+<h2 id="2022-04-12-10">10. End-to-End Speech Translation for Code Switched Speech
+</h2>
+
+Title: [End-to-End Speech Translation for Code Switched Speech](https://arxiv.org/abs/2204.05076)
+
+Authors: [Orion Weller](https://arxiv.org/search/cs?searchtype=author&query=Weller%2C+O), [Matthias Sperber](https://arxiv.org/search/cs?searchtype=author&query=Sperber%2C+M), [Telmo Pires](https://arxiv.org/search/cs?searchtype=author&query=Pires%2C+T), [Hendra Setiawan](https://arxiv.org/search/cs?searchtype=author&query=Setiawan%2C+H), [Christian Gollan](https://arxiv.org/search/cs?searchtype=author&query=Gollan%2C+C), [Dominic Telaar](https://arxiv.org/search/cs?searchtype=author&query=Telaar%2C+D), [Matthias Paulik](https://arxiv.org/search/cs?searchtype=author&query=Paulik%2C+M)
+
+> Code switching (CS) refers to the phenomenon of interchangeably using words and phrases from different languages. CS can pose significant accuracy challenges to NLP, due to the often monolingual nature of the underlying systems. In this work, we focus on CS in the context of English/Spanish conversations for the task of speech translation (ST), generating and evaluating both transcript and translation. To evaluate model performance on this task, we create a novel ST corpus derived from existing public data sets. We explore various ST architectures across two dimensions: cascaded (transcribe then translate) vs end-to-end (jointly transcribe and translate) and unidirectional (source -> target) vs bidirectional (source <-> target). We show that our ST architectures, and especially our bidirectional end-to-end architecture, perform well on CS speech, even when no CS training data is used.
+
+| Comments: | Accepted to Findings of ACL 2022                             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2204.05076](https://arxiv.org/abs/2204.05076) [cs.CL]** |
+|           | (or **[arXiv:2204.05076v1](https://arxiv.org/abs/2204.05076v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-04-12-11">11. Toward More Effective Human Evaluation for Machine Translation
+</h2>
+
+Title: [Toward More Effective Human Evaluation for Machine Translation](https://arxiv.org/abs/2204.05307)
+
+Authors: [Belén Saldías](https://arxiv.org/search/cs?searchtype=author&query=Saldías%2C+B), [George Foster](https://arxiv.org/search/cs?searchtype=author&query=Foster%2C+G), [Markus Freitag](https://arxiv.org/search/cs?searchtype=author&query=Freitag%2C+M), [Qijun Tan](https://arxiv.org/search/cs?searchtype=author&query=Tan%2C+Q)
+
+> Improvements in text generation technologies such as machine translation have necessitated more costly and time-consuming human evaluation procedures to ensure an accurate signal. We investigate a simple way to reduce cost by reducing the number of text segments that must be annotated in order to accurately predict a score for a complete test set. Using a sampling approach, we demonstrate that information from document membership and automatic metrics can help improve estimates compared to a pure random sampling baseline. We achieve gains of up to 20% in average absolute error by leveraging stratified sampling and control variates. Our techniques can improve estimates made from a fixed annotation budget, are easy to implement, and can be applied to any problem with structure similar to the one we study.
+
+| Comments: | ACL 2022 Workshop on Human Evaluation of NLP Systems         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2204.05307](https://arxiv.org/abs/2204.05307) [cs.CL]** |
+|           | (or **[arXiv:2204.05307v1](https://arxiv.org/abs/2204.05307v1) [cs.CL]** for this version) |
+
+
 
 
 
