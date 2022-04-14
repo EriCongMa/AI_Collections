@@ -2,21 +2,30 @@
 
 # Index
 
+- [2022-04-14](#2022-04-14)
+  - [1. Impossible Triangle: What's Next for Pre-trained Language Models?](#2022-04-14-1)
+  
+  - [2. Efficient Cluster-Based k-Nearest-Neighbor Machine Translation](#2022-04-14-2)
+  
+  - [3. Multilingual Language Model Adaptive Fine-Tuning: A Study on African Languages](#2022-04-14-3)
+  
+  - [4. Better Uncertainty Quantification for Machine Translation Evaluation](#2022-04-14-4)
+  
 - [2022-04-13](#2022-04-13)
   - [1. Large-Scale Streaming End-to-End Speech Translation with Neural Transducers](#2022-04-13-1)
-  
+
   - [2. Unified Speech-Text Pre-training for Speech Translation and Recognition](#2022-04-13-2)
-  
+
   - [3. Beam Decoding with Controlled Patience](#2022-04-13-3)
-  
+
   - [4. ProtoTEx: Explaining Model Decisions with Prototype Tensors](#2022-04-13-4)
-  
+
   - [5. ASR in German: A Detailed Error Analysis](#2022-04-13-5)
-  
+
   - [6. Do Not Fire the Linguist: Grammatical Profiles Help Language Models Detect Semantic Change](#2022-04-13-6)
-  
+
   - [7. Explore More Guidance: A Task-aware Instruction Network for Sign Language Translation Enhanced with Data Augmentation](#2022-04-13-7)
-  
+
 - [2022-04-12](#2022-04-12)
   - [1. Towards Understanding Large-Scale Discourse Structures in Pre-Trained and Fine-Tuned Language Models](#2022-04-12-1)
 
@@ -128,6 +137,92 @@
 - [2022-03-31](#2022-03-31)
   - [1. WAVPROMPT: Towards Few-Shot Spoken Language Understanding with Frozen Language Models](#2022-03-31-1)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2022-04-14
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-04-14-1">1. Impossible Triangle: What's Next for Pre-trained Language Models?
+</h2>
+
+Title: [Impossible Triangle: What's Next for Pre-trained Language Models?](https://arxiv.org/abs/2204.06130)
+
+Authors: [Chenguang Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+C), [Michael Zeng](https://arxiv.org/search/cs?searchtype=author&query=Zeng%2C+M)
+
+> Recent development of large-scale pre-trained language models (PLM) have significantly improved the capability of models in various NLP tasks, in terms of performance after task-specific fine-tuning and zero-shot / few-shot learning. However, many of such models come with a dauntingly huge size that few institutions can afford to pre-train, fine-tune or even deploy, while moderate-sized models usually lack strong generalized few-shot learning capabilities. In this paper, we first elaborate the current obstacles of using PLM models in terms of the Impossible Triangle: 1) moderate model size, 2) state-of-the-art few-shot learning capability, and 3) state-of-the-art fine-tuning capability. We argue that all existing PLM models lack one or more properties from the Impossible Triangle. To remedy these missing properties of PLMs, various techniques have been proposed, such as knowledge distillation, data augmentation and prompt learning, which inevitably brings additional work to the application of PLMs in real scenarios. We then offer insights into future research directions of PLMs to achieve the Impossible Triangle, and break down the task into several key phases.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2204.06130](https://arxiv.org/abs/2204.06130) [cs.CL]** |
+|           | (or **[arXiv:2204.06130v1](https://arxiv.org/abs/2204.06130v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2204.06130Focus to learn more |
+
+
+
+
+
+<h2 id="2022-04-14-2">2. Efficient Cluster-Based k-Nearest-Neighbor Machine Translation
+</h2>
+
+Title: [Efficient Cluster-Based k-Nearest-Neighbor Machine Translation](https://arxiv.org/abs/2204.06175)
+
+Authors: [Dexin Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+D), [Kai Fan](https://arxiv.org/search/cs?searchtype=author&query=Fan%2C+K), [Boxing Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+B), [Deyi Xiong](https://arxiv.org/search/cs?searchtype=author&query=Xiong%2C+D)
+
+> k-Nearest-Neighbor Machine Translation (kNN-MT) has been recently proposed as a non-parametric solution for domain adaptation in neural machine translation (NMT). It aims to alleviate the performance degradation of advanced MT systems in translating out-of-domain sentences by coordinating with an additional token-level feature-based retrieval module constructed from in-domain data. Previous studies have already demonstrated that non-parametric NMT is even superior to models fine-tuned on out-of-domain data. In spite of this success, kNN retrieval is at the expense of high latency, in particular for large datastores. To make it practical, in this paper, we explore a more efficient kNN-MT and propose to use clustering to improve the retrieval efficiency. Concretely, we first propose a cluster-based Compact Network for feature reduction in a contrastive learning manner to compress context features into 90+% lower dimensional vectors. We then suggest a cluster-based pruning solution to filter out 10%-40% redundant nodes in large datastores while retaining translation quality. Our proposed methods achieve better or comparable performance while reducing up to 57% inference latency against the advanced non-parametric MT model on several machine translation benchmarks. Experimental results indicate that the proposed methods maintain the most useful information of the original datastore and the Compact Network shows good generalization on unseen domains.
+
+| Comments: | 8 pages,6 figures, Accepted by ACL 2022 main conference      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2204.06175](https://arxiv.org/abs/2204.06175) [cs.CL]** |
+|           | (or **[arXiv:2204.06175v1](https://arxiv.org/abs/2204.06175v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2204.06175Focus to learn more |
+
+
+
+
+
+<h2 id="2022-04-14-3">3. Multilingual Language Model Adaptive Fine-Tuning: A Study on African Languages
+</h2>
+
+Title: [Multilingual Language Model Adaptive Fine-Tuning: A Study on African Languages](https://arxiv.org/abs/2204.06487)
+
+Authors: [Jesujoba O. Alabi](https://arxiv.org/search/cs?searchtype=author&query=Alabi%2C+J+O), [David Ifeoluwa Adelani](https://arxiv.org/search/cs?searchtype=author&query=Adelani%2C+D+I), [Marius Mosbach](https://arxiv.org/search/cs?searchtype=author&query=Mosbach%2C+M), [Dietrich Klakow](https://arxiv.org/search/cs?searchtype=author&query=Klakow%2C+D)
+
+> Multilingual pre-trained language models (PLMs) have demonstrated impressive performance on several downstream tasks on both high resourced and low-resourced languages. However, there is still a large performance drop for languages unseen during pre-training, especially African languages. One of the most effective approaches to adapt to a new language is language adaptive fine-tuning (LAFT) -- fine-tuning a multilingual PLM on monolingual texts of a language using the same pre-training objective. However, African languages with large monolingual texts are few, and adapting to each of them individually takes large disk space and limits the cross-lingual transfer abilities of the resulting models because they have been specialized for a single language. In this paper, we perform multilingual adaptive fine-tuning (MAFT) on 17 most-resourced African languages and three other high-resource languages widely spoken on the African continent -- English, French, and Arabic to encourage cross-lingual transfer learning. Additionally, to further specialize the multilingual PLM, we removed vocabulary tokens from the embedding layer that corresponds to non-African writing scripts before MAFT, thus reducing the model size by around 50\%. Our evaluation on two multilingual PLMs (AfriBERTa and XLM-R) and three NLP tasks (NER, news topic classification, and sentiment classification) shows that our approach is competitive to applying LAFT on individual languages while requiring significantly less disk space. Finally, we show that our adapted PLM also improves the zero-shot cross-lingual transfer abilities of parameter efficient fine-tuning methods.
+
+| Comments: | Accepted to AfricaNLP 2022 (non-archival)                    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2204.06487](https://arxiv.org/abs/2204.06487) [cs.CL]** |
+|           | (or **[arXiv:2204.06487v1](https://arxiv.org/abs/2204.06487v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2204.06487Focus to learn more |
+
+
+
+
+
+<h2 id="2022-04-14-4">4. Better Uncertainty Quantification for Machine Translation Evaluation
+</h2>
+
+Title: [Better Uncertainty Quantification for Machine Translation Evaluation](https://arxiv.org/abs/2204.06546)
+
+Authors: [Chrysoula Zerva](https://arxiv.org/search/cs?searchtype=author&query=Zerva%2C+C), [Taisiya Glushkova](https://arxiv.org/search/cs?searchtype=author&query=Glushkova%2C+T), [Ricardo Rei](https://arxiv.org/search/cs?searchtype=author&query=Rei%2C+R), [André F. T. Martins](https://arxiv.org/search/cs?searchtype=author&query=Martins%2C+A+F+T)
+
+> Neural-based machine translation (MT) evaluation metrics are progressing fast. However, these systems are often hard to interpret and might produce unreliable scores when human references or assessments are noisy or when data is out-of-domain. Recent work leveraged uncertainty quantification techniques such as Monte Carlo dropout and deep ensembles to provide confidence intervals, but these techniques (as we show) are limited in several ways. In this paper we investigate more powerful and efficient uncertainty predictors for MT evaluation metrics and their potential to capture aleatoric and epistemic uncertainty. To this end we train the COMET metric with new heteroscedastic regression, divergence minimization, and direct uncertainty prediction objectives. Our experiments show improved results on WMT20 and WMT21 metrics task datasets and a substantial reduction in computational costs. Moreover, they demonstrate the ability of our predictors to identify low quality references and to reveal model uncertainty due to out-of-domain data.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2204.06546](https://arxiv.org/abs/2204.06546) [cs.CL]** |
+|           | (or **[arXiv:2204.06546v1](https://arxiv.org/abs/2204.06546v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2204.06546Focus to learn more |
+
+
+
+
 
 
 
