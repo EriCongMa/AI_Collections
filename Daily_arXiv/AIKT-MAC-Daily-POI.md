@@ -2,25 +2,295 @@
 
 # Index
 
+- [2022-04-20](#2022-04-20)
+  - [1. Imagination-Augmented Natural Language Understanding](#2022-04-20-1)
+  
+  - [2. Blockwise Streaming Transformer for Spoken Language Understanding and Simultaneous Speech Translation](#2022-04-20-2)
+  
+  - [3. Feature Structure Distillation for BERT Transferring](#2022-04-20-3)
+  
+  - [4. On the Locality of Attention in Direct Speech Translation](#2022-04-20-4)
+  
+- [2022-04-19](#2022-04-19)
+  - [1. mGPT: Few-Shot Learners Go Multilingual](#2022-04-19-1)
+
+  - [2. MoEBERT: from BERT to Mixture-of-Experts via Importance-Guided Adaptation](#2022-04-19-2)
+
+  - [3. Bridging Cross-Lingual Gaps During Leveraging the Multilingual Sequence-to-Sequence Pretraining for Text Generation](#2022-04-19-3)
+
+  - [4. BLISS: Robust Sequence-to-Sequence Learning via Self-Supervised Input Representation](#2022-04-19-4)
+
+  - [5. On Effectively Learning of Knowledge in Continual Pre-training](#2022-04-19-5)
+
+  - [6. Dynamic Position Encoding for Transformers](#2022-04-19-6)
+
+  - [7. LayoutLMv3: Pre-training for Document AI with Unified Text and Image Masking](#2022-04-19-7)
+
+  - [8. Exploring Dimensionality Reduction Techniques in Multilingual Transformers](#2022-04-19-8)
+
 - [2022-04-18](#2022-04-18)
   - [1. Vision-and-Language Pretrained Models: A Survey](2022-04-18-1)
-  
+
   - [2. COTS: Collaborative Two-Stream Vision-Language Pre-Training Model for Cross-Modal Retrieval](2022-04-18-2)
-  
+
   - [3. XDBERT: Distilling Visual Information to BERT from Cross-Modal Systems to Improve Language Understanding](2022-04-18-3)
-  
+
   - [4. LaMemo: Language Modeling with Look-Ahead Memory](2022-04-18-4)
-  
+
   - [5. Text Revision by On-the-Fly Representation Optimization](2022-04-18-5)
-  
+
   - [6. On the Role of Pre-trained Language Models in Word Ordering: A Case Study with BART](2022-04-18-6)
-  
+
   - [7. Chinese Idiom Paraphrasing](2022-04-18-7)
-  
+
 - [2022-04-15](#2022-04-15)
   - [1. METRO: Efficient Denoising Pretraining of Large Scale Autoencoding Language Models with Model Generated Signals](#2022-04-15-1)
 
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2022-04-20
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-04-20-1">1. Imagination-Augmented Natural Language Understanding
+</h2>
+
+Title: [Imagination-Augmented Natural Language Understanding](https://arxiv.org/abs/2204.08535)
+Authors: [Yujie Lu](https://arxiv.org/search/cs?searchtype=author&query=Lu%2C+Y), [Wanrong Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+W), [Xin Eric Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+X+E), [Miguel Eckstein](https://arxiv.org/search/cs?searchtype=author&query=Eckstein%2C+M), [William Yang Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+W+Y)
+
+> Human brains integrate linguistic and perceptual information simultaneously to understand natural language, and hold the critical ability to render imaginations. Such abilities enable us to construct new abstract concepts or concrete objects, and are essential in involving practical knowledge to solve problems in low-resource scenarios. However, most existing methods for Natural Language Understanding (NLU) are mainly focused on textual signals. They do not simulate human visual imagination ability, which hinders models from inferring and learning efficiently from limited data samples. Therefore, we introduce an Imagination-Augmented Cross-modal Encoder (iACE) to solve natural language understanding tasks from a novel learning perspective -- imagination-augmented cross-modal understanding. iACE enables visual imagination with external knowledge transferred from the powerful generative and pre-trained vision-and-language models. Extensive experiments on GLUE and SWAG show that iACE achieves consistent improvement over visually-supervised pre-trained models. More importantly, results in extreme and normal few-shot settings validate the effectiveness of iACE in low-resource natural language understanding circumstances.
+
+| Comments: | 11 pages, 4 figures                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2204.08535](https://arxiv.org/abs/2204.08535) [cs.CL]** |
+|           | (or **[arXiv:2204.08535v1](https://arxiv.org/abs/2204.08535v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2204.08535Focus to learn more |
+
+
+
+
+
+<h2 id="2022-04-20-2">2. Blockwise Streaming Transformer for Spoken Language Understanding and Simultaneous Speech Translation
+</h2>
+
+Title: [Blockwise Streaming Transformer for Spoken Language Understanding and Simultaneous Speech Translation](https://arxiv.org/abs/2204.08920)
+Authors: [Keqi Deng](https://arxiv.org/search/cs?searchtype=author&query=Deng%2C+K), [Shinji Watanabe](https://arxiv.org/search/cs?searchtype=author&query=Watanabe%2C+S), [Jiatong Shi](https://arxiv.org/search/cs?searchtype=author&query=Shi%2C+J), [Siddhant Arora](https://arxiv.org/search/cs?searchtype=author&query=Arora%2C+S)
+
+> Although Transformers have gained success in several speech processing tasks like spoken language understanding (SLU) and speech translation (ST), achieving online processing while keeping competitive performance is still essential for real-world interaction. In this paper, we take the first step on streaming SLU and simultaneous ST using a blockwise streaming Transformer, which is based on contextual block processing and blockwise synchronous beam search. Furthermore, we design an automatic speech recognition (ASR)-based intermediate loss regularization for the streaming SLU task to improve the classification performance further. As for the simultaneous ST task, we propose a cross-lingual encoding method, which employs a CTC branch optimized with target language translations. In addition, the CTC translation output is also used to refine the search space with CTC prefix score, achieving joint CTC/attention simultaneous translation for the first time. Experiments for SLU are conducted on FSC and SLURP corpora, while the ST task is evaluated on Fisher-CallHome Spanish and MuST-C En-De corpora. Experimental results show that the blockwise streaming Transformer achieves competitive results compared to offline models, especially with our proposed methods that further yield a 2.4% accuracy gain on the SLU task and a 4.3 BLEU gain on the ST task over streaming baselines.
+
+| Comments: | Submitted to Interspeech2022                                 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2204.08920](https://arxiv.org/abs/2204.08920) [cs.CL]** |
+|           | (or **[arXiv:2204.08920v1](https://arxiv.org/abs/2204.08920v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2204.08920Focus to learn more |
+
+
+
+
+
+<h2 id="2022-04-20-3">3. Feature Structure Distillation for BERT Transferring
+</h2>
+
+Title: [Feature Structure Distillation for BERT Transferring](https://arxiv.org/abs/2204.08922)
+Authors: [Hee-Jun Jung](https://arxiv.org/search/cs?searchtype=author&query=Jung%2C+H), [Doyeon Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%2C+D), [Seung-Hoon Na](https://arxiv.org/search/cs?searchtype=author&query=Na%2C+S), [Kangil Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%2C+K)
+
+> Knowledge distillation is an approach to transfer information on representations from a teacher to a student by reducing their difference. A challenge of this approach is to reduce the flexibility of the student's representations inducing inaccurate learning of the teacher's knowledge. To resolve it in BERT transferring, we investigate distillation of structures of representations specified to three types: intra-feature, local inter-feature, global inter-feature structures. To transfer them, we introduce \textit{feature structure distillation} methods based on the Centered Kernel Alignment, which assigns a consistent value to similar features structures and reveals more informative relations. In particular, a memory-augmented transfer method with clustering is implemented for the global structures. In the experiments on the nine tasks for language understanding of the GLUE dataset, the proposed methods effectively transfer the three types of structures and improve performance compared to state-of-the-art distillation methods. Indeed, the code for the methods is available in [this https URL](https://github.com/maroo-sky/FSD)
+
+| Comments: | This work has been submitted to the IEEE for possible publication. Copyright may be transferred without notice, after which this version may no longer be accessible |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2204.08922](https://arxiv.org/abs/2204.08922) [cs.CL]** |
+|           | (or **[arXiv:2204.08922v1](https://arxiv.org/abs/2204.08922v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2204.08922Focus to learn more |
+
+
+
+
+
+<h2 id="2022-04-20-4">4. On the Locality of Attention in Direct Speech Translation
+</h2>
+
+Title: [On the Locality of Attention in Direct Speech Translation](https://arxiv.org/abs/2204.09028)
+Authors: [Belen Alastruey](https://arxiv.org/search/cs?searchtype=author&query=Alastruey%2C+B), [Javier Ferrando](https://arxiv.org/search/cs?searchtype=author&query=Ferrando%2C+J), [Gerard I. Gállego](https://arxiv.org/search/cs?searchtype=author&query=Gállego%2C+G+I), [Marta R. Costa-jussà](https://arxiv.org/search/cs?searchtype=author&query=Costa-jussà%2C+M+R)
+
+> Transformers have achieved state-of-the-art results across multiple NLP tasks. However, the self-attention mechanism complexity scales quadratically with the sequence length, creating an obstacle for tasks involving long sequences, like in the speech domain. In this paper, we discuss the usefulness of self-attention for Direct Speech Translation. First, we analyze the layer-wise token contributions in the self-attention of the encoder, unveiling local diagonal patterns. To prove that some attention weights are avoidable, we propose to substitute the standard self-attention with a local efficient one, setting the amount of context used based on the results of the analysis. With this approach, our model matches the baseline performance, and improves the efficiency by skipping the computation of those weights that standard attention discards.
+
+| Comments: | ACL-SRW 2022. Equal contribution between Belen Alastruey and Javier Ferrando |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2204.09028](https://arxiv.org/abs/2204.09028) [cs.CL]** |
+|           | (or **[arXiv:2204.09028v1](https://arxiv.org/abs/2204.09028v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2204.09028Focus to learn more |
+
+
+
+
+
+# 2022-04-19
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-04-19-1">1. mGPT: Few-Shot Learners Go Multilingual
+</h2>
+
+Title: [mGPT: Few-Shot Learners Go Multilingual](https://arxiv.org/abs/2204.07580)
+
+Authors: [Oleh Shliazhko](https://arxiv.org/search/cs?searchtype=author&query=Shliazhko%2C+O), [Alena Fenogenova](https://arxiv.org/search/cs?searchtype=author&query=Fenogenova%2C+A), [Maria Tikhonova](https://arxiv.org/search/cs?searchtype=author&query=Tikhonova%2C+M), [Vladislav Mikhailov](https://arxiv.org/search/cs?searchtype=author&query=Mikhailov%2C+V), [Anastasia Kozlova](https://arxiv.org/search/cs?searchtype=author&query=Kozlova%2C+A), [Tatiana Shavrina](https://arxiv.org/search/cs?searchtype=author&query=Shavrina%2C+T)
+
+> Recent studies report that autoregressive language models can successfully solve many NLP tasks via zero- and few-shot learning paradigms, which opens up new possibilities for using the pre-trained language models. This paper introduces two autoregressive GPT-like models with 1.3 billion and 13 billion parameters trained on 60 languages from 25 language families using Wikipedia and Colossal Clean Crawled Corpus. We reproduce the GPT-3 architecture using GPT-2 sources and the sparse attention mechanism; Deepspeed and Megatron frameworks allow us to parallelize the training and inference steps effectively. The resulting models show performance on par with the recently released XGLM models by Facebook, covering more languages and enhancing NLP possibilities for low resource languages of CIS countries and Russian small nations. We detail the motivation for the choices of the architecture design, thoroughly describe the data preparation pipeline, and train five small versions of the model to choose the most optimal multilingual tokenization strategy. We measure the model perplexity in all covered languages and evaluate it on the wide spectre of multilingual tasks, including classification, generative, sequence labeling and knowledge probing. The models were evaluated with the zero-shot and few-shot methods. Furthermore, we compared the classification tasks with the state-of-the-art multilingual model XGLM. source code and the mGPT XL model are publicly released.
+
+| Subjects:    | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| ------------ | ------------------------------------------------------------ |
+| MSC classes: | 68-06, 68-04, 68T50, 68T01                                   |
+| ACM classes: | I.2; I.2.7                                                   |
+| Cite as:     | **[arXiv:2204.07580](https://arxiv.org/abs/2204.07580) [cs.CL]** |
+|              | (or **[arXiv:2204.07580v1](https://arxiv.org/abs/2204.07580v1) [cs.CL]** for this version) |
+|              | https://doi.org/10.48550/arXiv.2204.07580Focus to learn more |
+
+
+
+
+
+<h2 id="2022-04-19-2">2. MoEBERT: from BERT to Mixture-of-Experts via Importance-Guided Adaptation
+</h2>
+
+Title: [MoEBERT: from BERT to Mixture-of-Experts via Importance-Guided Adaptation](https://arxiv.org/abs/2204.07675)
+
+Authors: [Simiao Zuo](https://arxiv.org/search/cs?searchtype=author&query=Zuo%2C+S), [Qingru Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Q), [Chen Liang](https://arxiv.org/search/cs?searchtype=author&query=Liang%2C+C), [Pengcheng He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+P), [Tuo Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+T), [Weizhu Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+W)
+
+> Pre-trained language models have demonstrated superior performance in various natural language processing tasks. However, these models usually contain hundreds of millions of parameters, which limits their practicality because of latency requirements in real-world applications. Existing methods train small compressed models via knowledge distillation. However, performance of these small models drops significantly compared with the pre-trained models due to their reduced model capacity. We propose MoEBERT, which uses a Mixture-of-Experts structure to increase model capacity and inference speed. We initialize MoEBERT by adapting the feed-forward neural networks in a pre-trained model into multiple experts. As such, representation power of the pre-trained model is largely retained. During inference, only one of the experts is activated, such that speed can be improved. We also propose a layer-wise distillation method to train MoEBERT. We validate the efficiency and effectiveness of MoEBERT on natural language understanding and question answering tasks. Results show that the proposed method outperforms existing task-specific distillation algorithms. For example, our method outperforms previous approaches by over 2% on the MNLI (mismatched) dataset. Our code is publicly available at [this https URL](https://github.com/SimiaoZuo/MoEBERT).
+
+| Comments: | NAACL 2022                                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2204.07675](https://arxiv.org/abs/2204.07675) [cs.CL]** |
+|           | (or **[arXiv:2204.07675v1](https://arxiv.org/abs/2204.07675v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2204.07675Focus to learn more |
+
+
+
+
+
+<h2 id="2022-04-19-3">3. Bridging Cross-Lingual Gaps During Leveraging the Multilingual Sequence-to-Sequence Pretraining for Text Generation
+</h2>
+
+Title: [Bridging Cross-Lingual Gaps During Leveraging the Multilingual Sequence-to-Sequence Pretraining for Text Generation](https://arxiv.org/abs/2204.07834)
+
+Authors: [Changtong Zan](https://arxiv.org/search/cs?searchtype=author&query=Zan%2C+C), [Liang Ding](https://arxiv.org/search/cs?searchtype=author&query=Ding%2C+L), [Li Shen](https://arxiv.org/search/cs?searchtype=author&query=Shen%2C+L), [Yu Cao](https://arxiv.org/search/cs?searchtype=author&query=Cao%2C+Y), [Weifeng Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+W), [Dacheng Tao](https://arxiv.org/search/cs?searchtype=author&query=Tao%2C+D)
+
+> For multilingual sequence-to-sequence pretrained language models (multilingual Seq2Seq PLMs), e.g. mBART, the self-supervised pretraining task is trained on a wide range of monolingual languages, e.g. 25 languages from commoncrawl, while the downstream cross-lingual tasks generally progress on a bilingual language subset, e.g. English-German, making there exists the cross-lingual data discrepancy, namely \textit{domain discrepancy}, and cross-lingual learning objective discrepancy, namely \textit{task discrepancy}, between the pretrain and finetune stages. To bridge the above cross-lingual domain and task gaps, we extend the vanilla pretrain-finetune pipeline with extra code-switching restore task. Specifically, the first stage employs the self-supervised code-switching restore task as a pretext task, allowing the multilingual Seq2Seq PLM to acquire some in-domain alignment information. And for the second stage, we continuously fine-tune the model on labeled data normally. Experiments on a variety of cross-lingual NLG tasks, including 12 bilingual translation tasks, 36 zero-shot translation tasks, and cross-lingual summarization tasks show our model outperforms the strong baseline mBART consistently. Comprehensive analyses indicate our approach could narrow the cross-lingual sentence representation distance and improve low-frequency word translation with trivial computational cost.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2204.07834](https://arxiv.org/abs/2204.07834) [cs.CL]** |
+|           | (or **[arXiv:2204.07834v1](https://arxiv.org/abs/2204.07834v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2204.07834Focus to learn more |
+
+
+
+
+
+<h2 id="2022-04-19-4">4. BLISS: Robust Sequence-to-Sequence Learning via Self-Supervised Input Representation
+</h2>
+
+Title: [BLISS: Robust Sequence-to-Sequence Learning via Self-Supervised Input Representation](https://arxiv.org/abs/2204.07837)
+
+Authors: [Zheng Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Z), [Liang Ding](https://arxiv.org/search/cs?searchtype=author&query=Ding%2C+L), [Dazhao Cheng](https://arxiv.org/search/cs?searchtype=author&query=Cheng%2C+D), [Xuebo Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+X), [Min Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+M), [Dacheng Tao](https://arxiv.org/search/cs?searchtype=author&query=Tao%2C+D)
+
+> Data augmentations (DA) are the cores to achieving robust sequence-to-sequence learning on various natural language processing (NLP) tasks. However, most of the DA approaches force the decoder to make predictions conditioned on the perturbed input representation, underutilizing supervised information provided by perturbed input. In this work, we propose a framework-level robust sequence-to-sequence learning approach, named BLISS, via self-supervised input representation, which has the great potential to complement the data-level augmentation approaches. The key idea is to supervise the sequence-to-sequence framework with both the \textit{supervised} ("input→output") and \textit{self-supervised} ("perturbed input→input") information. We conduct comprehensive experiments to validate the effectiveness of BLISS on various tasks, including machine translation, grammatical error correction, and text summarization. The results show that BLISS outperforms significantly the vanilla Transformer and consistently works well across tasks than the other five contrastive baselines. Extensive analyses reveal that BLISS learns robust representations and rich linguistic knowledge, confirming our claim. Source code will be released upon publication.
+
+| Comments: | arXiv admin note: text overlap with [arXiv:1904.03092](https://arxiv.org/abs/1904.03092), [arXiv:1904.03100](https://arxiv.org/abs/1904.03100) by other authors |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2204.07837](https://arxiv.org/abs/2204.07837) [cs.CL]** |
+|           | (or **[arXiv:2204.07837v1](https://arxiv.org/abs/2204.07837v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2204.07837Focus to learn more |
+
+
+
+
+
+<h2 id="2022-04-19-5">5. On Effectively Learning of Knowledge in Continual Pre-training
+</h2>
+
+Title: [On Effectively Learning of Knowledge in Continual Pre-training](https://arxiv.org/abs/2204.07994)
+
+Authors: [Cunxiang Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+C), [Fuli Luo](https://arxiv.org/search/cs?searchtype=author&query=Luo%2C+F), [Yanyang Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Y), [Runxin Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+R), [Fei Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+F), [Yue Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Y)
+
+> Pre-trained language models (PLMs) like BERT have made significant progress in various downstream NLP tasks. However, by asking models to do cloze-style tests, recent work finds that PLMs are short in acquiring knowledge from unstructured text. To understand the internal behaviour of PLMs in retrieving knowledge, we first define knowledge-baring (K-B) tokens and knowledge-free (K-F) tokens for unstructured text and ask professional annotators to label some samples manually. Then, we find that PLMs are more likely to give wrong predictions on K-B tokens and attend less attention to those tokens inside the self-attention module. Based on these observations, we develop two solutions to help the model learn more knowledge from unstructured text in a fully self-supervised manner. Experiments on knowledge-intensive tasks show the effectiveness of the proposed methods. To our best knowledge, we are the first to explore fully self-supervised learning of knowledge in continual pre-training.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2204.07994](https://arxiv.org/abs/2204.07994) [cs.CL]** |
+|           | (or **[arXiv:2204.07994v1](https://arxiv.org/abs/2204.07994v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2204.07994Focus to learn more |
+
+
+
+
+
+<h2 id="2022-04-19-6">6. Dynamic Position Encoding for Transformers
+</h2>
+
+Title: [Dynamic Position Encoding for Transformers](https://arxiv.org/abs/2204.08142)
+
+Authors: [Joyce Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng%2C+J), [Mehdi Rezagholizadeh](https://arxiv.org/search/cs?searchtype=author&query=Rezagholizadeh%2C+M), [Peyman Passban](https://arxiv.org/search/cs?searchtype=author&query=Passban%2C+P)
+
+> Recurrent models have been dominating the field of neural machine translation (NMT) for the past few years. Transformers \citep{vaswani2017attention}, have radically changed it by proposing a novel architecture that relies on a feed-forward backbone and self-attention mechanism. Although Transformers are powerful, they could fail to properly encode sequential/positional information due to their non-recurrent nature. To solve this problem, position embeddings are defined exclusively for each time step to enrich word information. However, such embeddings are fixed after training regardless of the task and the word ordering system of the source or target language. 
+> In this paper, we propose a novel architecture with new position embeddings depending on the input text to address this shortcoming by taking the order of target words into consideration. Instead of using predefined position embeddings, our solution \textit{generates} new embeddings to refine each word's position information. Since we do not dictate the position of source tokens and learn them in an end-to-end fashion, we refer to our method as \textit{dynamic} position encoding (DPE). We evaluated the impact of our model on multiple datasets to translate from English into German, French, and Italian and observed meaningful improvements in comparison to the original Transformer.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2204.08142](https://arxiv.org/abs/2204.08142) [cs.CL]** |
+|           | (or **[arXiv:2204.08142v1](https://arxiv.org/abs/2204.08142v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-04-19-7">7. LayoutLMv3: Pre-training for Document AI with Unified Text and Image Masking
+</h2>
+
+Title: [LayoutLMv3: Pre-training for Document AI with Unified Text and Image Masking](https://arxiv.org/abs/2204.08387)
+
+Authors: [Yupan Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+Y), [Tengchao Lv](https://arxiv.org/search/cs?searchtype=author&query=Lv%2C+T), [Lei Cui](https://arxiv.org/search/cs?searchtype=author&query=Cui%2C+L), [Yutong Lu](https://arxiv.org/search/cs?searchtype=author&query=Lu%2C+Y), [Furu Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+F)
+
+> Self-supervised pre-training techniques have achieved remarkable progress in Document AI. Most multimodal pre-trained models use a masked language modeling objective to learn bidirectional representations on the text modality, but they differ in pre-training objectives for the image modality. This discrepancy adds difficulty to multimodal representation learning. In this paper, we propose LayoutLMv3 to pre-train multimodal Transformers for Document AI with unified text and image masking. Additionally, LayoutLMv3 is pre-trained with a word-patch alignment objective to learn cross-modal alignment by predicting whether the corresponding image patch of a text word is masked. The simple unified architecture and training objectives make LayoutLMv3 a general-purpose pre-trained model for both text-centric and image-centric Document AI tasks. Experimental results show that LayoutLMv3 achieves state-of-the-art performance not only in text-centric tasks, including form understanding, receipt understanding, and document visual question answering, but also in image-centric tasks such as document image classification and document layout analysis. The code and models are publicly available at [this https URL](https://aka.ms/layoutlmv3).
+
+| Comments: | Work in Progress                                             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Computer Vision and Pattern Recognition (cs.CV) |
+| Cite as:  | **[arXiv:2204.08387](https://arxiv.org/abs/2204.08387) [cs.CL]** |
+|           | (or **[arXiv:2204.08387v1](https://arxiv.org/abs/2204.08387v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-04-19-8">8. Exploring Dimensionality Reduction Techniques in Multilingual Transformers
+</h2>
+
+Title: [Exploring Dimensionality Reduction Techniques in Multilingual Transformers](https://arxiv.org/abs/2204.08415)
+
+Authors: [Álvaro Huertas-García](https://arxiv.org/search/cs?searchtype=author&query=Huertas-García%2C+Á), [Alejandro Martín](https://arxiv.org/search/cs?searchtype=author&query=Martín%2C+A), [Javier Huertas-Tato](https://arxiv.org/search/cs?searchtype=author&query=Huertas-Tato%2C+J), [David Camacho](https://arxiv.org/search/cs?searchtype=author&query=Camacho%2C+D)
+
+> Both in scientific literature and in industry,, Semantic and context-aware Natural Language Processing-based solutions have been gaining importance in recent years. The possibilities and performance shown by these models when dealing with complex Language Understanding tasks is unquestionable, from conversational agents to the fight against disinformation in social networks. In addition, considerable attention is also being paid to developing multilingual models to tackle the language bottleneck. The growing need to provide more complex models implementing all these features has been accompanied by an increase in their size, without being conservative in the number of dimensions required. This paper aims to give a comprehensive account of the impact of a wide variety of dimensional reduction techniques on the performance of different state-of-the-art multilingual Siamese Transformers, including unsupervised dimensional reduction techniques such as linear and nonlinear feature extraction, feature selection, and manifold techniques. In order to evaluate the effects of these techniques, we considered the multilingual extended version of Semantic Textual Similarity Benchmark (mSTSb) and two different baseline approaches, one using the pre-trained version of several models and another using their fine-tuned STS version. The results evidence that it is possible to achieve an average reduction in the number of dimensions of 91.58%±2.59% and 54.65%±32.20%, respectively. This work has also considered the consequences of dimensionality reduction for visualization purposes. The results of this study will significantly contribute to the understanding of how different tuning approaches affect performance on semantic-aware tasks and how dimensional reduction techniques deal with the high-dimensional embeddings computed for the STS task and their potential for highly demanding NLP tasks
+
+| Comments: | 22 pages, 4 figures and 8 tables                             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2204.08415](https://arxiv.org/abs/2204.08415) [cs.CL]** |
+|           | (or **[arXiv:2204.08415v1](https://arxiv.org/abs/2204.08415v1) [cs.CL]** for this version) |
+
+
 
 
 
