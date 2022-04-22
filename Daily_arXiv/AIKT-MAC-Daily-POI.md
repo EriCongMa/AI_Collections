@@ -2,15 +2,35 @@
 
 # Index
 
+- [2022-04-22](#2022-04-22)
+  - [1. A Masked Image Reconstruction Network for Document-level Relation Extraction](#2022-04-22-1)
+  
+  - [2. Standing on the Shoulders of Giant Frozen Language Models](#2022-04-22-2)
+  
+  - [3. Probing Script Knowledge from Pre-Trained Models](#2022-04-22-3)
+  
+  - [4. DiffCSE: Difference-based Contrastive Learning for Sentence Embeddings](#2022-04-22-4)
+  
+- [2022-04-21](#2022-04-21)
+  - [1. DaLC: Domain Adaptation Learning Curve Prediction for Neural Machine Translation](#2022-04-21-1)
+
+  - [2. A Survey on Non-Autoregressive Generation for Neural Machine Translation and Beyond](#2022-04-21-2)
+
+  - [3. A Survey on Bias and Fairness in Natural Language Processing](#2022-04-21-3)
+
+  - [4. Exploring Continuous Integrate-and-Fire for Efficient and Adaptive Simultaneous Speech Translation](#2022-04-21-4)
+
+  - [5. Detecting Unintended Memorization in Language-Model-Fused ASR](#2022-04-21-5)
+
 - [2022-04-20](#2022-04-20)
   - [1. Imagination-Augmented Natural Language Understanding](#2022-04-20-1)
-  
+
   - [2. Blockwise Streaming Transformer for Spoken Language Understanding and Simultaneous Speech Translation](#2022-04-20-2)
-  
+
   - [3. Feature Structure Distillation for BERT Transferring](#2022-04-20-3)
-  
+
   - [4. On the Locality of Attention in Direct Speech Translation](#2022-04-20-4)
-  
+
 - [2022-04-19](#2022-04-19)
   - [1. mGPT: Few-Shot Learners Go Multilingual](#2022-04-19-1)
 
@@ -47,6 +67,194 @@
   - [1. METRO: Efficient Denoising Pretraining of Large Scale Autoencoding Language Models with Model Generated Signals](#2022-04-15-1)
 
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2022-04-22
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-04-22-1">1. A Masked Image Reconstruction Network for Document-level Relation Extraction
+</h2>
+
+Title: [A Masked Image Reconstruction Network for Document-level Relation Extraction](https://arxiv.org/abs/2204.09851)
+
+Authors: [Liang Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+L), [Yidong Cheng](https://arxiv.org/search/cs?searchtype=author&query=Cheng%2C+Y)
+
+> Document-level relation extraction aims to extract relations among entities within a document. Compared with its sentence-level counterpart, Document-level relation extraction requires inference over multiple sentences to extract complex relational triples. Previous research normally complete reasoning through information propagation on the mention-level or entity-level document-graphs, regardless of the correlations between the relationships. In this paper, we propose a novel Document-level Relation Extraction model based on a Masked Image Reconstruction network (DRE-MIR), which models inference as a masked image reconstruction problem to capture the correlations between relationships. Specifically, we first leverage an encoder module to get the features of entities and construct the entity-pair matrix based on the features. After that, we look on the entity-pair matrix as an image and then randomly mask it and restore it through an inference module to capture the correlations between the relationships. We evaluate our model on three public document-level relation extraction datasets, i.e. DocRED, CDR, and GDA. Experimental results demonstrate that our model achieves state-of-the-art performance on these three datasets and has excellent robustness against the noises during the inference process.
+
+| Comments: | arXiv admin note: text overlap with [arXiv:2204.00255](https://arxiv.org/abs/2204.00255) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2204.09851](https://arxiv.org/abs/2204.09851) [cs.CL]** |
+|           | (or **[arXiv:2204.09851v1](https://arxiv.org/abs/2204.09851v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2204.09851Focus to learn more |
+
+
+
+
+
+<h2 id="2022-04-22-2">2. Standing on the Shoulders of Giant Frozen Language Models
+</h2>
+
+Title: [Standing on the Shoulders of Giant Frozen Language Models](https://arxiv.org/abs/2204.10019)
+
+Authors: [Yoav Levine](https://arxiv.org/search/cs?searchtype=author&query=Levine%2C+Y), [Itay Dalmedigos](https://arxiv.org/search/cs?searchtype=author&query=Dalmedigos%2C+I), [Ori Ram](https://arxiv.org/search/cs?searchtype=author&query=Ram%2C+O), [Yoel Zeldes](https://arxiv.org/search/cs?searchtype=author&query=Zeldes%2C+Y), [Daniel Jannai](https://arxiv.org/search/cs?searchtype=author&query=Jannai%2C+D), [Dor Muhlgay](https://arxiv.org/search/cs?searchtype=author&query=Muhlgay%2C+D), [Yoni Osin](https://arxiv.org/search/cs?searchtype=author&query=Osin%2C+Y), [Opher Lieber](https://arxiv.org/search/cs?searchtype=author&query=Lieber%2C+O), [Barak Lenz](https://arxiv.org/search/cs?searchtype=author&query=Lenz%2C+B), [Shai Shalev-Shwartz](https://arxiv.org/search/cs?searchtype=author&query=Shalev-Shwartz%2C+S), [Amnon Shashua](https://arxiv.org/search/cs?searchtype=author&query=Shashua%2C+A), [Kevin Leyton-Brown](https://arxiv.org/search/cs?searchtype=author&query=Leyton-Brown%2C+K), [Yoav Shoham](https://arxiv.org/search/cs?searchtype=author&query=Shoham%2C+Y)
+
+> Huge pretrained language models (LMs) have demonstrated surprisingly good zero-shot capabilities on a wide variety of tasks. This gives rise to the appealing vision of a single, versatile model with a wide range of functionalities across disparate applications. However, current leading techniques for leveraging a "frozen" LM -- i.e., leaving its weights untouched -- still often underperform fine-tuning approaches which modify these weights in a task-dependent way. Those, in turn, suffer forgetfulness and compromise versatility, suggesting a tradeoff between performance and versatility. The main message of this paper is that current frozen-model techniques such as prompt tuning are only the tip of the iceberg, and more powerful methods for leveraging frozen LMs can do just as well as fine tuning in challenging domains without sacrificing the underlying model's versatility. To demonstrate this, we introduce three novel methods for leveraging frozen models: input-dependent prompt tuning, frozen readers, and recursive LMs, each of which vastly improves on current frozen-model approaches. Indeed, some of our methods even outperform fine-tuning approaches in domains currently dominated by the latter. The computational cost of each method is higher than that of existing frozen model methods, but still negligible relative to a single pass through a huge frozen LM. Each of these methods constitutes a meaningful contribution in its own right, but by presenting these contributions together we aim to convince the reader of a broader message that goes beyond the details of any given method: that frozen models have untapped potential and that fine-tuning is often unnecessary.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2204.10019](https://arxiv.org/abs/2204.10019) [cs.CL]** |
+|           | (or **[arXiv:2204.10019v1](https://arxiv.org/abs/2204.10019v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2204.10019Focus to learn more |
+
+
+
+
+
+<h2 id="2022-04-22-3">3. Probing Script Knowledge from Pre-Trained Models
+</h2>
+
+Title: [Probing Script Knowledge from Pre-Trained Models](https://arxiv.org/abs/2204.10176)
+
+Authors: [Zijian Jin](https://arxiv.org/search/cs?searchtype=author&query=Jin%2C+Z), [Xingyu Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+X), [Mo Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+M), [Lifu Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+L)
+
+> Script knowledge is critical for humans to understand the broad daily tasks and routine activities in the world. Recently researchers have explored the large-scale pre-trained language models (PLMs) to perform various script related tasks, such as story generation, temporal ordering of event, future event prediction and so on. However, it's still not well studied in terms of how well the PLMs capture the script knowledge. To answer this question, we design three probing tasks: inclusive sub-event selection, starting sub-event selection and temporal ordering to investigate the capabilities of PLMs with and without fine-tuning. The three probing tasks can be further used to automatically induce a script for each main event given all the possible sub-events. Taking BERT as a case study, by analyzing its performance on script induction as well as each individual probing task, we conclude that the stereotypical temporal knowledge among the sub-events is well captured in BERT, however the inclusive or starting sub-event knowledge is barely encoded.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2204.10176](https://arxiv.org/abs/2204.10176) [cs.CL]** |
+|           | (or **[arXiv:2204.10176v1](https://arxiv.org/abs/2204.10176v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2204.10176Focus to learn more |
+
+
+
+
+
+<h2 id="2022-04-22-4">4. DiffCSE: Difference-based Contrastive Learning for Sentence Embeddings
+</h2>
+
+Title: [DiffCSE: Difference-based Contrastive Learning for Sentence Embeddings](https://arxiv.org/abs/2204.10298)
+
+Authors: [Yung-Sung Chuang](https://arxiv.org/search/cs?searchtype=author&query=Chuang%2C+Y), [Rumen Dangovski](https://arxiv.org/search/cs?searchtype=author&query=Dangovski%2C+R), [Hongyin Luo](https://arxiv.org/search/cs?searchtype=author&query=Luo%2C+H), [Yang Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Y), [Shiyu Chang](https://arxiv.org/search/cs?searchtype=author&query=Chang%2C+S), [Marin Soljačić](https://arxiv.org/search/cs?searchtype=author&query=Soljačić%2C+M), [Shang-Wen Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+S), [Wen-tau Yih](https://arxiv.org/search/cs?searchtype=author&query=Yih%2C+W), [Yoon Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%2C+Y), [James Glass](https://arxiv.org/search/cs?searchtype=author&query=Glass%2C+J)
+
+> We propose DiffCSE, an unsupervised contrastive learning framework for learning sentence embeddings. DiffCSE learns sentence embeddings that are sensitive to the difference between the original sentence and an edited sentence, where the edited sentence is obtained by stochastically masking out the original sentence and then sampling from a masked language model. We show that DiffSCE is an instance of equivariant contrastive learning (Dangovski et al., 2021), which generalizes contrastive learning and learns representations that are insensitive to certain types of augmentations and sensitive to other "harmful" types of augmentations. Our experiments show that DiffCSE achieves state-of-the-art results among unsupervised sentence representation learning methods, outperforming unsupervised SimCSE by 2.3 absolute points on semantic textual similarity tasks.
+
+| Comments: | NAACL 2022 main conference (Long paper). Pretrained models and code are available at [this https URL](https://github.com/voidism/DiffCSE) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2204.10298](https://arxiv.org/abs/2204.10298) [cs.CL]** |
+|           | (or **[arXiv:2204.10298v1](https://arxiv.org/abs/2204.10298v1) [cs.CL]** for this version) |
+
+
+
+
+
+# 2022-04-21
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-04-21-1">1. DaLC: Domain Adaptation Learning Curve Prediction for Neural Machine Translation
+</h2>
+
+Title: [DaLC: Domain Adaptation Learning Curve Prediction for Neural Machine Translation](https://arxiv.org/abs/2204.09259)
+
+Authors: [Cheonbok Park](https://arxiv.org/search/cs?searchtype=author&query=Park%2C+C), [Hantae Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%2C+H), [Ioan Calapodescu](https://arxiv.org/search/cs?searchtype=author&query=Calapodescu%2C+I), [Hyunchang Cho](https://arxiv.org/search/cs?searchtype=author&query=Cho%2C+H), [Vassilina Nikoulina](https://arxiv.org/search/cs?searchtype=author&query=Nikoulina%2C+V)
+
+> Domain Adaptation (DA) of Neural Machine Translation (NMT) model often relies on a pre-trained general NMT model which is adapted to the new domain on a sample of in-domain parallel data. Without parallel data, there is no way to estimate the potential benefit of DA, nor the amount of parallel samples it would require. It is however a desirable functionality that could help MT practitioners to make an informed decision before investing resources in dataset creation. We propose a Domain adaptation Learning Curve prediction (DaLC) model that predicts prospective DA performance based on in-domain monolingual samples in the source language. Our model relies on the NMT encoder representations combined with various instance and corpus-level features. We demonstrate that instance-level is better able to distinguish between different domains compared to corpus-level frameworks proposed in previous studies. Finally, we perform in-depth analyses of the results highlighting the limitations of our approach, and provide directions for future research.
+
+| Comments: | to be published in ACL2021                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2204.09259](https://arxiv.org/abs/2204.09259) [cs.CL]** |
+|           | (or **[arXiv:2204.09259v1](https://arxiv.org/abs/2204.09259v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2204.09259Focus to learn more |
+
+
+
+
+
+<h2 id="2022-04-21-2">2. A Survey on Non-Autoregressive Generation for Neural Machine Translation and Beyond
+</h2>
+
+Title: [A Survey on Non-Autoregressive Generation for Neural Machine Translation and Beyond](https://arxiv.org/abs/2204.09269)
+
+Authors: [Yisheng Xiao](https://arxiv.org/search/cs?searchtype=author&query=Xiao%2C+Y), [Lijun Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+L), [Junliang Guo](https://arxiv.org/search/cs?searchtype=author&query=Guo%2C+J), [Juntao Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+J), [Min Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+M), [Tao Qin](https://arxiv.org/search/cs?searchtype=author&query=Qin%2C+T), [Tie-yan Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+T)
+
+> Non-autoregressive (NAR) generation, which is first proposed in neural machine translation (NMT) to speed up inference, has attracted much attention in both machine learning and natural language processing communities. While NAR generation can significantly accelerate inference speed for machine translation, the speedup comes at the cost of sacrificed translation accuracy compared to its counterpart, auto-regressive (AR) generation. In recent years, many new models and algorithms have been designed/proposed to bridge the accuracy gap between NAR generation and AR generation. In this paper, we conduct a systematic survey with comparisons and discussions of various non-autoregressive translation (NAT) models from different aspects. Specifically, we categorize the efforts of NAT into several groups, including data manipulation, modeling methods, training criterion, decoding algorithms, and the benefit from pre-trained models. Furthermore, we briefly review other applications of NAR models beyond machine translation, such as dialogue generation, text summarization, grammar error correction, semantic parsing, speech synthesis, and automatic speech recognition. In addition, we also discuss potential directions for future exploration, including releasing the dependency of KD, dynamic length prediction, pre-training for NAR, and wider applications, etc. We hope this survey can help researchers capture the latest progress in NAR generation, inspire the design of advanced NAR models and algorithms, and enable industry practitioners to choose appropriate solutions for their applications. The web page of this survey is at \url{[this https URL](https://github.com/LitterBrother-Xiao/Overview-of-Non-autoregressive-Applications)}.
+
+| Comments: | 25 pages, 11 figures, 4 tables                               |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2204.09269](https://arxiv.org/abs/2204.09269) [cs.CL]** |
+|           | (or **[arXiv:2204.09269v1](https://arxiv.org/abs/2204.09269v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2204.09269Focus to learn more |
+
+
+
+
+
+<h2 id="2022-04-21-3">3. A Survey on Bias and Fairness in Natural Language Processing
+</h2>
+
+Title: [A Survey on Bias and Fairness in Natural Language Processing](https://arxiv.org/abs/2204.09591)
+
+Authors: [Rajas Bansal](https://arxiv.org/search/cs?searchtype=author&query=Bansal%2C+R)
+
+> As NLP models become more integrated with the everyday lives of people, it becomes important to examine the social effect that the usage of these systems has. While these models understand language and have increased accuracy on difficult downstream tasks, there is evidence that these models amplify gender, racial and cultural stereotypes and lead to a vicious cycle in many settings. In this survey, we analyze the origins of biases, the definitions of fairness, and how different subfields of NLP mitigate bias. We finally discuss how future studies can work towards eradicating pernicious biases from NLP algorithms.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2204.09591](https://arxiv.org/abs/2204.09591) [cs.CL]** |
+|           | (or **[arXiv:2204.09591v1](https://arxiv.org/abs/2204.09591v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-04-21-4">4. Exploring Continuous Integrate-and-Fire for Efficient and Adaptive Simultaneous Speech Translation
+</h2>
+
+Title: [Exploring Continuous Integrate-and-Fire for Efficient and Adaptive Simultaneous Speech Translation](https://arxiv.org/abs/2204.09595)
+
+Authors: [Chih-Chiang Chang](https://arxiv.org/search/cs?searchtype=author&query=Chang%2C+C), [Hung-yi Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+H)
+
+> Simultaneous speech translation (SimulST) is a challenging task that aims to directly translate streaming speech before the complete input is observed. A SimulST system generally includes two important components: the pre-decision that aggregates the speech information, and the policy that decides read or write. While recent works had proposed a variety of strategies to improve the pre-decision, they mostly adopt the fixed wait-k policy. The adaptive policies are rarely explored. We propose to model the adaptive policy using the Continuous Integrate-and-Fire (CIF). In our proposed model, the CIF is not only responsible for aggregating speech information, but also deciding when to read or write. To adapt the CIF to SimulST task, we propose two modifications: a token-level quantity loss or an infinite lookback attention. We show that our model can learn an adaptive policy effectively, achieving comparable or superior performance to MMA at lower latency, while being more efficient to train.
+
+| Comments: | Submitted to INTERSPEECH 2022                                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2204.09595](https://arxiv.org/abs/2204.09595) [cs.CL]** |
+|           | (or **[arXiv:2204.09595v1](https://arxiv.org/abs/2204.09595v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-04-21-5">5. Detecting Unintended Memorization in Language-Model-Fused ASR
+</h2>
+
+Title: [Detecting Unintended Memorization in Language-Model-Fused ASR](https://arxiv.org/abs/2204.09606)
+
+Authors: [W. Ronny Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+W+R), [Steve Chien](https://arxiv.org/search/cs?searchtype=author&query=Chien%2C+S), [Om Thakkar](https://arxiv.org/search/cs?searchtype=author&query=Thakkar%2C+O), [Rajiv Mathews](https://arxiv.org/search/cs?searchtype=author&query=Mathews%2C+R)
+
+> End-to-end (E2E) models are often being accompanied by language models (LMs) via shallow fusion for boosting their overall quality as well as recognition of rare words. At the same time, several prior works show that LMs are susceptible to unintentionally memorizing rare or unique sequences in the training data. In this work, we design a framework for detecting memorization of random textual sequences (which we call canaries) in the LM training data when one has only black-box (query) access to LM-fused speech recognizer, as opposed to direct access to the LM. On a production-grade Conformer RNN-T E2E model fused with a Transformer LM, we show that detecting memorization of singly-occurring canaries from the LM training data of 300M examples is possible. Motivated to protect privacy, we also show that such memorization gets significantly reduced by per-example gradient-clipped LM training without compromising overall quality.
+
+| Subjects: | **Computation and Language (cs.CL)**; Cryptography and Security (cs.CR); Machine Learning (cs.LG); Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2204.09606](https://arxiv.org/abs/2204.09606) [cs.CL]** |
+|           | (or **[arXiv:2204.09606v1](https://arxiv.org/abs/2204.09606v1) [cs.CL]** for this version) |
+
+
+
+
+
+
 
 
 
