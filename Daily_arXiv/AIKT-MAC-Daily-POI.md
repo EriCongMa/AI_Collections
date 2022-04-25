@@ -2,15 +2,22 @@
 
 # Index
 
+- [2022-04-25](#2022-04-25)
+  - [1. Multimodal Adaptive Distillation for Leveraging Unimodal Encoders for Vision-Language Tasks](#2022-04-25-1)
+  
+  - [2. KALA: Knowledge-Augmented Language Model Adaptation](#2022-04-25-2)
+  
+  - [3. LibriS2S: A German-English Speech-to-Speech Translation Corpus](#2022-04-25-3)
+  
 - [2022-04-22](#2022-04-22)
   - [1. A Masked Image Reconstruction Network for Document-level Relation Extraction](#2022-04-22-1)
-  
+
   - [2. Standing on the Shoulders of Giant Frozen Language Models](#2022-04-22-2)
-  
+
   - [3. Probing Script Knowledge from Pre-Trained Models](#2022-04-22-3)
-  
+
   - [4. DiffCSE: Difference-based Contrastive Learning for Sentence Embeddings](#2022-04-22-4)
-  
+
 - [2022-04-21](#2022-04-21)
   - [1. DaLC: Domain Adaptation Learning Curve Prediction for Neural Machine Translation](#2022-04-21-1)
 
@@ -67,6 +74,75 @@
   - [1. METRO: Efficient Denoising Pretraining of Large Scale Autoencoding Language Models with Model Generated Signals](#2022-04-15-1)
 
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2022-04-25
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-04-25-1">1. Multimodal Adaptive Distillation for Leveraging Unimodal Encoders for Vision-Language Tasks
+</h2>
+
+Title: [Multimodal Adaptive Distillation for Leveraging Unimodal Encoders for Vision-Language Tasks](https://arxiv.org/abs/2204.10496)
+
+Authors: [Zhecan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Z), [Noel Codella](https://arxiv.org/search/cs?searchtype=author&query=Codella%2C+N), [Yen-Chun Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+Y), [Luowei Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+L), [Xiyang Dai](https://arxiv.org/search/cs?searchtype=author&query=Dai%2C+X), [Bin Xiao](https://arxiv.org/search/cs?searchtype=author&query=Xiao%2C+B), [Jianwei Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+J), [Haoxuan You](https://arxiv.org/search/cs?searchtype=author&query=You%2C+H), [Kai-Wei Chang](https://arxiv.org/search/cs?searchtype=author&query=Chang%2C+K), [Shih-fu Chang](https://arxiv.org/search/cs?searchtype=author&query=Chang%2C+S), [Lu Yuan](https://arxiv.org/search/cs?searchtype=author&query=Yuan%2C+L)
+
+> Cross-modal encoders for vision-language (VL) tasks are often pretrained with carefully curated vision-language datasets. While these datasets reach an order of 10 million samples, the labor cost is prohibitive to scale further. Conversely, unimodal encoders are pretrained with simpler annotations that are less cost-prohibitive, achieving scales of hundreds of millions to billions. As a result, unimodal encoders have achieved state-of-art (SOTA) on many downstream tasks. However, challenges remain when applying to VL tasks. The pretraining data is not optimal for cross-modal architectures and requires heavy computational resources. In addition, unimodal architectures lack cross-modal interactions that have demonstrated significant benefits for VL tasks. Therefore, how to best leverage pretrained unimodal encoders for VL tasks is still an area of active research. In this work, we propose a method to leverage unimodal vision and text encoders for VL tasks that augment existing VL approaches while conserving computational complexity. Specifically, we propose Multimodal Adaptive Distillation (MAD), which adaptively distills useful knowledge from pretrained encoders to cross-modal VL encoders. Second, to better capture nuanced impacts on VL task performance, we introduce an evaluation protocol that includes Visual Commonsense Reasoning (VCR), Visual Entailment (SNLI-VE), and Visual Question Answering (VQA), across a variety of data constraints and conditions of domain shift. Experiments demonstrate that MAD leads to consistent gains in the low-shot, domain-shifted, and fully-supervised conditions on VCR, SNLI-VE, and VQA, achieving SOTA performance on VCR compared to other single models pretrained with image-text data. Finally, MAD outperforms concurrent works utilizing pretrained vision encoder from CLIP. Code will be made available.
+
+| Comments: | arXiv admin note: substantial text overlap with [arXiv:2201.05729](https://arxiv.org/abs/2201.05729) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL); Machine Learning (cs.LG); Multimedia (cs.MM) |
+| Cite as:  | **[arXiv:2204.10496](https://arxiv.org/abs/2204.10496) [cs.CV]** |
+|           | (or **[arXiv:2204.10496v1](https://arxiv.org/abs/2204.10496v1) [cs.CV]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2204.10496Focus to learn more |
+
+
+
+
+
+<h2 id="2022-04-25-2">2. KALA: Knowledge-Augmented Language Model Adaptation
+</h2>
+
+Title: [KALA: Knowledge-Augmented Language Model Adaptation](https://arxiv.org/abs/2204.10555)
+
+Authors: [Minki Kang](https://arxiv.org/search/cs?searchtype=author&query=Kang%2C+M), [Jinheon Baek](https://arxiv.org/search/cs?searchtype=author&query=Baek%2C+J), [Sung Ju Hwang](https://arxiv.org/search/cs?searchtype=author&query=Hwang%2C+S+J)
+
+> Pre-trained language models (PLMs) have achieved remarkable success on various natural language understanding tasks. Simple fine-tuning of PLMs, on the other hand, might be suboptimal for domain-specific tasks because they cannot possibly cover knowledge from all domains. While adaptive pre-training of PLMs can help them obtain domain-specific knowledge, it requires a large training cost. Moreover, adaptive pre-training can harm the PLM's performance on the downstream task by causing catastrophic forgetting of its general knowledge. To overcome such limitations of adaptive pre-training for PLM adaption, we propose a novel domain adaption framework for PLMs coined as Knowledge-Augmented Language model Adaptation (KALA), which modulates the intermediate hidden representations of PLMs with domain knowledge, consisting of entities and their relational facts. We validate the performance of our KALA on question answering and named entity recognition tasks on multiple datasets across various domains. The results show that, despite being computationally efficient, our KALA largely outperforms adaptive pre-training. Code is available at: [this https URL](https://github.com/Nardien/KALA/).
+
+| Comments: | NAACL 2022                                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2204.10555](https://arxiv.org/abs/2204.10555) [cs.CL]** |
+|           | (or **[arXiv:2204.10555v1](https://arxiv.org/abs/2204.10555v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2204.10555Focus to learn more |
+
+
+
+
+
+<h2 id="2022-04-25-3">3. LibriS2S: A German-English Speech-to-Speech Translation Corpus
+</h2>
+
+Title: [LibriS2S: A German-English Speech-to-Speech Translation Corpus](https://arxiv.org/abs/2204.10593)
+
+Authors: [Pedro Jeuris](https://arxiv.org/search/cs?searchtype=author&query=Jeuris%2C+P), [Jan Niehues](https://arxiv.org/search/cs?searchtype=author&query=Niehues%2C+J)
+
+> Recently, we have seen an increasing interest in the area of speech-to-text translation. This has led to astonishing improvements in this area. In contrast, the activities in the area of speech-to-speech translation is still limited, although it is essential to overcome the language barrier. We believe that one of the limiting factors is the availability of appropriate training data. We address this issue by creating LibriS2S, to our knowledge the first publicly available speech-to-speech training corpus between German and English. For this corpus, we used independently created audio for German and English leading to an unbiased pronunciation of the text in both languages. This allows the creation of a new text-to-speech and speech-to-speech translation model that directly learns to generate the speech signal based on the pronunciation of the source language. Using this created corpus, we propose Text-to-Speech models based on the example of the recently proposed FastSpeech 2 model that integrates source language information. We do this by adapting the model to take information such as the pitch, energy or transcript from the source speech as additional input.
+
+| Comments: | Accepted to LREC 2022                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2204.10593](https://arxiv.org/abs/2204.10593) [cs.CL]** |
+|           | (or **[arXiv:2204.10593v1](https://arxiv.org/abs/2204.10593v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2204.10593Focus to learn more |
+
+
+
+
+
 
 
 
