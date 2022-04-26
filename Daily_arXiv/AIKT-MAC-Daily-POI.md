@@ -2,13 +2,20 @@
 
 # Index
 
+- [2022-04-26](#2022-04-26)
+  - [1. MCSE: Multimodal Contrastive Learning of Sentence Embeddings](#2022-04-26-1)
+  
+  - [2. MuCGEC: a Multi-Reference Multi-Source Evaluation Dataset for Chinese Grammatical Error Correction](#2022-04-26-2)
+  
+  - [3. Translation between Molecules and Natural Language](#2022-04-26-3)
+  
 - [2022-04-25](#2022-04-25)
   - [1. Multimodal Adaptive Distillation for Leveraging Unimodal Encoders for Vision-Language Tasks](#2022-04-25-1)
-  
+
   - [2. KALA: Knowledge-Augmented Language Model Adaptation](#2022-04-25-2)
-  
+
   - [3. LibriS2S: A German-English Speech-to-Speech Translation Corpus](#2022-04-25-3)
-  
+
 - [2022-04-22](#2022-04-22)
   - [1. A Masked Image Reconstruction Network for Document-level Relation Extraction](#2022-04-22-1)
 
@@ -74,6 +81,72 @@
   - [1. METRO: Efficient Denoising Pretraining of Large Scale Autoencoding Language Models with Model Generated Signals](#2022-04-15-1)
 
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+
+
+# 2022-04-26
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-04-26-1">1. MCSE: Multimodal Contrastive Learning of Sentence Embeddings
+</h2>
+
+Title: [MCSE: Multimodal Contrastive Learning of Sentence Embeddings](https://arxiv.org/abs/2204.10931)
+
+Authors: [Miaoran Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+M), [Marius Mosbach](https://arxiv.org/search/cs?searchtype=author&query=Mosbach%2C+M), [David Ifeoluwa Adelani](https://arxiv.org/search/cs?searchtype=author&query=Adelani%2C+D+I), [Michael A. Hedderich](https://arxiv.org/search/cs?searchtype=author&query=Hedderich%2C+M+A), [Dietrich Klakow](https://arxiv.org/search/cs?searchtype=author&query=Klakow%2C+D)
+
+> Learning semantically meaningful sentence embeddings is an open problem in natural language processing. In this work, we propose a sentence embedding learning approach that exploits both visual and textual information via a multimodal contrastive objective. Through experiments on a variety of semantic textual similarity tasks, we demonstrate that our approach consistently improves the performance across various datasets and pre-trained encoders. In particular, combining a small amount of multimodal data with a large text-only corpus, we improve the state-of-the-art average Spearman's correlation by 1.7%. By analyzing the properties of the textual embedding space, we show that our model excels in aligning semantically similar sentences, providing an explanation for its improved performance.
+
+| Comments: | Accepted by NAACL 2022 main conference (short paper), 11 pages |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2204.10931](https://arxiv.org/abs/2204.10931) [cs.CL]** |
+|           | (or **[arXiv:2204.10931v1](https://arxiv.org/abs/2204.10931v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2204.10931Focus to learn more |
+
+
+
+
+
+<h2 id="2022-04-26-2">2. MuCGEC: a Multi-Reference Multi-Source Evaluation Dataset for Chinese Grammatical Error Correction
+</h2>
+
+Title: [MuCGEC: a Multi-Reference Multi-Source Evaluation Dataset for Chinese Grammatical Error Correction](https://arxiv.org/abs/2204.10994)
+
+Authors: [Yue Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Y), [Zhenghua Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Z), [Zuyi Bao](https://arxiv.org/search/cs?searchtype=author&query=Bao%2C+Z), [Jiacheng Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+J), [Bo Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+B), [Chen Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+C), [Fei Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+F), [Min Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+M)
+
+> This paper presents MuCGEC, a multi-reference multi-source evaluation dataset for Chinese Grammatical Error Correction (CGEC), consisting of 7,063 sentences collected from three different Chinese-as-a-Second-Language (CSL) learner sources. Each sentence has been corrected by three annotators, and their corrections are meticulously reviewed by an expert, resulting in 2.3 references per sentence. We conduct experiments with two mainstream CGEC models, i.e., the sequence-to-sequence (Seq2Seq) model and the sequence-to-edit (Seq2Edit) model, both enhanced with large pretrained language models (PLMs), achieving competitive benchmark performance on previous and our datasets. We also discuss CGEC evaluation methodologies, including the effect of multiple references and using a char-based metric. Our annotation guidelines, data, and code are available at \url{[this https URL](https://github.com/HillZhang1999/MuCGEC)}.
+
+| Comments: | Accepted by NAACL2022 (main conference)                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2204.10994](https://arxiv.org/abs/2204.10994) [cs.CL]** |
+|           | (or **[arXiv:2204.10994v1](https://arxiv.org/abs/2204.10994v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2204.10994Focus to learn more |
+
+
+
+
+
+<h2 id="2022-04-26-3">3. Translation between Molecules and Natural Language
+</h2>
+
+Title: [Translation between Molecules and Natural Language](https://arxiv.org/abs/2204.11817)
+
+Authors: [Carl Edwards](https://arxiv.org/search/cs?searchtype=author&query=Edwards%2C+C), [Tuan Lai](https://arxiv.org/search/cs?searchtype=author&query=Lai%2C+T), [Kevin Ros](https://arxiv.org/search/cs?searchtype=author&query=Ros%2C+K), [Garrett Honke](https://arxiv.org/search/cs?searchtype=author&query=Honke%2C+G), [Heng Ji](https://arxiv.org/search/cs?searchtype=author&query=Ji%2C+H)
+
+> Joint representations between images and text have been deeply investigated in the literature. In computer vision, the benefits of incorporating natural language have become clear for enabling semantic-level control of images. In this work, we present **MolT5**−a self-supervised learning framework for pretraining models on a vast amount of unlabeled natural language text and molecule strings. **MolT5** allows for new, useful, and challenging analogs of traditional vision-language tasks, such as molecule captioning and text-based de novo molecule generation (altogether: translation between molecules and language), which we explore for the first time. Furthermore, since **MolT5** pretrains models on single-modal data, it helps overcome the chemistry domain shortcoming of data scarcity. Additionally, we consider several metrics, including a new cross-modal embedding-based metric, to evaluate the tasks of molecule captioning and text-based molecule generation. By interfacing molecules with natural language, we enable a higher semantic level of control over molecule discovery and understanding--a critical task for scientific domains such as drug discovery and material design. Our results show that **MolT5**-based models are able to generate outputs, both molecule and text, which in many cases are high quality and match the input modality. On molecule generation, our best model achieves 30% exact matching test accuracy (i.e., it generates the correct structure for about one-third of the captions in our held-out test set).
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2204.11817](https://arxiv.org/abs/2204.11817) [cs.CL]** |
+|           | (or **[arXiv:2204.11817v1](https://arxiv.org/abs/2204.11817v1) [cs.CL]** for this version) |
+
+
 
 
 
