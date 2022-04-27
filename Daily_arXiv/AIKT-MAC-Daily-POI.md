@@ -2,13 +2,20 @@
 
 # Index
 
+- [2022-04-27](#2022-04-27)
+  - [1. Pretraining Chinese BERT for Detecting Word Insertion and Deletion Errors](#2022-04-27-1)
+  
+  - [2. When do Contrastive Word Alignments Improve Many-to-many Neural Machine Translation?](#2022-04-27-2)
+  
+  - [3. Flow-Adapter Architecture for Unsupervised Machine Translation](#2022-04-27-3)
+  
 - [2022-04-26](#2022-04-26)
   - [1. MCSE: Multimodal Contrastive Learning of Sentence Embeddings](#2022-04-26-1)
-  
+
   - [2. MuCGEC: a Multi-Reference Multi-Source Evaluation Dataset for Chinese Grammatical Error Correction](#2022-04-26-2)
-  
+
   - [3. Translation between Molecules and Natural Language](#2022-04-26-3)
-  
+
 - [2022-04-25](#2022-04-25)
   - [1. Multimodal Adaptive Distillation for Leveraging Unimodal Encoders for Vision-Language Tasks](#2022-04-25-1)
 
@@ -81,6 +88,72 @@
   - [1. METRO: Efficient Denoising Pretraining of Large Scale Autoencoding Language Models with Model Generated Signals](#2022-04-15-1)
 
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2022-04-27
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-04-27-1">1. Pretraining Chinese BERT for Detecting Word Insertion and Deletion Errors
+</h2>
+
+Title: [Pretraining Chinese BERT for Detecting Word Insertion and Deletion Errors](https://arxiv.org/abs/2204.12052)
+
+Authors: [Cong Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+C), [Yong Dai](https://arxiv.org/search/cs?searchtype=author&query=Dai%2C+Y), [Duyu Tang](https://arxiv.org/search/cs?searchtype=author&query=Tang%2C+D), [Enbo Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+E), [Zhangyin Feng](https://arxiv.org/search/cs?searchtype=author&query=Feng%2C+Z), [Li Kuang](https://arxiv.org/search/cs?searchtype=author&query=Kuang%2C+L), [Shuming Shi](https://arxiv.org/search/cs?searchtype=author&query=Shi%2C+S)
+
+> Chinese BERT models achieve remarkable progress in dealing with grammatical errors of word substitution. However, they fail to handle word insertion and deletion because BERT assumes the existence of a word at each position. To address this, we present a simple and effective Chinese pretrained model. The basic idea is to enable the model to determine whether a word exists at a particular position. We achieve this by introducing a special token \texttt{[null]}, the prediction of which stands for the non-existence of a word. In the training stage, we design pretraining tasks such that the model learns to predict \texttt{[null]} and real words jointly given the surrounding context. In the inference stage, the model readily detects whether a word should be inserted or deleted with the standard masked language modeling function. We further create an evaluation dataset to foster research on word insertion and deletion. It includes human-annotated corrections for 7,726 erroneous sentences. Results show that existing Chinese BERT performs poorly on detecting insertion and deletion errors. Our approach significantly improves the F1 scores from 24.1\% to 78.1\% for word insertion and from 26.5\% to 68.5\% for word deletion, respectively.
+
+| Comments: | 12 pages                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2204.12052](https://arxiv.org/abs/2204.12052) [cs.CL]** |
+|           | (or **[arXiv:2204.12052v1](https://arxiv.org/abs/2204.12052v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2204.12052Focus to learn more |
+
+
+
+
+
+<h2 id="2022-04-27-2">2. When do Contrastive Word Alignments Improve Many-to-many Neural Machine Translation?
+</h2>
+
+Title: [When do Contrastive Word Alignments Improve Many-to-many Neural Machine Translation?](https://arxiv.org/abs/2204.12165)
+
+Authors: [Zhuoyuan Mao](https://arxiv.org/search/cs?searchtype=author&query=Mao%2C+Z), [Chenhui Chu](https://arxiv.org/search/cs?searchtype=author&query=Chu%2C+C), [Raj Dabre](https://arxiv.org/search/cs?searchtype=author&query=Dabre%2C+R), [Haiyue Song](https://arxiv.org/search/cs?searchtype=author&query=Song%2C+H), [Zhen Wan](https://arxiv.org/search/cs?searchtype=author&query=Wan%2C+Z), [Sadao Kurohashi](https://arxiv.org/search/cs?searchtype=author&query=Kurohashi%2C+S)
+
+> Word alignment has proven to benefit many-to-many neural machine translation (NMT). However, high-quality ground-truth bilingual dictionaries were used for pre-editing in previous methods, which are unavailable for most language pairs. Meanwhile, the contrastive objective can implicitly utilize automatically learned word alignment, which has not been explored in many-to-many NMT. This work proposes a word-level contrastive objective to leverage word alignments for many-to-many NMT. Empirical results show that this leads to 0.8 BLEU gains for several language pairs. Analyses reveal that in many-to-many NMT, the encoder's sentence retrieval performance highly correlates with the translation quality, which explains when the proposed method impacts translation. This motivates future exploration for many-to-many NMT to improve the encoder's sentence retrieval performance.
+
+| Comments: | NAACL 2022 findings                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2204.12165](https://arxiv.org/abs/2204.12165) [cs.CL]** |
+|           | (or **[arXiv:2204.12165v1](https://arxiv.org/abs/2204.12165v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2204.12165Focus to learn more |
+
+
+
+
+
+<h2 id="2022-04-27-3">3. Flow-Adapter Architecture for Unsupervised Machine Translation
+</h2>
+
+Title: [Flow-Adapter Architecture for Unsupervised Machine Translation](https://arxiv.org/abs/2204.12225)
+
+Authors: [Yihong Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Y), [Haris Jabbar](https://arxiv.org/search/cs?searchtype=author&query=Jabbar%2C+H), [Hinrich Schütze](https://arxiv.org/search/cs?searchtype=author&query=Schütze%2C+H)
+
+> In this work, we propose a flow-adapter architecture for unsupervised NMT. It leverages normalizing flows to explicitly model the distributions of sentence-level latent representations, which are subsequently used in conjunction with the attention mechanism for the translation task. The primary novelties of our model are: (a) capturing language-specific sentence representations separately for each language using normalizing flows and (b) using a simple transformation of these latent representations for translating from one language to another. This architecture allows for unsupervised training of each language independently. While there is prior work on latent variables for supervised MT, to the best of our knowledge, this is the first work that uses latent variables and normalizing flows for unsupervised MT. We obtain competitive results on several unsupervised MT benchmarks.
+
+| Comments: | ACL 2022                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2204.12225](https://arxiv.org/abs/2204.12225) [cs.CL]** |
+|           | (or **[arXiv:2204.12225v1](https://arxiv.org/abs/2204.12225v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2204.12225Focus to learn more |
+
+
 
 
 
