@@ -2,6 +2,21 @@
 
 # Index
 
+- [2022-05-06](#2022-05-06)
+  - [1. Language Models Can See: Plugging Visual Controls in Text Generation](#2022-05-06-1)
+  - [2. Original or Translated? A Causal Analysis of the Impact of Translationese on Machine Translation Performance](#2022-05-06-2)
+  - [3. Cross-modal Contrastive Learning for Speech Translation](#2022-05-06-3)
+  - [4. A Simple Contrastive Learning Objective for Alleviating Neural Text Degeneration](#2022-05-06-4)
+  - [5. Efficient yet Competitive Speech Translation: FBK@IWSLT2022](#2022-05-06-5)
+- [2022-05-05](#2022-05-05)
+  - [1. P3 Ranker: Mitigating the Gaps between Pre-training and Ranking Fine-tuning with Prompt-based Learning and Pre-finetuning](#2022-05-05-1)
+  - [2. Improving In-Context Few-Shot Learning via Self-Supervised Training](#2022-05-05-2)
+  - [3. Provably Confidential Language Modelling](#2022-05-05-3)
+  - [4. Non-Autoregressive Machine Translation: It's Not as Fast as it Seems](#2022-05-05-4)
+  - [5. ON-TRAC Consortium Systems for the IWSLT 2022 Dialect and Low-resource Speech Translation Tasks](#2022-05-05-5)
+  - [6. A Few Thousand Translations Go a Long Way! Leveraging Pre-trained Models for African News Translation](#2022-05-05-6)
+  - [7. Same Neurons, Different Languages: Probing Morphosyntax in Multilingual Pre-trained Models](#2022-05-05-7)
+  - [8. Reproducibility Beyond the Research Community: Experience from NLP Beginners](#2022-05-05-8)
 - [2022-05-04](#2022-05-04)
   - [1. Hausa Visual Genome: A Dataset for Multi-Modal English to Hausa Machine Translation](#2022-05-04-1)
   - [2. Contrastive Learning for Prompt-Based Few-Shot Language Learners](#2022-05-04-2)
@@ -30,6 +45,272 @@
 
 
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2022-05-06
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-05-06-1">1. Language Models Can See: Plugging Visual Controls in Text Generation
+</h2>
+
+Title: [Language Models Can See: Plugging Visual Controls in Text Generation](https://arxiv.org/abs/2205.02655)
+
+Authors: [Yixuan Su](https://arxiv.org/search/cs?searchtype=author&query=Su%2C+Y), [Tian Lan](https://arxiv.org/search/cs?searchtype=author&query=Lan%2C+T), [Yahui Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Y), [Fangyu Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+F), [Dani Yogatama](https://arxiv.org/search/cs?searchtype=author&query=Yogatama%2C+D), [Yan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Y), [Lingpeng Kong](https://arxiv.org/search/cs?searchtype=author&query=Kong%2C+L), [Nigel Collier](https://arxiv.org/search/cs?searchtype=author&query=Collier%2C+N)
+
+> Generative language models (LMs) such as GPT-2/3 can be prompted to generate text with remarkable quality. While they are designed for text-prompted generation, it remains an open question how the generation process could be guided by modalities beyond text such as images. In this work, we propose a training-free framework, called MAGIC (iMAge-Guided text generatIon with CLIP), for plugging in visual controls in the generation process and enabling LMs to perform multimodal tasks (e.g., image captioning) in a zero-shot manner. MAGIC is a simple yet efficient plug-and-play framework, which directly combines an off-the-shelf LM (i.e., GPT-2) and an image-text matching model (i.e., CLIP) for image-grounded text generation. During decoding, MAGIC influences the generation of the LM by introducing a CLIP-induced score, called magic score, which regularizes the generated result to be semantically related to a given image while being coherent to the previously generated context. Notably, the proposed decoding scheme does not involve any gradient update operation, therefore being computationally efficient. On the challenging task of zero-shot image captioning, MAGIC outperforms the state-of-the-art method by notable margins with a nearly 27 times decoding speedup. MAGIC is a flexible framework and is theoretically compatible with any text generation tasks that incorporate image grounding. In the experiments, we showcase that it is also capable of performing visually grounded story generation given both an image and a text prompt.
+
+| Comments: | 20 pages, 5 figures, 5 tables                                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2205.02655](https://arxiv.org/abs/2205.02655) [cs.CV]** |
+|           | (or **[arXiv:2205.02655v1](https://arxiv.org/abs/2205.02655v1) [cs.CV]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2205.02655Focus to learn more |
+
+
+
+
+
+<h2 id="2022-05-06-2">2. Original or Translated? A Causal Analysis of the Impact of Translationese on Machine Translation Performance
+</h2>
+
+Title: [Original or Translated? A Causal Analysis of the Impact of Translationese on Machine Translation Performance](https://arxiv.org/abs/2205.02293)
+
+Authors: [Jingwei Ni](https://arxiv.org/search/cs?searchtype=author&query=Ni%2C+J), [Zhijing Jin](https://arxiv.org/search/cs?searchtype=author&query=Jin%2C+Z), [Markus Freitag](https://arxiv.org/search/cs?searchtype=author&query=Freitag%2C+M), [Mrinmaya Sachan](https://arxiv.org/search/cs?searchtype=author&query=Sachan%2C+M), [Bernhard Schölkopf](https://arxiv.org/search/cs?searchtype=author&query=Schölkopf%2C+B)
+
+> Human-translated text displays distinct features from naturally written text in the same language. This phenomena, known as translationese, has been argued to confound the machine translation (MT) evaluation. Yet, we find that existing work on translationese neglects some important factors and the conclusions are mostly correlational but not causal. In this work, we collect CausalMT, a dataset where the MT training data are also labeled with the human translation directions. We inspect two critical factors, the train-test direction match (whether the human translation directions in the training and test sets are aligned), and data-model direction match (whether the model learns in the same direction as the human translation direction in the dataset). We show that these two factors have a large causal effect on the MT performance, in addition to the test-model direction mismatch highlighted by existing work on the impact of translationese. In light of our findings, we provide a set of suggestions for MT training and evaluation. Our code and data are at [this https URL](https://github.com/EdisonNi-hku/CausalMT)
+
+| Comments: | NAACL 2022                                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2205.02293](https://arxiv.org/abs/2205.02293) [cs.CL]** |
+|           | (or **[arXiv:2205.02293v1](https://arxiv.org/abs/2205.02293v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2205.02293Focus to learn more |
+
+
+
+
+
+<h2 id="2022-05-06-3">3. Cross-modal Contrastive Learning for Speech Translation
+</h2>
+
+Title: [Cross-modal Contrastive Learning for Speech Translation](https://arxiv.org/abs/2205.02444)
+
+Authors: [Rong Ye](https://arxiv.org/search/cs?searchtype=author&query=Ye%2C+R), [Mingxuan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+M), [Lei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L)
+
+> How can we learn unified representations for spoken utterances and their written text? Learning similar representations for semantically similar speech and text is important for speech translation. To this end, we propose ConST, a cross-modal contrastive learning method for end-to-end speech-to-text translation. We evaluate ConST and a variety of previous baselines on a popular benchmark MuST-C. Experiments show that the proposed ConST consistently outperforms the previous methods on, and achieves an average BLEU of 29.4. The analysis further verifies that ConST indeed closes the representation gap of different modalities -- its learned representation improves the accuracy of cross-modal speech-text retrieval from 4% to 88%. Code and models are available at [this https URL](https://github.com/ReneeYe/ConST).
+
+| Comments: | NAACL 2022 main conference (Long Paper)                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2205.02444](https://arxiv.org/abs/2205.02444) [cs.CL]** |
+|           | (or **[arXiv:2205.02444v1](https://arxiv.org/abs/2205.02444v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2205.02444Focus to learn more |
+
+
+
+
+
+<h2 id="2022-05-06-4">4. A Simple Contrastive Learning Objective for Alleviating Neural Text Degeneration
+</h2>
+
+Title: [A Simple Contrastive Learning Objective for Alleviating Neural Text Degeneration](https://arxiv.org/abs/2205.02517)
+
+Authors: [Shaojie Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+S), [Ruqing Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+R), [Svitlana Vakulenko](https://arxiv.org/search/cs?searchtype=author&query=Vakulenko%2C+S), [Maarten de Rijke](https://arxiv.org/search/cs?searchtype=author&query=de+Rijke%2C+M)
+
+> The cross-entropy objective has proved to be an all-purpose training objective for autoregressive language models (LMs). However, without considering the penalization of problematic tokens, LMs trained using cross-entropy exhibit text degeneration. To address this, unlikelihood training has been proposed to force unlikely tokens to be assigned a low probability by a LM. But unlikelihood does not consider the relationship between the label tokens and the unlikely token candidates, thus showing marginal improvements in degeneration. We propose a new contrastive token learning objective that inherits the advantages of cross-entropy and unlikelihood training and avoids their limitations. The key idea is to force a LM to generate high probabilities for label tokens at each step while low probabilities of negative candidates. Comprehensive experiments on language modeling and open-domain dialogue generation tasks show that the proposed contrastive token objective yields less repetitive texts, with a higher generation quality than unlikelihood training, achieving the new state-of-the-art performance.
+
+| Comments: | 20 pages, 10 figures, 7 tables                               |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2205.02517](https://arxiv.org/abs/2205.02517) [cs.CL]** |
+|           | (or **[arXiv:2205.02517v1](https://arxiv.org/abs/2205.02517v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2205.02517Focus to learn more |
+
+
+
+
+
+<h2 id="2022-05-06-5">5. Efficient yet Competitive Speech Translation: FBK@IWSLT2022
+</h2>
+
+Title: [Efficient yet Competitive Speech Translation: FBK@IWSLT2022](https://arxiv.org/abs/2205.02629)
+
+Authors: [Marco Gaido](https://arxiv.org/search/cs?searchtype=author&query=Gaido%2C+M), [Sara Papi](https://arxiv.org/search/cs?searchtype=author&query=Papi%2C+S), [Dennis Fucci](https://arxiv.org/search/cs?searchtype=author&query=Fucci%2C+D), [Giuseppe Fiameni](https://arxiv.org/search/cs?searchtype=author&query=Fiameni%2C+G), [Matteo Negri](https://arxiv.org/search/cs?searchtype=author&query=Negri%2C+M), [Marco Turchi](https://arxiv.org/search/cs?searchtype=author&query=Turchi%2C+M)
+
+> The primary goal of this FBK's systems submission to the IWSLT 2022 offline and simultaneous speech translation tasks is to reduce model training costs without sacrificing translation quality. As such, we first question the need of ASR pre-training, showing that it is not essential to achieve competitive results. Second, we focus on data filtering, showing that a simple method that looks at the ratio between source and target characters yields a quality improvement of 1 BLEU. Third, we compare different methods to reduce the detrimental effect of the audio segmentation mismatch between training data manually segmented at sentence level and inference data that is automatically segmented. Towards the same goal of training cost reduction, we participate in the simultaneous task with the same model trained for offline ST. The effectiveness of our lightweight training strategy is shown by the high score obtained on the MuST-C en-de corpus (26.7 BLEU) and is confirmed in high-resource data conditions by a 1.6 BLEU improvement on the IWSLT2020 test set over last year's winning system.
+
+| Comments: | IWSLT 2022 System Description                                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2205.02629](https://arxiv.org/abs/2205.02629) [cs.CL]** |
+|           | (or **[arXiv:2205.02629v1](https://arxiv.org/abs/2205.02629v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2205.02629Focus to learn more |
+
+
+
+
+
+# 2022-05-05
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-05-05-1">1. P3 Ranker: Mitigating the Gaps between Pre-training and Ranking Fine-tuning with Prompt-based Learning and Pre-finetuning
+</h2>
+
+Title: [P3 Ranker: Mitigating the Gaps between Pre-training and Ranking Fine-tuning with Prompt-based Learning and Pre-finetuning](https://arxiv.org/abs/2205.01886)
+Authors: [Xiaomeng Hu](https://arxiv.org/search/cs?searchtype=author&query=Hu%2C+X) (1), [Shi Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+S) (2), [Chenyan Xiong](https://arxiv.org/search/cs?searchtype=author&query=Xiong%2C+C) (3), [Zhenghao Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Z) (1), [Zhiyuan Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Z) (2), [Ge Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+G) (1) ((1) Northeastern University, (2) Tsinghua University, (3) Microsoft Research)
+
+> Compared to other language tasks, applying pre-trained language models (PLMs) for search ranking often requires more nuances and training signals. In this paper, we identify and study the two mismatches between pre-training and ranking fine-tuning: the training schema gap regarding the differences in training objectives and model architectures, and the task knowledge gap considering the discrepancy between the knowledge needed in ranking and that learned during pre-training. To mitigate these gaps, we propose Pre-trained, Prompt-learned and Pre-finetuned Neural Ranker (P3 Ranker). P3 Ranker leverages prompt-based learning to convert the ranking task into a pre-training like schema and uses pre-finetuning to initialize the model on intermediate supervised tasks. Experiments on MS MARCO and Robust04 show the superior performances of P3 Ranker in few-shot ranking. Analyses reveal that P3 Ranker is able to better accustom to the ranking task through prompt-based learning and retrieve necessary ranking-oriented knowledge gleaned in pre-finetuning, resulting in data-efficient PLM adaptation. Our code is available at \url{[this https URL](https://github.com/NEUIR/P3Ranker)}.
+
+| Comments:    | Accepted by SIGIR 2022                                       |
+| ------------ | ------------------------------------------------------------ |
+| Subjects:    | **Information Retrieval (cs.IR)**; Computation and Language (cs.CL) |
+| ACM classes: | H.3.3                                                        |
+| Cite as:     | **[arXiv:2205.01886](https://arxiv.org/abs/2205.01886) [cs.IR]** |
+|              | (or **[arXiv:2205.01886v1](https://arxiv.org/abs/2205.01886v1) [cs.IR]** for this version) |
+|              | https://doi.org/10.48550/arXiv.2205.01886Focus to learn more |
+| Related DOI: | https://doi.org/10.1145/3477495.3531786Focus to learn more   |
+
+
+
+
+
+<h2 id="2022-05-05-2">2. Improving In-Context Few-Shot Learning via Self-Supervised Training
+</h2>
+
+Title: [Improving In-Context Few-Shot Learning via Self-Supervised Training](https://arxiv.org/abs/2205.01703)
+Authors: [Mingda Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+M), [Jingfei Du](https://arxiv.org/search/cs?searchtype=author&query=Du%2C+J), [Ramakanth Pasunuru](https://arxiv.org/search/cs?searchtype=author&query=Pasunuru%2C+R), [Todor Mihaylov](https://arxiv.org/search/cs?searchtype=author&query=Mihaylov%2C+T), [Srini Iyer](https://arxiv.org/search/cs?searchtype=author&query=Iyer%2C+S), [Veselin Stoyanov](https://arxiv.org/search/cs?searchtype=author&query=Stoyanov%2C+V), [Zornitsa Kozareva](https://arxiv.org/search/cs?searchtype=author&query=Kozareva%2C+Z)
+
+> Self-supervised pretraining has made few-shot learning possible for many NLP tasks. But the pretraining objectives are not typically adapted specifically for in-context few-shot learning. In this paper, we propose to use self-supervision in an intermediate training stage between pretraining and downstream few-shot usage with the goal to teach the model to perform in-context few shot learning. We propose and evaluate four self-supervised objectives on two benchmarks. We find that the intermediate self-supervision stage produces models that outperform strong baselines. Ablation study shows that several factors affect the downstream performance, such as the amount of training data and the diversity of the self-supervised objectives. Human-annotated cross-task supervision and self-supervision are complementary. Qualitative analysis suggests that the self-supervised-trained models are better at following task requirements.
+
+| Comments: | NAACL 2022                                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2205.01703](https://arxiv.org/abs/2205.01703) [cs.CL]** |
+|           | (or **[arXiv:2205.01703v1](https://arxiv.org/abs/2205.01703v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2205.01703Focus to learn more |
+
+
+
+
+
+<h2 id="2022-05-05-3">3. Provably Confidential Language Modelling
+</h2>
+
+Title: [Provably Confidential Language Modelling](https://arxiv.org/abs/2205.01863)
+Authors: [Xuandong Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+X), [Lei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L), [Yu-Xiang Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Y)
+
+> Large language models are shown to memorize privacy information such as social security numbers in training data. Given the sheer scale of the training corpus, it is challenging to screen and filter these privacy data, either manually or automatically. In this paper, we propose Confidentially Redacted Training (CRT), a method to train language generation models while protecting the confidential segments. We borrow ideas from differential privacy (which solves a related but distinct problem) and show that our method is able to provably prevent unintended memorization by randomizing parts of the training process. Moreover, we show that redaction with an approximately correct screening policy amplifies the confidentiality guarantee. We implement the method for both LSTM and GPT language models. Our experimental results show that the models trained by CRT obtain almost the same perplexity while preserving strong confidentiality.
+
+| Comments: | NAACL 2022                                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Cryptography and Security (cs.CR); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2205.01863](https://arxiv.org/abs/2205.01863) [cs.CL]** |
+|           | (or **[arXiv:2205.01863v1](https://arxiv.org/abs/2205.01863v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2205.01863Focus to learn more |
+
+
+
+
+
+<h2 id="2022-05-05-4">4. Non-Autoregressive Machine Translation: It's Not as Fast as it Seems
+</h2>
+
+Title: [Non-Autoregressive Machine Translation: It's Not as Fast as it Seems](https://arxiv.org/abs/2205.01966)
+Authors: [Jindřich Helcl](https://arxiv.org/search/cs?searchtype=author&query=Helcl%2C+J), [Barry Haddow](https://arxiv.org/search/cs?searchtype=author&query=Haddow%2C+B), [Alexandra Birch](https://arxiv.org/search/cs?searchtype=author&query=Birch%2C+A)
+
+> Efficient machine translation models are commercially important as they can increase inference speeds, and reduce costs and carbon emissions. Recently, there has been much interest in non-autoregressive (NAR) models, which promise faster translation. In parallel to the research on NAR models, there have been successful attempts to create optimized autoregressive models as part of the WMT shared task on efficient translation. In this paper, we point out flaws in the evaluation methodology present in the literature on NAR models and we provide a fair comparison between a state-of-the-art NAR model and the autoregressive submissions to the shared task. We make the case for consistent evaluation of NAR models, and also for the importance of comparing NAR models with other widely used methods for improving efficiency. We run experiments with a connectionist-temporal-classification-based (CTC) NAR model implemented in C++ and compare it with AR models using wall clock times. Our results show that, although NAR models are faster on GPUs, with small batch sizes, they are almost always slower under more realistic usage conditions. We call for more realistic and extensive evaluation of NAR models in future work.
+
+| Comments: | NAACL 2022, Camera-ready                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2205.01966](https://arxiv.org/abs/2205.01966) [cs.CL]** |
+|           | (or **[arXiv:2205.01966v1](https://arxiv.org/abs/2205.01966v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2205.01966Focus to learn more |
+
+
+
+
+
+<h2 id="2022-05-05-5">5. ON-TRAC Consortium Systems for the IWSLT 2022 Dialect and Low-resource Speech Translation Tasks
+</h2>
+
+Title: [ON-TRAC Consortium Systems for the IWSLT 2022 Dialect and Low-resource Speech Translation Tasks](https://arxiv.org/abs/2205.01987)
+Authors: [Marcely Zanon Boito](https://arxiv.org/search/cs?searchtype=author&query=Boito%2C+M+Z), [John Ortega](https://arxiv.org/search/cs?searchtype=author&query=Ortega%2C+J), [Hugo Riguidel](https://arxiv.org/search/cs?searchtype=author&query=Riguidel%2C+H), [Antoine Laurent](https://arxiv.org/search/cs?searchtype=author&query=Laurent%2C+A), [Loïc Barrault](https://arxiv.org/search/cs?searchtype=author&query=Barrault%2C+L), [Fethi Bougares](https://arxiv.org/search/cs?searchtype=author&query=Bougares%2C+F), [Firas Chaabani](https://arxiv.org/search/cs?searchtype=author&query=Chaabani%2C+F), [Ha Nguyen](https://arxiv.org/search/cs?searchtype=author&query=Nguyen%2C+H), [Florentin Barbier](https://arxiv.org/search/cs?searchtype=author&query=Barbier%2C+F), [Souhir Gahbiche](https://arxiv.org/search/cs?searchtype=author&query=Gahbiche%2C+S), [Yannick Estève](https://arxiv.org/search/cs?searchtype=author&query=Estève%2C+Y)
+
+> This paper describes the ON-TRAC Consortium translation systems developed for two challenge tracks featured in the Evaluation Campaign of IWSLT 2022: low-resource and dialect speech translation. For the Tunisian Arabic-English dataset (low-resource and dialect tracks), we build an end-to-end model as our joint primary submission, and compare it against cascaded models that leverage a large fine-tuned wav2vec 2.0 model for ASR. Our results show that in our settings pipeline approaches are still very competitive, and that with the use of transfer learning, they can outperform end-to-end models for speech translation (ST). For the Tamasheq-French dataset (low-resource track) our primary submission leverages intermediate representations from a wav2vec 2.0 model trained on 234 hours of Tamasheq audio, while our contrastive model uses a French phonetic transcription of the Tamasheq audio as input in a Conformer speech translation architecture jointly trained on automatic speech recognition, ST and machine translation losses. Our results highlight that self-supervised models trained on smaller sets of target data are more effective to low-resource end-to-end ST fine-tuning, compared to large off-the-shelf models. Results also illustrate that even approximate phonetic transcriptions can improve ST scores.
+
+| Comments: | IWSLT 2022 system paper                                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2205.01987](https://arxiv.org/abs/2205.01987) [cs.CL]** |
+|           | (or **[arXiv:2205.01987v1](https://arxiv.org/abs/2205.01987v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2205.01987Focus to learn more |
+
+
+
+
+
+<h2 id="2022-05-05-6">6. A Few Thousand Translations Go a Long Way! Leveraging Pre-trained Models for African News Translation
+</h2>
+
+Title: [A Few Thousand Translations Go a Long Way! Leveraging Pre-trained Models for African News Translation](https://arxiv.org/abs/2205.02022)
+Authors: [David Ifeoluwa Adelani](https://arxiv.org/search/cs?searchtype=author&query=Adelani%2C+D+I), [Jesujoba Oluwadara Alabi](https://arxiv.org/search/cs?searchtype=author&query=Alabi%2C+J+O), [Angela Fan](https://arxiv.org/search/cs?searchtype=author&query=Fan%2C+A), [Julia Kreutzer](https://arxiv.org/search/cs?searchtype=author&query=Kreutzer%2C+J), [Xiaoyu Shen](https://arxiv.org/search/cs?searchtype=author&query=Shen%2C+X), [Machel Reid](https://arxiv.org/search/cs?searchtype=author&query=Reid%2C+M), [Dana Ruiter](https://arxiv.org/search/cs?searchtype=author&query=Ruiter%2C+D), [Dietrich Klakow](https://arxiv.org/search/cs?searchtype=author&query=Klakow%2C+D), [Peter Nabende](https://arxiv.org/search/cs?searchtype=author&query=Nabende%2C+P), [Ernie Chang](https://arxiv.org/search/cs?searchtype=author&query=Chang%2C+E), [Tajuddeen Gwadabe](https://arxiv.org/search/cs?searchtype=author&query=Gwadabe%2C+T), [Freshia Sackey](https://arxiv.org/search/cs?searchtype=author&query=Sackey%2C+F), [Bonaventure F. P. Dossou](https://arxiv.org/search/cs?searchtype=author&query=Dossou%2C+B+F+P), [Chris Chinenye Emezue](https://arxiv.org/search/cs?searchtype=author&query=Emezue%2C+C+C), [Colin Leong](https://arxiv.org/search/cs?searchtype=author&query=Leong%2C+C), [Michael Beukman](https://arxiv.org/search/cs?searchtype=author&query=Beukman%2C+M), [Shamsuddeen Hassan Muhammad](https://arxiv.org/search/cs?searchtype=author&query=Muhammad%2C+S+H), [Guyo Dub Jarso](https://arxiv.org/search/cs?searchtype=author&query=Jarso%2C+G+D), [Oreen Yousuf](https://arxiv.org/search/cs?searchtype=author&query=Yousuf%2C+O), [Andre Niyongabo Rubungo](https://arxiv.org/search/cs?searchtype=author&query=Rubungo%2C+A+N), [Gilles Hacheme](https://arxiv.org/search/cs?searchtype=author&query=Hacheme%2C+G), [Eric Peter Wairagala](https://arxiv.org/search/cs?searchtype=author&query=Wairagala%2C+E+P), [Muhammad Umair Nasir](https://arxiv.org/search/cs?searchtype=author&query=Nasir%2C+M+U), [Benjamin Ayoade Ajibade](https://arxiv.org/search/cs?searchtype=author&query=Ajibade%2C+B+A), [Tunde Oluwaseyi Ajayi](https://arxiv.org/search/cs?searchtype=author&query=Ajayi%2C+T+O), [Yvonne Wambui Gitau](https://arxiv.org/search/cs?searchtype=author&query=Gitau%2C+Y+W), [Jade Abbott](https://arxiv.org/search/cs?searchtype=author&query=Abbott%2C+J), [Mohamed Ahmed](https://arxiv.org/search/cs?searchtype=author&query=Ahmed%2C+M), [Millicent Ochieng](https://arxiv.org/search/cs?searchtype=author&query=Ochieng%2C+M), [Anuoluwapo Aremu](https://arxiv.org/search/cs?searchtype=author&query=Aremu%2C+A), [Perez Ogayo](https://arxiv.org/search/cs?searchtype=author&query=Ogayo%2C+P), [Jonathan Mukiibi](https://arxiv.org/search/cs?searchtype=author&query=Mukiibi%2C+J), [Fatoumata Ouoba Kabore](https://arxiv.org/search/cs?searchtype=author&query=Kabore%2C+F+O), [Godson Koffi Kalipe](https://arxiv.org/search/cs?searchtype=author&query=Kalipe%2C+G+K), [Derguene Mbaye](https://arxiv.org/search/cs?searchtype=author&query=Mbaye%2C+D), [Allahsera Auguste Tapo](https://arxiv.org/search/cs?searchtype=author&query=Tapo%2C+A+A), [Victoire Memdjokam Koagne](https://arxiv.org/search/cs?searchtype=author&query=Koagne%2C+V+M), [Edwin Munkoh-Buabeng](https://arxiv.org/search/cs?searchtype=author&query=Munkoh-Buabeng%2C+E), [Valencia Wagner](https://arxiv.org/search/cs?searchtype=author&query=Wagner%2C+V), [Idris Abdulmumin](https://arxiv.org/search/cs?searchtype=author&query=Abdulmumin%2C+I), [Ayodele Awokoya](https://arxiv.org/search/cs?searchtype=author&query=Awokoya%2C+A), [Happy Buzaaba](https://arxiv.org/search/cs?searchtype=author&query=Buzaaba%2C+H), [Blessing Sibanda](https://arxiv.org/search/cs?searchtype=author&query=Sibanda%2C+B), [Andiswa Bukula](https://arxiv.org/search/cs?searchtype=author&query=Bukula%2C+A), [Sam Manthalu](https://arxiv.org/search/cs?searchtype=author&query=Manthalu%2C+S)
+
+> Recent advances in the pre-training of language models leverage large-scale datasets to create multilingual models. However, low-resource languages are mostly left out in these datasets. This is primarily because many widely spoken languages are not well represented on the web and therefore excluded from the large-scale crawls used to create datasets. Furthermore, downstream users of these models are restricted to the selection of languages originally chosen for pre-training. This work investigates how to optimally leverage existing pre-trained models to create low-resource translation systems for 16 African languages. We focus on two questions: 1) How can pre-trained models be used for languages not included in the initial pre-training? and 2) How can the resulting translation models effectively transfer to new domains? To answer these questions, we create a new African news corpus covering 16 languages, of which eight languages are not part of any existing evaluation dataset. We demonstrate that the most effective strategy for transferring both to additional languages and to additional domains is to fine-tune large pre-trained models on small quantities of high-quality translation data.
+
+| Comments: | Accepted to NAACL 2022                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2205.02022](https://arxiv.org/abs/2205.02022) [cs.CL]** |
+|           | (or **[arXiv:2205.02022v1](https://arxiv.org/abs/2205.02022v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2205.02022Focus to learn more |
+
+
+
+
+
+<h2 id="2022-05-05-7">7. Same Neurons, Different Languages: Probing Morphosyntax in Multilingual Pre-trained Models
+</h2>
+
+Title: [Same Neurons, Different Languages: Probing Morphosyntax in Multilingual Pre-trained Models](https://arxiv.org/abs/2205.02023)
+Authors: [Karolina Stańczak](https://arxiv.org/search/cs?searchtype=author&query=Stańczak%2C+K), [Edoardo Ponti](https://arxiv.org/search/cs?searchtype=author&query=Ponti%2C+E), [Lucas Torroba Hennigen](https://arxiv.org/search/cs?searchtype=author&query=Hennigen%2C+L+T), [Ryan Cotterell](https://arxiv.org/search/cs?searchtype=author&query=Cotterell%2C+R), [Isabelle Augenstein](https://arxiv.org/search/cs?searchtype=author&query=Augenstein%2C+I)
+
+> The success of multilingual pre-trained models is underpinned by their ability to learn representations shared by multiple languages even in absence of any explicit supervision. However, it remains unclear how these models learn to generalise across languages. In this work, we conjecture that multilingual pre-trained models can derive language-universal abstractions about grammar. In particular, we investigate whether morphosyntactic information is encoded in the same subset of neurons in different languages. We conduct the first large-scale empirical study over 43 languages and 14 morphosyntactic categories with a state-of-the-art neuron-level probe. Our findings show that the cross-lingual overlap between neurons is significant, but its extent may vary across categories and depends on language proximity and pre-training data size.
+
+| Comments: | Accepted at NAACL 2022 (Main Conference)                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2205.02023](https://arxiv.org/abs/2205.02023) [cs.CL]** |
+|           | (or **[arXiv:2205.02023v1](https://arxiv.org/abs/2205.02023v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2205.02023Focus to learn more |
+
+
+
+
+
+<h2 id="2022-05-05-8">8. Reproducibility Beyond the Research Community: Experience from NLP Beginners
+</h2>
+
+Title: [Reproducibility Beyond the Research Community: Experience from NLP Beginners](https://arxiv.org/abs/2205.02182)
+Authors: [Shane Storks](https://arxiv.org/search/cs?searchtype=author&query=Storks%2C+S), [Keunwoo Peter Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+K+P), [Joyce Chai](https://arxiv.org/search/cs?searchtype=author&query=Chai%2C+J)
+
+> As NLP research attracts public attention and excitement, it becomes increasingly important for it to be accessible to a broad audience. As the research community works to democratize NLP, it remains unclear whether beginners to the field can easily apply the latest developments. To understand their needs, we conducted a study with 93 students in an introductory NLP course, where students reproduced results of recent NLP papers. Surprisingly, our results suggest that their technical skill (i.e., programming experience) has limited impact on their effort spent completing the exercise. Instead, we find accessibility efforts by research authors to be key to a successful experience, including thorough documentation and easy access to required models and datasets.
+
+| Comments: | Accepted to NAACL 2022                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2205.02182](https://arxiv.org/abs/2205.02182) [cs.CL]** |
+|           | (or **[arXiv:2205.02182v1](https://arxiv.org/abs/2205.02182v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2205.02182Focus to learn more |
+
+
 
 
 
