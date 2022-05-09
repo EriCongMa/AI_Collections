@@ -2,6 +2,13 @@
 
 # Index
 
+- [2022-05-09](#2022-05-09)
+  - [1. GlobEnc: Quantifying Global Token Attribution by Incorporating the Whole Encoder Layer in Transformers](#2022-05-09-1)
+  - [2. Example-Based Machine Translation from Text to a Hierarchical Representation of Sign Language](#2022-05-09-2)
+  - [3. Quantifying Synthesis and Fusion and their Impact on Machine Translation](#2022-05-09-3)
+  - [4. The Unreliability of Explanations in Few-Shot In-Context Learning](#2022-05-09-4)
+  - [5. A Data Cartography based MixUp for Pre-trained Language Models](#2022-05-09-5)
+  
 - [2022-05-06](#2022-05-06)
   - [1. Language Models Can See: Plugging Visual Controls in Text Generation](#2022-05-06-1)
   - [2. Original or Translated? A Causal Analysis of the Impact of Translationese on Machine Translation Performance](#2022-05-06-2)
@@ -45,6 +52,110 @@
 
 
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2022-05-09
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-05-09-1">1. GlobEnc: Quantifying Global Token Attribution by Incorporating the Whole Encoder Layer in Transformers
+</h2>
+
+Title: [GlobEnc: Quantifying Global Token Attribution by Incorporating the Whole Encoder Layer in Transformers](https://arxiv.org/abs/2205.03286)
+
+Authors: [Ali Modarressi](https://arxiv.org/search/cs?searchtype=author&query=Modarressi%2C+A), [Mohsen Fayyaz](https://arxiv.org/search/cs?searchtype=author&query=Fayyaz%2C+M), [Yadollah Yaghoobzadeh](https://arxiv.org/search/cs?searchtype=author&query=Yaghoobzadeh%2C+Y), [Mohammad Taher Pilehvar](https://arxiv.org/search/cs?searchtype=author&query=Pilehvar%2C+M+T)
+
+> There has been a growing interest in interpreting the underlying dynamics of Transformers. While self-attention patterns were initially deemed as the primary option, recent studies have shown that integrating other components can yield more accurate explanations. This paper introduces a novel token attribution analysis method that incorporates all the components in the encoder block and aggregates this throughout layers. Through extensive quantitative and qualitative experiments, we demonstrate that our method can produce faithful and meaningful global token attributions. Our experiments reveal that incorporating almost every encoder component results in increasingly more accurate analysis in both local (single layer) and global (the whole model) settings. Our global attribution analysis significantly outperforms previous methods on various tasks regarding correlation with gradient-based saliency scores. Our code is freely available at [this https URL](https://github.com/mohsenfayyaz/GlobEnc).
+
+| Comments: | Accepted to NAACL 2022 (main conference)                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2205.03286](https://arxiv.org/abs/2205.03286) [cs.CL]** |
+|           | (or **[arXiv:2205.03286v1](https://arxiv.org/abs/2205.03286v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2205.03286Focus to learn more |
+
+
+
+
+
+<h2 id="2022-05-09-2">2. Example-Based Machine Translation from Text to a Hierarchical Representation of Sign Language
+</h2>
+
+Title: [Example-Based Machine Translation from Text to a Hierarchical Representation of Sign Language](https://arxiv.org/abs/2205.03314)
+
+Authors: [Élise Bertin-Lemée](https://arxiv.org/search/cs?searchtype=author&query=Bertin-Lemée%2C+É), [Annelies Braffort](https://arxiv.org/search/cs?searchtype=author&query=Braffort%2C+A), [Camille Challant](https://arxiv.org/search/cs?searchtype=author&query=Challant%2C+C), [Claire Danet](https://arxiv.org/search/cs?searchtype=author&query=Danet%2C+C), [Michael Filhol](https://arxiv.org/search/cs?searchtype=author&query=Filhol%2C+M)
+
+> This article presents an original method for Text-to-Sign Translation. It compensates data scarcity using a domain-specific parallel corpus of alignments between text and hierarchical formal descriptions of Sign Language videos in AZee. Based on the detection of similarities present in the source text, the proposed algorithm recursively exploits matches and substitutions of aligned segments to build multiple candidate translations for a novel statement. This helps preserving Sign Language structures as much as possible before falling back on literal translations too quickly, in a generative way. The resulting translations are in the form of AZee expressions, designed to be used as input to avatar synthesis systems. We present a test set tailored to showcase its potential for expressiveness and generation of idiomatic target language, and observed limitations. This work finally opens prospects on how to evaluate translation and linguistic aspects, such as accuracy and grammatical fluency.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2205.03314](https://arxiv.org/abs/2205.03314) [cs.CL]** |
+|           | (or **[arXiv:2205.03314v1](https://arxiv.org/abs/2205.03314v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2205.03314Focus to learn more |
+
+
+
+
+
+<h2 id="2022-05-09-3">3. Quantifying Synthesis and Fusion and their Impact on Machine Translation
+</h2>
+
+Title: [Quantifying Synthesis and Fusion and their Impact on Machine Translation](https://arxiv.org/abs/2205.03369)
+
+Authors: [Arturo Oncevay](https://arxiv.org/search/cs?searchtype=author&query=Oncevay%2C+A), [Duygu Ataman](https://arxiv.org/search/cs?searchtype=author&query=Ataman%2C+D), [Niels van Berkel](https://arxiv.org/search/cs?searchtype=author&query=van+Berkel%2C+N), [Barry Haddow](https://arxiv.org/search/cs?searchtype=author&query=Haddow%2C+B), [Alexandra Birch](https://arxiv.org/search/cs?searchtype=author&query=Birch%2C+A), [Johannes Bjerva](https://arxiv.org/search/cs?searchtype=author&query=Bjerva%2C+J)
+
+> Theoretical work in morphological typology offers the possibility of measuring morphological diversity on a continuous scale. However, literature in Natural Language Processing (NLP) typically labels a whole language with a strict type of morphology, e.g. fusional or agglutinative. In this work, we propose to reduce the rigidity of such claims, by quantifying morphological typology at the word and segment level. We consider Payne (2017)'s approach to classify morphology using two indices: synthesis (e.g. analytic to polysynthetic) and fusion (agglutinative to fusional). For computing synthesis, we test unsupervised and supervised morphological segmentation methods for English, German and Turkish, whereas for fusion, we propose a semi-automatic method using Spanish as a case study. Then, we analyse the relationship between machine translation quality and the degree of synthesis and fusion at word (nouns and verbs for English-Turkish, and verbs in English-Spanish) and segment level (previous language pairs plus English-German in both directions). We complement the word-level analysis with human evaluation, and overall, we observe a consistent impact of both indexes on machine translation quality.
+
+| Comments: | Accepted at NAACL 2022                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2205.03369](https://arxiv.org/abs/2205.03369) [cs.CL]** |
+|           | (or **[arXiv:2205.03369v1](https://arxiv.org/abs/2205.03369v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2205.03369Focus to learn more |
+
+
+
+
+
+<h2 id="2022-05-09-4">4. The Unreliability of Explanations in Few-Shot In-Context Learning
+</h2>
+
+Title: [The Unreliability of Explanations in Few-Shot In-Context Learning](https://arxiv.org/abs/2205.03401)
+
+Authors: [Xi Ye](https://arxiv.org/search/cs?searchtype=author&query=Ye%2C+X), [Greg Durrett](https://arxiv.org/search/cs?searchtype=author&query=Durrett%2C+G)
+
+> How can prompting a large language model like GPT-3 with explanations improve in-context learning? We focus specifically on two NLP tasks that involve reasoning over text, namely question answering and natural language inference. Including explanations in the prompt and having the model generate them does not consistently improve performance in the settings we study, contrary to recent results on symbolic reasoning tasks (Nye et al., 2021; Wei et al., 2022). Despite careful prompting, explanations generated by GPT-3 may not even be factually grounded in the input, even on simple tasks with straightforward extractive explanations. However, these flawed explanations can still be useful as a way to verify GPT-3's predictions post-hoc. Through analysis in three settings, we show that explanations judged as good by humans--those that are logically consistent with the input and the prediction--usually indicate more accurate predictions. Following these observations, we present a framework for calibrating model predictions based on the reliability of the explanations. Our framework trains calibrators using automatically extracted scores that approximately assess the reliability of explanations, which helps improve performance across three different datasets.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2205.03401](https://arxiv.org/abs/2205.03401) [cs.CL]** |
+|           | (or **[arXiv:2205.03401v1](https://arxiv.org/abs/2205.03401v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2205.03401Focus to learn more |
+
+
+
+
+
+<h2 id="2022-05-09-5">5. A Data Cartography based MixUp for Pre-trained Language Models
+</h2>
+
+Title: [A Data Cartography based MixUp for Pre-trained Language Models](https://arxiv.org/abs/2205.03403)
+
+Authors: [Seo Yeon Park](https://arxiv.org/search/cs?searchtype=author&query=Park%2C+S+Y), [Cornelia Caragea](https://arxiv.org/search/cs?searchtype=author&query=Caragea%2C+C)
+
+> MixUp is a data augmentation strategy where additional samples are generated during training by combining random pairs of training samples and their labels. However, selecting random pairs is not potentially an optimal choice. In this work, we propose TDMixUp, a novel MixUp strategy that leverages Training Dynamics and allows more informative samples to be combined for generating new data samples. Our proposed TDMixUp first measures confidence, variability, (Swayamdipta et al., 2020), and Area Under the Margin (AUM) (Pleiss et al., 2020) to identify the characteristics of training samples (e.g., as easy-to-learn or ambiguous samples), and then interpolates these characterized samples. We empirically validate that our method not only achieves competitive performance using a smaller subset of the training data compared with strong baselines, but also yields lower expected calibration error on the pre-trained language model, BERT, on both in-domain and out-of-domain settings in a wide range of NLP tasks. We publicly release our code.
+
+| Comments: | Accepted at NAACL 2022 main conference. arXiv admin note: text overlap with [arXiv:2203.07559](https://arxiv.org/abs/2203.07559) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2205.03403](https://arxiv.org/abs/2205.03403) [cs.CL]** |
+|           | (or **[arXiv:2205.03403v1](https://arxiv.org/abs/2205.03403v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2205.03403Focus to learn more |
+
+
 
 
 
