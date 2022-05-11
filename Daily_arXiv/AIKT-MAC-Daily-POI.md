@@ -2,13 +2,27 @@
 
 # Index
 
+- [2022-05-11](#2022-05-11)
+  - [1. ](#2022-05-11-1)
+  - [2. ](#2022-05-11-2)
+  - [3. ](#2022-05-11-3)
+  
+- [2022-05-10](#2022-05-10)
+  - [1. Scheduled Multi-task Learning for Neural Chat Translation](#2022-05-10-1)
+  - [2. Building Machine Translation Systems for the Next Thousand Languages](#2022-05-10-2)
+  - [3. CoCoA-MT: A Dataset and Benchmark for Contrastive Controlled MT with Application to Formality](#2022-05-10-3)
+  - [4. Sub-Word Alignment Is Still Useful: A Vest-Pocket Method for Enhancing Low-Resource Machine Translation](#2022-05-10-4)
+  - [5. Attribution-based Task-specific Pruning for Multi-task Language Models](#2022-05-10-5)
+  - [6. Enhancing Cross-lingual Transfer by Manifold Mixup](#2022-05-10-6)
+  - [7. EASE: Entity-Aware Contrastive Learning of Sentence Embedding](#2022-05-10-7)
+
 - [2022-05-09](#2022-05-09)
   - [1. GlobEnc: Quantifying Global Token Attribution by Incorporating the Whole Encoder Layer in Transformers](#2022-05-09-1)
   - [2. Example-Based Machine Translation from Text to a Hierarchical Representation of Sign Language](#2022-05-09-2)
   - [3. Quantifying Synthesis and Fusion and their Impact on Machine Translation](#2022-05-09-3)
   - [4. The Unreliability of Explanations in Few-Shot In-Context Learning](#2022-05-09-4)
   - [5. A Data Cartography based MixUp for Pre-trained Language Models](#2022-05-09-5)
-  
+
 - [2022-05-06](#2022-05-06)
   - [1. Language Models Can See: Plugging Visual Controls in Text Generation](#2022-05-06-1)
   - [2. Original or Translated? A Causal Analysis of the Impact of Translationese on Machine Translation Performance](#2022-05-06-2)
@@ -52,6 +66,209 @@
 
 
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2022-05-11
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-05-11-1">1. AdMix: A Mixed Sample Data Augmentation Method for Neural Machine Translation
+</h2>
+
+Title: [AdMix: A Mixed Sample Data Augmentation Method for Neural Machine Translation](https://arxiv.org/abs/2205.04686)
+
+Authors: [Chang Jin](https://arxiv.org/search/cs?searchtype=author&query=Jin%2C+C), [Shigui Qiu](https://arxiv.org/search/cs?searchtype=author&query=Qiu%2C+S), [Nini Xiao](https://arxiv.org/search/cs?searchtype=author&query=Xiao%2C+N), [Hao Jia](https://arxiv.org/search/cs?searchtype=author&query=Jia%2C+H)
+
+> In Neural Machine Translation (NMT), data augmentation methods such as back-translation have proven their effectiveness in improving translation performance. In this paper, we propose a novel data augmentation approach for NMT, which is independent of any additional training data. Our approach, AdMix, consists of two parts: 1) introduce faint discrete noise (word replacement, word dropping, word swapping) into the original sentence pairs to form augmented samples; 2) generate new synthetic training data by softly mixing the augmented samples with their original samples in training corpus. Experiments on three translation datasets of different scales show that AdMix achieves signifi cant improvements (1.0 to 2.7 BLEU points) over strong Transformer baseline. When combined with other data augmentation techniques (e.g., back-translation), our approach can obtain further improvements.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2205.04686](https://arxiv.org/abs/2205.04686) [cs.CL]** |
+|           | (or **[arXiv:2205.04686v1](https://arxiv.org/abs/2205.04686v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-05-11-2">2. Controlling Extra-Textual Attributes about Dialogue Participants: A Case Study of English-to-Polish Neural Machine Translation
+</h2>
+
+Title: [Controlling Extra-Textual Attributes about Dialogue Participants: A Case Study of English-to-Polish Neural Machine Translation](https://arxiv.org/abs/2205.04747)
+
+Authors: [Sebastian T. Vincent](https://arxiv.org/search/cs?searchtype=author&query=Vincent%2C+S+T), [Loïc Barrault](https://arxiv.org/search/cs?searchtype=author&query=Barrault%2C+L), [Carolina Scarton](https://arxiv.org/search/cs?searchtype=author&query=Scarton%2C+C)
+
+> Unlike English, morphologically rich languages can reveal characteristics of speakers or their conversational partners, such as gender and number, via pronouns, morphological endings of words and syntax. When translating from English to such languages, a machine translation model needs to opt for a certain interpretation of textual context, which may lead to serious translation errors if extra-textual information is unavailable. We investigate this challenge in the English-to-Polish language direction. We focus on the underresearched problem of utilising external metadata in automatic translation of TV dialogue, proposing a case study where a wide range of approaches for controlling attributes in translation is employed in a multi-attribute scenario. The best model achieves an improvement of +5.81 chrF++/+6.03 BLEU, with other models achieving competitive performance. We additionally contribute a novel attribute-annotated dataset of Polish TV dialogue and a morphological analysis script used to evaluate attribute control in models.
+
+| Comments: | 9 pages, 9 figures, EAMT2022 camera-ready                    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2205.04747](https://arxiv.org/abs/2205.04747) [cs.CL]** |
+|           | (or **[arXiv:2205.04747v1](https://arxiv.org/abs/2205.04747v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-05-11-3">3. The Importance of Context in Very Low Resource Language Modeling
+</h2>
+
+Title: [The Importance of Context in Very Low Resource Language Modeling](https://arxiv.org/abs/2205.04810)
+
+Authors: [Lukas Edman](https://arxiv.org/search/cs?searchtype=author&query=Edman%2C+L), [Antonio Toral](https://arxiv.org/search/cs?searchtype=author&query=Toral%2C+A), [Gertjan van Noord](https://arxiv.org/search/cs?searchtype=author&query=van+Noord%2C+G)
+
+> This paper investigates very low resource language model pretraining, when less than 100 thousand sentences are available. We find that, in very low resource scenarios, statistical n-gram language models outperform state-of-the-art neural models. Our experiments show that this is mainly due to the focus of the former on a local context. As such, we introduce three methods to improve a neural model's performance in the low-resource setting, finding that limiting the model's self-attention is the most effective one, improving on downstream tasks such as NLI and POS tagging by up to 5% for the languages we test on: English, Hindi, and Turkish.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2205.04810](https://arxiv.org/abs/2205.04810) [cs.CL]** |
+|           | (or **[arXiv:2205.04810v1](https://arxiv.org/abs/2205.04810v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+
+# 2022-05-10
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-05-10-1">1. Scheduled Multi-task Learning for Neural Chat Translation
+</h2>
+
+Title: [Scheduled Multi-task Learning for Neural Chat Translation](https://arxiv.org/abs/2205.03766)
+Authors: [Yunlong Liang](https://arxiv.org/search/cs?searchtype=author&query=Liang%2C+Y), [Fandong Meng](https://arxiv.org/search/cs?searchtype=author&query=Meng%2C+F), [Jinan Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+J), [Yufeng Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+Y), [Jie Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+J)
+
+> Neural Chat Translation (NCT) aims to translate conversational text into different languages. Existing methods mainly focus on modeling the bilingual dialogue characteristics (e.g., coherence) to improve chat translation via multi-task learning on small-scale chat translation data. Although the NCT models have achieved impressive success, it is still far from satisfactory due to insufficient chat translation data and simple joint training manners. To address the above issues, we propose a scheduled multi-task learning framework for NCT. Specifically, we devise a three-stage training framework to incorporate the large-scale in-domain chat translation data into training by adding a second pre-training stage between the original pre-training and fine-tuning stages. Further, we investigate where and how to schedule the dialogue-related auxiliary tasks in multiple training stages to effectively enhance the main chat translation task. Extensive experiments in four language directions (English-Chinese and English-German) verify the effectiveness and superiority of the proposed approach. Additionally, we have made the large-scale in-domain paired bilingual dialogue dataset publicly available to the research community.
+
+| Comments: | Accepted at ACL 2022 as a long paper of the main conference. Code and data: [this https URL](https://github.com/XL2248/SML). arXiv admin note: text overlap with [arXiv:2109.00668](https://arxiv.org/abs/2109.00668) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2205.03766](https://arxiv.org/abs/2205.03766) [cs.CL]** |
+|           | (or **[arXiv:2205.03766v1](https://arxiv.org/abs/2205.03766v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2205.03766Focus to learn more |
+
+
+
+
+
+<h2 id="2022-05-10-2">2. Building Machine Translation Systems for the Next Thousand Languages
+</h2>
+
+Title: [Building Machine Translation Systems for the Next Thousand Languages](https://arxiv.org/abs/2205.03983)
+Authors: [Ankur Bapna](https://arxiv.org/search/cs?searchtype=author&query=Bapna%2C+A), [Isaac Caswell](https://arxiv.org/search/cs?searchtype=author&query=Caswell%2C+I), [Julia Kreutzer](https://arxiv.org/search/cs?searchtype=author&query=Kreutzer%2C+J), [Orhan Firat](https://arxiv.org/search/cs?searchtype=author&query=Firat%2C+O), [Daan van Esch](https://arxiv.org/search/cs?searchtype=author&query=van+Esch%2C+D), [Aditya Siddhant](https://arxiv.org/search/cs?searchtype=author&query=Siddhant%2C+A), [Mengmeng Niu](https://arxiv.org/search/cs?searchtype=author&query=Niu%2C+M), [Pallavi Baljekar](https://arxiv.org/search/cs?searchtype=author&query=Baljekar%2C+P), [Xavier Garcia](https://arxiv.org/search/cs?searchtype=author&query=Garcia%2C+X), [Wolfgang Macherey](https://arxiv.org/search/cs?searchtype=author&query=Macherey%2C+W), [Theresa Breiner](https://arxiv.org/search/cs?searchtype=author&query=Breiner%2C+T), [Vera Axelrod](https://arxiv.org/search/cs?searchtype=author&query=Axelrod%2C+V), [Jason Riesa](https://arxiv.org/search/cs?searchtype=author&query=Riesa%2C+J), [Yuan Cao](https://arxiv.org/search/cs?searchtype=author&query=Cao%2C+Y), [Mia Xu Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+M+X), [Klaus Macherey](https://arxiv.org/search/cs?searchtype=author&query=Macherey%2C+K), [Maxim Krikun](https://arxiv.org/search/cs?searchtype=author&query=Krikun%2C+M), [Pidong Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+P), [Alexander Gutkin](https://arxiv.org/search/cs?searchtype=author&query=Gutkin%2C+A), [Apurva Shah](https://arxiv.org/search/cs?searchtype=author&query=Shah%2C+A), [Yanping Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+Y), [Zhifeng Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+Z), [Yonghui Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+Y), [Macduff Hughes](https://arxiv.org/search/cs?searchtype=author&query=Hughes%2C+M)
+
+> In this paper we share findings from our effort to build practical machine translation (MT) systems capable of translating across over one thousand languages. We describe results in three research domains: (i) Building clean, web-mined datasets for 1500+ languages by leveraging semi-supervised pre-training for language identification and developing data-driven filtering techniques; (ii) Developing practical MT models for under-served languages by leveraging massively multilingual models trained with supervised parallel data for over 100 high-resource languages and monolingual datasets for an additional 1000+ languages; and (iii) Studying the limitations of evaluation metrics for these languages and conducting qualitative analysis of the outputs from our MT models, highlighting several frequent error modes of these types of models. We hope that our work provides useful insights to practitioners working towards building MT systems for currently understudied languages, and highlights research directions that can complement the weaknesses of massively multilingual models in data-sparse settings.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2205.03983](https://arxiv.org/abs/2205.03983) [cs.CL]** |
+|           | (or **[arXiv:2205.03983v1](https://arxiv.org/abs/2205.03983v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2205.03983Focus to learn more |
+
+
+
+
+
+<h2 id="2022-05-10-3">3. CoCoA-MT: A Dataset and Benchmark for Contrastive Controlled MT with Application to Formality
+</h2>
+
+Title: [CoCoA-MT: A Dataset and Benchmark for Contrastive Controlled MT with Application to Formality](https://arxiv.org/abs/2205.04022)
+Authors: [Maria Nădejde](https://arxiv.org/search/cs?searchtype=author&query=Nădejde%2C+M), [Anna Currey](https://arxiv.org/search/cs?searchtype=author&query=Currey%2C+A), [Benjamin Hsu](https://arxiv.org/search/cs?searchtype=author&query=Hsu%2C+B), [Xing Niu](https://arxiv.org/search/cs?searchtype=author&query=Niu%2C+X), [Marcello Federico](https://arxiv.org/search/cs?searchtype=author&query=Federico%2C+M), [Georgiana Dinu](https://arxiv.org/search/cs?searchtype=author&query=Dinu%2C+G)
+
+> The machine translation (MT) task is typically formulated as that of returning a single translation for an input segment. However, in many cases, multiple different translations are valid and the appropriate translation may depend on the intended target audience, characteristics of the speaker, or even the relationship between speakers. Specific problems arise when dealing with honorifics, particularly translating from English into languages with formality markers. For example, the sentence "Are you sure?" can be translated in German as "Sind Sie sich sicher?" (formal register) or "Bist du dir sicher?" (informal). Using wrong or inconsistent tone may be perceived as inappropriate or jarring for users of certain cultures and demographics. This work addresses the problem of learning to control target language attributes, in this case formality, from a small amount of labeled contrastive data. We introduce an annotated dataset (CoCoA-MT) and an associated evaluation metric for training and evaluating formality-controlled MT models for six diverse target languages. We show that we can train formality-controlled models by fine-tuning on labeled contrastive data, achieving high accuracy (82% in-domain and 73% out-of-domain) while maintaining overall quality.
+
+| Comments: | NAACL 2022                                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2205.04022](https://arxiv.org/abs/2205.04022) [cs.CL]** |
+|           | (or **[arXiv:2205.04022v1](https://arxiv.org/abs/2205.04022v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2205.04022Focus to learn more |
+
+
+
+
+
+<h2 id="2022-05-10-4">4. Sub-Word Alignment Is Still Useful: A Vest-Pocket Method for Enhancing Low-Resource Machine Translation
+</h2>
+
+Title: [Sub-Word Alignment Is Still Useful: A Vest-Pocket Method for Enhancing Low-Resource Machine Translation](https://arxiv.org/abs/2205.04067)
+Authors: [Minhan Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+M), [Yu Hong](https://arxiv.org/search/cs?searchtype=author&query=Hong%2C+Y)
+
+> We leverage embedding duplication between aligned sub-words to extend the Parent-Child transfer learning method, so as to improve low-resource machine translation. We conduct experiments on benchmark datasets of My-En, Id-En and Tr-En translation scenarios. The test results show that our method produces substantial improvements, achieving the BLEU scores of 22.5, 28.0 and 18.1 respectively. In addition, the method is computationally efficient which reduces the consumption of training time by 63.8%, reaching the duration of 1.6 hours when training on a Tesla 16GB P100 GPU. All the models and source codes in the experiments will be made publicly available to support reproducible research.
+
+| Comments: | Accepted at ACL 2022                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2205.04067](https://arxiv.org/abs/2205.04067) [cs.CL]** |
+|           | (or **[arXiv:2205.04067v1](https://arxiv.org/abs/2205.04067v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2205.04067Focus to learn more |
+
+
+
+
+
+
+
+<h2 id="2022-05-10-5">5. Attribution-based Task-specific Pruning for Multi-task Language Models
+</h2>
+
+Title: [Attribution-based Task-specific Pruning for Multi-task Language Models](https://arxiv.org/abs/2205.04157)
+Authors: [Nakyeong Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+N), [Yunah Jang](https://arxiv.org/search/cs?searchtype=author&query=Jang%2C+Y), [Hwanhee Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+H), [Seohyeong Jung](https://arxiv.org/search/cs?searchtype=author&query=Jung%2C+S), [Kyomin Jung](https://arxiv.org/search/cs?searchtype=author&query=Jung%2C+K)
+
+> Multi-task language models show outstanding performance for various natural language understanding tasks with only a single model. However, these language models inevitably utilize unnecessary large-scale model parameters, even when they are used for only a specific task. In this paper, we propose a novel training-free task-specific pruning method for multi-task language models. Specifically, we utilize an attribution method to compute the importance of each neuron for performing a specific task. Then, we prune task-specifically unimportant neurons using this computed importance. Experimental results on the six widely-used datasets show that our proposed pruning method significantly outperforms baseline compression methods. Also, we extend our method to be applicable in a low-resource setting, where the number of labeled datasets is insufficient.
+
+| Comments: | 5 pages, 5 figures                                           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2205.04157](https://arxiv.org/abs/2205.04157) [cs.CL]** |
+|           | (or **[arXiv:2205.04157v1](https://arxiv.org/abs/2205.04157v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2205.04157Focus to learn more |
+
+
+
+
+
+<h2 id="2022-05-10-6">6. Enhancing Cross-lingual Transfer by Manifold Mixup
+</h2>
+
+Title: [Enhancing Cross-lingual Transfer by Manifold Mixup](https://arxiv.org/abs/2205.04182)
+Authors: [Huiyun Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+H), [Huadong Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+H), [Hao Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+H), [Lei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L)
+
+> Based on large-scale pre-trained multilingual representations, recent cross-lingual transfer methods have achieved impressive transfer performances. However, the performance of target languages still lags far behind the source language. In this paper, our analyses indicate such a performance gap is strongly associated with the cross-lingual representation discrepancy. To achieve better cross-lingual transfer performance, we propose the cross-lingual manifold mixup (X-Mixup) method, which adaptively calibrates the representation discrepancy and gives a compromised representation for target languages. Experiments on the XTREME benchmark show X-Mixup achieves 1.8% performance gains on multiple text understanding tasks, compared with strong baselines, and significantly reduces the cross-lingual representation discrepancy.
+
+| Comments: | Accepted to ICLR2022                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2205.04182](https://arxiv.org/abs/2205.04182) [cs.CL]** |
+|           | (or **[arXiv:2205.04182v1](https://arxiv.org/abs/2205.04182v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2205.04182Focus to learn more |
+
+
+
+<h2 id="2022-05-10-7">7. EASE: Entity-Aware Contrastive Learning of Sentence Embedding
+</h2>
+
+Title: [EASE: Entity-Aware Contrastive Learning of Sentence Embedding](https://arxiv.org/abs/2205.04260)
+Authors: [Sosuke Nishikawa](https://arxiv.org/search/cs?searchtype=author&query=Nishikawa%2C+S), [Ryokan Ri](https://arxiv.org/search/cs?searchtype=author&query=Ri%2C+R), [Ikuya Yamada](https://arxiv.org/search/cs?searchtype=author&query=Yamada%2C+I), [Yoshimasa Tsuruoka](https://arxiv.org/search/cs?searchtype=author&query=Tsuruoka%2C+Y), [Isao Echizen](https://arxiv.org/search/cs?searchtype=author&query=Echizen%2C+I)
+
+> We present EASE, a novel method for learning sentence embeddings via contrastive learning between sentences and their related entities. The advantage of using entity supervision is twofold: (1) entities have been shown to be a strong indicator of text semantics and thus should provide rich training signals for sentence embeddings; (2) entities are defined independently of languages and thus offer useful cross-lingual alignment supervision. We evaluate EASE against other unsupervised models both in monolingual and multilingual settings. We show that EASE exhibits competitive or better performance in English semantic textual similarity (STS) and short text clustering (STC) tasks and it significantly outperforms baseline methods in multilingual settings on a variety of tasks. Our source code, pre-trained models, and newly constructed multilingual STC dataset are available at [this https URL](https://github.com/studio-ousia/ease).
+
+| Comments: | Accepted to NAACL 2022                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2205.04260](https://arxiv.org/abs/2205.04260) [cs.CL]** |
+|           | (or **[arXiv:2205.04260v1](https://arxiv.org/abs/2205.04260v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2205.04260Focus to learn more |
+
+
+
+
 
 
 
