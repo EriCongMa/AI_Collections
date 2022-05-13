@@ -2,15 +2,24 @@
 
 # Index
 
+- [2022-05-13](#2022-05-13)
+  - [1. Some Grammatical Errors are Frequent, Others are Important](#2022-05-13-1)
+  
+  - [2. Controlling Formality in Low-Resource NMT with Domain Adaptation and Re-Ranking: SLT-CDT-UoS at IWSLT2022](#2022-05-13-2)
+  
+  - [3. Fair NLP Models with Differentially Private Text Encoders](#2022-05-13-3)
+  
+  - [4. Lifting the Curse of Multilinguality by Pre-training Modular Transformers](#2022-05-13-4)
+  
 - [2022-05-12](#2022-05-12)
   - [1. Few-Shot Parameter-Efficient Fine-Tuning is Better and Cheaper than In-Context Learning](#2022-05-12-1)
-  
+
   - [2. Human Language Modeling](#2022-05-12-2)
-  
+
   - [3. Unifying Language Learning Paradigms](#2022-05-12-3)
-  
+
   - [4. Making Pre-trained Language Models Good Long-tailed Learners](#2022-05-12-4)
-  
+
 - [2022-05-11](#2022-05-11)
   - [1. AdMix: A Mixed Sample Data Augmentation Method for Neural Machine Translation](#2022-05-11-1)
   - [2. Controlling Extra-Textual Attributes about Dialogue Participants: A Case Study of English-to-Polish Neural Machine Translation](#2022-05-11-2)
@@ -75,6 +84,92 @@
 
 
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2022-05-13
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-05-13-1">1. Some Grammatical Errors are Frequent, Others are Important
+</h2>
+
+Title: [Some Grammatical Errors are Frequent, Others are Important](https://arxiv.org/abs/2205.05730)
+
+Authors: [Leshem Choshen](https://arxiv.org/search/cs?searchtype=author&query=Choshen%2C+L), [Ofir Shifman](https://arxiv.org/search/cs?searchtype=author&query=Shifman%2C+O), [Omri Abend](https://arxiv.org/search/cs?searchtype=author&query=Abend%2C+O)
+
+> In Grammatical Error Correction, systems are evaluated by the number of errors they correct. However, no one has assessed whether all error types are equally important. We provide and apply a method to quantify the importance of different grammatical error types to humans. We show that some rare errors are considered disturbing while other common ones are not. This affects possible directions to improve both systems and their evaluation.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Computers and Society (cs.CY) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2205.05730](https://arxiv.org/abs/2205.05730) [cs.CL]** |
+|           | (or **[arXiv:2205.05730v1](https://arxiv.org/abs/2205.05730v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2205.05730Focus to learn more |
+
+
+
+
+
+<h2 id="2022-05-13-2">2. Controlling Formality in Low-Resource NMT with Domain Adaptation and Re-Ranking: SLT-CDT-UoS at IWSLT2022
+</h2>
+
+Title: [Controlling Formality in Low-Resource NMT with Domain Adaptation and Re-Ranking: SLT-CDT-UoS at IWSLT2022](https://arxiv.org/abs/2205.05990)
+
+Authors: [Sebastian T. Vincent](https://arxiv.org/search/cs?searchtype=author&query=Vincent%2C+S+T), [Loïc Barrault](https://arxiv.org/search/cs?searchtype=author&query=Barrault%2C+L), [Carolina Scarton](https://arxiv.org/search/cs?searchtype=author&query=Scarton%2C+C)
+
+> This paper describes the SLT-CDT-UoS group's submission to the first Special Task on Formality Control for Spoken Language Translation, part of the IWSLT 2022 Evaluation Campaign. Our efforts were split between two fronts: data engineering and altering the objective function for best hypothesis selection. We used language-independent methods to extract formal and informal sentence pairs from the provided corpora; using English as a pivot language, we propagated formality annotations to languages treated as zero-shot in the task; we also further improved formality controlling with a hypothesis re-ranking approach. On the test sets for English-to-German and English-to-Spanish, we achieved an average accuracy of .935 within the constrained setting and .995 within unconstrained setting. In a zero-shot setting for English-to-Russian and English-to-Italian, we scored average accuracy of .590 for constrained setting and .659 for unconstrained.
+
+| Comments: | 8 pages, 10 figures, IWSLT22 camera-ready (system paper @ ACL-IWSLT Shared Task on Formality Control for Spoken Language Translation) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2205.05990](https://arxiv.org/abs/2205.05990) [cs.CL]** |
+|           | (or **[arXiv:2205.05990v1](https://arxiv.org/abs/2205.05990v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2205.05990Focus to learn more |
+
+
+
+
+
+<h2 id="2022-05-13-3">3. Fair NLP Models with Differentially Private Text Encoders
+</h2>
+
+Title: [Fair NLP Models with Differentially Private Text Encoders](https://arxiv.org/abs/2205.06135)
+
+Authors: [Gaurav Maheshwari](https://arxiv.org/search/cs?searchtype=author&query=Maheshwari%2C+G), [Pascal Denis](https://arxiv.org/search/cs?searchtype=author&query=Denis%2C+P), [Mikaela Keller](https://arxiv.org/search/cs?searchtype=author&query=Keller%2C+M), [Aurélien Bellet](https://arxiv.org/search/cs?searchtype=author&query=Bellet%2C+A)
+
+> Encoded text representations often capture sensitive attributes about individuals (e.g., race or gender), which raise privacy concerns and can make downstream models unfair to certain groups. In this work, we propose FEDERATE, an approach that combines ideas from differential privacy and adversarial training to learn private text representations which also induces fairer models. We empirically evaluate the trade-off between the privacy of the representations and the fairness and accuracy of the downstream model on four NLP datasets. Our results show that FEDERATE consistently improves upon previous methods, and thus suggest that privacy and fairness can positively reinforce each other.
+
+| Comments: | submitted to: ACL-ARR 2022 (February) - [this https URL](https://openreview.net/forum?id=BVgNSki6q1c) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2205.06135](https://arxiv.org/abs/2205.06135) [cs.CL]** |
+|           | (or **[arXiv:2205.06135v1](https://arxiv.org/abs/2205.06135v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2205.06135Focus to learn more |
+
+
+
+
+
+<h2 id="2022-05-13-4">4. Lifting the Curse of Multilinguality by Pre-training Modular Transformers
+</h2>
+
+Title: [Lifting the Curse of Multilinguality by Pre-training Modular Transformers](https://arxiv.org/abs/2205.06266)
+
+Authors: [Jonas Pfeiffer](https://arxiv.org/search/cs?searchtype=author&query=Pfeiffer%2C+J), [Naman Goyal](https://arxiv.org/search/cs?searchtype=author&query=Goyal%2C+N), [Xi Victoria Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+X+V), [Xian Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+X), [James Cross](https://arxiv.org/search/cs?searchtype=author&query=Cross%2C+J), [Sebastian Riedel](https://arxiv.org/search/cs?searchtype=author&query=Riedel%2C+S), [Mikel Artetxe](https://arxiv.org/search/cs?searchtype=author&query=Artetxe%2C+M)
+
+> Multilingual pre-trained models are known to suffer from the curse of multilinguality, which causes per-language performance to drop as they cover more languages. We address this issue by introducing language-specific modules, which allows us to grow the total capacity of the model, while keeping the total number of trainable parameters per language constant. In contrast with prior work that learns language-specific components post-hoc, we pre-train the modules of our Cross-lingual Modular (X-Mod) models from the start. Our experiments on natural language inference, named entity recognition and question answering show that our approach not only mitigates the negative interference between languages, but also enables positive transfer, resulting in improved monolingual and cross-lingual performance. Furthermore, our approach enables adding languages post-hoc with no measurable drop in performance, no longer limiting the model usage to the set of pre-trained languages.
+
+| Comments: | NAACL 2022                                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2205.06266](https://arxiv.org/abs/2205.06266) [cs.CL]** |
+|           | (or **[arXiv:2205.06266v1](https://arxiv.org/abs/2205.06266v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2205.06266Focus to learn more |
+
+
+
 
 
 
