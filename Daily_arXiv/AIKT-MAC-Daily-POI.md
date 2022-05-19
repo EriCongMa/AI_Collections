@@ -2,6 +2,16 @@
 
 # Index
 
+- [2022-05-19](#2022-05-19)
+  - [1. Geographical Distance Is The New Hyperparameter: A Case Study Of Finding The Optimal Pre-trained Language For English-isiZulu Machine Translation](#2022-05-19-1)
+  - [2. Data Augmentation to Address Out-of-Vocabulary Problem in Low-Resource Sinhala-English Neural Machine Translation](#2022-05-19-2)
+  - [3. Leveraging Pseudo-labeled Data to Improve Direct Speech-to-Speech Translation](#2022-05-19-3)
+
+- [2022-05-18](#2022-05-18)
+  - [1. Towards Debiasing Translation Artifacts](#2022-05-18-1)
+  - [2. When to Use Multi-Task Learning vs Intermediate Fine-Tuning for Pre-Trained Encoder Transfer Learning](#2022-05-18-2)
+  - [3. Consistent Human Evaluation of Machine Translation across Language Pairs](#2022-05-18-3)
+
 - [2022-05-17](#2022-05-17)
   - [1. Improving Neural Machine Translation of Indigenous Languages with Multilingual Transfer Learning](#2022-05-17-1)
   - [2. Multiformer: A Head-Configurable Transformer-Based Model for Direct Speech Translation](#2022-05-17-2)
@@ -19,6 +29,142 @@
 
 
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2022-05-19
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-05-19-1">1. Geographical Distance Is The New Hyperparameter: A Case Study Of Finding The Optimal Pre-trained Language For English-isiZulu Machine Translation
+</h2>
+
+Title: [Geographical Distance Is The New Hyperparameter: A Case Study Of Finding The Optimal Pre-trained Language For English-isiZulu Machine Translation](https://arxiv.org/abs/2205.08621)
+
+Authors: [Muhammad Umair Nasir](https://arxiv.org/search/cs?searchtype=author&query=Nasir%2C+M+U), [Innocent Amos Mchechesi](https://arxiv.org/search/cs?searchtype=author&query=Mchechesi%2C+I+A)
+
+> Stemming from the limited availability of datasets and textual resources for low-resource languages such as isiZulu, there is a significant need to be able to harness knowledge from pre-trained models to improve low resource machine translation. Moreover, a lack of techniques to handle the complexities of morphologically rich languages has compounded the unequal development of translation models, with many widely spoken African languages being left behind. This study explores the potential benefits of transfer learning in an English-isiZulu translation framework. The results indicate the value of transfer learning from closely related languages to enhance the performance of low-resource translation models, thus providing a key strategy for low-resource translation going forward. We gathered results from 8 different language corpora, including one multi-lingual corpus, and saw that isiXhosa-isiZulu outperformed all languages, with a BLEU score of 8.56 on the test set which was better from the multi-lingual corpora pre-trained model by 2.73. We also derived a new coefficient, Nasir's Geographical Distance Coefficient (NGDC) which provides an easy selection of languages for the pre-trained models. NGDC also indicated that isiXhosa should be selected as the language for the pre-trained model.
+
+| Comments: | Accepted at NAACL 2022 Workshop MIA                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2205.08621](https://arxiv.org/abs/2205.08621) [cs.CL]** |
+|           | (or **[arXiv:2205.08621v1](https://arxiv.org/abs/2205.08621v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2205.08621Focus to learn more |
+
+
+
+
+
+<h2 id="2022-05-19-2">2. Data Augmentation to Address Out-of-Vocabulary Problem in Low-Resource Sinhala-English Neural Machine Translation
+</h2>
+
+Title: [Data Augmentation to Address Out-of-Vocabulary Problem in Low-Resource Sinhala-English Neural Machine Translation](https://arxiv.org/abs/2205.08722)
+
+Authors: [Aloka Fernando](https://arxiv.org/search/cs?searchtype=author&query=Fernando%2C+A), [Surangika Ranathunga](https://arxiv.org/search/cs?searchtype=author&query=Ranathunga%2C+S)
+
+> Out-of-Vocabulary (OOV) is a problem for Neural Machine Translation (NMT). OOV refers to words with a low occurrence in the training data, or to those that are absent from the training data. To alleviate this, word or phrase-based Data Augmentation (DA) techniques have been used. However, existing DA techniques have addressed only one of these OOV types and limit to considering either syntactic constraints or semantic constraints. We present a word and phrase replacement-based DA technique that consider both types of OOV, by augmenting (1) rare words in the existing parallel corpus, and (2) new words from a bilingual dictionary. During augmentation, we consider both syntactic and semantic properties of the words to guarantee fluency in the synthetic sentences. This technique was experimented with low resource Sinhala-English language pair. We observe with only semantic constraints in the DA, the results are comparable with the scores obtained considering syntactic constraints, and is favourable for low-resourced languages that lacks linguistic tool support. Additionally, results can be further improved by considering both syntactic and semantic constraints.
+
+| Subjects:          | **Computation and Language (cs.CL)**                         |
+| ------------------ | ------------------------------------------------------------ |
+| Cite as:           | **[arXiv:2205.08722](https://arxiv.org/abs/2205.08722) [cs.CL]** |
+|                    | (or **[arXiv:2205.08722v1](https://arxiv.org/abs/2205.08722v1) [cs.CL]** for this version) |
+|                    | https://doi.org/10.48550/arXiv.2205.08722Focus to learn more |
+| Journal reference: | Proceedings of the 35th Pacific Asia Conference on Language, Information and Computation (2021) 61-70 |
+
+
+
+
+
+<h2 id="2022-05-19-3">3. Leveraging Pseudo-labeled Data to Improve Direct Speech-to-Speech Translation
+</h2>
+
+Title: [Leveraging Pseudo-labeled Data to Improve Direct Speech-to-Speech Translation](https://arxiv.org/abs/2205.08993)
+
+Authors: [Qianqian Dong](https://arxiv.org/search/cs?searchtype=author&query=Dong%2C+Q), [Fengpeng Yue](https://arxiv.org/search/cs?searchtype=author&query=Yue%2C+F), [Tom Ko](https://arxiv.org/search/cs?searchtype=author&query=Ko%2C+T), [Mingxuan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+M), [Qibing Bai](https://arxiv.org/search/cs?searchtype=author&query=Bai%2C+Q), [Yu Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Y)
+
+> Direct Speech-to-speech translation (S2ST) has drawn more and more attention recently. The task is very challenging due to data scarcity and complex speech-to-speech mapping. In this paper, we report our recent achievements in S2ST. Firstly, we build a S2ST Transformer baseline which outperforms the original Translatotron. Secondly, we utilize the external data by pseudo-labeling and obtain a new state-of-the-art result on the Fisher English-to-Spanish test set. Indeed, we exploit the pseudo data with a combination of popular techniques which are not trivial when applied to S2ST. Moreover, we evaluate our approach on both syntactically similar (Spanish-English) and distant (English-Chinese) language pairs. Our implementation is available at [this https URL](https://github.com/fengpeng-yue/speech-to-speech-translation).
+
+| Comments: | Submitted to INTERSPEECH 2022                                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2205.08993](https://arxiv.org/abs/2205.08993) [cs.CL]** |
+|           | (or **[arXiv:2205.08993v1](https://arxiv.org/abs/2205.08993v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2205.08993Focus to learn more |
+
+
+
+
+
+
+
+# 2022-05-18
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-05-18-1">1. Towards Debiasing Translation Artifacts
+</h2>
+
+Title: [Towards Debiasing Translation Artifacts](https://arxiv.org/abs/2205.08001)
+
+Authors: [Koel Dutta Chowdhury](https://arxiv.org/search/cs?searchtype=author&query=Chowdhury%2C+K+D), [Rricha Jalota](https://arxiv.org/search/cs?searchtype=author&query=Jalota%2C+R), [Cristina España-Bonet](https://arxiv.org/search/cs?searchtype=author&query=España-Bonet%2C+C), [Josef van Genabith](https://arxiv.org/search/cs?searchtype=author&query=van+Genabith%2C+J)
+
+> Cross-lingual natural language processing relies on translation, either by humans or machines, at different levels, from translating training data to translating test sets. However, compared to original texts in the same language, translations possess distinct qualities referred to as translationese. Previous research has shown that these translation artifacts influence the performance of a variety of cross-lingual tasks. In this work, we propose a novel approach to reducing translationese by extending an established bias-removal technique. We use the Iterative Null-space Projection (INLP) algorithm, and show by measuring classification accuracy before and after debiasing, that translationese is reduced at both sentence and word level. We evaluate the utility of debiasing translationese on a natural language inference (NLI) task, and show that by reducing this bias, NLI accuracy improves. To the best of our knowledge, this is the first study to debias translationese as represented in latent embedding space.
+
+| Comments: | Accepted to NAACL 2022, Main Conference                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2205.08001](https://arxiv.org/abs/2205.08001) [cs.CL]** |
+|           | (or **[arXiv:2205.08001v1](https://arxiv.org/abs/2205.08001v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2205.08001Focus to learn more |
+
+
+
+
+
+<h2 id="2022-05-18-2">2. When to Use Multi-Task Learning vs Intermediate Fine-Tuning for Pre-Trained Encoder Transfer Learning
+</h2>
+
+Title: [When to Use Multi-Task Learning vs Intermediate Fine-Tuning for Pre-Trained Encoder Transfer Learning](https://arxiv.org/abs/2205.08124)
+
+Authors: [Orion Weller](https://arxiv.org/search/cs?searchtype=author&query=Weller%2C+O), [Kevin Seppi](https://arxiv.org/search/cs?searchtype=author&query=Seppi%2C+K), [Matt Gardner](https://arxiv.org/search/cs?searchtype=author&query=Gardner%2C+M)
+
+> Transfer learning (TL) in natural language processing (NLP) has seen a surge of interest in recent years, as pre-trained models have shown an impressive ability to transfer to novel tasks. Three main strategies have emerged for making use of multiple supervised datasets during fine-tuning: training on an intermediate task before training on the target task (STILTs), using multi-task learning (MTL) to train jointly on a supplementary task and the target task (pairwise MTL), or simply using MTL to train jointly on all available datasets (MTL-ALL). In this work, we compare all three TL methods in a comprehensive analysis on the GLUE dataset suite. We find that there is a simple heuristic for when to use one of these techniques over the other: pairwise MTL is better than STILTs when the target task has fewer instances than the supporting task and vice versa. We show that this holds true in more than 92% of applicable cases on the GLUE dataset and validate this hypothesis with experiments varying dataset size. The simplicity and effectiveness of this heuristic is surprising and warrants additional exploration by the TL community. Furthermore, we find that MTL-ALL is worse than the pairwise methods in almost every case. We hope this study will aid others as they choose between TL methods for NLP tasks.
+
+| Comments: | ACL 2022                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2205.08124](https://arxiv.org/abs/2205.08124) [cs.CL]** |
+|           | (or **[arXiv:2205.08124v1](https://arxiv.org/abs/2205.08124v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2205.08124Focus to learn more |
+
+
+
+
+
+<h2 id="2022-05-18-3">3. Consistent Human Evaluation of Machine Translation across Language Pairs
+</h2>
+
+Title: [Consistent Human Evaluation of Machine Translation across Language Pairs](https://arxiv.org/abs/2205.08533)
+
+Authors: [Daniel Licht](https://arxiv.org/search/cs?searchtype=author&query=Licht%2C+D), [Cynthia Gao](https://arxiv.org/search/cs?searchtype=author&query=Gao%2C+C), [Janice Lam](https://arxiv.org/search/cs?searchtype=author&query=Lam%2C+J), [Francisco Guzman](https://arxiv.org/search/cs?searchtype=author&query=Guzman%2C+F), [Mona Diab](https://arxiv.org/search/cs?searchtype=author&query=Diab%2C+M), [Philipp Koehn](https://arxiv.org/search/cs?searchtype=author&query=Koehn%2C+P)
+
+> Obtaining meaningful quality scores for machine translation systems through human evaluation remains a challenge given the high variability between human evaluators, partly due to subjective expectations for translation quality for different language pairs. We propose a new metric called XSTS that is more focused on semantic equivalence and a cross-lingual calibration method that enables more consistent assessment. We demonstrate the effectiveness of these novel contributions in large scale evaluation studies across up to 14 language pairs, with translation both into and out of English.
+
+| Comments: | 10 pages                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2205.08533](https://arxiv.org/abs/2205.08533) [cs.CL]** |
+|           | (or **[arXiv:2205.08533v1](https://arxiv.org/abs/2205.08533v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2205.08533Focus to learn more |
+
+
+
+
 
 
 
