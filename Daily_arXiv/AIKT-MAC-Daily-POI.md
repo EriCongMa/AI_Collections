@@ -2,6 +2,13 @@
 
 # Index
 
+- [2022-05-20](#2022-05-20)
+  - [1. PreQuEL: Quality Estimation of Machine Translation Outputs in Advance](#2022-05-20-1)
+  - [2. Evaluating Subtitle Segmentation for End-to-end Generation Systems](#2022-05-20-2)
+  - [3. Insights on Neural Representations for End-to-End Speech Recognition](#2022-05-20-3)
+  - [4. Phylogeny-Inspired Adaptation of Multilingual Models to New Languages](#2022-05-20-4)
+  - [5. Voxel-informed Language Grounding](#2022-05-20-5)
+
 - [2022-05-19](#2022-05-19)
   - [1. Geographical Distance Is The New Hyperparameter: A Case Study Of Finding The Optimal Pre-trained Language For English-isiZulu Machine Translation](#2022-05-19-1)
   - [2. Data Augmentation to Address Out-of-Vocabulary Problem in Low-Resource Sinhala-English Neural Machine Translation](#2022-05-19-2)
@@ -29,6 +36,114 @@
 
 
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2022-05-20
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-05-20-1">1. PreQuEL: Quality Estimation of Machine Translation Outputs in Advance
+</h2>
+
+Title: [PreQuEL: Quality Estimation of Machine Translation Outputs in Advance](https://arxiv.org/abs/2205.09178)
+
+Authors: [Shachar Don-Yehiya](https://arxiv.org/search/cs?searchtype=author&query=Don-Yehiya%2C+S), [Leshem Choshen](https://arxiv.org/search/cs?searchtype=author&query=Choshen%2C+L), [Omri Abend](https://arxiv.org/search/cs?searchtype=author&query=Abend%2C+O)
+
+> We present the task of PreQuEL, Pre-(Quality-Estimation) Learning. A PreQuEL system predicts how well a given sentence will be translated, without recourse to the actual translation, thus eschewing unnecessary resource allocation when translation quality is bound to be low. PreQuEL can be defined relative to a given MT system (e.g., some industry service) or generally relative to the state-of-the-art. From a theoretical perspective, PreQuEL places the focus on the source text, tracing properties, possibly linguistic features, that make a sentence harder to machine translate. 
+> We develop a baseline model for the task and analyze its performance. We also develop a data augmentation method (from parallel corpora), that improves results substantially. We show that this augmentation method can improve the performance of the Quality-Estimation task as well. We investigate the properties of the input text that our model is sensitive to, by testing it on challenge sets and different languages. We conclude that it is aware of syntactic and semantic distinctions, and correlates and even over-emphasizes the importance of standard NLP features.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2205.09178](https://arxiv.org/abs/2205.09178) [cs.CL]** |
+|           | (or **[arXiv:2205.09178v1](https://arxiv.org/abs/2205.09178v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2205.09178Focus to learn more |
+
+
+
+
+
+<h2 id="2022-05-20-2">2. Evaluating Subtitle Segmentation for End-to-end Generation Systems
+</h2>
+
+Title: [Evaluating Subtitle Segmentation for End-to-end Generation Systems](https://arxiv.org/abs/2205.09360)
+
+Authors: [Alina Karakanta](https://arxiv.org/search/cs?searchtype=author&query=Karakanta%2C+A), [François Buet](https://arxiv.org/search/cs?searchtype=author&query=Buet%2C+F), [Mauro Cettolo](https://arxiv.org/search/cs?searchtype=author&query=Cettolo%2C+M), [François Yvon](https://arxiv.org/search/cs?searchtype=author&query=Yvon%2C+F)
+
+> Subtitles appear on screen as short pieces of text, segmented based on formal constraints (length) and syntactic/semantic criteria. Subtitle segmentation can be evaluated with sequence segmentation metrics against a human reference. However, standard segmentation metrics cannot be applied when systems generate outputs different than the reference, e.g. with end-to-end subtitling systems. In this paper, we study ways to conduct reference-based evaluations of segmentation accuracy irrespective of the textual content. We first conduct a systematic analysis of existing metrics for evaluating subtitle segmentation. We then introduce Sigma, a new Subtitle Segmentation Score derived from an approximate upper-bound of BLEU on segmentation boundaries, which allows us to disentangle the effect of good segmentation from text quality. To compare Sigma with existing metrics, we further propose a boundary projection method from imperfect hypotheses to the true reference. Results show that all metrics are able to reward high quality output but for similar outputs system ranking depends on each metric's sensitivity to error type. Our thorough analyses suggest Sigma is a promising segmentation candidate but its reliability over other segmentation metrics remains to be validated through correlations with human judgements.
+
+| Comments: | Accepted at LREC 2022                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2205.09360](https://arxiv.org/abs/2205.09360) [cs.CL]** |
+|           | (or **[arXiv:2205.09360v1](https://arxiv.org/abs/2205.09360v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2205.09360Focus to learn more |
+
+
+
+
+
+<h2 id="2022-05-20-3">3. Insights on Neural Representations for End-to-End Speech Recognition
+</h2>
+
+Title: [Insights on Neural Representations for End-to-End Speech Recognition](https://arxiv.org/abs/2205.09456)
+
+Authors: [Anna Ollerenshaw](https://arxiv.org/search/cs?searchtype=author&query=Ollerenshaw%2C+A), [Md Asif Jalal](https://arxiv.org/search/cs?searchtype=author&query=Jalal%2C+M+A), [Thomas Hain](https://arxiv.org/search/cs?searchtype=author&query=Hain%2C+T)
+
+> End-to-end automatic speech recognition (ASR) models aim to learn a generalised speech representation. However, there are limited tools available to understand the internal functions and the effect of hierarchical dependencies within the model architecture. It is crucial to understand the correlations between the layer-wise representations, to derive insights on the relationship between neural representations and performance. 
+> Previous investigations of network similarities using correlation analysis techniques have not been explored for End-to-End ASR models. This paper analyses and explores the internal dynamics between layers during training with CNN, LSTM and Transformer based approaches using Canonical correlation analysis (CCA) and centered kernel alignment (CKA) for the experiments. It was found that neural representations within CNN layers exhibit hierarchical correlation dependencies as layer depth increases but this is mostly limited to cases where neural representation correlates more closely. This behaviour is not observed in LSTM architecture, however there is a bottom-up pattern observed across the training process, while Transformer encoder layers exhibit irregular coefficiency correlation as neural depth increases. Altogether, these results provide new insights into the role that neural architectures have upon speech recognition performance. More specifically, these techniques can be used as indicators to build better performing speech recognition models.
+
+| Comments:          | Submitted to Interspeech 2021                                |
+| ------------------ | ------------------------------------------------------------ |
+| Subjects:          | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:           | **[arXiv:2205.09456](https://arxiv.org/abs/2205.09456) [cs.CL]** |
+|                    | (or **[arXiv:2205.09456v1](https://arxiv.org/abs/2205.09456v1) [cs.CL]** for this version) |
+|                    | https://doi.org/10.48550/arXiv.2205.09456Focus to learn more |
+| Journal reference: | Proc. Interspeech 2021, 4079-4083                            |
+| Related DOI:       | https://doi.org/10.21437/Interspeech.2021-1516Focus to learn more |
+
+
+
+
+
+<h2 id="2022-05-20-4">4. Phylogeny-Inspired Adaptation of Multilingual Models to New Languages
+</h2>
+
+Title: [Phylogeny-Inspired Adaptation of Multilingual Models to New Languages](https://arxiv.org/abs/2205.09634)
+
+Authors: [Fahim Faisal](https://arxiv.org/search/cs?searchtype=author&query=Faisal%2C+F), [Antonios Anastasopoulos](https://arxiv.org/search/cs?searchtype=author&query=Anastasopoulos%2C+A)
+
+> Large pretrained multilingual models, trained on dozens of languages, have delivered promising results due to cross-lingual learning capabilities on variety of language tasks. Further adapting these models to specific languages, especially ones unseen during pre-training, is an important goal towards expanding the coverage of language technologies. In this study, we show how we can use language phylogenetic information to improve cross-lingual transfer leveraging closely related languages in a structured, linguistically-informed manner. We perform adapter-based training on languages from diverse language families (Germanic, Uralic, Tupian, Uto-Aztecan) and evaluate on both syntactic and semantic tasks, obtaining more than 20% relative performance improvements over strong commonly used baselines, especially on languages unseen during pre-training.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2205.09634](https://arxiv.org/abs/2205.09634) [cs.CL]** |
+|           | (or **[arXiv:2205.09634v1](https://arxiv.org/abs/2205.09634v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2205.09634Focus to learn more |
+
+
+
+
+
+<h2 id="2022-05-20-5">5. Voxel-informed Language Grounding
+</h2>
+
+Title: [Voxel-informed Language Grounding](https://arxiv.org/abs/2205.09710)
+
+Authors: [Rodolfo Corona](https://arxiv.org/search/cs?searchtype=author&query=Corona%2C+R), [Shizhan Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+S), [Dan Klein](https://arxiv.org/search/cs?searchtype=author&query=Klein%2C+D), [Trevor Darrell](https://arxiv.org/search/cs?searchtype=author&query=Darrell%2C+T)
+
+> Natural language applied to natural 2D images describes a fundamentally 3D world. We present the Voxel-informed Language Grounder (VLG), a language grounding model that leverages 3D geometric information in the form of voxel maps derived from the visual input using a volumetric reconstruction model. We show that VLG significantly improves grounding accuracy on SNARE, an object reference game task. At the time of writing, VLG holds the top place on the SNARE leaderboard, achieving SOTA results with a 2.0% absolute improvement.
+
+| Comments: | ACL 2022                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Computer Vision and Pattern Recognition (cs.CV) |
+| Cite as:  | **[arXiv:2205.09710](https://arxiv.org/abs/2205.09710) [cs.CL]** |
+|           | (or **[arXiv:2205.09710v1](https://arxiv.org/abs/2205.09710v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2205.09710Focus to learn more |
+
+
 
 
 
