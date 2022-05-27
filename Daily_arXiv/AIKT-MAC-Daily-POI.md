@@ -3,28 +3,33 @@
 # Index
 
 - [2022-05-27](#2022-05-27)
-  - [1. Open-Domain Sign Language Translation Learned from Online Video](#2022-05-27-1)
+  - [1. Fine-grained Image Captioning with CLIP Reward](#2022-05-27-1)
   
-  - [2. AdaMix: Mixture-of-Adapter for Parameter-efficient Tuning of Large Language Models](#2022-05-27-2)
+  - [2. Other Roles Matter! Enhancing Role-Oriented Dialogue Summarization via Role Interactions](#2022-05-27-2)
   
-  - [3. Know Where You're Going: Meta-Learning for Parameter-Efficient Fine-tuning](#2022-05-27-3)
+- [2022-05-26](#2022-05-26)
+  - [1. Open-Domain Sign Language Translation Learned from Online Video](#2022-05-26-1)
 
-  - [4. Improving CTC-based ASR Models with Gated Interlayer Collaboration](#2022-05-27-4)
-  
-  - [5. Machine Translation Robustness to Natural Asemantic Variation](#2022-05-27-5)
-  
-  - [6. TranSpeech: Speech-to-Speech Translation With Bilateral Perturbation](#2022-05-27-6)
-  
-  - [7. Are Large Pre-Trained Language Models Leaking Your Personal Information?](#2022-05-27-7)
-  
-  - [8. Multimodal Knowledge Alignment with Reinforcement Learning](#2022-05-27-8)
-  
-  - [9. Discovering Language-neutral Sub-networks in Multilingual Language Models](#2022-05-27-9)
-  
-  - [10. Understanding Natural Language in Context](#2022-05-27-10)
-  
-  - [11. Eliciting Transferability in Multi-task Learning with Task-level Mixture-of-Experts](#2022-05-27-11)
-  
+  - [2. AdaMix: Mixture-of-Adapter for Parameter-efficient Tuning of Large Language Models](#2022-05-26-2)
+
+  - [3. Know Where You're Going: Meta-Learning for Parameter-Efficient Fine-tuning](#2022-05-26-3)
+
+  - [4. Improving CTC-based ASR Models with Gated Interlayer Collaboration](#2022-05-26-4)
+
+  - [5. Machine Translation Robustness to Natural Asemantic Variation](#2022-05-26-5)
+
+  - [6. TranSpeech: Speech-to-Speech Translation With Bilateral Perturbation](#2022-05-26-6)
+
+  - [7. Are Large Pre-Trained Language Models Leaking Your Personal Information?](#2022-05-26-7)
+
+  - [8. Multimodal Knowledge Alignment with Reinforcement Learning](#2022-05-26-8)
+
+  - [9. Discovering Language-neutral Sub-networks in Multilingual Language Models](#2022-05-26-9)
+
+  - [10. Understanding Natural Language in Context](#2022-05-26-10)
+
+  - [11. Eliciting Transferability in Multi-task Learning with Task-level Mixture-of-Experts](#2022-05-26-11)
+
 - [2022-05-23](#2022-05-23)
   - [1. Translating Hanja historical documents to understandable Korean and English](#2022-05-23-1)
 
@@ -69,8 +74,6 @@
 - [2022-05-13](#2022-05-13)
   - [1. Some Grammatical Errors are Frequent, Others are Important](#2022-05-13-1)
 
-
-
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
 
 
@@ -81,7 +84,56 @@
 
 
 
-<h2 id="2022-05-27-1">1. Open-Domain Sign Language Translation Learned from Online Video
+<h2 id="2022-05-27-1">1. Fine-grained Image Captioning with CLIP Reward
+</h2>
+
+Title: [Fine-grained Image Captioning with CLIP Reward](https://arxiv.org/abs/2205.13115)
+
+Authors: [Jaemin Cho](https://arxiv.org/search/cs?searchtype=author&query=Cho%2C+J), [Seunghyun Yoon](https://arxiv.org/search/cs?searchtype=author&query=Yoon%2C+S), [Ajinkya Kale](https://arxiv.org/search/cs?searchtype=author&query=Kale%2C+A), [Franck Dernoncourt](https://arxiv.org/search/cs?searchtype=author&query=Dernoncourt%2C+F), [Trung Bui](https://arxiv.org/search/cs?searchtype=author&query=Bui%2C+T), [Mohit Bansal](https://arxiv.org/search/cs?searchtype=author&query=Bansal%2C+M)
+
+> Modern image captioning models are usually trained with text similarity objectives. However, since reference captions in public datasets often describe the most salient common objects, models trained with text similarity objectives tend to ignore specific and detailed aspects of an image that distinguish it from others. Toward more descriptive and distinctive caption generation, we propose using CLIP, a multimodal encoder trained on huge image-text pairs from web, to calculate multimodal similarity and use it as a reward function. We also propose a simple finetuning strategy of the CLIP text encoder to improve grammar that does not require extra text annotation. This completely eliminates the need for reference captions during the reward computation. To comprehensively evaluate descriptive captions, we introduce FineCapEval, a new dataset for caption evaluation with fine-grained criteria: overall, background, object, relations. In our experiments on text-to-image retrieval and FineCapEval, the proposed CLIP-guided model generates more distinctive captions than the CIDEr-optimized model. We also show that our unsupervised grammar finetuning of the CLIP text encoder alleviates the degeneration problem of the naive CLIP reward. Lastly, we show human analysis where the annotators strongly prefer the CLIP reward to the CIDEr and MLE objectives according to various criteria. Code and Data: [this https URL](https://github.com/j-min/CLIP-Caption-Reward)
+
+| Comments: | NAACL Findings 2022                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Computer Vision and Pattern Recognition (cs.CV) |
+| Cite as:  | **[arXiv:2205.13115](https://arxiv.org/abs/2205.13115) [cs.CL]** |
+|           | (or **[arXiv:2205.13115v1](https://arxiv.org/abs/2205.13115v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2205.13115Focus to learn more |
+
+
+
+
+
+<h2 id="2022-05-27-2">2. Other Roles Matter! Enhancing Role-Oriented Dialogue Summarization via Role Interactions
+</h2>
+
+Title: [Other Roles Matter! Enhancing Role-Oriented Dialogue Summarization via Role Interactions](https://arxiv.org/abs/2205.13190)
+
+Authors: [Haitao Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+H), [Junnan Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+J), [Lu Xiang](https://arxiv.org/search/cs?searchtype=author&query=Xiang%2C+L), [Yu Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+Y), [Jiajun Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+J), [Chengqing Zong](https://arxiv.org/search/cs?searchtype=author&query=Zong%2C+C)
+
+> Role-oriented dialogue summarization is to generate summaries for different roles in the dialogue, e.g., merchants and consumers. Existing methods handle this task by summarizing each role's content separately and thus are prone to ignore the information from other roles. However, we believe that other roles' content could benefit the quality of summaries, such as the omitted information mentioned by other roles. Therefore, we propose a novel role interaction enhanced method for role-oriented dialogue summarization. It adopts cross attention and decoder self-attention interactions to interactively acquire other roles' critical information. The cross attention interaction aims to select other roles' critical dialogue utterances, while the decoder self-attention interaction aims to obtain key information from other roles' summaries. Experimental results have shown that our proposed method significantly outperforms strong baselines on two public role-oriented dialogue summarization datasets. Extensive analyses have demonstrated that other roles' content could help generate summaries with more complete semantics and correct topic structures.
+
+| Comments: | Accepted by ACL 2022 main conference                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2205.13190](https://arxiv.org/abs/2205.13190) [cs.CL]** |
+|           | (or **[arXiv:2205.13190v1](https://arxiv.org/abs/2205.13190v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2205.13190Focus to learn more |
+
+
+
+
+
+
+
+
+# 2022-05-26
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-05-26-1">1. Open-Domain Sign Language Translation Learned from Online Video
 </h2>
 
 Title: [Open-Domain Sign Language Translation Learned from Online Video](https://arxiv.org/abs/2205.12870)
@@ -101,7 +153,7 @@ Authors: [Bowen Shi](https://arxiv.org/search/cs?searchtype=author&query=Shi%2C+
 
 
 
-<h2 id="2022-05-27-2">2. AdaMix: Mixture-of-Adapter for Parameter-efficient Tuning of Large Language Models
+<h2 id="2022-05-26-2">2. AdaMix: Mixture-of-Adapter for Parameter-efficient Tuning of Large Language Models
 </h2>
 
 Title: [AdaMix: Mixture-of-Adapter for Parameter-efficient Tuning of Large Language Models](https://arxiv.org/abs/2205.12410)
@@ -120,7 +172,7 @@ Authors: [Yaqing Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%
 
 
 
-<h2 id="2022-05-27-3">3. Know Where You're Going: Meta-Learning for Parameter-Efficient Fine-tuning
+<h2 id="2022-05-26-3">3. Know Where You're Going: Meta-Learning for Parameter-Efficient Fine-tuning
 </h2>
 
 Title: [Know Where You're Going: Meta-Learning for Parameter-Efficient Fine-tuning](https://arxiv.org/abs/2205.12453)
@@ -139,7 +191,7 @@ Authors: [Mozhdeh Gheini](https://arxiv.org/search/cs?searchtype=author&query=Gh
 
 
 
-<h2 id="2022-05-27-4">4. Improving CTC-based ASR Models with Gated Interlayer Collaboration
+<h2 id="2022-05-26-4">4. Improving CTC-based ASR Models with Gated Interlayer Collaboration
 </h2>
 
 Title: [Improving CTC-based ASR Models with Gated Interlayer Collaboration](https://arxiv.org/abs/2205.12462)
@@ -159,7 +211,7 @@ Authors: [Yuting Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%
 
 
 
-<h2 id="2022-05-27-5">5. Machine Translation Robustness to Natural Asemantic Variation
+<h2 id="2022-05-26-5">5. Machine Translation Robustness to Natural Asemantic Variation
 </h2>
 
 Title: [Machine Translation Robustness to Natural Asemantic Variation](https://arxiv.org/abs/2205.12514)
@@ -178,7 +230,7 @@ Authors: [Jacob Bremerman](https://arxiv.org/search/cs?searchtype=author&query=B
 
 
 
-<h2 id="2022-05-27-6">6. TranSpeech: Speech-to-Speech Translation With Bilateral Perturbation
+<h2 id="2022-05-26-6">6. TranSpeech: Speech-to-Speech Translation With Bilateral Perturbation
 </h2>
 
 Title: [TranSpeech: Speech-to-Speech Translation With Bilateral Perturbation](https://arxiv.org/abs/2205.12523)
@@ -197,7 +249,7 @@ Authors: [Rongjie Huang](https://arxiv.org/search/cs?searchtype=author&query=Hua
 
 
 
-<h2 id="2022-05-27-7">7. Are Large Pre-Trained Language Models Leaking Your Personal Information?
+<h2 id="2022-05-26-7">7. Are Large Pre-Trained Language Models Leaking Your Personal Information?
 </h2>
 
 Title: [Are Large Pre-Trained Language Models Leaking Your Personal Information?](https://arxiv.org/abs/2205.12628)
@@ -217,7 +269,7 @@ Authors: [Jie Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2
 
 
 
-<h2 id="2022-05-27-8">8. Multimodal Knowledge Alignment with Reinforcement Learning
+<h2 id="2022-05-26-8">8. Multimodal Knowledge Alignment with Reinforcement Learning
 </h2>
 
 Title: [Multimodal Knowledge Alignment with Reinforcement Learning](https://arxiv.org/abs/2205.12630)
@@ -237,7 +289,7 @@ Authors: [Youngjae Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C
 
 
 
-<h2 id="2022-05-27-9">9. Discovering Language-neutral Sub-networks in Multilingual Language Models
+<h2 id="2022-05-26-9">9. Discovering Language-neutral Sub-networks in Multilingual Language Models
 </h2>
 
 Title: [Discovering Language-neutral Sub-networks in Multilingual Language Models](https://arxiv.org/abs/2205.12672)
@@ -256,7 +308,7 @@ Authors: [Negar Foroutan](https://arxiv.org/search/cs?searchtype=author&query=Fo
 
 
 
-<h2 id="2022-05-27-10">10. Understanding Natural Language in Context
+<h2 id="2022-05-26-10">10. Understanding Natural Language in Context
 </h2>
 
 Title: [Understanding Natural Language in Context](https://arxiv.org/abs/2205.12691)
@@ -278,7 +330,7 @@ Authors: [Avichai Levy](https://arxiv.org/search/cs?searchtype=author&query=Levy
 
 
 
-<h2 id="2022-05-27-11">11. Eliciting Transferability in Multi-task Learning with Task-level Mixture-of-Experts
+<h2 id="2022-05-26-11">11. Eliciting Transferability in Multi-task Learning with Task-level Mixture-of-Experts
 </h2>
 
 Title: [Eliciting Transferability in Multi-task Learning with Task-level Mixture-of-Experts](https://arxiv.org/abs/2205.12701)
