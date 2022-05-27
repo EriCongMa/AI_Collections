@@ -2,6 +2,42 @@
 
 # Index
 
+- [2022-05-27](#2022-05-27)
+  - [1. Open-Domain Sign Language Translation Learned from Online Video](#2022-05-27-1)
+  
+  - [2. AdaMix: Mixture-of-Adapter for Parameter-efficient Tuning of Large Language Models](#2022-05-27-2)
+  
+  - [3. Know Where You're Going: Meta-Learning for Parameter-Efficient Fine-tuning](#2022-05-27-3)
+
+  - [4. Improving CTC-based ASR Models with Gated Interlayer Collaboration](#2022-05-27-4)
+  
+  - [5. Machine Translation Robustness to Natural Asemantic Variation](#2022-05-27-5)
+  
+  - [6. TranSpeech: Speech-to-Speech Translation With Bilateral Perturbation](#2022-05-27-6)
+  
+  - [7. Are Large Pre-Trained Language Models Leaking Your Personal Information?](#2022-05-27-7)
+  
+  - [8. Multimodal Knowledge Alignment with Reinforcement Learning](#2022-05-27-8)
+  
+  - [9. Discovering Language-neutral Sub-networks in Multilingual Language Models](#2022-05-27-9)
+  
+  - [10. Understanding Natural Language in Context](#2022-05-27-10)
+  
+  - [11. Eliciting Transferability in Multi-task Learning with Task-level Mixture-of-Experts](#2022-05-27-11)
+  
+- [2022-05-23](#2022-05-23)
+  - [1. Translating Hanja historical documents to understandable Korean and English](#2022-05-23-1)
+
+  - [2. Exploring Extreme Parameter Compression for Pre-trained Language Models](#2022-05-23-2)
+
+  - [3. How to keep text private? A systematic review of deep learning methods for privacy-preserving natural language processing](#2022-05-23-3)
+
+  - [4. Visually-Augmented Language Modeling](#2022-05-23-4)
+
+  - [5. Visualizing and Explaining Language Models](#2022-05-23-5)
+
+  - [6. Lossless Acceleration for Seq2seq Generation with Aggressive Decoding](#2022-05-23-6)
+
 - [2022-05-20](#2022-05-20)
   - [1. PreQuEL: Quality Estimation of Machine Translation Outputs in Advance](#2022-05-20-1)
   - [2. Evaluating Subtitle Segmentation for End-to-end Generation Systems](#2022-05-20-2)
@@ -36,6 +72,361 @@
 
 
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2022-05-27
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-05-27-1">1. Open-Domain Sign Language Translation Learned from Online Video
+</h2>
+
+Title: [Open-Domain Sign Language Translation Learned from Online Video](https://arxiv.org/abs/2205.12870)
+
+Authors: [Bowen Shi](https://arxiv.org/search/cs?searchtype=author&query=Shi%2C+B), [Diane Brentari](https://arxiv.org/search/cs?searchtype=author&query=Brentari%2C+D), [Greg Shakhnarovich](https://arxiv.org/search/cs?searchtype=author&query=Shakhnarovich%2C+G), [Karen Livescu](https://arxiv.org/search/cs?searchtype=author&query=Livescu%2C+K)
+
+> Existing work on sign language translation--that is, translation from sign language videos into sentences in a written language--has focused mainly on (1) data collected in a controlled environment or (2) data in a specific domain, which limits the applicability to real-world settings. In this paper, we introduce OpenASL, a large-scale ASL-English dataset collected from online video sites (e.g., YouTube). OpenASL contains 288 hours of ASL videos in various domains (news, VLOGs, etc.) from over 200 signers and is the largest publicly available ASL translation dataset to date. To tackle the challenges of sign language translation in realistic settings and without glosses, we propose a set of techniques including sign search as a pretext task for pre-training and fusion of mouthing and handshape features. The proposed techniques produce consistent and large improvements in translation quality, over baseline models based on prior work. Our data, code and model will be publicly available at [this https URL](https://github.com/chevalierNoir/OpenASL)
+
+| Comments: | 17 pages                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2205.12870](https://arxiv.org/abs/2205.12870) [cs.CV]** |
+|           | (or **[arXiv:2205.12870v1](https://arxiv.org/abs/2205.12870v1) [cs.CV]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2205.12870Focus to learn more |
+
+
+
+
+
+<h2 id="2022-05-27-2">2. AdaMix: Mixture-of-Adapter for Parameter-efficient Tuning of Large Language Models
+</h2>
+
+Title: [AdaMix: Mixture-of-Adapter for Parameter-efficient Tuning of Large Language Models](https://arxiv.org/abs/2205.12410)
+
+Authors: [Yaqing Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Y), [Subhabrata Mukherjee](https://arxiv.org/search/cs?searchtype=author&query=Mukherjee%2C+S), [Xiaodong Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+X), [Jing Gao](https://arxiv.org/search/cs?searchtype=author&query=Gao%2C+J), [Ahmed Hassan Awadallah](https://arxiv.org/search/cs?searchtype=author&query=Awadallah%2C+A+H), [Jianfeng Gao](https://arxiv.org/search/cs?searchtype=author&query=Gao%2C+J)
+
+> Fine-tuning large-scale pre-trained language models to downstream tasks require updating hundreds of millions of parameters. This not only increases the serving cost to store a large copy of the model weights for every task, but also exhibits instability during few-shot task adaptation. Parameter-efficient techniques have been developed that tune small trainable components (e.g., adapters) injected in the large model while keeping most of the model weights frozen. The prevalent mechanism to increase adapter capacity is to increase the bottleneck dimension which increases the adapter parameters. In this work, we introduce a new mechanism to improve adapter capacity without increasing parameters or computational cost by two key techniques. (i) We introduce multiple shared adapter components in each layer of the Transformer architecture. We leverage sparse learning via random routing to update the adapter parameters (encoder is kept frozen) resulting in the same amount of computational cost (FLOPs) as that of training a single adapter. (ii) We propose a simple merging mechanism to average the weights of multiple adapter components to collapse to a single adapter in each Transformer layer, thereby, keeping the overall parameters also the same but with significant performance improvement. We demonstrate these techniques to work well across multiple task settings including fully supervised and few-shot Natural Language Understanding tasks. By only tuning 0.23% of a pre-trained language model's parameters, our model outperforms the full model fine-tuning performance and several competing methods.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2205.12410](https://arxiv.org/abs/2205.12410) [cs.CL]** |
+|           | (or **[arXiv:2205.12410v1](https://arxiv.org/abs/2205.12410v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2205.12410Focus to learn more |
+
+
+
+
+
+<h2 id="2022-05-27-3">3. Know Where You're Going: Meta-Learning for Parameter-Efficient Fine-tuning
+</h2>
+
+Title: [Know Where You're Going: Meta-Learning for Parameter-Efficient Fine-tuning](https://arxiv.org/abs/2205.12453)
+
+Authors: [Mozhdeh Gheini](https://arxiv.org/search/cs?searchtype=author&query=Gheini%2C+M), [Xuezhe Ma](https://arxiv.org/search/cs?searchtype=author&query=Ma%2C+X), [Jonathan May](https://arxiv.org/search/cs?searchtype=author&query=May%2C+J)
+
+> A recent family of techniques, dubbed as lightweight fine-tuning methods, facilitates parameter-efficient transfer learning by updating only a small set of additional parameters while keeping the parameters of the pretrained language model frozen. While proven to be an effective method, there are no existing studies on if and how such knowledge of the downstream fine-tuning approach should affect the pretraining stage. In this work, we show that taking the ultimate choice of fine-tuning method into consideration boosts the performance of parameter-efficient fine-tuning. By relying on optimization-based meta-learning using MAML with certain modifications for our distinct purpose, we prime the pretrained model specifically for parameter-efficient fine-tuning, resulting in gains of up to 1.7 points on cross-lingual NER fine-tuning. Our ablation settings and analyses further reveal that the tweaks we introduce in MAML are crucial for the attained gains.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2205.12453](https://arxiv.org/abs/2205.12453) [cs.CL]** |
+|           | (or **[arXiv:2205.12453v1](https://arxiv.org/abs/2205.12453v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2205.12453Focus to learn more |
+
+
+
+
+
+<h2 id="2022-05-27-4">4. Improving CTC-based ASR Models with Gated Interlayer Collaboration
+</h2>
+
+Title: [Improving CTC-based ASR Models with Gated Interlayer Collaboration](https://arxiv.org/abs/2205.12462)
+
+Authors: [Yuting Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+Y), [Yuke Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Y), [Binbin Du](https://arxiv.org/search/cs?searchtype=author&query=Du%2C+B)
+
+> For Automatic Speech Recognition (ASR), the CTC-based methods have become a dominant paradigm due to its simple architecture and efficient non-autoregressive inference manner. However, these methods without external language models usually lack the capacity of modeling the conditional dependencies and the textual interaction. In this work, we present a Gated Interlayer Collaboration (GIC) mechanism which introduces the contextual information into the models and relaxes the conditional independence assumption of the CTC-based models. Specifically, we train the model with intermediate CTC losses calculated by the interlayer outputs of the model, in which the probability distributions of the intermediate layers naturally serve as soft label sequences. The GIC block consists of an embedding layer to obtain the textual embedding of the soft label at each position, and a gate unit to fuse the textual embedding and the acoustic features. Experiments on AISHELL-1 and AIDATATANG benchmarks show that the proposed method outperforms the recently published CTC-based ASR models. Specifically, our method achieves CER of 4.0%/4.4% on AISHELL-1 dev/test sets and CER of 3.8%/4.4% on AIDATATANG dev/test sets using CTC greedy search decoding without external language models.
+
+| Comments: | Submitted to INTERSPEECH2022                                 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2205.12462](https://arxiv.org/abs/2205.12462) [cs.CL]** |
+|           | (or **[arXiv:2205.12462v1](https://arxiv.org/abs/2205.12462v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2205.12462Focus to learn more |
+
+
+
+
+
+<h2 id="2022-05-27-5">5. Machine Translation Robustness to Natural Asemantic Variation
+</h2>
+
+Title: [Machine Translation Robustness to Natural Asemantic Variation](https://arxiv.org/abs/2205.12514)
+
+Authors: [Jacob Bremerman](https://arxiv.org/search/cs?searchtype=author&query=Bremerman%2C+J), [Xiang Ren](https://arxiv.org/search/cs?searchtype=author&query=Ren%2C+X), [Jonathan May](https://arxiv.org/search/cs?searchtype=author&query=May%2C+J)
+
+> We introduce and formalize an under-studied linguistic phenomenon we call Natural Asemantic Variation (NAV) and investigate it in the context of Machine Translation (MT) robustness. Standard MT models are shown to be less robust to rarer, nuanced language forms, and current robustness techniques do not account for this kind of perturbation despite their prevalence in "real world" data. Experiment results provide more insight into the nature of NAV and we demonstrate strategies to improve performance on NAV. We also show that NAV robustness can be transferred across languages and fine that synthetic perturbations can achieve some but not all of the benefits of human-generated NAV data.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2205.12514](https://arxiv.org/abs/2205.12514) [cs.CL]** |
+|           | (or **[arXiv:2205.12514v1](https://arxiv.org/abs/2205.12514v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2205.12514Focus to learn more |
+
+
+
+
+
+<h2 id="2022-05-27-6">6. TranSpeech: Speech-to-Speech Translation With Bilateral Perturbation
+</h2>
+
+Title: [TranSpeech: Speech-to-Speech Translation With Bilateral Perturbation](https://arxiv.org/abs/2205.12523)
+
+Authors: [Rongjie Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+R), [Zhou Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+Z), [Jinglin Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+J), [Huadai Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+H), [Yi Ren](https://arxiv.org/search/cs?searchtype=author&query=Ren%2C+Y), [Lichao Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+L), [Jinzheng He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+J)
+
+> Direct speech-to-speech translation (S2ST) systems leverage recent progress in speech representation learning, where a sequence of discrete representations (units) derived in a self-supervised manner, are predicted from the model and passed to a vocoder for speech synthesis, still facing the following challenges: 1) Acoustic multimodality: the discrete units derived from speech with same content could be indeterministic due to the acoustic property (e.g., rhythm, pitch, and energy), which causes deterioration of translation accuracy; 2) high latency: current S2ST systems utilize autoregressive models which predict each unit conditioned on the sequence previously generated, failing to take full advantage of parallelism. In this work, we propose TranSpeech, a speech-to-speech translation model with bilateral perturbation. To alleviate the acoustic multimodal problem, we propose bilateral perturbation, which consists of the style normalization and information enhancement stages, to learn only the linguistic information from speech samples and generate more deterministic representations. With reduced multimodality, we step forward and become the first to establish a non-autoregressive S2ST technique, which repeatedly masks and predicts unit choices and produces high-accuracy results in just a few cycles. Experimental results on three language pairs demonstrate the state-of-the-art results by up to 2.5 BLEU points over the best publicly-available textless S2ST baseline. Moreover, TranSpeech shows a significant improvement in inference latency, enabling speedup up to 21.4x than autoregressive technique. Audio samples are available at \url{[this https URL](https://transpeech.github.io/)}
+
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2205.12523](https://arxiv.org/abs/2205.12523) [cs.CL]** |
+|           | (or **[arXiv:2205.12523v1](https://arxiv.org/abs/2205.12523v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2205.12523Focus to learn more |
+
+
+
+
+
+<h2 id="2022-05-27-7">7. Are Large Pre-Trained Language Models Leaking Your Personal Information?
+</h2>
+
+Title: [Are Large Pre-Trained Language Models Leaking Your Personal Information?](https://arxiv.org/abs/2205.12628)
+
+Authors: [Jie Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+J), [Hanyin Shao](https://arxiv.org/search/cs?searchtype=author&query=Shao%2C+H), [Kevin Chen-Chuan Chang](https://arxiv.org/search/cs?searchtype=author&query=Chang%2C+K+C)
+
+> Large Pre-Trained Language Models (PLMs) have facilitated and dominated many NLP tasks in recent years. However, despite the great success of PLMs, there are also privacy concerns brought with PLMs. For example, recent studies show that PLMs memorize a lot of training data, including sensitive information, while the information may be leaked unintentionally and be utilized by malicious attackers. 
+> In this paper, we propose to measure whether PLMs are prone to leaking personal information. Specifically, we attempt to query PLMs for email addresses with contexts of the email address or prompts containing the owner's name. We find that PLMs do leak personal information due to memorization. However, the risk of specific personal information being extracted by attackers is low because the models are weak at associating the personal information with its owner. We hope this work could help the community to better understand the privacy risk of PLMs and bring new insights to make PLMs safe.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Cryptography and Security (cs.CR) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2205.12628](https://arxiv.org/abs/2205.12628) [cs.CL]** |
+|           | (or **[arXiv:2205.12628v1](https://arxiv.org/abs/2205.12628v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2205.12628Focus to learn more |
+
+
+
+
+
+<h2 id="2022-05-27-8">8. Multimodal Knowledge Alignment with Reinforcement Learning
+</h2>
+
+Title: [Multimodal Knowledge Alignment with Reinforcement Learning](https://arxiv.org/abs/2205.12630)
+
+Authors: [Youngjae Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+Y), [Jiwan Chung](https://arxiv.org/search/cs?searchtype=author&query=Chung%2C+J), [Heeseung Yun](https://arxiv.org/search/cs?searchtype=author&query=Yun%2C+H), [Jack Hessel](https://arxiv.org/search/cs?searchtype=author&query=Hessel%2C+J), [JaeSung Park](https://arxiv.org/search/cs?searchtype=author&query=Park%2C+J), [Ximing Lu](https://arxiv.org/search/cs?searchtype=author&query=Lu%2C+X), [Prithviraj Ammanabrolu](https://arxiv.org/search/cs?searchtype=author&query=Ammanabrolu%2C+P), [Rowan Zellers](https://arxiv.org/search/cs?searchtype=author&query=Zellers%2C+R), [Ronan Le Bras](https://arxiv.org/search/cs?searchtype=author&query=Bras%2C+R+L), [Gunhee Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%2C+G), [Yejin Choi](https://arxiv.org/search/cs?searchtype=author&query=Choi%2C+Y)
+
+> Large language models readily adapt to novel settings, even without task-specific training data. Can their zero-shot capacity be extended to multimodal inputs? In this work, we propose ESPER which extends language-only zero-shot models to unseen multimodal tasks, like image and audio captioning. Our key novelty is to use reinforcement learning to align multimodal inputs to language model generations without direct supervision: for example, in the image case our reward optimization relies only on cosine similarity derived from CLIP, and thus requires no additional explicitly paired (image, caption) data. Because the parameters of the language model are left unchanged, the model maintains its capacity for zero-shot generalization. Experiments demonstrate that ESPER outperforms baselines and prior work on a variety of zero-shot tasks; these include a new benchmark we collect+release, ESP dataset, which tasks models with generating several diversely-styled captions for each image.
+
+| Subjects:    | **Computation and Language (cs.CL)**; Computer Vision and Pattern Recognition (cs.CV) |
+| ------------ | ------------------------------------------------------------ |
+| ACM classes: | I.2.7; I.4.9                                                 |
+| Cite as:     | **[arXiv:2205.12630](https://arxiv.org/abs/2205.12630) [cs.CL]** |
+|              | (or **[arXiv:2205.12630v1](https://arxiv.org/abs/2205.12630v1) [cs.CL]** for this version) |
+|              | https://doi.org/10.48550/arXiv.2205.12630Focus to learn more |
+
+
+
+
+
+<h2 id="2022-05-27-9">9. Discovering Language-neutral Sub-networks in Multilingual Language Models
+</h2>
+
+Title: [Discovering Language-neutral Sub-networks in Multilingual Language Models](https://arxiv.org/abs/2205.12672)
+
+Authors: [Negar Foroutan](https://arxiv.org/search/cs?searchtype=author&query=Foroutan%2C+N), [Mohammadreza Banaei](https://arxiv.org/search/cs?searchtype=author&query=Banaei%2C+M), [Remi Lebret](https://arxiv.org/search/cs?searchtype=author&query=Lebret%2C+R), [Antoine Bosselut](https://arxiv.org/search/cs?searchtype=author&query=Bosselut%2C+A), [Karl Aberer](https://arxiv.org/search/cs?searchtype=author&query=Aberer%2C+K)
+
+> Multilingual pre-trained language models perform remarkably well on cross-lingual transfer for downstream tasks. Despite their impressive performance, our understanding of their language neutrality (i.e., the extent to which they use shared representations to encode similar phenomena across languages) and its role in achieving such performance remain open questions. In this work, we conceptualize language neutrality of multilingual models as a function of the overlap between language-encoding sub-networks of these models. Using mBERT as a foundation, we employ the lottery ticket hypothesis to discover sub-networks that are individually optimized for various languages and tasks. Using three distinct tasks and eleven typologically-diverse languages in our evaluation, we show that the sub-networks found for different languages are in fact quite similar, supporting the idea that mBERT jointly encodes multiple languages in shared parameters. We conclude that mBERT is comprised of a language-neutral sub-network shared among many languages, along with multiple ancillary language-specific sub-networks, with the former playing a more prominent role in mBERT's impressive cross-lingual performance.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2205.12672](https://arxiv.org/abs/2205.12672) [cs.CL]** |
+|           | (or **[arXiv:2205.12672v1](https://arxiv.org/abs/2205.12672v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2205.12672Focus to learn more |
+
+
+
+
+
+<h2 id="2022-05-27-10">10. Understanding Natural Language in Context
+</h2>
+
+Title: [Understanding Natural Language in Context](https://arxiv.org/abs/2205.12691)
+
+Authors: [Avichai Levy](https://arxiv.org/search/cs?searchtype=author&query=Levy%2C+A), [Erez Karpas](https://arxiv.org/search/cs?searchtype=author&query=Karpas%2C+E)
+
+> Recent years have seen an increasing number of applications that have a natural language interface, either in the form of chatbots or via personal assistants such as Alexa (Amazon), Google Assistant, Siri (Apple), and Cortana (Microsoft). To use these applications, a basic dialog between the robot and the human is required. 
+> While this kind of dialog exists today mainly within "static" robots that do not make any movement in the household space, the challenge of reasoning about the information conveyed by the environment increases significantly when dealing with robots that can move and manipulate objects in our home environment. 
+> In this paper, we focus on cognitive robots, which have some knowledge-based models of the world and operate by reasoning and planning with this model. Thus, when the robot and the human communicate, there is already some formalism they can use - the robot's knowledge representation formalism. 
+> Our goal in this research is to translate natural language utterances into this robot's formalism, allowing much more complicated household tasks to be completed. We do so by combining off-the-shelf SOTA language models, planning tools, and the robot's knowledge-base for better communication. In addition, we analyze different directive types and illustrate the contribution of the world's context to the translation process.
+
+| Subjects: | **Computation and Language (cs.CL)**; Robotics (cs.RO)       |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2205.12691](https://arxiv.org/abs/2205.12691) [cs.CL]** |
+|           | (or **[arXiv:2205.12691v1](https://arxiv.org/abs/2205.12691v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2205.12691Focus to learn more |
+
+
+
+
+
+<h2 id="2022-05-27-11">11. Eliciting Transferability in Multi-task Learning with Task-level Mixture-of-Experts
+</h2>
+
+Title: [Eliciting Transferability in Multi-task Learning with Task-level Mixture-of-Experts](https://arxiv.org/abs/2205.12701)
+
+Authors: [Qinyuan Ye](https://arxiv.org/search/cs?searchtype=author&query=Ye%2C+Q), [Juan Zha](https://arxiv.org/search/cs?searchtype=author&query=Zha%2C+J), [Xiang Ren](https://arxiv.org/search/cs?searchtype=author&query=Ren%2C+X)
+
+> Recent work suggests that transformer models are capable of multi-task learning on diverse NLP tasks. However, the potential of these models may be limited as they use the same set of parameters for all tasks. In contrast, humans tackle tasks in a more flexible way, by making proper presumptions on what skills and knowledge are relevant and executing only the necessary computations. Inspired by this, we propose to use task-level mixture-of-expert models, which has a collection of transformer layers (i.e., experts) and a router component to choose among these experts dynamically and flexibly. We show that the learned routing decisions and experts partially rediscover human categorization of NLP tasks -- certain experts are strongly associated with extractive tasks, some with classification tasks, and some with tasks requiring world knowledge.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2205.12701](https://arxiv.org/abs/2205.12701) [cs.CL]** |
+|           | (or **[arXiv:2205.12701v1](https://arxiv.org/abs/2205.12701v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2205.12701Focus to learn more |
+
+
+
+
+
+
+
+
+
+
+# 2022-05-23
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-05-23-1">1. Translating Hanja historical documents to understandable Korean and English
+</h2>
+
+Title: [Translating Hanja historical documents to understandable Korean and English](https://arxiv.org/abs/2205.10019)
+
+Authors: [Juhee Son](https://arxiv.org/search/cs?searchtype=author&query=Son%2C+J), [Jiho Jin](https://arxiv.org/search/cs?searchtype=author&query=Jin%2C+J), [Haneul Yoo](https://arxiv.org/search/cs?searchtype=author&query=Yoo%2C+H), [JinYeong Bak](https://arxiv.org/search/cs?searchtype=author&query=Bak%2C+J), [Kyunghyun Cho](https://arxiv.org/search/cs?searchtype=author&query=Cho%2C+K), [Alice Oh](https://arxiv.org/search/cs?searchtype=author&query=Oh%2C+A)
+
+> The Annals of Joseon Dynasty (AJD) contain the daily records of the Kings of Joseon, the 500-year kingdom preceding the modern nation of Korea. The Annals were originally written in an archaic Korean writing system, `Hanja', and translated into Korean from 1968 to 1993. However, this translation was literal and contained many archaic Korean words; thus, a new expert translation effort began in 2012, completing the records of only one king in a decade. Also, expert translators are working on an English translation, of which only one king's records are available because of the high cost and slow progress. Thus, we propose H2KE, the neural machine translation model that translates Hanja historical documents to understandable Korean and English. Based on the multilingual neural machine translation approach, it translates the historical document written in Hanja, using both the full dataset of outdated Korean translation and a small dataset of recently translated Korean and English. We compare our method with two baselines: one is a recent model that simultaneously learns to restore and translate Hanja historical document and the other is the transformer that trained on newly translated corpora only. The results show that our method significantly outperforms the baselines in terms of BLEU score in both modern Korean and English translations. We also conduct a human evaluation that shows that our translation is preferred over the original expert translation.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2205.10019](https://arxiv.org/abs/2205.10019) [cs.CL]** |
+|           | (or **[arXiv:2205.10019v1](https://arxiv.org/abs/2205.10019v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2205.10019Focus to learn more |
+
+
+
+
+
+<h2 id="2022-05-23-2">2. Exploring Extreme Parameter Compression for Pre-trained Language Models
+</h2>
+
+Title: [Exploring Extreme Parameter Compression for Pre-trained Language Models](https://arxiv.org/abs/2205.10036)
+
+Authors: [Yuxin Ren](https://arxiv.org/search/cs?searchtype=author&query=Ren%2C+Y), [Benyou Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+B), [Lifeng Shang](https://arxiv.org/search/cs?searchtype=author&query=Shang%2C+L), [Xin Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+X), [Qun Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Q)
+
+> Recent work explored the potential of large-scale Transformer-based pre-trained models, especially Pre-trained Language Models (PLMs) in natural language processing. This raises many concerns from various perspectives, e.g., financial costs and carbon emissions. Compressing PLMs like BERT with negligible performance loss for faster inference and cheaper deployment has attracted much attention. In this work, we aim to explore larger compression ratios for PLMs, among which tensor decomposition is a potential but under-investigated one. Two decomposition and reconstruction protocols are further proposed to improve the effectiveness and efficiency during compression. Our compressed BERT with 1/7 parameters in Transformer layers performs on-par with, sometimes slightly better than the original BERT in GLUE benchmark. A tiny version achieves 96.7% performance of BERT-base with 1/48 encoder parameters (i.e., less than 2M parameters excluding the embedding layer) and 2.7× faster on inference. To show that the proposed method is orthogonal to existing compression methods like knowledge distillation, we also explore the benefit of the proposed method on a distilled BERT.
+
+| Comments: | Accepted at ICLR2022. Code available at [this https URL](https://github.com/twinkle0331/Xcompression) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2205.10036](https://arxiv.org/abs/2205.10036) [cs.CL]** |
+|           | (or **[arXiv:2205.10036v1](https://arxiv.org/abs/2205.10036v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2205.10036Focus to learn more |
+
+
+
+
+
+<h2 id="2022-05-23-3">3. How to keep text private? A systematic review of deep learning methods for privacy-preserving natural language processing
+</h2>
+
+Title: [How to keep text private? A systematic review of deep learning methods for privacy-preserving natural language processing](https://arxiv.org/abs/2205.10095)
+
+Authors: [Samuel Sousa](https://arxiv.org/search/cs?searchtype=author&query=Sousa%2C+S), [Roman Kern](https://arxiv.org/search/cs?searchtype=author&query=Kern%2C+R)
+
+> Deep learning (DL) models for natural language processing (NLP) tasks often handle private data, demanding protection against breaches and disclosures. Data protection laws, such as the European Union's General Data Protection Regulation (GDPR), thereby enforce the need for privacy. Although many privacy-preserving NLP methods have been proposed in recent years, no categories to organize them have been introduced yet, making it hard to follow the progress of the literature. To close this gap, this article systematically reviews over sixty DL methods for privacy-preserving NLP published between 2016 and 2020, covering theoretical foundations, privacy-enhancing technologies, and analysis of their suitability for real-world scenarios. First, we introduce a novel taxonomy for classifying the existing methods into three categories: data safeguarding methods, trusted methods, and verification methods. Second, we present an extensive summary of privacy threats, datasets for applications, and metrics for privacy evaluation. Third, throughout the review, we describe privacy issues in the NLP pipeline in a holistic view. Further, we discuss open challenges in privacy-preserving NLP regarding data traceability, computation overhead, dataset size, the prevalence of human biases in embeddings, and the privacy-utility tradeoff. Finally, this review presents future research directions to guide successive research and development of privacy-preserving NLP models.
+
+| Comments: | 59 pages, 15 figures                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2205.10095](https://arxiv.org/abs/2205.10095) [cs.CL]** |
+|           | (or **[arXiv:2205.10095v1](https://arxiv.org/abs/2205.10095v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2205.10095Focus to learn more |
+
+
+
+
+
+<h2 id="2022-05-23-4">4. Visually-Augmented Language Modeling
+</h2>
+
+Title: [Visually-Augmented Language Modeling](https://arxiv.org/abs/2205.10178)
+
+Authors: [Weizhi Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+W), [Li Dong](https://arxiv.org/search/cs?searchtype=author&query=Dong%2C+L), [Hao Cheng](https://arxiv.org/search/cs?searchtype=author&query=Cheng%2C+H), [Haoyu Song](https://arxiv.org/search/cs?searchtype=author&query=Song%2C+H), [Xiaodong Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+X), [Xifeng Yan](https://arxiv.org/search/cs?searchtype=author&query=Yan%2C+X), [Jianfeng Gao](https://arxiv.org/search/cs?searchtype=author&query=Gao%2C+J), [Furu Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+F)
+
+> Human language is grounded on multimodal knowledge including visual knowledge like colors, sizes, and shapes. However, current large-scale pre-trained language models rely on the text-only self-supervised training with massive text data, which precludes them from utilizing relevant visual information when necessary. To address this, we propose a novel pre-training framework, named VaLM, to Visually-augment text tokens with retrieved relevant images for Language Modeling. Specifically, VaLM builds on a novel text-vision alignment method via an image retrieval module to fetch corresponding images given a textual context. With the visually-augmented context, VaLM uses a visual knowledge fusion layer to enable multimodal grounded language modeling by attending on both text context and visual knowledge in images. We evaluate the proposed model on various multimodal commonsense reasoning tasks, which require visual information to excel. VaLM outperforms the text-only baseline with substantial gains of +8.66% and +37.81% accuracy on object color and size reasoning, respectively.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2205.10178](https://arxiv.org/abs/2205.10178) [cs.CL]** |
+|           | (or **[arXiv:2205.10178v1](https://arxiv.org/abs/2205.10178v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2205.10178Focus to learn more |
+
+
+
+
+
+<h2 id="2022-05-23-5">5. Visualizing and Explaining Language Models
+</h2>
+
+Title: [Visualizing and Explaining Language Models](https://arxiv.org/abs/2205.10238)
+
+Authors: [Adrian M.P. Braşoveanu](https://arxiv.org/search/cs?searchtype=author&query=Braşoveanu%2C+A+M), [Răzvan Andonie](https://arxiv.org/search/cs?searchtype=author&query=Andonie%2C+R)
+
+> During the last decade, Natural Language Processing has become, after Computer Vision, the second field of Artificial Intelligence that was massively changed by the advent of Deep Learning. Regardless of the architecture, the language models of the day need to be able to process or generate text, as well as predict missing words, sentences or relations depending on the task. Due to their black-box nature, such models are difficult to interpret and explain to third parties. Visualization is often the bridge that language model designers use to explain their work, as the coloring of the salient words and phrases, clustering or neuron activations can be used to quickly understand the underlying models. This paper showcases the techniques used in some of the most popular Deep Learning for NLP visualizations, with a special focus on interpretability and explainability.
+
+| Subjects: | **Computation and Language (cs.CL)**; Human-Computer Interaction (cs.HC); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2205.10238](https://arxiv.org/abs/2205.10238) [cs.CL]** |
+|           | (or **[arXiv:2205.10238v1](https://arxiv.org/abs/2205.10238v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2205.10238Focus to learn more |
+
+
+
+
+
+<h2 id="2022-05-23-6">6. Lossless Acceleration for Seq2seq Generation with Aggressive Decoding
+</h2>
+
+Title: [Lossless Acceleration for Seq2seq Generation with Aggressive Decoding](https://arxiv.org/abs/2205.10350)
+
+Authors: [Tao Ge](https://arxiv.org/search/cs?searchtype=author&query=Ge%2C+T), [Heming Xia](https://arxiv.org/search/cs?searchtype=author&query=Xia%2C+H), [Xin Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+X), [Si-Qing Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+S), [Furu Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+F)
+
+> We study lossless acceleration for seq2seq generation with a novel decoding algorithm -- Aggressive Decoding. Unlike the previous efforts (e.g., non-autoregressive decoding) speeding up seq2seq generation at the cost of quality loss, our approach aims to yield the identical (or better) generation compared with autoregressive decoding but in a significant speedup, achieved by innovative cooperation of aggressive decoding and verification that are both efficient due to parallel computing. 
+> We propose two Aggressive Decoding paradigms for 2 kinds of seq2seq tasks: 1) For the seq2seq tasks whose inputs and outputs are highly similar (e.g., Grammatical Error Correction), we propose Input-guided Aggressive Decoding (IAD) that aggressively copies from the input sentence as drafted decoded tokens to verify in parallel; 2) For other general seq2seq tasks (e.g., Machine Translation), we propose Generalized Aggressive Decoding (GAD) that first employs an additional non-autoregressive decoding model for aggressive decoding and then verifies in parallel in the autoregressive manner. 
+> We test Aggressive Decoding on the most popular 6-layer Transformer model on GPU in multiple seq2seq tasks: 1) For IAD, we show that it can introduce a 7x-9x speedup for the Transformer in Grammatical Error Correction and Text Simplification tasks with the identical results as greedy decoding; 2) For GAD, we observe a 3x-5x speedup with the identical or even better quality in two important seq2seq tasks: Machine Translation and Abstractive Summarization. Moreover, Aggressive Decoding can benefit even more from stronger computing devices that are better at parallel computing. Given the lossless quality as well as significant and promising speedup, we believe Aggressive Decoding may potentially evolve into a de facto standard for efficient and lossless seq2seq generation in the near future.
+
+| Comments: | 24-page Microsoft Research Technical Report. Content overlap with [arXiv:2106.04970](https://arxiv.org/abs/2106.04970) and [arXiv:2203.16487](https://arxiv.org/abs/2203.16487) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2205.10350](https://arxiv.org/abs/2205.10350) [cs.CL]** |
+|           | (or **[arXiv:2205.10350v1](https://arxiv.org/abs/2205.10350v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2205.10350Focus to learn more |
+
+
+
+
+
 
 
 
