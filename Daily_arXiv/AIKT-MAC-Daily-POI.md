@@ -2,17 +2,24 @@
 
 # Index
 
+- [2022-05-31](#2022-05-31)
+  - [1. VLUE: A Multi-Task Benchmark for Evaluating Vision-Language Models](#2022-05-31-1)
+  
+  - [2. E2S2: Encoding-Enhanced Sequence-to-Sequence Pretraining for Language Understanding and Generation](#2022-05-31-2)
+  
+  - [3. Can Transformer be Too Compositional? Analysing Idiom Processing in Neural Machine Translation](#2022-05-31-3)
+  
 - [2022-05-30](#2022-05-30)
   - [1. Differentially Private Decoding in Large Language Models](#2022-05-30-1)
-  
+
   - [2. Quark: Controllable Text Generation with Reinforced Unlearning](#2022-05-30-2)
-  
+
   - [3. Contextual Adapters for Personalized Speech Recognition in Neural Transducers](#2022-05-30-3)
-  
+
   - [4. Punctuation Restoration in Spanish Customer Support Transcripts using Transfer Learning](#2022-05-30-4)
-  
+
   - [5. Patching Leaks in the Charformer for Efficient Character-Level Generation](#2022-05-30-5)
-  
+
 - [2022-05-27](#2022-05-27)
   - [1. Fine-grained Image Captioning with CLIP Reward](#2022-05-27-1)
 
@@ -128,6 +135,70 @@
   - [1. Some Grammatical Errors are Frequent, Others are Important](#2022-05-13-1)
 
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2022-05-31
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-05-31-1">1. VLUE: A Multi-Task Benchmark for Evaluating Vision-Language Models
+</h2>
+
+Title: [VLUE: A Multi-Task Benchmark for Evaluating Vision-Language Models](https://arxiv.org/abs/2205.15237)
+
+Authors: [Wangchunshu Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+W), [Yan Zeng](https://arxiv.org/search/cs?searchtype=author&query=Zeng%2C+Y), [Shizhe Diao](https://arxiv.org/search/cs?searchtype=author&query=Diao%2C+S), [Xinsong Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+X)
+
+> Recent advances in vision-language pre-training (VLP) have demonstrated impressive performance in a range of vision-language (VL) tasks. However, there exist several challenges for measuring the community's progress in building general multi-modal intelligence. First, most of the downstream VL datasets are annotated using raw images that are already seen during pre-training, which may result in an overestimation of current VLP models' generalization ability. Second, recent VLP work mainly focuses on absolute performance but overlooks the efficiency-performance trade-off, which is also an important indicator for measuring progress. 
+> To this end, we introduce the Vision-Language Understanding Evaluation (VLUE) benchmark, a multi-task multi-dimension benchmark for evaluating the generalization capabilities and the efficiency-performance trade-off (``Pareto SOTA'') of VLP models. We demonstrate that there is a sizable generalization gap for all VLP models when testing on out-of-distribution test sets annotated on images from a more diverse distribution that spreads across cultures. Moreover, we find that measuring the efficiency-performance trade-off of VLP models leads to complementary insights for several design choices of VLP. We release the VLUE benchmark to promote research on building vision-language models that generalize well to more diverse images and concepts unseen during pre-training, and are practical in terms of efficiency-performance trade-off.
+
+| Comments: | ICML 2022, Benchmark website at [this https URL](https://vlue-benchmark.github.io/) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2205.15237](https://arxiv.org/abs/2205.15237) [cs.CV]** |
+|           | (or **[arXiv:2205.15237v1](https://arxiv.org/abs/2205.15237v1) [cs.CV]** for this version) |
+
+
+
+
+
+<h2 id="2022-05-31-2">2. E2S2: Encoding-Enhanced Sequence-to-Sequence Pretraining for Language Understanding and Generation
+</h2>
+
+Title: [E2S2: Encoding-Enhanced Sequence-to-Sequence Pretraining for Language Understanding and Generation](https://arxiv.org/abs/2205.14912)
+
+Authors: [Qihuang Zhong](https://arxiv.org/search/cs?searchtype=author&query=Zhong%2C+Q), [Liang Ding](https://arxiv.org/search/cs?searchtype=author&query=Ding%2C+L), [Juhua Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+J), [Bo Du](https://arxiv.org/search/cs?searchtype=author&query=Du%2C+B), [Dacheng Tao](https://arxiv.org/search/cs?searchtype=author&query=Tao%2C+D)
+
+> Sequence-to-sequence (seq2seq) learning has become a popular trend for pretraining language models, due to its succinct and universal framework. However, the prior seq2seq pretraining models generally focus on reconstructive objectives on the decoder side and neglect the effect of encoder-side supervisions, which may lead to sub-optimal performance. To this end, we propose an encoding-enhanced seq2seq pretraining strategy, namely E2S2, which improves the seq2seq models via integrating more efficient self-supervised information into the encoders. Specifically, E2S2 contains two self-supervised objectives upon the encoder, which are from two perspectives: 1) denoising the corrupted sentence (denoising objective); 2) learning robust sentence representations (contrastive objective). With these two objectives, the encoder can effectively distinguish the noise tokens and capture more syntactic and semantic knowledge, thus strengthening the ability of seq2seq model to comprehend the input sentence and conditionally generate the target. We conduct extensive experiments spanning language understanding and generation tasks upon the state-of-the-art seq2seq pretrained language model BART. We show that E2S2 can consistently boost the performance, including 1.0% averaged gain on GLUE benchmark and 1.75% F_0.5 score improvement on CoNLL2014 dataset, validating the effectiveness and robustness of our E2S2.
+
+| Comments: | Work in progress                                             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2205.14912](https://arxiv.org/abs/2205.14912) [cs.CL]** |
+|           | (or **[arXiv:2205.14912v1](https://arxiv.org/abs/2205.14912v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-05-31-3">3. Can Transformer be Too Compositional? Analysing Idiom Processing in Neural Machine Translation
+</h2>
+
+Title: [Can Transformer be Too Compositional? Analysing Idiom Processing in Neural Machine Translation](https://arxiv.org/abs/2205.15301)
+
+Authors: [Verna Dankers](https://arxiv.org/search/cs?searchtype=author&query=Dankers%2C+V), [Christopher G. Lucas](https://arxiv.org/search/cs?searchtype=author&query=Lucas%2C+C+G), [Ivan Titov](https://arxiv.org/search/cs?searchtype=author&query=Titov%2C+I)
+
+> Unlike literal expressions, idioms' meanings do not directly follow from their parts, posing a challenge for neural machine translation (NMT). NMT models are often unable to translate idioms accurately and over-generate compositional, literal translations. In this work, we investigate whether the non-compositionality of idioms is reflected in the mechanics of the dominant NMT model, Transformer, by analysing the hidden states and attention patterns for models with English as source language and one of seven European languages as target language. When Transformer emits a non-literal translation - i.e. identifies the expression as idiomatic - the encoder processes idioms more strongly as single lexical units compared to literal expressions. This manifests in idioms' parts being grouped through attention and in reduced interaction between idioms and their context. In the decoder's cross-attention, figurative inputs result in reduced attention on source-side tokens. These results suggest that Transformer's tendency to process idioms as compositional expressions contributes to literal translations of idioms.
+
+| Comments: | Published at ACL 2022                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2205.15301](https://arxiv.org/abs/2205.15301) [cs.CL]** |
+|           | (or **[arXiv:2205.15301v1](https://arxiv.org/abs/2205.15301v1) [cs.CL]** for this version) |
+
+
 
 
 
