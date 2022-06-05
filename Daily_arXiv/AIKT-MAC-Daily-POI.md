@@ -2,19 +2,249 @@
 
 # Index
 
+- [2022-06-03](#2022-06-03)
+  - [1. Squeezeformer: An Efficient Transformer for Automatic Speech Recognition](#2022-06-03-1)
+  
+  - [2. VL-BEiT: Generative Vision-Language Pretraining](#2022-06-03-2)
+  - [3. BayesFormer: Transformer with Uncertainty Estimation](#2022-06-03-3)
+  - [4. Finding the Right Recipe for Low Resource Domain Adaptation in Neural Machine Translation](#2022-06-03-4)
+  
+- [2022-06-02](#2022-06-02)
+  - [1. VALHALLA: Visual Hallucination for Machine Translation](#2022-06-02-1)
+
+  - [2. Discovering the Hidden Vocabulary of DALLE-2](#2022-06-02-2)
+
+  - [3. On Layer Normalizations and Residual Connections in Transformers](#2022-06-02-3)
+
+  - [4. Optical character recognition quality affects perceived usefulness of historical newspaper clippings](#2022-06-02-4)
+
+  - [5. Exploring Diversity in Back Translation for Low-Resource Machine Translation](#2022-06-02-5)
+
+  - [6. Cross-View Language Modeling: Towards Unified Cross-Lingual Cross-Modal Pre-training](#2022-06-02-6)
+
 - [2022-06-01](#2022-06-01)
   - [1. Parameter-Efficient and Student-Friendly Knowledge Distillation](#2022-06-01-1)
-  
+
   - [2. ADAPT: Vision-Language Navigation with Modality-Aligned Action Prompts](#2022-06-01-2)
-  
+
   - [3. CogVideo: Large-scale Pretraining for Text-to-Video Generation via Transformers](#2022-06-01-3)
-  
+
   - [4. EMS: Efficient and Effective Massively Multilingual Sentence Representation Learning](#2022-06-01-4)
-  
+
 - [2022-05-31](#2022-05-31)
   - [1. VLUE: A Multi-Task Benchmark for Evaluating Vision-Language Models](#2022-05-31-1)
 
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2022-06-03
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-06-03-1">1. Squeezeformer: An Efficient Transformer for Automatic Speech Recognition
+</h2>
+
+Title: [Squeezeformer: An Efficient Transformer for Automatic Speech Recognition](https://arxiv.org/abs/2206.00888)
+
+Authors: [Sehoon Kim](https://arxiv.org/search/eess?searchtype=author&query=Kim%2C+S), [Amir Gholami](https://arxiv.org/search/eess?searchtype=author&query=Gholami%2C+A), [Albert Shaw](https://arxiv.org/search/eess?searchtype=author&query=Shaw%2C+A), [Nicholas Lee](https://arxiv.org/search/eess?searchtype=author&query=Lee%2C+N), [Karttikeya Mangalam](https://arxiv.org/search/eess?searchtype=author&query=Mangalam%2C+K), [Jitendra Malik](https://arxiv.org/search/eess?searchtype=author&query=Malik%2C+J), [Michael W. Mahoney](https://arxiv.org/search/eess?searchtype=author&query=Mahoney%2C+M+W), [Kurt Keutzer](https://arxiv.org/search/eess?searchtype=author&query=Keutzer%2C+K)
+
+> The recently proposed Conformer model has become the de facto backbone model for various downstream speech tasks based on its hybrid attention-convolution architecture that captures both local and global features. However, through a series of systematic studies, we find that the Conformer architecture's design choices are not optimal. After reexamining the design choices for both the macro and micro-architecture of Conformer, we propose the Squeezeformer model, which consistently outperforms the state-of-the-art ASR models under the same training schemes. In particular, for the macro-architecture, Squeezeformer incorporates (i) the Temporal U-Net structure, which reduces the cost of the multi-head attention modules on long sequences, and (ii) a simpler block structure of feed-forward module, followed up by multi-head attention or convolution modules, instead of the Macaron structure proposed in Conformer. Furthermore, for the micro-architecture, Squeezeformer (i) simplifies the activations in the convolutional block, (ii) removes redundant Layer Normalization operations, and (iii) incorporates an efficient depth-wise downsampling layer to efficiently sub-sample the input signal. Squeezeformer achieves state-of-the-art results of 7.5%, 6.5%, and 6.0% word-error-rate on Librispeech test-other without external language models. This is 3.1%, 1.4%, and 0.6% better than Conformer-CTC with the same number of FLOPs. Our code is open-sourced and available online.
+
+| Subjects: | **Audio and Speech Processing (eess.AS)**; Computation and Language (cs.CL); Sound (cs.SD) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2206.00888](https://arxiv.org/abs/2206.00888) [eess.AS]** |
+|           | (or **[arXiv:2206.00888v1](https://arxiv.org/abs/2206.00888v1) [eess.AS]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2206.00888Focus to learn more |
+
+
+
+
+
+<h2 id="2022-06-03-2">2. VL-BEiT: Generative Vision-Language Pretraining
+</h2>
+
+Title: [VL-BEiT: Generative Vision-Language Pretraining](https://arxiv.org/abs/2206.01127)
+
+Authors: [Hangbo Bao](https://arxiv.org/search/cs?searchtype=author&query=Bao%2C+H), [Wenhui Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+W), [Li Dong](https://arxiv.org/search/cs?searchtype=author&query=Dong%2C+L), [Furu Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+F)
+
+> We introduce a vision-language foundation model called VL-BEiT, which is a bidirectional multimodal Transformer learned by generative pretraining. Our minimalist solution conducts masked prediction on both monomodal and multimodal data with a shared Transformer. Specifically, we perform masked vision-language modeling on image-text pairs, masked language modeling on texts, and masked image modeling on images. VL-BEiT is learned from scratch with one unified pretraining task, one shared backbone, and one-stage training. Our method is conceptually simple and empirically effective. Experimental results show that VL-BEiT obtains strong results on various vision-language benchmarks, such as visual question answering, visual reasoning, and image-text retrieval. Moreover, our method learns transferable visual features, achieving competitive performance on image classification, and semantic segmentation.
+
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2206.01127](https://arxiv.org/abs/2206.01127) [cs.CV]** |
+|           | (or **[arXiv:2206.01127v1](https://arxiv.org/abs/2206.01127v1) [cs.CV]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2206.01127Focus to learn more |
+
+
+
+
+
+<h2 id="2022-06-03-3">3. BayesFormer: Transformer with Uncertainty Estimation
+</h2>
+
+Title: [BayesFormer: Transformer with Uncertainty Estimation](https://arxiv.org/abs/2206.00826)
+
+Authors: [Karthik Abinav Sankararaman](https://arxiv.org/search/cs?searchtype=author&query=Sankararaman%2C+K+A), [Sinong Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+S), [Han Fang](https://arxiv.org/search/cs?searchtype=author&query=Fang%2C+H)
+
+> Transformer has become ubiquitous due to its dominant performance in various NLP and image processing tasks. However, it lacks understanding of how to generate mathematically grounded uncertainty estimates for transformer architectures. Models equipped with such uncertainty estimates can typically improve predictive performance, make networks robust, avoid over-fitting and used as acquisition function in active learning. In this paper, we introduce BayesFormer, a Transformer model with dropouts designed by Bayesian theory. We proposed a new theoretical framework to extend the approximate variational inference-based dropout to Transformer-based architectures. Through extensive experiments, we validate the proposed architecture in four paradigms and show improvements across the board: language modeling and classification, long-sequence understanding, machine translation and acquisition function for active learning.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2206.00826](https://arxiv.org/abs/2206.00826) [cs.CL]** |
+|           | (or **[arXiv:2206.00826v1](https://arxiv.org/abs/2206.00826v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2206.00826Focus to learn more |
+
+
+
+
+
+<h2 id="2022-06-03-4">4. Finding the Right Recipe for Low Resource Domain Adaptation in Neural Machine Translation
+</h2>
+
+Title: [Finding the Right Recipe for Low Resource Domain Adaptation in Neural Machine Translation](https://arxiv.org/abs/2206.01137)
+
+Authors: [Virginia Adams](https://arxiv.org/search/cs?searchtype=author&query=Adams%2C+V), [Sandeep Subramanian](https://arxiv.org/search/cs?searchtype=author&query=Subramanian%2C+S), [Mike Chrzanowski](https://arxiv.org/search/cs?searchtype=author&query=Chrzanowski%2C+M), [Oleksii Hrinchuk](https://arxiv.org/search/cs?searchtype=author&query=Hrinchuk%2C+O), [Oleksii Kuchaiev](https://arxiv.org/search/cs?searchtype=author&query=Kuchaiev%2C+O)
+
+> General translation models often still struggle to generate accurate translations in specialized domains. To guide machine translation practitioners and characterize the effectiveness of domain adaptation methods under different data availability scenarios, we conduct an in-depth empirical exploration of monolingual and parallel data approaches to domain adaptation of pre-trained, third-party, NMT models in settings where architecture change is impractical. We compare data centric adaptation methods in isolation and combination. We study method effectiveness in very low resource (8k parallel examples) and moderately low resource (46k parallel examples) conditions and propose an ensemble approach to alleviate reductions in original domain translation quality. Our work includes three domains: consumer electronic, clinical, and biomedical and spans four language pairs - Zh-En, Ja-En, Es-En, and Ru-En. We also make concrete recommendations for achieving high in-domain performance and release our consumer electronic and medical domain datasets for all languages and make our code publicly available.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2206.01137](https://arxiv.org/abs/2206.01137) [cs.CL]** |
+|           | (or **[arXiv:2206.01137v1](https://arxiv.org/abs/2206.01137v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2206.01137Focus to learn more |
+
+
+
+
+
+
+
+# 2022-06-02
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-06-02-1">1. VALHALLA: Visual Hallucination for Machine Translation
+</h2>
+
+Title: [VALHALLA: Visual Hallucination for Machine Translation](https://arxiv.org/abs/2206.00100)
+
+Authors: [Yi Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Y), [Rameswar Panda](https://arxiv.org/search/cs?searchtype=author&query=Panda%2C+R), [Yoon Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%2C+Y), [Chun-Fu](https://arxiv.org/search/cs?searchtype=author&query=Chun-Fu) (Richard)[Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen), [Rogerio Feris](https://arxiv.org/search/cs?searchtype=author&query=Feris%2C+R), [David Cox](https://arxiv.org/search/cs?searchtype=author&query=Cox%2C+D), [Nuno Vasconcelos](https://arxiv.org/search/cs?searchtype=author&query=Vasconcelos%2C+N)
+
+> Designing better machine translation systems by considering auxiliary inputs such as images has attracted much attention in recent years. While existing methods show promising performance over the conventional text-only translation systems, they typically require paired text and image as input during inference, which limits their applicability to real-world scenarios. In this paper, we introduce a visual hallucination framework, called VALHALLA, which requires only source sentences at inference time and instead uses hallucinated visual representations for multimodal machine translation. In particular, given a source sentence an autoregressive hallucination transformer is used to predict a discrete visual representation from the input text, and the combined text and hallucinated representations are utilized to obtain the target translation. We train the hallucination transformer jointly with the translation transformer using standard backpropagation with cross-entropy losses while being guided by an additional loss that encourages consistency between predictions using either ground-truth or hallucinated visual representations. Extensive experiments on three standard translation datasets with a diverse set of language pairs demonstrate the effectiveness of our approach over both text-only baselines and state-of-the-art methods. Project page: [this http URL](http://www.svcl.ucsd.edu/projects/valhalla).
+
+| Comments: | CVPR 2022                                                    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2206.00100](https://arxiv.org/abs/2206.00100) [cs.CV]** |
+|           | (or **[arXiv:2206.00100v1](https://arxiv.org/abs/2206.00100v1) [cs.CV]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2206.00100Focus to learn more |
+
+
+
+
+
+<h2 id="2022-06-02-2">2. Discovering the Hidden Vocabulary of DALLE-2
+</h2>
+
+Title: [Discovering the Hidden Vocabulary of DALLE-2](https://arxiv.org/abs/2206.00169)
+
+Authors: [Giannis Daras](https://arxiv.org/search/cs?searchtype=author&query=Daras%2C+G), [Alexandros G. Dimakis](https://arxiv.org/search/cs?searchtype=author&query=Dimakis%2C+A+G)
+
+> We discover that DALLE-2 seems to have a hidden vocabulary that can be used to generate images with absurd prompts. For example, it seems that \texttt{Apoploe vesrreaitais} means birds and \texttt{Contarra ccetnxniams luryca tanniounons} (sometimes) means bugs or pests. We find that these prompts are often consistent in isolation but also sometimes in combinations. We present our black-box method to discover words that seem random but have some correspondence to visual concepts. This creates important security and interpretability challenges.
+
+| Comments: | 6 pages, 4 figures                                           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL); Cryptography and Security (cs.CR); Computer Vision and Pattern Recognition (cs.CV) |
+| Cite as:  | **[arXiv:2206.00169](https://arxiv.org/abs/2206.00169) [cs.LG]** |
+|           | (or **[arXiv:2206.00169v1](https://arxiv.org/abs/2206.00169v1) [cs.LG]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2206.00169Focus to learn more |
+
+
+
+
+
+<h2 id="2022-06-02-3">3. On Layer Normalizations and Residual Connections in Transformers
+</h2>
+
+Title: [On Layer Normalizations and Residual Connections in Transformers](https://arxiv.org/abs/2206.00330)
+
+Authors: [Sho Takase](https://arxiv.org/search/cs?searchtype=author&query=Takase%2C+S), [Shun Kiyono](https://arxiv.org/search/cs?searchtype=author&query=Kiyono%2C+S), [Sosuke Kobayashi](https://arxiv.org/search/cs?searchtype=author&query=Kobayashi%2C+S), [Jun Suzuki](https://arxiv.org/search/cs?searchtype=author&query=Suzuki%2C+J)
+
+> In the perspective of a layer normalization (LN) position, the architecture of Transformers can be categorized into two types: Post-LN and Pre-LN. Recent Transformers prefer to select Pre-LN because the training in Post-LN with deep Transformers, e.g., ten or more layers, often becomes unstable, resulting in useless models. However, in contrast, Post-LN has also consistently achieved better performance than Pre-LN in relatively shallow Transformers, e.g., six or fewer layers. This study first investigates the reason for these discrepant observations empirically and theoretically and discovers 1, the LN in Post-LN is the source of the vanishing gradient problem that mainly leads the unstable training whereas Pre-LN prevents it, and 2, Post-LN tends to preserve larger gradient norms in higher layers during the back-propagation that may lead an effective training. Exploiting the new findings, we propose a method that can equip both higher stability and effective training by a simple modification from Post-LN. We conduct experiments on a wide range of text generation tasks and demonstrate that our method outperforms Pre-LN, and stable training regardless of the shallow or deep layer settings.
+
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2206.00330](https://arxiv.org/abs/2206.00330) [cs.LG]** |
+|           | (or **[arXiv:2206.00330v1](https://arxiv.org/abs/2206.00330v1) [cs.LG]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2206.00330Focus to learn more |
+
+
+
+
+
+<h2 id="2022-06-02-4">4. Optical character recognition quality affects perceived usefulness of historical newspaper clippings
+</h2>
+
+Title: [Optical character recognition quality affects perceived usefulness of historical newspaper clippings](https://arxiv.org/abs/2206.00369)
+
+Authors: [Kimmo Kettunen](https://arxiv.org/search/cs?searchtype=author&query=Kettunen%2C+K), [Heikki Keskustalo](https://arxiv.org/search/cs?searchtype=author&query=Keskustalo%2C+H), [Sanna Kumpulainen](https://arxiv.org/search/cs?searchtype=author&query=Kumpulainen%2C+S), [Tuula Pääkkönen](https://arxiv.org/search/cs?searchtype=author&query=Pääkkönen%2C+T), [Juha Rautiainen](https://arxiv.org/search/cs?searchtype=author&query=Rautiainen%2C+J)
+
+> Introduction. We study effect of different quality optical character recognition in interactive information retrieval with a collection of one digitized historical Finnish newspaper. Method. This study is based on the simulated interactive information retrieval work task model. Thirty-two users made searches to an article collection of Finnish newspaper Uusi Suometar 1869-1918 with ca. 1.45 million auto segmented articles. Our article search database had two versions of each article with different quality optical character recognition. Each user performed six pre-formulated and six self-formulated short queries and evaluated subjectively the top-10 results using graded relevance scale of 0-3 without knowing about the optical character recognition quality differences of the otherwise identical articles. Analysis. Analysis of the user evaluations was performed by comparing mean averages of evaluations scores in user sessions. Differences of query results were detected by analysing lengths of returned articles in pre-formulated and self-formulated queries and number of different documents retrieved overall in these two sessions. Results. The main result of the study is that improved optical character recognition quality affects perceived usefulness of historical newspaper articles positively. Conclusions. We were able to show that improvement in optical character recognition quality of documents leads to higher mean relevance evaluation scores of query results in our historical newspaper collection. To the best of our knowledge this simulated interactive user-task is the first one showing empirically that users' subjective relevance assessments are affected by a change in the quality of optically read text.
+
+| Comments: | 21 pages, 6 figures, 2 tables, 1 appendix. arXiv admin note: substantial text overlap with [arXiv:2203.03557](https://arxiv.org/abs/2203.03557) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2206.00369](https://arxiv.org/abs/2206.00369) [cs.CL]** |
+|           | (or **[arXiv:2206.00369v1](https://arxiv.org/abs/2206.00369v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2206.00369Focus to learn more |
+
+
+
+
+
+<h2 id="2022-06-02-5">5. Exploring Diversity in Back Translation for Low-Resource Machine Translation
+</h2>
+
+Title: [Exploring Diversity in Back Translation for Low-Resource Machine Translation](https://arxiv.org/abs/2206.00564)
+
+Authors: [Laurie Burchell](https://arxiv.org/search/cs?searchtype=author&query=Burchell%2C+L), [Alexandra Birch](https://arxiv.org/search/cs?searchtype=author&query=Birch%2C+A), [Kenneth Heafield](https://arxiv.org/search/cs?searchtype=author&query=Heafield%2C+K)
+
+> Back translation is one of the most widely used methods for improving the performance of neural machine translation systems. Recent research has sought to enhance the effectiveness of this method by increasing the 'diversity' of the generated translations. We argue that the definitions and metrics used to quantify 'diversity' in previous work have been insufficient. This work puts forward a more nuanced framework for understanding diversity in training data, splitting it into lexical diversity and syntactic diversity. We present novel metrics for measuring these different aspects of diversity and carry out empirical analysis into the effect of these types of diversity on final neural machine translation model performance for low-resource English↔Turkish and mid-resource English↔Icelandic. Our findings show that generating back translation using nucleus sampling results in higher final model performance, and that this method of generation has high levels of both lexical and syntactic diversity. We also find evidence that lexical diversity is more important than syntactic for back translation performance.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2206.00564](https://arxiv.org/abs/2206.00564) [cs.CL]** |
+|           | (or **[arXiv:2206.00564v1](https://arxiv.org/abs/2206.00564v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2206.00564Focus to learn more |
+
+
+
+
+
+<h2 id="2022-06-02-6">6. Cross-View Language Modeling: Towards Unified Cross-Lingual Cross-Modal Pre-training
+</h2>
+
+Title: [Cross-View Language Modeling: Towards Unified Cross-Lingual Cross-Modal Pre-training](https://arxiv.org/abs/2206.00621)
+
+Authors: [Yan Zeng](https://arxiv.org/search/cs?searchtype=author&query=Zeng%2C+Y), [Wangchunshu Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+W), [Ao Luo](https://arxiv.org/search/cs?searchtype=author&query=Luo%2C+A), [Xinsong Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+X)
+
+> In this paper, we introduce Cross-View Language Modeling, a simple and effective language model pre-training framework that unifies cross-lingual cross-modal pre-training with shared architectures and objectives. Our approach is motivated by a key observation that cross-lingual and cross-modal pre-training share the same goal of aligning two different views of the same object into a common semantic space. To this end, the cross-view language modeling framework considers both multi-modal data (i.e., image-caption pairs) and multi-lingual data (i.e., parallel sentence pairs) as two different views of the same object, and trains the model to align the two views by maximizing the mutual information between them with conditional masked language modeling and contrastive learning. We pre-train CCLM, a Cross-lingual Cross-modal Language Model, with the cross-view language modeling framework. Empirical results on IGLUE, a multi-lingual multi-modal benchmark, and two multi-lingual image-text retrieval datasets show that while conceptually simpler, CCLM significantly outperforms the prior state-of-the-art with an average absolute improvement of over 10%. Notably, CCLM is the first multi-lingual multi-modal model that surpasses the translate-test performance of representative English vision-language models by zero-shot cross-lingual transfer.
+
+| Comments: | 19 pages, 3 figures                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Computer Vision and Pattern Recognition (cs.CV); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2206.00621](https://arxiv.org/abs/2206.00621) [cs.CL]** |
+|           | (or **[arXiv:2206.00621v1](https://arxiv.org/abs/2206.00621v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2206.00621Focus to learn more |
+
+
+
+
 
 
 
