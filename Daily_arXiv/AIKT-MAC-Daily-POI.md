@@ -2,13 +2,36 @@
 
 # Index
 
+- [2022-06-09](#2022-06-09)
+  - [1. TURJUMAN: A Public Toolkit for Neural Arabic Machine Translation](#2022-06-09-1)
+  
+  - [2. STable: Table Generation Framework for Encoder-Decoder Models](#2022-06-09-2)
+  
+- [2022-06-08](#2022-06-08)
+  - [1. Tutel: Adaptive Mixture-of-Experts at Scale](#2022-06-08-1)
+
+  - [2. LegoNN: Building Modular Encoder-Decoder Models](#2022-06-08-2)
+
+  - [3. cViL: Cross-Lingual Training of Vision-Language Models using Knowledge Distillation](#2022-06-08-3)
+
+- [2022-06-07](#2022-06-07)
+  - [1. Rethinking the Openness of CLIP](#2022-06-07-1)
+
+  - [2. Instance-wise Prompt Tuning for Pretrained Language Models](#2022-06-07-2)
+
+  - [3. Multilingual Neural Machine Translation with Deep Encoder and Multiple Shallow Decoders](#2022-06-07-3)
+  - [4. MorisienMT: A Dataset for Mauritian Creole Machine Translation](#2022-06-07-4)
+
+- [2022-06-06](#2022-06-06)
+  - [1. A-OKVQA: A Benchmark for Visual Question Answering using World Knowledge](#2022-06-06-1)
+
 - [2022-06-03](#2022-06-03)
   - [1. Squeezeformer: An Efficient Transformer for Automatic Speech Recognition](#2022-06-03-1)
-  
+
   - [2. VL-BEiT: Generative Vision-Language Pretraining](#2022-06-03-2)
   - [3. BayesFormer: Transformer with Uncertainty Estimation](#2022-06-03-3)
   - [4. Finding the Right Recipe for Low Resource Domain Adaptation in Neural Machine Translation](#2022-06-03-4)
-  
+
 - [2022-06-02](#2022-06-02)
   - [1. VALHALLA: Visual Hallucination for Machine Translation](#2022-06-02-1)
 
@@ -35,6 +58,237 @@
   - [1. VLUE: A Multi-Task Benchmark for Evaluating Vision-Language Models](#2022-05-31-1)
 
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2022-06-09
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-06-09-1">1. TURJUMAN: A Public Toolkit for Neural Arabic Machine Translation
+</h2>
+
+Title: [TURJUMAN: A Public Toolkit for Neural Arabic Machine Translation](https://arxiv.org/abs/2206.03933)
+
+Authors: [El Moatez Billah Nagoudi](https://arxiv.org/search/cs?searchtype=author&query=Nagoudi%2C+E+M+B), [AbdelRahim Elmadany](https://arxiv.org/search/cs?searchtype=author&query=Elmadany%2C+A), [Muhammad Abdul-Mageed](https://arxiv.org/search/cs?searchtype=author&query=Abdul-Mageed%2C+M)
+
+> We present TURJUMAN, a neural toolkit for translating from 20 languages into Modern Standard Arabic (MSA). TURJUMAN exploits the recently-introduced text-to-text Transformer AraT5 model, endowing it with a powerful ability to decode into Arabic. The toolkit offers the possibility of employing a number of diverse decoding methods, making it suited for acquiring paraphrases for the MSA translations as an added value. To train TURJUMAN, we sample from publicly available parallel data employing a simple semantic similarity method to ensure data quality. This allows us to prepare and release AraOPUS-20, a new machine translation benchmark. We publicly release our translation toolkit (TURJUMAN) as well as our benchmark dataset (AraOPUS-20).
+
+| Comments:          | All authors contributed equally                              |
+| ------------------ | ------------------------------------------------------------ |
+| Subjects:          | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:           | **[arXiv:2206.03933](https://arxiv.org/abs/2206.03933) [cs.CL]** |
+|                    | (or **[arXiv:2206.03933v1](https://arxiv.org/abs/2206.03933v1) [cs.CL]** for this version) |
+|                    | https://doi.org/10.48550/arXiv.2206.03933Focus to learn more |
+| Journal reference: | Proceedings of the 5th Workshop on Open-Source Arabic Corpora and Processing Tools (OSACT5), 2022 |
+
+
+
+
+
+<h2 id="2022-06-09-2">2. STable: Table Generation Framework for Encoder-Decoder Models
+</h2>
+
+Title: [STable: Table Generation Framework for Encoder-Decoder Models](https://arxiv.org/abs/2206.04045)
+
+Authors: [Michał Pietruszka](https://arxiv.org/search/cs?searchtype=author&query=Pietruszka%2C+M), [Michał Turski](https://arxiv.org/search/cs?searchtype=author&query=Turski%2C+M), [Łukasz Borchmann](https://arxiv.org/search/cs?searchtype=author&query=Borchmann%2C+Ł), [Tomasz Dwojak](https://arxiv.org/search/cs?searchtype=author&query=Dwojak%2C+T), [Gabriela Pałka](https://arxiv.org/search/cs?searchtype=author&query=Pałka%2C+G), [Karolina Szyndler](https://arxiv.org/search/cs?searchtype=author&query=Szyndler%2C+K), [Dawid Jurkiewicz](https://arxiv.org/search/cs?searchtype=author&query=Jurkiewicz%2C+D), [Łukasz Garncarek](https://arxiv.org/search/cs?searchtype=author&query=Garncarek%2C+Ł)
+
+> The output structure of database-like tables, consisting of values structured in horizontal rows and vertical columns identifiable by name, can cover a wide range of NLP tasks. Following this constatation, we propose a framework for text-to-table neural models applicable to problems such as extraction of line items, joint entity and relation extraction, or knowledge base population. The permutation-based decoder of our proposal is a generalized sequential method that comprehends information from all cells in the table. The training maximizes the expected log-likelihood for a table's content across all random permutations of the factorization order. During the content inference, we exploit the model's ability to generate cells in any order by searching over possible orderings to maximize the model's confidence and avoid substantial error accumulation, which other sequential models are prone to. Experiments demonstrate a high practical value of the framework, which establishes state-of-the-art results on several challenging datasets, outperforming previous solutions by up to 15%.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2206.04045](https://arxiv.org/abs/2206.04045) [cs.CL]** |
+|           | (or **[arXiv:2206.04045v1](https://arxiv.org/abs/2206.04045v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2206.04045Focus to learn more |
+
+
+
+
+
+# 2022-06-08
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-06-08-1">1. Tutel: Adaptive Mixture-of-Experts at Scale
+</h2>
+
+Title: [Tutel: Adaptive Mixture-of-Experts at Scale](https://arxiv.org/abs/2206.03382)
+
+Authors: [Changho Hwang](https://arxiv.org/search/cs?searchtype=author&query=Hwang%2C+C), [Wei Cui](https://arxiv.org/search/cs?searchtype=author&query=Cui%2C+W), [Yifan Xiong](https://arxiv.org/search/cs?searchtype=author&query=Xiong%2C+Y), [Ziyue Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+Z), [Ze Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Z), [Han Hu](https://arxiv.org/search/cs?searchtype=author&query=Hu%2C+H), [Zilong Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Z), [Rafael Salas](https://arxiv.org/search/cs?searchtype=author&query=Salas%2C+R), [Jithin Jose](https://arxiv.org/search/cs?searchtype=author&query=Jose%2C+J), [Prabhat Ram](https://arxiv.org/search/cs?searchtype=author&query=Ram%2C+P), [Joe Chau](https://arxiv.org/search/cs?searchtype=author&query=Chau%2C+J), [Peng Cheng](https://arxiv.org/search/cs?searchtype=author&query=Cheng%2C+P), [Fan Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+F), [Mao Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+M), [Yongqiang Xiong](https://arxiv.org/search/cs?searchtype=author&query=Xiong%2C+Y)
+
+> In recent years, Mixture-of-Experts (MoE) has emerged as a promising technique for deep learning that can scale the model capacity to trillion-plus parameters while reducing the computing cost via sparse computation. While MoE opens a new frontier of exceedingly large models, its implementation over thousands of GPUs has been limited due to mismatch between the dynamic nature of MoE and static parallelism/pipelining of the system. We present Tutel, a highly scalable stack design and implementation for MoE with dynamically adaptive parallelism and pipelining. Tutel delivers adaptive parallelism switching and adaptive pipelining at runtime, which achieves up to 1.74x and 2.00x single MoE layer speedup, respectively. We also propose a novel two-dimensional hierarchical algorithm for MoE communication speedup that outperforms the previous state-of-the-art up to 20.7x over 2,048 GPUs. Aggregating all techniques, Tutel finally delivers 4.96x and 5.75x speedup of a single MoE layer on 16 GPUs and 2,048 GPUs, respectively, over Fairseq: Meta's Facebook AI Research Sequence-to-Sequence Toolkit (Tutel is now partially adopted by Fairseq). Tutel source code is available in public: [this https URL](https://github.com/microsoft/tutel) . Our evaluation shows that Tutel efficiently and effectively runs a real-world MoE-based model named SwinV2-MoE, built upon Swin Transformer V2, a state-of-the-art computer vision architecture. On efficiency, Tutel accelerates SwinV2-MoE, achieving up to 1.55x and 2.11x speedup in training and inference over Fairseq, respectively. On effectiveness, the SwinV2-MoE model achieves superior accuracy in both pre-training and down-stream computer vision tasks such as COCO object detection than the counterpart dense model, indicating the readiness of Tutel for end-to-end real-world model training and inference. SwinV2-MoE is open sourced in [this https URL](https://github.com/microsoft/Swin-Transformer) .
+
+| Subjects: | **Distributed, Parallel, and Cluster Computing (cs.DC)**; Computation and Language (cs.CL); Computer Vision and Pattern Recognition (cs.CV) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2206.03382](https://arxiv.org/abs/2206.03382) [cs.DC]** |
+|           | (or **[arXiv:2206.03382v1](https://arxiv.org/abs/2206.03382v1) [cs.DC]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2206.03382Focus to learn more |
+
+
+
+
+
+<h2 id="2022-06-08-2">2. LegoNN: Building Modular Encoder-Decoder Models
+</h2>
+
+Title: [LegoNN: Building Modular Encoder-Decoder Models](https://arxiv.org/abs/2206.03318)
+
+Authors: [Siddharth Dalmia](https://arxiv.org/search/cs?searchtype=author&query=Dalmia%2C+S), [Dmytro Okhonko](https://arxiv.org/search/cs?searchtype=author&query=Okhonko%2C+D), [Mike Lewis](https://arxiv.org/search/cs?searchtype=author&query=Lewis%2C+M), [Sergey Edunov](https://arxiv.org/search/cs?searchtype=author&query=Edunov%2C+S), [Shinji Watanabe](https://arxiv.org/search/cs?searchtype=author&query=Watanabe%2C+S), [Florian Metze](https://arxiv.org/search/cs?searchtype=author&query=Metze%2C+F), [Luke Zettlemoyer](https://arxiv.org/search/cs?searchtype=author&query=Zettlemoyer%2C+L), [Abdelrahman Mohamed](https://arxiv.org/search/cs?searchtype=author&query=Mohamed%2C+A)
+
+> State-of-the-art encoder-decoder models (e.g. for machine translation (MT) or speech recognition (ASR)) are constructed and trained end-to-end as an atomic unit. No component of the model can be (re-)used without the others. We describe LegoNN, a procedure for building encoder-decoder architectures with decoder modules that can be reused across various MT and ASR tasks, without the need for any fine-tuning. To achieve reusability, the interface between each encoder and decoder modules is grounded to a sequence of marginal distributions over a discrete vocabulary pre-defined by the model designer. We present two approaches for ingesting these marginals; one is differentiable, allowing the flow of gradients across the entire network, and the other is gradient-isolating. To enable portability of decoder modules between MT tasks for different source languages and across other tasks like ASR, we introduce a modality agnostic encoder which consists of a length control mechanism to dynamically adapt encoders' output lengths in order to match the expected input length range of pre-trained decoders. We present several experiments to demonstrate the effectiveness of LegoNN models: a trained language generation LegoNN decoder module from German-English (De-En) MT task can be reused with no fine-tuning for the Europarl English ASR and the Romanian-English (Ro-En) MT tasks to match or beat respective baseline models. When fine-tuned towards the target task for few thousand updates, our LegoNN models improved the Ro-En MT task by 1.5 BLEU points, and achieved 12.5% relative WER reduction for the Europarl ASR task. Furthermore, to show its extensibility, we compose a LegoNN ASR model from three modules -- each has been learned within different end-to-end trained models on three different datasets -- boosting the WER reduction to 19.5%.
+
+| Comments: | 13 pages; Submitted to TASLP 2022                            |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2206.03318](https://arxiv.org/abs/2206.03318) [cs.CL]** |
+|           | (or **[arXiv:2206.03318v1](https://arxiv.org/abs/2206.03318v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2206.03318Focus to learn more |
+
+
+
+
+
+<h2 id="2022-06-08-3">3. cViL: Cross-Lingual Training of Vision-Language Models using Knowledge Distillation
+</h2>
+
+Title: [cViL: Cross-Lingual Training of Vision-Language Models using Knowledge Distillation](https://arxiv.org/abs/2206.03354)
+
+Authors: [Kshitij Gupta](https://arxiv.org/search/cs?searchtype=author&query=Gupta%2C+K), [Devansh Gautam](https://arxiv.org/search/cs?searchtype=author&query=Gautam%2C+D), [Radhika Mamidi](https://arxiv.org/search/cs?searchtype=author&query=Mamidi%2C+R)
+
+> Vision-and-language tasks are gaining popularity in the research community, but the focus is still mainly on English. We propose a pipeline that utilizes English-only vision-language models to train a monolingual model for a target language. We propose to extend OSCAR+, a model which leverages object tags as anchor points for learning image-text alignments, to train on visual question answering datasets in different languages. We propose a novel approach to knowledge distillation to train the model in other languages using parallel sentences. Compared to other models that use the target language in the pretraining corpora, we can leverage an existing English model to transfer the knowledge to the target language using significantly lesser resources. We also release a large-scale visual question answering dataset in Japanese and Hindi language. Though we restrict our work to visual question answering, our model can be extended to any sequence-level classification task, and it can be extended to other languages as well. This paper focuses on two languages for the visual question answering task - Japanese and Hindi. Our pipeline outperforms the current state-of-the-art models by a relative increase of 4.4% and 13.4% respectively in accuracy.
+
+| Comments: | Accepted at ICPR 2022; 8 pages                               |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Computer Vision and Pattern Recognition (cs.CV) |
+| Cite as:  | **[arXiv:2206.03354](https://arxiv.org/abs/2206.03354) [cs.CL]** |
+|           | (or **[arXiv:2206.03354v1](https://arxiv.org/abs/2206.03354v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2206.03354Focus to learn more |
+
+
+
+
+
+
+
+# 2022-06-07
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-06-07-1">1. Rethinking the Openness of CLIP
+</h2>
+
+Title: [Rethinking the Openness of CLIP](https://arxiv.org/abs/2206.01986)
+
+Authors: [Shuhuai Ren](https://arxiv.org/search/cs?searchtype=author&query=Ren%2C+S), [Lei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L), [Xuancheng Ren](https://arxiv.org/search/cs?searchtype=author&query=Ren%2C+X), [Guangxiang Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+G), [Xu Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+X)
+
+> Contrastive Language-Image Pre-training (CLIP) has demonstrated great potential in realizing open-vocabulary image classification in a matching style, because of its holistic use of natural language supervision that covers unconstrained real-world visual concepts. However, it is, in turn, also difficult to evaluate and analyze the openness of CLIP-like models, since they are in theory open to any vocabulary but the actual accuracy varies. To address the insufficiency of conventional studies on openness, we resort to an incremental view and define the extensibility, which essentially approximates the model's ability to deal with new visual concepts, by evaluating openness through vocabulary expansions. Our evaluation based on extensibility shows that CLIP-like models are hardly truly open and their performances degrade as the vocabulary expands to different degrees. Further analysis reveals that the over-estimation of openness is not because CLIP-like models fail to capture the general similarity of image and text features of novel visual concepts, but because of the confusion among competing text features, that is, they are not stable with respect to the vocabulary. In light of this, we propose to improve the openness of CLIP from the perspective of feature space by enforcing the distinguishability of text features. Our method retrieves relevant texts from the pre-training corpus to enhance prompts for inference, which boosts the extensibility and stability of CLIP even without fine-tuning.
+
+| Comments: | 21 pages, 13 figures                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2206.01986](https://arxiv.org/abs/2206.01986) [cs.CV]** |
+|           | (or **[arXiv:2206.01986v1](https://arxiv.org/abs/2206.01986v1) [cs.CV]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2206.01986Focus to learn more |
+
+
+
+
+
+<h2 id="2022-06-07-2">2. Instance-wise Prompt Tuning for Pretrained Language Models
+</h2>
+
+Title: [Instance-wise Prompt Tuning for Pretrained Language Models](https://arxiv.org/abs/2206.01958)
+
+Authors: [Yuezihan Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+Y), [Hao Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+H), [Junyang Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+J), [Hanyu Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+H), [An Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+A), [Chang Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+C), [Hongxia Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+H), [Zhi Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+Z), [Bin Cui](https://arxiv.org/search/cs?searchtype=author&query=Cui%2C+B)
+
+> Prompt Learning has recently gained great popularity in bridging the gap between pretraining tasks and various downstream tasks. It freezes Pretrained Language Models (PLMs) and only tunes a few task-related parameters (prompts) for downstream tasks, greatly reducing the cost of tuning giant models. The key enabler of this is the idea of querying PLMs with task-specific knowledge implicated in prompts. This paper reveals a major limitation of existing methods that the indiscriminate prompts for all input data in a task ignore the intrinsic knowledge from input data, resulting in sub-optimal performance. We introduce Instance-wise Prompt Tuning (IPT), the first prompt learning paradigm that injects knowledge from the input data instances to the prompts, thereby providing PLMs with richer and more concrete context information. We devise a series of strategies to produce instance-wise prompts, addressing various concerns like model quality and cost-efficiency. Across multiple tasks and resource settings, IPT significantly outperforms task-based prompt learning methods, and achieves comparable performance to conventional finetuning with only 0.5% - 1.5% of tuned parameters.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2206.01958](https://arxiv.org/abs/2206.01958) [cs.CL]** |
+|           | (or **[arXiv:2206.01958v1](https://arxiv.org/abs/2206.01958v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2206.01958Focus to learn more |
+
+
+
+
+
+<h2 id="2022-06-07-3">3. Multilingual Neural Machine Translation with Deep Encoder and Multiple Shallow Decoders
+</h2>
+
+Title: [Multilingual Neural Machine Translation with Deep Encoder and Multiple Shallow Decoders](https://arxiv.org/abs/2206.02079)
+
+Authors: [Xiang Kong](https://arxiv.org/search/cs?searchtype=author&query=Kong%2C+X), [Adithya Renduchintala](https://arxiv.org/search/cs?searchtype=author&query=Renduchintala%2C+A), [James Cross](https://arxiv.org/search/cs?searchtype=author&query=Cross%2C+J), [Yuqing Tang](https://arxiv.org/search/cs?searchtype=author&query=Tang%2C+Y), [Jiatao Gu](https://arxiv.org/search/cs?searchtype=author&query=Gu%2C+J), [Xian Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+X)
+
+> Recent work in multilingual translation advances translation quality surpassing bilingual baselines using deep transformer models with increased capacity. However, the extra latency and memory costs introduced by this approach may make it unacceptable for efficiency-constrained applications. It has recently been shown for bilingual translation that using a deep encoder and shallow decoder (DESD) can reduce inference latency while maintaining translation quality, so we study similar speed-accuracy trade-offs for multilingual translation. We find that for many-to-one translation we can indeed increase decoder speed without sacrificing quality using this approach, but for one-to-many translation, shallow decoders cause a clear quality drop. To ameliorate this drop, we propose a deep encoder with multiple shallow decoders (DEMSD) where each shallow decoder is responsible for a disjoint subset of target languages. Specifically, the DEMSD model with 2-layer decoders is able to obtain a 1.8x speedup on average compared to a standard transformer model with no drop in translation quality.
+
+| Comments: | EACL 2021                                                    |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2206.02079](https://arxiv.org/abs/2206.02079) [cs.CL]** |
+|           | (or **[arXiv:2206.02079v1](https://arxiv.org/abs/2206.02079v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2206.02079Focus to learn more |
+
+
+
+
+
+<h2 id="2022-06-07-4">4. MorisienMT: A Dataset for Mauritian Creole Machine Translation
+</h2>
+
+Title: [MorisienMT: A Dataset for Mauritian Creole Machine Translation](https://arxiv.org/abs/2206.02421)
+
+Authors: [Raj Dabre](https://arxiv.org/search/cs?searchtype=author&query=Dabre%2C+R), [Aneerav Sukhoo](https://arxiv.org/search/cs?searchtype=author&query=Sukhoo%2C+A)
+
+> In this paper, we describe MorisienMT, a dataset for benchmarking machine translation quality of Mauritian Creole. Mauritian Creole (Morisien) is the lingua franca of the Republic of Mauritius and is a French-based creole language. MorisienMT consists of a parallel corpus between English and Morisien, French and Morisien and a monolingual corpus for Morisien. We first give an overview of Morisien and then describe the steps taken to create the corpora and, from it, the training and evaluation splits. Thereafter, we establish a variety of baseline models using the created parallel corpora as well as large French--English corpora for transfer learning. We release our datasets publicly for research purposes and hope that this spurs research for Morisien machine translation.
+
+| Comments: | Work in progress! (obviously) Dataset is here: [this https URL](https://huggingface.co/datasets/prajdabre/MorisienMT) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2206.02421](https://arxiv.org/abs/2206.02421) [cs.CL]** |
+|           | (or **[arXiv:2206.02421v1](https://arxiv.org/abs/2206.02421v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2206.02421Focus to learn more |
+
+
+
+
+
+
+
+
+# 2022-06-06
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-06-06-1">1. A-OKVQA: A Benchmark for Visual Question Answering using World Knowledge
+</h2>
+
+Title: [A-OKVQA: A Benchmark for Visual Question Answering using World Knowledge](https://arxiv.org/abs/2206.01718)
+
+Authors: [Dustin Schwenk](https://arxiv.org/search/cs?searchtype=author&query=Schwenk%2C+D), [Apoorv Khandelwal](https://arxiv.org/search/cs?searchtype=author&query=Khandelwal%2C+A), [Christopher Clark](https://arxiv.org/search/cs?searchtype=author&query=Clark%2C+C), [Kenneth Marino](https://arxiv.org/search/cs?searchtype=author&query=Marino%2C+K), [Roozbeh Mottaghi](https://arxiv.org/search/cs?searchtype=author&query=Mottaghi%2C+R)
+
+> The Visual Question Answering (VQA) task aspires to provide a meaningful testbed for the development of AI models that can jointly reason over visual and natural language inputs. Despite a proliferation of VQA datasets, this goal is hindered by a set of common limitations. These include a reliance on relatively simplistic questions that are repetitive in both concepts and linguistic structure, little world knowledge needed outside of the paired image, and limited reasoning required to arrive at the correct answer. We introduce A-OKVQA, a crowdsourced dataset composed of a diverse set of about 25K questions requiring a broad base of commonsense and world knowledge to answer. In contrast to the existing knowledge-based VQA datasets, the questions generally cannot be answered by simply querying a knowledge base, and instead require some form of commonsense reasoning about the scene depicted in the image. We demonstrate the potential of this new dataset through a detailed analysis of its contents and baseline performance measurements over a variety of state-of-the-art vision-language models. Project page: [this http URL](http://a-okvqa.allenai.org/)
+
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2206.01718](https://arxiv.org/abs/2206.01718) [cs.CV]** |
+|           | (or **[arXiv:2206.01718v1](https://arxiv.org/abs/2206.01718v1) [cs.CV]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2206.01718Focus to learn more |
+
+
+
+
+
+
+
 
 
 
