@@ -2,11 +2,28 @@
 
 # Index
 
+- [2022-06-14](#2022-06-14)
+  - [1. A Unified Continuous Learning Framework for Multi-modal Knowledge Discovery and Pre-training](#2022-06-14-1)
+  
+  - [2. The YiTrans End-to-End Speech Translation System for IWSLT 2022 Offline Shared Task](#2022-06-14-2)
+  
+  - [3. On the Learning of Non-Autoregressive Transformers](#2022-06-14-3)
+  
+  - [4. Language Models are General-Purpose Interfaces](#2022-06-14-4)
+  
+- [2022-06-13](#2022-06-13)
+  - [1. A Novel Chinese Dialect TTS Frontend with Non-Autoregressive Neural Machine Translation](#2022-06-13-1)
+
+- [2022-06-10](#2022-06-10)
+  - [1. Dict-NMT: Bilingual Dictionary based NMT for Extremely Low Resource Languages](#2022-06-10-1)
+  - [2. Joint Encoder-Decoder Self-Supervised Pre-training for ASR](#2022-06-10-2)
+  - [3. Revisiting End-to-End Speech-to-Text Translation From Scratch](#2022-06-10-3)
+
 - [2022-06-09](#2022-06-09)
   - [1. TURJUMAN: A Public Toolkit for Neural Arabic Machine Translation](#2022-06-09-1)
-  
+
   - [2. STable: Table Generation Framework for Encoder-Decoder Models](#2022-06-09-2)
-  
+
 - [2022-06-08](#2022-06-08)
   - [1. Tutel: Adaptive Mixture-of-Experts at Scale](#2022-06-08-1)
 
@@ -24,14 +41,12 @@
 
 - [2022-06-06](#2022-06-06)
   - [1. A-OKVQA: A Benchmark for Visual Question Answering using World Knowledge](#2022-06-06-1)
-
 - [2022-06-03](#2022-06-03)
   - [1. Squeezeformer: An Efficient Transformer for Automatic Speech Recognition](#2022-06-03-1)
 
   - [2. VL-BEiT: Generative Vision-Language Pretraining](#2022-06-03-2)
   - [3. BayesFormer: Transformer with Uncertainty Estimation](#2022-06-03-3)
   - [4. Finding the Right Recipe for Low Resource Domain Adaptation in Neural Machine Translation](#2022-06-03-4)
-
 - [2022-06-02](#2022-06-02)
   - [1. VALHALLA: Visual Hallucination for Machine Translation](#2022-06-02-1)
 
@@ -44,7 +59,6 @@
   - [5. Exploring Diversity in Back Translation for Low-Resource Machine Translation](#2022-06-02-5)
 
   - [6. Cross-View Language Modeling: Towards Unified Cross-Lingual Cross-Modal Pre-training](#2022-06-02-6)
-
 - [2022-06-01](#2022-06-01)
   - [1. Parameter-Efficient and Student-Friendly Knowledge Distillation](#2022-06-01-1)
 
@@ -53,11 +67,188 @@
   - [3. CogVideo: Large-scale Pretraining for Text-to-Video Generation via Transformers](#2022-06-01-3)
 
   - [4. EMS: Efficient and Effective Massively Multilingual Sentence Representation Learning](#2022-06-01-4)
-
 - [2022-05-31](#2022-05-31)
   - [1. VLUE: A Multi-Task Benchmark for Evaluating Vision-Language Models](#2022-05-31-1)
-
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2022-06-14
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-06-14-1">1. A Unified Continuous Learning Framework for Multi-modal Knowledge Discovery and Pre-training
+</h2>
+
+Title: [A Unified Continuous Learning Framework for Multi-modal Knowledge Discovery and Pre-training](https://arxiv.org/abs/2206.05555)
+
+Authors: [Zhihao Fan](https://arxiv.org/search/cs?searchtype=author&query=Fan%2C+Z), [Zhongyu Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+Z), [Jingjing Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+J), [Siyuan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+S), [Zejun Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Z), [Jiarong Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+J), [Xuanjing Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+X)
+
+> Multi-modal pre-training and knowledge discovery are two important research topics in multi-modal machine learning. Nevertheless, none of existing works make attempts to link knowledge discovery with knowledge guided multi-modal pre-training. In this paper, we propose to unify them into a continuous learning framework for mutual improvement. Taking the open-domain uni-modal datasets of images and texts as input, we maintain a knowledge graph as the foundation to support these two tasks. For knowledge discovery, a pre-trained model is used to identify cross-modal links on the graph. For model pre-training, the knowledge graph is used as the external knowledge to guide the model updating. These two steps are iteratively performed in our framework for continuous learning. The experimental results on MS-COCO and Flickr30K with respect to both knowledge discovery and the pre-trained model validate the effectiveness of our framework.
+
+| Subjects: | **Computation and Language (cs.CL)**; Computer Vision and Pattern Recognition (cs.CV) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2206.05555](https://arxiv.org/abs/2206.05555) [cs.CL]** |
+|           | (or **[arXiv:2206.05555v1](https://arxiv.org/abs/2206.05555v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-06-14-2">2. The YiTrans End-to-End Speech Translation System for IWSLT 2022 Offline Shared Task
+</h2>
+
+Title: [The YiTrans End-to-End Speech Translation System for IWSLT 2022 Offline Shared Task](https://arxiv.org/abs/2206.05777)
+
+Authors: [Ziqiang Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Z), [Junyi Ao](https://arxiv.org/search/cs?searchtype=author&query=Ao%2C+J), [Shujie Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+S), [Furu Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+F), [Jinyu Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+J)
+
+> This paper describes the submission of our end-to-end YiTrans speech translation system for the IWSLT 2022 offline task, which translates from English audio to German, Chinese, and Japanese. The YiTrans system is built on large-scale pre-trained encoder-decoder models. More specifically, we first design a multi-stage pre-training strategy to build a multi-modality model with a large amount of labeled and unlabeled data. We then fine-tune the corresponding components of the model for the downstream speech translation tasks. Moreover, we make various efforts to improve performance, such as data filtering, data augmentation, speech segmentation, model ensemble, and so on. Experimental results show that our YiTrans system obtains a significant improvement than the strong baseline on three translation directions, and it achieves +5.2 BLEU improvements over last year's optimal end-to-end system on tst2021 English-German. Our final submissions rank first on English-German and English-Chinese end-to-end systems in terms of the automatic evaluation metric. We make our code and models publicly available.
+
+| Comments: | 11 pages                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2206.05777](https://arxiv.org/abs/2206.05777) [cs.CL]** |
+|           | (or **[arXiv:2206.05777v1](https://arxiv.org/abs/2206.05777v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-06-14-3">3. On the Learning of Non-Autoregressive Transformers
+</h2>
+
+Title: [On the Learning of Non-Autoregressive Transformers](https://arxiv.org/abs/2206.05975)
+
+Authors: [Fei Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+F), [Tianhua Tao](https://arxiv.org/search/cs?searchtype=author&query=Tao%2C+T), [Hao Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+H), [Lei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L), [Minlie Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+M)
+
+> Non-autoregressive Transformer (NAT) is a family of text generation models, which aims to reduce the decoding latency by predicting the whole sentences in parallel. However, such latency reduction sacrifices the ability to capture left-to-right dependencies, thereby making NAT learning very challenging. In this paper, we present theoretical and empirical analyses to reveal the challenges of NAT learning and propose a unified perspective to understand existing successes. First, we show that simply training NAT by maximizing the likelihood can lead to an approximation of marginal distributions but drops all dependencies between tokens, where the dropped information can be measured by the dataset's conditional total correlation. Second, we formalize many previous objectives in a unified framework and show that their success can be concluded as maximizing the likelihood on a proxy distribution, leading to a reduced information loss. Empirical studies show that our perspective can explain the phenomena in NAT learning and guide the design of new training methods.
+
+| Comments: | accepted at ICML2022                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2206.05975](https://arxiv.org/abs/2206.05975) [cs.CL]** |
+|           | (or **[arXiv:2206.05975v1](https://arxiv.org/abs/2206.05975v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-06-14-4">4. Language Models are General-Purpose Interfaces
+</h2>
+
+Title: [Language Models are General-Purpose Interfaces](https://arxiv.org/abs/2206.06336)
+
+Authors: [Yaru Hao](https://arxiv.org/search/cs?searchtype=author&query=Hao%2C+Y), [Haoyu Song](https://arxiv.org/search/cs?searchtype=author&query=Song%2C+H), [Li Dong](https://arxiv.org/search/cs?searchtype=author&query=Dong%2C+L), [Shaohan Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+S), [Zewen Chi](https://arxiv.org/search/cs?searchtype=author&query=Chi%2C+Z), [Wenhui Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+W), [Shuming Ma](https://arxiv.org/search/cs?searchtype=author&query=Ma%2C+S), [Furu Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+F)
+
+> Foundation models have received much attention due to their effectiveness across a broad range of downstream applications. Though there is a big convergence in terms of architecture, most pretrained models are typically still developed for specific tasks or modalities. In this work, we propose to use language models as a general-purpose interface to various foundation models. A collection of pretrained encoders perceive diverse modalities (such as vision, and language), and they dock with a language model that plays the role of a universal task layer. We propose a semi-causal language modeling objective to jointly pretrain the interface and the modular encoders. We subsume the advantages and capabilities from both causal and non-causal modeling, thereby combining the best of two worlds. Specifically, the proposed method not only inherits the capabilities of in-context learning and open-ended generation from causal language modeling, but also is conducive to finetuning because of the bidirectional encoders. More importantly, our approach seamlessly unlocks the combinations of the above capabilities, e.g., enabling in-context learning or instruction following with finetuned encoders. Experimental results across various language-only and vision-language benchmarks show that our model outperforms or is competitive with specialized models on finetuning, zero-shot generalization, and few-shot learning.
+
+| Comments: | 32 pages. The first three authors contribute equally         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2206.06336](https://arxiv.org/abs/2206.06336) [cs.CL]** |
+|           | (or **[arXiv:2206.06336v1](https://arxiv.org/abs/2206.06336v1) [cs.CL]** for this version) |
+
+
+
+
+
+
+# 2022-06-13
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-06-13-1">1. A Novel Chinese Dialect TTS Frontend with Non-Autoregressive Neural Machine Translation
+</h2>
+
+
+Title: [A Novel Chinese Dialect TTS Frontend with Non-Autoregressive Neural Machine Translation](https://arxiv.org/abs/2206.04922)
+
+Authors: [Wudi Bao](https://arxiv.org/search/cs?searchtype=author&query=Bao%2C+W), [Junhui Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+J), [Junjie Pan](https://arxiv.org/search/cs?searchtype=author&query=Pan%2C+J), [Xiang Yin](https://arxiv.org/search/cs?searchtype=author&query=Yin%2C+X)
+
+> Chinese dialect text-to-speech(TTS) system usually can only be utilized by native linguists, because the written form of Chinese dialects has different characters, idioms, grammar and usage from Mandarin, and even the local speaker cannot input a correct sentence. For Mandarin text inputs, Chinese dialect TTS can only generate partly-meaningful speech with relatively poor prosody and naturalness. To lower the bar of use and make it more practical in commercial, we propose a novel Chinese dialect TTS frontend with a translation module. It helps to convert Mandarin text into idiomatic expressions with correct orthography and grammar, so that the intelligibility and naturalness of the synthesized speech can be improved. A non-autoregressive neural machine translation model with a glancing sampling strategy is proposed for the translation task. It is the first known work to incorporate translation with TTS frontend. Our experiments on Cantonese approve that the proposed frontend can help Cantonese TTS system achieve a 0.27 improvement in MOS with Mandarin inputs.
+
+| Comments: | Submitted to INTERSPEECH 2022, 5 pages,5 figures             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2206.04922](https://arxiv.org/abs/2206.04922) [cs.CL]** |
+|           | (or **[arXiv:2206.04922v1](https://arxiv.org/abs/2206.04922v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2206.04922Focus to learn more |
+
+
+
+
+
+
+
+
+
+
+# 2022-06-10
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-06-10-1">1. Dict-NMT: Bilingual Dictionary based NMT for Extremely Low Resource Languages
+</h2>
+
+Title: [Dict-NMT: Bilingual Dictionary based NMT for Extremely Low Resource Languages](https://arxiv.org/abs/2206.04439)
+
+Authors: [Nalin Kumar](https://arxiv.org/search/cs?searchtype=author&query=Kumar%2C+N), [Deepak Kumar](https://arxiv.org/search/cs?searchtype=author&query=Kumar%2C+D), [Subhankar Mishra](https://arxiv.org/search/cs?searchtype=author&query=Mishra%2C+S)
+
+> Neural Machine Translation (NMT) models have been effective on large bilingual datasets. However, the existing methods and techniques show that the model's performance is highly dependent on the number of examples in training data. For many languages, having such an amount of corpora is a far-fetched dream. Taking inspiration from monolingual speakers exploring new languages using bilingual dictionaries, we investigate the applicability of bilingual dictionaries for languages with extremely low, or no bilingual corpus. In this paper, we explore methods using bilingual dictionaries with an NMT model to improve translations for extremely low resource languages. We extend this work to multilingual systems, exhibiting zero-shot properties. We present a detailed analysis of the effects of the quality of dictionaries, training dataset size, language family, etc., on the translation quality. Results on multiple low-resource test languages show a clear advantage of our bilingual dictionary-based method over the baselines.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2206.04439](https://arxiv.org/abs/2206.04439) [cs.CL]** |
+|           | (or **[arXiv:2206.04439v1](https://arxiv.org/abs/2206.04439v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2206.04439Focus to learn more |
+
+
+
+
+
+<h2 id="2022-06-10-2">2. Joint Encoder-Decoder Self-Supervised Pre-training for ASR
+</h2>
+
+Title: [Joint Encoder-Decoder Self-Supervised Pre-training for ASR](https://arxiv.org/abs/2206.04465)
+
+Authors: [Arunkumar A](https://arxiv.org/search/cs?searchtype=author&query=A%2C+A), [Umesh S](https://arxiv.org/search/cs?searchtype=author&query=S%2C+U)
+
+> Self-supervised learning (SSL) has shown tremendous success in various speech-related downstream tasks, including Automatic Speech Recognition (ASR). The output embeddings of the SSL model are treated as powerful short-time representations of the speech signal. However, in the ASR task, the main objective is to get the correct sequence of acoustic units, characters, or byte-pair encodings (BPEs). Usually, encoder-decoder architecture works exceptionally well for a sequence-to-sequence task like ASR. Therefore, in this paper, we propose a new paradigm that exploits the power of a decoder during self-supervised learning. We use Hidden Unit BERT (HuBERT) SSL framework to compute the conventional masked prediction loss for the encoder. In addition, we have introduced a decoder in the SSL framework and proposed a target preparation strategy for the decoder. Finally, we use a multitask SSL setup wherein we jointly optimize both the encoder and decoder losses. We hypothesize that the presence of a decoder in the SSL model helps it learn an acoustic unit-based language model, which might improve the performance of an ASR downstream task. We compare our proposed SSL model with HuBERT and show up to 25% relative improvement in performance on ASR by finetuning on various LibriSpeech subsets.
+
+| Comments: | Submitted to Interspeech 2022                                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2206.04465](https://arxiv.org/abs/2206.04465) [cs.CL]** |
+|           | (or **[arXiv:2206.04465v1](https://arxiv.org/abs/2206.04465v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2206.04465Focus to learn more |
+
+
+
+
+
+<h2 id="2022-06-10-3">3. Revisiting End-to-End Speech-to-Text Translation From Scratch
+</h2>
+
+Title: [Revisiting End-to-End Speech-to-Text Translation From Scratch](https://arxiv.org/abs/2206.04571)
+
+Authors: [Biao Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+B), [Barry Haddow](https://arxiv.org/search/cs?searchtype=author&query=Haddow%2C+B), [Rico Sennrich](https://arxiv.org/search/cs?searchtype=author&query=Sennrich%2C+R)
+
+> End-to-end (E2E) speech-to-text translation (ST) often depends on pretraining its encoder and/or decoder using source transcripts via speech recognition or text translation tasks, without which translation performance drops substantially. However, transcripts are not always available, and how significant such pretraining is for E2E ST has rarely been studied in the literature. In this paper, we revisit this question and explore the extent to which the quality of E2E ST trained on speech-translation pairs alone can be improved. We reexamine several techniques proven beneficial to ST previously, and offer a set of best practices that biases a Transformer-based E2E ST system toward training from scratch. Besides, we propose parameterized distance penalty to facilitate the modeling of locality in the self-attention model for speech. On four benchmarks covering 23 languages, our experiments show that, without using any transcripts or pretraining, the proposed system reaches and even outperforms previous studies adopting pretraining, although the gap remains in (extremely) low-resource settings. Finally, we discuss neural acoustic feature modeling, where a neural model is designed to extract acoustic features from raw speech signals directly, with the goal to simplify inductive biases and add freedom to the model in describing speech. For the first time, we demonstrate its feasibility and show encouraging results on ST tasks.
+
+| Comments: | ICML                                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG); Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2206.04571](https://arxiv.org/abs/2206.04571) [cs.CL]** |
+|           | (or **[arXiv:2206.04571v1](https://arxiv.org/abs/2206.04571v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2206.04571Focus to learn more |
+
+
 
 
 
