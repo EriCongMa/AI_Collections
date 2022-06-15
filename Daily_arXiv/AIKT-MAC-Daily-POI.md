@@ -2,15 +2,20 @@
 
 # Index
 
+- [2022-06-15](#2022-06-15)
+  - [1. LST: Ladder Side-Tuning for Parameter and Memory Efficient Transfer Learning](#2022-06-15-1)
+  
+  - [2. FreeTransfer-X: Safe and Label-Free Cross-Lingual Transfer from Off-the-Shelf Models](#2022-06-15-2)
+  
 - [2022-06-14](#2022-06-14)
   - [1. A Unified Continuous Learning Framework for Multi-modal Knowledge Discovery and Pre-training](#2022-06-14-1)
-  
+
   - [2. The YiTrans End-to-End Speech Translation System for IWSLT 2022 Offline Shared Task](#2022-06-14-2)
-  
+
   - [3. On the Learning of Non-Autoregressive Transformers](#2022-06-14-3)
-  
+
   - [4. Language Models are General-Purpose Interfaces](#2022-06-14-4)
-  
+
 - [2022-06-13](#2022-06-13)
   - [1. A Novel Chinese Dialect TTS Frontend with Non-Autoregressive Neural Machine Translation](#2022-06-13-1)
 
@@ -70,6 +75,52 @@
 - [2022-05-31](#2022-05-31)
   - [1. VLUE: A Multi-Task Benchmark for Evaluating Vision-Language Models](#2022-05-31-1)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2022-06-15
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-06-15-1">1. LST: Ladder Side-Tuning for Parameter and Memory Efficient Transfer Learning
+</h2>
+
+Title: [LST: Ladder Side-Tuning for Parameter and Memory Efficient Transfer Learning](https://arxiv.org/abs/2206.06522)
+
+Authors: [Yi-Lin Sung](https://arxiv.org/search/cs?searchtype=author&query=Sung%2C+Y), [Jaemin Cho](https://arxiv.org/search/cs?searchtype=author&query=Cho%2C+J), [Mohit Bansal](https://arxiv.org/search/cs?searchtype=author&query=Bansal%2C+M)
+
+> Fine-tuning large pre-trained models on downstream tasks has been adopted in a variety of domains recently. However, it is costly to update the entire parameter set of large pre-trained models. Although recently proposed parameter-efficient transfer learning (PETL) techniques allow updating a small subset of parameters (e.g. only using 2% of parameters) inside a pre-trained backbone network for a new task, they only reduce the training memory requirement by up to 30%. This is because the gradient computation for the trainable parameters still requires backpropagation through the large pre-trained backbone model. To address this, we propose Ladder Side-Tuning (LST), a new PETL technique that reduces training memory requirements by more substantial amounts. Unlike existing parameter-efficient methods that insert additional parameters inside backbone networks, we train a ladder side network, a small and separate network that takes intermediate activations as input via shortcut connections (ladders) from backbone networks and makes predictions. LST has significantly lower memory requirements than previous methods, because it does not require backpropagation through the backbone network, but instead only through the side network and ladder connections. We evaluate our method with various models (T5, CLIP-T5) on both NLP (GLUE) and vision-language (VQA, GQA, NLVR2, MSCOCO) tasks. LST saves 69% of the memory costs to fine-tune the whole network, while other methods only save 26% of that in similar parameter usages (hence, 2.7x more memory savings). Moreover, LST achieves higher accuracy than Adapter and LoRA in a low-memory regime. To further show the advantage of this better memory efficiency, we also apply LST to larger T5 models (T5-large, T5-3B), attaining better GLUE performance than full fine-tuning and other PETL methods. The exact same trend also holds in our experiments on VL tasks.
+
+| Comments: | 13 pages; our code is available at: [this https URL](https://github.com/ylsung/Ladder-Side-Tuning) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Computer Vision and Pattern Recognition (cs.CV) |
+| Cite as:  | **[arXiv:2206.06522](https://arxiv.org/abs/2206.06522) [cs.CL]** |
+|           | (or **[arXiv:2206.06522v1](https://arxiv.org/abs/2206.06522v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2206.06522Focus to learn more |
+
+
+
+
+
+<h2 id="2022-06-15-2">2. FreeTransfer-X: Safe and Label-Free Cross-Lingual Transfer from Off-the-Shelf Models
+</h2>
+
+Title: [FreeTransfer-X: Safe and Label-Free Cross-Lingual Transfer from Off-the-Shelf Models](https://arxiv.org/abs/2206.06586)
+
+Authors: [Yinpeng Guo](https://arxiv.org/search/cs?searchtype=author&query=Guo%2C+Y), [Liangyou Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L), [Xin Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+X), [Qun Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Q)
+
+> Cross-lingual transfer (CLT) is of various applications. However, labeled cross-lingual corpus is expensive or even inaccessible, especially in the fields where labels are private, such as diagnostic results of symptoms in medicine and user profiles in business. Nevertheless, there are off-the-shelf models in these sensitive fields. Instead of pursuing the original labels, a workaround for CLT is to transfer knowledge from the off-the-shelf models without labels. To this end, we define a novel CLT problem named FreeTransfer-X that aims to achieve knowledge transfer from the off-the-shelf models in rich-resource languages. To address the problem, we propose a 2-step knowledge distillation (KD, Hinton et al., 2015) framework based on multilingual pre-trained language models (mPLM). The significant improvement over strong neural machine translation (NMT) baselines demonstrates the effectiveness of the proposed method. In addition to reducing annotation cost and protecting private labels, the proposed method is compatible with different networks and easy to be deployed. Finally, a range of analyses indicate the great potential of the proposed method.
+
+| Comments: | to appear in the findings of NAACL 2022                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2206.06586](https://arxiv.org/abs/2206.06586) [cs.CL]** |
+|           | (or **[arXiv:2206.06586v1](https://arxiv.org/abs/2206.06586v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2206.06586Focus to learn more |
+
+
 
 
 
