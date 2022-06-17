@@ -2,23 +2,144 @@
 
 # Index
 
+- [2022-06-17](#2022-06-17)
+  - [1. How Adults Understand What Young Children Say](#2022-06-17-1)
+
+  - [2. Alexa Teacher Model: Pretraining and Distilling Multi-Billion-Parameter Encoders for Natural Language Understanding Systems](#2022-06-17-2)
+  
+  - [3. TransDrift: Modeling Word-Embedding Drift using Transformer](#2022-06-17-3)
+  
+  - [4. Self-Generated In-Context Learning: Leveraging Auto-regressive Language Models as a Demonstration Generator](#2022-06-17-4)
+  
+  - [5. Deep Learning Architecture for Automatic Essay Scoring](#2022-06-17-5)
+  
 - [2022-06-16](#2022-06-16)
   - [1. Coarse-to-Fine Vision-Language Pre-training with Fusion in the Backbone](#2022-06-16-1)
 
   - [2. A Unified Sequence Interface for Vision Tasks](#2022-06-16-2)
-  
+
   - [3. Prefix Language Models are Unified Modal Learners](#2022-06-16-3)
-  
+
   - [4. Human Heuristics for AI-Generated Language Are Flawed](#2022-06-16-4)
-  
+
   - [5. MPI: Evaluating and Inducing Personality in Pre-trained Language Models](#2022-06-16-5)
-  
+
   - [6. Emergent Abilities of Large Language Models](#2022-06-16-6)
-  
+
 - [2022-06-15](#2022-06-15)
   - [1. LST: Ladder Side-Tuning for Parameter and Memory Efficient Transfer Learning](#2022-06-15-1)
 
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2022-06-17
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-06-17-1">1. How Adults Understand What Young Children Say
+</h2>
+
+Title: [How Adults Understand What Young Children Say](https://arxiv.org/abs/2206.07807)
+
+Authors: [Stephan C. Meylan](https://arxiv.org/search/cs?searchtype=author&query=Meylan%2C+S+C), [Ruthe Foushee](https://arxiv.org/search/cs?searchtype=author&query=Foushee%2C+R), [Nicole H. Wong](https://arxiv.org/search/cs?searchtype=author&query=Wong%2C+N+H), [Elika Bergelson](https://arxiv.org/search/cs?searchtype=author&query=Bergelson%2C+E), [Roger P. Levy](https://arxiv.org/search/cs?searchtype=author&query=Levy%2C+R+P)
+
+> Children's early speech often bears little resemblance to adult speech in form or content, and yet caregivers often find meaning in young children's utterances. Precisely how caregivers are able to do this remains poorly understood. We propose that successful early communication (an essential building block of language development) relies not just on children's growing linguistic knowledge, but also on adults' sophisticated inferences. These inferences, we further propose, are optimized for fine-grained details of how children speak. We evaluate these ideas using a set of candidate computational models of spoken word recognition based on deep learning and Bayesian inference, which instantiate competing hypotheses regarding the information sources used by adults to understand children. We find that the best-performing models (evaluated on datasets of adult interpretations of child speech) are those that have strong prior expectations about what children are likely to want to communicate, rather than the actual phonetic contents of what children say. We further find that adults' behavior is best characterized as well-tuned to specific children: the more closely a word recognition model is tuned to the particulars of an individual child's actual linguistic behavior, the better it predicts adults' inferences about what the child has said. These results offer a comprehensive investigation into the role of caregivers as child-directed listeners, with broader consequences for theories of language acquisition.
+
+| Comments: | 19 pages, 6 figures, 2 tables                                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2206.07807](https://arxiv.org/abs/2206.07807) [cs.CL]** |
+|           | (or **[arXiv:2206.07807v1](https://arxiv.org/abs/2206.07807v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2206.07807Focus to learn more |
+
+
+
+
+
+<h2 id="2022-06-17-2">2. Alexa Teacher Model: Pretraining and Distilling Multi-Billion-Parameter Encoders for Natural Language Understanding Systems
+</h2>
+
+Title: [Alexa Teacher Model: Pretraining and Distilling Multi-Billion-Parameter Encoders for Natural Language Understanding Systems](https://arxiv.org/abs/2206.07808)
+
+Authors: [Jack FitzGerald](https://arxiv.org/search/cs?searchtype=author&query=FitzGerald%2C+J), [Shankar Ananthakrishnan](https://arxiv.org/search/cs?searchtype=author&query=Ananthakrishnan%2C+S), [Konstantine Arkoudas](https://arxiv.org/search/cs?searchtype=author&query=Arkoudas%2C+K), [Davide Bernardi](https://arxiv.org/search/cs?searchtype=author&query=Bernardi%2C+D), [Abhishek Bhagia](https://arxiv.org/search/cs?searchtype=author&query=Bhagia%2C+A), [Claudio Delli Bovi](https://arxiv.org/search/cs?searchtype=author&query=Bovi%2C+C+D), [Jin Cao](https://arxiv.org/search/cs?searchtype=author&query=Cao%2C+J), [Rakesh Chada](https://arxiv.org/search/cs?searchtype=author&query=Chada%2C+R), [Amit Chauhan](https://arxiv.org/search/cs?searchtype=author&query=Chauhan%2C+A), [Luoxin Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+L), [Anurag Dwarakanath](https://arxiv.org/search/cs?searchtype=author&query=Dwarakanath%2C+A), [Satyam Dwivedi](https://arxiv.org/search/cs?searchtype=author&query=Dwivedi%2C+S), [Turan Gojayev](https://arxiv.org/search/cs?searchtype=author&query=Gojayev%2C+T), [Karthik Gopalakrishnan](https://arxiv.org/search/cs?searchtype=author&query=Gopalakrishnan%2C+K), [Thomas Gueudre](https://arxiv.org/search/cs?searchtype=author&query=Gueudre%2C+T), [Dilek Hakkani-Tur](https://arxiv.org/search/cs?searchtype=author&query=Hakkani-Tur%2C+D), [Wael Hamza](https://arxiv.org/search/cs?searchtype=author&query=Hamza%2C+W), [Jonathan Hueser](https://arxiv.org/search/cs?searchtype=author&query=Hueser%2C+J), [Kevin Martin Jose](https://arxiv.org/search/cs?searchtype=author&query=Jose%2C+K+M), [Haidar Khan](https://arxiv.org/search/cs?searchtype=author&query=Khan%2C+H), [Beiye Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+B), [Jianhua Lu](https://arxiv.org/search/cs?searchtype=author&query=Lu%2C+J), [Alessandro Manzotti](https://arxiv.org/search/cs?searchtype=author&query=Manzotti%2C+A), [Pradeep Natarajan](https://arxiv.org/search/cs?searchtype=author&query=Natarajan%2C+P), [Karolina Owczarzak](https://arxiv.org/search/cs?searchtype=author&query=Owczarzak%2C+K), [Gokmen Oz](https://arxiv.org/search/cs?searchtype=author&query=Oz%2C+G), [Enrico Palumbo](https://arxiv.org/search/cs?searchtype=author&query=Palumbo%2C+E), [Charith Peris](https://arxiv.org/search/cs?searchtype=author&query=Peris%2C+C), [Chandana Satya Prakash](https://arxiv.org/search/cs?searchtype=author&query=Prakash%2C+C+S), [Stephen Rawls](https://arxiv.org/search/cs?searchtype=author&query=Rawls%2C+S), [Andy Rosenbaum](https://arxiv.org/search/cs?searchtype=author&query=Rosenbaum%2C+A), [Anjali Shenoy](https://arxiv.org/search/cs?searchtype=author&query=Shenoy%2C+A), [Saleh Soltan](https://arxiv.org/search/cs?searchtype=author&query=Soltan%2C+S), [Mukund Harakere Sridhar](https://arxiv.org/search/cs?searchtype=author&query=Sridhar%2C+M+H), [Liz Tan](https://arxiv.org/search/cs?searchtype=author&query=Tan%2C+L), [Fabian Triefenbach](https://arxiv.org/search/cs?searchtype=author&query=Triefenbach%2C+F), [Pan Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+P), [Haiyang Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+H), [Shuai Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng%2C+S), [Gokhan Tur](https://arxiv.org/search/cs?searchtype=author&query=Tur%2C+G), [Prem Natarajan](https://arxiv.org/search/cs?searchtype=author&query=Natarajan%2C+P)
+
+> We present results from a large-scale experiment on pretraining encoders with non-embedding parameter counts ranging from 700M to 9.3B, their subsequent distillation into smaller models ranging from 17M-170M parameters, and their application to the Natural Language Understanding (NLU) component of a virtual assistant system. Though we train using 70% spoken-form data, our teacher models perform comparably to XLM-R and mT5 when evaluated on the written-form Cross-lingual Natural Language Inference (XNLI) corpus. We perform a second stage of pretraining on our teacher models using in-domain data from our system, improving error rates by 3.86% relative for intent classification and 7.01% relative for slot filling. We find that even a 170M-parameter model distilled from our Stage 2 teacher model has 2.88% better intent classification and 7.69% better slot filling error rates when compared to the 2.3B-parameter teacher trained only on public data (Stage 1), emphasizing the importance of in-domain data for pretraining. When evaluated offline using labeled NLU data, our 17M-parameter Stage 2 distilled model outperforms both XLM-R Base (85M params) and DistillBERT (42M params) by 4.23% to 6.14%, respectively. Finally, we present results from a full virtual assistant experimentation platform, where we find that models trained using our pretraining and distillation pipeline outperform models distilled from 85M-parameter teachers by 3.74%-4.91% on an automatic measurement of full-system user dissatisfaction.
+
+| Comments:          | KDD 2022                                                     |
+| ------------------ | ------------------------------------------------------------ |
+| Subjects:          | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| ACM classes:       | I.2.7                                                        |
+| Cite as:           | **[arXiv:2206.07808](https://arxiv.org/abs/2206.07808) [cs.CL]** |
+|                    | (or **[arXiv:2206.07808v1](https://arxiv.org/abs/2206.07808v1) [cs.CL]** for this version) |
+|                    | https://doi.org/10.48550/arXiv.2206.07808Focus to learn more |
+| Journal reference: | Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD '22), August 14-18, 2022, Washington, DC, USA |
+| Related DOI:       | https://doi.org/10.1145/3534678.3539173Focus to learn more   |
+
+
+
+
+
+<h2 id="2022-06-17-3">3. TransDrift: Modeling Word-Embedding Drift using Transformer
+</h2>
+
+Title: [TransDrift: Modeling Word-Embedding Drift using Transformer](https://arxiv.org/abs/2206.08081)
+
+Authors: [Nishtha Madaan](https://arxiv.org/search/cs?searchtype=author&query=Madaan%2C+N), [Prateek Chaudhury](https://arxiv.org/search/cs?searchtype=author&query=Chaudhury%2C+P), [Nishant Kumar](https://arxiv.org/search/cs?searchtype=author&query=Kumar%2C+N), [Srikanta Bedathur](https://arxiv.org/search/cs?searchtype=author&query=Bedathur%2C+S)
+
+> In modern NLP applications, word embeddings are a crucial backbone that can be readily shared across a number of tasks. However as the text distributions change and word semantics evolve over time, the downstream applications using the embeddings can suffer if the word representations do not conform to the data drift. Thus, maintaining word embeddings to be consistent with the underlying data distribution is a key problem. In this work, we tackle this problem and propose TransDrift, a transformer-based prediction model for word embeddings. Leveraging the flexibility of transformer, our model accurately learns the dynamics of the embedding drift and predicts the future embedding. In experiments, we compare with existing methods and show that our model makes significantly more accurate predictions of the word embedding than the baselines. Crucially, by applying the predicted embeddings as a backbone for downstream classification tasks, we show that our embeddings lead to superior performance compared to the previous methods.
+
+| Comments: | 10 pages                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2206.08081](https://arxiv.org/abs/2206.08081) [cs.CL]** |
+|           | (or **[arXiv:2206.08081v1](https://arxiv.org/abs/2206.08081v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2206.08081Focus to learn more |
+
+
+
+
+
+<h2 id="2022-06-17-4">4. Self-Generated In-Context Learning: Leveraging Auto-regressive Language Models as a Demonstration Generator
+</h2>
+
+Title: [Self-Generated In-Context Learning: Leveraging Auto-regressive Language Models as a Demonstration Generator](https://arxiv.org/abs/2206.08082)
+
+Authors: [Hyuhng Joon Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%2C+H+J), [Hyunsoo Cho](https://arxiv.org/search/cs?searchtype=author&query=Cho%2C+H), [Junyeob Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%2C+J), [Taeuk Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%2C+T), [Kang Min Yoo](https://arxiv.org/search/cs?searchtype=author&query=Yoo%2C+K+M), [Sang-goo Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+S)
+
+> Large-scale pre-trained language models (PLMs) are well-known for being capable of solving a task simply by conditioning a few input-label pairs dubbed demonstrations on a prompt without being explicitly tuned for the desired downstream task. Such a process (i.e., in-context learning), however, naturally leads to high reliance on the demonstrations which are usually selected from external datasets. In this paper, we propose self-generated in-context learning (SG-ICL), which generates demonstrations for in-context learning from PLM itself to minimize the reliance on the external demonstration. We conduct experiments on four different text classification tasks and show SG-ICL significantly outperforms zero-shot learning and is generally worth approximately 0.6 gold training samples. Moreover, our generated demonstrations show more consistent performance with low variance compared to randomly selected demonstrations from the training dataset.
+
+| Comments: | NAACL 2022 Workshop on Large-scale Pre-trained Language Models |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2206.08082](https://arxiv.org/abs/2206.08082) [cs.CL]** |
+|           | (or **[arXiv:2206.08082v1](https://arxiv.org/abs/2206.08082v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2206.08082Focus to learn more |
+
+
+
+
+
+<h2 id="2022-06-17-5">5. Deep Learning Architecture for Automatic Essay Scoring
+</h2>
+
+Title: [Deep Learning Architecture for Automatic Essay Scoring](https://arxiv.org/abs/2206.08232)
+
+Authors: [Tsegaye Misikir Tashu](https://arxiv.org/search/cs?searchtype=author&query=Tashu%2C+T+M), [Chandresh Kumar Maurya](https://arxiv.org/search/cs?searchtype=author&query=Maurya%2C+C+K), [Tomas Horvath](https://arxiv.org/search/cs?searchtype=author&query=Horvath%2C+T)
+
+> Automatic evaluation of essay (AES) and also called automatic essay scoring has become a severe problem due to the rise of online learning and evaluation platforms such as Coursera, Udemy, Khan academy, and so on. Researchers have recently proposed many techniques for automatic evaluation. However, many of these techniques use hand-crafted features and thus are limited from the feature representation point of view. Deep learning has emerged as a new paradigm in machine learning which can exploit the vast data and identify the features useful for essay evaluation. To this end, we propose a novel architecture based on recurrent networks (RNN) and convolution neural network (CNN). In the proposed architecture, the multichannel convolutional layer learns and captures the contextual features of the word n-gram from the word embedding vectors and the essential semantic concepts to form the feature vector at essay level using max-pooling operation. A variant of RNN called Bi-gated recurrent unit (BGRU) is used to access both previous and subsequent contextual representations. The experiment was carried out on eight data sets available on Kaggle for the task of AES. The experimental results show that our proposed system achieves significantly higher grading accuracy than other deep learning-based AES systems and also other state-of-the-art AES systems.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2206.08232](https://arxiv.org/abs/2206.08232) [cs.CL]** |
+|           | (or **[arXiv:2206.08232v1](https://arxiv.org/abs/2206.08232v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2206.08232Focus to learn more |
+
+
+
+
 
 
 
