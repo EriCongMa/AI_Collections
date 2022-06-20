@@ -2,17 +2,26 @@
 
 # Index
 
+- [2022-06-20](#2022-06-20)
+  - [1. VLMbench: A Compositional Benchmark for Vision-and-Language Manipulation](#2022-06-20-1)
+
+  - [2. Bridge-Tower: Building Bridges Between Encoders in Vision-Language Representation Learning](#2022-06-20-2)
+  
+  - [3. Automatic Correction of Human Translations](#2022-06-20-3)
+  
+  - [4. Language with Vision: a Study on Grounded Word and Sentence Embeddings](#2022-06-20-4)
+  
 - [2022-06-17](#2022-06-17)
   - [1. How Adults Understand What Young Children Say](#2022-06-17-1)
 
   - [2. Alexa Teacher Model: Pretraining and Distilling Multi-Billion-Parameter Encoders for Natural Language Understanding Systems](#2022-06-17-2)
-  
+
   - [3. TransDrift: Modeling Word-Embedding Drift using Transformer](#2022-06-17-3)
-  
+
   - [4. Self-Generated In-Context Learning: Leveraging Auto-regressive Language Models as a Demonstration Generator](#2022-06-17-4)
-  
+
   - [5. Deep Learning Architecture for Automatic Essay Scoring](#2022-06-17-5)
-  
+
 - [2022-06-16](#2022-06-16)
   - [1. Coarse-to-Fine Vision-Language Pre-training with Fusion in the Backbone](#2022-06-16-1)
 
@@ -30,6 +39,90 @@
   - [1. LST: Ladder Side-Tuning for Parameter and Memory Efficient Transfer Learning](#2022-06-15-1)
 
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2022-06-20
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-06-20-1">1. VLMbench: A Compositional Benchmark for Vision-and-Language Manipulation
+</h2>
+
+Title: [VLMbench: A Compositional Benchmark for Vision-and-Language Manipulation](https://arxiv.org/abs/2206.08522)
+
+Authors: [Kaizhi Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng%2C+K), [Xiaotong Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+X), [Odest Chadwicke Jenkins](https://arxiv.org/search/cs?searchtype=author&query=Jenkins%2C+O+C), [Xin Eric Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+X+E)
+
+> Benefiting from language flexibility and compositionality, humans naturally intend to use language to command an embodied agent for complex tasks such as navigation and object manipulation. In this work, we aim to fill the blank of the last mile of embodied agents -- object manipulation by following human guidance, e.g., "move the red mug next to the box while keeping it upright." To this end, we introduce an Automatic Manipulation Solver (AMSolver) simulator and build a Vision-and-Language Manipulation benchmark (VLMbench) based on it, containing various language instructions on categorized robotic manipulation tasks. Specifically, modular rule-based task templates are created to automatically generate robot demonstrations with language instructions, consisting of diverse object shapes and appearances, action types, and motion constraints. We also develop a keypoint-based model 6D-CLIPort to deal with multi-view observations and language input and output a sequence of 6 degrees of freedom (DoF) actions. We hope the new simulator and benchmark will facilitate future research on language-guided robotic manipulation.
+
+| Subjects: | **Robotics (cs.RO)**; Computation and Language (cs.CL); Computer Vision and Pattern Recognition (cs.CV) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2206.08522](https://arxiv.org/abs/2206.08522) [cs.RO]** |
+|           | (or **[arXiv:2206.08522v1](https://arxiv.org/abs/2206.08522v1) [cs.RO]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2206.08522Focus to learn more |
+
+
+
+
+
+<h2 id="2022-06-20-2">2. Bridge-Tower: Building Bridges Between Encoders in Vision-Language Representation Learning
+</h2>
+
+Title: [Bridge-Tower: Building Bridges Between Encoders in Vision-Language Representation Learning](https://arxiv.org/abs/2206.08657)
+
+Authors: [Xiao Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+X), [Chenfei Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+C), [Shachar Rosenman](https://arxiv.org/search/cs?searchtype=author&query=Rosenman%2C+S), [Vasudev Lal](https://arxiv.org/search/cs?searchtype=author&query=Lal%2C+V), [Nan Duan](https://arxiv.org/search/cs?searchtype=author&query=Duan%2C+N)
+
+> Vision-Language (VL) models with the Two-Tower architecture have dominated visual-language representation learning in recent years. Current VL models either use lightweight uni-modal encoders and learn to extract, align and fuse both modalities simultaneously in a cross-modal encoder, or feed the last-layer uni-modal features directly into the top cross-modal encoder, ignoring the semantic information at the different levels in the deep uni-modal encoders. Both approaches possibly restrict vision-language representation learning and limit model performance. In this paper, we introduce multiple bridge layers that build a connection between the top layers of uni-modal encoders and each layer of the cross-modal encoder. This enables comprehensive bottom-up interactions between visual and textual representations at different semantic levels, resulting in more effective cross-modal alignment and fusion. Our proposed Bridge-Tower, pre-trained with only 4M images, achieves state-of-the-art performance on various downstream vision-language tasks. On the VQAv2 test-std set, Bridge-Tower achieves an accuracy of 78.73%, outperforming the previous state-of-the-art METER model by 1.09% with the same pre-training data and almost no additional parameters and computational cost. Notably, when further scaling the model, Bridge-Tower achieves an accuracy of 81.15%, surpassing models that are pre-trained on orders-of-magnitude larger datasets. Code is available at [this https URL](https://github.com/microsoft/BridgeTower).
+
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2206.08657](https://arxiv.org/abs/2206.08657) [cs.CV]** |
+|           | (or **[arXiv:2206.08657v1](https://arxiv.org/abs/2206.08657v1) [cs.CV]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2206.08657Focus to learn more |
+
+
+
+
+
+<h2 id="2022-06-20-3">3. Automatic Correction of Human Translations
+</h2>
+
+Title: [Automatic Correction of Human Translations](https://arxiv.org/abs/2206.08593)
+
+Authors: [Jessy Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+J), [Geza Kovacs](https://arxiv.org/search/cs?searchtype=author&query=Kovacs%2C+G), [Aditya Shastry](https://arxiv.org/search/cs?searchtype=author&query=Shastry%2C+A), [Joern Wuebker](https://arxiv.org/search/cs?searchtype=author&query=Wuebker%2C+J), [John DeNero](https://arxiv.org/search/cs?searchtype=author&query=DeNero%2C+J)
+
+> We introduce translation error correction (TEC), the task of automatically correcting human-generated translations. Imperfections in machine translations (MT) have long motivated systems for improving translations post-hoc with automatic post-editing. In contrast, little attention has been devoted to the problem of automatically correcting human translations, despite the intuition that humans make distinct errors that machines would be well-suited to assist with, from typos to inconsistencies in translation conventions. To investigate this, we build and release the Aced corpus with three TEC datasets. We show that human errors in TEC exhibit a more diverse range of errors and far fewer translation fluency errors than the MT errors in automatic post-editing datasets, suggesting the need for dedicated TEC models that are specialized to correct human errors. We show that pre-training instead on synthetic errors based on human errors improves TEC F-score by as much as 5.1 points. We conducted a human-in-the-loop user study with nine professional translation editors and found that the assistance of our TEC system led them to produce significantly higher quality revised translations.
+
+| Comments: | NAACL 2022. Dataset available at: [this https URL](https://github.com/lilt/tec) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2206.08593](https://arxiv.org/abs/2206.08593) [cs.CL]** |
+|           | (or **[arXiv:2206.08593v1](https://arxiv.org/abs/2206.08593v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2206.08593Focus to learn more |
+
+
+
+
+
+<h2 id="2022-06-20-4">4. Language with Vision: a Study on Grounded Word and Sentence Embeddings
+</h2>
+
+Title: [Language with Vision: a Study on Grounded Word and Sentence Embeddings](https://arxiv.org/abs/2206.08823)
+
+Authors: [Hassan Shahmohammadi](https://arxiv.org/search/cs?searchtype=author&query=Shahmohammadi%2C+H), [Maria Heitmeier](https://arxiv.org/search/cs?searchtype=author&query=Heitmeier%2C+M), [Elnaz Shafaei-Bajestan](https://arxiv.org/search/cs?searchtype=author&query=Shafaei-Bajestan%2C+E), [Hendrik P. A. Lensch](https://arxiv.org/search/cs?searchtype=author&query=Lensch%2C+H+P+A), [Harald Baayen](https://arxiv.org/search/cs?searchtype=author&query=Baayen%2C+H)
+
+> Language grounding to vision is an active field of research aiming to enrich text-based representations of word meanings by leveraging perceptual knowledge from vision. Despite many attempts at language grounding, it is still unclear how to effectively inject visual knowledge into the word embeddings of a language in such a way that a proper balance of textual and visual knowledge is maintained. Some common concerns are the following. Is visual grounding beneficial for abstract words or is its contribution only limited to concrete words? What is the optimal way of bridging the gap between text and vision? How much do we gain by visually grounding textual embeddings? The present study addresses these questions by proposing a simple yet very effective grounding approach for pre-trained word embeddings. Our model aligns textual embeddings with vision while largely preserving the distributional statistics that characterize word use in text corpora. By applying a learned alignment, we are able to generate visually grounded embeddings for unseen words, including abstract words. A series of evaluations on word similarity benchmarks shows that visual grounding is beneficial not only for concrete words, but also for abstract words. We also show that our method for visual grounding offers advantages for contextualized embeddings, but only when these are trained on corpora of relatively modest size. Code and grounded embeddings for English are available at [this https URL](https://github.com/Hazel1994/Visually_Grounded_Word_Embeddings_2).
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2206.08823](https://arxiv.org/abs/2206.08823) [cs.CL]** |
+|           | (or **[arXiv:2206.08823v1](https://arxiv.org/abs/2206.08823v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2206.08823Focus to learn more |
+
+
+
 
 
 
@@ -288,5 +381,4 @@ Authors: [Yi-Lin Sung](https://arxiv.org/search/cs?searchtype=author&query=Sung%
 | Cite as:  | **[arXiv:2206.06522](https://arxiv.org/abs/2206.06522) [cs.CL]** |
 |           | (or **[arXiv:2206.06522v1](https://arxiv.org/abs/2206.06522v1) [cs.CL]** for this version) |
 |           | https://doi.org/10.48550/arXiv.2206.06522Focus to learn more |
-
 
