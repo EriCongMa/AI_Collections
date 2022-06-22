@@ -2,15 +2,28 @@
 
 # Index
 
+- [2022-06-22](#2022-06-22)
+  - [1. BN-HTRd: A Benchmark Dataset for Document Level Offline Bangla Handwritten Text Recognition (HTR) and Line Segmentation](#2022-06-22-1)
+
+  - [2. Towards Adversarial Attack on Vision-Language Pre-training Models](#2022-06-22-2)
+  
+  - [3. CLiMB: A Continual Learning Benchmark for Vision-and-Language Tasks](#2022-06-22-3)
+  
+  - [4. Learning Multiscale Transformer Models for Sequence Generation](#2022-06-22-4)
+  
+  - [5. LayoutXLM vs. GNN: An Empirical Evaluation of Relation Extraction for Documents](#2022-06-22-5)
+  
+  - [6. Plug and Play Counterfactual Text Generation for Model Robustness](#2022-06-22-6)
+  
 - [2022-06-20](#2022-06-20)
   - [1. VLMbench: A Compositional Benchmark for Vision-and-Language Manipulation](#2022-06-20-1)
 
   - [2. Bridge-Tower: Building Bridges Between Encoders in Vision-Language Representation Learning](#2022-06-20-2)
-  
+
   - [3. Automatic Correction of Human Translations](#2022-06-20-3)
-  
+
   - [4. Language with Vision: a Study on Grounded Word and Sentence Embeddings](#2022-06-20-4)
-  
+
 - [2022-06-17](#2022-06-17)
   - [1. How Adults Understand What Young Children Say](#2022-06-17-1)
 
@@ -39,6 +52,123 @@
   - [1. LST: Ladder Side-Tuning for Parameter and Memory Efficient Transfer Learning](#2022-06-15-1)
 
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2022-06-22
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-06-22-1">1. BN-HTRd: A Benchmark Dataset for Document Level Offline Bangla Handwritten Text Recognition (HTR) and Line Segmentation
+</h2>
+
+Title: [BN-HTRd: A Benchmark Dataset for Document Level Offline Bangla Handwritten Text Recognition (HTR) and Line Segmentation](https://arxiv.org/abs/2206.08977)
+
+Authors: [Md. Ataur Rahman](https://arxiv.org/search/cs?searchtype=author&query=Rahman%2C+M+A), [Nazifa Tabassum](https://arxiv.org/search/cs?searchtype=author&query=Tabassum%2C+N), [Mitu Paul](https://arxiv.org/search/cs?searchtype=author&query=Paul%2C+M), [Riya Pal](https://arxiv.org/search/cs?searchtype=author&query=Pal%2C+R), [Mohammad Khairul Islam](https://arxiv.org/search/cs?searchtype=author&query=Islam%2C+M+K)
+
+> We introduce a new dataset for offline Handwritten Text Recognition (HTR) from images of Bangla scripts comprising words, lines, and document-level annotations. The BN-HTRd dataset is based on the BBC Bangla News corpus, meant to act as ground truth texts. These texts were subsequently used to generate the annotations that were filled out by people with their handwriting. Our dataset includes 788 images of handwritten pages produced by approximately 150 different writers. It can be adopted as a basis for various handwriting classification tasks such as end-to-end document recognition, word-spotting, word or line segmentation, and so on. We also propose a scheme to segment Bangla handwritten document images into corresponding lines in an unsupervised manner. Our line segmentation approach takes care of the variability involved in different writing styles, accurately segmenting complex handwritten text lines of curvilinear nature. Along with a bunch of pre-processing and morphological operations, both Hough line and circle transforms were employed to distinguish different linear components. In order to arrange those components into their corresponding lines, we followed an unsupervised clustering approach. The average success rate of our segmentation technique is 81.57% in terms of FM metrics (similar to F-measure) with a mean Average Precision (mAP) of 0.547.
+
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2206.08977](https://arxiv.org/abs/2206.08977) [cs.CV]** |
+|           | (or **[arXiv:2206.08977v1](https://arxiv.org/abs/2206.08977v1) [cs.CV]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2206.08977Focus to learn more |
+
+
+
+
+
+<h2 id="2022-06-22-2">2. Towards Adversarial Attack on Vision-Language Pre-training Models
+</h2>
+
+Title: [Towards Adversarial Attack on Vision-Language Pre-training Models](https://arxiv.org/abs/2206.09391)
+
+Authors: [Jiaming Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+J), [Qi Yi](https://arxiv.org/search/cs?searchtype=author&query=Yi%2C+Q), [Jitao Sang](https://arxiv.org/search/cs?searchtype=author&query=Sang%2C+J)
+
+> While vision-language pre-training model (VLP) has shown revolutionary improvements on various vision-language (V+L) tasks, the studies regarding its adversarial robustness remain largely unexplored. This paper studied the adversarial attack on popular VLP models and V+L tasks. First, we analyzed the performance of adversarial attacks under different settings. By examining the influence of different perturbed objects and attack targets, we concluded some key observations as guidance on both designing strong multimodal adversarial attack and constructing robust VLP models. Second, we proposed a novel multimodal attack method on the VLP models called Collaborative Multimodal Adversarial Attack (Co-Attack), which collectively carries out the attacks on the image modality and the text modality. Experimental results demonstrated that the proposed method achieves improved attack performances on different V+L downstream tasks and VLP models. The analysis observations and novel attack method hopefully provide new understanding into the adversarial robustness of VLP models, so as to contribute their safe and reliable deployment in more real-world scenarios.
+
+| Subjects: | **Machine Learning (cs.LG)**; Computation and Language (cs.CL); Computer Vision and Pattern Recognition (cs.CV); Multimedia (cs.MM) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2206.09391](https://arxiv.org/abs/2206.09391) [cs.LG]** |
+|           | (or **[arXiv:2206.09391v1](https://arxiv.org/abs/2206.09391v1) [cs.LG]** for this version) |
+
+
+
+
+
+<h2 id="2022-06-22-3">3. CLiMB: A Continual Learning Benchmark for Vision-and-Language Tasks
+</h2>
+
+Title: [CLiMB: A Continual Learning Benchmark for Vision-and-Language Tasks](https://arxiv.org/abs/2206.09059)
+
+Authors: [Tejas Srinivasan](https://arxiv.org/search/cs?searchtype=author&query=Srinivasan%2C+T), [Ting-Yun Chang](https://arxiv.org/search/cs?searchtype=author&query=Chang%2C+T), [Leticia Leonor Pinto Alva](https://arxiv.org/search/cs?searchtype=author&query=Alva%2C+L+L+P), [Georgios Chochlakis](https://arxiv.org/search/cs?searchtype=author&query=Chochlakis%2C+G), [Mohammad Rostami](https://arxiv.org/search/cs?searchtype=author&query=Rostami%2C+M), [Jesse Thomason](https://arxiv.org/search/cs?searchtype=author&query=Thomason%2C+J)
+
+> Current state-of-the-art vision-and-language models are evaluated on tasks either individually or in a multi-task setting, overlooking the challenges of continually learning (CL) tasks as they arrive. Existing CL benchmarks have facilitated research on task adaptation and mitigating "catastrophic forgetting", but are limited to vision-only and language-only tasks. We present CLiMB, a benchmark to study the challenge of learning multimodal tasks in a CL setting, and to systematically evaluate how upstream continual learning can rapidly generalize to new multimodal and unimodal tasks. CLiMB includes implementations of several CL algorithms and a modified Vision-Language Transformer (ViLT) model that can be deployed on both multimodal and unimodal tasks. We find that common CL methods can help mitigate forgetting during multimodal task learning, but do not enable cross-task knowledge transfer. We envision that CLiMB will facilitate research on a new class of CL algorithms for this challenging multimodal setting.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Computer Vision and Pattern Recognition (cs.CV); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2206.09059](https://arxiv.org/abs/2206.09059) [cs.CL]** |
+|           | (or **[arXiv:2206.09059v1](https://arxiv.org/abs/2206.09059v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2206.09059Focus to learn more |
+
+
+
+
+
+<h2 id="2022-06-22-4">4. Learning Multiscale Transformer Models for Sequence Generation
+</h2>
+
+Title: [Learning Multiscale Transformer Models for Sequence Generation](https://arxiv.org/abs/2206.09337)
+
+Authors: [Bei Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+B), [Tong Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng%2C+T), [Yi Jing](https://arxiv.org/search/cs?searchtype=author&query=Jing%2C+Y), [Chengbo Jiao](https://arxiv.org/search/cs?searchtype=author&query=Jiao%2C+C), [Tong Xiao](https://arxiv.org/search/cs?searchtype=author&query=Xiao%2C+T), [Jingbo Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+J)
+
+> Multiscale feature hierarchies have been witnessed the success in the computer vision area. This further motivates researchers to design multiscale Transformer for natural language processing, mostly based on the self-attention mechanism. For example, restricting the receptive field across heads or extracting local fine-grained features via convolutions. However, most of existing works directly modeled local features but ignored the word-boundary information. This results in redundant and ambiguous attention distributions, which lacks of interpretability. In this work, we define those scales in different linguistic units, including sub-words, words and phrases. We built a multiscale Transformer model by establishing relationships among scales based on word-boundary information and phrase-level prior knowledge. The proposed \textbf{U}niversal \textbf{M}ulti\textbf{S}cale \textbf{T}ransformer, namely \textsc{Umst}, was evaluated on two sequence generation tasks. Notably, it yielded consistent performance gains over the strong baseline on several test sets without sacrificing the efficiency.
+
+| Comments: | accepted by ICML2022                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2206.09337](https://arxiv.org/abs/2206.09337) [cs.CL]** |
+|           | (or **[arXiv:2206.09337v1](https://arxiv.org/abs/2206.09337v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-06-22-5">5. LayoutXLM vs. GNN: An Empirical Evaluation of Relation Extraction for Documents
+</h2>
+
+Title: [LayoutXLM vs. GNN: An Empirical Evaluation of Relation Extraction for Documents](https://arxiv.org/abs/2206.10304)
+
+Authors: [Hervé Déjean](https://arxiv.org/search/cs?searchtype=author&query=Déjean%2C+H), [Stéphane Clinchant](https://arxiv.org/search/cs?searchtype=author&query=Clinchant%2C+S), [Jean-Luc Meunier](https://arxiv.org/search/cs?searchtype=author&query=Meunier%2C+J)
+
+> This paper investigates the Relation Extraction task in documents by benchmarking two different neural network models: a multi-modal language model (LayoutXLM) and a Graph Neural Network: Edge Convolution Network (ECN). For this benchmark, we use the XFUND dataset, released along with LayoutXLM. While both models reach similar results, they both exhibit very different characteristics. This raises the question on how to integrate various modalities in a neural network: by merging all modalities thanks to additional pretraining (LayoutXLM), or in a cascaded way (ECN). We conclude by discussing some methodological issues that must be considered for new datasets and task definition in the domain of Information Extraction with complex documents.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2206.10304](https://arxiv.org/abs/2206.10304) [cs.CL]** |
+|           | (or **[arXiv:2206.10304v1](https://arxiv.org/abs/2206.10304v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-06-22-6">6. Plug and Play Counterfactual Text Generation for Model Robustness
+</h2>
+
+Title: [Plug and Play Counterfactual Text Generation for Model Robustness](https://arxiv.org/abs/2206.10429)
+
+Authors: [Nishtha Madaan](https://arxiv.org/search/cs?searchtype=author&query=Madaan%2C+N), [Srikanta Bedathur](https://arxiv.org/search/cs?searchtype=author&query=Bedathur%2C+S), [Diptikalyan Saha](https://arxiv.org/search/cs?searchtype=author&query=Saha%2C+D)
+
+> Generating counterfactual test-cases is an important backbone for testing NLP models and making them as robust and reliable as traditional software. In generating the test-cases, a desired property is the ability to control the test-case generation in a flexible manner to test for a large variety of failure cases and to explain and repair them in a targeted manner. In this direction, significant progress has been made in the prior works by manually writing rules for generating controlled counterfactuals. However, this approach requires heavy manual supervision and lacks the flexibility to easily introduce new controls. Motivated by the impressive flexibility of the plug-and-play approach of PPLM, we propose bringing the framework of plug-and-play to counterfactual test case generation task. We introduce CASPer, a plug-and-play counterfactual generation framework to generate test cases that satisfy goal attributes on demand. Our plug-and-play model can steer the test case generation process given any attribute model without requiring attribute-specific training of the model. In experiments, we show that CASPer effectively generates counterfactual text that follow the steering provided by an attribute model while also being fluent, diverse and preserving the original content. We also show that the generated counterfactuals from CASPer can be used for augmenting the training data and thereby fixing and making the test model more robust.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2206.10429](https://arxiv.org/abs/2206.10429) [cs.CL]** |
+|           | (or **[arXiv:2206.10429v1](https://arxiv.org/abs/2206.10429v1) [cs.CL]** for this version) |
+
+
 
 
 
