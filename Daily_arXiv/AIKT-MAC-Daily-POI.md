@@ -2,19 +2,28 @@
 
 # Index
 
+- [2022-06-23](#2022-06-23)
+  - [1. Generalizing Multimodal Pre-training into Multilingual via Language Acquisition](#2022-06-23-1)
+
+  - [2. reStructured Pre-training](#2022-06-23-2)
+  
+  - [3. Understanding the Properties of Generated Corpora](#2022-06-23-3)
+  
+  - [4. GEMv2: Multilingual NLG Benchmarking in a Single Line of Code](#2022-06-23-4)
+  
 - [2022-06-22](#2022-06-22)
   - [1. BN-HTRd: A Benchmark Dataset for Document Level Offline Bangla Handwritten Text Recognition (HTR) and Line Segmentation](#2022-06-22-1)
 
   - [2. Towards Adversarial Attack on Vision-Language Pre-training Models](#2022-06-22-2)
-  
+
   - [3. CLiMB: A Continual Learning Benchmark for Vision-and-Language Tasks](#2022-06-22-3)
-  
+
   - [4. Learning Multiscale Transformer Models for Sequence Generation](#2022-06-22-4)
-  
+
   - [5. LayoutXLM vs. GNN: An Empirical Evaluation of Relation Extraction for Documents](#2022-06-22-5)
-  
+
   - [6. Plug and Play Counterfactual Text Generation for Model Robustness](#2022-06-22-6)
-  
+
 - [2022-06-20](#2022-06-20)
   - [1. VLMbench: A Compositional Benchmark for Vision-and-Language Manipulation](#2022-06-20-1)
 
@@ -52,6 +61,91 @@
   - [1. LST: Ladder Side-Tuning for Parameter and Memory Efficient Transfer Learning](#2022-06-15-1)
 
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2022-06-23
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-06-23-1">1. Generalizing Multimodal Pre-training into Multilingual via Language Acquisition
+</h2>
+
+Title: [Generalizing Multimodal Pre-training into Multilingual via Language Acquisition](https://arxiv.org/abs/2206.11091)
+
+Authors: [Liang Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+L), [Anwen Hu](https://arxiv.org/search/cs?searchtype=author&query=Hu%2C+A), [Qin Jin](https://arxiv.org/search/cs?searchtype=author&query=Jin%2C+Q)
+
+> English-based Vision-Language Pre-training (VLP) has achieved great success in various downstream tasks. Some efforts have been taken to generalize this success to non-English languages through Multilingual Vision-Language Pre-training (M-VLP). However, due to the large number of languages, M-VLP models often require huge computing resources and cannot be flexibly extended to new languages. In this work, we propose a \textbf{M}ulti\textbf{L}ingual \textbf{A}cquisition (MLA) framework that can easily generalize a monolingual Vision-Language Pre-training model into multilingual. Specifically, we design a lightweight language acquisition encoder based on state-of-the-art monolingual VLP models. We further propose a two-stage training strategy to optimize the language acquisition encoder, namely the Native Language Transfer stage and the Language Exposure stage. With much less multilingual training data and computing resources, our model achieves state-of-the-art performance on multilingual image-text and video-text retrieval benchmarks.
+
+| Comments: | 14 pages, 5 figures                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2206.11091](https://arxiv.org/abs/2206.11091) [cs.CL]** |
+|           | (or **[arXiv:2206.11091v1](https://arxiv.org/abs/2206.11091v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2206.11091Focus to learn more |
+
+
+
+
+
+<h2 id="2022-06-23-2">2. reStructured Pre-training
+</h2>
+
+Title: [reStructured Pre-training](https://arxiv.org/abs/2206.11147)
+
+Authors: [Weizhe Yuan](https://arxiv.org/search/cs?searchtype=author&query=Yuan%2C+W), [Pengfei Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+P)
+
+> In this work, we try to decipher the internal connection of NLP technology development in the past decades, searching for essence, which rewards us with a (potential) new learning paradigm for NLP tasks, dubbed as reStructured Pre-training (RST). In such a paradigm, the role of data will be re-emphasized, and model pre-training and fine-tuning of downstream tasks are viewed as a process of data storing and accessing. Based on that, we operationalize the simple principle that a good storage mechanism should not only have the ability to cache a large amount of data but also consider the ease of access. We achieve this by pre-training models over restructured data that consist of a variety of valuable information instead of raw data after overcoming several engineering challenges. Experimentally, RST models not only surpass strong competitors (e.g., T0) on 52/55 popular datasets from a variety of NLP tasks, but also achieve superior performance in National College Entrance Examination - English (Gaokao-English),the most authoritative examination in China. Specifically, the proposed system Qin achieves 40 points higher than the average scores made by students and 15 points higher than GPT3 with 1/16 parameters. In particular, Qin gets a high score of 138.5 (the full mark is 150) in the 2018 English exam (national paper III). We have released the Gaokao Benchmark with an online submission platform. 
+> In addition, we test our model in the 2022 College Entrance Examination English that happened a few days ago (2022.06.08), and it gets a total score of 134 (v.s. GPT3's 108).
+
+| Comments: | A gift for NLPers :)                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2206.11147](https://arxiv.org/abs/2206.11147) [cs.CL]** |
+|           | (or **[arXiv:2206.11147v1](https://arxiv.org/abs/2206.11147v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2206.11147Focus to learn more |
+
+
+
+
+
+<h2 id="2022-06-23-3">3. Understanding the Properties of Generated Corpora
+</h2>
+
+Title: [Understanding the Properties of Generated Corpora](https://arxiv.org/abs/2206.11219)
+
+Authors: [Naama Zwerdling](https://arxiv.org/search/cs?searchtype=author&query=Zwerdling%2C+N), [Segev Shlomov](https://arxiv.org/search/cs?searchtype=author&query=Shlomov%2C+S), [Esther Goldbraich](https://arxiv.org/search/cs?searchtype=author&query=Goldbraich%2C+E), [George Kour](https://arxiv.org/search/cs?searchtype=author&query=Kour%2C+G), [Boaz Carmeli](https://arxiv.org/search/cs?searchtype=author&query=Carmeli%2C+B), [Naama Tepper](https://arxiv.org/search/cs?searchtype=author&query=Tepper%2C+N), [Inbal Ronen](https://arxiv.org/search/cs?searchtype=author&query=Ronen%2C+I), [Vitaly Zabershinsky](https://arxiv.org/search/cs?searchtype=author&query=Zabershinsky%2C+V), [Ateret Anaby-Tavor](https://arxiv.org/search/cs?searchtype=author&query=Anaby-Tavor%2C+A)
+
+> Models for text generation have become focal for many research tasks and especially for the generation of sentence corpora. However, understanding the properties of an automatically generated text corpus remains challenging. We propose a set of tools that examine the properties of generated text corpora. Applying these tools on various generated corpora allowed us to gain new insights into the properties of the generative models. As part of our characterization process, we found remarkable differences in the corpora generated by two leading generative technologies.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2206.11219](https://arxiv.org/abs/2206.11219) [cs.CL]** |
+|           | (or **[arXiv:2206.11219v1](https://arxiv.org/abs/2206.11219v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2206.11219Focus to learn more |
+
+
+
+
+
+<h2 id="2022-06-23-4">4. GEMv2: Multilingual NLG Benchmarking in a Single Line of Code
+</h2>
+
+Title: [GEMv2: Multilingual NLG Benchmarking in a Single Line of Code](https://arxiv.org/abs/2206.11249)
+
+Authors: [Sebastian Gehrmann](https://arxiv.org/search/cs?searchtype=author&query=Gehrmann%2C+S), [Abhik Bhattacharjee](https://arxiv.org/search/cs?searchtype=author&query=Bhattacharjee%2C+A), [Abinaya Mahendiran](https://arxiv.org/search/cs?searchtype=author&query=Mahendiran%2C+A), [Alex Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+A), [Alexandros Papangelis](https://arxiv.org/search/cs?searchtype=author&query=Papangelis%2C+A), [Aman Madaan](https://arxiv.org/search/cs?searchtype=author&query=Madaan%2C+A), [Angelina McMillan-Major](https://arxiv.org/search/cs?searchtype=author&query=McMillan-Major%2C+A), [Anna Shvets](https://arxiv.org/search/cs?searchtype=author&query=Shvets%2C+A), [Ashish Upadhyay](https://arxiv.org/search/cs?searchtype=author&query=Upadhyay%2C+A), [Bingsheng Yao](https://arxiv.org/search/cs?searchtype=author&query=Yao%2C+B), [Bryan Wilie](https://arxiv.org/search/cs?searchtype=author&query=Wilie%2C+B), [Chandra Bhagavatula](https://arxiv.org/search/cs?searchtype=author&query=Bhagavatula%2C+C), [Chaobin You](https://arxiv.org/search/cs?searchtype=author&query=You%2C+C), [Craig Thomson](https://arxiv.org/search/cs?searchtype=author&query=Thomson%2C+C), [Cristina Garbacea](https://arxiv.org/search/cs?searchtype=author&query=Garbacea%2C+C), [Dakuo Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+D), [Daniel Deutsch](https://arxiv.org/search/cs?searchtype=author&query=Deutsch%2C+D), [Deyi Xiong](https://arxiv.org/search/cs?searchtype=author&query=Xiong%2C+D), [Di Jin](https://arxiv.org/search/cs?searchtype=author&query=Jin%2C+D), [Dimitra Gkatzia](https://arxiv.org/search/cs?searchtype=author&query=Gkatzia%2C+D), [Dragomir Radev](https://arxiv.org/search/cs?searchtype=author&query=Radev%2C+D), [Elizabeth Clark](https://arxiv.org/search/cs?searchtype=author&query=Clark%2C+E), [Esin Durmus](https://arxiv.org/search/cs?searchtype=author&query=Durmus%2C+E), [Faisal Ladhak](https://arxiv.org/search/cs?searchtype=author&query=Ladhak%2C+F), [Filip Ginter](https://arxiv.org/search/cs?searchtype=author&query=Ginter%2C+F), [Genta Indra Winata](https://arxiv.org/search/cs?searchtype=author&query=Winata%2C+G+I), [Hendrik Strobelt](https://arxiv.org/search/cs?searchtype=author&query=Strobelt%2C+H), [Hiroaki Hayashi](https://arxiv.org/search/cs?searchtype=author&query=Hayashi%2C+H), [Jekaterina Novikova](https://arxiv.org/search/cs?searchtype=author&query=Novikova%2C+J), [Jenna Kanerva](https://arxiv.org/search/cs?searchtype=author&query=Kanerva%2C+J), [Jenny Chim](https://arxiv.org/search/cs?searchtype=author&query=Chim%2C+J), [Jiawei Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+J), [Jordan Clive](https://arxiv.org/search/cs?searchtype=author&query=Clive%2C+J), [Joshua Maynez](https://arxiv.org/search/cs?searchtype=author&query=Maynez%2C+J), [João Sedoc](https://arxiv.org/search/cs?searchtype=author&query=Sedoc%2C+J), [Juraj Juraska](https://arxiv.org/search/cs?searchtype=author&query=Juraska%2C+J), [Kaustubh Dhole](https://arxiv.org/search/cs?searchtype=author&query=Dhole%2C+K), [Khyathi Raghavi Chandu](https://arxiv.org/search/cs?searchtype=author&query=Chandu%2C+K+R), [Leonardo F. R. Ribeiro](https://arxiv.org/search/cs?searchtype=author&query=Ribeiro%2C+L+F+R), [Lewis Tunstall](https://arxiv.org/search/cs?searchtype=author&query=Tunstall%2C+L), [Li Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+L), [Mahima Pushkarna](https://arxiv.org/search/cs?searchtype=author&query=Pushkarna%2C+M), [Mathias Creutz](https://arxiv.org/search/cs?searchtype=author&query=Creutz%2C+M), [Michael White](https://arxiv.org/search/cs?searchtype=author&query=White%2C+M), [Mihir Sanjay Kale](https://arxiv.org/search/cs?searchtype=author&query=Kale%2C+M+S), [Moussa Kamal Eddine](https://arxiv.org/search/cs?searchtype=author&query=Eddine%2C+M+K), [Nico Daheim](https://arxiv.org/search/cs?searchtype=author&query=Daheim%2C+N), [Nishant Subramani](https://arxiv.org/search/cs?searchtype=author&query=Subramani%2C+N), [Ondrej Dusek](https://arxiv.org/search/cs?searchtype=author&query=Dusek%2C+O), [Paul Pu Liang](https://arxiv.org/search/cs?searchtype=author&query=Liang%2C+P+P), [Pawan Sasanka Ammanamanchi](https://arxiv.org/search/cs?searchtype=author&query=Ammanamanchi%2C+P+S), [Qi Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu%2C+Q), [Ratish Puduppully](https://arxiv.org/search/cs?searchtype=author&query=Puduppully%2C+R), [Reno Kriz](https://arxiv.org/search/cs?searchtype=author&query=Kriz%2C+R), [Rifat Shahriyar](https://arxiv.org/search/cs?searchtype=author&query=Shahriyar%2C+R), [Ronald Cardenas](https://arxiv.org/search/cs?searchtype=author&query=Cardenas%2C+R), [Saad Mahamood](https://arxiv.org/search/cs?searchtype=author&query=Mahamood%2C+S), [Salomey Osei](https://arxiv.org/search/cs?searchtype=author&query=Osei%2C+S), [Samuel Cahyawijaya](https://arxiv.org/search/cs?searchtype=author&query=Cahyawijaya%2C+S), [Sanja Štajner](https://arxiv.org/search/cs?searchtype=author&query=Štajner%2C+S), [Sebastien Montella](https://arxiv.org/search/cs?searchtype=author&query=Montella%2C+S), [Shailza](https://arxiv.org/search/cs?searchtype=author&query=Shailza), [Shailza Jolly](https://arxiv.org/search/cs?searchtype=author&query=Jolly%2C+S), [Simon Mille](https://arxiv.org/search/cs?searchtype=author&query=Mille%2C+S), [Tahmid Hasan](https://arxiv.org/search/cs?searchtype=author&query=Hasan%2C+T), [Tianhao Shen](https://arxiv.org/search/cs?searchtype=author&query=Shen%2C+T), [Tosin Adewumi](https://arxiv.org/search/cs?searchtype=author&query=Adewumi%2C+T), [Vikas Raunak](https://arxiv.org/search/cs?searchtype=author&query=Raunak%2C+V), [Vipul Raheja](https://arxiv.org/search/cs?searchtype=author&query=Raheja%2C+V), [Vitaly Nikolaev](https://arxiv.org/search/cs?searchtype=author&query=Nikolaev%2C+V), [Vivian Tsai](https://arxiv.org/search/cs?searchtype=author&query=Tsai%2C+V), [Yacine Jernite](https://arxiv.org/search/cs?searchtype=author&query=Jernite%2C+Y), [Ying Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu%2C+Y), [Yisi Sang](https://arxiv.org/search/cs?searchtype=author&query=Sang%2C+Y), [Yixin Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Y), [Yufang Hou](https://arxiv.org/search/cs?searchtype=author&query=Hou%2C+Y)
+
+> Evaluation in machine learning is usually informed by past choices, for example which datasets or metrics to use. This standardization enables the comparison on equal footing using leaderboards, but the evaluation choices become sub-optimal as better alternatives arise. This problem is especially pertinent in natural language generation which requires ever-improving suites of datasets, metrics, and human evaluation to make definitive claims. To make following best model evaluation practices easier, we introduce GEMv2. The new version of the Generation, Evaluation, and Metrics Benchmark introduces a modular infrastructure for dataset, model, and metric developers to benefit from each others work. GEMv2 supports 40 documented datasets in 51 languages. Models for all datasets can be evaluated online and our interactive data card creation and rendering tools make it easier to add new datasets to the living benchmark.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2206.11249](https://arxiv.org/abs/2206.11249) [cs.CL]** |
+|           | (or **[arXiv:2206.11249v1](https://arxiv.org/abs/2206.11249v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2206.11249Focus to learn more |
+
+
 
 
 
