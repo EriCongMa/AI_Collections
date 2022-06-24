@@ -2,15 +2,18 @@
 
 # Index
 
+- [2022-06-24](#2022-06-24)
+  - [1. Lifelong Learning Natural Language Processing Approach for Multilingual Data Classification](#2022-06-24-1)
+
 - [2022-06-23](#2022-06-23)
   - [1. Generalizing Multimodal Pre-training into Multilingual via Language Acquisition](#2022-06-23-1)
 
   - [2. reStructured Pre-training](#2022-06-23-2)
-  
+
   - [3. Understanding the Properties of Generated Corpora](#2022-06-23-3)
-  
+
   - [4. GEMv2: Multilingual NLG Benchmarking in a Single Line of Code](#2022-06-23-4)
-  
+
 - [2022-06-22](#2022-06-22)
   - [1. BN-HTRd: A Benchmark Dataset for Document Level Offline Bangla Handwritten Text Recognition (HTR) and Line Segmentation](#2022-06-22-1)
 
@@ -61,6 +64,35 @@
   - [1. LST: Ladder Side-Tuning for Parameter and Memory Efficient Transfer Learning](#2022-06-15-1)
 
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2022-06-24
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-06-24-1">1. Lifelong Learning Natural Language Processing Approach for Multilingual Data Classification
+</h2>
+
+Title: [Lifelong Learning Natural Language Processing Approach for Multilingual Data Classification](https://arxiv.org/abs/2206.11867)
+
+Authors: [Jędrzej Kozal](https://arxiv.org/search/cs?searchtype=author&query=Kozal%2C+J), [Michał Leś](https://arxiv.org/search/cs?searchtype=author&query=Leś%2C+M), [Paweł Zyblewski](https://arxiv.org/search/cs?searchtype=author&query=Zyblewski%2C+P), [Paweł Ksieniewicz](https://arxiv.org/search/cs?searchtype=author&query=Ksieniewicz%2C+P), [Michał Woźniak](https://arxiv.org/search/cs?searchtype=author&query=Woźniak%2C+M)
+
+> The abundance of information in digital media, which in today's world is the main source of knowledge about current events for the masses, makes it possible to spread disinformation on a larger scale than ever before. Consequently, there is a need to develop novel fake news detection approaches capable of adapting to changing factual contexts and generalizing previously or concurrently acquired knowledge. To deal with this problem, we propose a lifelong learning-inspired approach, which allows for fake news detection in multiple languages and the mutual transfer of knowledge acquired in each of them. Both classical feature extractors, such as Term frequency-inverse document frequency or Latent Dirichlet Allocation, and integrated deep NLP (Natural Language Processing) BERT (Bidirectional Encoder Representations from Transformers) models paired with MLP (Multilayer Perceptron) classifier, were employed. The results of experiments conducted on two datasets dedicated to the fake news classification task (in English and Spanish, respectively), supported by statistical analysis, confirmed that utilization of additional languages could improve performance for traditional methods. Also, in some cases supplementing the deep learning method with classical ones can positively impact obtained results. The ability of models to generalize the knowledge acquired between the analyzed languages was also observed.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2206.11867](https://arxiv.org/abs/2206.11867) [cs.CL]** |
+|           | (or **[arXiv:2206.11867v1](https://arxiv.org/abs/2206.11867v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2206.11867Focus to learn more |
+
+
+
+
+
+
 
 
 
