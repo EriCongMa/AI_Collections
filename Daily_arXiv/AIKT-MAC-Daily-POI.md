@@ -2,6 +2,20 @@
 
 # Index
 
+- [2022-06-28](#2022-06-28)
+  - [1. Bi-VLDoc: Bidirectional Vision-Language Modeling for Visually-Rich Document Understanding](#2022-06-28-1)
+
+  - [2. Probing Causes of Hallucinations in Neural Machine Translations](#2022-06-28-2)
+  
+  - [3. Language Models as Knowledge Embeddings](#2022-06-28-3)
+  
+  - [4. Distilling a Pretrained Language Model to a Multilingual ASR Model](#2022-06-28-4)
+  
+  - [5. Protoformer: Embedding Prototypes for Transformers](#2022-06-28-5)
+  
+- [2022-06-27](#2022-06-27)
+  - [1. Robustness of Explanation Methods for NLP Models](#2022-06-27-1)
+
 - [2022-06-24](#2022-06-24)
   - [1. Lifelong Learning Natural Language Processing Approach for Multilingual Data Classification](#2022-06-24-1)
 
@@ -64,6 +78,140 @@
   - [1. LST: Ladder Side-Tuning for Parameter and Memory Efficient Transfer Learning](#2022-06-15-1)
 
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2022-06-28
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-06-28-1">1. Bi-VLDoc: Bidirectional Vision-Language Modeling for Visually-Rich Document Understanding
+</h2>
+
+Title: [Bi-VLDoc: Bidirectional Vision-Language Modeling for Visually-Rich Document Understanding](https://arxiv.org/abs/2206.13155)
+
+Authors: [Chuwei Luo](https://arxiv.org/search/cs?searchtype=author&query=Luo%2C+C), [Guozhi Tang](https://arxiv.org/search/cs?searchtype=author&query=Tang%2C+G), [Qi Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng%2C+Q), [Cong Yao](https://arxiv.org/search/cs?searchtype=author&query=Yao%2C+C), [Lianwen Jin](https://arxiv.org/search/cs?searchtype=author&query=Jin%2C+L), [Chenliang Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+C), [Yang Xue](https://arxiv.org/search/cs?searchtype=author&query=Xue%2C+Y), [Luo Si](https://arxiv.org/search/cs?searchtype=author&query=Si%2C+L)
+
+> Multi-modal document pre-trained models have proven to be very effective in a variety of visually-rich document understanding (VrDU) tasks. Though existing document pre-trained models have achieved excellent performance on standard benchmarks for VrDU, the way they model and exploit the interactions between vision and language on documents has hindered them from better generalization ability and higher accuracy. In this work, we investigate the problem of vision-language joint representation learning for VrDU mainly from the perspective of supervisory signals. Specifically, a pre-training paradigm called Bi-VLDoc is proposed, in which a bidirectional vision-language supervision strategy and a vision-language hybrid-attention mechanism are devised to fully explore and utilize the interactions between these two modalities, to learn stronger cross-modal document representations with richer semantics. Benefiting from the learned informative cross-modal document representations, Bi-VLDoc significantly advances the state-of-the-art performance on three widely-used document understanding benchmarks, including Form Understanding (from 85.14% to 93.44%), Receipt Information Extraction (from 96.01% to 97.84%), and Document Classification (from 96.08% to 97.12%). On Document Visual QA, Bi-VLDoc achieves the state-of-the-art performance compared to previous single model methods.
+
+| Comments: | Under review                                                 |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL); Multimedia (cs.MM) |
+| Cite as:  | **[arXiv:2206.13155](https://arxiv.org/abs/2206.13155) [cs.CV]** |
+|           | (or **[arXiv:2206.13155v1](https://arxiv.org/abs/2206.13155v1) [cs.CV]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2206.13155Focus to learn more |
+
+
+
+
+
+<h2 id="2022-06-28-2">2. Probing Causes of Hallucinations in Neural Machine Translations
+</h2>
+
+Title: [Probing Causes of Hallucinations in Neural Machine Translations](https://arxiv.org/abs/2206.12529)
+
+Authors: [Jianhao Yan](https://arxiv.org/search/cs?searchtype=author&query=Yan%2C+J), [Fandong Meng](https://arxiv.org/search/cs?searchtype=author&query=Meng%2C+F), [Jie Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+J)
+
+> Hallucination, one kind of pathological translations that bothers Neural Machine Translation, has recently drawn much attention. In simple terms, hallucinated translations are fluent sentences but barely related to source inputs. Arguably, it remains an open problem how hallucination occurs. In this paper, we propose to use probing methods to investigate the causes of hallucinations from the perspective of model architecture, aiming to avoid such problems in future architecture designs. By conducting experiments over various NMT datasets, we find that hallucination is often accompanied by the deficient encoder, especially embeddings, and vulnerable cross-attentions, while, interestingly, cross-attention mitigates some errors caused by the encoder.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2206.12529](https://arxiv.org/abs/2206.12529) [cs.CL]** |
+|           | (or **[arXiv:2206.12529v1](https://arxiv.org/abs/2206.12529v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2206.12529Focus to learn more |
+
+
+
+
+
+<h2 id="2022-06-28-3">3. Language Models as Knowledge Embeddings
+</h2>
+
+Title: [Language Models as Knowledge Embeddings](https://arxiv.org/abs/2206.12617)
+
+Authors: [Xintao Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+X), [Qianyu He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+Q), [Jiaqing Liang](https://arxiv.org/search/cs?searchtype=author&query=Liang%2C+J), [Yanghua Xiao](https://arxiv.org/search/cs?searchtype=author&query=Xiao%2C+Y)
+
+> Knowledge embeddings (KE) represent a knowledge graph (KG) by embedding entities and relations into continuous vector spaces. Existing methods are mainly structure-based or description-based. Structure-based methods learn representations that preserve the inherent structure of KGs. They cannot well represent abundant long-tail entities in real-world KGs with limited structural information. Description-based methods leverage textual information and language models. Prior approaches in this direction barely outperform structure-based ones, and suffer from problems like expensive negative sampling and restrictive description demand. In this paper, we propose LMKE, which adopts Language Models to derive Knowledge Embeddings, aiming at both enriching representations of long-tail entities and solving problems of prior description-based methods. We formulate description-based KE learning with a contrastive learning framework to improve efficiency in training and evaluation. Experimental results show that LMKE achieves state-of-the-art performance on KE benchmarks of link prediction and triple classification, especially for long-tail entities.
+
+| Comments: | Accepted to IJCAI 2022                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2206.12617](https://arxiv.org/abs/2206.12617) [cs.CL]** |
+|           | (or **[arXiv:2206.12617v1](https://arxiv.org/abs/2206.12617v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2206.12617Focus to learn more |
+
+
+
+
+
+<h2 id="2022-06-28-4">4. Distilling a Pretrained Language Model to a Multilingual ASR Model
+</h2>
+
+Title: [Distilling a Pretrained Language Model to a Multilingual ASR Model](https://arxiv.org/abs/2206.12638)
+
+Authors: [Kwanghee Choi](https://arxiv.org/search/cs?searchtype=author&query=Choi%2C+K), [Hyung-Min Park](https://arxiv.org/search/cs?searchtype=author&query=Park%2C+H)
+
+> Multilingual speech data often suffer from long-tailed language distribution, resulting in performance degradation. However, multilingual text data is much easier to obtain, yielding a more useful general language model. Hence, we are motivated to distill the rich knowledge embedded inside a well-trained teacher text model to the student speech model. We propose a novel method called the Distilling a Language model to a Speech model (Distill-L2S), which aligns the latent representations of two different modalities. The subtle differences are handled by the shrinking mechanism, nearest-neighbor interpolation, and a learnable linear projection layer. We demonstrate the effectiveness of our distillation method by applying it to the multilingual automatic speech recognition (ASR) task. We distill the transformer-based cross-lingual language model (InfoXLM) while fine-tuning the large-scale multilingual ASR model (XLSR-wav2vec 2.0) for each language. We show the superiority of our method on 20 low-resource languages of the CommonVoice dataset with less than 100 hours of speech data.
+
+| Comments: | Accepted to Interspeech 2022. Official implementation provided in [this https URL](https://github.com/juice500ml/xlm_to_xlsr) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2206.12638](https://arxiv.org/abs/2206.12638) [cs.CL]** |
+|           | (or **[arXiv:2206.12638v1](https://arxiv.org/abs/2206.12638v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2206.12638Focus to learn more |
+
+
+
+
+
+<h2 id="2022-06-28-5">5. Protoformer: Embedding Prototypes for Transformers
+</h2>
+
+Title: [Protoformer: Embedding Prototypes for Transformers](https://arxiv.org/abs/2206.12710)
+
+Authors: [Ashkan Farhangi](https://arxiv.org/search/cs?searchtype=author&query=Farhangi%2C+A), [Ning Sui](https://arxiv.org/search/cs?searchtype=author&query=Sui%2C+N), [Nan Hua](https://arxiv.org/search/cs?searchtype=author&query=Hua%2C+N), [Haiyan Bai](https://arxiv.org/search/cs?searchtype=author&query=Bai%2C+H), [Arthur Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+A), [Zhishan Guo](https://arxiv.org/search/cs?searchtype=author&query=Guo%2C+Z)
+
+> Transformers have been widely applied in text classification. Unfortunately, real-world data contain anomalies and noisy labels that cause challenges for state-of-art Transformers. This paper proposes Protoformer, a novel self-learning framework for Transformers that can leverage problematic samples for text classification. Protoformer features a selection mechanism for embedding samples that allows us to efficiently extract and utilize anomalies prototypes and difficult class prototypes. We demonstrated such capabilities on datasets with diverse textual structures (e.g., Twitter, IMDB, ArXiv). We also applied the framework to several models. The results indicate that Protoformer can improve current Transformers in various empirical settings.
+
+| Comments:          | Advances in Knowledge Discovery and Data Mining (PAKDD 2022) |
+| ------------------ | ------------------------------------------------------------ |
+| Subjects:          | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:           | **[arXiv:2206.12710](https://arxiv.org/abs/2206.12710) [cs.CL]** |
+|                    | (or **[arXiv:2206.12710v1](https://arxiv.org/abs/2206.12710v1) [cs.CL]** for this version) |
+|                    | https://doi.org/10.48550/arXiv.2206.12710Focus to learn more |
+| Journal reference: | Advances in Knowledge Discovery and Data Mining: 26th Pacific-Asia Conference, PAKDD 2022 |
+| Related DOI:       | https://doi.org/10.1007/978-3-031-05933-9_35Focus to learn more |
+
+
+
+
+
+
+# 2022-06-27
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-06-27-1">1. Robustness of Explanation Methods for NLP Models
+</h2>
+
+Title: [Robustness of Explanation Methods for NLP Models](Robustness of Explanation Methods for NLP Models)
+
+Authors: [Shriya Atmakuri](https://arxiv.org/search/cs?searchtype=author&query=Atmakuri%2C+S), [Tejas Chheda](https://arxiv.org/search/cs?searchtype=author&query=Chheda%2C+T), [Dinesh Kandula](https://arxiv.org/search/cs?searchtype=author&query=Kandula%2C+D), [Nishant Yadav](https://arxiv.org/search/cs?searchtype=author&query=Yadav%2C+N), [Taesung Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee%2C+T), [Hessel Tuinhof](https://arxiv.org/search/cs?searchtype=author&query=Tuinhof%2C+H)
+
+> Explanation methods have emerged as an important tool to highlight the features responsible for the predictions of neural networks. There is mounting evidence that many explanation methods are rather unreliable and susceptible to malicious manipulations. In this paper, we particularly aim to understand the robustness of explanation methods in the context of text modality. We provide initial insights and results towards devising a successful adversarial attack against text explanations. To our knowledge, this is the first attempt to evaluate the adversarial robustness of an explanation method. Our experiments show the explanation method can be largely disturbed for up to 86% of the tested samples with small changes in the input sentence and its semantics.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2206.12284](https://arxiv.org/abs/2206.12284) [cs.CL]** |
+|           | (or **[arXiv:2206.12284v1](https://arxiv.org/abs/2206.12284v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2206.12284Focus to learn more |
+
+
+
 
 
 
