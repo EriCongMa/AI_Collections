@@ -2,13 +2,18 @@
 
 # Index
 
+- [2022-07-05](#2022-07-05)
+  - [1. Dynamic Contrastive Distillation for Image-Text Retrieval](#2022-07-05-1)
+
+  - [2. M-Adapter: Modality Adaptation for End-to-End Speech-to-Text Translation](#2022-07-05-2)
+  
 - [2022-07-04](#2022-07-04)
   - [1. MultiViz: An Analysis Benchmark for Visualizing and Understanding Multimodal Models](#2022-07-04-1)
 
   - [2. Towards Human-Agent Communication via the Information Bottleneck Principle](#2022-07-04-2)
-  
+
   - [3. VL-CheckList: Evaluating Pre-trained Vision-Language Models with Objects, Attributes and Relations](#2022-07-04-3)
-  
+
 - [2022-07-01](#2022-07-01)
   - [1. Building Multilingual Machine Translation Systems That Serve Arbitrary X-Y Translations](#2022-07-01-1)
 
@@ -20,6 +25,49 @@
   - [1. Wav2Vec-Aug: Improved self-supervised training with limited data](#2022-06-29-1)
 
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2022-07-05
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-07-05-1">1. Dynamic Contrastive Distillation for Image-Text Retrieval
+</h2>
+
+Title: [Dynamic Contrastive Distillation for Image-Text Retrieval](https://arxiv.org/abs/2207.01426)
+
+Authors: [Jun Rao](https://arxiv.org/search/cs?searchtype=author&query=Rao%2C+J), [Liang Ding](https://arxiv.org/search/cs?searchtype=author&query=Ding%2C+L), [Shuhan Qi](https://arxiv.org/search/cs?searchtype=author&query=Qi%2C+S), [Meng Fang](https://arxiv.org/search/cs?searchtype=author&query=Fang%2C+M), [Yang Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Y), [Li Shen](https://arxiv.org/search/cs?searchtype=author&query=Shen%2C+L), [Dacheng Tao](https://arxiv.org/search/cs?searchtype=author&query=Tao%2C+D)
+
+> Although the vision-and-language pretraining (VLP) equipped cross-modal image-text retrieval (ITR) has achieved remarkable progress in the past two years, it suffers from a major drawback: the ever-increasing size of VLP models restricts its deployment to real-world search scenarios (where the high latency is unacceptable). To alleviate this problem, we present a novel plug-in dynamic contrastive distillation (DCD) framework to compress the large VLP models for the ITR task. Technically, we face the following two challenges: 1) the typical uni-modal metric learning approach is difficult to directly apply to the cross-modal tasks, due to the limited GPU memory to optimize too many negative samples during handling cross-modal fusion features. 2) it is inefficient to static optimize the student network from different hard samples, which have different effects on distillation learning and student network optimization. We try to overcome these challenges from two points. First, to achieve multi-modal contrastive learning, and balance the training costs and effects, we propose to use a teacher network to estimate the difficult samples for students, making the students absorb the powerful knowledge from pre-trained teachers, and master the knowledge from hard samples. Second, to dynamic learn from hard sample pairs, we propose dynamic distillation to dynamically learn samples of different difficulties, from the perspective of better balancing the difficulty of knowledge and students' self-learning ability. We successfully apply our proposed DCD strategy to two state-of-the-art vision-language pretrained models, i.e. ViLT and METER. Extensive experiments on MS-COCO and Flickr30K benchmarks show the effectiveness and efficiency of our DCD framework. Encouragingly, we can speed up the inference at least 129× compared to the existing ITR models.
+
+| Subjects: | **Multimedia (cs.MM)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL); Computer Vision and Pattern Recognition (cs.CV) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2207.01426](https://arxiv.org/abs/2207.01426) [cs.MM]** |
+|           | (or **[arXiv:2207.01426v1](https://arxiv.org/abs/2207.01426v1) [cs.MM]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2207.01426Focus to learn more |
+
+
+
+
+
+<h2 id="2022-07-05-2">2. M-Adapter: Modality Adaptation for End-to-End Speech-to-Text Translation
+</h2>
+
+Title: [M-Adapter: Modality Adaptation for End-to-End Speech-to-Text Translation](https://arxiv.org/abs/2207.00952)
+
+Authors: [Jinming Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+J), [Hao Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+H), [Ehsan Shareghi](https://arxiv.org/search/cs?searchtype=author&query=Shareghi%2C+E), [Gholamreza Haffari](https://arxiv.org/search/cs?searchtype=author&query=Haffari%2C+G)
+
+> End-to-end speech-to-text translation models are often initialized with pre-trained speech encoder and pre-trained text decoder. This leads to a significant training gap between pre-training and fine-tuning, largely due to the modality differences between speech outputs from the encoder and text inputs to the decoder. In this work, we aim to bridge the modality gap between speech and text to improve translation quality. We propose M-Adapter, a novel Transformer-based module, to adapt speech representations to text. While shrinking the speech sequence, M-Adapter produces features desired for speech-to-text translation via modelling global and local dependencies of a speech sequence. Our experimental results show that our model outperforms a strong baseline by up to 1 BLEU score on the Must-C En→DE dataset.\footnote{Our code is available at [this https URL](https://github.com/mingzi151/w2v2-st).}
+
+| Comments: | Interspeech2022                                              |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG); Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2207.00952](https://arxiv.org/abs/2207.00952) [cs.CL]** |
+|           | (or **[arXiv:2207.00952v1](https://arxiv.org/abs/2207.00952v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2207.00952Focus to learn more |
 
 
 
