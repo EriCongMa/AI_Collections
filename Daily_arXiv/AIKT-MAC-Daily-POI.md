@@ -2,11 +2,16 @@
 
 # Index
 
+- [2022-07-06](#2022-07-06)
+  - [1. Vision-and-Language Pretraining](#2022-07-06-1)
+
+  - [2. ASR-Generated Text for Language Model Pre-training Applied to Speech Tasks](#2022-07-06-2)
+  
 - [2022-07-05](#2022-07-05)
   - [1. Dynamic Contrastive Distillation for Image-Text Retrieval](#2022-07-05-1)
 
   - [2. M-Adapter: Modality Adaptation for End-to-End Speech-to-Text Translation](#2022-07-05-2)
-  
+
 - [2022-07-04](#2022-07-04)
   - [1. MultiViz: An Analysis Benchmark for Visualizing and Understanding Multimodal Models](#2022-07-04-1)
 
@@ -25,6 +30,52 @@
   - [1. Wav2Vec-Aug: Improved self-supervised training with limited data](#2022-06-29-1)
 
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2022-07-06
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-07-06-1">1. Vision-and-Language Pretraining
+</h2>
+
+Title: [Vision-and-Language Pretraining](https://arxiv.org/abs/2207.01772)
+
+Authors: [Thong Nguyen](https://arxiv.org/search/cs?searchtype=author&query=Nguyen%2C+T), [Cong-Duy Nguyen](https://arxiv.org/search/cs?searchtype=author&query=Nguyen%2C+C), [Xiaobao Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+X), [Anh Tuan Luu](https://arxiv.org/search/cs?searchtype=author&query=Luu%2C+A+T)
+
+> With the burgeoning amount of data of image-text pairs and diversity of Vision-and-Language (V&L) tasks, scholars have introduced an abundance of deep learning models in this research domain. Furthermore, in recent years, transfer learning has also shown tremendous success in Computer Vision for tasks such as Image Classification, Object Detection, etc., and in Natural Language Processing for Question Answering, Machine Translation, etc. Inheriting the spirit of Transfer Learning, research works in V&L have devised multiple pretraining techniques on large-scale datasets in order to enhance the performance of downstream tasks. The aim of this article is to provide a comprehensive revision of contemporary V&L pretraining models. In particular, we categorize and delineate pretraining approaches, along with the summary of state-of-the-art vision-and-language pre-trained models. Moreover, a list of training datasets and downstream tasks is supplied to further polish the perspective on V&L pretraining. Lastly, we decided to take a further step to discuss numerous directions for future research.
+
+| Comments: | 35 pages, 3 figures                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2207.01772](https://arxiv.org/abs/2207.01772) [cs.CL]** |
+|           | (or **[arXiv:2207.01772v1](https://arxiv.org/abs/2207.01772v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2207.01772Focus to learn more |
+
+
+
+
+
+<h2 id="2022-07-06-2">2. ASR-Generated Text for Language Model Pre-training Applied to Speech Tasks
+</h2>
+
+Title: [ASR-Generated Text for Language Model Pre-training Applied to Speech Tasks](https://arxiv.org/abs/2207.01893)
+
+Authors: [Valentin Pelloin](https://arxiv.org/search/cs?searchtype=author&query=Pelloin%2C+V), [Franck Dary](https://arxiv.org/search/cs?searchtype=author&query=Dary%2C+F), [Nicolas Herve](https://arxiv.org/search/cs?searchtype=author&query=Herve%2C+N), [Benoit Favre](https://arxiv.org/search/cs?searchtype=author&query=Favre%2C+B), [Nathalie Camelin](https://arxiv.org/search/cs?searchtype=author&query=Camelin%2C+N), [Antoine Laurent](https://arxiv.org/search/cs?searchtype=author&query=Laurent%2C+A), [Laurent Besacier](https://arxiv.org/search/cs?searchtype=author&query=Besacier%2C+L)
+
+> We aim at improving spoken language modeling (LM) using very large amount of automatically transcribed speech. We leverage the INA (French National Audiovisual Institute) collection and obtain 19GB of text after applying ASR on 350,000 hours of diverse TV shows. From this, spoken language models are trained either by fine-tuning an existing LM (FlauBERT) or through training a LM from scratch. New models (FlauBERT-Oral) are shared with the community and evaluated for 3 downstream tasks: spoken language understanding, classification of TV shows and speech syntactic parsing. Results show that FlauBERT-Oral can be beneficial compared to its initial FlauBERT version demonstrating that, despite its inherent noisy nature, ASR-generated text can be used to build spoken language models.
+
+| Comments: | Interspeech 2022 (Camera Ready)                              |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2207.01893](https://arxiv.org/abs/2207.01893) [cs.CL]** |
+|           | (or **[arXiv:2207.01893v1](https://arxiv.org/abs/2207.01893v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2207.01893Focus to learn more |
+
+
 
 
 
