@@ -2,11 +2,25 @@
 
 # Index
 
+- [2022-07-12](#2022-07-12)
+  - [1. A Study of Syntactic Multi-Modality in Non-Autoregressive Machine Translation](#2022-07-12-1)
+
+  - [2. UM4: Unified Multilingual Multiple Teacher-Student Model for Zero-Resource Neural Machine Translation](#2022-07-12-2)
+  
+  - [3. Exploring Length Generalization in Large Language Models](#2022-07-12-3)
+  
+  - [4. High-resource Language-specific Training for Multilingual Neural Machine Translation](#2022-07-12-4)
+  
+  - [5. Embedding Recycling for Language Models](#2022-07-12-5)
+  
+- [2022-07-11](#2022-07-11)
+  - [1. Meta-Learning the Difference: Preparing Large Language Models for Efficient Adaptation](#2022-07-11-1)
+
 - [2022-07-06](#2022-07-06)
   - [1. Vision-and-Language Pretraining](#2022-07-06-1)
 
   - [2. ASR-Generated Text for Language Model Pre-training Applied to Speech Tasks](#2022-07-06-2)
-  
+
 - [2022-07-05](#2022-07-05)
   - [1. Dynamic Contrastive Distillation for Image-Text Retrieval](#2022-07-05-1)
 
@@ -30,6 +44,132 @@
   - [1. Wav2Vec-Aug: Improved self-supervised training with limited data](#2022-06-29-1)
 
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2022-07-12
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-07-12-1">1. A Study of Syntactic Multi-Modality in Non-Autoregressive Machine Translation
+</h2>
+
+Title: [A Study of Syntactic Multi-Modality in Non-Autoregressive Machine Translation](https://arxiv.org/abs/2207.04206)
+
+Authors: [Kexun Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+K), [Rui Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+R), [Xu Tan](https://arxiv.org/search/cs?searchtype=author&query=Tan%2C+X), [Junliang Guo](https://arxiv.org/search/cs?searchtype=author&query=Guo%2C+J), [Yi Ren](https://arxiv.org/search/cs?searchtype=author&query=Ren%2C+Y), [Tao Qin](https://arxiv.org/search/cs?searchtype=author&query=Qin%2C+T), [Tie-Yan Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+T)
+
+> It is difficult for non-autoregressive translation (NAT) models to capture the multi-modal distribution of target translations due to their conditional independence assumption, which is known as the "multi-modality problem", including the lexical multi-modality and the syntactic multi-modality. While the first one has been well studied, the syntactic multi-modality brings severe challenge to the standard cross entropy (XE) loss in NAT and is under studied. In this paper, we conduct a systematic study on the syntactic multi-modality problem. Specifically, we decompose it into short- and long-range syntactic multi-modalities and evaluate several recent NAT algorithms with advanced loss functions on both carefully designed synthesized datasets and real datasets. We find that the Connectionist Temporal Classification (CTC) loss and the Order-Agnostic Cross Entropy (OAXE) loss can better handle short- and long-range syntactic multi-modalities respectively. Furthermore, we take the best of both and design a new loss function to better handle the complicated syntactic multi-modality in real-world datasets. To facilitate practical usage, we provide a guide to use different loss functions for different kinds of syntactic multi-modality.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2207.04206](https://arxiv.org/abs/2207.04206) [cs.CL]** |
+|           | (or **[arXiv:2207.04206v1](https://arxiv.org/abs/2207.04206v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2207.04206Focus to learn more |
+
+
+
+
+
+<h2 id="2022-07-12-2">2. UM4: Unified Multilingual Multiple Teacher-Student Model for Zero-Resource Neural Machine Translation
+</h2>
+
+Title: [UM4: Unified Multilingual Multiple Teacher-Student Model for Zero-Resource Neural Machine Translation](https://arxiv.org/abs/2207.04900)
+
+Authors: [Jian Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+J), [Yuwei Yin](https://arxiv.org/search/cs?searchtype=author&query=Yin%2C+Y), [Shuming Ma](https://arxiv.org/search/cs?searchtype=author&query=Ma%2C+S), [Dongdong Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+D), [Shuangzhi Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+S), [Hongcheng Guo](https://arxiv.org/search/cs?searchtype=author&query=Guo%2C+H), [Zhoujun Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Z), [Furu Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+F)
+
+> Most translation tasks among languages belong to the zero-resource translation problem where parallel corpora are unavailable. Multilingual neural machine translation (MNMT) enables one-pass translation using shared semantic space for all languages compared to the two-pass pivot translation but often underperforms the pivot-based method. In this paper, we propose a novel method, named as Unified Multilingual Multiple teacher-student Model for NMT (UM4). Our method unifies source-teacher, target-teacher, and pivot-teacher models to guide the student model for the zero-resource translation. The source teacher and target teacher force the student to learn the direct source to target translation by the distilled knowledge on both source and target sides. The monolingual corpus is further leveraged by the pivot-teacher model to enhance the student model. Experimental results demonstrate that our model of 72 directions significantly outperforms previous methods on the WMT benchmark.
+
+| Comments: | 7 pages, 5 figures, IJCAI-ECAI 2022                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2207.04900](https://arxiv.org/abs/2207.04900) [cs.CL]** |
+|           | (or **[arXiv:2207.04900v1](https://arxiv.org/abs/2207.04900v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-07-12-3">3. Exploring Length Generalization in Large Language Models
+</h2>
+
+Title: [Exploring Length Generalization in Large Language Models](https://arxiv.org/abs/2207.04901)
+
+Authors: [Cem Anil](https://arxiv.org/search/cs?searchtype=author&query=Anil%2C+C), [Yuhuai Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+Y), [Anders Andreassen](https://arxiv.org/search/cs?searchtype=author&query=Andreassen%2C+A), [Aitor Lewkowycz](https://arxiv.org/search/cs?searchtype=author&query=Lewkowycz%2C+A), [Vedant Misra](https://arxiv.org/search/cs?searchtype=author&query=Misra%2C+V), [Vinay Ramasesh](https://arxiv.org/search/cs?searchtype=author&query=Ramasesh%2C+V), [Ambrose Slone](https://arxiv.org/search/cs?searchtype=author&query=Slone%2C+A), [Guy Gur-Ari](https://arxiv.org/search/cs?searchtype=author&query=Gur-Ari%2C+G), [Ethan Dyer](https://arxiv.org/search/cs?searchtype=author&query=Dyer%2C+E), [Behnam Neyshabur](https://arxiv.org/search/cs?searchtype=author&query=Neyshabur%2C+B)
+
+> The ability to extrapolate from short problem instances to longer ones is an important form of out-of-distribution generalization in reasoning tasks, and is crucial when learning from datasets where longer problem instances are rare. These include theorem proving, solving quantitative mathematics problems, and reading/summarizing novels. In this paper, we run careful empirical studies exploring the length generalization capabilities of transformer-based language models. We first establish that naively finetuning transformers on length generalization tasks shows significant generalization deficiencies independent of model scale. We then show that combining pretrained large language models' in-context learning abilities with scratchpad prompting (asking the model to output solution steps before producing an answer) results in a dramatic improvement in length generalization. We run careful failure analyses on each of the learning modalities and identify common sources of mistakes that highlight opportunities in equipping language models with the ability to generalize to longer problems.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2207.04901](https://arxiv.org/abs/2207.04901) [cs.CL]** |
+|           | (or **[arXiv:2207.04901v1](https://arxiv.org/abs/2207.04901v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-07-12-4">4. High-resource Language-specific Training for Multilingual Neural Machine Translation
+</h2>
+
+Title: [High-resource Language-specific Training for Multilingual Neural Machine Translation](https://arxiv.org/abs/2207.04906)
+
+Authors: [Jian Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+J), [Yuwei Yin](https://arxiv.org/search/cs?searchtype=author&query=Yin%2C+Y), [Shuming Ma](https://arxiv.org/search/cs?searchtype=author&query=Ma%2C+S), [Dongdong Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+D), [Zhoujun Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+Z), [Furu Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei%2C+F)
+
+> Multilingual neural machine translation (MNMT) trained in multiple language pairs has attracted considerable attention due to fewer model parameters and lower training costs by sharing knowledge among multiple languages. Nonetheless, multilingual training is plagued by language interference degeneration in shared parameters because of the negative interference among different translation directions, especially on high-resource languages. In this paper, we propose the multilingual translation model with the high-resource language-specific training (HLT-MT) to alleviate the negative interference, which adopts the two-stage training with the language-specific selection mechanism. Specifically, we first train the multilingual model only with the high-resource pairs and select the language-specific modules at the top of the decoder to enhance the translation quality of high-resource directions. Next, the model is further trained on all available corpora to transfer knowledge from high-resource languages (HRLs) to low-resource languages (LRLs). Experimental results show that HLT-MT outperforms various strong baselines on WMT-10 and OPUS-100 benchmarks. Furthermore, the analytic experiments validate the effectiveness of our method in mitigating the negative interference in multilingual training.
+
+| Comments: | 7 pages, 7 figures, IJCAI-ECAI 2022                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2207.04906](https://arxiv.org/abs/2207.04906) [cs.CL]** |
+|           | (or **[arXiv:2207.04906v1](https://arxiv.org/abs/2207.04906v1) [cs.CL]** for this version) |
+
+
+
+
+
+<h2 id="2022-07-12-5">5. Embedding Recycling for Language Models
+</h2>
+
+Title: [Embedding Recycling for Language Models](https://arxiv.org/abs/2207.04993)
+
+Authors: [Jon Saad-Falcon](https://arxiv.org/search/cs?searchtype=author&query=Saad-Falcon%2C+J), [Amanpreet Singh](https://arxiv.org/search/cs?searchtype=author&query=Singh%2C+A), [Luca Soldaini](https://arxiv.org/search/cs?searchtype=author&query=Soldaini%2C+L), [Mike D'Arcy](https://arxiv.org/search/cs?searchtype=author&query=D'Arcy%2C+M), [Arman Cohan](https://arxiv.org/search/cs?searchtype=author&query=Cohan%2C+A), [Doug Downey](https://arxiv.org/search/cs?searchtype=author&query=Downey%2C+D)
+
+> Training and inference with large neural models is expensive. However, for many application domains, while new tasks and models arise frequently, the underlying documents being modeled remain mostly unchanged. We study how to decrease computational cost in such settings through embedding recycling (ER): re-using activations from previous model runs when performing training or inference. In contrast to prior work focusing on freezing small classification heads for finetuning which often leads to notable drops in performance, we propose caching an intermediate layer's output from a pretrained model and finetuning the remaining layers for new tasks. We show that our method provides a 100% speedup during training and a 55-86% speedup for inference, and has negligible impacts on accuracy for text classification and entity recognition tasks in the scientific domain. For general-domain question answering tasks, ER offers a similar speedup and lowers accuracy by a small amount. Finally, we identify several open challenges and future directions for ER.
+
+| Comments: | Preprint                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2207.04993](https://arxiv.org/abs/2207.04993) [cs.CL]** |
+|           | (or **[arXiv:2207.04993v1](https://arxiv.org/abs/2207.04993v1) [cs.CL]** for this version) |
+
+
+
+
+
+# 2022-07-11
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-07-11-1">1. Meta-Learning the Difference: Preparing Large Language Models for Efficient Adaptation
+</h2>
+
+Title: [Meta-Learning the Difference: Preparing Large Language Models for Efficient Adaptation](https://arxiv.org/abs/2207.03509)
+
+Authors: [Zejiang Hou](https://arxiv.org/search/cs?searchtype=author&query=Hou%2C+Z), [Julian Salazar](https://arxiv.org/search/cs?searchtype=author&query=Salazar%2C+J), [George Polovets](https://arxiv.org/search/cs?searchtype=author&query=Polovets%2C+G)
+
+> Large pretrained language models (PLMs) are often domain- or task-adapted via fine-tuning or prompting. Finetuning requires modifying all of the parameters and having enough data to avoid overfitting while prompting requires no training and few examples but limits performance. Instead, we prepare PLMs for data- and parameter-efficient adaptation by learning to learn the difference between general and adapted PLMs. This difference is expressed in terms of model weights and sublayer structure through our proposed dynamic low-rank reparameterization and learned architecture controller. Experiments on few-shot dialogue completion, low-resource abstractive summarization, and multi-domain language modeling show improvements in adaptation time and performance over direct finetuning or preparation via domain-adaptive pretraining. Ablations show our task-adaptive reparameterization (TARP) and model search (TAMS) components individually improve on other parameter-efficient transfer like adapters and structure-learning methods like learned sparsification.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2207.03509](https://arxiv.org/abs/2207.03509) [cs.CL]** |
+|           | (or **[arXiv:2207.03509v1](https://arxiv.org/abs/2207.03509v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2207.03509Focus to learn more |
+
+
+
 
 
 
