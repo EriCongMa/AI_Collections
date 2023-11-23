@@ -2,35 +2,84 @@
 
 # Index
 
+- [2022-10-20](#2022-10-20)
+  - [1. RankT5: Fine-Tuning T5 for Text Ranking with Ranking Losses](#2022-10-20-1)
+  
+  - [2. A Survey of Active Learning for Natural Language Processing](#2022-10-20-2)
+  
+  - [3. Simple and Effective Unsupervised Speech Translation](#2022-10-20-3)
+  
+  - [4. The Devil in Linear Transformer](#2022-10-20-4)
+  
+  - [5. Hybrid-Regressive Neural Machine Translation](#2022-10-20-5)
+  
+  - [6. Language Does More Than Describe: On The Lack Of Figurative Speech in Text-To-Image Models](#2022-10-20-6)
+  
+  - [7. DALLE-2 is Seeing Double: Flaws in Word-to-Concept Mapping in Text2Image Models](#2022-10-20-7)
+  
+  - [8. Language Models Understand Us, Poorly](#2022-10-20-8)
+  
+  - [9. TabLLM: Few-shot Classification of Tabular Data with Large Language Models](#2022-10-20-9)
+  
+- [2022-10-19](#2022-10-19)
+  - [1. Deepfake Text Detection: Limitations and Opportunities](#2022-10-19-1)
+
+  - [2. Personalization of CTC Speech Recognition Models](#2022-10-19-2)
+
+  - [3. DisCup: Discriminator Cooperative Unlikelihood Prompt-tuning for Controllable Text Generation](#2022-10-19-3)
+
+  - [4. Discrete Cross-Modal Alignment Enables Zero-Shot Speech Translation](#2022-10-19-4)
+
+  - [5. Synergy with Translation Artifacts for Training and Inference in Multilingual Tasks](#2022-10-19-5)
+
+  - [6. Simultaneous Translation for Unsegmented Input: A Sliding Window Approach](#2022-10-19-6)
+
+- [2022-10-18](#2022-10-18)
+  - [1. TestAug: A Framework for Augmenting Capability-based NLP Tests](#2022-10-18-1)
+
+  - [2. Vision-Language Pre-training: Basics, Recent Advances, and Future Trends](#2022-10-18-2)
+
+  - [3. Generating Synthetic Speech from SpokenVocab for Speech Translation](#2022-10-18-3)
+
+  - [4. Modeling Context With Linear Attention for Scalable Document-Level Translation](#2022-10-18-4)
+
+  - [5. Towards Robust k-Nearest-Neighbor Machine Translation](#2022-10-18-5)
+
+  - [6. DiffuSeq: Sequence to Sequence Text Generation with Diffusion Models](#2022-10-18-6)
+
+  - [7. Language-agnostic Code-Switching in End-To-End Speech Recognition](#2022-10-18-7)
+
+  - [8. Table-To-Text generation and pre-training with TabT5](#2022-10-18-8)
+
 - [2022-10-14](#2022-10-14)
   - [1. Why self-attention is Natural for Sequence-to-Sequence Problems? A Perspective from Symmetries](#2022-10-14-1)
-  
+
   - [2. Categorizing Semantic Representations for Neural Machine Translation](#2022-10-14-2)
-  
+
   - [3. Large Language Models are few(1)-shot Table Reasoners](#2022-10-14-3)
-  
+
   - [4. Low-resource Neural Machine Translation with Cross-modal Alignment](#2022-10-14-4)
-  
+
   - [5. SDW-ASL: A Dynamic System to Generate Large Scale Dataset for Continuous American Sign Language](#2022-10-14-5)
-  
+
   - [6. CS-Insights: A System for Analyzing Computer Science Research](#2022-10-14-6)
-  
+
   - [7. Exploring Segmentation Approaches for Neural Machine Translation of Code-Switched Egyptian Arabic-English Text](#2022-10-14-7)
-  
+
   - [8. DICTDIS: Dictionary Constrained Disambiguation for Improved NMT](#2022-10-14-8)
-  
+
   - [9. Scaling Back-Translation with Domain Text Generation for Sign Language Gloss Translation](#2022-10-14-9)
-  
+
   - [10. Incorporating Context into Subword Vocabularies](#2022-10-14-10)
-  
+
   - [11. A Multi-dimensional Evaluation of Tokenizer-free Multilingual Pretrained Models](#2022-10-14-11)
-  
+
   - [12. How (Not) To Evaluate Explanation Quality](#2022-10-14-12)
-  
+
   - [13. You Can Have Your Data and Balance It Too: Towards Balanced and Efficient Multilingual Models](#2022-10-14-13)
-  
+
   - [14. Language Model Decoding as Likelihood-Utility Alignment](#2022-10-14-14)
-  
+
 - [2022-10-13](#2022-10-13)
   - [1. One does not fit all! On the Complementarity of Vision Encoders for Vision and Language Tasks](#2022-10-13-1)
   - [2. Foundation Transformers](#2022-10-13-2)
@@ -122,6 +171,474 @@
 
   - [3. SpeechUT: Bridging Speech and Text with Hidden-Unit for Encoder-Decoder Based Speech-Text Pre-training](#2022-10-10-3)
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2022-10-20
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-10-20-1">1. RankT5: Fine-Tuning T5 for Text Ranking with Ranking Losses
+</h2>
+
+Title: [RankT5: Fine-Tuning T5 for Text Ranking with Ranking Losses](https://arxiv.org/abs/2210.10634)
+
+Authors: [Honglei Zhuang](https://arxiv.org/search/cs?searchtype=author&query=Zhuang%2C+H), [Zhen Qin](https://arxiv.org/search/cs?searchtype=author&query=Qin%2C+Z), [Rolf Jagerman](https://arxiv.org/search/cs?searchtype=author&query=Jagerman%2C+R), [Kai Hui](https://arxiv.org/search/cs?searchtype=author&query=Hui%2C+K), [Ji Ma](https://arxiv.org/search/cs?searchtype=author&query=Ma%2C+J), [Jing Lu](https://arxiv.org/search/cs?searchtype=author&query=Lu%2C+J), [Jianmo Ni](https://arxiv.org/search/cs?searchtype=author&query=Ni%2C+J), [Xuanhui Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+X), [Michael Bendersky](https://arxiv.org/search/cs?searchtype=author&query=Bendersky%2C+M)
+
+> Recently, substantial progress has been made in text ranking based on pretrained language models such as BERT. However, there are limited studies on how to leverage more powerful sequence-to-sequence models such as T5. Existing attempts usually formulate text ranking as classification and rely on postprocessing to obtain a ranked list. In this paper, we propose RankT5 and study two T5-based ranking model structures, an encoder-decoder and an encoder-only one, so that they not only can directly output ranking scores for each query-document pair, but also can be fine-tuned with "pairwise" or "listwise" ranking losses to optimize ranking performances. Our experiments show that the proposed models with ranking losses can achieve substantial ranking performance gains on different public text ranking data sets. Moreover, when fine-tuned with listwise ranking losses, the ranking model appears to have better zero-shot ranking performance on out-of-domain data sets compared to the model fine-tuned with classification losses.
+
+| Comments: | 13 pages                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Information Retrieval (cs.IR)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2210.10634](https://arxiv.org/abs/2210.10634) [cs.IR]** |
+|           | (or **[arXiv:2210.10634v1](https://arxiv.org/abs/2210.10634v1) [cs.IR]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2210.10634Focus to learn more |
+
+
+
+
+
+<h2 id="2022-10-20-2">2. A Survey of Active Learning for Natural Language Processing
+</h2>
+
+Title: [A Survey of Active Learning for Natural Language Processing](https://arxiv.org/abs/2210.10109)
+
+Authors: [Zhisong Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+Z), [Emma Strubell](https://arxiv.org/search/cs?searchtype=author&query=Strubell%2C+E), [Eduard Hovy](https://arxiv.org/search/cs?searchtype=author&query=Hovy%2C+E)
+
+> In this work, we provide a survey of active learning (AL) for its applications in natural language processing (NLP). In addition to a fine-grained categorization of query strategies, we also investigate several other important aspects of applying AL to NLP problems. These include AL for structured prediction tasks, annotation cost, model learning (especially with deep neural models), and starting and stopping AL. Finally, we conclude with a discussion of related topics and future directions.
+
+| Comments: | EMNLP 2022                                                   |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2210.10109](https://arxiv.org/abs/2210.10109) [cs.CL]** |
+|           | (or **[arXiv:2210.10109v1](https://arxiv.org/abs/2210.10109v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2210.10109Focus to learn more |
+
+
+
+
+
+<h2 id="2022-10-20-3">3. Simple and Effective Unsupervised Speech Translation
+</h2>
+
+Title: [Simple and Effective Unsupervised Speech Translation](https://arxiv.org/abs/2210.10191)
+
+Authors: [Changhan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+C), [Hirofumi Inaguma](https://arxiv.org/search/cs?searchtype=author&query=Inaguma%2C+H), [Peng-Jen Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+P), [Ilia Kulikov](https://arxiv.org/search/cs?searchtype=author&query=Kulikov%2C+I), [Yun Tang](https://arxiv.org/search/cs?searchtype=author&query=Tang%2C+Y), [Wei-Ning Hsu](https://arxiv.org/search/cs?searchtype=author&query=Hsu%2C+W), [Michael Auli](https://arxiv.org/search/cs?searchtype=author&query=Auli%2C+M), [Juan Pino](https://arxiv.org/search/cs?searchtype=author&query=Pino%2C+J)
+
+> The amount of labeled data to train models for speech tasks is limited for most languages, however, the data scarcity is exacerbated for speech translation which requires labeled data covering two different languages. To address this issue, we study a simple and effective approach to build speech translation systems without labeled data by leveraging recent advances in unsupervised speech recognition, machine translation and speech synthesis, either in a pipeline approach, or to generate pseudo-labels for training end-to-end speech translation models. Furthermore, we present an unsupervised domain adaptation technique for pre-trained speech models which improves the performance of downstream unsupervised speech recognition, especially for low-resource settings. Experiments show that unsupervised speech-to-text translation outperforms the previous unsupervised state of the art by 3.2 BLEU on the Libri-Trans benchmark, on CoVoST 2, our best systems outperform the best supervised end-to-end models (without pre-training) from only two years ago by an average of 5.0 BLEU over five X-En directions. We also report competitive results on MuST-C and CVSS benchmarks.
+
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2210.10191](https://arxiv.org/abs/2210.10191) [cs.CL]** |
+|           | (or **[arXiv:2210.10191v1](https://arxiv.org/abs/2210.10191v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2210.10191Focus to learn more |
+
+
+
+
+
+<h2 id="2022-10-20-4">4. The Devil in Linear Transformer
+</h2>
+
+Title: [The Devil in Linear Transformer](https://arxiv.org/abs/2210.10340)
+
+Authors: [Zhen Qin](https://arxiv.org/search/cs?searchtype=author&query=Qin%2C+Z), [XiaoDong Han](https://arxiv.org/search/cs?searchtype=author&query=Han%2C+X), [Weixuan Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun%2C+W), [Dongxu Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+D), [Lingpeng Kong](https://arxiv.org/search/cs?searchtype=author&query=Kong%2C+L), [Nick Barnes](https://arxiv.org/search/cs?searchtype=author&query=Barnes%2C+N), [Yiran Zhong](https://arxiv.org/search/cs?searchtype=author&query=Zhong%2C+Y)
+
+> Linear transformers aim to reduce the quadratic space-time complexity of vanilla transformers. However, they usually suffer from degraded performances on various tasks and corpus. In this paper, we examine existing kernel-based linear transformers and identify two key issues that lead to such performance gaps: 1) unbounded gradients in the attention computation adversely impact the convergence of linear transformer models; 2) attention dilution which trivially distributes attention scores over long sequences while neglecting neighbouring structures. To address these issues, we first identify that the scaling of attention matrices is the devil in unbounded gradients, which turns out unnecessary in linear attention as we show theoretically and empirically. To this end, we propose a new linear attention that replaces the scaling operation with a normalization to stabilize gradients. For the issue of attention dilution, we leverage a diagonal attention to confine attention to only neighbouring tokens in early layers. Benefiting from the stable gradients and improved attention, our new linear transformer model, transNormer, demonstrates superior performance on text classification and language modeling tasks, as well as on the challenging Long-Range Arena benchmark, surpassing vanilla transformer and existing linear variants by a clear margin while being significantly more space-time efficient. The code is available at [this https URL](https://github.com/OpenNLPLab/Transnormer) .
+
+| Comments: | accepted to EMNLP2022                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2210.10340](https://arxiv.org/abs/2210.10340) [cs.CL]** |
+|           | (or **[arXiv:2210.10340v1](https://arxiv.org/abs/2210.10340v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2210.10340Focus to learn more |
+
+
+
+
+
+
+
+<h2 id="2022-10-20-5">5. Hybrid-Regressive Neural Machine Translation
+</h2>
+
+Title: [Hybrid-Regressive Neural Machine Translation](https://arxiv.org/abs/2210.10416)
+
+Authors: [Qiang Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Q), [Xinhui Hu](https://arxiv.org/search/cs?searchtype=author&query=Hu%2C+X), [Ming Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+M)
+
+> In this work, we empirically confirm that non-autoregressive translation with an iterative refinement mechanism (IR-NAT) suffers from poor acceleration robustness because it is more sensitive to decoding batch size and computing device setting than autoregressive translation (AT). Inspired by it, we attempt to investigate how to combine the strengths of autoregressive and non-autoregressive translation paradigms better. To this end, we demonstrate through synthetic experiments that prompting a small number of AT's predictions can promote one-shot non-autoregressive translation to achieve the equivalent performance of IR-NAT. Following this line, we propose a new two-stage translation prototype called hybrid-regressive translation (HRT). Specifically, HRT first generates discontinuous sequences via autoregression (e.g., make a prediction every k tokens, k>1) and then fills in all previously skipped tokens at once in a non-autoregressive manner. We also propose a bag of techniques to effectively and efficiently train HRT without adding any model parameters. HRT achieves the state-of-the-art BLEU score of 28.49 on the WMT En-De task and is at least 1.5x faster than AT, regardless of batch size and device. In addition, another bonus of HRT is that it successfully inherits the good characteristics of AT in the deep-encoder-shallow-decoder architecture. Concretely, compared to the vanilla HRT with a 6-layer encoder and 6-layer decoder, the inference speed of HRT with a 12-layer encoder and 1-layer decoder is further doubled on both GPU and CPU without BLEU loss.
+
+| Comments: | Submitted to ICLR 2023                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2210.10416](https://arxiv.org/abs/2210.10416) [cs.CL]** |
+|           | (or **[arXiv:2210.10416v1](https://arxiv.org/abs/2210.10416v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2210.10416Focus to learn more |
+
+
+
+
+
+<h2 id="2022-10-20-6">6. Language Does More Than Describe: On The Lack Of Figurative Speech in Text-To-Image Models
+</h2>
+
+Title: [Language Does More Than Describe: On The Lack Of Figurative Speech in Text-To-Image Models](https://arxiv.org/abs/2210.10578)
+
+Authors: [Ricardo Kleinlein](https://arxiv.org/search/cs?searchtype=author&query=Kleinlein%2C+R), [Cristina Luna-Jiménez](https://arxiv.org/search/cs?searchtype=author&query=Luna-Jiménez%2C+C), [Fernando Fernández-Martínez](https://arxiv.org/search/cs?searchtype=author&query=Fernández-Martínez%2C+F)
+
+> The impressive capacity shown by recent text-to-image diffusion models to generate high-quality pictures from textual input prompts has leveraged the debate about the very definition of art. Nonetheless, these models have been trained using text data collected from content-based labelling protocols that focus on describing the items and actions in an image but neglect any subjective appraisal. Consequently, these automatic systems need rigorous descriptions of the elements and the pictorial style of the image to be generated, otherwise failing to deliver. As potential indicators of the actual artistic capabilities of current generative models, we characterise the sentimentality, objectiveness and degree of abstraction of publicly available text data used to train current text-to-image diffusion models. Considering the sharp difference observed between their language style and that typically employed in artistic contexts, we suggest generative models should incorporate additional sources of subjective information in their training in order to overcome (or at least to alleviate) some of their current limitations, thus effectively unleashing a truly artistic and creative generation.
+
+| Comments: | NeurIPS 2022 Machine Learning for Creativity and Design Workshop |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2210.10578](https://arxiv.org/abs/2210.10578) [cs.CL]** |
+|           | (or **[arXiv:2210.10578v1](https://arxiv.org/abs/2210.10578v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2210.10578Focus to learn more |
+
+
+
+<h2 id="2022-10-20-7">7. DALLE-2 is Seeing Double: Flaws in Word-to-Concept Mapping in Text2Image Models
+</h2>
+
+Title: [DALLE-2 is Seeing Double: Flaws in Word-to-Concept Mapping in Text2Image Models](https://arxiv.org/abs/2210.10606)
+
+Authors: [Royi Rassin](https://arxiv.org/search/cs?searchtype=author&query=Rassin%2C+R), [Shauli Ravfogel](https://arxiv.org/search/cs?searchtype=author&query=Ravfogel%2C+S), [Yoav Goldberg](https://arxiv.org/search/cs?searchtype=author&query=Goldberg%2C+Y)
+
+> We study the way DALLE-2 maps symbols (words) in the prompt to their references (entities or properties of entities in the generated image). We show that in stark contrast to the way human process language, DALLE-2 does not follow the constraint that each word has a single role in the interpretation, and sometimes re-use the same symbol for different purposes. We collect a set of stimuli that reflect the phenomenon: we show that DALLE-2 depicts both senses of nouns with multiple senses at once; and that a given word can modify the properties of two distinct entities in the image, or can be depicted as one object and also modify the properties of another object, creating a semantic leakage of properties between entities. Taken together, our study highlights the differences between DALLE-2 and human language processing and opens an avenue for future study on the inductive biases of text-to-image models.
+
+| Comments: | 5 pages, BlackboxNLP @ EMNLP 2022                            |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2210.10606](https://arxiv.org/abs/2210.10606) [cs.CL]** |
+|           | (or **[arXiv:2210.10606v1](https://arxiv.org/abs/2210.10606v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2210.10606Focus to learn more |
+
+
+
+
+
+
+
+<h2 id="2022-10-20-8">8. Language Models Understand Us, Poorly
+</h2>
+
+Title: [Language Models Understand Us, Poorly](https://arxiv.org/abs/2210.10684)
+
+Authors: [Jared Moore](https://arxiv.org/search/cs?searchtype=author&query=Moore%2C+J)
+
+> Some claim language models understand us. Others won't hear it. To clarify, I investigate three views of human language understanding: as-mapping, as-reliability and as-representation. I argue that while behavioral reliability is necessary for understanding, internal representations are sufficient; they climb the right hill. I review state-of-the-art language and multi-modal models: they are pragmatically challenged by under-specification of form. I question the Scaling Paradigm: limits on resources may prohibit scaled-up models from approaching understanding. Last, I describe how as-representation advances a science of understanding. We need work which probes model internals, adds more of human language, and measures what models can learn.
+
+| Comments:    | 5 pages, 1 figure, to be published in Findings of EMNLP 2022 |
+| ------------ | ------------------------------------------------------------ |
+| Subjects:    | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| ACM classes: | I.2.7                                                        |
+| Cite as:     | **[arXiv:2210.10684](https://arxiv.org/abs/2210.10684) [cs.CL]** |
+|              | (or **[arXiv:2210.10684v1](https://arxiv.org/abs/2210.10684v1) [cs.CL]** for this version) |
+|              | https://doi.org/10.48550/arXiv.2210.10684Focus to learn more |
+
+
+
+<h2 id="2022-10-20-9">9. TabLLM: Few-shot Classification of Tabular Data with Large Language Models
+</h2>
+
+Title: [TabLLM: Few-shot Classification of Tabular Data with Large Language Models](https://arxiv.org/abs/2210.10723)
+
+Authors: [Stefan Hegselmann](https://arxiv.org/search/cs?searchtype=author&query=Hegselmann%2C+S), [Alejandro Buendia](https://arxiv.org/search/cs?searchtype=author&query=Buendia%2C+A), [Hunter Lang](https://arxiv.org/search/cs?searchtype=author&query=Lang%2C+H), [Monica Agrawal](https://arxiv.org/search/cs?searchtype=author&query=Agrawal%2C+M), [Xiaoyi Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+X), [David Sontag](https://arxiv.org/search/cs?searchtype=author&query=Sontag%2C+D)
+
+> We study the application of large language models to zero-shot and few-shot classification of tabular data. We prompt the large language model with a serialization of the tabular data to a natural-language string, together with a short description of the classification problem. In the few-shot setting, we fine-tune the large language model using some labeled examples. We evaluate several serialization methods including templates, table-to-text models, and large language models. Despite its simplicity, we find that this technique outperforms prior deep-learning-based tabular classification methods on several benchmark datasets. In most cases, even zero-shot classification obtains non-trivial performance, illustrating the method's ability to exploit prior knowledge encoded in large language models. Unlike many deep learning methods for tabular datasets, this approach is also competitive with strong traditional baselines like gradient-boosted trees, especially in the very-few-shot setting.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2210.10723](https://arxiv.org/abs/2210.10723) [cs.CL]** |
+|           | (or **[arXiv:2210.10723v1](https://arxiv.org/abs/2210.10723v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2210.10723Focus to learn more |
+
+
+
+# 2022-10-19
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-10-19-1">1. Deepfake Text Detection: Limitations and Opportunities
+</h2>
+
+Title: [Deepfake Text Detection: Limitations and Opportunities](https://arxiv.org/abs/2210.09421)
+
+Authors: [Jiameng Pu](https://arxiv.org/search/cs?searchtype=author&query=Pu%2C+J), [Zain Sarwar](https://arxiv.org/search/cs?searchtype=author&query=Sarwar%2C+Z), [Sifat Muhammad Abdullah](https://arxiv.org/search/cs?searchtype=author&query=Abdullah%2C+S+M), [Abdullah Rehman](https://arxiv.org/search/cs?searchtype=author&query=Rehman%2C+A), [Yoonjin Kim](https://arxiv.org/search/cs?searchtype=author&query=Kim%2C+Y), [Parantapa Bhattacharya](https://arxiv.org/search/cs?searchtype=author&query=Bhattacharya%2C+P), [Mobin Javed](https://arxiv.org/search/cs?searchtype=author&query=Javed%2C+M), [Bimal Viswanath](https://arxiv.org/search/cs?searchtype=author&query=Viswanath%2C+B)
+
+> Recent advances in generative models for language have enabled the creation of convincing synthetic text or deepfake text. Prior work has demonstrated the potential for misuse of deepfake text to mislead content consumers. Therefore, deepfake text detection, the task of discriminating between human and machine-generated text, is becoming increasingly critical. Several defenses have been proposed for deepfake text detection. However, we lack a thorough understanding of their real-world applicability. In this paper, we collect deepfake text from 4 online services powered by Transformer-based tools to evaluate the generalization ability of the defenses on content in the wild. We develop several low-cost adversarial attacks, and investigate the robustness of existing defenses against an adaptive attacker. We find that many defenses show significant degradation in performance under our evaluation scenarios compared to their original claimed performance. Our evaluation shows that tapping into the semantic information in the text content is a promising approach for improving the robustness and generalization performance of deepfake text detection schemes.
+
+| Comments: | Accepted to IEEE S&P 2023; First two authors contributed equally to this work; 18 pages, 7 figures |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Cryptography and Security (cs.CR)**; Computation and Language (cs.CL); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2210.09421](https://arxiv.org/abs/2210.09421) [cs.CR]** |
+|           | (or **[arXiv:2210.09421v1](https://arxiv.org/abs/2210.09421v1) [cs.CR]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2210.09421Focus to learn more |
+
+
+
+<h2 id="2022-10-19-2">2. Personalization of CTC Speech Recognition Models
+</h2>
+
+Title: [Personalization of CTC Speech Recognition Models](https://arxiv.org/abs/2210.09510)
+
+Authors: [Saket Dingliwal](https://arxiv.org/search/cs?searchtype=author&query=Dingliwal%2C+S), [Monica Sunkara](https://arxiv.org/search/cs?searchtype=author&query=Sunkara%2C+M), [Srikanth Ronanki](https://arxiv.org/search/cs?searchtype=author&query=Ronanki%2C+S), [Jeff Farris](https://arxiv.org/search/cs?searchtype=author&query=Farris%2C+J), [Katrin Kirchhoff](https://arxiv.org/search/cs?searchtype=author&query=Kirchhoff%2C+K), [Sravan Bodapati](https://arxiv.org/search/cs?searchtype=author&query=Bodapati%2C+S)
+
+> End-to-end speech recognition models trained using joint Connectionist Temporal Classification (CTC)-Attention loss have gained popularity recently. In these models, a non-autoregressive CTC decoder is often used at inference time due to its speed and simplicity. However, such models are hard to personalize because of their conditional independence assumption that prevents output tokens from previous time steps to influence future predictions. To tackle this, we propose a novel two-way approach that first biases the encoder with attention over a predefined list of rare long-tail and out-of-vocabulary (OOV) words and then uses dynamic boosting and phone alignment network during decoding to further bias the subword predictions. We evaluate our approach on open-source VoxPopuli and in-house medical datasets to showcase a 60% improvement in F1 score on domain-specific rare words over a strong CTC baseline.
+
+| Comments: | To appear in SLT 2022                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2210.09510](https://arxiv.org/abs/2210.09510) [cs.CL]** |
+|           | (or **[arXiv:2210.09510v1](https://arxiv.org/abs/2210.09510v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2210.09510Focus to learn more |
+
+
+
+<h2 id="2022-10-19-3">3. DisCup: Discriminator Cooperative Unlikelihood Prompt-tuning for Controllable Text Generation
+</h2>
+
+Title: [DisCup: Discriminator Cooperative Unlikelihood Prompt-tuning for Controllable Text Generation](https://arxiv.org/abs/2210.09551)
+
+Authors: [Hanqing Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+H), [Dawei Song](https://arxiv.org/search/cs?searchtype=author&query=Song%2C+D)
+
+> Prompt learning with immensely large Casual Language Models (CLMs) has been shown promising for attribute-controllable text generation (CTG). However, vanilla prompt tuning tends to imitate training corpus characteristics beyond the control attributes, resulting in a poor generalization ability. Moreover, it is less able to capture the relationship between different attributes, further limiting the control performance. In this paper, we propose a new CTG approach, namely DisCup, which incorporates the attribute knowledge of discriminator to optimize the control-prompts, steering a frozen CLM to produce attribute-specific texts. Specifically, the frozen CLM model, capable of producing multitudinous texts, is first used to generate the next-token candidates based on the context, so as to ensure the diversity of tokens to be predicted. Then, we leverage an attribute-discriminator to select desired/undesired tokens from those candidates, providing the inter-attribute knowledge. Finally, we bridge the above two traits by an unlikelihood objective for prompt-tuning. Extensive experimental results show that DisCup can achieve a new state-of-the-art control performance while maintaining an efficient and high-quality text generation, only relying on around 10 virtual tokens.
+
+| Comments: | Accepted at EMNLP2022                                        |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2210.09551](https://arxiv.org/abs/2210.09551) [cs.CL]** |
+|           | (or **[arXiv:2210.09551v1](https://arxiv.org/abs/2210.09551v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2210.09551Focus to learn more |
+
+
+
+
+
+<h2 id="2022-10-19-4">4. Discrete Cross-Modal Alignment Enables Zero-Shot Speech Translation
+</h2>
+
+Title: [Discrete Cross-Modal Alignment Enables Zero-Shot Speech Translation](https://arxiv.org/abs/2210.09556)
+
+Authors: [Chen Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+C), [Yuchen Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Y), [Boxing Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen%2C+B), [Jiajun Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang%2C+J), [Wei Luo](https://arxiv.org/search/cs?searchtype=author&query=Luo%2C+W), [Zhongqiang Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+Z), [Chengqing Zong](https://arxiv.org/search/cs?searchtype=author&query=Zong%2C+C)
+
+> End-to-end Speech Translation (ST) aims at translating the source language speech into target language text without generating the intermediate transcriptions. However, the training of end-to-end methods relies on parallel ST data, which are difficult and expensive to obtain. Fortunately, the supervised data for automatic speech recognition (ASR) and machine translation (MT) are usually more accessible, making zero-shot speech translation a potential direction. Existing zero-shot methods fail to align the two modalities of speech and text into a shared semantic space, resulting in much worse performance compared to the supervised ST methods. In order to enable zero-shot ST, we propose a novel Discrete Cross-Modal Alignment (DCMA) method that employs a shared discrete vocabulary space to accommodate and match both modalities of speech and text. Specifically, we introduce a vector quantization module to discretize the continuous representations of speech and text into a finite set of virtual tokens, and use ASR data to map corresponding speech and text to the same virtual token in a shared codebook. This way, source language speech can be embedded in the same semantic space as the source language text, which can be then transformed into target language text with an MT module. Experiments on multiple language pairs demonstrate that our zero-shot ST method significantly improves the SOTA, and even performers on par with the strong supervised ST baselines.
+
+| Comments: | Accepted by the main conference of EMNLP 2022                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2210.09556](https://arxiv.org/abs/2210.09556) [cs.CL]** |
+|           | (or **[arXiv:2210.09556v1](https://arxiv.org/abs/2210.09556v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2210.09556Focus to learn more |
+
+
+
+<h2 id="2022-10-19-5">5. Synergy with Translation Artifacts for Training and Inference in Multilingual Tasks
+</h2>
+
+Title: [Synergy with Translation Artifacts for Training and Inference in Multilingual Tasks](https://arxiv.org/abs/2210.09588)
+
+Authors: [Jaehoon Oh](https://arxiv.org/search/cs?searchtype=author&query=Oh%2C+J), [Jongwoo Ko](https://arxiv.org/search/cs?searchtype=author&query=Ko%2C+J), [Se-Young Yun](https://arxiv.org/search/cs?searchtype=author&query=Yun%2C+S)
+
+> Translation has played a crucial role in improving the performance on multilingual tasks: (1) to generate the target language data from the source language data for training and (2) to generate the source language data from the target language data for inference. However, prior works have not considered the use of both translations simultaneously. This paper shows that combining them can synergize the results on various multilingual sentence classification tasks. We empirically find that translation artifacts stylized by translators are the main factor of the performance gain. Based on this analysis, we adopt two training methods, SupCon and MixUp, considering translation artifacts. Furthermore, we propose a cross-lingual fine-tuning algorithm called MUSC, which uses SupCon and MixUp jointly and improves the performance. Our code is available at [this https URL](https://github.com/jongwooko/MUSC).
+
+| Comments: | The 2022 Conference on Empirical Methods in Natural Language Processing (EMNLP) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2210.09588](https://arxiv.org/abs/2210.09588) [cs.CL]** |
+|           | (or **[arXiv:2210.09588v1](https://arxiv.org/abs/2210.09588v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2210.09588Focus to learn more |
+
+
+
+<h2 id="2022-10-19-6">6. Simultaneous Translation for Unsegmented Input: A Sliding Window Approach
+</h2>
+
+Title: [Simultaneous Translation for Unsegmented Input: A Sliding Window Approach](https://arxiv.org/abs/2210.09754)
+
+Authors: [Sukanta Sen](https://arxiv.org/search/cs?searchtype=author&query=Sen%2C+S), [Ondřej Bojar](https://arxiv.org/search/cs?searchtype=author&query=Bojar%2C+O), [Barry Haddow](https://arxiv.org/search/cs?searchtype=author&query=Haddow%2C+B)
+
+> In the cascaded approach to spoken language translation (SLT), the ASR output is typically punctuated and segmented into sentences before being passed to MT, since the latter is typically trained on written text. However, erroneous segmentation, due to poor sentence-final punctuation by the ASR system, leads to degradation in translation quality, especially in the simultaneous (online) setting where the input is continuously updated. To reduce the influence of automatic segmentation, we present a sliding window approach to translate raw ASR outputs (online or offline) without needing to rely on an automatic segmenter. We train translation models using parallel windows (instead of parallel sentences) extracted from the original training data. At test time, we translate at the window level and join the translated windows using a simple approach to generate the final translation. Experiments on English-to-German and English-to-Czech show that our approach improves 1.3--2.0 BLEU points over the usual ASR-segmenter pipeline, and the fixed-length window considerably reduces flicker compared to a baseline retranslation-based online SLT system.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | **[arXiv:2210.09754](https://arxiv.org/abs/2210.09754) [cs.CL]** |
+|           | (or **[arXiv:2210.09754v1](https://arxiv.org/abs/2210.09754v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2210.09754Focus to learn more |
+
+
+
+
+
+
+# 2022-10-18
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2022-10-18-1">1. TestAug: A Framework for Augmenting Capability-based NLP Tests
+</h2>
+
+Title: [TestAug: A Framework for Augmenting Capability-based NLP Tests](https://arxiv.org/abs/2210.08097)
+
+Authors: [Guanqun Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+G), [Mirazul Haque](https://arxiv.org/search/cs?searchtype=author&query=Haque%2C+M), [Qiaochu Song](https://arxiv.org/search/cs?searchtype=author&query=Song%2C+Q), [Wei Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+W), [Xueqing Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+X)
+
+> The recently proposed capability-based NLP testing allows model developers to test the functional capabilities of NLP models, revealing functional failures that cannot be detected by the traditional heldout mechanism. However, existing work on capability-based testing requires extensive manual efforts and domain expertise in creating the test cases. In this paper, we investigate a low-cost approach for the test case generation by leveraging the GPT-3 engine. We further propose to use a classifier to remove the invalid outputs from GPT-3 and expand the outputs into templates to generate more test cases. Our experiments show that TestAug has three advantages over the existing work on behavioral testing: (1) TestAug can find more bugs than existing work; (2) The test cases in TestAug are more diverse; and (3) TestAug largely saves the manual efforts in creating the test suites. The code and data for TestAug can be found at our project website ([this https URL](https://guanqun-yang.github.io/testaug/)) and GitHub ([this https URL](https://github.com/guanqun-yang/testaug)).
+
+| Comments: | Accepted by COLING 2022; Presentation Video: [this https URL](https://www.youtube.com/watch?v=X0p8J57qxeg;) Website: [this https URL](https://guanqun-yang.github.io/testaug/;) GitHub: [this https URL](https://github.com/guanqun-yang/testaug) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Software Engineering (cs.SE)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL); Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2210.08097](https://arxiv.org/abs/2210.08097) [cs.SE]** |
+|           | (or **[arXiv:2210.08097v1](https://arxiv.org/abs/2210.08097v1) [cs.SE]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2210.08097Focus to learn more |
+
+
+
+
+
+<h2 id="2022-10-18-2">2. Vision-Language Pre-training: Basics, Recent Advances, and Future Trends
+</h2>
+
+Title: [Vision-Language Pre-training: Basics, Recent Advances, and Future Trends](https://arxiv.org/abs/2210.09263)
+
+Authors: [Zhe Gan](https://arxiv.org/search/cs?searchtype=author&query=Gan%2C+Z), [Linjie Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+L), [Chunyuan Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+C), [Lijuan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+L), [Zicheng Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu%2C+Z), [Jianfeng Gao](https://arxiv.org/search/cs?searchtype=author&query=Gao%2C+J)
+
+> This paper surveys vision-language pre-training (VLP) methods for multimodal intelligence that have been developed in the last few years. We group these approaches into three categories: (i) VLP for image-text tasks, such as image captioning, image-text retrieval, visual question answering, and visual grounding; (ii) VLP for core computer vision tasks, such as (open-set) image classification, object detection, and segmentation; and (iii) VLP for video-text tasks, such as video captioning, video-text retrieval, and video question answering. For each category, we present a comprehensive review of state-of-the-art methods, and discuss the progress that has been made and challenges still being faced, using specific systems and models as case studies. In addition, for each category, we discuss advanced topics being actively explored in the research community, such as big foundation models, unified modeling, in-context few-shot learning, knowledge, robustness, and computer vision in the wild, to name a few.
+
+| Comments: | A survey paper/book on Vision-Language Pre-training (102 pages) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| Cite as:  | **[arXiv:2210.09263](https://arxiv.org/abs/2210.09263) [cs.CV]** |
+|           | (or **[arXiv:2210.09263v1](https://arxiv.org/abs/2210.09263v1) [cs.CV]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2210.09263Focus to learn more |
+
+
+
+
+
+<h2 id="2022-10-18-3">3. Generating Synthetic Speech from SpokenVocab for Speech Translation
+</h2>
+
+Title: [Generating Synthetic Speech from SpokenVocab for Speech Translation](https://arxiv.org/abs/2210.08174)
+
+Authors: [Jinming Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao%2C+J), [Gholamreza Haffar](https://arxiv.org/search/cs?searchtype=author&query=Haffar%2C+G), [Ehsan Shareghi](https://arxiv.org/search/cs?searchtype=author&query=Shareghi%2C+E)
+
+> Training end-to-end speech translation (ST) systems requires sufficiently large-scale data, which is unavailable for most language pairs and domains. One practical solution to the data scarcity issue is to convert machine translation data (MT) to ST data via text-to-speech (TTS) systems. Yet, using TTS systems can be tedious and slow, as the conversion needs to be done for each MT dataset. In this work, we propose a simple, scalable and effective data augmentation technique, i.e., SpokenVocab, to convert MT data to ST data on-the-fly. The idea is to retrieve and stitch audio snippets from a SpokenVocab bank according to words in an MT sequence. Our experiments on multiple language pairs from Must-C show that this method outperforms strong baselines by an average of 1.83 BLEU scores, and it performs equally well as TTS-generated speech. We also showcase how SpokenVocab can be applied in code-switching ST for which often no TTS systems exit. Our code is available at [this https URL](https://github.com/mingzi151/SpokenVocab)
+
+| Comments: | 7 pages                                                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | **[arXiv:2210.08174](https://arxiv.org/abs/2210.08174) [cs.CL]** |
+|           | (or **[arXiv:2210.08174v1](https://arxiv.org/abs/2210.08174v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2210.08174Focus to learn more |
+
+
+
+
+
+<h2 id="2022-10-18-4">4. Modeling Context With Linear Attention for Scalable Document-Level Translation
+</h2>
+
+Title: [Modeling Context With Linear Attention for Scalable Document-Level Translation](https://arxiv.org/abs/2210.08431)
+
+Authors: [Zhaofeng Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+Z), [Hao Peng](https://arxiv.org/search/cs?searchtype=author&query=Peng%2C+H), [Nikolaos Pappas](https://arxiv.org/search/cs?searchtype=author&query=Pappas%2C+N), [Noah A. Smith](https://arxiv.org/search/cs?searchtype=author&query=Smith%2C+N+A)
+
+> Document-level machine translation leverages inter-sentence dependencies to produce more coherent and consistent translations. However, these models, predominantly based on transformers, are difficult to scale to long documents as their attention layers have quadratic complexity in the sequence length. Recent efforts on efficient attention improve scalability, but their effect on document translation remains unexplored. In this work, we investigate the efficacy of a recent linear attention model by Peng et al. (2021) on document translation and augment it with a sentential gate to promote a recency inductive bias. We evaluate the model on IWSLT 2015 and OpenSubtitles 2018 against the transformer, demonstrating substantially increased decoding speed on long sequences with similar or better BLEU scores. We show that sentential gating further improves translation quality on IWSLT.
+
+| Comments: | Findings of EMNLP 2022                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2210.08431](https://arxiv.org/abs/2210.08431) [cs.CL]** |
+|           | (or **[arXiv:2210.08431v1](https://arxiv.org/abs/2210.08431v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2210.08431Focus to learn more |
+
+
+
+
+
+<h2 id="2022-10-18-1">5. Towards Robust k-Nearest-Neighbor Machine Translation
+</h2>
+
+Title: [Towards Robust k-Nearest-Neighbor Machine Translation](https://arxiv.org/abs/2210.08808)
+
+Authors: [Hui Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang%2C+H), [Ziyao Lu](https://arxiv.org/search/cs?searchtype=author&query=Lu%2C+Z), [Fandong Meng](https://arxiv.org/search/cs?searchtype=author&query=Meng%2C+F), [Chulun Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+C), [Jie Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou%2C+J), [Degen Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang%2C+D), [Jinsong Su](https://arxiv.org/search/cs?searchtype=author&query=Su%2C+J)
+
+> k-Nearest-Neighbor Machine Translation (kNN-MT) becomes an important research direction of NMT in recent years. Its main idea is to retrieve useful key-value pairs from an additional datastore to modify translations without updating the NMT model. However, the underlying retrieved noisy pairs will dramatically deteriorate the model performance. In this paper, we conduct a preliminary study and find that this problem results from not fully exploiting the prediction of the NMT model. To alleviate the impact of noise, we propose a confidence-enhanced kNN-MT model with robust training. Concretely, we introduce the NMT confidence to refine the modeling of two important components of kNN-MT: kNN distribution and the interpolation weight. Meanwhile we inject two types of perturbations into the retrieved pairs for robust training. Experimental results on four benchmark datasets demonstrate that our model not only achieves significant improvements over current kNN-MT models, but also exhibits better robustness. Our code is available at [this https URL](https://github.com/DeepLearnXMU/Robust-knn-mt).
+
+| Comments: | Accepted to EMNLP 2022                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | **[arXiv:2210.08808](https://arxiv.org/abs/2210.08808) [cs.CL]** |
+|           | (or **[arXiv:2210.08808v1](https://arxiv.org/abs/2210.08808v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2210.08808Focus to learn more |
+
+
+
+
+
+<h2 id="2022-10-18-6">6. DiffuSeq: Sequence to Sequence Text Generation with Diffusion Models
+</h2>
+
+Title: [DiffuSeq: Sequence to Sequence Text Generation with Diffusion Models](https://arxiv.org/abs/2210.08933)
+
+Authors: [Shansan Gong](https://arxiv.org/search/cs?searchtype=author&query=Gong%2C+S), [Mukai Li](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+M), [Jiangtao Feng](https://arxiv.org/search/cs?searchtype=author&query=Feng%2C+J), [Zhiyong Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+Z), [LingPeng Kong](https://arxiv.org/search/cs?searchtype=author&query=Kong%2C+L)
+
+> Recently, diffusion models have emerged as a new paradigm for generative models. Despite the success in domains using continuous signals such as vision and audio, adapting diffusion models to natural language is difficult due to the discrete nature of text. We tackle this challenge by proposing DiffuSeq: a diffusion model designed for sequence-to-sequence (Seq2Seq) text generation tasks. Upon extensive evaluation over a wide range of Seq2Seq tasks, we find DiffuSeq achieving comparable or even better performance than six established baselines, including a state-of-the-art model that is based on pre-trained language models. Apart from quality, an intriguing property of DiffuSeq is its high diversity during generation, which is desired in many Seq2Seq tasks. We further include a theoretical analysis revealing the connection between DiffuSeq and autoregressive/non-autoregressive models. Bringing together theoretical analysis and empirical evidence, we demonstrate the great potential of diffusion models in complex conditional language generation tasks.
+
+| Comments: | 18 pages                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2210.08933](https://arxiv.org/abs/2210.08933) [cs.CL]** |
+|           | (or **[arXiv:2210.08933v1](https://arxiv.org/abs/2210.08933v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2210.08933Focus to learn more |
+
+
+
+
+
+<h2 id="2022-10-18-7">7. Language-agnostic Code-Switching in End-To-End Speech Recognition
+</h2>
+
+Title: [Language-agnostic Code-Switching in End-To-End Speech Recognition](https://arxiv.org/abs/2210.08992)
+
+Authors: [Enes Yavuz Ugan](https://arxiv.org/search/cs?searchtype=author&query=Ugan%2C+E+Y), [Christian Huber](https://arxiv.org/search/cs?searchtype=author&query=Huber%2C+C), [Juan Hussain](https://arxiv.org/search/cs?searchtype=author&query=Hussain%2C+J), [Alexander Waibel](https://arxiv.org/search/cs?searchtype=author&query=Waibel%2C+A)
+
+> Code-Switching (CS) is referred to the phenomenon of alternately using words and phrases from different languages. While today's neural end-to-end (E2E) models deliver state-of-the-art performances on the task of automatic speech recognition (ASR) it is commonly known that these systems are very data-intensive. However, there is only a few transcribed and aligned CS speech available. To overcome this problem and train multilingual systems which can transcribe CS speech, we propose a simple yet effective data augmentation in which audio and corresponding labels of different source languages are concatenated. By using this training data, our E2E model improves on transcribing CS speech and improves performance over the multilingual model, as well. The results show that this augmentation technique can even improve the model's performance on inter-sentential language switches not seen during training by 5,03\% WER.
+
+| Comments: | 6 pages                                                      |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2210.08992](https://arxiv.org/abs/2210.08992) [cs.CL]** |
+|           | (or **[arXiv:2210.08992v1](https://arxiv.org/abs/2210.08992v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2210.08992Focus to learn more |
+
+
+
+
+
+<h2 id="2022-10-18-8">8. Table-To-Text generation and pre-training with TabT5
+</h2>
+
+Title: [Table-To-Text generation and pre-training with TabT5](https://arxiv.org/abs/2210.09162)
+
+Authors: [Ewa Andrejczuk](https://arxiv.org/search/cs?searchtype=author&query=Andrejczuk%2C+E), [Julian Martin Eisenschlos](https://arxiv.org/search/cs?searchtype=author&query=Eisenschlos%2C+J+M), [Francesco Piccinno](https://arxiv.org/search/cs?searchtype=author&query=Piccinno%2C+F), [Syrine Krichene](https://arxiv.org/search/cs?searchtype=author&query=Krichene%2C+S), [Yasemin Altun](https://arxiv.org/search/cs?searchtype=author&query=Altun%2C+Y)
+
+> Encoder-only transformer models have been successfully applied to different table understanding tasks, as in TAPAS (Herzig et al., 2020). A major limitation of these architectures is that they are constrained to classification-like tasks such as cell selection or entailment detection. We present TABT5, an encoder-decoder model that generates natural language text based on tables and textual inputs. TABT5 overcomes the encoder-only limitation by incorporating a decoder component and leverages the input structure with table specific embeddings and pre-training. TABT5 achieves new state-of-the-art results on several domains, including spreadsheet formula prediction with a 15% increase in sequence accuracy, QA with a 2.5% increase in sequence accuracy and data-to-text generation with a 2.5% increase in BLEU.
+
+| Comments: | Accepted to Findings of EMNLP 2022                           |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| Cite as:  | **[arXiv:2210.09162](https://arxiv.org/abs/2210.09162) [cs.CL]** |
+|           | (or **[arXiv:2210.09162v1](https://arxiv.org/abs/2210.09162v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2210.09162Focus to learn more |
+
+
+
 
 
 
