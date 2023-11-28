@@ -2,31 +2,64 @@
 
 # Index
 
+- [2023-11-28](#2023-11-28)
+  - [1. DUnE: Dataset for Unified Editing](#2023-11-28-1)
+  
+  - [2. MEDITRON-70B: Scaling Medical Pretraining for Large Language Models](#2023-11-28-2)
+  
+  - [3. A Quantitative Approach to Understand Self-Supervised Models as Cross-lingual Feature Extractors](#2023-11-28-3)
+  
+  - [4. WorldSense: A Synthetic Benchmark for Grounded Reasoning in Large Language Models](#2023-11-28-4)
+  
+  - [5. YUAN 2.0: A Large Language Model with Localized Filtering-based Attention](#2023-11-28-5)
+  
+  - [6. Knowledge Unlearning for LLMs: Tasks, Methods, and Challenges](#2023-11-28-6)
+  
+  - [7. Towards Vision Enhancing LLMs: Empowering Multimodal Knowledge Storage and Sharing in LLMs](#2023-11-28-7)
+  
+  - [8. MoDS: Model-oriented Data Selection for Instruction Tuning](#2023-11-28-8)
+  
+  - [9. LongStory: Coherent, Complete and Length Controlled Long story Generation](#2023-11-28-9)
+  
+  - [10. Solving the Right Problem is Key for Translational NLP: A Case Study in UMLS Vocabulary Insertion](#2023-11-28-10)
+  
+  - [11. Offensive Language Identification in Transliterated and Code-Mixed Bangla](#2023-11-28-11)
+  
+  - [12. Vector-Quantized Prompt Learning for Paraphrase Generation](#2023-11-28-12)
+  
+  - [13. How Many Unicorns Are in This Image? A Safety Evaluation Benchmark for Vision LLMs](#2023-11-28-13)
+  
+  - [14. Data Generation for Post-OCR correction of Cyrillic handwriting](#2023-11-28-14)
+  
+  - [15. Can Vision-Language Models Think from a First-Person Perspective?](#2023-11-28-15)
+  
+  - [16. ChatGPT and Beyond: The Generative AI Revolution in Education](#2023-11-28-16)
+  
 - [2023-11-27](#2023-11-27)
   - [1. Calibrated Language Models Must Hallucinate](#2023-11-27-1)
-  
+
   - [2. GPT Struct Me: Probing GPT Models on Narrative Entity Extraction](#2023-11-27-2)
-  
+
   - [3. Data-Efficient Alignment of Large Language Models with Human Feedback Through Natural Language](#2023-11-27-3)
-  
+
   - [4. Machine Translation for Ge'ez Language](#2023-11-27-4)
-  
+
   - [5. Controlled Text Generation via Language Model Arithmetic](#2023-11-27-5)
-  
+
   - [6. DP-NMT: Scalable Differentially-Private Machine Translation](#2023-11-27-6)
-  
+
   - [7. Evaluating GPT-4's Vision Capabilities on Brazilian University Admission Exams](#2023-11-27-7)
-  
+
   - [8. MLLM-Bench, Evaluating Multi-modal LLMs using GPT-4V](#2023-11-27-8)
-  
+
   - [9. Efficient Transformer Knowledge Distillation: A Performance Review](#2023-11-27-9)
-  
+
   - [10. Language Model Inversion](#2023-11-27-10)
-  
+
   - [11. tinyCLAP: Distilling Constrastive Language-Audio Pretrained Models](#2023-11-27-11)
-  
+
   - [12. Prompt Risk Control: A Rigorous Framework for Responsible Deployment of Large Language Models](#2023-11-27-12)
-  
+
 - [2023-11-23](#2023-11-23)
   - [1. LM-Cocktail: Resilient Tuning of Language Models via Model Merging](#2022-11-23-1)
   - [2. Machine Translation to Control Formality Features in the Target Language](#2022-11-23-2)
@@ -41,6 +74,346 @@
   - [1. RankT5: Fine-Tuning T5 for Text Ranking with Ranking Losses](#2022-10-20-1)
 
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2023-11-28
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2023-11-28-1">1. DUnE: Dataset for Unified Editing
+</h2>
+
+Title: [DUnE: Dataset for Unified Editing](https://arxiv.org/abs/2311.16087)
+
+Authors: [Afra Feyza Akyürek](https://arxiv.org/search/cs?searchtype=author&query=Akyürek,+A+F), [Eric Pan](https://arxiv.org/search/cs?searchtype=author&query=Pan,+E), [Garry Kuwanto](https://arxiv.org/search/cs?searchtype=author&query=Kuwanto,+G), [Derry Wijaya](https://arxiv.org/search/cs?searchtype=author&query=Wijaya,+D)
+
+> Even the most advanced language models remain susceptible to errors necessitating to modify these models without initiating a comprehensive retraining process. Model editing refers to the modification of a model's knowledge or representations in a manner that produces the desired outcomes. Prior research primarily centered around editing factual data e.g. "Messi plays for Inter Miami" confining the definition of an edit to a knowledge triplet i.e. (subject, object, relation). However, as the applications of language models expand, so do the diverse ways in which we wish to edit and refine their outputs. In this study, we broaden the scope of the editing problem to include an array of editing cases such as debiasing and rectifying reasoning errors and define an edit as any natural language expression that solicits a change in the model's outputs. We are introducing DUnE-an editing benchmark where edits are natural language sentences and propose that DUnE presents a challenging yet relevant task. To substantiate this claim, we conduct an extensive series of experiments testing various editing approaches to address DUnE, demonstrating their respective strengths and weaknesses. We show that retrieval-augmented language modeling can outperform specialized editing techniques and neither set of approaches has fully solved the generalized editing problem covered by our benchmark.
+
+| Comments: | Accepted at EMNLP 2023                                       |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:2311.16087](https://arxiv.org/abs/2311.16087) [cs.CL] |
+|           | (or [arXiv:2311.16087v1](https://arxiv.org/abs/2311.16087v1) [cs.CL] for this version) |
+|           | https://doi.org/10.48550/arXiv.2311.16087Focus to learn more |
+
+
+
+
+
+<h2 id="2023-11-28-2">2. MEDITRON-70B: Scaling Medical Pretraining for Large Language Models
+</h2>
+
+Title: [MEDITRON-70B: Scaling Medical Pretraining for Large Language Models](https://arxiv.org/abs/2311.16079)
+
+Authors: [Zeming Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen,+Z), [Alejandro Hernández Cano](https://arxiv.org/search/cs?searchtype=author&query=Cano,+A+H), [Angelika Romanou](https://arxiv.org/search/cs?searchtype=author&query=Romanou,+A), [Antoine Bonnet](https://arxiv.org/search/cs?searchtype=author&query=Bonnet,+A), [Kyle Matoba](https://arxiv.org/search/cs?searchtype=author&query=Matoba,+K), [Francesco Salvi](https://arxiv.org/search/cs?searchtype=author&query=Salvi,+F), [Matteo Pagliardini](https://arxiv.org/search/cs?searchtype=author&query=Pagliardini,+M), [Simin Fan](https://arxiv.org/search/cs?searchtype=author&query=Fan,+S), [Andreas Köpf](https://arxiv.org/search/cs?searchtype=author&query=Köpf,+A), [Amirkeivan Mohtashami](https://arxiv.org/search/cs?searchtype=author&query=Mohtashami,+A), [Alexandre Sallinen](https://arxiv.org/search/cs?searchtype=author&query=Sallinen,+A), [Alireza Sakhaeirad](https://arxiv.org/search/cs?searchtype=author&query=Sakhaeirad,+A), [Vinitra Swamy](https://arxiv.org/search/cs?searchtype=author&query=Swamy,+V), [Igor Krawczuk](https://arxiv.org/search/cs?searchtype=author&query=Krawczuk,+I), [Deniz Bayazit](https://arxiv.org/search/cs?searchtype=author&query=Bayazit,+D), [Axel Marmet](https://arxiv.org/search/cs?searchtype=author&query=Marmet,+A), [Syrielle Montariol](https://arxiv.org/search/cs?searchtype=author&query=Montariol,+S), [Mary-Anne Hartley](https://arxiv.org/search/cs?searchtype=author&query=Hartley,+M), [Martin Jaggi](https://arxiv.org/search/cs?searchtype=author&query=Jaggi,+M), [Antoine Bosselut](https://arxiv.org/search/cs?searchtype=author&query=Bosselut,+A)
+
+> Large language models (LLMs) can potentially democratize access to medical knowledge. While many efforts have been made to harness and improve LLMs' medical knowledge and reasoning capacities, the resulting models are either closed-source (e.g., PaLM, GPT-4) or limited in scale (<= 13B parameters), which restricts their abilities. In this work, we improve access to large-scale medical LLMs by releasing MEDITRON: a suite of open-source LLMs with 7B and 70B parameters adapted to the medical domain. MEDITRON builds on Llama-2 (through our adaptation of Nvidia's Megatron-LM distributed trainer), and extends pretraining on a comprehensively curated medical corpus, including selected PubMed articles, abstracts, and internationally-recognized medical guidelines. Evaluations using four major medical benchmarks show significant performance gains over several state-of-the-art baselines before and after task-specific finetuning. Overall, MEDITRON achieves a 6% absolute performance gain over the best public baseline in its parameter class and 3% over the strongest baseline we finetuned from Llama-2. Compared to closed-source LLMs, MEDITRON-70B outperforms GPT-3.5 and Med-PaLM and is within 5% of GPT-4 and 10% of Med-PaLM-2. We release our code for curating the medical pretraining corpus and the MEDITRON model weights to drive open-source development of more capable medical LLMs.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2311.16079](https://arxiv.org/abs/2311.16079) [cs.CL] |
+|           | (or [arXiv:2311.16079v1](https://arxiv.org/abs/2311.16079v1) [cs.CL] for this version) |
+|           | https://doi.org/10.48550/arXiv.2311.16079Focus to learn more |
+
+
+
+
+
+
+
+<h2 id="2023-11-28-3">3. A Quantitative Approach to Understand Self-Supervised Models as Cross-lingual Feature Extractors
+</h2>
+
+Title: [A Quantitative Approach to Understand Self-Supervised Models as Cross-lingual Feature Extractors](https://arxiv.org/abs/2311.15954)
+
+Authors: [Shuyue Stella Li](https://arxiv.org/search/cs?searchtype=author&query=Li,+S+S), [Beining Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu,+B), [Xiangyu Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang,+X), [Hexin Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu,+H), [Wenhan Chao](https://arxiv.org/search/cs?searchtype=author&query=Chao,+W), [Leibny Paola Garcia](https://arxiv.org/search/cs?searchtype=author&query=Garcia,+L+P)
+
+> In this work, we study the features extracted by English self-supervised learning (SSL) models in cross-lingual contexts and propose a new metric to predict the quality of feature representations. Using automatic speech recognition (ASR) as a downstream task, we analyze the effect of model size, training objectives, and model architecture on the models' performance as a feature extractor for a set of topologically diverse corpora. We develop a novel metric, the Phonetic-Syntax Ratio (PSR), to measure the phonetic and synthetic information in the extracted representations using deep generalized canonical correlation analysis. Results show the contrastive loss in the wav2vec2.0 objective facilitates more effective cross-lingual feature extraction. There is a positive correlation between PSR scores and ASR performance, suggesting that phonetic information extracted by monolingual SSL models can be used for downstream tasks in cross-lingual settings. The proposed metric is an effective indicator of the quality of the representations and can be useful for model selection.
+
+| Comments: | 12 pages, 5 figures, 4 tables                                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Audio and Speech Processing (eess.AS) |
+| Cite as:  | [arXiv:2311.15954](https://arxiv.org/abs/2311.15954) [cs.CL] |
+|           | (or [arXiv:2311.15954v1](https://arxiv.org/abs/2311.15954v1) [cs.CL] for this version) |
+|           | https://doi.org/10.48550/arXiv.2311.15954Focus to learn more |
+
+
+
+
+
+
+
+<h2 id="2023-11-28-4">4. WorldSense: A Synthetic Benchmark for Grounded Reasoning in Large Language Models
+</h2>
+
+Title: [WorldSense: A Synthetic Benchmark for Grounded Reasoning in Large Language Models](https://arxiv.org/abs/2311.15930)
+
+Authors: [Youssef Benchekroun](https://arxiv.org/search/cs?searchtype=author&query=Benchekroun,+Y), [Megi Dervishi](https://arxiv.org/search/cs?searchtype=author&query=Dervishi,+M), [Mark Ibrahim](https://arxiv.org/search/cs?searchtype=author&query=Ibrahim,+M), [Jean-Baptiste Gaya](https://arxiv.org/search/cs?searchtype=author&query=Gaya,+J), [Xavier Martinet](https://arxiv.org/search/cs?searchtype=author&query=Martinet,+X), [Grégoire Mialon](https://arxiv.org/search/cs?searchtype=author&query=Mialon,+G), [Thomas Scialom](https://arxiv.org/search/cs?searchtype=author&query=Scialom,+T), [Emmanuel Dupoux](https://arxiv.org/search/cs?searchtype=author&query=Dupoux,+E), [Dieuwke Hupkes](https://arxiv.org/search/cs?searchtype=author&query=Hupkes,+D), [Pascal Vincent](https://arxiv.org/search/cs?searchtype=author&query=Vincent,+P)
+
+> We propose WorldSense, a benchmark designed to assess the extent to which LLMs are consistently able to sustain tacit world models, by testing how they draw simple inferences from descriptions of simple arrangements of entities. Worldsense is a synthetic benchmark with three problem types, each with their own trivial control, which explicitly avoids bias by decorrelating the abstract structure of problems from the vocabulary and expressions, and by decorrelating all problem subparts with the correct response. We run our benchmark on three state-of-the-art chat-LLMs (GPT3.5, GPT4 and Llama2-chat) and show that these models make errors even with as few as three objects. Furthermore, they have quite heavy response biases, preferring certain responses irrespective of the question. Errors persist even with chain-of-thought prompting and in-context learning. Lastly, we show that while finetuning on similar problems does result in substantial improvements -- within- and out-of-distribution -- the finetuned models do not generalise beyond a constraint problem space.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2311.15930](https://arxiv.org/abs/2311.15930) [cs.CL] |
+|           | (or [arXiv:2311.15930v1](https://arxiv.org/abs/2311.15930v1) [cs.CL] for this version) |
+|           | https://doi.org/10.48550/arXiv.2311.15930Focus to learn more |
+
+
+
+
+
+
+
+<h2 id="2023-11-28-5">5. YUAN 2.0: A Large Language Model with Localized Filtering-based Attention
+</h2>
+
+Title: [YUAN 2.0: A Large Language Model with Localized Filtering-based Attention](https://arxiv.org/abs/2311.15786)
+
+Authors: [Shaohua Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu,+S), [Xudong Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao,+X), [Shenling Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang,+S), [Jiangang Luo](https://arxiv.org/search/cs?searchtype=author&query=Luo,+J), [Lingjun Li](https://arxiv.org/search/cs?searchtype=author&query=Li,+L), [Xi Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen,+X), [Bing Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao,+B), [Wei Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang,+W), [Tong Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu,+T), [Rongguo Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang,+R), [Jiahua Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang,+J), [Chao Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang,+C)
+
+> In this work, the Localized Filtering-based Attention (LFA) is introduced to incorporate prior knowledge of local dependencies of natural language into Attention. Based on LFA, we develop and release Yuan 2.0, a large language model with parameters ranging from 2.1 billion to 102.6 billion. A data filtering and generation method is presented to build pretraining and fine-tuning dataset in high quality. A distributed training method with non-uniform pipeline parallel, data parallel, and optimizer parallel is proposed, which greatly reduces the bandwidth requirements of intra-node communication, and achieves good performance in large-scale distributed training. Yuan 2.0 models display impressive ability in code generation, math problem-solving, and chat compared with existing models. The latest version of YUAN 2.0, including model weights and source code, is accessible at Github.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Human-Computer Interaction (cs.HC) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2311.15786](https://arxiv.org/abs/2311.15786) [cs.CL] |
+|           | (or [arXiv:2311.15786v1](https://arxiv.org/abs/2311.15786v1) [cs.CL] for this version) |
+|           | https://doi.org/10.48550/arXiv.2311.15786Focus to learn more |
+
+
+
+
+
+
+
+<h2 id="2023-11-28-6">6. Knowledge Unlearning for LLMs: Tasks, Methods, and Challenges
+</h2>
+
+Title: [Knowledge Unlearning for LLMs: Tasks, Methods, and Challenges](https://arxiv.org/abs/2311.15766)
+
+Authors: [Nianwen Si](https://arxiv.org/search/cs?searchtype=author&query=Si,+N), [Hao Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang,+H), [Heyu Chang](https://arxiv.org/search/cs?searchtype=author&query=Chang,+H), [Wenlin Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang,+W), [Dan Qu](https://arxiv.org/search/cs?searchtype=author&query=Qu,+D), [Weiqiang Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang,+W)
+
+> In recent years, large language models (LLMs) have spurred a new research paradigm in natural language processing. Despite their excellent capability in knowledge-based question answering and reasoning, their potential to retain faulty or even harmful knowledge poses risks of malicious application. The challenge of mitigating this issue and transforming these models into purer assistants is crucial for their widespread applicability. Unfortunately, Retraining LLMs repeatedly to eliminate undesirable knowledge is impractical due to their immense parameters. Knowledge unlearning, derived from analogous studies on machine unlearning, presents a promising avenue to address this concern and is notably advantageous in the context of LLMs. It allows for the removal of harmful knowledge in an efficient manner, without affecting unrelated knowledge in the model. To this end, we provide a survey of knowledge unlearning in the era of LLMs. Firstly, we formally define the knowledge unlearning problem and distinguish it from related works. Subsequently, we categorize existing knowledge unlearning methods into three classes: those based on parameter optimization, parameter merging, and in-context learning, and introduce details of these unlearning methods. We further present evaluation datasets used in existing methods, and finally conclude this survey by presenting the ongoing challenges and future directions.
+
+| Comments: | Work in progress                                             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:2311.15766](https://arxiv.org/abs/2311.15766) [cs.CL] |
+|           | (or [arXiv:2311.15766v1](https://arxiv.org/abs/2311.15766v1) [cs.CL] for this version) |
+|           | https://doi.org/10.48550/arXiv.2311.15766Focus to learn more |
+
+
+
+
+
+
+
+<h2 id="2023-11-28-7">7. Towards Vision Enhancing LLMs: Empowering Multimodal Knowledge Storage and Sharing in LLMs
+</h2>
+
+Title: [Towards Vision Enhancing LLMs: Empowering Multimodal Knowledge Storage and Sharing in LLMs](https://arxiv.org/abs/2311.15759)
+
+Authors: [Yunxin Li](https://arxiv.org/search/cs?searchtype=author&query=Li,+Y), [Baotian Hu](https://arxiv.org/search/cs?searchtype=author&query=Hu,+B), [Wei Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang,+W), [Xiaochun Cao](https://arxiv.org/search/cs?searchtype=author&query=Cao,+X), [Min Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang,+M)
+
+> Recent advancements in multimodal large language models (MLLMs) have achieved significant multimodal generation capabilities, akin to GPT-4. These models predominantly map visual information into language representation space, leveraging the vast knowledge and powerful text generation abilities of LLMs to produce multimodal instruction-following responses. We could term this method as LLMs for Vision because of its employing LLMs for visual-language understanding, yet observe that these MLLMs neglect the potential of harnessing visual knowledge to enhance overall capabilities of LLMs, which could be regraded as Vision Enhancing LLMs. In this paper, we propose an approach called MKS2, aimed at enhancing LLMs through empowering Multimodal Knowledge Storage and Sharing in LLMs. Specifically, we introduce the Modular Visual Memory, a component integrated into the internal blocks of LLMs, designed to store open-world visual information efficiently. Additionally, we present a soft Mixtures-of-Multimodal Experts architecture in LLMs to invoke multimodal knowledge collaboration during generation. Our comprehensive experiments demonstrate that MKS2 substantially augments the reasoning capabilities of LLMs in contexts necessitating physical or commonsense knowledge. It also delivers competitive results on multimodal benchmarks.
+
+| Comments: | 12 pages, 4 figures                                          |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Computer Vision and Pattern Recognition (cs.CV) |
+| Cite as:  | [arXiv:2311.15759](https://arxiv.org/abs/2311.15759) [cs.CL] |
+|           | (or [arXiv:2311.15759v1](https://arxiv.org/abs/2311.15759v1) [cs.CL] for this version) |
+|           | https://doi.org/10.48550/arXiv.2311.15759Focus to learn more |
+
+
+
+
+
+
+
+<h2 id="2023-11-28-8">8. MoDS: Model-oriented Data Selection for Instruction Tuning
+</h2>
+
+Title: [MoDS: Model-oriented Data Selection for Instruction Tuning](https://arxiv.org/abs/2311.15653)
+
+Authors: [Qianlong Du](https://arxiv.org/search/cs?searchtype=author&query=Du,+Q), [Chengqing Zong](https://arxiv.org/search/cs?searchtype=author&query=Zong,+C), [Jiajun Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang,+J)
+
+> Instruction tuning has become the de facto method to equip large language models (LLMs) with the ability of following user instructions. Usually, hundreds of thousands or millions of instruction-following pairs are employed to fine-tune the foundation LLMs. Recently, some studies show that a small number of high-quality instruction data is enough. However, how to select appropriate instruction data for a given LLM is still an open problem. To address this problem, in this paper we present a model-oriented data selection (MoDS) approach, which selects instruction data based on a new criteria considering three aspects: quality, coverage and necessity. First, our approach utilizes a quality evaluation model to filter out the high-quality subset from the original instruction dataset, and then designs an algorithm to further select from the high-quality subset a seed instruction dataset with good coverage. The seed dataset is applied to fine-tune the foundation LLM to obtain an initial instruction-following LLM. Finally, we develop a necessity evaluation model to find out the instruction data which are performed badly in the initial instruction-following LLM and consider them necessary instructions to further improve the LLMs. In this way, we can get a small high-quality, broad-coverage and high-necessity subset from the original instruction datasets. Experimental results show that, the model fine-tuned with 4,000 instruction pairs selected by our approach could perform better than the model fine-tuned with the full original dataset which includes 214k instruction data.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2311.15653](https://arxiv.org/abs/2311.15653) [cs.CL] |
+|           | (or [arXiv:2311.15653v1](https://arxiv.org/abs/2311.15653v1) [cs.CL] for this version) |
+|           | https://doi.org/10.48550/arXiv.2311.15653Focus to learn more |
+
+
+
+
+
+
+
+<h2 id="2023-11-28-9">9. LongStory: Coherent, Complete and Length Controlled Long story Generation
+</h2>
+
+Title: [LongStory: Coherent, Complete and Length Controlled Long story Generation](https://arxiv.org/abs/2311.15208)
+
+Authors: [Kyeongman Park](https://arxiv.org/search/cs?searchtype=author&query=Park,+K), [Nakyeong Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang,+N), [Kyomin Jung](https://arxiv.org/search/cs?searchtype=author&query=Jung,+K)
+
+> A human author can write any length of story without losing coherence. Also, they always bring the story to a proper ending, an ability that current language models lack. In this work, we present the LongStory for coherent, complete, and length-controlled long story generation. LongStory introduces two novel methodologies: (1) the long and short-term contexts weight calibrator (CWC) and (2) long story structural positions (LSP). The CWC adjusts weights for long-term context Memory and short-term context Cheating, acknowledging their distinct roles. The LSP employs discourse tokens to convey the structural positions of a long story. Trained on three datasets with varied average story lengths, LongStory outperforms other baselines, including the strong story generator Plotmachine, in coherence, completeness, relevance, and repetitiveness. We also perform zero-shot tests on each dataset to assess the model's ability to predict outcomes beyond its training data and validate our methodology by comparing its performance with variants of our model.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2311.15208](https://arxiv.org/abs/2311.15208) [cs.CL] |
+|           | (or [arXiv:2311.15208v1](https://arxiv.org/abs/2311.15208v1) [cs.CL] for this version) |
+|           | https://doi.org/10.48550/arXiv.2311.15208Focus to learn more |
+
+
+
+
+
+
+
+<h2 id="2023-11-28-10">10. Solving the Right Problem is Key for Translational NLP: A Case Study in UMLS Vocabulary Insertion
+</h2>
+
+Title: [Solving the Right Problem is Key for Translational NLP: A Case Study in UMLS Vocabulary Insertion](https://arxiv.org/abs/2311.15106)
+
+Authors: [Bernal Jimenez Gutierrez](https://arxiv.org/search/cs?searchtype=author&query=Gutierrez,+B+J), [Yuqing Mao](https://arxiv.org/search/cs?searchtype=author&query=Mao,+Y), [Vinh Nguyen](https://arxiv.org/search/cs?searchtype=author&query=Nguyen,+V), [Kin Wah Fung](https://arxiv.org/search/cs?searchtype=author&query=Fung,+K+W), [Yu Su](https://arxiv.org/search/cs?searchtype=author&query=Su,+Y), [Olivier Bodenreider](https://arxiv.org/search/cs?searchtype=author&query=Bodenreider,+O)
+
+> As the immense opportunities enabled by large language models become more apparent, NLP systems will be increasingly expected to excel in real-world settings. However, in many instances, powerful models alone will not yield translational NLP solutions, especially if the formulated problem is not well aligned with the real-world task. In this work, we study the case of UMLS vocabulary insertion, an important real-world task in which hundreds of thousands of new terms, referred to as atoms, are added to the UMLS, one of the most comprehensive open-source biomedical knowledge bases. Previous work aimed to develop an automated NLP system to make this time-consuming, costly, and error-prone task more efficient. Nevertheless, practical progress in this direction has been difficult to achieve due to a problem formulation and evaluation gap between research output and the real-world task. In order to address this gap, we introduce a new formulation for UMLS vocabulary insertion which mirrors the real-world task, datasets which faithfully represent it and several strong baselines we developed through re-purposing existing solutions. Additionally, we propose an effective rule-enhanced biomedical language model which enables important new model behavior, outperforms all strong baselines and provides measurable qualitative improvements to editors who carry out the UVI task. We hope this case study provides insight into the considerable importance of problem formulation for the success of translational NLP solutions.
+
+| Comments: | EMNLP 2023 Findings; Code is available at [this https URL](https://github.com/OSU-NLP-Group/UMLS-Vocabulary-Insertion) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:2311.15106](https://arxiv.org/abs/2311.15106) [cs.CL] |
+|           | (or [arXiv:2311.15106v1](https://arxiv.org/abs/2311.15106v1) [cs.CL] for this version) |
+|           | https://doi.org/10.48550/arXiv.2311.15106Focus to learn more |
+
+
+
+
+
+
+
+<h2 id="2023-11-28-11">11. Offensive Language Identification in Transliterated and Code-Mixed Bangla
+</h2>
+
+Title: [Offensive Language Identification in Transliterated and Code-Mixed Bangla](https://arxiv.org/abs/2311.15023)
+
+Authors: [Md Nishat Raihan](https://arxiv.org/search/cs?searchtype=author&query=Raihan,+M+N), [Umma Hani Tanmoy](https://arxiv.org/search/cs?searchtype=author&query=Tanmoy,+U+H), [Anika Binte Islam](https://arxiv.org/search/cs?searchtype=author&query=Islam,+A+B), [Kai North](https://arxiv.org/search/cs?searchtype=author&query=North,+K), [Tharindu Ranasinghe](https://arxiv.org/search/cs?searchtype=author&query=Ranasinghe,+T), [Antonios Anastasopoulos](https://arxiv.org/search/cs?searchtype=author&query=Anastasopoulos,+A), [Marcos Zampieri](https://arxiv.org/search/cs?searchtype=author&query=Zampieri,+M)
+
+> Identifying offensive content in social media is vital for creating safe online communities. Several recent studies have addressed this problem by creating datasets for various languages. In this paper, we explore offensive language identification in texts with transliterations and code-mixing, linguistic phenomena common in multilingual societies, and a known challenge for NLP systems. We introduce TB-OLID, a transliterated Bangla offensive language dataset containing 5,000 manually annotated comments. We train and fine-tune machine learning models on TB-OLID, and we evaluate their results on this dataset. Our results show that English pre-trained transformer-based models, such as fBERT and HateBERT achieve the best performance on this dataset.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2311.15023](https://arxiv.org/abs/2311.15023) [cs.CL] |
+|           | (or [arXiv:2311.15023v1](https://arxiv.org/abs/2311.15023v1) [cs.CL] for this version) |
+|           | https://doi.org/10.48550/arXiv.2311.15023Focus to learn more |
+
+
+
+
+
+
+
+<h2 id="2023-11-28-12">12. Vector-Quantized Prompt Learning for Paraphrase Generation
+</h2>
+
+Title: [Vector-Quantized Prompt Learning for Paraphrase Generation](https://arxiv.org/abs/2311.14949)
+
+Authors: [Haotian Luo](https://arxiv.org/search/cs?searchtype=author&query=Luo,+H), [Yixin Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu,+Y), [Peidong Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu,+P), [Xianggen Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu,+X)
+
+> Deep generative modeling of natural languages has achieved many successes, such as producing fluent sentences and translating from one language into another. However, the development of generative modeling techniques for paraphrase generation still lags behind largely due to the challenges in addressing the complex conflicts between expression diversity and semantic preservation. This paper proposes to generate diverse and high-quality paraphrases by exploiting the pre-trained models with instance-dependent prompts. To learn generalizable prompts, we assume that the number of abstract transforming patterns of paraphrase generation (governed by prompts) is finite and usually not large. Therefore, we present vector-quantized prompts as the cues to control the generation of pre-trained models. Extensive experiments demonstrate that the proposed method achieves new state-of-art results on three benchmark datasets, including Quora, Wikianswers, and MSCOCO. We will release all the code upon acceptance.
+
+| Comments: | EMNLP Findings, 2023                                         |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:2311.14949](https://arxiv.org/abs/2311.14949) [cs.CL] |
+|           | (or [arXiv:2311.14949v1](https://arxiv.org/abs/2311.14949v1) [cs.CL] for this version) |
+|           | https://doi.org/10.48550/arXiv.2311.14949Focus to learn more |
+
+
+
+
+
+<h2 id="2023-11-28-13">13. How Many Unicorns Are in This Image? A Safety Evaluation Benchmark for Vision LLMs
+</h2>
+
+Title: [How Many Unicorns Are in This Image? A Safety Evaluation Benchmark for Vision LLMs](https://arxiv.org/abs/2311.16101)
+
+Authors: [Haoqin Tu](https://arxiv.org/search/cs?searchtype=author&query=Tu,+H), [Chenhang Cui](https://arxiv.org/search/cs?searchtype=author&query=Cui,+C), [Zijun Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang,+Z), [Yiyang Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou,+Y), [Bingchen Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao,+B), [Junlin Han](https://arxiv.org/search/cs?searchtype=author&query=Han,+J), [Wangchunshu Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou,+W), [Huaxiu Yao](https://arxiv.org/search/cs?searchtype=author&query=Yao,+H), [Cihang Xie](https://arxiv.org/search/cs?searchtype=author&query=Xie,+C)
+
+> This work focuses on the potential of Vision LLMs (VLLMs) in visual reasoning. Different from prior studies, we shift our focus from evaluating standard performance to introducing a comprehensive safety evaluation suite, covering both out-of-distribution (OOD) generalization and adversarial robustness. For the OOD evaluation, we present two novel VQA datasets, each with one variant, designed to test model performance under challenging conditions. In exploring adversarial robustness, we propose a straightforward attack strategy for misleading VLLMs to produce visual-unrelated responses. Moreover, we assess the efficacy of two jailbreaking strategies, targeting either the vision or language component of VLLMs. Our evaluation of 21 diverse models, ranging from open-source VLLMs to GPT-4V, yields interesting observations: 1) Current VLLMs struggle with OOD texts but not images, unless the visual information is limited; and 2) These VLLMs can be easily misled by deceiving vision encoders only, and their vision-language training often compromise safety protocols. We release this safety evaluation suite at [this https URL](https://github.com/UCSC-VLAA/vllm-safety-benchmark).
+
+| Comments: | H.T., C.C., and Z.W. contribute equally. Work done during H.T. and Z.W.'s internship at UCSC, and C.C. and Y.Z.'s internship at UNC |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL); Machine Learning (cs.LG) |
+| Cite as:  | [arXiv:2311.16101](https://arxiv.org/abs/2311.16101) [cs.CV] |
+|           | (or [arXiv:2311.16101v1](https://arxiv.org/abs/2311.16101v1) [cs.CV] for this version) |
+|           | https://doi.org/10.48550/arXiv.2311.16101Focus to learn more |
+
+
+
+
+
+<h2 id="2023-11-28-14">14. Data Generation for Post-OCR correction of Cyrillic handwriting
+</h2>
+
+Title: [Data Generation for Post-OCR correction of Cyrillic handwriting](https://arxiv.org/abs/2311.15896)
+
+Authors: [Evgenii Davydkin](https://arxiv.org/search/cs?searchtype=author&query=Davydkin,+E), [Aleksandr Markelov](https://arxiv.org/search/cs?searchtype=author&query=Markelov,+A), [Egor Iuldashev](https://arxiv.org/search/cs?searchtype=author&query=Iuldashev,+E), [Anton Dudkin](https://arxiv.org/search/cs?searchtype=author&query=Dudkin,+A), [Ivan Krivorotov](https://arxiv.org/search/cs?searchtype=author&query=Krivorotov,+I)
+
+> This paper introduces a novel approach to post-Optical Character Recognition Correction (POC) for handwritten Cyrillic text, addressing a significant gap in current research methodologies. This gap is due to the lack of large text corporas that provide OCR errors for further training of language-based POC models, which are demanding in terms of corpora size. Our study primarily focuses on the development and application of a synthetic handwriting generation engine based on Bézier curves. Such an engine generates highly realistic handwritten text in any amounts, which we utilize to create a substantial dataset by transforming Russian text corpora sourced from the internet. We apply a Handwritten Text Recognition (HTR) model to this dataset to identify OCR errors, forming the basis for our POC model training. The correction model is trained on a 90-symbol input context, utilizing a pre-trained T5 architecture with a seq2seq correction task. We evaluate our approach on HWR200 and School_notebooks_RU datasets as they provide significant challenges in the HTR domain. Furthermore, POC can be used to highlight errors for teachers, evaluating student performance. This can be done simply by comparing sentences before and after correction, displaying differences in text. Our primary contribution lies in the innovative use of Bézier curves for Cyrillic text generation and subsequent error correction using a specialized POC model. We validate our approach by presenting Word Accuracy Rate (WAR) and Character Accuracy Rate (CAR) results, both with and without post-OCR correction, using real open corporas of handwritten Cyrillic text. These results, coupled with our methodology, are designed to be reproducible, paving the way for further advancements in the field of OCR and handwritten text analysis. Paper contributions can be found in [this https URL](https://github.com/dbrainio/CyrillicHandwritingPOC)
+
+| Comments: | 17 pages, 27 figures, 6 tables, 26 references                |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| Cite as:  | [arXiv:2311.15896](https://arxiv.org/abs/2311.15896) [cs.CV] |
+|           | (or [arXiv:2311.15896v1](https://arxiv.org/abs/2311.15896v1) [cs.CV] for this version) |
+|           | https://doi.org/10.48550/arXiv.2311.15896Focus to learn more |
+
+
+
+
+
+<h2 id="2023-11-28-15">15. Can Vision-Language Models Think from a First-Person Perspective?
+</h2>
+
+Title: [Can Vision-Language Models Think from a First-Person Perspective?](https://arxiv.org/abs/2311.15596)
+
+Authors: [Sijie Cheng](https://arxiv.org/search/cs?searchtype=author&query=Cheng,+S), [Zhicheng Guo](https://arxiv.org/search/cs?searchtype=author&query=Guo,+Z), [Jingwen Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu,+J), [Kechen Fang](https://arxiv.org/search/cs?searchtype=author&query=Fang,+K), [Peng Li](https://arxiv.org/search/cs?searchtype=author&query=Li,+P), [Huaping Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu,+H), [Yang Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu,+Y)
+
+> Vision-language models (VLMs) have recently shown promising results in traditional downstream tasks. Evaluation studies have emerged to assess their abilities, with the majority focusing on the third-person perspective, and only a few addressing specific tasks from the first-person perspective. However, the capability of VLMs to "think" from a first-person perspective, a crucial attribute for advancing autonomous agents and robotics, remains largely unexplored. To bridge this research gap, we introduce EgoThink, a novel visual question-answering benchmark that encompasses six core capabilities with twelve detailed dimensions. The benchmark is constructed using selected clips from egocentric videos, with manually annotated question-answer pairs containing first-person information. To comprehensively assess VLMs, we evaluate eighteen popular VLMs on EgoThink. Moreover, given the open-ended format of the answers, we use GPT-4 as the automatic judge to compute single-answer grading. Experimental results indicate that although GPT-4V leads in numerous dimensions, all evaluated VLMs still possess considerable potential for improvement in first-person perspective tasks. Meanwhile, enlarging the number of trainable parameters has the most significant impact on model performance on EgoThink. In conclusion, EgoThink serves as a valuable addition to existing evaluation benchmarks for VLMs, providing an indispensable resource for future research in the realm of embodied artificial intelligence and robotics.
+
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2311.15596](https://arxiv.org/abs/2311.15596) [cs.CV] |
+|           | (or [arXiv:2311.15596v1](https://arxiv.org/abs/2311.15596v1) [cs.CV] for this version) |
+|           | https://doi.org/10.48550/arXiv.2311.15596Focus to learn more |
+
+
+
+
+
+<h2 id="2023-11-28-16">16. ChatGPT and Beyond: The Generative AI Revolution in Education
+</h2>
+
+Title: [ChatGPT and Beyond: The Generative AI Revolution in Education](https://arxiv.org/abs/2311.15198)
+
+Authors: [Mohammad AL-Smadi](https://arxiv.org/search/cs?searchtype=author&query=AL-Smadi,+M)
+
+> The wide adoption and usage of generative artificial intelligence (AI) models, particularly ChatGPT, has sparked a surge in research exploring their potential applications in the educational landscape. This survey examines academic literature published between November, 2022, and July, 2023, specifically targeting high-impact research from Scopus-indexed Q1 and Q2 journals. This survey delves into the practical applications and implications of generative AI models across a diverse range of educational contexts. Through a comprehensive and rigorous evaluation of recent academic literature, this survey seeks to illuminate the evolving role of generative AI models, particularly ChatGPT, in education. By shedding light on the potential benefits, challenges, and emerging trends in this dynamic field, the survey endeavors to contribute to the understanding of the nexus between artificial intelligence and education. The findings of this review will empower educators, researchers, and policymakers to make informed decisions about the integration of AI technologies into learning environments.
+
+| Subjects: | **Computers and Society (cs.CY)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2311.15198](https://arxiv.org/abs/2311.15198) [cs.CY] |
+|           | (or [arXiv:2311.15198v1](https://arxiv.org/abs/2311.15198v1) [cs.CY] for this version) |
+|           | https://doi.org/10.48550/arXiv.2311.15198Focus to learn more |
+
+
+
+
 
 
 
