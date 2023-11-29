@@ -2,39 +2,62 @@
 
 # Index
 
+- [2023-11-29](#2023-11-29)
+  - [1. A Benchmark for Evaluating Machine Translation Metrics on Dialects Without Standard Orthography](#2023-11-29-1)
+  
+  - [2. CharacterGLM: Customizing Chinese Conversational AI Characters with Large Language Models](#2023-11-29-2)
+  
+  - [3. Evaluating Optimal Reference Translations](#2023-11-29-3)
+  
+  - [4. Reducing Gender Bias in Machine Translation through Counterfactual Data Generation](#2023-11-29-4)
+  
+  - [5. MobileCLIP: Fast Image-Text Models through Multi-Modal Reinforced Training](#2023-11-29-5)
+  
+  - [6. LLaMA-VID: An Image is Worth 2 Tokens in Large Language Models](#2023-11-29-6)
+  
+  - [7. Mitigating Object Hallucinations in Large Vision-Language Models through Visual Contrastive Decoding](#2023-11-29-7)
+  
+  - [8. RELIC: Investigating Large Language Model Responses using Self-Consistency](#2023-11-29-8)
+  
+  - [9. ChartLlama: A Multimodal LLM for Chart Understanding and Generation](#2023-11-29-9)
+  
+  - [10. ChatTraffc: Text-to-Traffic Generation via Diffusion Model](#2023-11-29-10)
+  
+  - [11. Pre-trained Language Models Do Not Help Auto-regressive Text-to-Image Generation](#2023-11-29-11)
+  
 - [2023-11-28](#2023-11-28)
   - [1. DUnE: Dataset for Unified Editing](#2023-11-28-1)
-  
+
   - [2. MEDITRON-70B: Scaling Medical Pretraining for Large Language Models](#2023-11-28-2)
-  
+
   - [3. A Quantitative Approach to Understand Self-Supervised Models as Cross-lingual Feature Extractors](#2023-11-28-3)
-  
+
   - [4. WorldSense: A Synthetic Benchmark for Grounded Reasoning in Large Language Models](#2023-11-28-4)
-  
+
   - [5. YUAN 2.0: A Large Language Model with Localized Filtering-based Attention](#2023-11-28-5)
-  
+
   - [6. Knowledge Unlearning for LLMs: Tasks, Methods, and Challenges](#2023-11-28-6)
-  
+
   - [7. Towards Vision Enhancing LLMs: Empowering Multimodal Knowledge Storage and Sharing in LLMs](#2023-11-28-7)
-  
+
   - [8. MoDS: Model-oriented Data Selection for Instruction Tuning](#2023-11-28-8)
-  
+
   - [9. LongStory: Coherent, Complete and Length Controlled Long story Generation](#2023-11-28-9)
-  
+
   - [10. Solving the Right Problem is Key for Translational NLP: A Case Study in UMLS Vocabulary Insertion](#2023-11-28-10)
-  
+
   - [11. Offensive Language Identification in Transliterated and Code-Mixed Bangla](#2023-11-28-11)
-  
+
   - [12. Vector-Quantized Prompt Learning for Paraphrase Generation](#2023-11-28-12)
-  
+
   - [13. How Many Unicorns Are in This Image? A Safety Evaluation Benchmark for Vision LLMs](#2023-11-28-13)
-  
+
   - [14. Data Generation for Post-OCR correction of Cyrillic handwriting](#2023-11-28-14)
-  
+
   - [15. Can Vision-Language Models Think from a First-Person Perspective?](#2023-11-28-15)
-  
+
   - [16. ChatGPT and Beyond: The Generative AI Revolution in Education](#2023-11-28-16)
-  
+
 - [2023-11-27](#2023-11-27)
   - [1. Calibrated Language Models Must Hallucinate](#2023-11-27-1)
 
@@ -74,6 +97,228 @@
   - [1. RankT5: Fine-Tuning T5 for Text Ranking with Ranking Losses](#2022-10-20-1)
 
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2023-11-29
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2023-11-29-1">1. A Benchmark for Evaluating Machine Translation Metrics on Dialects Without Standard Orthography
+</h2>
+
+Title: [A Benchmark for Evaluating Machine Translation Metrics on Dialects Without Standard Orthography](https://arxiv.org/abs/2311.16865)
+
+Authors: [Noëmi Aepli](https://arxiv.org/search/cs?searchtype=author&query=Aepli,+N), [Chantal Amrhein](https://arxiv.org/search/cs?searchtype=author&query=Amrhein,+C), [Florian Schottmann](https://arxiv.org/search/cs?searchtype=author&query=Schottmann,+F), [Rico Sennrich](https://arxiv.org/search/cs?searchtype=author&query=Sennrich,+R)
+
+> For sensible progress in natural language processing, it is important that we are aware of the limitations of the evaluation metrics we use. In this work, we evaluate how robust metrics are to non-standardized dialects, i.e. spelling differences in language varieties that do not have a standard orthography. To investigate this, we collect a dataset of human translations and human judgments for automatic machine translations from English to two Swiss German dialects. We further create a challenge set for dialect variation and benchmark existing metrics' performances. Our results show that existing metrics cannot reliably evaluate Swiss German text generation outputs, especially on segment level. We propose initial design adaptations that increase robustness in the face of non-standardized dialects, although there remains much room for further improvement. The dataset, code, and models are available here: [this https URL](https://github.com/textshuttle/dialect_eval)
+
+| Comments:    | WMT 2023 Research Paper                                      |
+| ------------ | ------------------------------------------------------------ |
+| Subjects:    | **Computation and Language (cs.CL)**                         |
+| ACM classes: | I.2.7                                                        |
+| Cite as:     | [arXiv:2311.16865](https://arxiv.org/abs/2311.16865) [cs.CL] |
+|              | (or [arXiv:2311.16865v1](https://arxiv.org/abs/2311.16865v1) [cs.CL] for this version) |
+|              | https://doi.org/10.48550/arXiv.2311.16865Focus to learn more |
+
+
+
+
+
+<h2 id="2023-11-29-2">2. CharacterGLM: Customizing Chinese Conversational AI Characters with Large Language Models
+</h2>
+
+Title: [CharacterGLM: Customizing Chinese Conversational AI Characters with Large Language Models](https://arxiv.org/abs/2311.16832)
+
+Authors: [Jinfeng Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou,+J), [Zhuang Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen,+Z), [Dazhen Wan](https://arxiv.org/search/cs?searchtype=author&query=Wan,+D), [Bosi Wen](https://arxiv.org/search/cs?searchtype=author&query=Wen,+B), [Yi Song](https://arxiv.org/search/cs?searchtype=author&query=Song,+Y), [Jifan Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu,+J), [Yongkang Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang,+Y), [Libiao Peng](https://arxiv.org/search/cs?searchtype=author&query=Peng,+L), [Jiaming Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang,+J), [Xiyao Xiao](https://arxiv.org/search/cs?searchtype=author&query=Xiao,+X), [Sahand Sabour](https://arxiv.org/search/cs?searchtype=author&query=Sabour,+S), [Xiaohan Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang,+X), [Wenjing Hou](https://arxiv.org/search/cs?searchtype=author&query=Hou,+W), [Yijia Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang,+Y), [Yuxiao Dong](https://arxiv.org/search/cs?searchtype=author&query=Dong,+Y), [Jie Tang](https://arxiv.org/search/cs?searchtype=author&query=Tang,+J), [Minlie Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang,+M)
+
+> In this paper, we present CharacterGLM, a series of models built upon ChatGLM, with model sizes ranging from 6B to 66B parameters. Our CharacterGLM is designed for generating Character-based Dialogues (CharacterDial), which aims to equip a conversational AI system with character customization for satisfying people's inherent social desires and emotional needs. On top of CharacterGLM, we can customize various AI characters or social agents by configuring their attributes (identities, interests, viewpoints, experiences, achievements, social relationships, etc.) and behaviors (linguistic features, emotional expressions, interaction patterns, etc.). Our model outperforms most mainstream close-source large langauge models, including the GPT series, especially in terms of consistency, human-likeness, and engagement according to manual evaluations. We will release our 6B version of CharacterGLM and a subset of training data to facilitate further research development in the direction of character-based dialogue generation.
+
+| Comments: | Work in progress                                             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | [arXiv:2311.16832](https://arxiv.org/abs/2311.16832) [cs.CL] |
+|           | (or [arXiv:2311.16832v1](https://arxiv.org/abs/2311.16832v1) [cs.CL] for this version) |
+|           | https://doi.org/10.48550/arXiv.2311.16832Focus to learn more |
+
+
+
+
+
+<h2 id="2023-11-29-3">3. Evaluating Optimal Reference Translations
+</h2>
+
+Title: [Evaluating Optimal Reference Translations](https://arxiv.org/abs/2311.16787)
+
+Authors: [Vilém Zouhar](https://arxiv.org/search/cs?searchtype=author&query=Zouhar,+V), [Věra Kloudová](https://arxiv.org/search/cs?searchtype=author&query=Kloudová,+V), [Martin Popel](https://arxiv.org/search/cs?searchtype=author&query=Popel,+M), [Ondřej Bojar](https://arxiv.org/search/cs?searchtype=author&query=Bojar,+O)
+
+> The overall translation quality reached by current machine translation (MT) systems for high-resourced language pairs is remarkably good. Standard methods of evaluation are not suitable nor intended to uncover the many translation errors and quality deficiencies that still persist. Furthermore, the quality of standard reference translations is commonly questioned and comparable quality levels have been reached by MT alone in several language pairs. Navigating further research in these high-resource settings is thus difficult. In this article, we propose a methodology for creating more reliable document-level human reference translations, called "optimal reference translations," with the simple aim to raise the bar of what should be deemed "human translation quality." We evaluate the obtained document-level optimal reference translations in comparison with "standard" ones, confirming a significant quality increase and also documenting the relationship between evaluation and translation editing.
+
+| Comments: | To appear in Natural Language Engineering 2024               |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:2311.16787](https://arxiv.org/abs/2311.16787) [cs.CL] |
+|           | (or [arXiv:2311.16787v1](https://arxiv.org/abs/2311.16787v1) [cs.CL] for this version) |
+|           | https://doi.org/10.48550/arXiv.2311.16787Focus to learn more |
+
+
+
+
+
+<h2 id="2023-11-29-4">4. Reducing Gender Bias in Machine Translation through Counterfactual Data Generation
+</h2>
+
+Title: [Reducing Gender Bias in Machine Translation through Counterfactual Data Generation](https://arxiv.org/abs/2311.16362)
+
+Authors: [Ranjita Naik](https://arxiv.org/search/cs?searchtype=author&query=Naik,+R), [Spencer Rarrick](https://arxiv.org/search/cs?searchtype=author&query=Rarrick,+S), [Vishal Chowdhary](https://arxiv.org/search/cs?searchtype=author&query=Chowdhary,+V)
+
+> Recent advances in neural methods have led to substantial improvement in the quality of Neural Machine Translation (NMT) systems. However, these systems frequently produce translations with inaccurate gender (Stanovsky et al., 2019), which can be traced to bias in training data. Saunders and Byrne (2020) tackle this problem with a handcrafted dataset containing balanced gendered profession words. By using this data to fine-tune an existing NMT model, they show that gender bias can be significantly mitigated, albeit at the expense of translation quality due to catastrophic forgetting. They recover some of the lost quality with modified training objectives or additional models at inference. We find, however, that simply supplementing the handcrafted dataset with a random sample from the base model training corpus is enough to significantly reduce the catastrophic forgetting. We also propose a novel domain-adaptation technique that leverages in-domain data created with the counterfactual data generation techniques proposed by Zmigrod et al. (2019) to further improve accuracy on the WinoMT challenge test set without significant loss in translation quality. We show its effectiveness in NMT systems from English into three morphologically rich languages French, Spanish, and Italian. The relevant dataset and code will be available at Github.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2311.16362](https://arxiv.org/abs/2311.16362) [cs.CL] |
+|           | (or [arXiv:2311.16362v1](https://arxiv.org/abs/2311.16362v1) [cs.CL] for this version) |
+|           | https://doi.org/10.48550/arXiv.2311.16362Focus to learn more |
+
+
+
+
+
+<h2 id="2023-11-29-5">5. MobileCLIP: Fast Image-Text Models through Multi-Modal Reinforced Training
+</h2>
+
+Title: [MobileCLIP: Fast Image-Text Models through Multi-Modal Reinforced Training](https://arxiv.org/abs/2311.17049)
+
+Authors: [Pavan Kumar Anasosalu Vasu](https://arxiv.org/search/cs?searchtype=author&query=Vasu,+P+K+A), [Hadi Pouransari](https://arxiv.org/search/cs?searchtype=author&query=Pouransari,+H), [Fartash Faghri](https://arxiv.org/search/cs?searchtype=author&query=Faghri,+F), [Raviteja Vemulapalli](https://arxiv.org/search/cs?searchtype=author&query=Vemulapalli,+R), [Oncel Tuzel](https://arxiv.org/search/cs?searchtype=author&query=Tuzel,+O)
+
+> Contrastive pretraining of image-text foundation models, such as CLIP, demonstrated excellent zero-shot performance and improved robustness on a wide range of downstream tasks. However, these models utilize large transformer-based encoders with significant memory and latency overhead which pose challenges for deployment on mobile devices. In this work, we introduce MobileCLIP -- a new family of efficient image-text models optimized for runtime performance along with a novel and efficient training approach, namely multi-modal reinforced training. The proposed training approach leverages knowledge transfer from an image captioning model and an ensemble of strong CLIP encoders to improve the accuracy of efficient models. Our approach avoids train-time compute overhead by storing the additional knowledge in a reinforced dataset. MobileCLIP sets a new state-of-the-art latency-accuracy tradeoff for zero-shot classification and retrieval tasks on several datasets. Our MobileCLIP-S2 variant is 2.3× faster while more accurate compared to previous best CLIP model based on ViT-B/16. We further demonstrate the effectiveness of our multi-modal reinforced training by training a CLIP model based on ViT-B/16 image backbone and achieving +2.9% average performance improvement on 38 evaluation benchmarks compared to the previous best. Moreover, we show that the proposed approach achieves 10×-1000× improved learning efficiency when compared with non-reinforced CLIP training.
+
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2311.17049](https://arxiv.org/abs/2311.17049) [cs.CV] |
+|           | (or [arXiv:2311.17049v1](https://arxiv.org/abs/2311.17049v1) [cs.CV] for this version) |
+|           | https://doi.org/10.48550/arXiv.2311.17049Focus to learn more |
+
+
+
+
+
+<h2 id="2023-11-29-6">6. LLaMA-VID: An Image is Worth 2 Tokens in Large Language Models
+</h2>
+
+Title: [LLaMA-VID: An Image is Worth 2 Tokens in Large Language Models](https://arxiv.org/abs/2311.17043)
+
+Authors: [Yanwei Li](https://arxiv.org/search/cs?searchtype=author&query=Li,+Y), [Chengyao Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang,+C), [Jiaya Jia](https://arxiv.org/search/cs?searchtype=author&query=Jia,+J)
+
+> In this work, we present a novel method to tackle the token generation challenge in Vision Language Models (VLMs) for video and image understanding, called LLaMA-VID. Current VLMs, while proficient in tasks like image captioning and visual question answering, face computational burdens when processing long videos due to the excessive visual tokens. LLaMA-VID addresses this issue by representing each frame with two distinct tokens, namely context token and content token. The context token encodes the overall image context based on user input, whereas the content token encapsulates visual cues in each frame. This dual-token strategy significantly reduces the overload of long videos while preserving critical information. Generally, LLaMA-VID empowers existing frameworks to support hour-long videos and pushes their upper limit with an extra context token. It is proved to surpass previous methods on most of video- or image-based benchmarks. Code is available [this https URL](https://github.com/dvlab-research/LLaMA-VID)}{[this https URL](https://github.com/dvlab-research/LLaMA-VID)
+
+| Comments: | Code is available at [this https URL](https://github.com/dvlab-research/LLaMA-VID) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| Cite as:  | [arXiv:2311.17043](https://arxiv.org/abs/2311.17043) [cs.CV] |
+|           | (or [arXiv:2311.17043v1](https://arxiv.org/abs/2311.17043v1) [cs.CV] for this version) |
+|           | https://doi.org/10.48550/arXiv.2311.17043Focus to learn more |
+
+
+
+
+
+<h2 id="2023-11-29-7">7. Mitigating Object Hallucinations in Large Vision-Language Models through Visual Contrastive Decoding
+</h2>
+
+Title: [Mitigating Object Hallucinations in Large Vision-Language Models through Visual Contrastive Decoding](https://arxiv.org/abs/2311.16922)
+
+Authors: [Sicong Leng](https://arxiv.org/search/cs?searchtype=author&query=Leng,+S), [Hang Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang,+H), [Guanzheng Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen,+G), [Xin Li](https://arxiv.org/search/cs?searchtype=author&query=Li,+X), [Shijian Lu](https://arxiv.org/search/cs?searchtype=author&query=Lu,+S), [Chunyan Miao](https://arxiv.org/search/cs?searchtype=author&query=Miao,+C), [Lidong Bing](https://arxiv.org/search/cs?searchtype=author&query=Bing,+L)
+
+> Large Vision-Language Models (LVLMs) have advanced considerably, intertwining visual recognition and language understanding to generate content that is not only coherent but also contextually attuned. Despite their success, LVLMs still suffer from the issue of object hallucinations, where models generate plausible yet incorrect outputs that include objects that do not exist in the images. To mitigate this issue, we introduce Visual Contrastive Decoding (VCD), a simple and training-free method that contrasts output distributions derived from original and distorted visual inputs. The proposed VCD effectively reduces the over-reliance on statistical bias and unimodal priors, two essential causes of object hallucinations. This adjustment ensures the generated content is closely grounded to visual inputs, resulting in contextually accurate outputs. Our experiments show that VCD, without either additional training or the usage of external tools, significantly mitigates the object hallucination issue across different LVLM families. Beyond mitigating object hallucinations, VCD also excels in general LVLM benchmarks, highlighting its wide-ranging applicability.
+
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2311.16922](https://arxiv.org/abs/2311.16922) [cs.CV] |
+|           | (or [arXiv:2311.16922v1](https://arxiv.org/abs/2311.16922v1) [cs.CV] for this version) |
+|           | https://doi.org/10.48550/arXiv.2311.16922Focus to learn more |
+
+
+
+
+
+<h2 id="2023-11-29-8">8. RELIC: Investigating Large Language Model Responses using Self-Consistency
+</h2>
+
+Title: [RELIC: Investigating Large Language Model Responses using Self-Consistency](https://arxiv.org/abs/2311.16842)
+
+Authors: [Furui Cheng](https://arxiv.org/search/cs?searchtype=author&query=Cheng,+F), [Vilém Zouhar](https://arxiv.org/search/cs?searchtype=author&query=Zouhar,+V), [Simran Arora](https://arxiv.org/search/cs?searchtype=author&query=Arora,+S), [Mrinmaya Sachan](https://arxiv.org/search/cs?searchtype=author&query=Sachan,+M), [Hendrik Strobelt](https://arxiv.org/search/cs?searchtype=author&query=Strobelt,+H), [Mennatallah El-Assady](https://arxiv.org/search/cs?searchtype=author&query=El-Assady,+M)
+
+> Large Language Models (LLMs) are notorious for blending fact with fiction and generating non-factual content, known as hallucinations. To tackle this challenge, we propose an interactive system that helps users obtain insights into the reliability of the generated text. Our approach is based on the idea that the self-consistency of multiple samples generated by the same LLM relates to its confidence in individual claims in the generated texts. Using this idea, we design RELIC, an interactive system that enables users to investigate and verify semantic-level variations in multiple long-form responses. This allows users to recognize potentially inaccurate information in the generated text and make necessary corrections. From a user study with ten participants, we demonstrate that our approach helps users better verify the reliability of the generated text. We further summarize the design implications and lessons learned from this research for inspiring future studies on reliable human-LLM interactions.
+
+| Subjects: | **Human-Computer Interaction (cs.HC)**; Computation and Language (cs.CL) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2311.16842](https://arxiv.org/abs/2311.16842) [cs.HC] |
+|           | (or [arXiv:2311.16842v1](https://arxiv.org/abs/2311.16842v1) [cs.HC] for this version) |
+|           | https://doi.org/10.48550/arXiv.2311.16842Focus to learn more |
+
+
+
+
+
+<h2 id="2023-11-29-9">9. ChartLlama: A Multimodal LLM for Chart Understanding and Generation
+</h2>
+
+Title: [ChartLlama: A Multimodal LLM for Chart Understanding and Generation](https://arxiv.org/abs/2311.16483)
+
+Authors: [Yucheng Han](https://arxiv.org/search/cs?searchtype=author&query=Han,+Y), [Chi Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang,+C), [Xin Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen,+X), [Xu Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang,+X), [Zhibin Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang,+Z), [Gang Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu,+G), [Bin Fu](https://arxiv.org/search/cs?searchtype=author&query=Fu,+B), [Hanwang Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang,+H)
+
+> Multi-modal large language models have demonstrated impressive performances on most vision-language tasks. However, the model generally lacks the understanding capabilities for specific domain data, particularly when it comes to interpreting chart figures. This is mainly due to the lack of relevant multi-modal instruction tuning datasets. In this article, we create a high-quality instruction-tuning dataset leveraging GPT-4. We develop a multi-step data generation process in which different steps are responsible for generating tabular data, creating chart figures, and designing instruction tuning data separately. Our method's flexibility enables us to generate diverse, high-quality instruction-tuning data consistently and efficiently while maintaining a low resource expenditure. Additionally, it allows us to incorporate a wider variety of chart and task types not yet featured in existing datasets. Next, we introduce ChartLlama, a multi-modal large language model that we've trained using our created dataset. ChartLlama outperforms all prior methods in ChartQA, Chart-to-text, and Chart-extraction evaluation benchmarks. Additionally, ChartLlama significantly improves upon the baseline in our specially compiled chart dataset, which includes new chart and task types. The results of ChartLlama confirm the value and huge potential of our proposed data generation method in enhancing chart comprehension.
+
+| Comments: | Code and model on [this https URL](https://tingxueronghua.github.io/ChartLlama/) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| Cite as:  | [arXiv:2311.16483](https://arxiv.org/abs/2311.16483) [cs.CV] |
+|           | (or [arXiv:2311.16483v1](https://arxiv.org/abs/2311.16483v1) [cs.CV] for this version) |
+|           | https://doi.org/10.48550/arXiv.2311.16483Focus to learn more |
+
+
+
+
+
+<h2 id="2023-11-29-10">10. ChatTraffc: Text-to-Traffic Generation via Diffusion Model
+</h2>
+
+Title: [ChatTraffc: Text-to-Traffic Generation via Diffusion Model](https://arxiv.org/abs/2311.16203)
+
+Authors: [Chengyang Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang,+C), [Yong Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang,+Y), [Qitan Shao](https://arxiv.org/search/cs?searchtype=author&query=Shao,+Q), [Bo Li](https://arxiv.org/search/cs?searchtype=author&query=Li,+B), [Yisheng Lv](https://arxiv.org/search/cs?searchtype=author&query=Lv,+Y), [Xinglin Piao](https://arxiv.org/search/cs?searchtype=author&query=Piao,+X), [Baocai Yin](https://arxiv.org/search/cs?searchtype=author&query=Yin,+B)
+
+> Traffic prediction is one of the most significant foundations in Intelligent Transportation Systems (ITS). Traditional traffic prediction methods rely only on historical traffic data to predict traffic trends and face two main challenges. 1) insensitivity to unusual events. 2) poor performance in long-term prediction. In this work, we explore how generative models combined with text describing the traffic system can be applied for traffic generation and name the task Text-to-Traffic Generation (TTG). The key challenge of the TTG task is how to associate text with the spatial structure of the road network and traffic data for generating traffic situations. To this end, we propose ChatTraffic, the first diffusion model for text-to-traffic generation. To guarantee the consistency between synthetic and real data, we augment a diffusion model with the Graph Convolutional Network (GCN) to extract spatial correlations of traffic data. In addition, we construct a large dataset containing text-traffic pairs for the TTG task. We benchmarked our model qualitatively and quantitatively on the released dataset. The experimental results indicate that ChatTraffic can generate realistic traffic situations from the text. Our code and dataset are available at [this https URL](https://github.com/ChyaZhang/ChatTraffic).
+
+| Subjects: | **Machine Learning (cs.LG)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2311.16203](https://arxiv.org/abs/2311.16203) [cs.LG] |
+|           | (or [arXiv:2311.16203v1](https://arxiv.org/abs/2311.16203v1) [cs.LG] for this version) |
+|           | https://doi.org/10.48550/arXiv.2311.16203Focus to learn more |
+
+
+
+
+
+<h2 id="2023-11-29-11">11. Pre-trained Language Models Do Not Help Auto-regressive Text-to-Image Generation
+</h2>
+
+Title: [Pre-trained Language Models Do Not Help Auto-regressive Text-to-Image Generation](https://arxiv.org/abs/2311.16201)
+
+Authors: [Yuhui Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang,+Y), [Brandon McKinzie](https://arxiv.org/search/cs?searchtype=author&query=McKinzie,+B), [Zhe Gan](https://arxiv.org/search/cs?searchtype=author&query=Gan,+Z), [Vaishaal Shankar](https://arxiv.org/search/cs?searchtype=author&query=Shankar,+V), [Alexander Toshev](https://arxiv.org/search/cs?searchtype=author&query=Toshev,+A)
+
+> Recent advances in image tokenizers, such as VQ-VAE, have enabled text-to-image generation using auto-regressive methods, similar to language modeling. However, these methods have yet to leverage pre-trained language models, despite their adaptability to various downstream tasks. In this work, we explore this gap by adapting a pre-trained language model for auto-regressive text-to-image generation, and find that pre-trained language models offer limited help. We provide a two-fold explanation by analyzing tokens from each modality. First, we demonstrate that image tokens possess significantly different semantics compared to text tokens, rendering pre-trained language models no more effective in modeling them than randomly initialized ones. Second, the text tokens in the image-text datasets are too simple compared to normal language model pre-training data, which causes the catastrophic degradation of language models' capability.
+
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2311.16201](https://arxiv.org/abs/2311.16201) [cs.CV] |
+|           | (or [arXiv:2311.16201v1](https://arxiv.org/abs/2311.16201v1) [cs.CV] for this version) |
+|           | https://doi.org/10.48550/arXiv.2311.16201Focus to learn more |
+
+
+
 
 
 
