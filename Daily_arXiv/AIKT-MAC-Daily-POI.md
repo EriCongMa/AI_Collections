@@ -1,30 +1,67 @@
-# MA C.'s Daily Paper Of Interest - November, 2022
+# MA C.'s Daily Paper Of Interest - November, 2023
 
 # Index
 
+- [2023-11-30](#2023-11-30)
+  - [1. SenTest: Evaluating Robustness of Sentence Encoders](#2023-11-30-1)
+  
+  - [2. AviationGPT: A Large Language Model for the Aviation Domain](#2023-11-30-2)
+  
+  - [3. Improving Minority Stress Detection with Emotions](#2023-11-30-3)
+  
+  - [4. TimeBench: A Comprehensive Evaluation of Temporal Reasoning Abilities in Large Language Models](#2023-11-30-4)
+  
+  - [5. Introduction to Transformers: an NLP Perspective](#2023-11-30-5)
+  
+  - [6. Mergen: The First Manchu-Korean Machine Translation Model Trained on Augmented Data](#2023-11-30-6)
+  
+  - [7. Taiwan LLM: Bridging the Linguistic Divide with a Culturally Aligned Language Model](#2023-11-30-7)
+  
+  - [8. Improving the Robustness of Transformer-based Large Language Models with Dynamic Attention](#2023-11-30-8)
+  
+  - [9. Are Large Language Models Good Fact Checkers: A Preliminary Study](#2023-11-30-9)
+  
+  - [10. Universal Self-Consistency for Large Language Model Generation](#2023-11-30-10)
+  
+  - [11. Language Models: A Guide for the Perplexed](#2023-11-30-11)
+  
+  - [12. Look Before You Leap: Unveiling the Power of GPT-4V in Robotic Vision-Language Planning](#2023-11-30-12)
+  
+  - [13. VIM: Probing Multimodal Large Language Models for Visual Embedded Instruction Following](#2023-11-30-13)
+  
+  - [14. LanGWM: Language Grounded World Model](#2023-11-30-14)
+  
+  - [15. VITATECS: A Diagnostic Dataset for Temporal Concept Understanding of Video-Language Models](#2023-11-30-15)
+  
+  - [16. Reason out Your Layout: Evoking the Layout Master from Large Language Models for Text-to-Image Synthesis](#2023-11-30-16)
+  
+  - [17. Compositional Chain-of-Thought Prompting for Large Multimodal Models](#2023-11-30-17)
+  
+  - [18. Efficient Deep Speech Understanding at the Edge](#2023-11-30-18)
+  
 - [2023-11-29](#2023-11-29)
   - [1. A Benchmark for Evaluating Machine Translation Metrics on Dialects Without Standard Orthography](#2023-11-29-1)
-  
+
   - [2. CharacterGLM: Customizing Chinese Conversational AI Characters with Large Language Models](#2023-11-29-2)
-  
+
   - [3. Evaluating Optimal Reference Translations](#2023-11-29-3)
-  
+
   - [4. Reducing Gender Bias in Machine Translation through Counterfactual Data Generation](#2023-11-29-4)
-  
+
   - [5. MobileCLIP: Fast Image-Text Models through Multi-Modal Reinforced Training](#2023-11-29-5)
-  
+
   - [6. LLaMA-VID: An Image is Worth 2 Tokens in Large Language Models](#2023-11-29-6)
-  
+
   - [7. Mitigating Object Hallucinations in Large Vision-Language Models through Visual Contrastive Decoding](#2023-11-29-7)
-  
+
   - [8. RELIC: Investigating Large Language Model Responses using Self-Consistency](#2023-11-29-8)
-  
+
   - [9. ChartLlama: A Multimodal LLM for Chart Understanding and Generation](#2023-11-29-9)
-  
+
   - [10. ChatTraffc: Text-to-Traffic Generation via Diffusion Model](#2023-11-29-10)
-  
+
   - [11. Pre-trained Language Models Do Not Help Auto-regressive Text-to-Image Generation](#2023-11-29-11)
-  
+
 - [2023-11-28](#2023-11-28)
   - [1. DUnE: Dataset for Unified Editing](#2023-11-28-1)
 
@@ -97,6 +134,382 @@
   - [1. RankT5: Fine-Tuning T5 for Text Ranking with Ranking Losses](#2022-10-20-1)
 
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2023-11-30
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2023-11-30-1">1. SenTest: Evaluating Robustness of Sentence Encoders
+</h2>
+
+Title: [SenTest: Evaluating Robustness of Sentence Encoders](https://arxiv.org/abs/2311.17722)
+
+Authors: [Tanmay Chavan](https://arxiv.org/search/cs?searchtype=author&query=Chavan,+T), [Shantanu Patankar](https://arxiv.org/search/cs?searchtype=author&query=Patankar,+S), [Aditya Kane](https://arxiv.org/search/cs?searchtype=author&query=Kane,+A), [Omkar Gokhale](https://arxiv.org/search/cs?searchtype=author&query=Gokhale,+O), [Geetanjali Kale](https://arxiv.org/search/cs?searchtype=author&query=Kale,+G), [Raviraj Joshi](https://arxiv.org/search/cs?searchtype=author&query=Joshi,+R)
+
+> Contrastive learning has proven to be an effective method for pre-training models using weakly labeled data in the vision domain. Sentence transformers are the NLP counterparts to this architecture, and have been growing in popularity due to their rich and effective sentence representations. Having effective sentence representations is paramount in multiple tasks, such as information retrieval, retrieval augmented generation (RAG), and sentence comparison. Keeping in mind the deployability factor of transformers, evaluating the robustness of sentence transformers is of utmost importance. This work focuses on evaluating the robustness of the sentence encoders. We employ several adversarial attacks to evaluate its robustness. This system uses character-level attacks in the form of random character substitution, word-level attacks in the form of synonym replacement, and sentence-level attacks in the form of intra-sentence word order shuffling. The results of the experiments strongly undermine the robustness of sentence encoders. The models produce significantly different predictions as well as embeddings on perturbed datasets. The accuracy of the models can fall up to 15 percent on perturbed datasets as compared to unperturbed datasets. Furthermore, the experiments demonstrate that these embeddings does capture the semantic and syntactic structure (sentence order) of sentences. However, existing supervised classification strategies fail to leverage this information, and merely function as n-gram detectors.
+
+| Subjects: | **Computation and Language (cs.CL)**; Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2311.17722](https://arxiv.org/abs/2311.17722) [cs.CL] |
+|           | (or [arXiv:2311.17722v1](https://arxiv.org/abs/2311.17722v1) [cs.CL] for this version) |
+|           | https://doi.org/10.48550/arXiv.2311.17722Focus to learn more |
+
+
+
+
+
+<h2 id="2023-11-30-2">2. AviationGPT: A Large Language Model for the Aviation Domain
+</h2>
+
+Title: [AviationGPT: A Large Language Model for the Aviation Domain](https://arxiv.org/abs/2311.17686)
+
+Authors: [Liya Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang,+L), [Jason Chou](https://arxiv.org/search/cs?searchtype=author&query=Chou,+J), [Xin Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou,+X), [Alex Tien](https://arxiv.org/search/cs?searchtype=author&query=Tien,+A), [Diane M Baumgartner](https://arxiv.org/search/cs?searchtype=author&query=Baumgartner,+D+M)
+
+> The advent of ChatGPT and GPT-4 has captivated the world with large language models (LLMs), demonstrating exceptional performance in question-answering, summarization, and content generation. The aviation industry is characterized by an abundance of complex, unstructured text data, replete with technical jargon and specialized terminology. Moreover, labeled data for model building are scarce in this domain, resulting in low usage of aviation text data. The emergence of LLMs presents an opportunity to transform this situation, but there is a lack of LLMs specifically designed for the aviation domain. To address this gap, we propose AviationGPT, which is built on open-source LLaMA-2 and Mistral architectures and continuously trained on a wealth of carefully curated aviation datasets. Experimental results reveal that AviationGPT offers users multiple advantages, including the versatility to tackle diverse natural language processing (NLP) problems (e.g., question-answering, summarization, document writing, information extraction, report querying, data cleaning, and interactive data exploration). It also provides accurate and contextually relevant responses within the aviation domain and significantly improves performance (e.g., over a 40% performance gain in tested cases). With AviationGPT, the aviation industry is better equipped to address more complex research problems and enhance the efficiency and safety of National Airspace System (NAS) operations.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2311.17686](https://arxiv.org/abs/2311.17686) [cs.CL] |
+|           | (or [arXiv:2311.17686v1](https://arxiv.org/abs/2311.17686v1) [cs.CL] for this version) |
+|           | https://doi.org/10.48550/arXiv.2311.17686Focus to learn more |
+
+
+
+
+
+<h2 id="2023-11-30-3">3. Improving Minority Stress Detection with Emotions
+</h2>
+
+
+Title: [Improving Minority Stress Detection with Emotions](https://arxiv.org/abs/2311.17676)
+
+Authors: [Jonathan Ivey](https://arxiv.org/search/cs?searchtype=author&query=Ivey,+J), [Susan Gauch](https://arxiv.org/search/cs?searchtype=author&query=Gauch,+S)
+
+> Psychological stress detection is an important task for mental healthcare research, but there has been little prior work investigating the effectiveness of psychological stress models on minority individuals, who are especially vulnerable to poor mental health outcomes. In this work, we use the related task of minority stress detection to evaluate the ability of psychological stress models to understand the language of sexual and gender minorities. We find that traditional psychological stress models underperform on minority stress detection, and we propose using emotion-infused models to reduce that performance disparity. We further demonstrate that multi-task psychological stress models outperform the current state-of-the-art for minority stress detection without directly training on minority stress data. We provide explanatory analysis showing that minority communities have different distributions of emotions than the general population and that emotion-infused models improve the performance of stress models on underrepresented groups because of their effectiveness in low-data environments, and we propose that integrating emotions may benefit underrepresented groups in other mental health detection tasks.
+
+| Comments: | 9 pages, 6 figures, under review                             |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | [arXiv:2311.17676](https://arxiv.org/abs/2311.17676) [cs.CL] |
+|           | (or [arXiv:2311.17676v1](https://arxiv.org/abs/2311.17676v1) [cs.CL] for this version) |
+|           | https://doi.org/10.48550/arXiv.2311.17676Focus to learn more |
+
+
+
+
+
+<h2 id="2023-11-30-4">4. TimeBench: A Comprehensive Evaluation of Temporal Reasoning Abilities in Large Language Models
+</h2>
+
+
+Title: [TimeBench: A Comprehensive Evaluation of Temporal Reasoning Abilities in Large Language Models](https://arxiv.org/abs/2311.17667)
+
+Authors: [Zheng Chu](https://arxiv.org/search/cs?searchtype=author&query=Chu,+Z), [Jingchang Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen,+J), [Qianglong Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen,+Q), [Weijiang Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu,+W), [Haotian Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang,+H), [Ming Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu,+M), [Bing Qin](https://arxiv.org/search/cs?searchtype=author&query=Qin,+B)
+
+> Understanding time is a pivotal aspect of human cognition, crucial in the broader framework of grasping the intricacies of the world. Previous studies typically focus on specific aspects of time, lacking a comprehensive temporal reasoning benchmark. To address this issue, we propose TimeBench, a comprehensive hierarchical temporal reasoning benchmark that covers a broad spectrum of temporal reasoning phenomena, which provides a thorough evaluation for investigating the temporal reasoning capabilities of large language models. We conduct extensive experiments on popular LLMs, such as GPT-4, LLaMA2, and Mistral, incorporating chain-of-thought prompting. Our experimental results indicate a significant performance gap between the state-of-the-art LLMs and humans, highlighting that there is still a considerable distance to cover in temporal reasoning. We aspire for TimeBench to serve as a comprehensive benchmark, fostering research in temporal reasoning for LLMs. Our resource is available at [this https URL](https://github.com/zchuz/TimeBench)
+
+| Comments: | Resources at: [this https URL](https://github.com/zchuz/TimeBench) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| Cite as:  | [arXiv:2311.17667](https://arxiv.org/abs/2311.17667) [cs.CL] |
+|           | (or [arXiv:2311.17667v1](https://arxiv.org/abs/2311.17667v1) [cs.CL] for this version) |
+|           | https://doi.org/10.48550/arXiv.2311.17667Focus to learn more |
+
+
+
+
+
+<h2 id="2023-11-30-5">5. Introduction to Transformers: an NLP Perspective
+</h2>
+
+
+Title: [Introduction to Transformers: an NLP Perspective](https://arxiv.org/abs/2311.17633)
+
+Authors: [Tong Xiao](https://arxiv.org/search/cs?searchtype=author&query=Xiao,+T), [Jingbo Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu,+J)
+
+> Transformers have dominated empirical machine learning models of natural language processing. In this paper, we introduce basic concepts of Transformers and present key techniques that form the recent advances of these models. This includes a description of the standard Transformer architecture, a series of model refinements, and common applications. Given that Transformers and related deep learning techniques might be evolving in ways we have never seen, we cannot dive into all the model details or cover all the technical areas. Instead, we focus on just those concepts that are helpful for gaining a good understanding of Transformers and their variants. We also summarize the key ideas that impact this field, thereby yielding some insights into the strengths and limitations of these models.
+
+| Comments: | 119 pages and 21 figures                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Machine Learning (cs.LG) |
+| Cite as:  | [arXiv:2311.17633](https://arxiv.org/abs/2311.17633) [cs.CL] |
+|           | (or [arXiv:2311.17633v1](https://arxiv.org/abs/2311.17633v1) [cs.CL] for this version) |
+|           | https://doi.org/10.48550/arXiv.2311.17633Focus to learn more |
+
+
+
+
+
+<h2 id="2023-11-30-6">6. Mergen: The First Manchu-Korean Machine Translation Model Trained on Augmented Data
+</h2>
+
+
+Title: [Mergen: The First Manchu-Korean Machine Translation Model Trained on Augmented Data](https://arxiv.org/abs/2311.17492)
+
+Authors: [Jean Seo](https://arxiv.org/search/cs?searchtype=author&query=Seo,+J), [Sungjoo Byun](https://arxiv.org/search/cs?searchtype=author&query=Byun,+S), [Minha Kang](https://arxiv.org/search/cs?searchtype=author&query=Kang,+M), [Sangah Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee,+S)
+
+> The Manchu language, with its roots in the historical Manchurian region of Northeast China, is now facing a critical threat of extinction, as there are very few speakers left. In our efforts to safeguard the Manchu language, we introduce Mergen, the first-ever attempt at a Manchu-Korean Machine Translation (MT) model. To develop this model, we utilize valuable resources such as the Manwen Laodang(a historical book) and a Manchu-Korean dictionary. Due to the scarcity of a Manchu-Korean parallel dataset, we expand our data by employing word replacement guided by GloVe embeddings, trained on both monolingual and parallel texts. Our approach is built around an encoder-decoder neural machine translation model, incorporating a bi-directional Gated Recurrent Unit (GRU) layer. The experiments have yielded promising results, showcasing a significant enhancement in Manchu-Korean translation, with a remarkable 20-30 point increase in the BLEU score.
+
+| Comments: | emnlp2023/mrl2023                                            |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| Cite as:  | [arXiv:2311.17492](https://arxiv.org/abs/2311.17492) [cs.CL] |
+|           | (or [arXiv:2311.17492v1](https://arxiv.org/abs/2311.17492v1) [cs.CL] for this version) |
+|           | https://doi.org/10.48550/arXiv.2311.17492Focus to learn more |
+
+
+
+
+
+<h2 id="2023-11-30-7">7. Taiwan LLM: Bridging the Linguistic Divide with a Culturally Aligned Language Model
+</h2>
+
+
+Title: [Taiwan LLM: Bridging the Linguistic Divide with a Culturally Aligned Language Model](https://arxiv.org/abs/2311.17487)
+
+Authors: [Yen-Ting Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin,+Y), [Yun-Nung Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen,+Y)
+
+> In the realm of language models, the nuanced linguistic and cultural intricacies of Traditional Chinese, as spoken in Taiwan, have been largely overlooked. This paper introduces Taiwan LLM, a pioneering Large Language Model that specifically caters to the Traditional Chinese language, with a focus on the variant used in Taiwan. Leveraging a comprehensive pretraining corpus and instruction-finetuning datasets, we have developed a model that not only understands the complexities of Traditional Chinese but also embodies the cultural context of Taiwan. Taiwan LLM represents the first of its kind, a model that is not only linguistically accurate but also culturally resonant with its user base. Our evaluations demonstrate that Taiwan LLM achieves superior performance in understanding and generating Traditional Chinese text, outperforming existing models that are predominantly trained on Simplified Chinese or English. The open-source release of Taiwan LLM invites collaboration and further innovation, ensuring that the linguistic diversity of Chinese speakers is embraced and well-served. The model, datasets, and further resources are made publicly available to foster ongoing research and development in this field.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2311.17487](https://arxiv.org/abs/2311.17487) [cs.CL] |
+|           | (or [arXiv:2311.17487v1](https://arxiv.org/abs/2311.17487v1) [cs.CL] for this version) |
+|           | https://doi.org/10.48550/arXiv.2311.17487Focus to learn more |
+
+
+
+
+
+<h2 id="2023-11-30-8">8. Improving the Robustness of Transformer-based Large Language Models with Dynamic Attention
+</h2>
+
+
+Title: [Improving the Robustness of Transformer-based Large Language Models with Dynamic Attention](https://arxiv.org/abs/2311.17400)
+
+Authors: [Lujia Shen](https://arxiv.org/search/cs?searchtype=author&query=Shen,+L), [Yuwen Pu](https://arxiv.org/search/cs?searchtype=author&query=Pu,+Y), [Shouling Ji](https://arxiv.org/search/cs?searchtype=author&query=Ji,+S), [Changjiang Li](https://arxiv.org/search/cs?searchtype=author&query=Li,+C), [Xuhong Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang,+X), [Chunpeng Ge](https://arxiv.org/search/cs?searchtype=author&query=Ge,+C), [Ting Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang,+T)
+
+> Transformer-based models, such as BERT and GPT, have been widely adopted in natural language processing (NLP) due to their exceptional performance. However, recent studies show their vulnerability to textual adversarial attacks where the model's output can be misled by intentionally manipulating the text inputs. Despite various methods that have been proposed to enhance the model's robustness and mitigate this vulnerability, many require heavy consumption resources (e.g., adversarial training) or only provide limited protection (e.g., defensive dropout). In this paper, we propose a novel method called dynamic attention, tailored for the transformer architecture, to enhance the inherent robustness of the model itself against various adversarial attacks. Our method requires no downstream task knowledge and does not incur additional costs. The proposed dynamic attention consists of two modules: (I) attention rectification, which masks or weakens the attention value of the chosen tokens, and (ii) dynamic modeling, which dynamically builds the set of candidate tokens. Extensive experiments demonstrate that dynamic attention significantly mitigates the impact of adversarial attacks, improving up to 33\% better performance than previous methods against widely-used adversarial attacks. The model-level design of dynamic attention enables it to be easily combined with other defense methods (e.g., adversarial training) to further enhance the model's robustness. Furthermore, we demonstrate that dynamic attention preserves the state-of-the-art robustness space of the original model compared to other dynamic modeling methods.
+
+| Subjects:    | **Computation and Language (cs.CL)**; Cryptography and Security (cs.CR); Machine Learning (cs.LG) |
+| ------------ | ------------------------------------------------------------ |
+| Cite as:     | [arXiv:2311.17400](https://arxiv.org/abs/2311.17400) [cs.CL] |
+|              | (or [arXiv:2311.17400v1](https://arxiv.org/abs/2311.17400v1) [cs.CL] for this version) |
+|              | https://doi.org/10.48550/arXiv.2311.17400Focus to learn more |
+| Related DOI: | https://doi.org/10.14722/ndss.2024.24115Focus to learn more  |
+
+
+
+
+
+<h2 id="2023-11-30-9">9. Are Large Language Models Good Fact Checkers: A Preliminary Study
+</h2>
+
+
+Title: [Are Large Language Models Good Fact Checkers: A Preliminary Study](https://arxiv.org/abs/2311.17355)
+
+Authors: [Han Cao](https://arxiv.org/search/cs?searchtype=author&query=Cao,+H), [Lingwei Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei,+L), [Mengyang Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen,+M), [Wei Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou,+W), [Songlin Hu](https://arxiv.org/search/cs?searchtype=author&query=Hu,+S)
+
+> Recently, Large Language Models (LLMs) have drawn significant attention due to their outstanding reasoning capabilities and extensive knowledge repository, positioning them as superior in handling various natural language processing tasks compared to other language models. In this paper, we present a preliminary investigation into the potential of LLMs in fact-checking. This study aims to comprehensively evaluate various LLMs in tackling specific fact-checking subtasks, systematically evaluating their capabilities, and conducting a comparative analysis of their performance against pre-trained and state-of-the-art low-parameter models. Experiments demonstrate that LLMs achieve competitive performance compared to other small models in most scenarios. However, they encounter challenges in effectively handling Chinese fact verification and the entirety of the fact-checking pipeline due to language inconsistencies and hallucinations. These findings underscore the need for further exploration and research to enhance the proficiency of LLMs as reliable fact-checkers, unveiling the potential capability of LLMs and the possible challenges in fact-checking tasks.
+
+| Subjects: | **Computation and Language (cs.CL)**                         |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2311.17355](https://arxiv.org/abs/2311.17355) [cs.CL] |
+|           | (or [arXiv:2311.17355v1](https://arxiv.org/abs/2311.17355v1) [cs.CL] for this version) |
+|           | https://doi.org/10.48550/arXiv.2311.17355Focus to learn more |
+
+
+
+
+
+<h2 id="2023-11-30-10">10. Universal Self-Consistency for Large Language Model Generation
+</h2>
+
+
+Title: [Universal Self-Consistency for Large Language Model Generation](https://arxiv.org/abs/2311.17311)
+
+Authors: [Xinyun Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen,+X), [Renat Aksitov](https://arxiv.org/search/cs?searchtype=author&query=Aksitov,+R), [Uri Alon](https://arxiv.org/search/cs?searchtype=author&query=Alon,+U), [Jie Ren](https://arxiv.org/search/cs?searchtype=author&query=Ren,+J), [Kefan Xiao](https://arxiv.org/search/cs?searchtype=author&query=Xiao,+K), [Pengcheng Yin](https://arxiv.org/search/cs?searchtype=author&query=Yin,+P), [Sushant Prakash](https://arxiv.org/search/cs?searchtype=author&query=Prakash,+S), [Charles Sutton](https://arxiv.org/search/cs?searchtype=author&query=Sutton,+C), [Xuezhi Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang,+X), [Denny Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou,+D)
+
+> Self-consistency with chain-of-thought prompting (CoT) has demonstrated remarkable performance gains on various challenging tasks, by utilizing multiple reasoning paths sampled from large language models (LLMs). However, self-consistency relies on the answer extraction process to aggregate multiple solutions, which is not applicable to free-form answers. In this work, we propose Universal Self-Consistency (USC), which leverages LLMs themselves to select the most consistent answer among multiple candidates. We evaluate USC on a variety of benchmarks, including mathematical reasoning, code generation, long-context summarization, and open-ended question answering. On open-ended generation tasks where the original self-consistency method is not applicable, USC effectively utilizes multiple samples and improves the performance. For mathematical reasoning, USC matches the standard self-consistency performance without requiring the answer formats to be similar. Finally, without access to execution results, USC also matches the execution-based voting performance on code generation.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2311.17311](https://arxiv.org/abs/2311.17311) [cs.CL] |
+|           | (or [arXiv:2311.17311v1](https://arxiv.org/abs/2311.17311v1) [cs.CL] for this version) |
+|           | https://doi.org/10.48550/arXiv.2311.17311Focus to learn more |
+
+
+
+
+
+<h2 id="2023-11-30-11">11. Language Models: A Guide for the Perplexed
+</h2>
+
+
+Title: [Language Models: A Guide for the Perplexed](https://arxiv.org/abs/2311.17301)
+
+Authors: [Sofia Serrano](https://arxiv.org/search/cs?searchtype=author&query=Serrano,+S), [Zander Brumbaugh](https://arxiv.org/search/cs?searchtype=author&query=Brumbaugh,+Z), [Noah A. Smith](https://arxiv.org/search/cs?searchtype=author&query=Smith,+N+A)
+
+> Given the growing importance of AI literacy, we decided to write this tutorial to help narrow the gap between the discourse among those who study language models -- the core technology underlying ChatGPT and similar products -- and those who are intrigued and want to learn more about them. In short, we believe the perspective of researchers and educators can add some clarity to the public's understanding of the technologies beyond what's currently available, which tends to be either extremely technical or promotional material generated about products by their purveyors.
+> Our approach teases apart the concept of a language model from products built on them, from the behaviors attributed to or desired from those products, and from claims about similarity to human cognition. As a starting point, we (1) offer a scientific viewpoint that focuses on questions amenable to study through experimentation; (2) situate language models as they are today in the context of the research that led to their development; and (3) describe the boundaries of what is known about the models at this writing.
+
+| Subjects: | **Computation and Language (cs.CL)**; Artificial Intelligence (cs.AI); Computers and Society (cs.CY); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2311.17301](https://arxiv.org/abs/2311.17301) [cs.CL] |
+|           | (or [arXiv:2311.17301v1](https://arxiv.org/abs/2311.17301v1) [cs.CL] for this version) |
+|           | https://doi.org/10.48550/arXiv.2311.17301Focus to learn more |
+
+
+
+
+
+<h2 id="2023-11-30-12">12. Look Before You Leap: Unveiling the Power of GPT-4V in Robotic Vision-Language Planning
+</h2>
+
+
+Title: [Look Before You Leap: Unveiling the Power of GPT-4V in Robotic Vision-Language Planning](https://arxiv.org/abs/2311.17842)
+
+Authors: [Yingdong Hu](https://arxiv.org/search/cs?searchtype=author&query=Hu,+Y), [Fanqi Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin,+F), [Tong Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang,+T), [Li Yi](https://arxiv.org/search/cs?searchtype=author&query=Yi,+L), [Yang Gao](https://arxiv.org/search/cs?searchtype=author&query=Gao,+Y)
+
+> In this study, we are interested in imbuing robots with the capability of physically-grounded task planning. Recent advancements have shown that large language models (LLMs) possess extensive knowledge useful in robotic tasks, especially in reasoning and planning. However, LLMs are constrained by their lack of world grounding and dependence on external affordance models to perceive environmental information, which cannot jointly reason with LLMs. We argue that a task planner should be an inherently grounded, unified multimodal system. To this end, we introduce Robotic Vision-Language Planning (ViLa), a novel approach for long-horizon robotic planning that leverages vision-language models (VLMs) to generate a sequence of actionable steps. ViLa directly integrates perceptual data into its reasoning and planning process, enabling a profound understanding of commonsense knowledge in the visual world, including spatial layouts and object attributes. It also supports flexible multimodal goal specification and naturally incorporates visual feedback. Our extensive evaluation, conducted in both real-robot and simulated environments, demonstrates ViLa's superiority over existing LLM-based planners, highlighting its effectiveness in a wide array of open-world manipulation tasks.
+
+| Subjects: | **Robotics (cs.RO)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL); Computer Vision and Pattern Recognition (cs.CV); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2311.17842](https://arxiv.org/abs/2311.17842) [cs.RO] |
+|           | (or [arXiv:2311.17842v1](https://arxiv.org/abs/2311.17842v1) [cs.RO] for this version) |
+|           | https://doi.org/10.48550/arXiv.2311.17842Focus to learn more |
+
+
+
+
+
+<h2 id="2023-11-30-13">13. VIM: Probing Multimodal Large Language Models for Visual Embedded Instruction Following
+</h2>
+
+
+Title: [VIM: Probing Multimodal Large Language Models for Visual Embedded Instruction Following](https://arxiv.org/abs/2311.17647)
+
+Authors: [Yujie Lu](https://arxiv.org/search/cs?searchtype=author&query=Lu,+Y), [Xiujun Li](https://arxiv.org/search/cs?searchtype=author&query=Li,+X), [William Yang Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang,+W+Y), [Yejin Choi](https://arxiv.org/search/cs?searchtype=author&query=Choi,+Y)
+
+> We introduce VISUAL EMBEDDED INSTRUCTION (VIM), a new framework designed to evaluate the visual instruction following capability of Multimodal Large Language Models (MLLMs). As illustrated in Figure 2, VIM challenges the MLLMs by embedding the instructions into the visual scenes, demanding strong visual interpretative skills for instruction following. We adapt VIM to various benchmarks, including VQAv2, MME, MM-Vet, and RefCOCO series, compose a VIM bench, and probe diverse MLLMs across three distinct in-context learning settings: Zero Shot, One Shot, and Pair Shot. We observe that there is a significant performance disparity between the open-source MLLMs and GPT-4V, implying that their proficiency in visual instruction comprehension is not up to par. Our results highlight a promising direction for the enhancement of MLLMs capabilities on instruction following. We aim VIM to serve as a useful norm for advancing the state of the art and driving further progress in the field.
+
+| Comments: | 20 pages, 8 figures, 20 tables                               |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL) |
+| Cite as:  | [arXiv:2311.17647](https://arxiv.org/abs/2311.17647) [cs.CV] |
+|           | (or [arXiv:2311.17647v1](https://arxiv.org/abs/2311.17647v1) [cs.CV] for this version) |
+|           | https://doi.org/10.48550/arXiv.2311.17647Focus to learn more |
+
+
+
+
+
+<h2 id="2023-11-30-14">14. LanGWM: Language Grounded World Model
+</h2>
+
+
+Title: [LanGWM: Language Grounded World Model](https://arxiv.org/abs/2311.17593)
+
+Authors: [Rudra P.K. Poudel](https://arxiv.org/search/cs?searchtype=author&query=Poudel,+R+P), [Harit Pandya](https://arxiv.org/search/cs?searchtype=author&query=Pandya,+H), [Chao Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang,+C), [Roberto Cipolla](https://arxiv.org/search/cs?searchtype=author&query=Cipolla,+R)
+
+> Recent advances in deep reinforcement learning have showcased its potential in tackling complex tasks. However, experiments on visual control tasks have revealed that state-of-the-art reinforcement learning models struggle with out-of-distribution generalization. Conversely, expressing higher-level concepts and global contexts is relatively easy using language.
+> Building upon recent success of the large language models, our main objective is to improve the state abstraction technique in reinforcement learning by leveraging language for robust action selection. Specifically, we focus on learning language-grounded visual features to enhance the world model learning, a model-based reinforcement learning technique.
+> To enforce our hypothesis explicitly, we mask out the bounding boxes of a few objects in the image observation and provide the text prompt as descriptions for these masked objects. Subsequently, we predict the masked objects along with the surrounding regions as pixel reconstruction, similar to the transformer-based masked autoencoder approach.
+> Our proposed LanGWM: Language Grounded World Model achieves state-of-the-art performance in out-of-distribution test at the 100K interaction steps benchmarks of iGibson point navigation tasks. Furthermore, our proposed technique of explicit language-grounded visual representation learning has the potential to improve models for human-robot interaction because our extracted visual features are language grounded.
+
+| Subjects: | **Machine Learning (cs.LG)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL); Computer Vision and Pattern Recognition (cs.CV); Robotics (cs.RO) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2311.17593](https://arxiv.org/abs/2311.17593) [cs.LG] |
+|           | (or [arXiv:2311.17593v1](https://arxiv.org/abs/2311.17593v1) [cs.LG] for this version) |
+|           | https://doi.org/10.48550/arXiv.2311.17593Focus to learn more |
+
+
+
+
+
+<h2 id="2023-11-30-15">15. VITATECS: A Diagnostic Dataset for Temporal Concept Understanding of Video-Language Models
+</h2>
+
+
+Title: [VITATECS: A Diagnostic Dataset for Temporal Concept Understanding of Video-Language Models](https://arxiv.org/abs/2311.17404)
+
+Authors: [Shicheng Li](https://arxiv.org/search/cs?searchtype=author&query=Li,+S), [Lei Li](https://arxiv.org/search/cs?searchtype=author&query=Li,+L), [Shuhuai Ren](https://arxiv.org/search/cs?searchtype=author&query=Ren,+S), [Yuanxin Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu,+Y), [Yi Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu,+Y), [Rundong Gao](https://arxiv.org/search/cs?searchtype=author&query=Gao,+R), [Xu Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun,+X), [Lu Hou](https://arxiv.org/search/cs?searchtype=author&query=Hou,+L)
+
+> The ability to perceive how objects change over time is a crucial ingredient in human intelligence. However, current benchmarks cannot faithfully reflect the temporal understanding abilities of video-language models (VidLMs) due to the existence of static visual shortcuts. To remedy this issue, we present VITATECS, a diagnostic VIdeo-Text dAtaset for the evaluation of TEmporal Concept underStanding. Specifically, we first introduce a fine-grained taxonomy of temporal concepts in natural language in order to diagnose the capability of VidLMs to comprehend different temporal aspects. Furthermore, to disentangle the correlation between static and temporal information, we generate counterfactual video descriptions that differ from the original one only in the specified temporal aspect. We employ a semi-automatic data collection framework using large language models and human-in-the-loop annotation to obtain high-quality counterfactual descriptions efficiently. Evaluation of representative video-language understanding models confirms their deficiency in temporal understanding, revealing the need for greater emphasis on the temporal elements in video-language research.
+
+| Comments: | 23 pages, 6 figures, 18 tables, data is available at [this https URL](https://github.com/lscpku/VITATECS) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL) |
+| Cite as:  | [arXiv:2311.17404](https://arxiv.org/abs/2311.17404) [cs.CV] |
+|           | (or [arXiv:2311.17404v1](https://arxiv.org/abs/2311.17404v1) [cs.CV] for this version) |
+|           | https://doi.org/10.48550/arXiv.2311.17404Focus to learn more |
+
+
+
+
+
+<h2 id="2023-11-30-16">16. Reason out Your Layout: Evoking the Layout Master from Large Language Models for Text-to-Image Synthesis
+</h2>
+
+
+Title: [Reason out Your Layout: Evoking the Layout Master from Large Language Models for Text-to-Image Synthesis](https://arxiv.org/abs/2311.17126)
+
+Authors: [Xiaohui Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen,+X), [Yongfei Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu,+Y), [Yingxiang Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang,+Y), [Jianbo Yuan](https://arxiv.org/search/cs?searchtype=author&query=Yuan,+J), [Quanzeng You](https://arxiv.org/search/cs?searchtype=author&query=You,+Q), [Li-Ping Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu,+L), [Hongxia Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang,+H)
+
+> Recent advancements in text-to-image (T2I) generative models have shown remarkable capabilities in producing diverse and imaginative visuals based on text prompts. Despite the advancement, these diffusion models sometimes struggle to translate the semantic content from the text into images entirely. While conditioning on the layout has shown to be effective in improving the compositional ability of T2I diffusion models, they typically require manual layout input. In this work, we introduce a novel approach to improving T2I diffusion models using Large Language Models (LLMs) as layout generators. Our method leverages the Chain-of-Thought prompting of LLMs to interpret text and generate spatially reasonable object layouts. The generated layout is then used to enhance the generated images' composition and spatial accuracy. Moreover, we propose an efficient adapter based on a cross-attention mechanism, which explicitly integrates the layout information into the stable diffusion models. Our experiments demonstrate significant improvements in image quality and layout accuracy, showcasing the potential of LLMs in augmenting generative image models.
+
+| Comments: | preprint                                                     |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Computation and Language (cs.CL) |
+| Cite as:  | [arXiv:2311.17126](https://arxiv.org/abs/2311.17126) [cs.CV] |
+|           | (or [arXiv:2311.17126v1](https://arxiv.org/abs/2311.17126v1) [cs.CV] for this version) |
+|           | https://doi.org/10.48550/arXiv.2311.17126Focus to learn more |
+
+
+
+
+
+<h2 id="2023-11-30-17">17. Compositional Chain-of-Thought Prompting for Large Multimodal Models
+</h2>
+
+
+Title: [Compositional Chain-of-Thought Prompting for Large Multimodal Models](https://arxiv.org/abs/2311.17076)
+
+Authors: [Chancharik Mitra](https://arxiv.org/search/cs?searchtype=author&query=Mitra,+C), [Brandon Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang,+B), [Trevor Darrell](https://arxiv.org/search/cs?searchtype=author&query=Darrell,+T), [Roei Herzig](https://arxiv.org/search/cs?searchtype=author&query=Herzig,+R)
+
+> The combination of strong visual backbones and Large Language Model (LLM) reasoning has led to Large Multimodal Models (LMMs) becoming the current standard for a wide range of vision and language (VL) tasks. However, recent research has shown that even the most advanced LMMs still struggle to capture aspects of compositional visual reasoning, such as attributes and relationships between objects. One solution is to utilize scene graphs (SGs)--a formalization of objects and their relations and attributes that has been extensively used as a bridge between the visual and textual domains. Yet, scene graph data requires scene graph annotations, which are expensive to collect and thus not easily scalable. Moreover, finetuning an LMM based on SG data can lead to catastrophic forgetting of the pretraining objective. To overcome this, inspired by chain-of-thought methods, we propose Compositional Chain-of-Thought (CCoT), a novel zero-shot Chain-of-Thought prompting method that utilizes SG representations in order to extract compositional knowledge from an LMM. Specifically, we first generate an SG using the LMM, and then use that SG in the prompt to produce a response. Through extensive experiments, we find that the proposed CCoT approach not only improves LMM performance on several vision and language VL compositional benchmarks but also improves the performance of several popular LMMs on general multimodal benchmarks, without the need for fine-tuning or annotated ground-truth SGs.
+
+| Subjects: | **Computer Vision and Pattern Recognition (cs.CV)**; Artificial Intelligence (cs.AI); Computation and Language (cs.CL); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2311.17076](https://arxiv.org/abs/2311.17076) [cs.CV] |
+|           | (or [arXiv:2311.17076v1](https://arxiv.org/abs/2311.17076v1) [cs.CV] for this version) |
+|           | https://doi.org/10.48550/arXiv.2311.17076Focus to learn more |
+
+
+
+
+
+<h2 id="2023-11-30-18">18. Efficient Deep Speech Understanding at the Edge
+</h2>
+
+
+Title: [Efficient Deep Speech Understanding at the Edge](https://arxiv.org/abs/2311.17065)
+
+Authors: [Rongxiang Wang](https://arxiv.org/search/eess?searchtype=author&query=Wang,+R), [Felix Lin](https://arxiv.org/search/eess?searchtype=author&query=Lin,+F)
+
+> Contemporary Speech Understanding (SU) involves a sophisticated pipeline: capturing real-time voice input, the pipeline encompasses a deep neural network with an encoder-decoder architecture enhanced by beam search. This network periodically assesses attention and Connectionist Temporal Classification (CTC) scores in its autoregressive output.
+> This paper aims to enhance SU performance on edge devices with limited resources. It pursues two intertwined goals: accelerating on-device execution and efficiently handling inputs that surpass the on-device model's capacity. While these objectives are well-established, we introduce innovative solutions that specifically address SU's distinctive challenges: 1. Late contextualization: Enables the parallel execution of a model's attentive encoder during input ingestion. 2. Pilot decoding: Alleviates temporal load imbalances. 3. Autoregression offramps: Facilitate offloading decisions based on partial output sequences.
+> Our techniques seamlessly integrate with existing SU models, pipelines, and frameworks, allowing for independent or combined application. Together, they constitute a hybrid solution for edge SU, exemplified by our prototype, XYZ. Evaluated on platforms equipped with 6-8 Arm cores, our system achieves State-of-the-Art (SOTA) accuracy, reducing end-to-end latency by 2x and halving offloading requirements.
+
+| Subjects: | **Audio and Speech Processing (eess.AS)**; Computation and Language (cs.CL); Machine Learning (cs.LG) |
+| --------- | ------------------------------------------------------------ |
+| Cite as:  | [arXiv:2311.17065](https://arxiv.org/abs/2311.17065) [eess.AS] |
+|           | (or [arXiv:2311.17065v1](https://arxiv.org/abs/2311.17065v1) [eess.AS] for this version) |
+|           | https://doi.org/10.48550/arXiv.2311.17065Focus to learn more |
 
 
 
