@@ -2,39 +2,66 @@
 
 # Index
 
+- [2023-12-22](#2023-12-22)
+  - [1. Speech Translation with Large Language Models: An Industrial Practice](#2023-12-22-1)
+  
 - [2023-12-21](#2023-12-21)
   - [1. LlaMaVAE: Guiding Large Language Model Generation via Continuous Latent Sentence Spaces](#2023-12-21-1)
-  
+
   - [2. Contextual Code Switching for Machine Translation using Language Models](#2023-12-21-2)
-  
+
   - [3. In Generative AI we Trust: Can Chatbots Effectively Verify Political Information?](#2023-12-21-3)
-  
+
   - [4. Retrieval-augmented Multilingual Knowledge Editing](#2023-12-21-4)
-  
+
   - [5. Machine Mindset: An MBTI Exploration of Large Language Models](#2023-12-21-5)
-  
+
   - [6. Enhancing Consistency in Multimodal Dialogue System Using LLM with Dialogue Scenario](#2023-12-21-6)
-  
+
   - [7. Fine-tuning Large Language Models for Adaptive Machine Translation](#2023-12-21-7)
-  
+
   - [8. Learning and Forgetting Unsafe Examples in Large Language Models](#2023-12-21-8)
-  
+
   - [9. Turning English-centric LLMs Into Polyglots: How Much Multilinguality Is Needed?](#2023-12-21-9)
-  
+
   - [10. Is post-editing really faster than human translation?](#2023-12-21-10)
-  
+
   - [11. An Empirical study of Unsupervised Neural Machine Translation: analyzing NMT output, model's behavior and sentences' contribution](#2023-12-21-11)
-  
+
   - [12. When Parameter-efficient Tuning Meets General-purpose Vision-language Models](#2023-12-21-12)
-  
+
   - [13. Stable Distillation: Regularizing Continued Pre-training for Low-Resource Automatic Speech Recognition](#2023-12-21-13)
-  
+
   - [14. Towards Better Serialization of Tabular Data for Few-shot Classification](#2023-12-21-14)
-  
+
 - [2023-11-30](#2023-11-30)
   - [1. SenTest: Evaluating Robustness of Sentence Encoders](#2023-11-30-1)
 
 - [Other Columns](https://github.com/EriCongMa/AI_Collections/blob/main/Daily_arXiv/AIKT-MAC-Daily-POI-index.md)
+
+
+
+# 2023-12-22
+
+[Return to Index](#Index)
+
+
+
+<h2 id="2023-12-22-1">1. Speech Translation with Large Language Models: An Industrial Practice
+</h2>
+
+Title: [Speech Translation with Large Language Models: An Industrial Practice](https://arxiv.org/abs/2312.13585)
+
+Authors: [Zhichao Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang,+Z), [Rong Ye](https://arxiv.org/search/cs?searchtype=author&query=Ye,+R), [Tom Ko](https://arxiv.org/search/cs?searchtype=author&query=Ko,+T), [Qianqian Dong](https://arxiv.org/search/cs?searchtype=author&query=Dong,+Q), [Shanbo Cheng](https://arxiv.org/search/cs?searchtype=author&query=Cheng,+S), [Mingxuan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang,+M), [Hang Li](https://arxiv.org/search/cs?searchtype=author&query=Li,+H)
+
+> Given the great success of large language models (LLMs) across various tasks, in this paper, we introduce LLM-ST, a novel and effective speech translation model constructed upon a pre-trained LLM. By integrating the large language model (LLM) with a speech encoder and employing multi-task instruction tuning, LLM-ST can produce accurate timestamped transcriptions and translations, even from long audio inputs. Furthermore, our findings indicate that the implementation of Chain-of-Thought (CoT) prompting can yield advantages in the context of LLM-ST. Through rigorous experimentation on English and Chinese datasets, we showcase the exceptional performance of LLM-ST, establishing a new benchmark in the field of speech translation. Demo: [this https URL](https://speechtranslation.github.io/llm-st/).
+
+| Comments: | Technical report. 13 pages. Demo: [this https URL](https://speechtranslation.github.io/llm-st/) |
+| --------- | ------------------------------------------------------------ |
+| Subjects: | **Computation and Language (cs.CL)**; Sound (cs.SD); Audio and Speech Processing (eess.AS) |
+| Cite as:  | **[arXiv:2312.13585](https://arxiv.org/abs/2312.13585) [cs.CL]** |
+|           | (or **[arXiv:2312.13585v1](https://arxiv.org/abs/2312.13585v1) [cs.CL]** for this version) |
+|           | https://doi.org/10.48550/arXiv.2312.13585Focus to learn more |
 
 
 
